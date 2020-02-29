@@ -1,19 +1,78 @@
 ﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" margin="5,5,5,5"  resizable="1" wndType="appMain"
-toolWindow="1"
-translucent="1" 
+appWnd="1" minSize="800,600"
+translucent="1"
 >
-  <root skin="_skin.sys.wnd.bkgnd" cache="1"  width="600" height="400" >
-    <caption pos="0,0,-0,30" show="1" font="adding:0">
-      <icon pos="10,8" src="ICON_LOGO:16"/>
-      <text pos="29,9">@string/title</text>
+  <root width="828" height="666" >
+    <window size="-2,-2" colorBkgnd="#888888" margin="1,1,1,1" colorBorder="#333333">
+      <window name="nav_wnd" pos="0,0" size="48,-2" layout="vbox" colorBkgnd="#666666" colorText="#ffffff">
+        <window id="8" size="-2,-1" data="0" layout="vbox" >
+          <window size="-2,40">
+            <icon pos="14,10" size="25,25" src="ICON_LOGO:32"/>
+          </window>
+          <window size="48,48" >
+            <img name="btn_show_nav_full" offset="0,-0.5" pos="12,|" size="25,32" skin="skin_showfull" class="img_btn" tip="展开菜单"/>
+          </window>
+          <window id="19" size="-2,-1" weight="1" layout="vbox" colorBkgnd="rgba(220,220,220,48)">
+            <t:nav_button>
+              <data title="API文档" name="btn_nav_api" tip="API文档帮助" skin="skin_api"/>
+            </t:nav_button>
+            <t:nav_button>
+              <data title="属性文档" name="btn_nav_attrib" tip="属性文档帮助" skin="skin_attrib"/>
+            </t:nav_button>
+          </window>
+        </window>
+        <window size="0,0" weight="1"/>
+        <window id="9" layout="vbox" size="-2,-1" colorText="#000000">
+          <t:nav_button>
+            <data title="关于程序" name="btn_about" tip="关于软件" skin="skin_about"/>
+          </t:nav_button>
+        </window>
+      </window>
+      <tabctrl name="tab_main_nav" pos="[,38,-0,-0" tabAlign="left" curSel="0" tabInterSize="0" animateSteps="0" tabHeight="0" tabWidth="0">
+        <page title="api" layout="vbox">
+          <window skin="skin_search_box" size="266,36" layout="hbox" inset="8,2,2,2" gravity="center">
+            <edit name="et_search" size="0,36" weight="1" inset="12,1,1,1" cueText="查找API信息"/>
+            <img size="32,32" skin="skin_search_bk">
+              <img size="full,full" pos="0,0" skin="skin_search"/>
+            </img>
+          </window>
+          <window size="-2,0" weight="1">
+            <window size="-2,-2" layout="hbox">
+              <treeview size="190,-2" name="tv_allapis" indent="0">
+                <template>
+                  <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray3">
+                    <window size="-2,0" layout="hbox" weight="1" gravity="center">
+                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" text="hostwnd"/>
+                    </window>
+                    <hr size="-2,1" colorLine="@color/gray4" lineSize="1"/>
+                  </item_class>
+                  <item_fun size="-2,36" colorHover="@color/gray3" colorSelected="#c9c7c6">
+                    <window name="bkwnd" size="-2,-2" layout="hbox" gravity="center">                      
+                      <text extend_left="12" name="lable_name" weight="1" text="apiname"/>
+                    </window>
+                  </item_fun>
+                </template>
+              </treeview>
+              <hr size="1,-2" colorLine="@color/gray2" mode="vertical"/>
+              <tabctrl name="nav_dev_cmd" tabHeight="0" size="0,-2" weight="1">
+                <page>
+                </page>
+              </tabctrl>
+            </window>
+          </window>
+        </page>
+        <page title="attrib">
+          <text pos="0,0" text="1"/>
+        </page>
+      </tabctrl>
+    </window>
+    <caption pos="0,0,-0,30" font="size:14">
+      <text pos="50,12">@string/title</text>
       <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
       <imgbtn name="btn_max" skin="_skin.sys.btn.maximize"  pos="-83,0" animate="1" />
       <imgbtn name="btn_restore" skin="_skin.sys.btn.restore"  pos="-83,0" show="0" animate="1" />
       <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" />
     </caption>
-    <window pos="5,[2,-5,-5">
-      <text pos="|0,|0" offset="-0.5,-0.5">这是一个由SOUI向导生成的APP框架</text>
-    </window>
-<shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>
+    <shellnotifyicon id="110" menu="SMENU:menu_tray" ico="ICON_LOGO:16" tip="110"/>
   </root>
 </SOUI>

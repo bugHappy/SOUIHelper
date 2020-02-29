@@ -185,6 +185,7 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Handler\MainHandler.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="SOUIHelper.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -195,16 +196,20 @@
     </ClCompile>
     <ClCompile Include="trayicon\SShellNofityHwnd.cpp" />
     <ClCompile Include="trayicon\SShellNotifyIcon.cpp" />
+    <ClCompile Include="UIExtend\STabCtrlHeaderBinder.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SOUIHelper.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Handler\CAPIAdapter.h" />
+    <ClInclude Include="Handler\MainHandler.h" />
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="trayicon\SShellNofityHwnd.h" />
     <ClInclude Include="trayicon\SShellNotifyIcon.h" />
+    <ClInclude Include="UIExtend\STabCtrlHeaderBinder.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\soui_res.rc2" />
@@ -227,6 +232,7 @@
     <Xml Include="uires\values\color.xml" />
     <Xml Include="uires\values\skin.xml" />
     <Xml Include="uires\values\string.xml" />
+    <Xml Include="uires\values\template.xml" />
     <Xml Include="uires\xml\dlg_main.xml" />
     <Xml Include="uires\xml\menu_tray.xml" />
   </ItemGroup>

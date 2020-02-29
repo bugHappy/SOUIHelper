@@ -17,6 +17,15 @@
       <UniqueIdentifier>{758e55e0-9814-42f7-87d1-61b6dcd8b539}</UniqueIdentifier>
       <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
     </Filter>
+    <Filter Include="SoUI Resource\values">
+      <UniqueIdentifier>{5c0b6dbe-39ee-491c-b3a2-afdfd2627d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Handler">
+      <UniqueIdentifier>{9edf6a8a-5eef-4173-b174-f66787fffbbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui_extend">
+      <UniqueIdentifier>{e6d1b5aa-884a-442e-87e2-a0df178edf65}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="license.txt" />
@@ -37,6 +46,12 @@
     </ClCompile>
     <ClCompile Include="trayicon\SShellNofityHwnd.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Handler\MainHandler.cpp">
+      <Filter>Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="UIExtend\STabCtrlHeaderBinder.cpp">
+      <Filter>ui_extend</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +75,15 @@
     <ClInclude Include="trayicon\SShellNofityHwnd.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Handler\MainHandler.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="UIExtend\STabCtrlHeaderBinder.h">
+      <Filter>ui_extend</Filter>
+    </ClInclude>
+    <ClInclude Include="Handler\CAPIAdapter.h">
+      <Filter>Handler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\soui_res.rc2">
@@ -67,23 +91,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="uires\uidef\init.xml">
-      <Filter>SoUI Resource</Filter>
-    </Xml>
-    <Xml Include="uires\values\color.xml">
-      <Filter>SoUI Resource</Filter>
-    </Xml>
-    <Xml Include="uires\values\skin.xml">
-      <Filter>SoUI Resource</Filter>
-    </Xml>
-    <Xml Include="uires\values\string.xml">
-      <Filter>SoUI Resource</Filter>
-    </Xml>
     <Xml Include="uires\xml\dlg_main.xml">
       <Filter>SoUI Resource</Filter>
     </Xml>
     <Xml Include="uires\xml\menu_tray.xml">
       <Filter>SoUI Resource</Filter>
+    </Xml>
+    <Xml Include="uires\values\color.xml">
+      <Filter>SoUI Resource\values</Filter>
+    </Xml>
+    <Xml Include="uires\uidef\init.xml">
+      <Filter>SoUI Resource\values</Filter>
+    </Xml>
+    <Xml Include="uires\values\skin.xml">
+      <Filter>SoUI Resource\values</Filter>
+    </Xml>
+    <Xml Include="uires\values\string.xml">
+      <Filter>SoUI Resource\values</Filter>
+    </Xml>
+    <Xml Include="uires\values\template.xml">
+      <Filter>SoUI Resource\values</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>
