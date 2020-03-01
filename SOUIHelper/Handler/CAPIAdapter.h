@@ -3,7 +3,7 @@
 
 enum class NodeType
 {
-	CLASS,FUN
+	CLASS, FUN
 };
 
 struct NodeInfo {
@@ -17,16 +17,20 @@ public:
 
 	CAPIAdapter()
 	{
-		NodeInfo item;
-		item.type = NodeType::CLASS;
-		item.name = L"CLASS";
-		SOUI::HTREEITEM hRoot = InsertItem(item);
-		SetItemExpanded(hRoot, TRUE);
-		item.type = NodeType::FUN;
+		for (int m = 1; m < 6; m++)
+		{
+			NodeInfo item;
+			item.type = NodeType::CLASS;
+			item.name.Format(L"CLASS%d", m);
+			SOUI::HTREEITEM hRoot = InsertItem(item);
+			SetItemExpanded(hRoot, TRUE);
+			item.type = NodeType::FUN;
 
-		for (int i = 1; i < 6; i++)
-		{			
-			InsertItem(item, hRoot);
+			for (int i = 1; i < 6; i++)
+			{
+				item.name.Format(L"FUN%d", i);
+				InsertItem(item, hRoot);
+			}
 		}
 	}
 
@@ -66,12 +70,11 @@ public:
 			}
 			pItem->InitFromXml(xmlTemplate);
 
-			SWindow *pName= pItem->FindChildByID(R.id.lable_name);
+			SWindow* pName = pItem->FindChildByID(R.id.lable_name);
 
 			if (itemType == 0)
 			{
-				pItem->GetEventSet()->subscribeEvent(EVT_ITEMPANEL_CLICK,
-					Subscriber(&CAPIAdapter::OnGroupItemPanelClick, this));
+
 			}
 
 			pName->SetWindowText(ii.data.name);
@@ -97,7 +100,7 @@ public:
 		switch (ii.data.type)
 		{
 			case NodeType::CLASS:ret = 0; break;
-			case  NodeType::FUN:ret = 1; break;
+			case NodeType::FUN:ret = 1; break;
 		}
 		return ret;
 	}

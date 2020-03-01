@@ -1,4 +1,4 @@
-﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" margin="5,5,5,5"  resizable="1" wndType="appMain"
+﻿<SOUI name="mainWindow" title="@string/title" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16" margin="5,5,5,5"  resizable="1" wndType="appMain" sendWheel2Hover="1"
 appWnd="1" minSize="800,600"
 translucent="1"
 >
@@ -40,24 +40,21 @@ translucent="1"
             <window size="-2,-2" layout="hbox">
               <treeview size="190,-2" name="tv_allapis" indent="0">
                 <template>
-                  <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray3">
+                  <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray" colorSelected="@color/gray">
                     <window size="-2,0" layout="hbox" weight="1" gravity="center">
                       <text extend_left="8" weight="1" size="0,-2" name="lable_name" text="hostwnd"/>
                     </window>
-                    <hr size="-2,1" colorLine="@color/gray4" lineSize="1"/>
+                    <hr size="-2,1" colorLine="@color/gray4" alpha="128"/>
                   </item_class>
-                  <item_fun size="-2,36" colorHover="@color/gray3" colorSelected="#c9c7c6">
+                  <item_fun size="-2,36" colorHover="@color/gray" colorSelected="@color/gray">
                     <window name="bkwnd" size="-2,-2" layout="hbox" gravity="center">                      
-                      <text extend_left="12" name="lable_name" weight="1" text="apiname"/>
+                      <text extend_left="18" name="lable_name" weight="1" text="apiname"/>
                     </window>
                   </item_fun>
                 </template>
               </treeview>
-              <hr size="1,-2" colorLine="@color/gray2" mode="vertical"/>
-              <tabctrl name="nav_dev_cmd" tabHeight="0" size="0,-2" weight="1">
-                <page>
-                </page>
-              </tabctrl>
+              <hr size="1,-2" colorLine="@color/gray2" mode="vertical"  alpha="128"/>
+              <richedit name="re_apidetail" size="0,-2" weight="1" focusable="0"/>
             </window>
           </window>
         </page>
