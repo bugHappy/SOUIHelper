@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_time_span" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STimeSpan</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_time_span_1a7bd034251644a127e6fda7628db74feb" prot="private" static="no" mutable="no">
+        <type>__time64_t</type>
+        <definition>__time64_t SOUI::STimeSpan::m_timeSpan</definition>
+        <argsstring></argsstring>
+        <name>m_timeSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="39" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a0b223385eacb451b493dc061ef7eb968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STimeSpan::STimeSpan</definition>
+        <argsstring>()</argsstring>
+        <name>STimeSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="13" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1aeae4f81ad0c432c0fa9132cda29759fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STimeSpan::STimeSpan</definition>
+        <argsstring>(__time64_t time)</argsstring>
+        <name>STimeSpan</name>
+        <param>
+          <type>__time64_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a529682f06d33c30b9436ba6ecde477ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STimeSpan::STimeSpan</definition>
+        <argsstring>(LONG lDays, int nHours, int nMins, int nSecs)</argsstring>
+        <name>STimeSpan</name>
+        <param>
+          <type>LONG</type>
+          <declname>lDays</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHours</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMins</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nSecs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="15" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1ad3a80c0cbe5e34ba743f2e86fdad2bba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONGLONG</type>
+        <definition>LONGLONG SOUI::STimeSpan::GetDays</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="17" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a67cc8e77cc05ea86f760cd5e9b2df189" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONGLONG</type>
+        <definition>LONGLONG SOUI::STimeSpan::GetTotalHours</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalHours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="18" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a63f2e84947d2f0d288eee5de91b97d50" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONG</type>
+        <definition>LONG SOUI::STimeSpan::GetHours</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1ad2aa295f372f38ccdba2561979e46269" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONGLONG</type>
+        <definition>LONGLONG SOUI::STimeSpan::GetTotalMinutes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="20" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1ad5c060cf7f7423ae75bf99e36f275c11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONG</type>
+        <definition>LONG SOUI::STimeSpan::GetMinutes</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a0b3a9facc06c30b4092d0dbbda4a1231" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONGLONG</type>
+        <definition>LONGLONG SOUI::STimeSpan::GetTotalSeconds</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1acdad7f6e98718245c351405206d09f0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>LONG</type>
+        <definition>LONG SOUI::STimeSpan::GetSeconds</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1ae7cc29f0f68e8b455296b5750d2f71f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>__time64_t</type>
+        <definition>__time64_t SOUI::STimeSpan::GetTimeSpan</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTimeSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="25" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a431ef5587a6e82b97851980d0b3047cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+        <definition>STimeSpan SOUI::STimeSpan::operator+</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="27" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1ad70d6f94a91dd0fa690d59f13ce63c17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+        <definition>STimeSpan SOUI::STimeSpan::operator-</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="28" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1af2d62fb8c1709c5f14d4635b52be50c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref> &amp;</type>
+        <definition>STimeSpan&amp; SOUI::STimeSpan::operator+=</definition>
+        <argsstring>(STimeSpan span)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="29" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a2efb0b9f072272cd2c9fa19a0741ab95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref> &amp;</type>
+        <definition>STimeSpan&amp; SOUI::STimeSpan::operator-=</definition>
+        <argsstring>(STimeSpan span)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="30" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a500abc3d604e3e24b3be2167539945d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator==</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1adc2f42e38dc7e0e97ba880311e298c5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator!=</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a7cf31f7516e99ef2f2d85e7e424ba468" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator&lt;</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="33" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a8bd3f0336ebfe281fd7fea50982d35cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator&gt;</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="34" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a28298a806f0e348c705d06323b1b546d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator&lt;=</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="35" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_span_1a39dc6f1b4582b72ae788970b14e2acab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimeSpan::operator&gt;=</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="36" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="11" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" bodystart="10" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1ad3a80c0cbe5e34ba743f2e86fdad2bba" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetDays</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a63f2e84947d2f0d288eee5de91b97d50" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetHours</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1ad5c060cf7f7423ae75bf99e36f275c11" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetMinutes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1acdad7f6e98718245c351405206d09f0b" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetSeconds</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1ae7cc29f0f68e8b455296b5750d2f71f3" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetTimeSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a67cc8e77cc05ea86f760cd5e9b2df189" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetTotalHours</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1ad2aa295f372f38ccdba2561979e46269" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetTotalMinutes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a0b3a9facc06c30b4092d0dbbda4a1231" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>GetTotalSeconds</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a7bd034251644a127e6fda7628db74feb" prot="private" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>m_timeSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1adc2f42e38dc7e0e97ba880311e298c5c" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator!=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a431ef5587a6e82b97851980d0b3047cd" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator+</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1af2d62fb8c1709c5f14d4635b52be50c3" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator+=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1ad70d6f94a91dd0fa690d59f13ce63c17" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator-</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a2efb0b9f072272cd2c9fa19a0741ab95" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator-=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a7cf31f7516e99ef2f2d85e7e424ba468" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a28298a806f0e348c705d06323b1b546d" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator&lt;=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a500abc3d604e3e24b3be2167539945d2" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator==</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a8bd3f0336ebfe281fd7fea50982d35cf" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator&gt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a39dc6f1b4582b72ae788970b14e2acab" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>operator&gt;=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a0b223385eacb451b493dc061ef7eb968" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>STimeSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1aeae4f81ad0c432c0fa9132cda29759fe" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>STimeSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_span_1a529682f06d33c30b9436ba6ecde477ed" prot="public" virt="non-virtual"><scope>SOUI::STimeSpan</scope><name>STimeSpan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

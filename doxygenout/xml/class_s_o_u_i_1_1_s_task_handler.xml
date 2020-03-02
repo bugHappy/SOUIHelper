@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_task_handler" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STaskHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; ITaskLoop &gt;</basecompoundref>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_native_wnd" prot="protected" virt="non-virtual">SOUI::SNativeWnd</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_task_handler_1a7598ae34229b08f885be42a868731dd4" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@23</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_task_handler_1a7598ae34229b08f885be42a868731dd4ad41d4779493090ea96082fb72647eaa1" prot="private">
+          <name>UM_RUN_TASK</name>
+          <initializer>=(WM_USER+100)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="14" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_task_handler_1a5c80a4f26693a54238e2dc59fe498a12" prot="private" static="no" mutable="yes">
+        <type>SCriticalSection</type>
+        <definition>SCriticalSection SOUI::STaskHandler::m_taskListLock</definition>
+        <argsstring></argsstring>
+        <name>m_taskListLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="76" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_task_handler_1a6ef12890ddd82b2a1c4777626783ee1d" prot="private" static="no" mutable="no">
+        <type>SMap&lt; long, <ref refid="struct_s_o_u_i_1_1_i_runnable" kindref="compound">IRunnable</ref> * &gt;</type>
+        <definition>SMap&lt;long,IRunnable *&gt; SOUI::STaskHandler::m_items</definition>
+        <argsstring></argsstring>
+        <name>m_items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="77" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_task_handler_1ad50ea32b1262643eb72c3ae7071ac933" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SOUI::STaskHandler::m_nextTaskID</definition>
+        <argsstring></argsstring>
+        <name>m_nextTaskID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="79" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_task_handler_1abf46af46b3a008806d2047f7dc479255" prot="private" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::STaskHandler::m_dwThreadID</definition>
+        <argsstring></argsstring>
+        <name>m_dwThreadID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="80" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a928784d96c367b6916e526d288512857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STaskHandler::STaskHandler</definition>
+        <argsstring>()</argsstring>
+        <name>STaskHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1ae6afccae7dc524d367b5e5afa741f479" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::STaskHandler::~STaskHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~STaskHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1aa454f39e14a0dce25a82f8678723c8b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STaskHandler::start</definition>
+        <argsstring>(const char *pszName, Priority priority)</argsstring>
+        <name>start</name>
+        <param>
+          <type>const char *</type>
+          <declname>pszName</declname>
+        </param>
+        <param>
+          <type>Priority</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start task mgr thread. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="29" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a99a3790daaebe2dfba379faeb71fff76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STaskHandler::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop task mgr synchronized. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="34" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1adb88a0a49ebbc4d1894fe67210f1607a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STaskHandler::cancelTasksForObject</definition>
+        <argsstring>(void *object)</argsstring>
+        <name>cancelTasksForObject</name>
+        <param>
+          <type>void *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove tasks for a sepcific object from task mgr pening task list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specific object wants pending functors to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="41" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a88960609a7a0bed7bc2237f00f93399f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STaskHandler::cancelTask</definition>
+        <argsstring>(long taskId)</argsstring>
+        <name>cancelTask</name>
+        <param>
+          <type>long</type>
+          <declname>taskId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel tasks for a specific task ID list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>taskList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task ID list to be canceled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the removed task list. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="48" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1adc547cd58b7708790882d4f58833145c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STaskHandler::getTaskCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getTaskCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the total task number in the task mgr queue. <simplesect kind="return"><para>total task number in task mgr queue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="55" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a271f36edf6034ee47f0a405bdac1e617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STaskHandler::isRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the run loop status. <simplesect kind="return"><para>the running status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="61" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1ab3846f3d9f76af8a0a2166b31170fa77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long SOUI::STaskHandler::postTask</definition>
+        <argsstring>(const IRunnable *runnable, bool waitUntilDone, int priority)</argsstring>
+        <name>postTask</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_runnable" kindref="compound">IRunnable</ref> *</type>
+          <declname>runnable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="63" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a9117c1f32815c7de6a656860bb7cf866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STaskHandler::getName</definition>
+        <argsstring>(char *pszBuf, int nBufLen)</argsstring>
+        <name>getName</name>
+        <param>
+          <type>char *</type>
+          <declname>pszBuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="65" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1a188a6a8d3920d7ed4071e07518056bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STaskHandler::getRunningTaskInfo</definition>
+        <argsstring>(char *buf, int bufLen)</argsstring>
+        <name>getRunningTaskInfo</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="67" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_handler_1acefacd82c81bb8864bf424225bb2607d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::STaskHandler::OnRunTask</definition>
+        <argsstring>(UINT uMsg, WPARAM wp, LPARAM lp)</argsstring>
+        <name>OnRunTask</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wp</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="70" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; ITaskLoop &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::STaskHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_task_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; ITaskLoop &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::STaskHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_task_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" line="13" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h" bodystart="12" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a88960609a7a0bed7bc2237f00f93399f" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>cancelTask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1adb88a0a49ebbc4d1894fe67210f1607a" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>cancelTasksForObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae7db0c8539947cfbebbf5c874d09852f" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>CenterWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae76b040fb207bfe209a860d19fdc9f79" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a337dbb45781eee2d2f100fab68a9b714" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e2fd1ebc4ba0b4eb3f123e889577cf5" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1cac9ee1fed482a82bc26b77320fa9a7" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2216c31f08c5b63efe92da1c4f289643" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>CreateGrayCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af2717c6574ebd4356ecd8efe50a2d919" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>CreateSolidCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1f0a65ecd272743c10be1541c8933a88" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>DefaultReflectionHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8fd32a77fe171c5cf0cb869b25c79918" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9e60c00d24fce32a433203d93024a775" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1d439ec2538d347aed93d17cf8afee1c" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a749459fa2001aec402580f5c7f26bdd8" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ForwardNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9fd18bae24ae60bd68e984b9b64cdfd3" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae73894c2610e54aec010b508b963e2da" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetCurrentMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a85d734630f4c89d0273b1eb5d9fba5b8" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b9e971fe7e37ba7b4cb60341078caf5" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetDlgCtrlID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a931a0700fbea08b60bb1bf2a8e5a069e" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetExStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a9117c1f32815c7de6a656860bb7cf866" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>getName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc75f72d1012125fbd2e073330434321" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a188a6a8d3920d7ed4071e07518056bd6" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>getRunningTaskInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81490884fd21d8c2b2167399fb6dc2ea" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1adc547cd58b7708790882d4f58833145c" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>getTaskCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a18fa87a0ee2bca6528b411fb616b5de9" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetWindowDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa0fbb768f0ed67e2e284d1ea049e08e4" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a546e9561847bec230bcd4f2c4c9bb6a3" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aed199e49e917057b28b71582bafc50f6" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab8ac1334d4061c837fb938adf63515cd" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>HideCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ade5b0055fbebcec7e2680b953ed9af12" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa32edae64de9d4bd96afa4f8b49b8bcc" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83a218aeaacf52718edd9da35109ca32" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>IsIconic</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a271f36edf6034ee47f0a405bdac1e617" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>isRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afb4281f73bf3ef28477b60511fea4179" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>IsWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e1c170b3d93f295ec77051dfa0efded" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>IsWindowEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a617b8bcc3ca353fb645578be4ea3ea42" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>IsWindowVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a646008357eeb4cd2e97952777bd310d0" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>IsZoomed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afbdded6c7256009005b7f69e08ac79ea" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae481cfa8687a81ab3bfbedb25e8f66f4" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_bDestoryed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1abf46af46b3a008806d2047f7dc479255" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_dwThreadID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a00088e09d3601c253f658a7e1b7822b4" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_hWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a6ef12890ddd82b2a1c4777626783ee1d" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_items</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1ad50ea32b1262643eb72c3ae7071ac933" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_nextTaskID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a40129e803a175f7301dad2482be99bad" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_pCurrentMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9bfe94142ee6f297cff8bb591edf40cf" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_pfnSuperWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab1755d07793fd4ced829bc65a4d3c061" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_pThunk</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a5c80a4f26693a54238e2dc59fe498a12" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>m_taskListLock</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc6007ef2e9160ea3a5c114867f7d632" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a821292a06c4cad35e2bbed9f90559f7a" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aea08577c49fd9b5a03fa3e235720b527" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ModifyStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3a33ddbe2721ea01f49587e65fe57240" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ModifyStyleEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0e69cf9276281073e379d42b7d69f3ec" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3c7b9c811f1b7716068ec6334b5f24af" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a4d8c7966c871ecc3fb59b88e5486fd8b" prot="protected" virt="virtual"><scope>SOUI::STaskHandler</scope><name>OnFinalMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1acefacd82c81bb8864bf424225bb2607d" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>OnRunTask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af7570ddbff8319b70d46e86573475497" prot="protected" virt="virtual"><scope>SOUI::STaskHandler</scope><name>OnWindowTextChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af96d0cdc596fdb10f98a63e223d320f1" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>PostMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1ab3846f3d9f76af8a0a2166b31170fa77" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>postTask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8" prot="protected" virt="virtual"><scope>SOUI::STaskHandler</scope><name>ProcessWindowMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a97af1ea77880e227464f788ef22bb125" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ReflectNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a352cb70ad8715456885410860b192353" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>RegisterSimpleWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a615774057963164100d331ccf289fa26" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>RegisterSimpleWnd2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83165461a89e3a4fa546259da63f467d" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ReleaseDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a92d18cbf51e670992d6d4d7d6b15e765" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81ee7ba311f5a9775cf8bb5a169afe9f" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0ef25c95c4a14516adf4326050d670d8" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3518257469568cec4fd68e44be81bc04" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SendNotifyMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a332d5ea6e6b7482b8c53ecb8dda79a8c" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a5583a5875191ef01acdb0bd14c531501" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa87a3067b96744a69bbc79756d6c98c2" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetLayeredWindowAttributes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a219e52660deeeac6ec4320ddd64e7840" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afad497321f8bc706ff4bf8fc68d414ea" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2622349ba0e4a73685334951253fe916" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af3ed1854d29222863e881620958c86fe" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetWindowPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a234b0318aaee60c3505008ee08d28e47" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0a29a4cf219a8b7cc5297efef0169107" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7b089d19a65c67f6263e88c7ed012200" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a04eb888e46fa0aee64e5b78dea3793fe" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>ShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a713a258605bd7f0b687bff54d822269f" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1aa454f39e14a0dce25a82f8678723c8b0" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>start</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b01f11bf4a421168a050482805332bc" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>StartWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a928784d96c367b6916e526d288512857" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>STaskHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a99a3790daaebe2dfba379faeb71fff76" prot="public" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>stop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aedf20baf8bb1812ab1089c7c0a055fca" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>SubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1a7598ae34229b08f885be42a868731dd4ad41d4779493090ea96082fb72647eaa1" prot="private" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>UM_RUN_TASK</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a33c025619fedeada3d794b9f41a1a64b" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>UnsubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a033be00379ec5b66e58951293568eeff" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>UpdateLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81c229b200cf8c1f1704df3a42aab4bd" prot="protected" virt="non-virtual"><scope>SOUI::STaskHandler</scope><name>WindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ac2ada5966059755cd94787c2cdd66088" prot="protected" virt="virtual"><scope>SOUI::STaskHandler</scope><name>~SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_handler_1ae6afccae7dc524d367b5e5afa741f479" prot="public" virt="virtual"><scope>SOUI::STaskHandler</scope><name>~STaskHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

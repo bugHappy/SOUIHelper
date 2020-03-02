@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_bitmap" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IBitmap</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_render_obj" prot="public" virt="non-virtual">SOUI::IRenderObj</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a05ae064c0652a37b2b72b50655aa6b30" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const OBJTYPE</type>
+        <definition>virtual const OBJTYPE SOUI::IBitmap::ObjectType</definition>
+        <argsstring>() const</argsstring>
+        <name>ObjectType</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6">ObjectType</reimplements>
+        <briefdescription>
+<para>查询对象类型 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ObjectType <simplesect kind="return"><para>const UINT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="203" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a5f7743c09ce731ea64e6793725007c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IBitmap::Init</definition>
+        <argsstring>(int nWid, int nHei, const LPVOID pBits=NULL)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type>int</type>
+          <declname>nWid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHei</declname>
+        </param>
+        <param>
+          <type>const LPVOID</type>
+          <declname>pBits</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>从32位的位图数据初始化IBitmap </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nWid <ndash/> 图片宽度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nHei <ndash/> 图片高度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LPVOID pBits <ndash/> 位图数据,以ARGB形式存储 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK,失败返回错误代码 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="218" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1ad4412c2454428b9361056a88e544e363" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IBitmap::Init</definition>
+        <argsstring>(IImgFrame *pImgFrame)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_img_frame" kindref="compound">IImgFrame</ref> *</type>
+          <declname>pImgFrame</declname>
+        </param>
+        <briefdescription>
+<para>从IImgFrame初始化位图 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_img_frame" kindref="compound">IImgFrame</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pImgFrame <ndash/> IImgFrame指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK,失败返回错误代码 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="227" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1aad0c9d2d4d62e1cd3768b889573a89c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IBitmap::LoadFromFile</definition>
+        <argsstring>(LPCTSTR pszFileName)=0</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <briefdescription>
+<para>从文件中加载位图 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadFromFile <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszFileName <ndash/> 文件名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK,失败返回错误代码 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="236" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a4e279bb1e8dbc59c2c1a704473da153c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IBitmap::LoadFromMemory</definition>
+        <argsstring>(LPBYTE pBuf, size_t szLen)=0</argsstring>
+        <name>LoadFromMemory</name>
+        <param>
+          <type>LPBYTE</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>szLen</declname>
+        </param>
+        <briefdescription>
+<para>从内存中加载位图 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadFromMemory <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPBYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pBuf <ndash/> 内存地址 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>szLen <ndash/> 内存大小 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK,失败返回错误代码 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="246" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a86ae14c4b2b5226cd4c3553d318b6182" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::IBitmap::Width</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Width</name>
+        <briefdescription>
+<para>获得图片宽度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Width <simplesect kind="return"><para>UINT <ndash/> 图片宽度 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="254" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1ace6a2411afa85c818bccdee10207fc8a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::IBitmap::Height</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Height</name>
+        <briefdescription>
+<para>获得图片高度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Height <simplesect kind="return"><para>UINT <ndash/> 图片高度 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="262" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a98eb87acd52a60bf50d6487752592209" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>SIZE</type>
+        <definition>virtual SIZE SOUI::IBitmap::Size</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>获得图片高度及宽度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Size <simplesect kind="return"><para>SIZE <ndash/> 图片高度及宽度 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="270" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a87e85d017f127a63e3b1f6149e9134be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>LPVOID</type>
+        <definition>virtual LPVOID SOUI::IBitmap::LockPixelBits</definition>
+        <argsstring>()=0</argsstring>
+        <name>LockPixelBits</name>
+        <briefdescription>
+<para>锁定位图的数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LockPixelBits <simplesect kind="return"><para>LPVOID <ndash/> 位图数据地址 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="278" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a464740ccd98f6a115c7ed20a6ac10553" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IBitmap::UnlockPixelBits</definition>
+        <argsstring>(LPVOID pBuf)=0</argsstring>
+        <name>UnlockPixelBits</name>
+        <param>
+          <type>LPVOID</type>
+          <declname>pBuf</declname>
+        </param>
+        <briefdescription>
+<para>解除数据锁定 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UnlockPixelBits <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPVOID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> 由LockPixelBits返回的位图数据地址 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 与LockPixelBits配对使用 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="287" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a10b9a4773494423432f94b1df55cf564" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const LPVOID</type>
+        <definition>virtual const LPVOID SOUI::IBitmap::GetPixelBits</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetPixelBits</name>
+        <briefdescription>
+<para>以只读方式获取位图数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetPixelBits <simplesect kind="return"><para>LPVOID <ndash/> 位图数据地址 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="295" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1ac52dd0b88e77c90ac17aa91f11944755" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::IBitmap::Clone</definition>
+        <argsstring>(IBitmap **ppClone) const</argsstring>
+        <name>Clone</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> **</type>
+          <declname>ppClone</declname>
+        </param>
+        <briefdescription>
+<para>克隆一个新位图对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clone <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**ppClone <ndash/> 返回的IBitmap* 对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT Describe 成功后，调用者执行IBitmap::Release </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="305" column="32" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1230" bodyend="1244"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1ae0afd823a5153db26da153ba40e09c66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::IBitmap::Scale</definition>
+        <argsstring>(IBitmap **pOutput, int nScale, FilterLevel filterLevel)</argsstring>
+        <name>Scale</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> **</type>
+          <declname>pOutput</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <param>
+          <type>FilterLevel</type>
+          <declname>filterLevel</declname>
+        </param>
+        <briefdescription>
+<para>缩放克隆一个新位图对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**pOutput <ndash/> 返回的IBitmap* 对象 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nScale <ndash/> 缩放比例, 100代表不缩放 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FilterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filterLevel<ndash/>插值算法,render-skia支持选择算法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT Describe 成功后，调用者执行IBitmap::Release </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="316" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1246" bodyend="1251"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1af3a55f3cdb9d5a34532112897d080af9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::IBitmap::Scale</definition>
+        <argsstring>(IBitmap **pOutput, int nWid, int nHei, FilterLevel filterLevel)</argsstring>
+        <name>Scale</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> **</type>
+          <declname>pOutput</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHei</declname>
+        </param>
+        <param>
+          <type>FilterLevel</type>
+          <declname>filterLevel</declname>
+        </param>
+        <briefdescription>
+<para>缩放克隆一个新位图对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Scale <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**pOutput <ndash/> 返回的IBitmap* 对象 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nWid <ndash/> 宽度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nHei <ndash/> 高度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FilterLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>filterLevel<ndash/>插值算法,render-skia支持选择算法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT Describe 成功后，调用者执行IBitmap::Release </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="328" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1253" bodyend="1281"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_bitmap_1a449a06f1f61318a058d12e6c0ec7f046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::IBitmap::Save</definition>
+        <argsstring>(LPCWSTR pszFileName, const LPVOID pFormat)</argsstring>
+        <name>Save</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <param>
+          <type>const LPVOID</type>
+          <declname>pFormat</declname>
+        </param>
+        <briefdescription>
+<para>Save </para>
+        </briefdescription>
+        <detaileddescription>
+<para>将位图保存到文件 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszFileName <ndash/> File name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LPVOID *pFormat <ndash/> image format </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> S_OK: succeed Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="338" column="32" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1283" bodyend="1286"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>位图对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IBitmap</label>
+        <link refid="struct_s_o_u_i_1_1_i_bitmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IBitmap</label>
+        <link refid="struct_s_o_u_i_1_1_i_bitmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="202" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="201" bodyend="339"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1ac52dd0b88e77c90ac17aa91f11944755" prot="public" virt="virtual"><scope>SOUI::IBitmap</scope><name>Clone</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a10b9a4773494423432f94b1df55cf564" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>GetPixelBits</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1ace6a2411afa85c818bccdee10207fc8a" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>Height</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a5f7743c09ce731ea64e6793725007c56" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>Init</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1ad4412c2454428b9361056a88e544e363" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>Init</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1aad0c9d2d4d62e1cd3768b889573a89c7" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>LoadFromFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a4e279bb1e8dbc59c2c1a704473da153c" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>LoadFromMemory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a87e85d017f127a63e3b1f6149e9134be" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>LockPixelBits</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a05ae064c0652a37b2b72b50655aa6b30" prot="public" virt="virtual"><scope>SOUI::IBitmap</scope><name>ObjectType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a449a06f1f61318a058d12e6c0ec7f046" prot="public" virt="virtual"><scope>SOUI::IBitmap</scope><name>Save</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1ae0afd823a5153db26da153ba40e09c66" prot="public" virt="virtual"><scope>SOUI::IBitmap</scope><name>Scale</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1af3a55f3cdb9d5a34532112897d080af9" prot="public" virt="virtual"><scope>SOUI::IBitmap</scope><name>Scale</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a98eb87acd52a60bf50d6487752592209" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>Size</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a464740ccd98f6a115c7ed20a6ac10553" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>UnlockPixelBits</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_bitmap_1a86ae14c4b2b5226cd4c3553d318b6182" prot="public" virt="pure-virtual"><scope>SOUI::IBitmap</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

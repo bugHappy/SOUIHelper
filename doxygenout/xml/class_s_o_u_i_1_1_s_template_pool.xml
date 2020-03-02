@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_template_pool" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STemplatePool</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_cmn_map" prot="public" virt="non-virtual">SOUI::SCmnMap&lt; SStringW, SStringW &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl2&lt; IObjRef, STemplatePool &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_1a91e65540d4fb1a504b3975e322adbcd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STemplatePool::Init</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+<para>Load temlpate table from xml node </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pugi::xml_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xmlNode <ndash/> xml node that describe temlpate list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: loaded; FALSE:failed; Describe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="113" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_1ab798090d620dc2e109525c7d35a8e121" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::STemplatePool::GetTemplateString</definition>
+        <argsstring>(const SStringW &amp;strName) const</argsstring>
+        <name>GetTemplateString</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="115" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; SStringW, SStringW &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl2&lt; IObjRef, STemplatePool &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::STemplatePool</label>
+        <link refid="class_s_o_u_i_1_1_s_template_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; SStringW, SStringW &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl2&lt; IObjRef, STemplatePool &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::STemplatePool</label>
+        <link refid="class_s_o_u_i_1_1_s_template_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="104" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="103" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_1ab798090d620dc2e109525c7d35a8e121" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>GetTemplateString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_1a91e65540d4fb1a504b3975e322adbcd5" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::STemplatePool</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::STemplatePool</scope><name>~SCmnMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

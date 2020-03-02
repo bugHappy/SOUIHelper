@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_window_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SWindowMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton_map" prot="public" virt="non-virtual">SOUI::SSingletonMap&lt; SWindowMgr, SWindow *, SWND &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_window_mgr_1a5f7598a58ea4437198bc77c645fe7ac4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@16</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_window_mgr_1a5f7598a58ea4437198bc77c645fe7ac4ac42d1a708615971f5095797542911346" prot="public">
+          <name>SWND_INVALID</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="26" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_window_mgr_1ae0b0e5583909871f8c43244b324dfc03" prot="protected" static="no" mutable="no">
+        <type>CRITICAL_SECTION</type>
+        <definition>CRITICAL_SECTION SOUI::SWindowMgr::m_lockWndMap</definition>
+        <argsstring></argsstring>
+        <name>m_lockWndMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="44" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_window_mgr_1a95a00d100c9718efd553db28b10941e6" prot="protected" static="no" mutable="no">
+        <type>SWND</type>
+        <definition>SWND SOUI::SWindowMgr::m_hNextWnd</definition>
+        <argsstring></argsstring>
+        <name>m_hNextWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="46" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1a292dc81910613e4f4b81bf0fbcbc756f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SWindowMgr::SWindowMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SWindowMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="28" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1a7684c3863bc8b9345944a47690f79a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SWindowMgr::~SWindowMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SWindowMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="30" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1af4c33d5b137499a6ea71ebbdba031161" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>static SWindow* SOUI::SWindowMgr::GetWindow</definition>
+        <argsstring>(SWND swnd)</argsstring>
+        <name>GetWindow</name>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="33" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1a986b7e1b6df8b4b597942c180723565d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SWindowMgr::IsWindow</definition>
+        <argsstring>(SWND swnd)</argsstring>
+        <name>IsWindow</name>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="35" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1a8857f2c9781a3d01b01ee9f787c31f9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SWND</type>
+        <definition>static SWND SOUI::SWindowMgr::NewWindow</definition>
+        <argsstring>(SWindow *pWnd)</argsstring>
+        <name>NewWindow</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="38" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_mgr_1a514ba58cf261c3924437351d734a3ba9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SWindowMgr::DestroyWindow</definition>
+        <argsstring>(SWND swnd)</argsstring>
+        <name>DestroyWindow</name>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="41" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SWindowMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_window_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SWindowMgr, SWindow *, SWND &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SWindowMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; SWindow *, SWND &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SWindowMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_window_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SWindowMgr, SWindow *, SWND &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SWindowMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; SWindow *, SWND &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" line="23" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h" bodystart="22" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a514ba58cf261c3924437351d734a3ba9" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1af4c33d5b137499a6ea71ebbdba031161" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a986b7e1b6df8b4b597942c180723565d" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>IsWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a95a00d100c9718efd553db28b10941e6" prot="protected" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>m_hNextWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1ae0b0e5583909871f8c43244b324dfc03" prot="protected" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>m_lockWndMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a8857f2c9781a3d01b01ee9f787c31f9c" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>NewWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a292dc81910613e4f4b81bf0fbcbc756f" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>SWindowMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a5f7598a58ea4437198bc77c645fe7ac4ac42d1a708615971f5095797542911346" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>SWND_INVALID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SWindowMgr</scope><name>~SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SWindowMgr</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_mgr_1a7684c3863bc8b9345944a47690f79a0c" prot="public" virt="non-virtual"><scope>SOUI::SWindowMgr</scope><name>~SWindowMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_log4z_stream" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::Log4zStream</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_log4z_stream_1a12273338a8a45d0eeade452e1de1bdd4" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* SOUI::Log4zStream::_begin</definition>
+        <argsstring></argsstring>
+        <name>_begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="214" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_log4z_stream_1adf94d781268cabba3968b14f8595e4d6" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* SOUI::Log4zStream::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="215" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_log4z_stream_1aef79e9bbc8550e6b4e7dfac501d52a3a" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* SOUI::Log4zStream::_cur</definition>
+        <argsstring></argsstring>
+        <name>_cur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="216" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ad106ff7da01af30bf11058ce00c2676a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::Log4zStream::Log4zStream</definition>
+        <argsstring>(char *buf, int len)</argsstring>
+        <name>Log4zStream</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="166" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="259" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a94183299c2c625dab44af4ff5da21d9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::Log4zStream::getCurrentLen</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="167" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ae60b979cc3b83c2dc102f9e970ccb53e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(const void *t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const void *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="177" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="177" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ad12c17149e5298a0546c6c6fc7764ce0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(const char *t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const char *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="179" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="179" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ae2f6553af755245ae6a3400e37493255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(bool t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>bool</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="183" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a7c51d3cb90521b184c92792c1b1e9a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(char t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>char</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="185" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a3c8b13c256b693adb262dbce2c423a85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(unsigned char t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="187" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a0165f5d2a6f138b9a331910ec34b2e0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(short t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>short</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="189" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1adcf4b0a2aebdd0d0ef614cf12eaa0fbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(unsigned short t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="191" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="191" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a97dc809ccc0189b57b036850c22e731e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(int t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="193" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1afcab8282e15496337b9b9a5f44d12fa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(unsigned int t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="195" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="195" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ae59645f8c0077ed157f4ae4f176958e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(long t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="197" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a393d9da1241ae4c7e2c5820911885281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(unsigned long t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="199" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1adc84b7019491728be9a8aad651ad51d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(long long t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>long long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="201" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ae815d5d19ebee07ca17a5a444b33b9da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(unsigned long long t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="203" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a7681fab916bd3cc1d551b00c6c76a672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(float t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="205" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="205" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a0aab2deb8c51af50050f5b6fa5f17b23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(double t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="207" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="207" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1aceb596eca7ed2142ac8aaaebbc54a2dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream&amp; SOUI::Log4zStream::operator&lt;&lt;</definition>
+        <argsstring>(const Log4zBinary &amp;binary)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref> &amp;</type>
+          <declname>binary</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="209" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="209" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a3469e8d64ff5f2d0134438fff4b69c81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeData</definition>
+        <argsstring>(const char *ft,...)</argsstring>
+        <name>writeData</name>
+        <param>
+          <type>const char *</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="169" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="219" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1aaa23f80b047c9a5d3aa635e8b6c9c906" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeLongLong</definition>
+        <argsstring>(long long t)</argsstring>
+        <name>writeLongLong</name>
+        <param>
+          <type>long long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="170" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="266" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a9436bf478fc0ac370ac8fc44d15c8a83" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeULongLong</definition>
+        <argsstring>(unsigned long long t)</argsstring>
+        <name>writeULongLong</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="171" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="276" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1aa8fe814bf5c02614029dfd186d05c7ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writePointer</definition>
+        <argsstring>(const void *t)</argsstring>
+        <name>writePointer</name>
+        <param>
+          <type>const void *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="172" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="286" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a8ed4bfeabb1e3209c91d1b303c2a8d07" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeString</definition>
+        <argsstring>(const char *t)</argsstring>
+        <name>writeString</name>
+        <param>
+          <type>const char *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="173" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="313" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a3f5a7dab5ac7a155c05fb9e702688ac8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeWString</definition>
+        <argsstring>(const wchar_t *t)</argsstring>
+        <name>writeWString</name>
+        <param>
+          <type>const wchar_t *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="174" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="319" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1ac96eac2c369c265bd19e255cdab5b03d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        <definition>Log4zStream &amp; SOUI::Log4zStream::writeBinary</definition>
+        <argsstring>(const Log4zBinary &amp;t)</argsstring>
+        <name>writeBinary</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="175" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="296" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1acc0036d069fb8611b9b2b10ad597ac1a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::Log4zStream::Log4zStream</definition>
+        <argsstring>()</argsstring>
+        <name>Log4zStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="212" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="212" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_log4z_stream_1a2299fb5822640360648bc5a8968015f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::Log4zStream::Log4zStream</definition>
+        <argsstring>(Log4zStream &amp;)</argsstring>
+        <name>Log4zStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="213" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="213" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="164" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="163" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a12273338a8a45d0eeade452e1de1bdd4" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>_begin</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1aef79e9bbc8550e6b4e7dfac501d52a3a" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>_cur</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1adf94d781268cabba3968b14f8595e4d6" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>_end</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a94183299c2c625dab44af4ff5da21d9e" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>getCurrentLen</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ad106ff7da01af30bf11058ce00c2676a" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>Log4zStream</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1acc0036d069fb8611b9b2b10ad597ac1a" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>Log4zStream</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a2299fb5822640360648bc5a8968015f8" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>Log4zStream</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ae60b979cc3b83c2dc102f9e970ccb53e" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ad12c17149e5298a0546c6c6fc7764ce0" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ae2f6553af755245ae6a3400e37493255" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a7c51d3cb90521b184c92792c1b1e9a76" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a3c8b13c256b693adb262dbce2c423a85" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a0165f5d2a6f138b9a331910ec34b2e0c" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1adcf4b0a2aebdd0d0ef614cf12eaa0fbc" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a97dc809ccc0189b57b036850c22e731e" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1afcab8282e15496337b9b9a5f44d12fa4" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ae59645f8c0077ed157f4ae4f176958e2" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a393d9da1241ae4c7e2c5820911885281" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1adc84b7019491728be9a8aad651ad51d2" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ae815d5d19ebee07ca17a5a444b33b9da" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a7681fab916bd3cc1d551b00c6c76a672" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a0aab2deb8c51af50050f5b6fa5f17b23" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1aceb596eca7ed2142ac8aaaebbc54a2dc" prot="public" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1ac96eac2c369c265bd19e255cdab5b03d" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeBinary</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a3469e8d64ff5f2d0134438fff4b69c81" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeData</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1aaa23f80b047c9a5d3aa635e8b6c9c906" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeLongLong</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1aa8fe814bf5c02614029dfd186d05c7ac" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writePointer</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a8ed4bfeabb1e3209c91d1b303c2a8d07" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeString</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a9436bf478fc0ac370ac8fc44d15c8a83" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeULongLong</name></member>
+      <member refid="class_s_o_u_i_1_1_log4z_stream_1a3f5a7dab5ac7a155c05fb9e702688ac8" prot="private" virt="non-virtual"><scope>SOUI::Log4zStream</scope><name>writeWString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

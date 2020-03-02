@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_accelerator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAccelerator</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_hot_key_ctrl" prot="public" virt="non-virtual">SOUI::SHotKeyCtrl</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_accelerator_1a703df2808b0376a95aed736d9eca3498" prot="protected" static="no" mutable="no">
+        <type>WORD</type>
+        <definition>WORD SOUI::SAccelerator::m_wModifier</definition>
+        <argsstring></argsstring>
+        <name>m_wModifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="99" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_accelerator_1af76307b626bb38b0705d50aa1f9d9563" prot="protected" static="no" mutable="no">
+        <type>WORD</type>
+        <definition>WORD SOUI::SAccelerator::m_wVK</definition>
+        <argsstring></argsstring>
+        <name>m_wVK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="100" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1aef71e14304e32aee3349dd3917972131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAccelerator::SAccelerator</definition>
+        <argsstring>(DWORD dwAccel)</argsstring>
+        <name>SAccelerator</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwAccel</declname>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_accelerator" kindref="compound">CAccelerator</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwAccel <ndash/> 加速键值 Describe <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="34" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a32dd564f7d24c2c075dded95287ea51d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAccelerator::SAccelerator</definition>
+        <argsstring>(UINT vKey=0, bool bCtrl=false, bool bAlt=false, bool bShift=false)</argsstring>
+        <name>SAccelerator</name>
+        <param>
+          <type>UINT</type>
+          <declname>vKey</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bCtrl</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAlt</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bShift</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_accelerator" kindref="compound">CAccelerator</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vKey <ndash/> 键值 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bCtrl <ndash/> 与Ctrl组合 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bAlt <ndash/> 与Alt组合 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bShift <ndash/> 与Shilft组合 Describe <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="45" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a33db7dcc8811e8c61b55911af8795145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAccelerator::~SAccelerator</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SAccelerator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>析构函数 Describe <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para>~CAccelerator </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="52" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a99b83c9854e7a090d868d4ce9cbe0a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::SAccelerator::FormatHotkey</definition>
+        <argsstring>()</argsstring>
+        <name>FormatHotkey</name>
+        <briefdescription>
+<para>获得当前加速键的字符串形式 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FormatHotkey <simplesect kind="return"><para>SOUI::SStringT <ndash/> 加速键的字符串形式 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a983104dc580cbcbf7b9baf4b7d4d8604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>WORD</type>
+        <definition>WORD SOUI::SAccelerator::GetModifier</definition>
+        <argsstring>() const</argsstring>
+        <name>GetModifier</name>
+        <briefdescription>
+<para>获得加速键的修饰位 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetModifier <simplesect kind="return"><para>WORD <ndash/> 加速键的修饰键 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="69" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a3a1812d28e99c15dfab69741e33c2357" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>WORD</type>
+        <definition>WORD SOUI::SAccelerator::GetKey</definition>
+        <argsstring>() const</argsstring>
+        <name>GetKey</name>
+        <briefdescription>
+<para>获得加速键的主键 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetKey <simplesect kind="return"><para>WORD <ndash/> 加速键的主键 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="77" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1ad51481acf670bbd99d26485e4f9ef762" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>WORD</type>
+        <definition>static WORD SOUI::SAccelerator::VkFromString</definition>
+        <argsstring>(LPCTSTR pszKey)</argsstring>
+        <name>VkFromString</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="79" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a29db37188df0f136fa02fdb86a08f18b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>static SStringT SOUI::SAccelerator::GetKeyName</definition>
+        <argsstring>(WORD vk)</argsstring>
+        <name>GetKeyName</name>
+        <param>
+          <type>WORD</type>
+          <declname>vk</declname>
+        </param>
+        <briefdescription>
+<para>将键盘值转换为对应的字符串 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetKeyName <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vk <ndash/> 键盘值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SOUI::SStringT <ndash/> 键名 Describe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="87" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1a1a67e48ac6af5683f305648088256d6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>static SStringT SOUI::SAccelerator::FormatAccelKey</definition>
+        <argsstring>(DWORD dwAccel)</argsstring>
+        <name>FormatAccelKey</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwAccel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="89" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerator_1ad7d8e6e18329fca0ce02e853d9a7a35e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>static DWORD SOUI::SAccelerator::TranslateAccelKey</definition>
+        <argsstring>(LPCTSTR pszKeyName)</argsstring>
+        <name>TranslateAccelKey</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszKeyName</declname>
+        </param>
+        <briefdescription>
+<para>解析与字符串对应的加速键值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TranslateAccelKey <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszKeyName <ndash/> 定义加速键的字符串 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DWORD <ndash/> 加速键值 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="97" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SAccelerator</label>
+        <link refid="class_s_o_u_i_1_1_s_accelerator"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SHotKeyCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_hot_key_ctrl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="25" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="24" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a1a67e48ac6af5683f305648088256d6f" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>FormatAccelKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a99b83c9854e7a090d868d4ce9cbe0a61" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>FormatHotkey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a3a1812d28e99c15dfab69741e33c2357" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>GetKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a29db37188df0f136fa02fdb86a08f18b" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>GetKeyName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a983104dc580cbcbf7b9baf4b7d4d8604" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>GetModifier</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a703df2808b0376a95aed736d9eca3498" prot="protected" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>m_wModifier</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1af76307b626bb38b0705d50aa1f9d9563" prot="protected" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>m_wVK</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1aef71e14304e32aee3349dd3917972131" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>SAccelerator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a32dd564f7d24c2c075dded95287ea51d" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>SAccelerator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1ad7d8e6e18329fca0ce02e853d9a7a35e" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>TranslateAccelKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1ad51481acf670bbd99d26485e4f9ef762" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>VkFromString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerator_1a33db7dcc8811e8c61b55911af8795145" prot="public" virt="non-virtual"><scope>SOUI::SAccelerator</scope><name>~SAccelerator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

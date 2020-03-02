@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_tab_ctrl_8h" kind="file" language="C++">
+    <compoundname>STabCtrl.h</compoundname>
+    <includes refid="_s_wnd_8h" local="no">core/SWnd.h</includes>
+    <includes refid="_split_string_8h" local="no">helper/SplitString.h</includes>
+    <includedby refid="_soui_ctrls_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="52">
+        <label>helper/SColor.h</label>
+        <link refid="_s_color_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>sobject/sobject.hpp</label>
+      </node>
+      <node id="62">
+        <label>helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>SwndStyle.h</label>
+        <link refid="_s_wnd_style_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>windows.h</label>
+      </node>
+      <node id="6">
+        <label>assert.h</label>
+      </node>
+      <node id="66">
+        <label>res.mgr/SDpiAwareFont.h</label>
+        <link refid="_s_dpi_aware_font_8h_source"/>
+      </node>
+      <node id="49">
+        <label>res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="35">
+        <label>stdint.h</label>
+        <link refid="stdint_8h_source"/>
+      </node>
+      <node id="5">
+        <label>SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h</label>
+        <link refid="_s_tab_ctrl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>interface/scaret-i.h</label>
+        <link refid="scaret-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>interface/STooltip-i.h</label>
+        <link refid="stooltip-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>animation/SInterpolatorImpl.h</label>
+        <link refid="_s_interpolator_impl_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>core/SDefine.h</label>
+        <link refid="_s_define_8h_source"/>
+      </node>
+      <node id="29">
+        <label>interface/SAnimation-i.h</label>
+        <link refid="_s_animation-i_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>interface/sresprovider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>matrix/SFloat.h</label>
+        <link refid="_s_float_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>res.mgr/SFontInfo.h</label>
+        <link refid="_s_font_info_8h_source"/>
+      </node>
+      <node id="63">
+        <label>helper/SwndMsgCracker.h</label>
+        <link refid="_swnd_msg_cracker_8h_source"/>
+      </node>
+      <node id="18">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>animation/STransformation.h</label>
+        <link refid="_s_transformation_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="50">
+        <label>res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>SwndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>matrix/SMatrix.h</label>
+        <link refid="_s_matrix_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SRect.h</label>
+        <link refid="_s_rect_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>interface/SLog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="47">
+        <label>interface/Sskinobj-i.h</label>
+        <link refid="_s_skinobj-i_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>atl.mini/scomcli.h</label>
+      </node>
+      <node id="40">
+        <label>res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>helper/SCriticalSection.h</label>
+      </node>
+      <node id="28">
+        <label>sobject/sobject-i.h</label>
+      </node>
+      <node id="42">
+        <label>souicoll.h</label>
+      </node>
+      <node id="55">
+        <label>core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>interface/SInterpolator-i.h</label>
+        <link refid="sinterpolator-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="56">
+        <label>OleAcc.h</label>
+      </node>
+      <node id="15">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>time.h</label>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>interface/SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../core/smsgloop.h</label>
+        <link refid="_s_msg_loop_8h_source"/>
+      </node>
+      <node id="8">
+        <label>core/ssingleton.h</label>
+        <link refid="_s_singleton_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>animation/SAnimation.h</label>
+        <link refid="_s_animation_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>interface/slayout-i.h</label>
+        <link refid="slayout-i_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SPoint.h</label>
+        <link refid="_s_point_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>control/SRealWndHandler-i.h</label>
+        <link refid="_s_real_wnd_handler-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>interface/SValueAnimator-i.h</label>
+        <link refid="_s_value_animator-i_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>layout/SLayoutSize.h</label>
+        <link refid="_s_layout_size_8h_source"/>
+      </node>
+      <node id="26">
+        <label>interface/SAttrStorage-i.h</label>
+        <link refid="_s_attr_storage-i_8h_source"/>
+      </node>
+      <node id="17">
+        <label>event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>res.mgr/SNamedValue.h</label>
+        <link refid="_s_named_value_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>../helper/SplitString.h</label>
+        <link refid="_split_string_8h_source"/>
+      </node>
+      <node id="61">
+        <label>interface/saccproxy-i.h</label>
+        <link refid="saccproxy-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>interface/STimelineHandler-i.h</label>
+        <link refid="_s_timeline_handler-i_8h_source"/>
+      </node>
+      <node id="70">
+        <label>OCIdl.h</label>
+      </node>
+      <node id="19">
+        <label>interface/STranslator-i.h</label>
+        <link refid="_s_translator-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h</label>
+        <link refid="_s_tab_ctrl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_u_i_1_1_s_tab_page" prot="public">SOUI::STabPage</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_tab_ctrl" prot="public">SOUI::STabCtrl</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2014-2050 SOUI团队 All rights reserved.</para>
+<para><simplesect kind="version"><para>v1.0 <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="author"><para>soui <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="date"><para>2014-07-06</para>
+</simplesect>
+Describe 扩展列表框</para>
+<para>Copyright (C) 2014-2050 SOUI团队 All rights reserved.</para>
+<para><simplesect kind="version"><para>v1.0 <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="author"><para>soui <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="date"><para>2014-07-06</para>
+</simplesect>
+Describe SOUI应用程序入口 </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_wnd_8h" kindref="compound">core/SWnd.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SplitString.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="class_s_o_u_i_1_1_s_tab_page" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_CLASS_NAME(<ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref>,<sp/>L</highlight><highlight class="stringliteral">&quot;page&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_s_tab_ctrl" kindref="compound">STabCtrl</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="class_s_o_u_i_1_1_s_tab_page_1a354d31f7b34b697c4813187e1571273c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_tab_page_1a354d31f7b34b697c4813187e1571273c" kindref="member">STabPage</ref>():m_iIcon(-1),m_strTitle(this)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bVisible=FALSE;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46" refid="class_s_o_u_i_1_1_s_tab_page_1a081778465dca22afb067e83946697dad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_page_1a081778465dca22afb067e83946697dad" kindref="member">~STabPage</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56" refid="class_s_o_u_i_1_1_s_tab_page_1adfc7cdc164d08dc39051dfeb3ecfe847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPCTSTR<sp/><ref refid="class_s_o_u_i_1_1_s_tab_page_1adfc7cdc164d08dc39051dfeb3ecfe847" kindref="member">GetTitle</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_strTitle.GetText(FALSE);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_s_o_u_i_1_1_s_tab_page_1af347eae3eff469d12ba79676c2910670" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_page_1af347eae3eff469d12ba79676c2910670" kindref="member">SetTitle</ref>(LPCTSTR<sp/>lpszTitle)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_strTitle.SetText(lpszTitle);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetIconIndex()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_iIcon;}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetIconIndex(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iIcon)<sp/>{m_iIcon=iIcon;}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="class_s_o_u_i_1_1_s_tab_page_1a193afafe2b0fda66422d4c50ef2b3814" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="class_s_o_u_i_1_1_s_tab_page_1a193afafe2b0fda66422d4c50ef2b3814" kindref="member">OnUpdateToolTip</ref>(CPoint<sp/>pt,<sp/><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref><sp/>&amp;tipInfo){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_BEGIN()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_I18NSTRT(L&quot;title&quot;,<sp/>m_strTitle,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;iconIndex&quot;,<sp/>m_iIcon,FALSE)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_END()</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>protected:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="class_s_o_u_i_1_1_s_tab_page_1a57d7bf12f29235ca383f978e74fa1830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_tr_text" kindref="compound">STrText</ref><sp/>m_strTitle;<sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>m_iIcon;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_s_o_u_i_1_1_s_tab_ctrl" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/>class<sp/>SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl" kindref="compound">STabCtrl</ref><sp/>:<sp/>public<sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">STabSlider;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_CLASS_NAME(<ref refid="class_s_o_u_i_1_1_s_tab_ctrl" kindref="compound">STabCtrl</ref>,<sp/>L</highlight><highlight class="stringliteral">&quot;tabctrl&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5cb26d084ec7aa1880f48913c0b0bf25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5cb26d084ec7aa1880f48913c0b0bf25" kindref="member">m_nHoverTabItem</ref>;<sp/></highlight></codeline>
+<codeline lineno="111" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4ba3fb2ba62afaa4554e37ddb4aa1055" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4ba3fb2ba62afaa4554e37ddb4aa1055" kindref="member">m_nCurrentPage</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a34f5be401ff453ed88fcb25ed41b74df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a34f5be401ff453ed88fcb25ed41b74df" kindref="member">m_nTabInterSize</ref>;<sp/></highlight></codeline>
+<codeline lineno="113" refid="class_s_o_u_i_1_1_s_tab_ctrl_1afdddb1b2164205b6ea9df7cc6278337c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/>m_szTab[2];<sp/></highlight></codeline>
+<codeline lineno="114" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4e73a2338321a1ac034d87ef2074d218" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4e73a2338321a1ac034d87ef2074d218" kindref="member">m_nTabPos</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a18316cbe7d72d635bb4236af47028428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref><sp/>*<ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a18316cbe7d72d635bb4236af47028428" kindref="member">m_pSkinTab</ref>;<sp/></highlight></codeline>
+<codeline lineno="116" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a73dd56bda7f41c4c5b21a4db079c5f1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref><sp/>*<ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a73dd56bda7f41c4c5b21a4db079c5f1f" kindref="member">m_pSkinIcon</ref>;<sp/></highlight></codeline>
+<codeline lineno="117" refid="class_s_o_u_i_1_1_s_tab_ctrl_1acbaabeb611606249a9fac10e7299b370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref><sp/>*<ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1acbaabeb611606249a9fac10e7299b370" kindref="member">m_pSkinTabInter</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a1bd8e0d6fe3d92122c186022e194feb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref><sp/>*<ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a1bd8e0d6fe3d92122c186022e194feb4" kindref="member">m_pSkinFrame</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="class_s_o_u_i_1_1_s_tab_ctrl_1af11a8fafdef61c2eae5594fde52c8d59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/>m_ptIcon[2];<sp/></highlight></codeline>
+<codeline lineno="120" refid="class_s_o_u_i_1_1_s_tab_ctrl_1aebaa9b87c1374c89cc99576fbf335f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/>m_ptText[2];<sp/></highlight></codeline>
+<codeline lineno="121" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a42a8c3a706b1e5f2f2e08001feffb986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a42a8c3a706b1e5f2f2e08001feffb986" kindref="member">m_nTabAlign</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a57ad3095cd3ae1d96fc7c0affdf4270f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SArray&lt;STabPage*&gt;<sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a57ad3095cd3ae1d96fc7c0affdf4270f" kindref="member">m_lstPages</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STabSlider<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>m_tabSlider;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AlignTop,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AlignLeft,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AlignBottom,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AlignRight,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TEXTDIR</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text_Horz,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text_Vert,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}m_txtDir;</highlight></codeline>
+<codeline lineno="138" refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8c88429b87b4837bd7317852fca9e7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8c88429b87b4837bd7317852fca9e7c" kindref="member">m_nAnimateSteps</ref>;<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_nAniamteType;</highlight><highlight class="comment">/*动画样式*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SAutoRefPtr&lt;IInterpolator&gt;<sp/>m_aniInterpolator;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl" kindref="compound">STabCtrl</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a05ec2dd1aab8c5504dc283a3546e3bb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a05ec2dd1aab8c5504dc283a3546e3bb4" kindref="member">~STabCtrl</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5d7c5444700769a07f91166519f36e7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5d7c5444700769a07f91166519f36e7e" kindref="member">GetCurSel</ref>()</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_nCurrentPage;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>GetPage(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPage);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>GetPage(LPCTSTR<sp/>pszName,BOOL<sp/>bTitle=TRUE);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>SetCurSel(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>SetCurSel(LPCTSTR<sp/>pszName,BOOL<sp/>bTitle=TRUE);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>SetItemTitle(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex,<sp/>LPCTSTR<sp/>lpszTitle);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>CreateChildren(pugi::xml_node<sp/>xmlNode);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>InsertItem(LPCWSTR<sp/>lpContent,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iInsert=-1);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>InsertItem(pugi::xml_node<sp/>xmlNode,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iInsert=-1,BOOL<sp/>bLoading=FALSE);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8d759496634c9c04ef7d2941be99174" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8d759496634c9c04ef7d2941be99174" kindref="member">GetItemCount</ref>()</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)m_lstPages.GetCount();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref>*<sp/>GetItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>RemoveItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSelPage=0);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RemoveAllItems(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetPageIndex(LPCTSTR<sp/>pszName,BOOL<sp/>bTitle);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8cef0318530c5262cbdb4f0da2cf46de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8cef0318530c5262cbdb4f0da2cf46de" kindref="member">OnItemInserted</ref>(<ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref><sp/>*pItem){}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="class_s_o_u_i_1_1_s_tab_ctrl_1af3704ef4a55507ac4cc505800b4ecf60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1af3704ef4a55507ac4cc505800b4ecf60" kindref="member">OnItemRemoved</ref>(<ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref><sp/>*pItem){}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BeforePaint(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,<sp/><ref refid="class_s_o_u_i_1_1_s_painter" kindref="compound">SPainter</ref><sp/>&amp;painter);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>CRect<sp/>GetChildrenLayoutRect()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>CRect<sp/>GetTitleRect();</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>GetItemRect(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex,<sp/>CRect<sp/>&amp;rcItem);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DrawItem(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CRect<sp/>&amp;rcItem,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iItem,DWORD<sp/>dwState);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref><sp/>*<sp/>CreatePageFromXml(pugi::xml_node<sp/>xmlPage);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="368" refid="class_s_o_u_i_1_1_s_tab_ctrl_1a0203e32f74318bd198c7d7033177773d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a0203e32f74318bd198c7d7033177773d" kindref="member">OnGetDlgCode</ref>()</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SC_WANTARROWS;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>OnUpdateToolTip(CPoint<sp/>pt,<sp/><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref><sp/>&amp;<sp/>tipInfo);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateChildrenPosition();</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnInitFinished(pugi::xml_node<sp/>xmlNode);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnColorize(COLORREF<sp/>cr);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScaleChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nScale);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HRESULT<sp/>OnLanguageChanged();</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HitTest(CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSliderFinish();</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TextOutV(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SStringT<sp/>&amp;<sp/>strText);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DrawTextV(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,<sp/>CRect<sp/>rcText,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SStringT<sp/>&amp;<sp/>strText);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SIZE<sp/>MeasureTextV(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SStringT<sp/>&amp;<sp/>strText);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnPaint(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLButtonDown(UINT<sp/>nFlags,<sp/>CPoint<sp/>point);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnMouseMove(UINT<sp/>nFlags,<sp/>CPoint<sp/>point);</highlight></codeline>
+<codeline lineno="432" refid="class_s_o_u_i_1_1_s_tab_ctrl_1afe9404492331465299fb62b901654fac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1afe9404492331465299fb62b901654fac" kindref="member">OnMouseLeave</ref>()</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnMouseMove(0,CPoint(-1,-1));</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnKeyDown(UINT<sp/>nChar,<sp/>UINT<sp/>nRepCnt,<sp/>UINT<sp/>nFlags);</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnDestroy();</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_BEGIN()</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_PAINT_EX(OnPaint)</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_DESTROY(OnDestroy)</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_LBUTTONDOWN(OnLButtonDown)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_MOUSEMOVE(OnMouseMove)</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_MOUSELEAVE(OnMouseLeave)</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_KEYDOWN(OnKeyDown)</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_END()</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_BEGIN()</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;curSel&quot;,<sp/>m_nCurrentPage,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE2(L&quot;tabSize&quot;,m_szTab,TRUE)</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;tabWidth&quot;,<sp/>m_szTab[0],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;tabHeight&quot;,<sp/>m_szTab[1],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;tabPos&quot;,<sp/>m_nTabPos,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;tabInterSize&quot;,<sp/>m_nTabInterSize,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;tabInterSkin&quot;,<sp/>m_pSkinTabInter,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;tabSkin&quot;,<sp/>m_pSkinTab,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;iconSkin&quot;,<sp/>m_pSkinIcon,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;frameSkin&quot;,<sp/>m_pSkinFrame,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;icon-x&quot;,<sp/>m_ptIcon[0],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;icon-y&quot;,<sp/>m_ptIcon[1],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;text-x&quot;,<sp/>m_ptText[0],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L&quot;text-y&quot;,<sp/>m_ptText[1],<sp/>FALSE)</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_BEGIN(L&quot;tabAlign&quot;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;top&quot;,<sp/>AlignTop)</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;left&quot;,<sp/>AlignLeft)</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;right&quot;,<sp/>AlignRight)</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;bottom&quot;,<sp/>AlignBottom)</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_END(m_nTabAlign)</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_BEGIN(L&quot;textDir&quot;,<sp/>TEXTDIR,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;hori&quot;,<sp/>Text_Horz)</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;horizontal&quot;,<sp/>Text_Horz)</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;vert&quot;,<sp/>Text_Vert)</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_VALUE(L&quot;vertical&quot;,<sp/>Text_Vert)</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_ENUM_END(m_txtDir)</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;animateSteps&quot;,m_nAnimateSteps,FALSE)</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;animateType&quot;,<sp/>m_nAniamteType,<sp/>FALSE)</highlight><highlight class="comment">/*动画样式0：背景跟着动，1：背景不动*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INTERPOLATOR(L&quot;interpolator&quot;,m_aniInterpolator,FALSE)</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_CHAIN_PTR(m_aniInterpolator,0)</highlight><highlight class="comment">//chain<sp/>attributes<sp/>to<sp/>interpolator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_END()</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal">}</highlight><highlight class="comment">//namespace<sp/>SOUI</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,911 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_panel_8h" kind="file" language="C++">
+    <compoundname>SPanel.h</compoundname>
+    <includes refid="_s_wnd_8h" local="no">core/SWnd.h</includes>
+    <includes refid="_s_scroll_bar_handler_8h" local="no">core/SScrollBarHandler.h</includes>
+    <includedby refid="_s_rich_edit_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h</includedby>
+    <includedby refid="_s_listbox_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h</includedby>
+    <includedby refid="_s_list_ctrl_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h</includedby>
+    <includedby refid="_s_m_c_list_view_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h</includedby>
+    <includedby refid="_soui_ctrls_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</includedby>
+    <includedby refid="_s_tree_ctrl_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/STreeCtrl.h</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="52">
+        <label>helper/SColor.h</label>
+        <link refid="_s_color_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>sobject/sobject.hpp</label>
+      </node>
+      <node id="62">
+        <label>helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>core/SScrollBarHandler.h</label>
+        <link refid="_s_scroll_bar_handler_8h_source"/>
+      </node>
+      <node id="65">
+        <label>SwndStyle.h</label>
+        <link refid="_s_wnd_style_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>windows.h</label>
+      </node>
+      <node id="6">
+        <label>assert.h</label>
+      </node>
+      <node id="66">
+        <label>res.mgr/SDpiAwareFont.h</label>
+        <link refid="_s_dpi_aware_font_8h_source"/>
+      </node>
+      <node id="49">
+        <label>res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="35">
+        <label>stdint.h</label>
+        <link refid="stdint_8h_source"/>
+      </node>
+      <node id="5">
+        <label>SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>interface/scaret-i.h</label>
+        <link refid="scaret-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>interface/STooltip-i.h</label>
+        <link refid="stooltip-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>animation/SInterpolatorImpl.h</label>
+        <link refid="_s_interpolator_impl_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>core/SDefine.h</label>
+        <link refid="_s_define_8h_source"/>
+      </node>
+      <node id="29">
+        <label>interface/SAnimation-i.h</label>
+        <link refid="_s_animation-i_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>interface/sresprovider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>matrix/SFloat.h</label>
+        <link refid="_s_float_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>res.mgr/SFontInfo.h</label>
+        <link refid="_s_font_info_8h_source"/>
+      </node>
+      <node id="63">
+        <label>helper/SwndMsgCracker.h</label>
+        <link refid="_swnd_msg_cracker_8h_source"/>
+      </node>
+      <node id="18">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>animation/STransformation.h</label>
+        <link refid="_s_transformation_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="50">
+        <label>res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>SwndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>matrix/SMatrix.h</label>
+        <link refid="_s_matrix_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SRect.h</label>
+        <link refid="_s_rect_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>interface/SLog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="47">
+        <label>interface/Sskinobj-i.h</label>
+        <link refid="_s_skinobj-i_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>atl.mini/scomcli.h</label>
+      </node>
+      <node id="40">
+        <label>res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>helper/SCriticalSection.h</label>
+      </node>
+      <node id="28">
+        <label>sobject/sobject-i.h</label>
+      </node>
+      <node id="42">
+        <label>souicoll.h</label>
+      </node>
+      <node id="55">
+        <label>core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>interface/SInterpolator-i.h</label>
+        <link refid="sinterpolator-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="56">
+        <label>OleAcc.h</label>
+      </node>
+      <node id="15">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>time.h</label>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>interface/SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../core/smsgloop.h</label>
+        <link refid="_s_msg_loop_8h_source"/>
+      </node>
+      <node id="8">
+        <label>core/ssingleton.h</label>
+        <link refid="_s_singleton_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>animation/SAnimation.h</label>
+        <link refid="_s_animation_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>interface/slayout-i.h</label>
+        <link refid="slayout-i_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SPoint.h</label>
+        <link refid="_s_point_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>control/SRealWndHandler-i.h</label>
+        <link refid="_s_real_wnd_handler-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>interface/SValueAnimator-i.h</label>
+        <link refid="_s_value_animator-i_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>layout/SLayoutSize.h</label>
+        <link refid="_s_layout_size_8h_source"/>
+      </node>
+      <node id="26">
+        <label>interface/SAttrStorage-i.h</label>
+        <link refid="_s_attr_storage-i_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SPanel.h</label>
+        <link refid="_s_panel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>res.mgr/SNamedValue.h</label>
+        <link refid="_s_named_value_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>../helper/SplitString.h</label>
+        <link refid="_split_string_8h_source"/>
+      </node>
+      <node id="61">
+        <label>interface/saccproxy-i.h</label>
+        <link refid="saccproxy-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>interface/STimelineHandler-i.h</label>
+        <link refid="_s_timeline_handler-i_8h_source"/>
+      </node>
+      <node id="70">
+        <label>OCIdl.h</label>
+      </node>
+      <node id="19">
+        <label>interface/STranslator-i.h</label>
+        <link refid="_s_translator-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h</label>
+        <link refid="_s_list_ctrl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STreeCtrl.h</label>
+        <link refid="_s_tree_ctrl_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBox.h</label>
+        <link refid="_s_combo_box_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="10">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h</label>
+        <link refid="_s_m_c_list_view_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h</label>
+        <link refid="_s_listbox_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h</label>
+        <link refid="_s_rich_edit_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SPanel.h</label>
+        <link refid="_s_panel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBase.h</label>
+        <link refid="_s_combo_base_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_u_i_1_1_s_panel" prot="public">SOUI::SPanel</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_scroll_view" prot="public">SOUI::SScrollView</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2014-2050 All rights reserved.</para>
+<para><simplesect kind="version"><para>v1.0 <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="author"><para><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref> group <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="date"><para>2014/08/02</para>
+</simplesect>
+Describe SOUI的窗口面板，实现在非客户区的滚动条支持 </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_wnd_8h" kindref="compound">core/SWnd.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/SScrollBarHandler.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>SbID<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SSB_NULL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SSB_HORZ<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SSB_VERT<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SSB_BOTH<sp/>=<sp/>(SSB_HORZ<sp/>|<sp/>SSB_VERT),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_s_o_u_i_1_1_s_panel" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>,<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_scroll_bar_host" kindref="compound">IScrollBarHost</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_CLASS_NAME(<ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref>,<sp/>L</highlight><highlight class="stringliteral">&quot;div&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>ShowScrollBar(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wBar,<sp/>BOOL<sp/>bShow);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>EnableScrollBar(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wBar,BOOL<sp/>bEnable);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>IsScrollBarEnable(BOOL<sp/>bVertical);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetScrollInfo(SCROLLINFO<sp/>si,BOOL<sp/>bVertical);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>SetScrollPos(BOOL<sp/>bVertical,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nNewPos,BOOL<sp/>bRedraw);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetScrollPos(BOOL<sp/>bVertical);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>SetScrollRange(BOOL<sp/>bVertical,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nMinPos,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nMaxPos,BOOL<sp/>bRedraw);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>GetScrollRange(BOOL<sp/>bVertical,<sp/><sp/><sp/><sp/>LPINT<sp/>lpMinPos,<sp/><sp/><sp/><sp/>LPINT<sp/>lpMaxPos);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>HasScrollBar(BOOL<sp/>bVertical)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetClientRect(LPRECT<sp/>pRect)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>CRect<sp/>GetClientRect()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>通过<sp/>IScrollBarHost<sp/>继承</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>CRect<sp/>GetScrollBarRect(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref><sp/>*<sp/>GetScrollBarSkin(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SCROLLINFO<sp/>*<sp/>GetScrollBarInfo(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetScrollBarArrowSize(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScrollUpdatePart(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPart)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_swnd_container" kindref="compound">ISwndContainer</ref><sp/>*<sp/>GetScrollBarContainer()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsScrollBarEnable(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScrollUpdateThumbTrack(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPos)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScrollCommand(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPos)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScrollSetTimer(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>UINT<sp/>uElapse)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScrollKillTimer(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bVert,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>IInterpolator<sp/>*<sp/>GetScrollInterpolator()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetScrollFadeFrames()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BYTE<sp/>GetScrollThumbTrackMinAlpha()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>GetScrollLineSize(BOOL<sp/>bVertical);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>OnScroll(BOOL<sp/>bVertical,UINT<sp/>uCode,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPos);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnColorize(COLORREF<sp/>cr);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnScaleChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nScale);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetSbWidth()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ScrollUpdate();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HRESULT<sp/>OnAttrScrollbarSkin(SStringW<sp/>strValue,BOOL<sp/>bLoading);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SCROLLINFO<sp/>m_siVer,m_siHoz;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_skin_scrollbar" kindref="compound">SSkinScrollbar</ref><sp/>*m_pSkinSb;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//修改为私有，派生类只能使用GetSbArrowSize(),GetSbWidth()获取</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbArrowSize;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbWid;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CRect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_rcClient;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbLeft;<sp/><sp/><sp/></highlight><highlight class="comment">//滚动条距离左边距离</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbRight;<sp/><sp/></highlight><highlight class="comment">//滚动条距离边边距离</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbTop;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//滚动条距离上边距离</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/><sp/><sp/><sp/>m_nSbBottom;<sp/></highlight><highlight class="comment">//滚动条距离下边距离</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SbID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dragSb,m_hitSb;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_wBarVisible;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//滚动条显示信息</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_wBarEnable;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//滚动条可操作信息</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_scroll_bar_handler" kindref="compound">SScrollBarHandler</ref><sp/><sp/><sp/>m_sbVert;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_scroll_bar_handler" kindref="compound">SScrollBarHandler</ref><sp/><sp/><sp/>m_sbHorz;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dwUpdateTime;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//记录调用UpdateSWindow的时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dwUpdateInterval;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_zDelta;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_nScrollSpeed;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>SAutoRefPtr&lt;IInterpolator&gt;<sp/>m_fadeInterpolator;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_fadeFrames;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BYTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bySbThumbTrackMinAlpha;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_BEGIN()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_CUSTOM(L</highlight><highlight class="stringliteral">&quot;sbSkin&quot;</highlight><highlight class="normal">,OnAttrScrollbarSkin)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbArrowSize&quot;</highlight><highlight class="normal">,<sp/>m_nSbArrowSize,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbWid&quot;</highlight><highlight class="normal">,<sp/>m_nSbWid,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L</highlight><highlight class="stringliteral">&quot;sbEnable&quot;</highlight><highlight class="normal">,<sp/>m_wBarEnable,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_UINT(L</highlight><highlight class="stringliteral">&quot;updateInterval&quot;</highlight><highlight class="normal">,<sp/>m_dwUpdateInterval,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_UINT(L</highlight><highlight class="stringliteral">&quot;scrollSpeed&quot;</highlight><highlight class="normal">,m_nScrollSpeed,FALSE)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbLeft&quot;</highlight><highlight class="normal">,<sp/>m_nSbLeft,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbRight&quot;</highlight><highlight class="normal">,<sp/>m_nSbRight,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbTop&quot;</highlight><highlight class="normal">,<sp/>m_nSbTop,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_LAYOUTSIZE(L</highlight><highlight class="stringliteral">&quot;sbBottom&quot;</highlight><highlight class="normal">,<sp/>m_nSbBottom,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L</highlight><highlight class="stringliteral">&quot;sbFadeFrames&quot;</highlight><highlight class="normal">,<sp/>m_fadeFrames,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L</highlight><highlight class="stringliteral">&quot;sbTrumbTrackMinAlpha&quot;</highlight><highlight class="normal">,<sp/>m_bySbThumbTrackMinAlpha,FALSE)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INTERPOLATOR(L</highlight><highlight class="stringliteral">&quot;sbFadeInterpolator&quot;</highlight><highlight class="normal">,<sp/>m_fadeInterpolator,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_CHAIN_PTR(m_fadeInterpolator,<sp/>0)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_END()</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OnCreate(LPVOID);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnDestroy();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNcPaint(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>OnNcHitTest(CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNcLButtonDown(UINT<sp/>nFlags,<sp/>CPoint<sp/>point);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNcLButtonUp(UINT<sp/>nFlags,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNcMouseMove(UINT<sp/>nFlags,<sp/>CPoint<sp/>point);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNcMouseLeave();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//滚动条显示或者隐藏时发送该消息</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LRESULT<sp/>OnNcCalcSize(BOOL<sp/>bCalcValidRects,<sp/>LPARAM<sp/>lParam);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>OnMouseWheel(UINT<sp/>nFlags,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>zDelta,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnTimer(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cTimerID);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnShowWindow(BOOL<sp/>bShow,<sp/>UINT<sp/>nStatus);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnEnable(BOOL<sp/>bEnable,<sp/>UINT<sp/>uStatus);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnVScroll(UINT<sp/>nSBCode,<sp/>UINT<sp/>nPos,<sp/>HWND);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnHScroll(UINT<sp/>nSBCode,<sp/>UINT<sp/>nPos,<sp/>HWND);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_BEGIN()</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_CREATE(OnCreate)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_DESTROY(OnDestroy)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCPAINT_EX(OnNcPaint)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCCALCSIZE(OnNcCalcSize)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCLBUTTONDOWN(OnNcLButtonDown)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCLBUTTONUP(OnNcLButtonUp)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCLBUTTONDBLCLK(OnNcLButtonDown)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCMOUSEMOVE(OnNcMouseMove)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_NCMOUSELEAVE(OnNcMouseLeave)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_MOUSEWHEEL(OnMouseWheel)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_TIMER_EX(OnTimer)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_SHOWWINDOW(OnShowWindow)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_ENABLE_EX(OnEnable)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_VSCROLL(OnVScroll)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_HSCROLL(OnHScroll)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_END()</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="class_s_o_u_i_1_1_s_scroll_view" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_scroll_view" kindref="compound">SScrollView</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_CLASS_NAME(<ref refid="class_s_o_u_i_1_1_s_scroll_view" kindref="compound">SScrollView</ref>,<sp/>L</highlight><highlight class="stringliteral">&quot;scrollview&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_scroll_view" kindref="compound">SScrollView</ref>();</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_s_o_u_i_1_1_s_scroll_view" kindref="compound">SScrollView</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CSize<sp/>GetViewSize();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetViewSize(CSize<sp/>szView);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPoint<sp/>GetViewOrigin();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetViewOrigin(CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSize(UINT<sp/>nType,CSize<sp/>size);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnViewSizeChanged(CSize<sp/>szOld,CSize<sp/>szNew);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnViewOriginChanged(CPoint<sp/>ptOld,CPoint<sp/>ptNew);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>CRect<sp/>GetChildrenLayoutRect()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>OnScroll(BOOL<sp/>bVertical,UINT<sp/>uCode,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPos);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateScrollBar();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateChildrenPosition();</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateViewSize();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HRESULT<sp/>OnAttrViewSize(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SStringW<sp/>&amp;<sp/>strValue,BOOL<sp/>bLoading);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_BEGIN()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L</highlight><highlight class="stringliteral">&quot;origin-x&quot;</highlight><highlight class="normal">,<sp/>m_ptOrigin.x,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L</highlight><highlight class="stringliteral">&quot;origin-y&quot;</highlight><highlight class="normal">,<sp/>m_ptOrigin.y,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_CUSTOM(L</highlight><highlight class="stringliteral">&quot;viewSize&quot;</highlight><highlight class="normal">,OnAttrViewSize)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_END()</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_BEGIN()</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_SIZE(OnSize)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_END()</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref><sp/>m_viewSize[2];</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPoint<sp/>m_ptOrigin;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CSize<sp/><sp/>m_szView;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight><highlight class="comment">//namespace<sp/>SOUI</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SPanel.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_style_pool" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SStylePool</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_cmn_map" prot="public" virt="non-virtual">SOUI::SCmnMap&lt; pugi::xml_node, SStringW &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl2&lt; IObjRef, SStylePool &gt;</basecompoundref>
+    <includes refid="_s_style_pool_8h" local="no">SStylePool.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_style_pool_1aa56eb5750064cd337689c19ff368a2d4" prot="protected" static="no" mutable="no">
+        <type>pugi::xml_document</type>
+        <definition>pugi::xml_document SOUI::SStylePool::m_xmlDoc</definition>
+        <argsstring></argsstring>
+        <name>m_xmlDoc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="57" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_1a0751daff5f5b0cb23e2f4e705a474073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pugi::xml_node</type>
+        <definition>pugi::xml_node SOUI::SStylePool::GetStyle</definition>
+        <argsstring>(LPCWSTR lpszName)</argsstring>
+        <name>GetStyle</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>lpszName</declname>
+        </param>
+        <briefdescription>
+<para>Get style object from pool by class name </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetStyle <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lpszName <ndash/> name of style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="class_s_o_u_i_1_1_swnd_style" kindref="compound">SwndStyle</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; style <ndash/> style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: success; FALSE: not exist Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="45" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_1ac9cbf6f69f10a744531b34e6c9e0e2cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SStylePool::Init</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+<para>Load Style table from xml node </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pugi::xml_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xmlNode <ndash/> xml node that describe style list </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: loaded; FALSE:failed; Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="54" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>name和SwndStyle的映射表 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SStylePool</label>
+        <link refid="class_s_o_u_i_1_1_s_style_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; pugi::xml_node, SStringW &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl2&lt; IObjRef, SStylePool &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SStylePool</label>
+        <link refid="class_s_o_u_i_1_1_s_style_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; pugi::xml_node, SStringW &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl2&lt; IObjRef, SStylePool &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="35" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="34" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_1a0751daff5f5b0cb23e2f4e705a474073" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_1ac9cbf6f69f10a744531b34e6c9e0e2cb" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_1aa56eb5750064cd337689c19ff368a2d4" prot="protected" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>m_xmlDoc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SStylePool</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SStylePool</scope><name>~SCmnMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

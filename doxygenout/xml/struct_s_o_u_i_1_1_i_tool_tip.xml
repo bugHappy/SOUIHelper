@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_tool_tip" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IToolTip</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_message_filter" prot="public" virt="non-virtual">SOUI::IMessageFilter</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_tip_ctrl" prot="public" virt="non-virtual">SOUI::STipCtrl</derivedcompoundref>
+    <includes refid="stooltip-i_8h" local="no">stooltip-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_tool_tip_1aed974d3613e2a9e65e6cea6fbf537ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IToolTip::UpdateTip</definition>
+        <argsstring>(const TIPID &amp;id, CRect rc, LPCTSTR pszTip, int nScale)=0</argsstring>
+        <name>UpdateTip</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tip_ctrl_1adab4593a3e2ec3a56976924add31d311">UpdateTip</reimplementedby>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_t_i_p_i_d" kindref="compound">TIPID</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>CRect</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszTip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+<para>更新当前的tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UpdateTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_t_i_p_i_d" kindref="compound">TIPID</ref> &amp; id <ndash/> tooltip的ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rc <ndash/> tooltip的感应区 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszTip <ndash/> tooltip字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nScale <ndash/> 当前的缩放比例 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="39" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_tool_tip_1ad00333f20d5d27e0f32bf592e3c74a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IToolTip::ClearTip</definition>
+        <argsstring>()=0</argsstring>
+        <name>ClearTip</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tip_ctrl_1a3c7c095193b225f69b3b36c6a288d395">ClearTip</reimplementedby>
+        <briefdescription>
+<para>清除当前的tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ClearTip <simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="48" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_tool_tip_1a938c8c737d64ab16e3d2b5f029843432" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IToolTip::RelayEvent</definition>
+        <argsstring>(const MSG *pMsg)=0</argsstring>
+        <name>RelayEvent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tip_ctrl_1a06e8f7721edd7405ab29fe10d638cfe0">RelayEvent</reimplementedby>
+        <param>
+          <type>const MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+<para>鼠标消息的中继 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>RelayEvent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MSG * pMsg <ndash/> 鼠标消息 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="58" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>tooltip对象接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="3">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="27" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" bodystart="26" bodyend="59"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_tool_tip_1ad00333f20d5d27e0f32bf592e3c74a05" prot="public" virt="pure-virtual"><scope>SOUI::IToolTip</scope><name>ClearTip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_message_filter_1a505c438963d21ccd178fefeb6a0ca2bf" prot="public" virt="pure-virtual"><scope>SOUI::IToolTip</scope><name>PreTranslateMessage</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_tool_tip_1a938c8c737d64ab16e3d2b5f029843432" prot="public" virt="pure-virtual"><scope>SOUI::IToolTip</scope><name>RelayEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_tool_tip_1aed974d3613e2a9e65e6cea6fbf537ae3" prot="public" virt="pure-virtual"><scope>SOUI::IToolTip</scope><name>UpdateTip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

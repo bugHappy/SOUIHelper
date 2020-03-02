@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_list_view_item_locator-i_8h" kind="file" language="C++">
+    <compoundname>SListViewItemLocator-i.h</compoundname>
+    <includes local="no">unknown/obj-ref-i.h</includes>
+    <includes refid="_s_adapter-i_8h" local="yes">SAdapter-i.h</includes>
+    <includedby refid="_s_list_view_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</includedby>
+    <includedby refid="_s_list_view_item_locator_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="3">
+        <label>SAdapter-i.h</label>
+        <link refid="_s_adapter-i_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SListViewItemLocator-i.h</label>
+        <link refid="_s_list_view_item_locator-i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h</label>
+        <link refid="_s_list_view_item_locator_8h_source"/>
+      </node>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SListViewItemLocator-i.h</label>
+        <link refid="_s_list_view_item_locator-i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</label>
+        <link refid="_s_list_view_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unknown/obj-ref-i.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SAdapter-i.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">IListViewItemLocator<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IObjRef</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetAdapter(ILvAdapter<sp/>*pAdapter)<sp/>PURE;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnDataSetChanged()<sp/>PURE;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsFixHeight()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetItemHeight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iItem)<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetItemHeight(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iItem,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nHeight)<sp/>PURE;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetTotalHeight()<sp/>PURE;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Item2Position(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iItem)<sp/>PURE;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Position2Item(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position)<sp/>PURE;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetScrollLineSize()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetDividerSize()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetScale(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nScale)<sp/>PURE;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SListViewItemLocator-i.h"/>
+  </compounddef>
+</doxygen>

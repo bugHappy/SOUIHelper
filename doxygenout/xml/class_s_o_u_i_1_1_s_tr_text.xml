@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tr_text" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STrText</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tr_text_1a0c78bf8d22a6150ae054ff3823db01ad" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_tr_ctx_provider" kindref="compound">ITrCtxProvider</ref> *</type>
+        <definition>ITrCtxProvider* SOUI::STrText::pTrCtxProvider</definition>
+        <argsstring></argsstring>
+        <name>pTrCtxProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="204" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tr_text_1a87ba16bfb1394ad837e056df9c6ccc78" prot="protected" static="no" mutable="no">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::STrText::strRaw</definition>
+        <argsstring></argsstring>
+        <name>strRaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="206" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tr_text_1a1c3df3a8c7326be87e2b0f988fcc4f75" prot="protected" static="no" mutable="no">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::STrText::strTr</definition>
+        <argsstring></argsstring>
+        <name>strTr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="207" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tr_text_1aa2bae9bc913db1c21459c181392d63c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STrText::STrText</definition>
+        <argsstring>(ITrCtxProvider *pProvider=NULL)</argsstring>
+        <name>STrText</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_tr_ctx_provider" kindref="compound">ITrCtxProvider</ref> *</type>
+          <declname>pProvider</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tr_text_1a8231d5c0eb2cbe45647062d4c62eaa05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STrText::SetCtxProvider</definition>
+        <argsstring>(ITrCtxProvider *pProvider)</argsstring>
+        <name>SetCtxProvider</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_tr_ctx_provider" kindref="compound">ITrCtxProvider</ref> *</type>
+          <declname>pProvider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="195" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tr_text_1afc283f06520f9474b19ab60584baafd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STrText::SetText</definition>
+        <argsstring>(const SStringT &amp;strText)</argsstring>
+        <name>SetText</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="197" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tr_text_1ac588e5818703ad7838607b231e5fd6bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::STrText::GetText</definition>
+        <argsstring>(BOOL bRawText=FALSE) const</argsstring>
+        <name>GetText</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bRawText</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="199" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tr_text_1a8236740aea869589bca245695ad2afed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STrText::TranslateText</definition>
+        <argsstring>()</argsstring>
+        <name>TranslateText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="201" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" line="192" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h" bodystart="191" bodyend="208"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1ac588e5818703ad7838607b231e5fd6bb" prot="public" virt="non-virtual"><scope>SOUI::STrText</scope><name>GetText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1a0c78bf8d22a6150ae054ff3823db01ad" prot="protected" virt="non-virtual"><scope>SOUI::STrText</scope><name>pTrCtxProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1a8231d5c0eb2cbe45647062d4c62eaa05" prot="public" virt="non-virtual"><scope>SOUI::STrText</scope><name>SetCtxProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1afc283f06520f9474b19ab60584baafd0" prot="public" virt="non-virtual"><scope>SOUI::STrText</scope><name>SetText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1a87ba16bfb1394ad837e056df9c6ccc78" prot="protected" virt="non-virtual"><scope>SOUI::STrText</scope><name>strRaw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1aa2bae9bc913db1c21459c181392d63c7" prot="public" virt="non-virtual"><scope>SOUI::STrText</scope><name>STrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1a1c3df3a8c7326be87e2b0f988fcc4f75" prot="protected" virt="non-virtual"><scope>SOUI::STrText</scope><name>strTr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tr_text_1a8236740aea869589bca245695ad2afed" prot="public" virt="non-virtual"><scope>SOUI::STrText</scope><name>TranslateText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

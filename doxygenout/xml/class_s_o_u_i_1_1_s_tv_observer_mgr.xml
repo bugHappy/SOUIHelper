@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tv_observer_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STvObserverMgr</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1ab98d7ae4ba1cabd7f935076771d0933e" prot="protected" static="no" mutable="no">
+        <type>SList&lt; ITvDataSetObserver * &gt;</type>
+        <definition>SList&lt;ITvDataSetObserver *&gt; SOUI::STvObserverMgr::m_lstObserver</definition>
+        <argsstring></argsstring>
+        <name>m_lstObserver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="263" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1a42652fe6cd90e41a7a2092e0c896cf3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STvObserverMgr::STvObserverMgr</definition>
+        <argsstring>()</argsstring>
+        <name>STvObserverMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="200" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1a90fedd2fec39b559fa083645974c6b61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STvObserverMgr::~STvObserverMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~STvObserverMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="201" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="201" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1aa04b4c4a9ce5d8452e7a00daad03fb99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STvObserverMgr::registerObserver</definition>
+        <argsstring>(ITvDataSetObserver *observer)</argsstring>
+        <name>registerObserver</name>
+        <param>
+          <type>ITvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="211" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="211" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1a14362f38fe5477bafd7bec02a2f2677c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STvObserverMgr::unregisterObserver</definition>
+        <argsstring>(ITvDataSetObserver *observer)</argsstring>
+        <name>unregisterObserver</name>
+        <param>
+          <type>ITvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a previously registered observer. The observer must not be null and it must already have been registered. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer to unregister </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer is null </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IllegalStateException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer is not yet registered </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="225" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="225" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1a8a8e2f136e5ca3e5f0b7a9f79fa6d04b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STvObserverMgr::notifyChanged</definition>
+        <argsstring>(HTREEITEM hBranch)</argsstring>
+        <name>notifyChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="233" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="233" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1a146989563f341261006cf3595ff497bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STvObserverMgr::notifyInvalidated</definition>
+        <argsstring>(HTREEITEM hBranch, bool bInalidParents, bool invalidChildren)</argsstring>
+        <name>notifyInvalidated</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bInalidParents</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>invalidChildren</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="243" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="243" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tv_observer_mgr_1afb72ffca0449c66b23264be11d44171a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STvObserverMgr::notifyExpandChanged</definition>
+        <argsstring>(HTREEITEM hBranch, BOOL bExpandedOld, BOOL bExpandedNew)</argsstring>
+        <name>notifyExpandChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedOld</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedNew</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="253" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="253" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="198" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="197" bodyend="264"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1ab98d7ae4ba1cabd7f935076771d0933e" prot="protected" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>m_lstObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1a8a8e2f136e5ca3e5f0b7a9f79fa6d04b" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>notifyChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1afb72ffca0449c66b23264be11d44171a" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>notifyExpandChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1a146989563f341261006cf3595ff497bc" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>notifyInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1aa04b4c4a9ce5d8452e7a00daad03fb99" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>registerObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1a42652fe6cd90e41a7a2092e0c896cf3d" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>STvObserverMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1a14362f38fe5477bafd7bec02a2f2677c" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>unregisterObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tv_observer_mgr_1a90fedd2fec39b559fa083645974c6b61" prot="public" virt="non-virtual"><scope>SOUI::STvObserverMgr</scope><name>~STvObserverMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

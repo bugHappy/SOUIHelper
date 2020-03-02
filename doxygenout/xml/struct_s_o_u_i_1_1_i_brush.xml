@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_brush" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::IBrush</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_render_obj" prot="public" virt="non-virtual">SOUI::IRenderObj</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_brush_1ad60123ffe74486b1dc39c3b0ece487d4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const OBJTYPE</type>
+        <definition>virtual const OBJTYPE SOUI::IBrush::ObjectType</definition>
+        <argsstring>() const</argsstring>
+        <name>ObjectType</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6">ObjectType</reimplements>
+        <briefdescription>
+<para>查询对象类型 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ObjectType <simplesect kind="return"><para>const UINT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="175" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="175" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>画刷对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IBrush</label>
+        <link refid="struct_s_o_u_i_1_1_i_brush"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IBrush</label>
+        <link refid="struct_s_o_u_i_1_1_i_brush"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="174" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="173" bodyend="179"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IBrush</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_brush_1ad60123ffe74486b1dc39c3b0ece487d4" prot="public" virt="virtual"><scope>SOUI::IBrush</scope><name>ObjectType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

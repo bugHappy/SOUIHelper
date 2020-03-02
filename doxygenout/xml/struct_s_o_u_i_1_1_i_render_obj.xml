@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_render_obj" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IRenderObj</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_bitmap" prot="public" virt="non-virtual">SOUI::IBitmap</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_brush" prot="public" virt="non-virtual">SOUI::IBrush</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_font" prot="public" virt="non-virtual">SOUI::IFont</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_path" prot="public" virt="non-virtual">SOUI::IPath</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_pen" prot="public" virt="non-virtual">SOUI::IPen</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_region" prot="public" virt="non-virtual">SOUI::IRegion</derivedcompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const OBJTYPE</type>
+        <definition>virtual const OBJTYPE SOUI::IRenderObj::ObjectType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>ObjectType</name>
+        <reimplementedby refid="struct_s_o_u_i_1_1_i_brush_1ad60123ffe74486b1dc39c3b0ece487d4">ObjectType</reimplementedby>
+        <reimplementedby refid="struct_s_o_u_i_1_1_i_pen_1a39559fb97e4d176250cb3c1a5718cbb3">ObjectType</reimplementedby>
+        <reimplementedby refid="struct_s_o_u_i_1_1_i_bitmap_1a05ae064c0652a37b2b72b50655aa6b30">ObjectType</reimplementedby>
+        <reimplementedby refid="struct_s_o_u_i_1_1_i_font_1a87c0b7e61bfa7707417540f75bf20692">ObjectType</reimplementedby>
+        <reimplementedby refid="struct_s_o_u_i_1_1_i_region_1a0b10c1d798be188c5418daaca8f04d80">ObjectType</reimplementedby>
+        <briefdescription>
+<para>查询对象类型 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ObjectType <simplesect kind="return"><para>const UINT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="154" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> *</type>
+        <definition>virtual IRenderFactory* SOUI::IRenderObj::GetRenderFactory</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetRenderFactory</name>
+        <briefdescription>
+<para>获得创建该渲染对象的类厂 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRenderFactory <simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> * <ndash/> 类厂 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="162" column="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>渲染对象基类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 所有渲染对象全部使用引用计数管理生命周期 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>SOUI::IPath</label>
+        <link refid="struct_s_o_u_i_1_1_i_path"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::IRegion</label>
+        <link refid="struct_s_o_u_i_1_1_i_region"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::IPen</label>
+        <link refid="struct_s_o_u_i_1_1_i_pen"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::IBitmap</label>
+        <link refid="struct_s_o_u_i_1_1_i_bitmap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::IFont</label>
+        <link refid="struct_s_o_u_i_1_1_i_font"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObject</label>
+      </node>
+      <node id="5">
+        <label>SOUI::IBrush</label>
+        <link refid="struct_s_o_u_i_1_1_i_brush"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObject</label>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="147" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="146" bodyend="164"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IRenderObj</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6" prot="public" virt="pure-virtual"><scope>SOUI::IRenderObj</scope><name>ObjectType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_host_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SHostMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SHostMgr &gt;</basecompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_host_mgr_1aa58f26b75faeb361aa237eff33791ef2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SHostWnd</definition>
+        <argsstring></argsstring>
+        <name>SHostWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="10" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_mgr_1a7d8e5a0be723c935908c839f73aa79ec" prot="protected" static="no" mutable="no">
+        <type>SMap&lt; <ref refid="struct_s_o_u_i_1_1_i_host_msg_handler" kindref="compound">IHostMsgHandler</ref> *, bool &gt;</type>
+        <definition>SMap&lt;IHostMsgHandler*,bool&gt; SOUI::SHostMgr::m_mapHostMsgHandler</definition>
+        <argsstring></argsstring>
+        <name>m_mapHostMsgHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="23" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_mgr_1a39dc011fdf96801c44a50bbf7685353a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHostMgr::SHostMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SHostMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_mgr_1a864e0c7fc9a35368f8ec400ffbca8aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHostMgr::~SHostMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SHostMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_mgr_1a757342ce91af93aa9c845250910fbee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHostMgr::DispatchMessage</definition>
+        <argsstring>(bool bRelayout, UINT uMsg, WPARAM wp=0, LPARAM lp=0)</argsstring>
+        <name>DispatchMessage</name>
+        <param>
+          <type>bool</type>
+          <declname>bRelayout</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wp</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="15" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_mgr_1a9cc0808233723d071e0b5030e16f7b57" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SHostMgr::AddHostMsgHandler</definition>
+        <argsstring>(IHostMsgHandler *pHost)</argsstring>
+        <name>AddHostMsgHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_host_msg_handler" kindref="compound">IHostMsgHandler</ref> *</type>
+          <declname>pHost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="18" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_mgr_1a5f9df12c63161b5c618500c7892bafd7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SHostMgr::RemoveHostMsgHandler</definition>
+        <argsstring>(IHostMsgHandler *pHost)</argsstring>
+        <name>RemoveHostMsgHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_host_msg_handler" kindref="compound">IHostMsgHandler</ref> *</type>
+          <declname>pHost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="20" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SHostMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SHostMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SHostMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SHostMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" line="8" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a9cc0808233723d071e0b5030e16f7b57" prot="protected" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>AddHostMsgHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a757342ce91af93aa9c845250910fbee1" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>DispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a7d8e5a0be723c935908c839f73aa79ec" prot="protected" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>m_mapHostMsgHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a5f9df12c63161b5c618500c7892bafd7" prot="protected" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>RemoveHostMsgHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a39dc011fdf96801c44a50bbf7685353a" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>SHostMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1aa58f26b75faeb361aa237eff33791ef2" prot="private" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>SHostWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_mgr_1a864e0c7fc9a35368f8ec400ffbca8aba" prot="public" virt="non-virtual"><scope>SOUI::SHostMgr</scope><name>~SHostMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SHostMgr</scope><name>~SSingleton2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_caret" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SCaret</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; SObjectImpl&lt; ICaret &gt; &gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1af6ff4de840c61ba26a963680039ce1e7" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SCaret::m_bVisible</definition>
+        <argsstring></argsstring>
+        <name>m_bVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is caret visible now </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="33" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ab49f7e7d8ab3033ad8437d097e7321cd" prot="protected" static="no" mutable="no">
+        <type>CPoint</type>
+        <definition>CPoint SOUI::SCaret::m_ptCaret</definition>
+        <argsstring></argsstring>
+        <name>m_ptCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>caret position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="34" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ab5eaccb328fb687b39cb02b725942b95" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IBitmap&gt; SOUI::SCaret::m_bmpCaret</definition>
+        <argsstring></argsstring>
+        <name>m_bmpCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>模拟插入符 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="35" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1a63512fe5d86dda4dd86ecdd4469910dc" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SCaret::m_bDrawCaret</definition>
+        <argsstring></argsstring>
+        <name>m_bDrawCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>is caret drawing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="36" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ab438c6cde2c7692ae50aadd14b2dc606" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SCaret::m_iFrame</definition>
+        <argsstring></argsstring>
+        <name>m_iFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="37" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ab4867e329f867bca84508f29bde10240" prot="protected" static="no" mutable="no">
+        <type>BYTE</type>
+        <definition>BYTE SOUI::SCaret::m_byAlpha</definition>
+        <argsstring></argsstring>
+        <name>m_byAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="38" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1afe7abe0515d862a2ae63d9d63479993f" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SCaret::m_bAniCaret</definition>
+        <argsstring></argsstring>
+        <name>m_bAniCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="40" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1a8511dbb840f0c3f2b24a4213e0ab7a72" prot="protected" static="no" mutable="no">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SCaret::m_crCaret</definition>
+        <argsstring></argsstring>
+        <name>m_crCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="41" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ac44e07eb3780d3f8387b2328c732c3a6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SCaret::m_nAniFrames</definition>
+        <argsstring></argsstring>
+        <name>m_nAniFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="42" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1a61ea689619fb8272b0a9237aa9570c7e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SCaret::m_nShowFrames</definition>
+        <argsstring></argsstring>
+        <name>m_nShowFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="43" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ab0033578a00e181ac0da7bd543472359" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IInterpolator &gt;</type>
+        <definition>SAutoRefPtr&lt;IInterpolator&gt; SOUI::SCaret::m_AniInterpolator</definition>
+        <argsstring></argsstring>
+        <name>m_AniInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="44" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_caret_1ae24be87a667927f2e989bce822d81f97" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_swnd_container" kindref="compound">ISwndContainer</ref> *</type>
+        <definition>ISwndContainer* SOUI::SCaret::m_pContainer</definition>
+        <argsstring></argsstring>
+        <name>m_pContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="45" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1a998730bc3505f11903d6de21147f873d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SCaret::SCaret</definition>
+        <argsstring>(ISwndContainer *pContainer)</argsstring>
+        <name>SCaret</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_swnd_container" kindref="compound">ISwndContainer</ref> *</type>
+          <declname>pContainer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="10" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1aad42148a51126056dac0854bafb9e6ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SCaret::Init</definition>
+        <argsstring>(HBITMAP hBmp, int nWid, int nHei) override</argsstring>
+        <name>Init</name>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hBmp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1a67979aaff6d3fc22919c73e4424b4272" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SCaret::Draw</definition>
+        <argsstring>(IRenderTarget *pRT) override</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1ac8e882d24192c8b328019391250ab2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SCaret::SetPosition</definition>
+        <argsstring>(int x, int y) override</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1ae233e10847221630aa1afa4aba877b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SCaret::SetVisible</definition>
+        <argsstring>(BOOL bVisible) override</argsstring>
+        <name>SetVisible</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bVisible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1aca765103bf4e45dbd799b400e90936e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SCaret::IsVisible</definition>
+        <argsstring>() const override</argsstring>
+        <name>IsVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="17" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1a07b6dd1b96063e9e24313568ee144a21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>RECT</type>
+        <definition>virtual RECT SOUI::SCaret::GetRect</definition>
+        <argsstring>() const override</argsstring>
+        <name>GetRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_caret_1a0dca01bb374539e7f37875075747c447" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SCaret::OnNextFrame</definition>
+        <argsstring>() override</argsstring>
+        <name>OnNextFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="21" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ICaret &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SCaret</label>
+        <link refid="class_s_o_u_i_1_1_s_caret"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ICaret &gt; &gt;</label>
+      </node>
+      <node id="4">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="3">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SCaret</label>
+        <link refid="class_s_o_u_i_1_1_s_caret"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" line="7" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SCaret.h" bodystart="6" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a67979aaff6d3fc22919c73e4424b4272" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>Draw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a07b6dd1b96063e9e24313568ee144a21" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>GetRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1aad42148a51126056dac0854bafb9e6ac" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1aca765103bf4e45dbd799b400e90936e1" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ab0033578a00e181ac0da7bd543472359" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_AniInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1afe7abe0515d862a2ae63d9d63479993f" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_bAniCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a63512fe5d86dda4dd86ecdd4469910dc" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_bDrawCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ab5eaccb328fb687b39cb02b725942b95" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_bmpCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1af6ff4de840c61ba26a963680039ce1e7" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ab4867e329f867bca84508f29bde10240" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_byAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a8511dbb840f0c3f2b24a4213e0ab7a72" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_crCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ab438c6cde2c7692ae50aadd14b2dc606" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_iFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ac44e07eb3780d3f8387b2328c732c3a6" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_nAniFrames</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a61ea689619fb8272b0a9237aa9570c7e" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_nShowFrames</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ae24be87a667927f2e989bce822d81f97" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ab49f7e7d8ab3033ad8437d097e7321cd" prot="protected" virt="non-virtual"><scope>SOUI::SCaret</scope><name>m_ptCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a0dca01bb374539e7f37875075747c447" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>OnNextFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1a998730bc3505f11903d6de21147f873d" prot="public" virt="non-virtual"><scope>SOUI::SCaret</scope><name>SCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ac8e882d24192c8b328019391250ab2ce" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>SetPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_caret_1ae233e10847221630aa1afa4aba877b9f" prot="public" virt="virtual"><scope>SOUI::SCaret</scope><name>SetVisible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

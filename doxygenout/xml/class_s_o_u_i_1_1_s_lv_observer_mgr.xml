@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_lv_observer_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SLvObserverMgr</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1add6c8c22ea64974adb58bec6842b2480" prot="protected" static="no" mutable="no">
+        <type>SList&lt; ILvDataSetObserver * &gt;</type>
+        <definition>SList&lt;ILvDataSetObserver *&gt; SOUI::SLvObserverMgr::m_lstObserver</definition>
+        <argsstring></argsstring>
+        <name>m_lstObserver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="76" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1a6e712c7c84a44ac1d66c01a9e8ca9245" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SLvObserverMgr::SLvObserverMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SLvObserverMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="12" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1a31d32d7fa571830e7c39b46c5e4b22ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SLvObserverMgr::~SLvObserverMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SLvObserverMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="13" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1a02ca5295bd326c979c347f2bd5196e8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SLvObserverMgr::registerObserver</definition>
+        <argsstring>(ILvDataSetObserver *observer)</argsstring>
+        <name>registerObserver</name>
+        <param>
+          <type>ILvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="23" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1a2ff9d16dc7dbdd4e315384631f24911c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SLvObserverMgr::unregisterObserver</definition>
+        <argsstring>(ILvDataSetObserver *observer)</argsstring>
+        <name>unregisterObserver</name>
+        <param>
+          <type>ILvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a previously registered observer. The observer must not be null and it must already have been registered. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer to unregister </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer is null </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IllegalStateException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer is not yet registered </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="37" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1a9ff74ca0c7382838f455614e6b7d7081" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SLvObserverMgr::notifyChanged</definition>
+        <argsstring>()</argsstring>
+        <name>notifyChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="45" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1abf76533deda222d48c6b19eb5e90ee6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SLvObserverMgr::notifyInvalidated</definition>
+        <argsstring>()</argsstring>
+        <name>notifyInvalidated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="55" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="55" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_lv_observer_mgr_1aab4467d2fc88760b75c7dd062a7c7b59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SLvObserverMgr::notifyItemChanged</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>notifyItemChanged</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="65" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="65" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="10" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="9" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1add6c8c22ea64974adb58bec6842b2480" prot="protected" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>m_lstObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1a9ff74ca0c7382838f455614e6b7d7081" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>notifyChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1abf76533deda222d48c6b19eb5e90ee6c" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>notifyInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1aab4467d2fc88760b75c7dd062a7c7b59" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>notifyItemChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1a02ca5295bd326c979c347f2bd5196e8d" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>registerObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1a6e712c7c84a44ac1d66c01a9e8ca9245" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>SLvObserverMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1a2ff9d16dc7dbdd4e315384631f24911c" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>unregisterObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_lv_observer_mgr_1a31d32d7fa571830e7c39b46c5e4b22ea" prot="public" virt="non-virtual"><scope>SOUI::SLvObserverMgr</scope><name>~SLvObserverMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

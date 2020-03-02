@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_adapter-i_8h" kind="file" language="C++">
+    <compoundname>SAdapter-i.h</compoundname>
+    <includes local="no">unknown/obj-ref-i.h</includes>
+    <includes local="no">string/tstring.h</includes>
+    <includedby refid="_s_list_view_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</includedby>
+    <includedby refid="_s_tile_view_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/STileView.h</includedby>
+    <includedby refid="_s_tree_view_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h</includedby>
+    <includedby refid="_s_adapter_base_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h</includedby>
+    <includedby refid="_s_list_view_item_locator-i_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/interface/SListViewItemLocator-i.h</includedby>
+    <includedby refid="_s_tree_view_item_locator-i_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/interface/STreeViewItemLocator-i.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SAdapter-i.h</label>
+        <link refid="_s_adapter-i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h</label>
+        <link refid="_s_adapter_base_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SAdapter-i.h</label>
+        <link refid="_s_adapter-i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/STreeViewItemLocator-i.h</label>
+        <link refid="_s_tree_view_item_locator-i_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STileView.h</label>
+        <link refid="_s_tile_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h</label>
+        <link refid="_s_list_view_item_locator_8h_source"/>
+      </node>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="7">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h</label>
+        <link refid="_s_tree_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SListViewItemLocator-i.h</label>
+        <link refid="_s_list_view_item_locator-i_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</label>
+        <link refid="_s_list_view_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unknown/obj-ref-i.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string/tstring.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/><sp/></highlight><highlight class="normal">ILvDataSetObserver<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IObjRef{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onChanged()<sp/><sp/>PURE;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a90d7386c863cb4c2319ad40309a082da" kindref="member">onInvalidated</ref>()<sp/><sp/>PURE;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnItemChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iItem)<sp/>PURE;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>interface<sp/>ILvAdapter<sp/>:<sp/>public<sp/>IObjRef{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a60417855671bb8803ec6e6405af98027" kindref="member">registerDataSetObserver</ref>(ILvDataSetObserver<sp/>*<sp/>observer)<sp/>PURE;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a86450fa4e6f7b45b3ad7f72f67b8ccb9" kindref="member">unregisterDataSetObserver</ref>(ILvDataSetObserver<sp/>*<sp/>observer)<sp/>PURE;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a291eddbbca0c4f36c6283d52ad55ee03" kindref="member">getCount</ref>()<sp/>PURE;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1ae491a4c4f349cf5c9c47f6a5cc0102f8" kindref="member">getView</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,<sp/>SWindow<sp/>*<sp/>pItem,<sp/>pugi::xml_node<sp/>xmlTemplate)<sp/>PURE;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a0bff36f42b083e6cc2258efe6979a149" kindref="member">getItemViewType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,DWORD<sp/>dwState)<sp/>PURE;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a90bb0ffc2de1fac2cffab7371d76557d" kindref="member">getViewTypeCount</ref>()<sp/>PURE;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>SIZE<sp/>getViewDesiredSize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,SWindow<sp/>*pItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wid,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hei)<sp/>PURE;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1adb81039ea83970e6d67b21fa86c31053" kindref="member">isEmpty</ref>()<sp/>PURE;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>ULONG_PTR<sp/><ref refid="namespace_s_o_u_i_1a2be793ece874a60e83bfcc7276fde475" kindref="member">getItemData</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position)<sp/>PURE;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>SStringT<sp/><ref refid="namespace_s_o_u_i_1a4418f327f400bf42bf76400330d37206" kindref="member">getItemDesc</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>positoin)<sp/>PURE;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a9d32b8a327e30360e04662c96e1062b4" kindref="member">InitByTemplate</ref>(pugi::xml_node<sp/>xmlTemplate)<sp/>PURE;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>enum<sp/>SHDSORTFLAG;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>interface<sp/>IMcAdapter<sp/>:<sp/>public<sp/>ILvAdapter</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//获取一个列在模板中对应的窗口名称</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>iCol:<sp/>列序号</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>SStringW<sp/>GetColumnName(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCol)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//由Adapter决定一列是否需要显示</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//int<sp/>iCol:<sp/>列序号</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//remark:默认显示</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsColumnVisible(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCol)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="140"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//排序接口</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>iCol:排序列</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SHDSORTFLAG<sp/>*<sp/>stFlags<sp/>[in,<sp/>out]:当前列排序标志</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>nCols:总列数,stFlags数组长度</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OnSort(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCol,SHDSORTFLAG<sp/>*<sp/>stFlags,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nCols)<sp/>PURE;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ULONG_PTR<sp/>HTREEITEM;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/><sp/></highlight><highlight class="normal">ITvDataSetObserver<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IObjRef{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onBranchChanged(HTREEITEM<sp/>hBranch)<sp/><sp/>PURE;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a1dcb50bb4e9447387eec80e81b24b3d0" kindref="member">onBranchInvalidated</ref>(HTREEITEM<sp/>hBranch,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bInvalidParents,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bInvalidChildren)<sp/><sp/>PURE;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>onBranchExpandedChanged(HTREEITEM<sp/>hBranch,BOOL<sp/>bExpandedOld,BOOL<sp/>bExpandedNew)<sp/>PURE;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal">ITvAdapter<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IObjRef{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>ITEM_NULL=0;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>ITEM_ROOT=0xFFFF0000;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>DATA_INDEX{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_ITEM_HEIGHT=0,<sp/><sp/><sp/></highlight><highlight class="comment">//行高</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_ITEM_WIDTH,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//行宽度</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_BRANCH_HEIGHT,<sp/><sp/><sp/></highlight><highlight class="comment">//分枝高度</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_BRANCH_WIDTH,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//分枝宽度,不包含indent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_ITEM_EXPANDED,<sp/><sp/><sp/></highlight><highlight class="comment">//子项展开状态</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_ITEM_OFFSET,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//当前节点在父节点中的Y方向偏移</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_ITEM_USER,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//自定义数据</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DATA_INDEX_NUMBER</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TVC_COLLAPSE<sp/><sp/><sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TVC_EXPAND<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0002,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TVC_TOGGLE<sp/><sp/><sp/><sp/><sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0003,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a60417855671bb8803ec6e6405af98027" kindref="member">registerDataSetObserver</ref>(ITvDataSetObserver<sp/>*<sp/>observer)<sp/>PURE;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a86450fa4e6f7b45b3ad7f72f67b8ccb9" kindref="member">unregisterDataSetObserver</ref>(ITvDataSetObserver<sp/>*<sp/>observer)<sp/>PURE;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//获取hItem中的指定索引的数据</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ULONG_PTR<sp/>GetItemDataByIndex(HTREEITEM<sp/>hItem,DATA_INDEX<sp/>idx)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//保存hItem指定索引的数据</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetItemDataByIndex(HTREEITEM<sp/>hItem,DATA_INDEX<sp/>idx,ULONG_PTR<sp/>data)<sp/>PURE;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetParentItem(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetFirstChildItem(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetLastChildItem(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetPrevSiblingItem(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetNextSiblingItem(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>HasChildren(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/>IsItemVisible(HTREEITEM<sp/>hItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PURE;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>HTREEITEM<sp/>GetFirstVisibleItem()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>HTREEITEM<sp/>GetLastVisibleItem()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>HTREEITEM<sp/>GetPrevVisibleItem(HTREEITEM<sp/>hItem)<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>HTREEITEM<sp/>GetNextVisibleItem(HTREEITEM<sp/>hItem)<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ExpandItem(HTREEITEM<sp/>hItem,UINT<sp/>code)<sp/>PURE;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>BOOL<sp/>IsItemExpanded(HTREEITEM<sp/>hItem)<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetItemExpanded(HTREEITEM<sp/>hItem,BOOL<sp/>bExpanded)<sp/>PURE;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1ae491a4c4f349cf5c9c47f6a5cc0102f8" kindref="member">getView</ref>(<sp/>HTREEITEM<sp/>hItem,<sp/>SWindow<sp/>*<sp/>pContainer,<sp/>pugi::xml_node<sp/>xmlTemplate)<sp/>PURE;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getViewType(HTREEITEM<sp/>hItem)<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a90bb0ffc2de1fac2cffab7371d76557d" kindref="member">getViewTypeCount</ref>()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>SIZE<sp/>getViewDesiredSize(HTREEITEM<sp/>hItem,SWindow<sp/>*<sp/>pItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>wid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hei)<sp/>PURE;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//定义行宽度和treeview客户区宽度相同</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isViewWidthMatchParent()<sp/>const<sp/>PURE;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_s_o_u_i_1a9d32b8a327e30360e04662c96e1062b4" kindref="member">InitByTemplate</ref>(pugi::xml_node<sp/>xmlTemplate)<sp/>PURE;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAdapter-i.h"/>
+  </compounddef>
+</doxygen>

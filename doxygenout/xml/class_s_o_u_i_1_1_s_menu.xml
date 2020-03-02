@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_menu" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMenu</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_1a874bd0b16a74b25aa823cc6d5e29d593" prot="public" static="no" mutable="no">
+        <type>HMENU</type>
+        <definition>HMENU SOUI::SMenu::m_hMenu</definition>
+        <argsstring></argsstring>
+        <name>m_hMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="263" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_1a7c6838e983331ca17fa74b327df3049f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SMenu::m_bAttached</definition>
+        <argsstring></argsstring>
+        <name>m_bAttached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="274" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1ada7a8be60ab4370ad5a646fd2575d890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenu::SMenu</definition>
+        <argsstring>()</argsstring>
+        <name>SMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="223" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1abb50f7bbbf05258916122efc82f04270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenu::SMenu</definition>
+        <argsstring>(const SMenu &amp;src)</argsstring>
+        <name>SMenu</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_menu" kindref="compound">SMenu</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1afb5891788acee214f084ee46e0bda1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenu::SMenu</definition>
+        <argsstring>(HMENU hMenu)</argsstring>
+        <name>SMenu</name>
+        <param>
+          <type>HMENU</type>
+          <declname>hMenu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a128e20537422d7a986da5ddcde3d35f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenu::~SMenu</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SMenu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="226" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a67f7b13654b8b209e89656bcfcdde6cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::Attach</definition>
+        <argsstring>(HMENU hMenu)</argsstring>
+        <name>Attach</name>
+        <param>
+          <type>HMENU</type>
+          <declname>hMenu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="228" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1ae7a8dbd01f084964f10a8dcd76135847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HMENU</type>
+        <definition>HMENU SOUI::SMenu::Detach</definition>
+        <argsstring>()</argsstring>
+        <name>Detach</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="230" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1ac385ce2bc1027d72a7f64ed035ad6ae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::LoadMenu</definition>
+        <argsstring>(const SStringT &amp;resId)</argsstring>
+        <name>LoadMenu</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>resId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1ad6024671cd1a519c486d269ffa261c57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::LoadMenu</definition>
+        <argsstring>(pugi::xml_node xmlMenu)</argsstring>
+        <name>LoadMenu</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlMenu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="234" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a0d8e639a47902f92467e733765a06730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::InsertMenu</definition>
+        <argsstring>(UINT uPosition, UINT uFlags, UINT_PTR nIDNewItem, LPCTSTR strText, int iIcon=-1, HICON hIcon=0)</argsstring>
+        <name>InsertMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPosition</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>nIDNewItem</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>strText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIcon</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>HICON</type>
+          <declname>hIcon</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>插入一个菜单项,参数和Windows API类似。 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_menu_1a0d8e639a47902f92467e733765a06730" kindref="member">SMenu::InsertMenu</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iIcon <ndash/> 显示的标图在iconSkin中的索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HICON</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hIcon <ndash/> 标图，默认为0，有值时，iIocn失效 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL - TRUE:成功</para>
+</simplesect>
+Describe hIcon会在菜单退出时自动调用DestroyIcon. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a6f62f6258c514b390ed3e4d1324b3e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::AppendMenu</definition>
+        <argsstring>(UINT uFlags, UINT_PTR uIDNewItem, LPCTSTR lpNewItem, int iIcon=-1, HICON hIcon=0)</argsstring>
+        <name>AppendMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>uIDNewItem</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpNewItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIcon</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>HICON</type>
+          <declname>hIcon</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="247" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a6f7e4e42e0564cc3f68b3c250e991e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::CheckMenuItem</definition>
+        <argsstring>(UINT uIdCheckItem, UINT uCheck)</argsstring>
+        <name>CheckMenuItem</name>
+        <param>
+          <type>UINT</type>
+          <declname>uIdCheckItem</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uCheck</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="249" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a9e13c7c7fa1537ad63d9bf16d2527ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::DeleteMenu</definition>
+        <argsstring>(UINT uPosition, UINT uFlags)</argsstring>
+        <name>DeleteMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPosition</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="251" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a8ae43b949b82e3cb6d58b3b01bbc4b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT</type>
+        <definition>UINT SOUI::SMenu::TrackPopupMenu</definition>
+        <argsstring>(UINT uFlags, int x, int y, HWND hWnd, LPCRECT prcRect=NULL, int nScale=100)</argsstring>
+        <name>TrackPopupMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>prcRect</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="253" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a7ca4856db5df2a49ffbe0a1fc0ff9333" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::DestroyMenu</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="255" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a1dbb0343e77111347184cd14301880e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::ModifyMenuString</definition>
+        <argsstring>(UINT uPosition, UINT uFlags, LPCTSTR lpItemString)</argsstring>
+        <name>ModifyMenuString</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPosition</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpItemString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="257" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a7cd93bd824b0cedf8eff0be02f9aeefe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenu::SetMenuUserData</definition>
+        <argsstring>(UINT uPosition, UINT uFlags, ULONG_PTR ulUserData)</argsstring>
+        <name>SetMenuUserData</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPosition</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>ulUserData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="259" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a00b96dbc8d39340e3afbccf5f03c11d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ULONG_PTR</type>
+        <definition>ULONG_PTR SOUI::SMenu::GetMenuUserData</definition>
+        <argsstring>(UINT uPosition, UINT uFlags)</argsstring>
+        <name>GetMenuUserData</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPosition</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="261" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a022a11ef4efb9e9de307cf5519a7ec47" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::UpdateScale</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>UpdateScale</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="266" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a2faa18a5ae2904ea890ba2c4e4a213a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::BuildMenu</definition>
+        <argsstring>(HMENU menuPopup, pugi::xml_node xmlNode)</argsstring>
+        <name>BuildMenu</name>
+        <param>
+          <type>HMENU</type>
+          <declname>menuPopup</declname>
+        </param>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="267" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1afd06da1d91cff9dbf2b6157cdf339af3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::InitMenuItemData</definition>
+        <argsstring>(SMenuItemData *itemInfo, const SStringW &amp;strText)</argsstring>
+        <name>InitMenuItemData</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_menu_item_data" kindref="compound">SMenuItemData</ref> *</type>
+          <declname>itemInfo</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="268" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1ad614c6ee4b454da9b7f00f38b553857c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::FreeMenuItemData</definition>
+        <argsstring>(HMENU hMemu)</argsstring>
+        <name>FreeMenuItemData</name>
+        <param>
+          <type>HMENU</type>
+          <declname>hMemu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="269" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a3510c550c1b1b5923a8d02a4b233410b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_attr" kindref="compound">SMenuAttr</ref> *</type>
+        <definition>SMenuAttr* SOUI::SMenu::GetMenuAttr</definition>
+        <argsstring>(HMENU hMenu) const</argsstring>
+        <name>GetMenuAttr</name>
+        <param>
+          <type>HMENU</type>
+          <declname>hMenu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="271" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_1a88ce9855f6b02d663f407454a14fe956" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenu::SetMenuAttr</definition>
+        <argsstring>(HMENU hMenu, SMenuAttr *pMenuAttr) const</argsstring>
+        <name>SetMenuAttr</name>
+        <param>
+          <type>HMENU</type>
+          <declname>hMenu</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_menu_attr" kindref="compound">SMenuAttr</ref> *</type>
+          <declname>pMenuAttr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="272" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" line="221" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h" bodystart="220" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a6f62f6258c514b390ed3e4d1324b3e90" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>AppendMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a67f7b13654b8b209e89656bcfcdde6cf" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>Attach</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a2faa18a5ae2904ea890ba2c4e4a213a3" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>BuildMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a6f7e4e42e0564cc3f68b3c250e991e43" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>CheckMenuItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a9e13c7c7fa1537ad63d9bf16d2527ba4" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>DeleteMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a7ca4856db5df2a49ffbe0a1fc0ff9333" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>DestroyMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1ae7a8dbd01f084964f10a8dcd76135847" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>Detach</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1ad614c6ee4b454da9b7f00f38b553857c" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>FreeMenuItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a3510c550c1b1b5923a8d02a4b233410b" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>GetMenuAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a00b96dbc8d39340e3afbccf5f03c11d1" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>GetMenuUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1afd06da1d91cff9dbf2b6157cdf339af3" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>InitMenuItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a0d8e639a47902f92467e733765a06730" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>InsertMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1ac385ce2bc1027d72a7f64ed035ad6ae4" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>LoadMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1ad6024671cd1a519c486d269ffa261c57" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>LoadMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a7c6838e983331ca17fa74b327df3049f" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>m_bAttached</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a874bd0b16a74b25aa823cc6d5e29d593" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>m_hMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a1dbb0343e77111347184cd14301880e7" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>ModifyMenuString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a88ce9855f6b02d663f407454a14fe956" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>SetMenuAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a7cd93bd824b0cedf8eff0be02f9aeefe" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>SetMenuUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1ada7a8be60ab4370ad5a646fd2575d890" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>SMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1abb50f7bbbf05258916122efc82f04270" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>SMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1afb5891788acee214f084ee46e0bda1ba" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>SMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a8ae43b949b82e3cb6d58b3b01bbc4b2a" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>TrackPopupMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a022a11ef4efb9e9de307cf5519a7ec47" prot="protected" virt="non-virtual"><scope>SOUI::SMenu</scope><name>UpdateScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_1a128e20537422d7a986da5ddcde3d35f8" prot="public" virt="non-virtual"><scope>SOUI::SMenu</scope><name>~SMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

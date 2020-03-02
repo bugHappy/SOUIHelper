@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_res_provider" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IResProvider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_res_provider-i_8h" local="no">SResProvider-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a1a94d2322c15bedf30590bf1d82cb500" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IResProvider::Init</definition>
+        <argsstring>(WPARAM wParam, LPARAM lParam)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>资源初始化函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wParam <ndash/> param 1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lParam <ndash/> param 2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> true:succeed</para>
+</simplesect>
+Describe every Resprovider must implement this interface. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a6895d529afb3c5213d3626944aea19f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IResProvider::HasResource</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)=0</argsstring>
+        <name>HasResource</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>查询一个资源是否存在 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>HasResource <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strType <ndash/> 资源类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 资源名称 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> true存在，false不存在 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="61" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a7ee90aaa536f4b9fdcae26317afc7623" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HICON</type>
+        <definition>virtual HICON SOUI::IResProvider::LoadIcon</definition>
+        <argsstring>(LPCTSTR pszResName, int cx=0, int cy=0)=0</argsstring>
+        <name>LoadIcon</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>从资源中加载ICON </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadIcon <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> ICON名称 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cx <ndash/> ICON宽度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cy <ndash/> ICON高度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HICON <ndash/> 成功返回ICON的句柄，失败返回0 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="72" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1acca34d2af76f185b110905b5e782fead" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HBITMAP</type>
+        <definition>virtual HBITMAP SOUI::IResProvider::LoadBitmap</definition>
+        <argsstring>(LPCTSTR pszResName)=0</argsstring>
+        <name>LoadBitmap</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>从资源中加载HBITMAP </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadBitmap <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> BITMAP名称 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HBITMAP <ndash/> 成功返回BITMAP的句柄，失败返回0 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="81" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a606d3e5a1829031f9ca073b275d7e328" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HCURSOR</type>
+        <definition>virtual HCURSOR SOUI::IResProvider::LoadCursor</definition>
+        <argsstring>(LPCTSTR pszResName)=0</argsstring>
+        <name>LoadCursor</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>从资源中加载光标 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadCursor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 光标名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HCURSOR <ndash/> 成功返回光标的句柄，失败返回0 Describe 支持动画光标 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="90" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1afad19f056c0adc5f2419e4643399022e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+        <definition>virtual IBitmap* SOUI::IResProvider::LoadImage</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)=0</argsstring>
+        <name>LoadImage</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>从资源加载一个IBitmap对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadImage <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strType <ndash/> 图片类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 图片名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> * <ndash/> 成功返回一个IBitmap对象，失败返回0 Describe 如果没有定义strType，则根据name使用FindImageType自动查找匹配的类型 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="100" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a3bf68e39a313d1788cb62aa4cdfcc62d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> *</type>
+        <definition>virtual IImgX* SOUI::IResProvider::LoadImgX</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)=0</argsstring>
+        <name>LoadImgX</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>从资源中创建一个IImgX对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadImgX <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strType <ndash/> 图片类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 图片名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> * <ndash/> 成功返回一个IImgX对象，失败返回0 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="110" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1a3acaae78de3766641bde772cee6f75fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t SOUI::IResProvider::GetRawBufferSize</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)=0</argsstring>
+        <name>GetRawBufferSize</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+<para>获得资源数据大小 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRawBufferSize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strType <ndash/> 资源类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 资源名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>size_t <ndash/> 资源大小（byte)，失败返回0 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="120" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_res_provider_1ae28c31e41e90ae67696f8eedd70e1f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IResProvider::GetRawBuffer</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName, LPVOID pBuf, size_t size)=0</argsstring>
+        <name>GetRawBuffer</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>LPVOID</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>获得资源内存块 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRawBuffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strType <ndash/> 资源类型 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszResName <ndash/> 资源名 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPVOID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pBuf <ndash/> 输出内存块 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size <ndash/> 内存大小 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> true成功 Describe 应该先用GetRawBufferSize查询资源大小再分配足够空间 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="132" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ResProvider对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 实现各种资源的加载 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IResProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_res_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IResProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_res_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" line="41" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SResProvider-i.h" bodystart="40" bodyend="145"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1ae28c31e41e90ae67696f8eedd70e1f05" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>GetRawBuffer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a3acaae78de3766641bde772cee6f75fd" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>GetRawBufferSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a6895d529afb3c5213d3626944aea19f5" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>HasResource</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a1a94d2322c15bedf30590bf1d82cb500" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>Init</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1acca34d2af76f185b110905b5e782fead" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>LoadBitmap</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a606d3e5a1829031f9ca073b275d7e328" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>LoadCursor</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a7ee90aaa536f4b9fdcae26317afc7623" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>LoadIcon</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1afad19f056c0adc5f2419e4643399022e" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>LoadImage</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_res_provider_1a3bf68e39a313d1788cb62aa4cdfcc62d" prot="public" virt="pure-virtual"><scope>SOUI::IResProvider</scope><name>LoadImgX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

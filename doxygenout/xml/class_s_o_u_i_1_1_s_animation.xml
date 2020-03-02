@@ -1,0 +1,1454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_animation" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAnimation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; SObjectImpl&lt; IAnimation &gt; &gt;</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_alpha_animation" prot="public" virt="non-virtual">SOUI::SAlphaAnimation</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_animation_set" prot="public" virt="non-virtual">SOUI::SAnimationSet</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_rotate_animation" prot="public" virt="non-virtual">SOUI::SRotateAnimation</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_scale_animation" prot="public" virt="non-virtual">SOUI::SScaleAnimation</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_translate_animation" prot="public" virt="non-virtual">SOUI::STranslateAnimation</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a6184f2c04ea2ee505bd16a8109894b19" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mEnded</definition>
+        <argsstring></argsstring>
+        <name>mEnded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set by <ref refid="" kindref="compound">getTransformation(long, STransformation)</ref> when the animation ends. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="79" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a5617be9bc088f346a78d705b81b351c9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mStarted</definition>
+        <argsstring></argsstring>
+        <name>mStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set by <ref refid="" kindref="compound">getTransformation(long, STransformation)</ref> when the animation starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="84" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a536e387cb2a088b811a4d9e71b677554" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mCycleFlip</definition>
+        <argsstring></argsstring>
+        <name>mCycleFlip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set by <ref refid="" kindref="compound">getTransformation(long, STransformation)</ref> when the animation repeats in REVERSE mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="90" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a21eb9ef7a896f374b47620e231c5440e" prot="protected" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t SOUI::SAnimation::mStartTime</definition>
+        <argsstring></argsstring>
+        <name>mStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The time in milliseconds at which the animation must start; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="96" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a3ebb4a9bf266d374f9d8710ea7ef6310" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SOUI::SAnimation::mStartOffset</definition>
+        <argsstring></argsstring>
+        <name>mStartOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The delay in milliseconds after which the animation must start. When the start offset is &gt; 0, the start time of the animation is startTime + startOffset. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="102" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1aacd66eb0f813d92f36e7ee582e5f8a74" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SOUI::SAnimation::mDuration</definition>
+        <argsstring></argsstring>
+        <name>mDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The duration of one animation cycle in milliseconds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="107" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1add16ede5cfb7674388e836a809f76e30" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SAnimation::mRepeatCount</definition>
+        <argsstring></argsstring>
+        <name>mRepeatCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of times the animation must repeat. By default, an animation repeats indefinitely. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="113" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a10e4dd5bda4b92527b5ce285ad5c7662" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SAnimation::mRepeated</definition>
+        <argsstring></argsstring>
+        <name>mRepeated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates how many times the animation was repeated. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="118" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a1b546924588a2e3a2a955db5d02397a3" prot="protected" static="no" mutable="no">
+        <type>RepeatMode</type>
+        <definition>RepeatMode SOUI::SAnimation::mRepeatMode</definition>
+        <argsstring></argsstring>
+        <name>mRepeatMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The behavior of the animation when it repeats. The repeat mode is either <ref refid="" kindref="compound">RESTART</ref> or <ref refid="" kindref="compound">REVERSE</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="125" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a042435eddb1258e4e07a7485758c037c" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IInterpolator &gt;</type>
+        <definition>SAutoRefPtr&lt;IInterpolator&gt; SOUI::SAnimation::mInterpolator</definition>
+        <argsstring></argsstring>
+        <name>mInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The interpolator used by the animation to smooth the movement. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="130" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a6a675b272b61528b301ed2fd602843a1" prot="protected" static="no" mutable="no">
+        <type>IAnimationListener *</type>
+        <definition>IAnimationListener* SOUI::SAnimation::mListener</definition>
+        <argsstring></argsstring>
+        <name>mListener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The animation listener to be notified when the animation starts, ends or repeats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="135" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1ac19ce69880a42cca46ffe41924a6afd9" prot="protected" static="no" mutable="no">
+        <type>ZAdjustment</type>
+        <definition>ZAdjustment SOUI::SAnimation::mZAdjustment</definition>
+        <argsstring></argsstring>
+        <name>mZAdjustment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Desired Z order mode during animation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="140" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a740320ab21f6a6d2b2d003a37ba522a4" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAnimation::mScaleFactor</definition>
+        <argsstring></argsstring>
+        <name>mScaleFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>scalefactor to apply to pivot points, etc. during animation. Subclasses retrieve the value via <ref refid="class_s_o_u_i_1_1_s_animation_1a60ce867d32bc70f07b77f9a1f584c717" kindref="member">getScaleFactor()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="146" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a950c7a788550ba8d2605b9db899055bb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mFillBefore</definition>
+        <argsstring></argsstring>
+        <name>mFillBefore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the animation transformation should be applied before the animation starts. The value of this variable is only relevant if mFillEnabled is true; otherwise it is assumed to be true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="153" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1abb0261ec8cf38e2ec5c4887f9d14b974" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mFillAfter</definition>
+        <argsstring></argsstring>
+        <name>mFillAfter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether the animation transformation should be applied after the animation ends. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="159" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a2ebc80fde77101daa1086c9b8ec69565" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::mFillEnabled</definition>
+        <argsstring></argsstring>
+        <name>mFillEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether fillBefore should be taken into account. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="164" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1ac554d4fe2c2cfe7f2b1dc00af9505063" prot="protected" static="no" mutable="no">
+        <type>ULONG_PTR</type>
+        <definition>ULONG_PTR SOUI::SAnimation::mUserData</definition>
+        <argsstring></argsstring>
+        <name>mUserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new animation with a duration of 0ms, the default interpolator, with fillBefore set to true and fillAfter set to false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="171" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1ae82db000e7f4e04dbeee78e22b3f2fa1" prot="protected" static="no" mutable="no">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SAnimation::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="173" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_animation_1a5edabb1a7046e97454bb6edd5f8d4029" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SAnimation::mID</definition>
+        <argsstring></argsstring>
+        <name>mID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="175" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a57c5d0867f383cecee0ba5234f63457d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAnimation::SAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>SAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a6d51dfcba21dcf577dde733ea46cd889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAnimation::~SAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>~SAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1af12ea35f226040fc658fe99ccb51f7ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LPCWSTR</type>
+        <definition>LPCWSTR SOUI::SAnimation::GetName</definition>
+        <argsstring>() const</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="181" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aab75b59c1e87dbdc0e23acaeda47f714" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SAnimation::GetID</definition>
+        <argsstring>() const</argsstring>
+        <name>GetID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="186" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a8f74c5b7fe9284ff19a878aa76f8c051" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_animation" kindref="compound">IAnimation</ref> *</type>
+        <definition>virtual IAnimation* SOUI::SAnimation::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="191" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a5993d25b7e5517d5496191043c90ccce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAnimation::initialize</definition>
+        <argsstring>(int width, int height, int parentWidth, int parentHeight)</argsstring>
+        <name>initialize</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_rotate_animation_1aef901733cb6471aab886891ffdab99a4">initialize</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_translate_animation_1a2f8c808968437a5dce3bacb0ea0df54a">initialize</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scale_animation_1ad29744fa0dd73787afd91b4235200a39">initialize</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_animation_set_1a48d4fc437f92d99aa31b04bb936054e5">initialize</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the initialization state of this animation.</para>
+<para><simplesect kind="see"><para><ref refid="class_s_o_u_i_1_1_s_animation_1a5993d25b7e5517d5496191043c90ccce" kindref="member">initialize(int, int, int, int)</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="197" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a4a01c0174018ce3446fbd148c444c798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="199" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a7247aaeec8870b4ab804ade7b608921c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::cancel</definition>
+        <argsstring>()</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel the animation. Cancelling an animation invokes the animation listener, if set, to notify the end of the animation.</para>
+<para>If you cancel an animation manually, you must call <ref refid="" kindref="compound">reset()</ref> before starting the animation again.</para>
+<para><simplesect kind="see"><para>#reset() </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_s_o_u_i_1_1_s_animation_1a44dc192afea5e347c30af4a3e0903f0a" kindref="member">start()</ref> </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_s_o_u_i_1_1_s_animation_1a0a1cca403d6860e132f1ce62a0b4c99a" kindref="member">startNow()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="212" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ad8df3802f56ca6ad0ed3ebcf6fe7e5e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setInterpolator</definition>
+        <argsstring>(IInterpolator *i)</argsstring>
+        <name>setInterpolator</name>
+        <param>
+          <type>IInterpolator *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the acceleration curve for this animation. Defaults to a linear interpolation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interpolator which defines the acceleration curve @attr ref android.R.styleable::Animation_interpolator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="221" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a611ff193ac5fabff622ba0bb0721b246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setDuration</definition>
+        <argsstring>(long durationMillis)</argsstring>
+        <name>setDuration</name>
+        <param>
+          <type>long</type>
+          <declname>durationMillis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How long this animation should last. The duration cannot be negative.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration in milliseconds</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.lang.IllegalArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the duration is &lt; 0</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+@attr ref android.R.styleable::Animation_duration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="232" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aa807a7cc23b1165d2b7d6629155eec66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::scaleCurrentDuration</definition>
+        <argsstring>(float scale)</argsstring>
+        <name>scaleCurrentDuration</name>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How much to scale the duration by.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to scale the duration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="239" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a0bc048bad76b91b0c1aa2ee02c19527d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setFillBefore</definition>
+        <argsstring>(bool bFill)</argsstring>
+        <name>setFillBefore</name>
+        <param>
+          <type>bool</type>
+          <declname>bFill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="241" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a5c61e92c59978ef2b2a7a6412929b5a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::getFillBefore</definition>
+        <argsstring>() const</argsstring>
+        <name>getFillBefore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="242" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ae0dbe3aea00667fe7c05d840ac71dea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setFillAfter</definition>
+        <argsstring>(bool bFill)</argsstring>
+        <name>setFillAfter</name>
+        <param>
+          <type>bool</type>
+          <declname>bFill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="244" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aa1742e296c78b0de546439caf1fb3d67" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::getFillAfter</definition>
+        <argsstring>() const</argsstring>
+        <name>getFillAfter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="246" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aedeee47428e82cbc51c182b6069f31b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::isFillEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isFillEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="248" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a9142a6caf87b97ff9d08e1ca948a6762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setFillEnabled</definition>
+        <argsstring>(bool fillEnabled)</argsstring>
+        <name>setFillEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>fillEnabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If fillEnabled is true, the animation will apply the value of fillBefore. Otherwise, fillBefore is ignored and the animation transformation is always applied until the animation ends.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fillEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the animation should take the value of fillBefore into account @attr ref android.R.styleable::Animation_fillEnabled</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para>#setFillBefore(boolean) </para>
+</simplesect>
+<simplesect kind="see"><para>#setFillAfter(boolean) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="261" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aebe9a23fe4becd31e8b0fb3caab41192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setStartOffset</definition>
+        <argsstring>(long offset)</argsstring>
+        <name>setStartOffset</name>
+        <param>
+          <type>long</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="262" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a923485da61f1469161364d7639a0a26a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setStartTime</definition>
+        <argsstring>(int64_t startTimeMillis)</argsstring>
+        <name>setStartTime</name>
+        <param>
+          <type>int64_t</type>
+          <declname>startTimeMillis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When this animation should start. When the start time is set to <ref refid="" kindref="compound">START_ON_FIRST_FRAME</ref>, the animation will start the first time <ref refid="" kindref="compound">getTransformation(long, STransformation)</ref> is invoked. The time passed to this method should be obtained by calling <ref refid="" kindref="compound">AnimationUtils#currentAnimationTimeMillis()</ref> instead of <ref refid="" kindref="compound">System#currentTimeMillis()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startTimeMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start time in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="273" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a44dc192afea5e347c30af4a3e0903f0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to start the animation the first time <ref refid="" kindref="compound">getTransformation(long, STransformation)</ref> is invoked. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="279" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a0a1cca403d6860e132f1ce62a0b4c99a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::startNow</definition>
+        <argsstring>()</argsstring>
+        <name>startNow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience method to start the animation at the current time in milliseconds. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="285" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a5f39c0d0397af249497a3e3064edf4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setRepeatMode</definition>
+        <argsstring>(RepeatMode repeatMode)</argsstring>
+        <name>setRepeatMode</name>
+        <param>
+          <type>RepeatMode</type>
+          <declname>repeatMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines what this animation should do when it reaches the end. This setting is applied only when the repeat count is either greater than 0 or <ref refid="" kindref="compound">INFINITE</ref>. Defaults to <ref refid="" kindref="compound">RESTART</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>repeatMode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="" kindref="compound">RESTART</ref> or <ref refid="" kindref="compound">REVERSE</ref> @attr ref android.R.styleable::Animation_repeatMode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="295" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a936c7fb67d1da39de03cee86cad9545d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setRepeatCount</definition>
+        <argsstring>(int repeatCount)</argsstring>
+        <name>setRepeatCount</name>
+        <param>
+          <type>int</type>
+          <declname>repeatCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets how many times the animation should be repeated. If the repeat count is 0, the animation is never repeated. If the repeat count is greater than 0 or <ref refid="" kindref="compound">INFINITE</ref>, the repeat mode will be taken into account. The repeat count is 0 by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>repeatCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of times the animation should be repeated @attr ref android.R.styleable::Animation_repeatCount </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="306" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ad1eca7b2e26b8ed1868c7e1a24470524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setZAdjustment</definition>
+        <argsstring>(ZAdjustment zAdjustment)</argsstring>
+        <name>setZAdjustment</name>
+        <param>
+          <type>ZAdjustment</type>
+          <declname>zAdjustment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the Z ordering mode to use while running the animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zAdjustment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired mode, one of <ref refid="" kindref="compound">ZORDER_NORMAL</ref>, <ref refid="" kindref="compound">ZORDER_TOP</ref>, or <ref refid="" kindref="compound">ZORDER_BOTTOM</ref>. @attr ref android.R.styleable::Animation_zAdjustment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="316" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a6edb6b3ba78ada70a885259f9ddf108f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IInterpolator *</type>
+        <definition>IInterpolator* SOUI::SAnimation::getInterpolator</definition>
+        <argsstring>() const</argsstring>
+        <name>getInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the acceleration curve type for this animation.</para>
+<para><simplesect kind="return"><para>the <ref refid="" kindref="compound">Interpolator</ref> associated to this animation @attr ref android.R.styleable::Animation_interpolator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="324" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aac80598fa561c798b4abfb88520d3eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t SOUI::SAnimation::getStartTime</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When this animation should start. If the animation has not startet yet, this method might return <ref refid="" kindref="compound">START_ON_FIRST_FRAME</ref>.</para>
+<para><simplesect kind="return"><para>the time in milliseconds when the animation should start or <ref refid="" kindref="compound">START_ON_FIRST_FRAME</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="333" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a77598cab3c6d55e304193cf400b4247d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>virtual long SOUI::SAnimation::getDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getDuration</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_animation_set_1ac4684641dc2515b6a9dcfc5b2f8cb589">getDuration</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>How long this animation should last</para>
+<para><simplesect kind="return"><para>the duration in milliseconds of the animation @attr ref android.R.styleable::Animation_duration </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="341" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a0b88b85e2f41bc549cbb88c3622a1952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>virtual long SOUI::SAnimation::getStartOffset</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When this animation should start, relative to StartTime</para>
+<para><simplesect kind="return"><para>the start offset in milliseconds @attr ref android.R.styleable::Animation_startOffset </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="349" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a17e089416cbff2c489d29fdb1ba7a6bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>RepeatMode</type>
+        <definition>virtual RepeatMode SOUI::SAnimation::getRepeatMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines what this animation should do when it reaches the end.</para>
+<para><simplesect kind="return"><para>either one of <ref refid="" kindref="compound">REVERSE</ref> or <ref refid="" kindref="compound">RESTART</ref> @attr ref android.R.styleable::Animation_repeatMode </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="357" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a4eb8963e373fea2a7cc319985368da72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SAnimation::getRepeatCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines how many times the animation should repeat. The default value is 0.</para>
+<para><simplesect kind="return"><para>the number of times the animation should repeat, or <ref refid="" kindref="compound">INFINITE</ref> @attr ref android.R.styleable::Animation_repeatCount </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="366" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ac660e16d75dbc1b3a5e978ee946a81cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ZAdjustment</type>
+        <definition>virtual ZAdjustment SOUI::SAnimation::getZAdjustment</definition>
+        <argsstring>() const</argsstring>
+        <name>getZAdjustment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the Z ordering mode to use while running the animation as previously set by <ref refid="class_s_o_u_i_1_1_s_animation_1ad1eca7b2e26b8ed1868c7e1a24470524" kindref="member">setZAdjustment</ref>.</para>
+<para><simplesect kind="return"><para>Returns one of <ref refid="" kindref="compound">ZORDER_NORMAL</ref>, <ref refid="" kindref="compound">ZORDER_TOP</ref>, or <ref refid="" kindref="compound">ZORDER_BOTTOM</ref>. @attr ref android.R.styleable::Animation_zAdjustment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="376" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a24bdeb8afeddfce50d91971917d0d1e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::setAnimationListener</definition>
+        <argsstring>(IAnimationListener *listener)</argsstring>
+        <name>setAnimationListener</name>
+        <param>
+          <type>IAnimationListener *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Binds an animation listener to this animation. The animation listener is notified of animation events such as the end of the animation or the repetition of the animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the animation listener to be notified </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="386" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a4d4bca94e8adf0e7ace52a778d7d9109" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long SOUI::SAnimation::computeDurationHint</definition>
+        <argsstring>() const</argsstring>
+        <name>computeDurationHint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute a hint at how long the entire animation may last, in milliseconds. Animations can be written to cause themselves to run for a different duration than what is computed here, but generally this should be accurate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="395" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a365ad135f4294c5e2491df59f6f678a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::getTransformation</definition>
+        <argsstring>(uint64_t currentTime, STransformation &amp;outTransformation, float scale)</argsstring>
+        <name>getTransformation</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>currentTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> &amp;</type>
+          <declname>outTransformation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the transformation to apply at a specified point in time. Implementations of this method should always replace the specified <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> or document they are doing otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where we are in the animation. This is wall clock time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outTransformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A transformation object that is provided by the caller and will be filled in by the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scaling factor to apply to any inputs to the transform operation, such pivot points being rotated or scaled around. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the animation is still running </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="408" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1afc4c1da95d94b9ebd0eb01fb8cfa2826" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SAnimation::getTransformation</definition>
+        <argsstring>(int64_t currentTime, STransformation &amp;outTransformation)</argsstring>
+        <name>getTransformation</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_animation_set_1af4da1706feabf906be5688898bbd6e22">getTransformation</reimplementedby>
+        <param>
+          <type>int64_t</type>
+          <declname>currentTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> &amp;</type>
+          <declname>outTransformation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the transformation to apply at a specified point in time. Implementations of this method should always replace the specified <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> or document they are doing otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where we are in the animation. This is wall clock time. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outTransformation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A transformation object that is provided by the caller and will be filled in by the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the animation is still running </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="419" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1af9512cf26b3ef5f1a67abcef2e306f1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::hasStarted</definition>
+        <argsstring>() const</argsstring>
+        <name>hasStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether this animation has started or not.</para>
+<para><simplesect kind="return"><para>true if the animation has started, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="482" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1aa1c641535d870bf7b0a657604c3b12b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::hasEnded</definition>
+        <argsstring>() const</argsstring>
+        <name>hasEnded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether this animation has ended or not.</para>
+<para><simplesect kind="return"><para>true if the animation has ended, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="489" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a2c7ab0a85e5471003359779a4c156770" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SAnimation::hasAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>hasAlpha</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_alpha_animation_1aca25187b4abfbfbf93553d3a75328145">hasAlpha</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if this animation changes the view&apos;s alpha property.</para>
+<para>@hide </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="497" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a80874922b8281fbe6858e9aec80fc238" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAnimation::setUserData</definition>
+        <argsstring>(ULONG_PTR data)</argsstring>
+        <name>setUserData</name>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="499" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1abd04f2d926af4bc13c08cfeee8c342e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ULONG_PTR</type>
+        <definition>virtual ULONG_PTR SOUI::SAnimation::getUserData</definition>
+        <argsstring>() const</argsstring>
+        <name>getUserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="501" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1af03bd7a1d91676f3bed0707358ccd620" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAnimation::applyTransformation</definition>
+        <argsstring>(float interpolatedTime, STransformation &amp;t)</argsstring>
+        <name>applyTransformation</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_alpha_animation_1a6281329be31e0f439c0bfa7569b77ca5">applyTransformation</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_rotate_animation_1af9ebf11470826dd399463310234d1368">applyTransformation</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_translate_animation_1ab3b466d81a071aee114a45e6c1b4b9ce">applyTransformation</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scale_animation_1a3ddd8b2f274f23b54b026e342fbe43f9">applyTransformation</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>interpolatedTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Helper for getTransformation. Subclasses should implement this to apply their transforms given an interpolation value. Implementations of this method should always replace the specified <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> or document they are doing otherwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interpolatedTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the normalized time (0.0 to 1.0) after it has been run through the interpolation function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> object to fill in with the current transforms. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="433" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a3431a0cc7851927ac6d475d902aa0288" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAnimation::copy</definition>
+        <argsstring>(const IAnimation *src)</argsstring>
+        <name>copy</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_alpha_animation_1a64d42654d3aa5e26e229946f75bce270">copy</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_rotate_animation_1a403d5ce78831c4649b17e8ab591c1b37">copy</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scale_animation_1a33ee33cf42f91bf42d6b4da3346b2f61">copy</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_animation_set_1a81d36c0de7b9540dddff75774ddfa54b">copy</reimplementedby>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_animation" kindref="compound">IAnimation</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="436" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ae0102b82e0182c8dc7aab9151f3a5c0d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SAnimation::isCanceled</definition>
+        <argsstring>()</argsstring>
+        <name>isCanceled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="438" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1ae40a56244fa9fb2601bb06a5ae25e31c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::fireAnimationStart</definition>
+        <argsstring>()</argsstring>
+        <name>fireAnimationStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="440" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a28e1531b0d51c31d7e04f56080ac1126" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::fireAnimationRepeat</definition>
+        <argsstring>()</argsstring>
+        <name>fireAnimationRepeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="442" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a25e57876f90a9bf9bcfcb43df5ad5d3d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::fireAnimationEnd</definition>
+        <argsstring>()</argsstring>
+        <name>fireAnimationEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="444" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a5da5e65f90b57bc830c4b2f95ab86925" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SAnimation::resolveSize</definition>
+        <argsstring>(ValueType type, float value, int size, int parentSize)</argsstring>
+        <name>resolveSize</name>
+        <param>
+          <type>ValueType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert the information in the description of a size to an actual dimension</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>One of Animation.ABSOLUTE_VALUE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dimension associated with the type parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the object being animated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parentSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the parent of the object being animated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The dimension to use for the animation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="457" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a5044907b466b291cb6102ce02e2ee1f5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAnimation::ensureInterpolator</definition>
+        <argsstring>()</argsstring>
+        <name>ensureInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gurantees that this animation has an interpolator. Will use a AccelerateDecelerateInterpolator is nothing else was specified. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="463" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_animation_1a60ce867d32bc70f07b77f9a1f584c717" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SAnimation::getScaleFactor</definition>
+        <argsstring>()</argsstring>
+        <name>getScaleFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The scale factor is set by the call to <computeroutput>getTransformation</computeroutput>. Overrides of <ref refid="" kindref="compound">getTransformation(long, STransformation, float)</ref> will get this value directly. Overrides of <ref refid="" kindref="compound">applyTransformation(float, STransformation)</ref> can call this method to get the value.</para>
+<para><simplesect kind="return"><para>float The scale factor that should be applied to pre-scaled values in an Animation such as the pivot points in <ref refid="" kindref="compound">ScaleAnimation</ref> and <ref refid="" kindref="compound">RotateAnimation</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="474" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::SAlphaAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_alpha_animation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IAnimation &gt; &gt;</label>
+      </node>
+      <node id="5">
+        <label>SOUI::SRotateAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_rotate_animation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SAnimationSet</label>
+        <link refid="class_s_o_u_i_1_1_s_animation_set"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::STranslateAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_translate_animation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SScaleAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_scale_animation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IAnimation &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="73" column="36" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="73" bodyend="524"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_animation_1af03bd7a1d91676f3bed0707358ccd620" prot="protected" virt="virtual"><scope>SOUI::SAnimation</scope><name>applyTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a7247aaeec8870b4ab804ade7b608921c" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>cancel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a8f74c5b7fe9284ff19a878aa76f8c051" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>clone</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4d4bca94e8adf0e7ace52a778d7d9109" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>computeDurationHint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a3431a0cc7851927ac6d475d902aa0288" prot="protected" virt="virtual"><scope>SOUI::SAnimation</scope><name>copy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5044907b466b291cb6102ce02e2ee1f5" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>ensureInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a25e57876f90a9bf9bcfcb43df5ad5d3d" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>fireAnimationEnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a28e1531b0d51c31d7e04f56080ac1126" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>fireAnimationRepeat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae40a56244fa9fb2601bb06a5ae25e31c" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>fireAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a77598cab3c6d55e304193cf400b4247d" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa1742e296c78b0de546439caf1fb3d67" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5c61e92c59978ef2b2a7a6412929b5a5" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aab75b59c1e87dbdc0e23acaeda47f714" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6edb6b3ba78ada70a885259f9ddf108f" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1af12ea35f226040fc658fe99ccb51f7ad" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4eb8963e373fea2a7cc319985368da72" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a17e089416cbff2c489d29fdb1ba7a6bc" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a60ce867d32bc70f07b77f9a1f584c717" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getScaleFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0b88b85e2f41bc549cbb88c3622a1952" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aac80598fa561c798b4abfb88520d3eea" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a365ad135f4294c5e2491df59f6f678a0" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>getTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1afc4c1da95d94b9ebd0eb01fb8cfa2826" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1abd04f2d926af4bc13c08cfeee8c342e6" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac660e16d75dbc1b3a5e978ee946a81cc" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>getZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a2c7ab0a85e5471003359779a4c156770" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>hasAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa1c641535d870bf7b0a657604c3b12b8" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>hasEnded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1af9512cf26b3ef5f1a67abcef2e306f1c" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>hasStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5993d25b7e5517d5496191043c90ccce" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>initialize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae0102b82e0182c8dc7aab9151f3a5c0d" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>isCanceled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aedeee47428e82cbc51c182b6069f31b6" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>isFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a536e387cb2a088b811a4d9e71b677554" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mCycleFlip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aacd66eb0f813d92f36e7ee582e5f8a74" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6184f2c04ea2ee505bd16a8109894b19" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mEnded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1abb0261ec8cf38e2ec5c4887f9d14b974" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a950c7a788550ba8d2605b9db899055bb" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a2ebc80fde77101daa1086c9b8ec69565" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5edabb1a7046e97454bb6edd5f8d4029" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a042435eddb1258e4e07a7485758c037c" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6a675b272b61528b301ed2fd602843a1" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae82db000e7f4e04dbeee78e22b3f2fa1" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1add16ede5cfb7674388e836a809f76e30" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a10e4dd5bda4b92527b5ce285ad5c7662" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mRepeated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a1b546924588a2e3a2a955db5d02397a3" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a740320ab21f6a6d2b2d003a37ba522a4" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mScaleFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5617be9bc088f346a78d705b81b351c9" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a3ebb4a9bf266d374f9d8710ea7ef6310" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a21eb9ef7a896f374b47620e231c5440e" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac554d4fe2c2cfe7f2b1dc00af9505063" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac19ce69880a42cca46ffe41924a6afd9" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>mZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4a01c0174018ce3446fbd148c444c798" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>reset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5da5e65f90b57bc830c4b2f95ab86925" prot="protected" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>resolveSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a57c5d0867f383cecee0ba5234f63457d" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>SAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa807a7cc23b1165d2b7d6629155eec66" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>scaleCurrentDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a24bdeb8afeddfce50d91971917d0d1e7" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setAnimationListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a611ff193ac5fabff622ba0bb0721b246" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae0dbe3aea00667fe7c05d840ac71dea3" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0bc048bad76b91b0c1aa2ee02c19527d" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a9142a6caf87b97ff9d08e1ca948a6762" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ad8df3802f56ca6ad0ed3ebcf6fe7e5e3" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a936c7fb67d1da39de03cee86cad9545d" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5f39c0d0397af249497a3e3064edf4ba" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aebe9a23fe4becd31e8b0fb3caab41192" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a923485da61f1469161364d7639a0a26a" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a80874922b8281fbe6858e9aec80fc238" prot="public" virt="virtual"><scope>SOUI::SAnimation</scope><name>setUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ad1eca7b2e26b8ed1868c7e1a24470524" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>setZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a44dc192afea5e347c30af4a3e0903f0a" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>start</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0a1cca403d6860e132f1ce62a0b4c99a" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>startNow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6d51dfcba21dcf577dde733ea46cd889" prot="public" virt="non-virtual"><scope>SOUI::SAnimation</scope><name>~SAnimation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

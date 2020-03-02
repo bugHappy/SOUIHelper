@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_s_drop_down_owner" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ISDropDownOwner</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_combo_base" prot="public" virt="non-virtual">SOUI::SComboBase</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_date_time_picker" prot="public" virt="non-virtual">SOUI::SDateTimePicker</derivedcompoundref>
+    <includes refid="_s_drop_down_8h" local="no">SDropDown.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_s_drop_down_owner_1abb159c443250817cb00658f6d9bbd69c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>virtual SWindow* SOUI::ISDropDownOwner::GetDropDownOwner</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetDropDownOwner</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_date_time_picker_1a349bcd1489891556f179a8d40e21d0ba">GetDropDownOwner</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_base_1ad4903dd584ff65a0767fcf40dbce1492">GetDropDownOwner</reimplementedby>
+        <briefdescription>
+<para>获得下拉窗口所属者 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1abb159c443250817cb00658f6d9bbd69c" kindref="member">ISDropDownOwner::GetDropDownOwner</ref> Describe 此函数是纯虚函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h" line="39" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a23561340da5a65afb5fc0d1eca46ede0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISDropDownOwner::OnCreateDropDown</definition>
+        <argsstring>(SDropDownWnd *pDropDown)=0</argsstring>
+        <name>OnCreateDropDown</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_date_time_picker_1af5bf5776be16a1565090d8a812995ed5">OnCreateDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_view_1a921957d4610db9716318a84704e87cff">OnCreateDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_box_1a2f94d923f2086857bcc5557ea37b65e0">OnCreateDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_base_1a0d41b48d18674f89dd640d5720824dd0">OnCreateDropDown</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_drop_down_wnd" kindref="compound">SDropDownWnd</ref> *</type>
+          <declname>pDropDown</declname>
+        </param>
+        <briefdescription>
+<para>下拉窗口创建完成 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a23561340da5a65afb5fc0d1eca46ede0" kindref="member">ISDropDownOwner::OnCreateDropDown</ref> Describe 此函数是纯虚函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a035b4ae4ba7bd941aef70938b9c73907" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISDropDownOwner::OnDestroyDropDown</definition>
+        <argsstring>(SDropDownWnd *pDropDown)=0</argsstring>
+        <name>OnDestroyDropDown</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_date_time_picker_1a81cd967d257461013f84882eb7c356af">OnDestroyDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_view_1ab7515376d9019103c7a41d0295fe5a22">OnDestroyDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_box_1aa908fe6dbd7bc6af8d7e47c8f9bf9eff">OnDestroyDropDown</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_combo_base_1a65c3e770dcb77621fc2a73b517c79ed4">OnDestroyDropDown</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_drop_down_wnd" kindref="compound">SDropDownWnd</ref> *</type>
+          <declname>pDropDown</declname>
+        </param>
+        <briefdescription>
+<para>下拉窗口被销毁 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a035b4ae4ba7bd941aef70938b9c73907" kindref="member">ISDropDownOwner::OnDestroyDropDown</ref> Describe 此函数是纯虚函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h" line="55" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISDropDownOwner接口类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 下拉窗口接口类 里面只定义一些虚函数 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::SComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_combo_box"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SComboBase</label>
+        <link refid="class_s_o_u_i_1_1_s_combo_base"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SDateTimePicker</label>
+        <link refid="class_s_o_u_i_1_1_s_date_time_picker"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SComboView</label>
+        <link refid="class_s_o_u_i_1_1_s_combo_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::ISDropDownOwner</label>
+        <link refid="struct_s_o_u_i_1_1_i_s_drop_down_owner"/>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h" line="32" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h" bodystart="31" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1abb159c443250817cb00658f6d9bbd69c" prot="public" virt="pure-virtual"><scope>SOUI::ISDropDownOwner</scope><name>GetDropDownOwner</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a23561340da5a65afb5fc0d1eca46ede0" prot="public" virt="pure-virtual"><scope>SOUI::ISDropDownOwner</scope><name>OnCreateDropDown</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_s_drop_down_owner_1a035b4ae4ba7bd941aef70938b9c73907" prot="public" virt="pure-virtual"><scope>SOUI::ISDropDownOwner</scope><name>OnDestroyDropDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

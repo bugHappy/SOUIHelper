@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_accelerate_interpolator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAccelerateInterpolator</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_interpolator_base" prot="public" virt="non-virtual">SOUI::SInterpolatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_accelerate_interpolator_1a61cd06c1c1476bbdfe1a0517e02c0e94" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAccelerateInterpolator::mFactor</definition>
+        <argsstring></argsstring>
+        <name>mFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="24" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_accelerate_interpolator_1af7022e668c40b79eb9e755777346af17" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SOUI::SAccelerateInterpolator::mDoubleFactor</definition>
+        <argsstring></argsstring>
+        <name>mDoubleFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="25" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerate_interpolator_1aaf0d61ad6615d9edf1ea8f2ff87dce90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAccelerateInterpolator::SAccelerateInterpolator</definition>
+        <argsstring>(float factor=1.0f)</argsstring>
+        <name>SAccelerateInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Degree to which the animation should be eased. Seting factor to 1.0f produces a y=x^2 parabola. Increasing factor above 1.0f exaggerates the ease-in effect (i.e., it starts even slower and ends evens faster) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="36" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_accelerate_interpolator_1a6f8b758d394003a9a443596ff54b591e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SAccelerateInterpolator::getInterpolation</definition>
+        <argsstring>(float input) const</argsstring>
+        <name>getInterpolation</name>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="38" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SAccelerateInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_accelerate_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SAccelerateInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_accelerate_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="21" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="20" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_accelerate_interpolator_1a6f8b758d394003a9a443596ff54b591e" prot="public" virt="non-virtual"><scope>SOUI::SAccelerateInterpolator</scope><name>getInterpolation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerate_interpolator_1af7022e668c40b79eb9e755777346af17" prot="private" virt="non-virtual"><scope>SOUI::SAccelerateInterpolator</scope><name>mDoubleFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerate_interpolator_1a61cd06c1c1476bbdfe1a0517e02c0e94" prot="private" virt="non-virtual"><scope>SOUI::SAccelerateInterpolator</scope><name>mFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_accelerate_interpolator_1aaf0d61ad6615d9edf1ea8f2ff87dce90" prot="public" virt="non-virtual"><scope>SOUI::SAccelerateInterpolator</scope><name>SAccelerateInterpolator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

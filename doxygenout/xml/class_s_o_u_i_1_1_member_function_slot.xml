@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_member_function_slot" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::MemberFunctionSlot</compoundname>
+    <includes refid="_s_event_subscriber_8h" local="no">SEventSubscriber.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename A</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" prot="public" static="no">
+        <type>bool(T::*</type>
+        <definition>typedef bool(T::* SOUI::MemberFunctionSlot&lt; T, A &gt;::MemberFunctionType) (A *)</definition>
+        <argsstring>)(A *)</argsstring>
+        <name>MemberFunctionType</name>
+        <briefdescription>
+<para>Member function slot type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="114" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_member_function_slot_1afd92c4222dc87fbdfb07aa4a99254245" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref></type>
+        <definition>MemberFunctionType SOUI::MemberFunctionSlot&lt; T, A &gt;::d_function</definition>
+        <argsstring></argsstring>
+        <name>d_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="143" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_member_function_slot_1a50fb9cd50f51883e700dacbac5534a93" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* SOUI::MemberFunctionSlot&lt; T, A &gt;::d_object</definition>
+        <argsstring></argsstring>
+        <name>d_object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="144" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_member_function_slot_1aeb81a31d17a3cb6d4f52bbcbd059cabe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::MemberFunctionSlot&lt; T, A &gt;::d_eventid</definition>
+        <argsstring></argsstring>
+        <name>d_eventid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="145" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_member_function_slot_1a0be63ff65a815a4385d8f27abc2e531e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::MemberFunctionSlot&lt; T, A &gt;::MemberFunctionSlot</definition>
+        <argsstring>(MemberFunctionType func, T *obj)</argsstring>
+        <name>MemberFunctionSlot</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="116" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_member_function_slot_1ac22f9cd66a0413500c9a60a27037ae44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::MemberFunctionSlot&lt; T, A &gt;::operator()</definition>
+        <argsstring>(EventArgs *pArg)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="122" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_member_function_slot_1a9dc72202cfc9f126098eee86b5112e94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> *</type>
+        <definition>virtual ISlotFunctor* SOUI::MemberFunctionSlot&lt; T, A &gt;::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="127" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_member_function_slot_1ae5f1a6c023c0f3c478b9293a20fc2a01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::MemberFunctionSlot&lt; T, A &gt;::Equal</definition>
+        <argsstring>(const ISlotFunctor &amp;sour) const</argsstring>
+        <name>Equal</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>sour</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="132" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="132" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_member_function_slot_1adef7d4e63d22cf6ceb0bdcfd2c112099" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::MemberFunctionSlot&lt; T, A &gt;::GetSlotType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSlotType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="140" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Slot template class that creates a functor that calls back via a class member function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="107" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="107" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1a9dc72202cfc9f126098eee86b5112e94" prot="public" virt="virtual"><scope>SOUI::MemberFunctionSlot</scope><name>Clone</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1aeb81a31d17a3cb6d4f52bbcbd059cabe" prot="private" virt="non-virtual"><scope>SOUI::MemberFunctionSlot</scope><name>d_eventid</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1afd92c4222dc87fbdfb07aa4a99254245" prot="private" virt="non-virtual"><scope>SOUI::MemberFunctionSlot</scope><name>d_function</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1a50fb9cd50f51883e700dacbac5534a93" prot="private" virt="non-virtual"><scope>SOUI::MemberFunctionSlot</scope><name>d_object</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1ae5f1a6c023c0f3c478b9293a20fc2a01" prot="public" virt="virtual"><scope>SOUI::MemberFunctionSlot</scope><name>Equal</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1adef7d4e63d22cf6ceb0bdcfd2c112099" prot="public" virt="virtual"><scope>SOUI::MemberFunctionSlot</scope><name>GetSlotType</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1a0be63ff65a815a4385d8f27abc2e531e" prot="public" virt="non-virtual"><scope>SOUI::MemberFunctionSlot</scope><name>MemberFunctionSlot</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" prot="public" virt="non-virtual"><scope>SOUI::MemberFunctionSlot</scope><name>MemberFunctionType</name></member>
+      <member refid="class_s_o_u_i_1_1_member_function_slot_1ac22f9cd66a0413500c9a60a27037ae44" prot="public" virt="virtual"><scope>SOUI::MemberFunctionSlot</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

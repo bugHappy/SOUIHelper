@@ -1,0 +1,1472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_value_animator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::SValueAnimator</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_value_animator" prot="public" virt="non-virtual">SOUI::IValueAnimator</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handler" prot="private" virt="non-virtual">SOUI::ITimelineHandler</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1afcf046824282df0f5938f24a2a717126" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SOUI::SValueAnimator::mStartTime</definition>
+        <argsstring></argsstring>
+        <name>mStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The first time that the animation&apos;s animateFrame() method is called. This time is used to determine elapsed time (and therefore the elapsed fraction) in subsequent calls to animateFrame().</para>
+<para>Whenever mStartTime is set, you must also update mStartTimeCommitted. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="67" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a0c0b4a0ed77a2d8a4c4fd705a00725d5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mStartTimeCommitted</definition>
+        <argsstring></argsstring>
+        <name>mStartTimeCommitted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When true, the start time has been firmly committed as a chosen reference point in time by which the progress of the animation will be evaluated. When false, the start time may be updated when the first animation frame is committed so as to compensate for jank that may have occurred between when the start time was initialized and when the frame was actually drawn.</para>
+<para>This flag is generally set to false during the first frame of the animation when the animation playing state transitions from STOPPED to RUNNING or resumes after having been paused. This flag is set to true when the start time is firmly committed and should not be further compensated for jank. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="81" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ab7a8d28ad3366f7148e4947fbcd7881d" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::mSeekFraction</definition>
+        <argsstring></argsstring>
+        <name>mSeekFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set when <ref refid="class_s_o_u_i_1_1_s_value_animator_1aef14816d5192a75bf2d96d41986af6be" kindref="member">setCurrentPlayTime()</ref> is called. If negative, animation is not currently seeked to a value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="87" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ab67254d10ce9a336a7427aa017a8fecc" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mReversing</definition>
+        <argsstring></argsstring>
+        <name>mReversing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag to indicate whether this animator is playing in reverse mode, specifically by being started or interrupted by a call to <ref refid="class_s_o_u_i_1_1_s_value_animator_1af5bc41e84e75b030262559893441a80d" kindref="member">reverse()</ref>. This flag is different than mPlayingBackwards, which indicates merely whether the current iteration of the animator is playing in reverse. It is used in corner cases to determine proper end behavior. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="96" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a2b1a490f2c17ae1b3f1e24ca0c1eeaa8" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::mOverallFraction</definition>
+        <argsstring></argsstring>
+        <name>mOverallFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks the overall fraction of the animation, ranging from 0 to mRepeatCount + 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="101" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ae7007a0a6c29e3c281f4c09a2423442c" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::mCurrentFraction</definition>
+        <argsstring></argsstring>
+        <name>mCurrentFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks current elapsed/eased fraction, for querying in <ref refid="class_s_o_u_i_1_1_s_value_animator_1ab7bc6281ca378c54984467be922562b6" kindref="member">getAnimatedFraction()</ref>. This is calculated by interpolating the fraction (range: [0, 1]) in the current iteration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="107" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ad8f296359c75da5059363536ad3c9c30" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SOUI::SValueAnimator::mLastFrameTime</definition>
+        <argsstring></argsstring>
+        <name>mLastFrameTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks the time (in milliseconds) when the last frame arrived. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="112" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a9cf756d0d6e09511ccd79f94ed35e1df" prot="protected" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t SOUI::SValueAnimator::mFirstFrameTime</definition>
+        <argsstring></argsstring>
+        <name>mFirstFrameTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks the time (in milliseconds) when the first frame arrived. Note the frame may arrive during the start delay. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="118" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a680a9a3c7c69a8b9fdaee47b3879617f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mRunning</definition>
+        <argsstring></argsstring>
+        <name>mRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional playing state to indicate whether an animator has been start()&apos;d. There is some lag between a call to start() and the first animation frame. We should still note that the animation has been started, even if it&apos;s first animation frame has not yet happened, and reflect that state in isRunning(). Note that delayed animations are different: they are not started until their first animation frame, which occurs after their delay elapses. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="128" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a067e2f5f1dfd3d8d5aee9d19176dcb7e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mStarted</definition>
+        <argsstring></argsstring>
+        <name>mStarted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Additional playing state to indicate whether an animator has been start()&apos;d, whether or not there is a nonzero startDelay. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="134" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1aca957c49298cea19bdc00c0996a7591d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mStartListenersCalled</definition>
+        <argsstring></argsstring>
+        <name>mStartListenersCalled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tracks whether we&apos;ve notified listeners of the onAnimationStart() event. This can be complex to keep track of since we notify listeners at different times depending on startDelay and whether start() was called before end(). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="141" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1add0ef023c778eee01559e2dd11343264" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mInitialized</definition>
+        <argsstring></argsstring>
+        <name>mInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag that denotes whether the animation is set up and ready to go. Used to set up animation that has not yet been started. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="147" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ad7affc190cab39edbcbdd4d66ab625a1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::mAnimationEndRequested</definition>
+        <argsstring></argsstring>
+        <name>mAnimationEndRequested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag that tracks whether animation has been requested to end. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="152" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a1110be03c33ea02b3be3c1a474bf31b2" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::mDuration</definition>
+        <argsstring></argsstring>
+        <name>mDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="155" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ae2142462290f6ff61c00671344358c42" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::mStartDelay</definition>
+        <argsstring></argsstring>
+        <name>mStartDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="160" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a5ac9fa4ba6b6a29399bb0578502a418a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SValueAnimator::mRepeatCount</definition>
+        <argsstring></argsstring>
+        <name>mRepeatCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="164" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1ad4a7c8d73e19a86b23576261a5b91073" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::sDurationScale</definition>
+        <argsstring></argsstring>
+        <name>sDurationScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="167" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a2a6f602058bca59b361ed18e2518aae0" prot="protected" static="no" mutable="no">
+        <type>IAnimation::RepeatMode</type>
+        <definition>IAnimation::RepeatMode SOUI::SValueAnimator::mRepeatMode</definition>
+        <argsstring></argsstring>
+        <name>mRepeatMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The type of repetition that will occur when repeatMode is nonzero. RESTART means the animation will start from the beginning on every new cycle. REVERSE means the animation will reverse directions on each iteration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="173" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a25739b2150323da688d6ad4c56ca1592" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IInterpolator &gt;</type>
+        <definition>SAutoRefPtr&lt;IInterpolator&gt; SOUI::SValueAnimator::mInterpolator</definition>
+        <argsstring></argsstring>
+        <name>mInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The time interpolator to be used. The elapsed fraction of the animation will be passed through this interpolator to calculate the interpolated fraction, which is then used to calculate the animated values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="182" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1aaa39938e7a6c7def1f92ad28ff3914b1" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_update_listener" kindref="compound">IAnimatorUpdateListener</ref> * &gt;</type>
+        <definition>SArray&lt;IAnimatorUpdateListener*&gt; SOUI::SValueAnimator::mUpdateListeners</definition>
+        <argsstring></argsstring>
+        <name>mUpdateListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The set of listeners to be sent events through the life of an animation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="187" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1acedd64b9467ff471ce9df6f1c40165c4" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; IAnimatorListener * &gt;</type>
+        <definition>SArray&lt;IAnimatorListener*&gt; SOUI::SValueAnimator::mListeners</definition>
+        <argsstring></argsstring>
+        <name>mListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="188" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_animator_1a13c729b8d0423525bc706a16ead5df4d" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr" kindref="compound">ITimelineHandlersMgr</ref> *</type>
+        <definition>ITimelineHandlersMgr* SOUI::SValueAnimator::mContainer</definition>
+        <argsstring></argsstring>
+        <name>mContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="190" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a4a0d936f1cd12a8979054b6df91b705d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SValueAnimator::SValueAnimator</definition>
+        <argsstring>()</argsstring>
+        <name>SValueAnimator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref> object. This default constructor is primarily for use internally; the factory methods which take parameters are more generally useful. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a234e2d9984175d41414a22342d6e56f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SValueAnimator::~SValueAnimator</definition>
+        <argsstring>()</argsstring>
+        <name>~SValueAnimator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a43a8743b0aed05fa008a406953d67bb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setDuration</definition>
+        <argsstring>(long duration)</argsstring>
+        <name>setDuration</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1ad96f69f72b3ec88adc30a33ec3d0ca0f">setDuration</reimplements>
+        <param>
+          <type>long</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the length of the animation. The default duration is 300 milliseconds.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the animation, in milliseconds. This value cannot be negative. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref> The object called with <ref refid="class_s_o_u_i_1_1_s_value_animator_1a43a8743b0aed05fa008a406953d67bb4" kindref="member">setDuration()</ref>. This return value makes it easier to compose statements together that construct and then set the duration, as in <computeroutput>SValueAnimator.ofInt(0, 10).setDuration(500).start()</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="211" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a70194b7677c4b3a8b9829a490412ac17" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::getDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getDuration</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a3212041a62240ea3099a6811d8b4d058">getDuration</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the length of the animation. The default duration is 300 milliseconds.</para>
+<para><simplesect kind="return"><para>The length of the animation, in milliseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="222" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a4836c3aadf92e247f4c83c3855c58552" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::getTotalDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalDuration</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1ada04746167afeb2f714f0caa65170eeb">getTotalDuration</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="224" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1aef14816d5192a75bf2d96d41986af6be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setCurrentPlayTime</definition>
+        <argsstring>(long playTime)</argsstring>
+        <name>setCurrentPlayTime</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1affe2194c269564ad7774df69467a30d4">setCurrentPlayTime</reimplements>
+        <param>
+          <type>long</type>
+          <declname>playTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the position of the animation to the specified point in time. This time should be between 0 and the total duration of the animation, including any repetition. If the animation has not yet been started, then it will not advance forward after it is set to this time; it will simply set the time to this value and perform any appropriate actions based on that time. If the animation is already running, then <ref refid="class_s_o_u_i_1_1_s_value_animator_1aef14816d5192a75bf2d96d41986af6be" kindref="member">setCurrentPlayTime()</ref> will set the current playing time to this value and continue playing from that point.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time, in milliseconds, to which the animation is advanced or rewound. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="236" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ae0ae6eacdf1204c85c601db9b50ae761" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setCurrentFraction</definition>
+        <argsstring>(float fraction)</argsstring>
+        <name>setCurrentFraction</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1acab4c4bb5d57f226b6c62388c91f09f0">setCurrentFraction</reimplements>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the position of the animation to the specified fraction. This fraction should be between 0 and the total fraction of the animation, including any repetition. That is, a fraction of 0 will position the animation at the beginning, a value of 1 at the end, and a value of 2 at the end of a reversing animator that repeats once. If the animation has not yet been started, then it will not advance forward after it is set to this fraction; it will simply set the fraction to this value and perform any appropriate actions based on that fraction. If the animation is already running, then <ref refid="class_s_o_u_i_1_1_s_value_animator_1ae0ae6eacdf1204c85c601db9b50ae761" kindref="member">setCurrentFraction()</ref> will set the current fraction to this value and continue playing from that point. <ref refid="" kindref="compound">Animator.AnimatorListener</ref> events are not called due to changing the fraction; those events are only processed while the animation is running.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fraction to which the animation is advanced or rewound. Values outside the range of 0 to the maximum fraction for the animator will be clamped to the correct range. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="255" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1abb3f852ba8464d9caf5c547420290e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::getCurrentPlayTime</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentPlayTime</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1abff0caf64f8e6f0a62f6ad4266984303">getCurrentPlayTime</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current position of the animation in time, which is equal to the current time minus the time that the animation started. An animation that is not yet started will return a value of zero, unless the animation has has its play time set via <ref refid="class_s_o_u_i_1_1_s_value_animator_1aef14816d5192a75bf2d96d41986af6be" kindref="member">setCurrentPlayTime(long)</ref> or <ref refid="class_s_o_u_i_1_1_s_value_animator_1ae0ae6eacdf1204c85c601db9b50ae761" kindref="member">setCurrentFraction(float)</ref>, in which case it will return the time that was set.</para>
+<para><simplesect kind="return"><para>The current position in time of the animation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="298" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a460259dbe60044fcab00eae5bb515500" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::getStartDelay</definition>
+        <argsstring>() const</argsstring>
+        <name>getStartDelay</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1aeb56c722424c2a58d99f69c2a09686c4">getStartDelay</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of time, in milliseconds, to delay starting the animation after <ref refid="" kindref="compound">start()</ref> is called.</para>
+<para><simplesect kind="return"><para>the number of milliseconds to delay running the animation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="306" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1aa470d1cf6b59dc060cafeaa21838e6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setStartDelay</definition>
+        <argsstring>(long startDelay)</argsstring>
+        <name>setStartDelay</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a3e0fac1cdae80e4ef2553a191047b9e5">setStartDelay</reimplements>
+        <param>
+          <type>long</type>
+          <declname>startDelay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The amount of time, in milliseconds, to delay starting the animation after <ref refid="" kindref="compound">start()</ref> is called. Note that the start delay should always be non-negative. Any negative start delay will be clamped to 0 on N and above.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startDelay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of the delay, in milliseconds </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="315" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1acff87fdda4f5d2e43bec739a07b1b6eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setRepeatCount</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setRepeatCount</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a6a3bc76df16f94e7bcd1ef5d307de050">setRepeatCount</reimplements>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets how many times the animation should be repeated. If the repeat count is 0, the animation is never repeated. If the repeat count is greater than 0 or <ref refid="" kindref="compound">INFINITE</ref>, the repeat mode will be taken into account. The repeat count is 0 by default.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of times the animation should be repeated </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="326" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a4a20c12738ae7fc9aa1fa4531037be0d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SOUI::SValueAnimator::getRepeatCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatCount</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a6258d4cdc49298c63a51bd3f02126d2b">getRepeatCount</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines how many times the animation should repeat. The default value is 0.</para>
+<para><simplesect kind="return"><para>the number of times the animation should repeat, or <ref refid="" kindref="compound">INFINITE</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="333" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a5a59ecd8e07278140060fe4f250bb63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setRepeatMode</definition>
+        <argsstring>(IAnimation::RepeatMode value)</argsstring>
+        <name>setRepeatMode</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a6977eb544f53c11e7677eb8b6939cc71">setRepeatMode</reimplements>
+        <param>
+          <type>IAnimation::RepeatMode</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines what this animation should do when it reaches the end. This setting is applied only when the repeat count is either greater than 0 or <ref refid="" kindref="compound">INFINITE</ref>. Defaults to <ref refid="" kindref="compound">RESTART</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="" kindref="compound">RESTART</ref> or <ref refid="" kindref="compound">REVERSE</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="342" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ae2c70aff520f21070f89b009eea17b7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IAnimation::RepeatMode</type>
+        <definition>IAnimation::RepeatMode SOUI::SValueAnimator::getRepeatMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getRepeatMode</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1ae2901dd0a8a4313e685ca686c3b74a65">getRepeatMode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines what this animation should do when it reaches the end.</para>
+<para><simplesect kind="return"><para>either one of <ref refid="" kindref="compound">REVERSE</ref> or <ref refid="" kindref="compound">RESTART</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="349" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a14fc8e2ff785ac081888322e0fbd8fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::addUpdateListener</definition>
+        <argsstring>(IAnimatorUpdateListener *listener)</argsstring>
+        <name>addUpdateListener</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a13099da23f2947d48e64b667a8614a2f">addUpdateListener</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_update_listener" kindref="compound">IAnimatorUpdateListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds a listener to the set of listeners that are sent update events through the life of an animation. This method is called on all listeners for every frame of the animation, after the values for the animation have been calculated.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the listener to be added to the current set of listeners for this animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="358" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ad42e8e4204952de69b6312e7797a2b66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::removeAllUpdateListeners</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllUpdateListeners</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a0ddae36c37d81745834a77af630a3c56">removeAllUpdateListeners</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all listeners from the set listening to frame updates for this animation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="363" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a61870ec08f8581e02ecec5d46a29452a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::removeUpdateListener</definition>
+        <argsstring>(IAnimatorUpdateListener *listener)</argsstring>
+        <name>removeUpdateListener</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a9ccd45776cfe7fac3936c5d4e525d846">removeUpdateListener</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_update_listener" kindref="compound">IAnimatorUpdateListener</ref> *</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes a listener from the set listening to frame updates for this animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>listener</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the listener to be removed from the current set of update listeners for this animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="371" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a946bbff628def8ae9abe9ee6b2e6d77c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::setInterpolator</definition>
+        <argsstring>(IInterpolator *value)</argsstring>
+        <name>setInterpolator</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a5f72a9fa1e432479ff28c0108a9b385c">setInterpolator</reimplements>
+        <param>
+          <type>IInterpolator *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The time interpolator used in calculating the elapsed fraction of this animation. The interpolator determines whether the animation runs with linear or non-linear motion, such as acceleration and deceleration. The default value is <ref refid="" kindref="compound">android.view.animation.AccelerateDecelerateInterpolator</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the interpolator to be used by this animation. A value of <computeroutput>null</computeroutput> will result in linear interpolation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="383" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a321b56cc779df67197de4feca9406d9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IInterpolator *</type>
+        <definition>IInterpolator* SOUI::SValueAnimator::getInterpolator</definition>
+        <argsstring>() const</argsstring>
+        <name>getInterpolator</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a688622bb5894e54140830051e853ce9d">getInterpolator</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the timing interpolator that this <ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref> uses.</para>
+<para><simplesect kind="return"><para>The timing interpolator for this <ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="390" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a1c5a6db82534dc0e2ef776b856b8ded3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::addListener</definition>
+        <argsstring>(IAnimatorListener *p)</argsstring>
+        <name>addListener</name>
+        <param>
+          <type>IAnimatorListener *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="392" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ad8991e8f4f3b4345f8fe4d29387c8292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::removeListener</definition>
+        <argsstring>(IAnimatorListener *p)</argsstring>
+        <name>removeListener</name>
+        <param>
+          <type>IAnimatorListener *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="394" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ac481e666d4b09a143342fd30258f7e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::start</definition>
+        <argsstring>(ITimelineHandlersMgr *pContainer)</argsstring>
+        <name>start</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1aa591a0ac7a8a6183177503cba6ae4982">start</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr" kindref="compound">ITimelineHandlersMgr</ref> *</type>
+          <declname>pContainer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="414" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a15f6bfc70223a59c7baa7713fe2505ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="416" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a532c581e79d9690b526868852fda2512" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::isRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>isRunning</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a0467cb3ceda3c49813587eb2b92516d8">isRunning</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="418" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1acf2fdd0dd094f2295a18e5d36fa04bd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::isStarted</definition>
+        <argsstring>() const</argsstring>
+        <name>isStarted</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1af57056de2e1930e01df4dba4a20ebafe">isStarted</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="420" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1af5bc41e84e75b030262559893441a80d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::reverse</definition>
+        <argsstring>()</argsstring>
+        <name>reverse</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a2918506a34295c457ab7b2f6bb31cb06">reverse</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Plays the <ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref> in reverse. If the animation is already running, it will stop itself and play backwards from the point reached when reverse was called. If the animation is not currently running, then it will start from the end and play backwards. This behavior is only set for the current animation; future playing of the animation will use the default behavior of playing forward. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="429" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ac9eedae432196270dea3cfd4dbaa0a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::canReverse</definition>
+        <argsstring>()</argsstring>
+        <name>canReverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@hide </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="434" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1af041014d2c578217ecf7720e274ae07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::commitAnimationFrame</definition>
+        <argsstring>(long frameTime)</argsstring>
+        <name>commitAnimationFrame</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a2312c0ebbb78488c1aeb67c9495ca354">commitAnimationFrame</reimplements>
+        <param>
+          <type>long</type>
+          <declname>frameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Applies an adjustment to the animation to compensate for jank between when the animation first ran and when the frame was drawn. @hide </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="462" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ab7bc6281ca378c54984467be922562b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::getAnimatedFraction</definition>
+        <argsstring>() const</argsstring>
+        <name>getAnimatedFraction</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1ac9bb31fd0f15d9e6e1899a04504d5176">getAnimatedFraction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current animation fraction, which is the elapsed/interpolated fraction used in the most recent frame update on the animation.</para>
+<para><simplesect kind="return"><para>Elapsed/interpolated fraction of the animation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="518" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a562fd3e8eb7d1a409e7e03ce81ad8fa6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long SOUI::SValueAnimator::getScaledDuration</definition>
+        <argsstring>()</argsstring>
+        <name>getScaledDuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="214" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a51095c70633af8acbd7e5ac537e48ccc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SValueAnimator::getCurrentIteration</definition>
+        <argsstring>(float fraction)</argsstring>
+        <name>getCurrentIteration</name>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates current iteration based on the overall fraction. The overall fraction will be in the range of [0, mRepeatCount + 1]. Both current iteration and fraction in the current iteration can be derived from it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="263" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1afee7af6fad786b584ef8c5a8cf9aa06b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::getCurrentIterationFraction</definition>
+        <argsstring>(float fraction, bool inReverse)</argsstring>
+        <name>getCurrentIterationFraction</name>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inReverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the fraction of the current iteration, taking into account whether the animation should be played backwards. E.g. When the animation is played backwards in an iteration, the fraction for that iteration will go from 1.f to 0.f. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="270" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a7899894909aa1f849a8abef7feed749d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SValueAnimator::clampFraction</definition>
+        <argsstring>(float fraction)</argsstring>
+        <name>clampFraction</name>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clamps fraction into the correct range: [0, mRepeatCount + 1]. If repeat count is infinite, no upper bound will be set for the fraction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fraction to be clamped </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fraction clamped into the range of [0, mRepeatCount + 1] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="279" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a0fc7fa4f86f96148203d92892c404b31" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::shouldPlayBackward</definition>
+        <argsstring>(int iteration, bool inReverse)</argsstring>
+        <name>shouldPlayBackward</name>
+        <param>
+          <type>int</type>
+          <declname>iteration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inReverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the direction of animation playing (i.e. forward or backward), based on 1) whether the entire animation is being reversed, 2) repeat mode applied to the current iteration. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="286" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a77e1f994c6a0f8b6b424db8f638d8e3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::notifyStartListeners</definition>
+        <argsstring>()</argsstring>
+        <name>notifyStartListeners</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="396" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a53ec40978b22e525ce78694b6d5fd287" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::start</definition>
+        <argsstring>(bool playBackwards)</argsstring>
+        <name>start</name>
+        <param>
+          <type>bool</type>
+          <declname>playBackwards</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start the animation playing. This version of start() takes a bool flag that indicates whether the animation should play in reverse. The flag is usually false, but may be set to true if called from the <ref refid="class_s_o_u_i_1_1_s_value_animator_1af5bc41e84e75b030262559893441a80d" kindref="member">reverse()</ref> method.</para>
+<para>The animation started by calling this method will be run on the thread that called this method. This thread should have a Looper on it (a runtime exception will be thrown if this is not the case). Also, if the animation will animate properties of objects in the view hierarchy, then the calling thread should be the UI thread for that view hierarchy.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>playBackwards</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the <ref refid="class_s_o_u_i_1_1_s_value_animator" kindref="compound">SValueAnimator</ref> should start playing in reverse. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="411" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a8372fabf71d12d910b5d6bba6791537f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::endAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>endAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called internally to end an animation by removing it from the animations list. Must be called on the UI thread. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="441" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a45446ba1577e1f17cbc033fde54da1df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::startAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>startAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called internally to start an animation by adding it to the active animations list. Must be called on the UI thread. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="447" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ad555d615e74ebeb855cad88fdc7b9af5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::isPulsingInternal</definition>
+        <argsstring>()</argsstring>
+        <name>isPulsingInternal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal only: This tracks whether the animation has gotten on the animation loop. Note this is different than <ref refid="" kindref="compound">isRunning()</ref> in that the latter tracks the time after start() is called (or after start delay if any), which may be before the animation loop starts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="454" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ab3f2ce758e1581bff38f6cc09e3f5959" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::animateBasedOnTime</definition>
+        <argsstring>(uint64_t currentTime)</argsstring>
+        <name>animateBasedOnTime</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>currentTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This internal function processes a single animation frame for a given animation. The currentTime parameter is the timing pulse sent by the handler, used to calculate the elapsed duration, and therefore the elapsed fraction, of the animation. The return value indicates whether the animation should be ended (which happens when the elapsed time of the animation exceeds the animation&apos;s duration, including the repeatCount).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current time, as tracked by the static timing handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the animation&apos;s duration, including any repetitions due to <computeroutput>repeatCount</computeroutput> has been exceeded and the animation should be ended. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="477" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1aaf5485eac395328225b45da3b8184e7b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::animateBasedOnPlayTime</definition>
+        <argsstring>(long currentPlayTime, long lastPlayTime, bool inReverse)</argsstring>
+        <name>animateBasedOnPlayTime</name>
+        <param>
+          <type>long</type>
+          <declname>currentPlayTime</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>lastPlayTime</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inReverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal use only.</para>
+<para>This method does not modify any fields of the animation. It should be called when seeking in an AnimatorSet. When the last play time and current play time are of different repeat iterations, <ref refid="" kindref="compound">android.view.animation.Animation.AnimationListener#onAnimationRepeat(Animation)</ref> will be called. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="488" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a8e7a064c2d73b14a0b5ef2c20798b2a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::skipToEndValue</definition>
+        <argsstring>(bool inReverse)</argsstring>
+        <name>skipToEndValue</name>
+        <param>
+          <type>bool</type>
+          <declname>inReverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Internal use only. Skips the animation value to end/start, depending on whether the play direction is forward or backward.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inReverse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether the end value is based on a reverse direction. If yes, this is equivalent to skip to start value in a forward playing direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="498" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a66ba98e635456a6dce199dc9e61ee1fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::isInitialized</definition>
+        <argsstring>()</argsstring>
+        <name>isInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="500" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ad23e4739b22ffd6f2febbf150282540b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SValueAnimator::doAnimationFrame</definition>
+        <argsstring>(uint64_t frameTime)</argsstring>
+        <name>doAnimationFrame</name>
+        <param>
+          <type>uint64_t</type>
+          <declname>frameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes a frame of the animation, adjusting the start time if needed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame time. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the animation has ended. @hide </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="509" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a3aaf396242acefe7e82bf042cc0aea80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::animateValue</definition>
+        <argsstring>(float fraction)</argsstring>
+        <name>animateValue</name>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called with the elapsed fraction of the animation during every animation frame. This function turns the elapsed fraction into an interpolated fraction and then into an animated value (from the evaluator. The function is called mostly during animation updates, but it is also called when the <computeroutput>end()</computeroutput> function is called, to set the value on the property.</para>
+<para>Overrides of this method must call the superclass to perform the calculation of the animated value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The elapsed fraction of the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="533" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a2beed090c365d213f0eeff249d61948d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::removeAnimationCallback</definition>
+        <argsstring>()</argsstring>
+        <name>removeAnimationCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="535" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1ad68bd9d6c8949fef7d8bf4264bf6a30e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SValueAnimator::addAnimationCallback</definition>
+        <argsstring>()</argsstring>
+        <name>addAnimationCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="536" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a689791ba17d53f83914a053968dfe286" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SValueAnimator::copy</definition>
+        <argsstring>(const IValueAnimator *pSrc)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+          <declname>pSrc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="538" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1aae2f1e5f6df82c9dfcfba3ac3a7cf112" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SValueAnimator::onEvaluateValue</definition>
+        <argsstring>(float fraction)=0</argsstring>
+        <name>onEvaluateValue</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_value_animator_1a70a8afa37ff3fed6d39b017cea3bf3ef">onEvaluateValue</reimplements>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="540" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_animator_1a936e9b811653821fa8ba292f62fbaa31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SValueAnimator::OnNextFrame</definition>
+        <argsstring>() override</argsstring>
+        <name>OnNextFrame</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69">OnNextFrame</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="542" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SValueAnimator</label>
+        <link refid="class_s_o_u_i_1_1_s_value_animator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="2">
+        <label>SOUI::IValueAnimator</label>
+        <link refid="struct_s_o_u_i_1_1_i_value_animator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IObject</label>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SValueAnimator</label>
+        <link refid="class_s_o_u_i_1_1_s_value_animator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="private-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>mContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="2">
+        <label>SOUI::IValueAnimator</label>
+        <link refid="struct_s_o_u_i_1_1_i_value_animator"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>IObject</label>
+      </node>
+      <node id="6">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" line="58" column="55" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/SValueAnimator.h" bodystart="58" bodyend="543"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad68bd9d6c8949fef7d8bf4264bf6a30e" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>addAnimationCallback</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a1c5a6db82534dc0e2ef776b856b8ded3" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>addListener</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1a159c9984fd4288a3f06151a8c081b597" prot="public" virt="pure-virtual" ambiguityscope="SOUI::IValueAnimator::"><scope>SOUI::SValueAnimator</scope><name>addListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a14fc8e2ff785ac081888322e0fbd8fa5" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>addUpdateListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aaf5485eac395328225b45da3b8184e7b" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>animateBasedOnPlayTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ab3f2ce758e1581bff38f6cc09e3f5959" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>animateBasedOnTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a3aaf396242acefe7e82bf042cc0aea80" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>animateValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ac9eedae432196270dea3cfd4dbaa0a7e" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>canReverse</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a7899894909aa1f849a8abef7feed749d" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>clampFraction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1a5681bc837afbc8d207d1ed55ab377c23" prot="public" virt="pure-virtual"><scope>SOUI::SValueAnimator</scope><name>clone</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1af041014d2c578217ecf7720e274ae07f" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>commitAnimationFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a689791ba17d53f83914a053968dfe286" prot="protected" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>copy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad23e4739b22ffd6f2febbf150282540b" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>doAnimationFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a15f6bfc70223a59c7baa7713fe2505ee" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>end</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a8372fabf71d12d910b5d6bba6791537f" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>endAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ab7bc6281ca378c54984467be922562b6" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getAnimatedFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a51095c70633af8acbd7e5ac537e48ccc" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>getCurrentIteration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1afee7af6fad786b584ef8c5a8cf9aa06b" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>getCurrentIterationFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1abb3f852ba8464d9caf5c547420290e79" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getCurrentPlayTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a70194b7677c4b3a8b9829a490412ac17" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a321b56cc779df67197de4feca9406d9c" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a4a20c12738ae7fc9aa1fa4531037be0d" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ae2c70aff520f21070f89b009eea17b7f" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a562fd3e8eb7d1a409e7e03ce81ad8fa6" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>getScaledDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a460259dbe60044fcab00eae5bb515500" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getStartDelay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a4836c3aadf92e247f4c83c3855c58552" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>getTotalDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a66ba98e635456a6dce199dc9e61ee1fa" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>isInitialized</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad555d615e74ebeb855cad88fdc7b9af5" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>isPulsingInternal</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a532c581e79d9690b526868852fda2512" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>isRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1acf2fdd0dd094f2295a18e5d36fa04bd3" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>isStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad7affc190cab39edbcbdd4d66ab625a1" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mAnimationEndRequested</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a13c729b8d0423525bc706a16ead5df4d" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ae7007a0a6c29e3c281f4c09a2423442c" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mCurrentFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a1110be03c33ea02b3be3c1a474bf31b2" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a9cf756d0d6e09511ccd79f94ed35e1df" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mFirstFrameTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1add0ef023c778eee01559e2dd11343264" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mInitialized</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a25739b2150323da688d6ad4c56ca1592" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad8f296359c75da5059363536ad3c9c30" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mLastFrameTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1acedd64b9467ff471ce9df6f1c40165c4" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mListeners</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a2b1a490f2c17ae1b3f1e24ca0c1eeaa8" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mOverallFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a5ac9fa4ba6b6a29399bb0578502a418a" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a2a6f602058bca59b361ed18e2518aae0" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ab67254d10ce9a336a7427aa017a8fecc" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mReversing</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a680a9a3c7c69a8b9fdaee47b3879617f" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ab7a8d28ad3366f7148e4947fbcd7881d" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mSeekFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ae2142462290f6ff61c00671344358c42" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mStartDelay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a067e2f5f1dfd3d8d5aee9d19176dcb7e" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aca957c49298cea19bdc00c0996a7591d" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mStartListenersCalled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1afcf046824282df0f5938f24a2a717126" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a0c0b4a0ed77a2d8a4c4fd705a00725d5" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mStartTimeCommitted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aaa39938e7a6c7def1f92ad28ff3914b1" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>mUpdateListeners</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a77e1f994c6a0f8b6b424db8f638d8e3f" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>notifyStartListeners</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aae2f1e5f6df82c9dfcfba3ac3a7cf112" prot="protected" virt="pure-virtual"><scope>SOUI::SValueAnimator</scope><name>onEvaluateValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a936e9b811653821fa8ba292f62fbaa31" prot="protected" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>OnNextFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad42e8e4204952de69b6312e7797a2b66" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>removeAllUpdateListeners</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a2beed090c365d213f0eeff249d61948d" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>removeAnimationCallback</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad8991e8f4f3b4345f8fe4d29387c8292" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>removeListener</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1a029ac2bf4e5c85b8414d0b573699e2ed" prot="public" virt="pure-virtual" ambiguityscope="SOUI::IValueAnimator::"><scope>SOUI::SValueAnimator</scope><name>removeListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a61870ec08f8581e02ecec5d46a29452a" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>removeUpdateListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1af5bc41e84e75b030262559893441a80d" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>reverse</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ad4a7c8d73e19a86b23576261a5b91073" prot="protected" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>sDurationScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ae0ae6eacdf1204c85c601db9b50ae761" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setCurrentFraction</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aef14816d5192a75bf2d96d41986af6be" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setCurrentPlayTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a43a8743b0aed05fa008a406953d67bb4" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a946bbff628def8ae9abe9ee6b2e6d77c" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1acff87fdda4f5d2e43bec739a07b1b6eb" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a5a59ecd8e07278140060fe4f250bb63a" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1aa470d1cf6b59dc060cafeaa21838e6a3" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>setStartDelay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a0fc7fa4f86f96148203d92892c404b31" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>shouldPlayBackward</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a8e7a064c2d73b14a0b5ef2c20798b2a7" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>skipToEndValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a53ec40978b22e525ce78694b6d5fd287" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>start</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1ac481e666d4b09a143342fd30258f7e6f" prot="public" virt="virtual"><scope>SOUI::SValueAnimator</scope><name>start</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a45446ba1577e1f17cbc033fde54da1df" prot="private" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>startAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a4a0d936f1cd12a8979054b6df91b705d" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>SValueAnimator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_animator_1a234e2d9984175d41414a22342d6e56f6" prot="public" virt="non-virtual"><scope>SOUI::SValueAnimator</scope><name>~SValueAnimator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

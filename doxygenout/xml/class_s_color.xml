@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_color" kind="class" language="C++" prot="public">
+    <compoundname>SColor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_color_1a81fd6cd641a26148abb4838e3404d105" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SColor::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="72" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_color_1a0204c070e8c43dd62fb36abc8a968032" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SColor::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="73" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_color_1a94440f06a22c7702fc2de5c45caf0f7c" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SColor::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="74" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_color_1a9b522c99cd729b533377d11f2ab3f0e5" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SColor::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="75" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_color_1a04902d75567cb10f6c7f7776f9f22507" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SColor::SColor</definition>
+        <argsstring>(BYTE r, BYTE g, BYTE b, BYTE a=0xFF)</argsstring>
+        <name>SColor</name>
+        <param>
+          <type>BYTE</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>a</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="17" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a9a1a9613a23e98561bd276fbc19a642c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SColor::SColor</definition>
+        <argsstring>(COLORREF cr, BYTE alpha)</argsstring>
+        <name>SColor</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="22" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a2f3f1b3be5ce8b8e9f698fea4d77829f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SColor::SColor</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>SColor</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="30" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a3c25eff98a9f41707915d879fb8980e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const COLORREF</type>
+        <definition>const COLORREF SColor::toCOLORREF</definition>
+        <argsstring>() const</argsstring>
+        <name>toCOLORREF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="38" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a5c8314ed56c67d7fe37108a8cbc09f4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const DWORD</type>
+        <definition>const DWORD SColor::toARGB</definition>
+        <argsstring>() const</argsstring>
+        <name>toARGB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="43" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a0b18fcd205b9b7f06d9166eb1849f4ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SColor::setRGB</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>setRGB</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="50" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1a30d753f5f4bc225fb7e4f383611362d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SColor::setRGB</definition>
+        <argsstring>(COLORREF cr, BYTE alpha)</argsstring>
+        <name>setRGB</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="58" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_color_1add6ffbd102147dd08f630117fc26ead2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SColor::updateAlpha</definition>
+        <argsstring>(BYTE alpha)</argsstring>
+        <name>updateAlpha</name>
+        <param>
+          <type>BYTE</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="66" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="66" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" line="15" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SColor.h" bodystart="14" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_s_color_1a9b522c99cd729b533377d11f2ab3f0e5" prot="public" virt="non-virtual"><scope>SColor</scope><name>a</name></member>
+      <member refid="class_s_color_1a81fd6cd641a26148abb4838e3404d105" prot="public" virt="non-virtual"><scope>SColor</scope><name>b</name></member>
+      <member refid="class_s_color_1a0204c070e8c43dd62fb36abc8a968032" prot="public" virt="non-virtual"><scope>SColor</scope><name>g</name></member>
+      <member refid="class_s_color_1a94440f06a22c7702fc2de5c45caf0f7c" prot="public" virt="non-virtual"><scope>SColor</scope><name>r</name></member>
+      <member refid="class_s_color_1a04902d75567cb10f6c7f7776f9f22507" prot="public" virt="non-virtual"><scope>SColor</scope><name>SColor</name></member>
+      <member refid="class_s_color_1a9a1a9613a23e98561bd276fbc19a642c" prot="public" virt="non-virtual"><scope>SColor</scope><name>SColor</name></member>
+      <member refid="class_s_color_1a2f3f1b3be5ce8b8e9f698fea4d77829f" prot="public" virt="non-virtual"><scope>SColor</scope><name>SColor</name></member>
+      <member refid="class_s_color_1a0b18fcd205b9b7f06d9166eb1849f4ce" prot="public" virt="non-virtual"><scope>SColor</scope><name>setRGB</name></member>
+      <member refid="class_s_color_1a30d753f5f4bc225fb7e4f383611362d6" prot="public" virt="non-virtual"><scope>SColor</scope><name>setRGB</name></member>
+      <member refid="class_s_color_1a5c8314ed56c67d7fe37108a8cbc09f4a" prot="public" virt="non-virtual"><scope>SColor</scope><name>toARGB</name></member>
+      <member refid="class_s_color_1a3c25eff98a9f41707915d879fb8980e9" prot="public" virt="non-virtual"><scope>SColor</scope><name>toCOLORREF</name></member>
+      <member refid="class_s_color_1add6ffbd102147dd08f630117fc26ead2" prot="public" virt="non-virtual"><scope>SColor</scope><name>updateAlpha</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

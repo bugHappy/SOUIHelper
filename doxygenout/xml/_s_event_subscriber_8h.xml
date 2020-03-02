@@ -1,0 +1,730 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_event_subscriber_8h" kind="file" language="C++">
+    <compoundname>SEventSubscriber.h</compoundname>
+    <includes refid="_s_events_8h" local="yes">SEvents.h</includes>
+    <includedby refid="_s_wnd_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h</includedby>
+    <includedby refid="_s_script_module-i_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h</includedby>
+    <includedby refid="_s_event_set_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="3">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="22">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SSpinButtonCtrl.h</label>
+        <link refid="_s_spin_button_ctrl_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SSliderBar.h</label>
+        <link refid="_s_slider_bar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWnd.h</label>
+        <link refid="_s_real_wnd_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostDialog.h</label>
+        <link refid="_s_host_dialog_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h</label>
+        <link refid="_s_drop_down_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SScrollbar.h</label>
+        <link refid="_s_scrollbar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h</label>
+        <link refid="_s_host_wnd_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h</label>
+        <link refid="_s_calendar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h</label>
+        <link refid="_s_tab_ctrl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h</label>
+        <link refid="_s_list_ctrl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SActiveX.h</label>
+        <link refid="_s_active_x_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STreeCtrl.h</label>
+        <link refid="_s_tree_ctrl_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STileView.h</label>
+        <link refid="_s_tile_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h</label>
+        <link refid="_s_menu_ex_8h_source"/>
+      </node>
+      <node id="12">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenu.h</label>
+        <link refid="_s_menu_8h_source"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWndAccessible.h</label>
+        <link refid="_s_wnd_accessible_8h_source"/>
+      </node>
+      <node id="34">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h</label>
+        <link refid="_swnd_finder_8h_source"/>
+      </node>
+      <node id="29">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMessageBox.h</label>
+        <link refid="_s_message_box_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBox.h</label>
+        <link refid="_s_combo_box_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SHotKeyCtrl.h</label>
+        <link refid="_s_hot_key_ctrl_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SCaption.h</label>
+        <link refid="_s_caption_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h</label>
+        <link refid="_s_focus_manager_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/STaskHandler.h</label>
+        <link refid="_s_task_handler_8h_source"/>
+      </node>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="16">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h</label>
+        <link refid="_s_m_c_list_view_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SDragWnd.h</label>
+        <link refid="_s_drag_wnd_8h_source"/>
+      </node>
+      <node id="20">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SSplitWnd.h</label>
+        <link refid="_s_split_wnd_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h</label>
+        <link refid="_s_listbox_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h</label>
+        <link refid="_s_tree_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h</label>
+        <link refid="_s_item_panel_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h</label>
+        <link refid="_s_rich_edit_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SCmnCtrl.h</label>
+        <link refid="_s_cmn_ctrl_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SHostMgr.h</label>
+        <link refid="_s_host_mgr_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SPanel.h</label>
+        <link refid="_s_panel_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h</label>
+        <link refid="_s_tool_tip_8h_source"/>
+      </node>
+      <node id="46">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h</label>
+        <link refid="_s_native_wnd_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h</label>
+        <link refid="_s_script_timer_8h_source"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMenuBar.h</label>
+        <link refid="_s_menu_bar_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h</label>
+        <link refid="_s_header_ctrl_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SDropTargetDispatcher.h</label>
+        <link refid="_s_drop_target_dispatcher_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBase.h</label>
+        <link refid="_s_combo_base_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainerImpl.h</label>
+        <link refid="_s_wnd_container_impl_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SDateTimePicker.h</label>
+        <link refid="_s_date_time_picker_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</label>
+        <link refid="_s_list_view_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_s_o_u_i_1_1_i_slot_functor" prot="public">SOUI::ISlotFunctor</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_free_function_slot" prot="public">SOUI::FreeFunctionSlot</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_member_function_slot" prot="public">SOUI::MemberFunctionSlot</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_member_function_slot" prot="public">SOUI::MemberFunctionSlot</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_member_function_slot_3_01_t_00_01_event_args_01_4" prot="public">SOUI::MemberFunctionSlot&lt; T, EventArgs &gt;</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SEvents.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_MSC_VER<sp/>&gt;=<sp/>1700<sp/><sp/><sp/><sp/>//VS2012</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Start<sp/>of<sp/>SOUI<sp/>namespace<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_SLOTTYPE{SLOT_FUN,SLOT_MEMBER,SLOT_STDFUNCTOR,SLOT_USER};</highlight></codeline>
+<codeline lineno="19" refid="struct_s_o_u_i_1_1_i_slot_functor" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pArg)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref>*<sp/>Clone()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref><sp/>&amp;<sp/>sour)</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>=0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/>GetSlotType()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>=0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>A<sp/>=<sp/>EventArgs&gt;</highlight></codeline>
+<codeline lineno="34" refid="class_s_o_u_i_1_1_free_function_slot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_free_function_slot" kindref="compound">FreeFunctionSlot</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(<ref refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" kindref="member">SlotFunction</ref>)(A<sp/>*);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_free_function_slot" kindref="compound">FreeFunctionSlot</ref>(<ref refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" kindref="member">SlotFunction</ref>*<sp/>func)<sp/>:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_function(func)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pArg)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_function(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">A*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(pArg));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ISlotFunctor*<sp/>Clone()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>FreeFunctionSlot(d_function);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ISlotFunctor<sp/>&amp;<sp/>sour)</highlight><highlight class="keyword">const<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sour.GetSlotType()!=SLOT_FUN)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FreeFunctionSlot<sp/>*psour=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">FreeFunctionSlot*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;sour);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SASSERT(psour);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>psour-&gt;d_function==d_function;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/>GetSlotType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SLOT_FUN;}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" kindref="member">SlotFunction</ref>*<sp/>d_function;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>_MSC_VER<sp/>&gt;=<sp/>1700<sp/><sp/><sp/><sp/>//VS2012</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;bool(EventArgs*)&gt;<sp/>EventCallback;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">StdFunctionSlot<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ISlotFunctor</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>StdFunctionSlot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EventCallback<sp/>&amp;<sp/>fun)<sp/>:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_function(fun)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(EventArgs<sp/>*pArg)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_function(pArg);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ISlotFunctor*<sp/>Clone()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="85"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>StdFunctionSlot(d_function);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ISlotFunctor<sp/>&amp;<sp/>sour)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="90"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/>GetSlotType()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SLOT_STDFUNCTOR;<sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>EventCallback<sp/>d_function;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>A<sp/>=<sp/>EventArgs&gt;</highlight></codeline>
+<codeline lineno="107" refid="class_s_o_u_i_1_1_member_function_slot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_member_function_slot" kindref="compound">MemberFunctionSlot</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>A&gt;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_member_function_slot" kindref="compound">MemberFunctionSlot</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114" refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool(T::*<ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref>)(A<sp/>*);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_member_function_slot" kindref="compound">MemberFunctionSlot</ref>(<ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref><sp/>func,<sp/>T*<sp/>obj)<sp/>:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_function(func),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_object(obj),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_eventid(A::EventID)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pArg)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(d_object-&gt;*d_function)(</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">A*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(pArg));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ISlotFunctor*<sp/>Clone()</highlight><highlight class="keyword"><sp/>const<sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MemberFunctionSlot(d_function,d_object);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ISlotFunctor<sp/>&amp;<sp/>sour)</highlight><highlight class="keyword">const<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sour.GetSlotType()!=<sp/>(UINT)(SLOT_USER<sp/>+<sp/>d_eventid))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MemberFunctionSlot<sp/>*psour=</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">MemberFunctionSlot*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;sour);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SASSERT(psour);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>psour-&gt;d_function==d_function<sp/>&amp;&amp;<sp/>psour-&gt;d_object==d_object;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/>GetSlotType()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SLOT_USER<sp/>+<sp/>d_eventid;}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref><sp/>d_function;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>d_object;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d_eventid;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="149" refid="class_s_o_u_i_1_1_member_function_slot_3_01_t_00_01_event_args_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_member_function_slot" kindref="compound">MemberFunctionSlot</ref>&lt;T,<sp/><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref>&gt;<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153" refid="class_s_o_u_i_1_1_member_function_slot_3_01_t_00_01_event_args_01_4_1afc0a9f4a8f7606e9458c1bbdcb1727c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool(T::*<ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref>)(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_member_function_slot" kindref="compound">MemberFunctionSlot</ref>(<ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref><sp/>func,<sp/>T*<sp/>obj)<sp/>:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_function(func),</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_object(obj)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pArg)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(d_object-&gt;*d_function)(pArg);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ISlotFunctor*<sp/>Clone()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="166"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>MemberFunctionSlot(d_function,<sp/>d_object);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Equal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ISlotFunctor<sp/>&amp;<sp/>sour)</highlight><highlight class="keyword">const</highlight></codeline>
+<codeline lineno="171"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sour.GetSlotType()<sp/>!=<sp/>SLOT_MEMBER)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MemberFunctionSlot<sp/>*psour<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">MemberFunctionSlot*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(&amp;sour);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SASSERT(psour);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>psour-&gt;d_function<sp/>==<sp/>d_function<sp/>&amp;&amp;<sp/>psour-&gt;d_object<sp/>==<sp/>d_object;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT<sp/>GetSlotType()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SLOT_MEMBER;<sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_member_function_slot_1afe631cc3580fc3d2e4a179d9fb93a3f8" kindref="member">MemberFunctionType</ref><sp/>d_function;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>d_object;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>A&gt;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">MemberFunctionSlot&lt;T,A&gt;<sp/>Subscriber(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(T::*<sp/>pFn)(A<sp/>*),<sp/>T*<sp/>pObject)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>MemberFunctionSlot&lt;T,A&gt;(pFn,<sp/>pObject);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>FreeFunctionSlot&lt;&gt;<sp/>Subscriber(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>(*pFn)(EventArgs<sp/>*))</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FreeFunctionSlot&lt;&gt;(pFn);<sp/></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>End<sp/>of<sp/><sp/>CEGUI<sp/>namespace<sp/>section</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h"/>
+  </compounddef>
+</doxygen>

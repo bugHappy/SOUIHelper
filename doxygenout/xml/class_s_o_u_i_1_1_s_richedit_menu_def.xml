@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_richedit_menu_def" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SRicheditMenuDef</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SRicheditMenuDef &gt;</basecompoundref>
+    <includes refid="_s_rich_edit_8h" local="no">SRichEdit.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_richedit_menu_def_1a6f02eae5f1129a973eecc9ee49010ac1" prot="protected" static="no" mutable="no">
+        <type>pugi::xml_document</type>
+        <definition>pugi::xml_document SOUI::SRicheditMenuDef::m_xmlMenu</definition>
+        <argsstring></argsstring>
+        <name>m_xmlMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>xml文件对象 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="108" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_richedit_menu_def_1a984ae6f4a8cfcf3b5b77397bcea0ce1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRicheditMenuDef::SetMenuXml</definition>
+        <argsstring>(pugi::xml_node xmlMenu)</argsstring>
+        <name>SetMenuXml</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlMenu</declname>
+        </param>
+        <briefdescription>
+<para>加载xml文件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_richedit_menu_def_1a984ae6f4a8cfcf3b5b77397bcea0ce1e" kindref="member">SRicheditMenuDef::SetMenuXml</ref> Describe 加载xml文件 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="91" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_richedit_menu_def_1a09edfcc158e568cd614a79630ec7e764" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pugi::xml_node</type>
+        <definition>pugi::xml_node SOUI::SRicheditMenuDef::GetMenuXml</definition>
+        <argsstring>()</argsstring>
+        <name>GetMenuXml</name>
+        <briefdescription>
+<para>获取xml文件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_richedit_menu_def_1a09edfcc158e568cd614a79630ec7e764" kindref="member">SRicheditMenuDef::GetMenuXml</ref> Describe 获取xml文件 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="103" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="103" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SRicheditMenuDef &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SRicheditMenuDef</label>
+        <link refid="class_s_o_u_i_1_1_s_richedit_menu_def"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SRicheditMenuDef &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SRicheditMenuDef</label>
+        <link refid="class_s_o_u_i_1_1_s_richedit_menu_def"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="82" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="81" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_richedit_menu_def_1a09edfcc158e568cd614a79630ec7e764" prot="public" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>GetMenuXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_richedit_menu_def_1a6f02eae5f1129a973eecc9ee49010ac1" prot="protected" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>m_xmlMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_richedit_menu_def_1a984ae6f4a8cfcf3b5b77397bcea0ce1e" prot="public" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>SetMenuXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SRicheditMenuDef</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SRicheditMenuDef</scope><name>~SSingleton2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

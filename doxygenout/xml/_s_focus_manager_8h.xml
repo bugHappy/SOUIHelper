@@ -1,0 +1,906 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_focus_manager_8h" kind="file" language="C++">
+    <compoundname>SFocusManager.h</compoundname>
+    <includes refid="_s_wnd_8h" local="yes">core/SWnd.h</includes>
+    <includes refid="_s_accelerator_8h" local="yes">SAccelerator.h</includes>
+    <includedby refid="_s_cmn_ctrl_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SCmnCtrl.h</includedby>
+    <includedby refid="_s_wnd_container_impl_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainerImpl.h</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="52">
+        <label>helper/SColor.h</label>
+        <link refid="_s_color_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>sobject/sobject.hpp</label>
+      </node>
+      <node id="74">
+        <label>SAccelerator.h</label>
+        <link refid="_s_accelerator_8h_source"/>
+      </node>
+      <node id="62">
+        <label>helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>SwndStyle.h</label>
+        <link refid="_s_wnd_style_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>windows.h</label>
+      </node>
+      <node id="6">
+        <label>assert.h</label>
+      </node>
+      <node id="66">
+        <label>res.mgr/SDpiAwareFont.h</label>
+        <link refid="_s_dpi_aware_font_8h_source"/>
+      </node>
+      <node id="49">
+        <label>res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="35">
+        <label>stdint.h</label>
+        <link refid="stdint_8h_source"/>
+      </node>
+      <node id="5">
+        <label>SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>interface/scaret-i.h</label>
+        <link refid="scaret-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>interface/STooltip-i.h</label>
+        <link refid="stooltip-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>animation/SInterpolatorImpl.h</label>
+        <link refid="_s_interpolator_impl_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>core/SDefine.h</label>
+        <link refid="_s_define_8h_source"/>
+      </node>
+      <node id="29">
+        <label>interface/SAnimation-i.h</label>
+        <link refid="_s_animation-i_8h_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>interface/sresprovider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>matrix/SFloat.h</label>
+        <link refid="_s_float_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>res.mgr/SFontInfo.h</label>
+        <link refid="_s_font_info_8h_source"/>
+      </node>
+      <node id="63">
+        <label>helper/SwndMsgCracker.h</label>
+        <link refid="_swnd_msg_cracker_8h_source"/>
+      </node>
+      <node id="18">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>animation/STransformation.h</label>
+        <link refid="_s_transformation_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="50">
+        <label>res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>SwndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>matrix/SMatrix.h</label>
+        <link refid="_s_matrix_8h_source"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SRect.h</label>
+        <link refid="_s_rect_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>interface/SLog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="47">
+        <label>interface/Sskinobj-i.h</label>
+        <link refid="_s_skinobj-i_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>atl.mini/scomcli.h</label>
+      </node>
+      <node id="40">
+        <label>res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>helper/SCriticalSection.h</label>
+      </node>
+      <node id="28">
+        <label>sobject/sobject-i.h</label>
+      </node>
+      <node id="42">
+        <label>souicoll.h</label>
+      </node>
+      <node id="55">
+        <label>core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>interface/SInterpolator-i.h</label>
+        <link refid="sinterpolator-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="56">
+        <label>OleAcc.h</label>
+      </node>
+      <node id="15">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h</label>
+        <link refid="_s_focus_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>time.h</label>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>interface/SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>../core/smsgloop.h</label>
+        <link refid="_s_msg_loop_8h_source"/>
+      </node>
+      <node id="8">
+        <label>core/ssingleton.h</label>
+        <link refid="_s_singleton_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>animation/SAnimation.h</label>
+        <link refid="_s_animation_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>interface/slayout-i.h</label>
+        <link refid="slayout-i_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SPoint.h</label>
+        <link refid="_s_point_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>control/SRealWndHandler-i.h</label>
+        <link refid="_s_real_wnd_handler-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>interface/SValueAnimator-i.h</label>
+        <link refid="_s_value_animator-i_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>layout/SLayoutSize.h</label>
+        <link refid="_s_layout_size_8h_source"/>
+      </node>
+      <node id="26">
+        <label>interface/SAttrStorage-i.h</label>
+        <link refid="_s_attr_storage-i_8h_source"/>
+      </node>
+      <node id="17">
+        <label>event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>res.mgr/SNamedValue.h</label>
+        <link refid="_s_named_value_8h_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>../helper/SplitString.h</label>
+        <link refid="_split_string_8h_source"/>
+      </node>
+      <node id="61">
+        <label>interface/saccproxy-i.h</label>
+        <link refid="saccproxy-i_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>interface/STimelineHandler-i.h</label>
+        <link refid="_s_timeline_handler-i_8h_source"/>
+      </node>
+      <node id="70">
+        <label>OCIdl.h</label>
+      </node>
+      <node id="19">
+        <label>interface/STranslator-i.h</label>
+        <link refid="_s_translator-i_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SSliderBar.h</label>
+        <link refid="_s_slider_bar_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostDialog.h</label>
+        <link refid="_s_host_dialog_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h</label>
+        <link refid="_s_drop_down_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h</label>
+        <link refid="_s_host_wnd_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STileView.h</label>
+        <link refid="_s_tile_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h</label>
+        <link refid="_s_menu_ex_8h_source"/>
+      </node>
+      <node id="11">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMessageBox.h</label>
+        <link refid="_s_message_box_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBox.h</label>
+        <link refid="_s_combo_box_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h</label>
+        <link refid="_s_focus_manager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="17">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h</label>
+        <link refid="_s_m_c_list_view_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h</label>
+        <link refid="_s_tree_view_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h</label>
+        <link refid="_s_item_panel_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SCmnCtrl.h</label>
+        <link refid="_s_cmn_ctrl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBase.h</label>
+        <link refid="_s_combo_base_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainerImpl.h</label>
+        <link refid="_s_wnd_container_impl_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListView.h</label>
+        <link refid="_s_list_view_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_u_i_1_1_focus_search" prot="public">SOUI::FocusSearch</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_focus_manager" prot="public">SOUI::SFocusManager</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_wnd_8h" kindref="compound">core/SWnd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SAccelerator.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FocusSearch<sp/>is<sp/>an<sp/>object<sp/>that<sp/>implements<sp/>the<sp/>algorithm<sp/>to<sp/>find<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>next<sp/>view<sp/>to<sp/>focus.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_s_o_u_i_1_1_focus_search" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_focus_search" kindref="compound">FocusSearch</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|root|<sp/>is<sp/>the<sp/>root<sp/>of<sp/>the<sp/>view<sp/>hierarchy<sp/>to<sp/>traverse.<sp/>Focus<sp/>will<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>trapped<sp/>inside.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|cycle|<sp/>should<sp/>be<sp/>true<sp/>if<sp/>you<sp/>want<sp/>FindNextFocusableView<sp/>to<sp/>cycle<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>the<sp/>first<sp/>view<sp/>within<sp/>this<sp/>root<sp/>when<sp/>the<sp/>traversal<sp/>reaches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>end.<sp/>If<sp/>this<sp/>is<sp/>true,<sp/>then<sp/>if<sp/>you<sp/>pass<sp/>a<sp/>valid<sp/>starting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>view<sp/>to<sp/>FindNextFocusableView<sp/>you<sp/>will<sp/>always<sp/>get<sp/>a<sp/>valid<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out,<sp/>even<sp/>if<sp/>it&apos;s<sp/>the<sp/>same<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|accessibility_mode|<sp/>should<sp/>be<sp/>true<sp/>if<sp/>full<sp/>keyboard<sp/>accessibility<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>needed<sp/>and<sp/>you<sp/><sp/>want<sp/>to<sp/>check<sp/>IsAccessibilityFocusableInRootView(),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>rather<sp/>than<sp/>IsFocusableInRootView().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_focus_search" kindref="compound">FocusSearch</ref>(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>root,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cycle);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_s_o_u_i_1_1_focus_search" kindref="compound">FocusSearch</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Finds<sp/>the<sp/>next<sp/>view<sp/>that<sp/>should<sp/>be<sp/>focused<sp/>and<sp/>returns<sp/>it.<sp/>If<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FocusTraversable<sp/>is<sp/>found<sp/>while<sp/>searching<sp/>for<sp/>the<sp/>focusable<sp/>view,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>returns<sp/>NULL<sp/>and<sp/>sets<sp/>|focus_traversable|<sp/>to<sp/>the<sp/>FocusTraversable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>|focus_traversable_view|<sp/>to<sp/>the<sp/>view<sp/>associated<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FocusTraversable.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>NULL<sp/>if<sp/>the<sp/>end<sp/>of<sp/>the<sp/>focus<sp/>loop<sp/>is<sp/>reached,<sp/>unless<sp/>this<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>was<sp/>initialized<sp/>with<sp/>|cycle|=true,<sp/>in<sp/>which<sp/>case<sp/>it<sp/>goes<sp/>back<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>beginning<sp/>when<sp/>it<sp/>reaches<sp/>the<sp/>end<sp/>of<sp/>the<sp/>traversal.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|starting_view|<sp/>is<sp/>the<sp/>view<sp/>that<sp/>should<sp/>be<sp/>used<sp/>as<sp/>the<sp/>starting<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>when<sp/>looking<sp/>for<sp/>the<sp/>previous/next<sp/>view.<sp/>It<sp/>may<sp/>be<sp/>NULL<sp/>(in<sp/>which<sp/>case</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>the<sp/>first/last<sp/>view<sp/>should<sp/>be<sp/>used<sp/>depending<sp/>if<sp/>normal/reverse).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|reverse|<sp/>whether<sp/>we<sp/>should<sp/>find<sp/>the<sp/>next<sp/>(reverse<sp/>is<sp/>false)<sp/>or<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>previous<sp/>(reverse<sp/>is<sp/>true)<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|direction|<sp/>specifies<sp/>whether<sp/>we<sp/>are<sp/>traversing<sp/>down<sp/>(meaning<sp/>we<sp/>should</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>look<sp/>into<sp/>child<sp/>views)<sp/>or<sp/>traversing<sp/>up<sp/>(don&apos;t<sp/>look<sp/>at<sp/>child<sp/>views).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|check_starting_view|<sp/>is<sp/>true<sp/>if<sp/>starting_view<sp/>may<sp/>obtain<sp/>the<sp/>next<sp/>focus.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|focus_traversable|<sp/>is<sp/>set<sp/>to<sp/>the<sp/>focus<sp/>traversable<sp/>that<sp/>should<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>traversed<sp/>if<sp/>one<sp/>is<sp/>found<sp/>(in<sp/>which<sp/>case<sp/>the<sp/>call<sp/>returns<sp/>NULL).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>|focus_traversable_view|<sp/>is<sp/>set<sp/>to<sp/>the<sp/>view<sp/>associated<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>FocusTraversable<sp/>set<sp/>in<sp/>the<sp/>previous<sp/>parameter<sp/>(it<sp/>is<sp/>used<sp/>as<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>starting<sp/>view<sp/>when<sp/>looking<sp/>for<sp/>the<sp/>next<sp/>focusable<sp/>view).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>FindNextFocusableView(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>starting_view,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check_starting_view);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convenience<sp/>method<sp/>that<sp/>returns<sp/>true<sp/>if<sp/>a<sp/>view<sp/>is<sp/>focusable<sp/>and<sp/>does<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>belong<sp/>to<sp/>the<sp/>specified<sp/>group.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsViewFocusableCandidate(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>v,<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*pGroupOwner);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convenience<sp/>method;<sp/>returns<sp/>true<sp/>if<sp/>a<sp/>view<sp/>is<sp/>not<sp/>NULL<sp/>and<sp/>is<sp/>focusable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(checking<sp/>IsAccessibilityFocusableInRootView()<sp/>if<sp/>accessibility_mode_<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>true).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsFocusable(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>view);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>next<sp/>focusable<sp/>view<sp/>or<sp/>view<sp/>containing<sp/>a<sp/>FocusTraversable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(NULL<sp/>if<sp/>none<sp/>was<sp/>found),<sp/>starting<sp/>at<sp/>the<sp/>starting_view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>|check_starting_view|,<sp/>|can_go_up|<sp/>and<sp/>|can_go_down|<sp/>controls<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>traversal<sp/>of<sp/>the<sp/>views<sp/>hierarchy.<sp/>|skip_group_id|<sp/>specifies<sp/>a<sp/>group_id,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-1<sp/>means<sp/>no<sp/>group.<sp/>All<sp/>views<sp/>from<sp/>a<sp/>group<sp/>are<sp/>traversed<sp/>in<sp/>one<sp/>pass.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>FindNextFocusableViewImpl(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>starting_view,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check_starting_view,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>can_go_up,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>can_go_down,<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>pSkipGroupOwner);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Same<sp/>as<sp/>FindNextFocusableViewImpl<sp/>but<sp/>returns<sp/>the<sp/>previous<sp/>focusable<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>FindPreviousFocusableViewImpl(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>starting_view,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check_starting_view,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>can_go_up,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>can_go_down,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>pSkipGroupOwner);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>root_;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cycle_;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_s_o_u_i_1_1_s_focus_manager" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_focus_manager" kindref="compound">SFocusManager</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_accelerator_mgr" kindref="compound">IAcceleratorMgr</ref></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>reason<sp/>why<sp/>the<sp/>focus<sp/>changed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>FocusChangeReason</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>focus<sp/>changed<sp/>due<sp/>to<sp/>a<sp/>click<sp/>or<sp/>a<sp/>shortcut<sp/>to<sp/>jump<sp/>directly<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>particular<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kReasonDirectFocusChange<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>focus<sp/>changed<sp/>because<sp/>the<sp/>user<sp/>traversed<sp/>focusable<sp/>views<sp/>using</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>keys<sp/>like<sp/>Tab<sp/>or<sp/>Shift+Tab.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kReasonFocusTraversal,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>focus<sp/>changed<sp/>due<sp/>to<sp/>restoring<sp/>the<sp/>focus.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>kReasonFocusRestore,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_focus_manager" kindref="compound">SFocusManager</ref>(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*pOwner);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~<ref refid="class_s_o_u_i_1_1_s_focus_manager" kindref="compound">SFocusManager</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>IsTabTraversalKey(UINT<sp/>vKey);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>OnKeyDown(UINT<sp/>vKey);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Advances<sp/>the<sp/>focus<sp/>(backward<sp/>if<sp/>reverse<sp/>is<sp/>true).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AdvanceFocus(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Low-level<sp/>methods<sp/>to<sp/>force<sp/>the<sp/>focus<sp/>to<sp/>change<sp/>(and<sp/>optionally<sp/>provide</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>reason).<sp/>If<sp/>the<sp/>focus<sp/>change<sp/>should<sp/>only<sp/>happen<sp/>if<sp/>the<sp/>view<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>currenty<sp/>focusable,<sp/>enabled,<sp/>and<sp/>visible,<sp/>call<sp/>view-&gt;RequestFocus().</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFocusedHwndWithReason(SWND<sp/>swnd,<sp/>FocusChangeReason<sp/>reason);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetFocusedHwnd(SWND<sp/>swnd);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clears<sp/>the<sp/>focused<sp/>view.<sp/>The<sp/>window<sp/>associated<sp/>with<sp/>the<sp/>top<sp/>root<sp/>view<sp/>gets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>native<sp/>focus<sp/>(so<sp/>we<sp/>still<sp/>get<sp/>keyboard<sp/>events).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ClearFocus();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SWND<sp/>GetFocusedHwnd();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stores<sp/>and<sp/>restores<sp/>the<sp/>focused<sp/>view.<sp/>Used<sp/>when<sp/>the<sp/>window<sp/>becomes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>active/inactive.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StoreFocusedView();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RestoreFocusedView();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IAcceleratorMgr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>a<sp/>keyboard<sp/>accelerator<sp/>for<sp/>the<sp/>specified<sp/>target.<sp/>If<sp/>multiple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>targets<sp/>are<sp/>registered<sp/>for<sp/>an<sp/>accelerator,<sp/>a<sp/>target<sp/>registered<sp/>later<sp/>has</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>higher<sp/>priority.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note<sp/>that<sp/>we<sp/>are<sp/>currently<sp/>limited<sp/>to<sp/>accelerators<sp/>that<sp/>are<sp/>either:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>a<sp/>key<sp/>combination<sp/>including<sp/>Ctrl<sp/>or<sp/>Alt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>the<sp/>escape<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>the<sp/>enter<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>any<sp/>F<sp/>key<sp/>(F1,<sp/>F2,<sp/>F3<sp/>...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>any<sp/>browser<sp/>specific<sp/>keys<sp/>(as<sp/>available<sp/>on<sp/>special<sp/>keyboards)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RegisterAccelerator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref>&amp;<sp/>accelerator,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref>*<sp/>target);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unregister<sp/>the<sp/>specified<sp/>keyboard<sp/>accelerator<sp/>for<sp/>the<sp/>specified<sp/>target.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UnregisterAccelerator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref>&amp;<sp/>accelerator,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref>*<sp/>target);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unregister<sp/>all<sp/>keyboard<sp/>accelerator<sp/>for<sp/>the<sp/>specified<sp/>target.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UnregisterAccelerators(<ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref>*<sp/>target);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Activate<sp/>the<sp/>target<sp/>associated<sp/>with<sp/>the<sp/>specified<sp/>accelerator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First,<sp/>AcceleratorPressed<sp/>handler<sp/>of<sp/>the<sp/>most<sp/>recently<sp/>registered<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>called,<sp/>and<sp/>if<sp/>that<sp/>handler<sp/>processes<sp/>the<sp/>event<sp/>(i.e.<sp/>returns<sp/>true),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>method<sp/>immediately<sp/>returns.<sp/>If<sp/>not,<sp/>we<sp/>do<sp/>the<sp/>same<sp/>thing<sp/>on<sp/>the<sp/>next</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>target,<sp/>and<sp/>so<sp/>on.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>true<sp/>if<sp/>an<sp/>accelerator<sp/>was<sp/>activated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ProcessAccelerator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref>&amp;<sp/>accelerator);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>the<sp/>next<sp/>focusable<sp/>view.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*<sp/>GetNextFocusableView(<ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref>*<sp/>pWndStarting,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bReverse,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bLoop);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Validates<sp/>the<sp/>focused<sp/>view,<sp/>clearing<sp/>it<sp/>if<sp/>the<sp/>window<sp/>it<sp/>belongs<sp/>too<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>attached<sp/>to<sp/>the<sp/>window<sp/>hierarchy<sp/>anymore.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ValidateFocusedView();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>view<sp/>that<sp/>currently<sp/>is<sp/>focused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SWND<sp/><sp/>focused_view_;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SWND<sp/><sp/>focused_backup_;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FocusChangeReason<sp/>focus_change_reason_;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref><sp/>*m_pOwner;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>SList&lt;IAcceleratorTarget*&gt;<sp/>AcceleratorTargetList;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>SMap&lt;SAccelerator,<sp/>AcceleratorTargetList&gt;<sp/>AcceleratorMap;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AcceleratorMap<sp/>accelerators_;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight><highlight class="comment">//end<sp/>of<sp/>namespace<sp/>SOUI</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h"/>
+  </compounddef>
+</doxygen>

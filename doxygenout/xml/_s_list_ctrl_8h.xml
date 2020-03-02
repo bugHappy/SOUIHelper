@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_list_ctrl_8h" kind="file" language="C++">
+    <compoundname>SListCtrl.h</compoundname>
+    <includes refid="_s_panel_8h" local="yes">core/SPanel.h</includes>
+    <includes refid="_s_header_ctrl_8h" local="yes">SHeaderCtrl.h</includes>
+    <includedby refid="_soui_ctrls_8h" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</includedby>
+    <incdepgraph>
+      <node id="21">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="53">
+        <label>helper/SColor.h</label>
+        <link refid="_s_color_8h_source"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>sobject/sobject.hpp</label>
+      </node>
+      <node id="63">
+        <label>helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>core/SScrollBarHandler.h</label>
+        <link refid="_s_scroll_bar_handler_8h_source"/>
+      </node>
+      <node id="66">
+        <label>SwndStyle.h</label>
+        <link refid="_s_wnd_style_8h"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>windows.h</label>
+      </node>
+      <node id="7">
+        <label>assert.h</label>
+      </node>
+      <node id="67">
+        <label>res.mgr/SDpiAwareFont.h</label>
+        <link refid="_s_dpi_aware_font_8h_source"/>
+      </node>
+      <node id="50">
+        <label>res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="36">
+        <label>stdint.h</label>
+        <link refid="stdint_8h_source"/>
+      </node>
+      <node id="6">
+        <label>SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>interface/scaret-i.h</label>
+        <link refid="scaret-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h</label>
+        <link refid="_s_list_ctrl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>interface/STooltip-i.h</label>
+        <link refid="stooltip-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>animation/SInterpolatorImpl.h</label>
+        <link refid="_s_interpolator_impl_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>core/SDefine.h</label>
+        <link refid="_s_define_8h_source"/>
+      </node>
+      <node id="30">
+        <label>interface/SAnimation-i.h</label>
+        <link refid="_s_animation-i_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>interface/sresprovider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>matrix/SFloat.h</label>
+        <link refid="_s_float_8h_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>res.mgr/SFontInfo.h</label>
+        <link refid="_s_font_info_8h_source"/>
+      </node>
+      <node id="64">
+        <label>helper/SwndMsgCracker.h</label>
+        <link refid="_swnd_msg_cracker_8h_source"/>
+      </node>
+      <node id="19">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>animation/STransformation.h</label>
+        <link refid="_s_transformation_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="51">
+        <label>res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>SwndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>matrix/SMatrix.h</label>
+        <link refid="_s_matrix_8h_source"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SRect.h</label>
+        <link refid="_s_rect_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>interface/SLog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="48">
+        <label>interface/Sskinobj-i.h</label>
+        <link refid="_s_skinobj-i_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>atl.mini/scomcli.h</label>
+      </node>
+      <node id="41">
+        <label>res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>helper/SCriticalSection.h</label>
+      </node>
+      <node id="29">
+        <label>sobject/sobject-i.h</label>
+      </node>
+      <node id="43">
+        <label>souicoll.h</label>
+      </node>
+      <node id="56">
+        <label>core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>interface/SInterpolator-i.h</label>
+        <link refid="sinterpolator-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="57">
+        <label>OleAcc.h</label>
+      </node>
+      <node id="16">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>time.h</label>
+      </node>
+      <node id="37">
+        <label>math.h</label>
+      </node>
+      <node id="11">
+        <label>interface/SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>../core/smsgloop.h</label>
+        <link refid="_s_msg_loop_8h_source"/>
+      </node>
+      <node id="9">
+        <label>core/ssingleton.h</label>
+        <link refid="_s_singleton_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>animation/SAnimation.h</label>
+        <link refid="_s_animation_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>interface/slayout-i.h</label>
+        <link refid="slayout-i_8h_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>SPoint.h</label>
+        <link refid="_s_point_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>control/SRealWndHandler-i.h</label>
+        <link refid="_s_real_wnd_handler-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>interface/SValueAnimator-i.h</label>
+        <link refid="_s_value_animator-i_8h_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>layout/SLayoutSize.h</label>
+        <link refid="_s_layout_size_8h_source"/>
+      </node>
+      <node id="27">
+        <label>interface/SAttrStorage-i.h</label>
+        <link refid="_s_attr_storage-i_8h_source"/>
+      </node>
+      <node id="2">
+        <label>core/SPanel.h</label>
+        <link refid="_s_panel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>res.mgr/SNamedValue.h</label>
+        <link refid="_s_named_value_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>SHeaderCtrl.h</label>
+        <link refid="_s_header_ctrl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>../helper/SplitString.h</label>
+        <link refid="_split_string_8h_source"/>
+      </node>
+      <node id="62">
+        <label>interface/saccproxy-i.h</label>
+        <link refid="saccproxy-i_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>interface/STimelineHandler-i.h</label>
+        <link refid="_s_timeline_handler-i_8h_source"/>
+      </node>
+      <node id="71">
+        <label>OCIdl.h</label>
+      </node>
+      <node id="20">
+        <label>interface/STranslator-i.h</label>
+        <link refid="_s_translator-i_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h</label>
+        <link refid="_s_list_ctrl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" prot="public">SOUI::_DXLVSUBITEM</innerclass>
+    <innerclass refid="struct_s_o_u_i_1_1___d_x_l_v_i_t_e_m" prot="public">SOUI::_DXLVITEM</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_list_ctrl" prot="public">SOUI::SListCtrl</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (C) 2014-2050 SOUI团队 All rights reserved.</para>
+<para><simplesect kind="version"><para>v1.0 <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="author"><para>soui <linebreak/>
+ </para>
+</simplesect>
+<simplesect kind="date"><para>2014-07-06</para>
+</simplesect>
+Describe ListCtrl控件 </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_panel_8h" kindref="compound">core/SPanel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_header_ctrl_8h" kindref="compound">SHeaderCtrl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S_LVIF_TEXT=0x01,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S_LVIF_IMAGE=0x02,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>S_LVIF_INDENT=0x04,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespace_s_o_u_i_1a8a346681ea325561521d5c72cb7a8341" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(__cdecl<sp/><sp/>*<ref refid="namespace_s_o_u_i_1a8a346681ea325561521d5c72cb7a8341" kindref="member">PFNLVCOMPAREEX</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight><highlight class="comment">//使用快速排序算法中的比较函数,参考qsort_s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" kindref="compound">_DXLVSUBITEM</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a154071841be71e78c37ade92ec7b2209" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a154071841be71e78c37ade92ec7b2209" kindref="member">_DXLVSUBITEM</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask=0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a2cd0453f507d686fb5cc400cd991709b" kindref="member">nImage</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1aad51f80c02bb2cd4acde4e65cb96bb5e" kindref="member">strText</ref>=NULL;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a46f53553aa7f1c88ff77028b61769a5c" kindref="member">cchTextMax</ref>=0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a7cdbc75c9284afe8cec7fa4ad89bd2f1" kindref="member">nIndent</ref>=0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT<sp/><sp/><sp/><sp/>mask;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1aad51f80c02bb2cd4acde4e65cb96bb5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPTSTR<sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1aad51f80c02bb2cd4acde4e65cb96bb5e" kindref="member">strText</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a46f53553aa7f1c88ff77028b61769a5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a46f53553aa7f1c88ff77028b61769a5c" kindref="member">cchTextMax</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a2cd0453f507d686fb5cc400cd991709b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT<sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a2cd0453f507d686fb5cc400cd991709b" kindref="member">nImage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a7cdbc75c9284afe8cec7fa4ad89bd2f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m_1a7cdbc75c9284afe8cec7fa4ad89bd2f1" kindref="member">nIndent</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" kindref="compound">DXLVSUBITEM</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="namespace_s_o_u_i_1aede32b5b09ff8109552543200938c6a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>SArray&lt;DXLVSUBITEM&gt;<sp/><sp/><sp/><ref refid="namespace_s_o_u_i_1aede32b5b09ff8109552543200938c6a5" kindref="member">ArrSubItem</ref>;<sp/></highlight></codeline>
+<codeline lineno="77" refid="struct_s_o_u_i_1_1___d_x_l_v_i_t_e_m" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_o_u_i_1_1___d_x_l_v_i_t_e_m" kindref="compound">_DXLVITEM</ref></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85" refid="struct_s_o_u_i_1_1___d_x_l_v_i_t_e_m_1ae932905d1a8a62a7ffa28969c4a0d0d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_i_t_e_m_1ae932905d1a8a62a7ffa28969c4a0d0d8" kindref="member">_DXLVITEM</ref>()</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwData<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arSubItems=NULL;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>checked<sp/>=<sp/>FALSE;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_s_o_u_i_1aede32b5b09ff8109552543200938c6a5" kindref="member">ArrSubItem</ref><sp/><sp/>*arSubItems;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPARAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwData;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/>checked;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>DXLVITEM;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>SListCtrl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_s_o_u_i_1_1_s_list_ctrl" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl" kindref="compound">SListCtrl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_s_panel" kindref="compound">SPanel</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_CLASS_NAME(<ref refid="class_s_o_u_i_1_1_s_list_ctrl" kindref="compound">SListCtrl</ref>,<sp/>L</highlight><highlight class="stringliteral">&quot;listctrl&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl" kindref="compound">SListCtrl</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_s_o_u_i_1_1_s_list_ctrl" kindref="compound">SListCtrl</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InsertColumn(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nIndex,<sp/>LPCTSTR<sp/>pszText,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nWidth,<sp/>LPARAM<sp/>lParam=0);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InsertItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/>LPCTSTR<sp/>pszText,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nImage=-1);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetItemData(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/>LPARAM<sp/>dwData);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPARAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetItemData(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSubItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSubItem,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" kindref="compound">DXLVSUBITEM</ref>*<sp/>plv);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetSubItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSubItem,<sp/><ref refid="struct_s_o_u_i_1_1___d_x_l_v_s_u_b_i_t_e_m" kindref="compound">DXLVSUBITEM</ref>*<sp/>plv)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSubItemText(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSubItem,<sp/>LPCTSTR<sp/>pszText);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SStringT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetSubItemText(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSubItem)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetSelectedItem();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetSelectedItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetItemCount()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetItemCount(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItems<sp/>,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nGrowBy);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetColumnCount()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetCountPerPage(BOOL<sp/>bPartial);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DeleteItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DeleteColumn(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCol);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DeleteAllItems();</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SortItems(<sp/><ref refid="namespace_s_o_u_i_1a8a346681ea325561521d5c72cb7a8341" kindref="member">PFNLVCOMPAREEX</ref><sp/>pfnCompare,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pContext<sp/>);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetCheckState(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);<sp/><sp/></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetCheckState(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/>BOOL<sp/>bCheck);<sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetCheckedItemCount();</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_header_ctrl" kindref="compound">SHeaderCtrl</ref><sp/>*<sp/>GetHeaderCtrl()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetFirstCheckedItem();</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetLastCheckedItem();</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VOID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EnableMultiSelection(BOOL<sp/>enable)<sp/>{<sp/>m_bMultiSelection<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VOID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EnableCheckBox(BOOL<sp/>enable)<sp/>{<sp/>m_bCheckBox<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VOID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EnableHotTrack(BOOL<sp/>enable)<sp/>{<sp/>m_bHotTrack<sp/>=<sp/>enable;<sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/><sp/><sp/><sp/>CreateChildren(pugi::xml_node<sp/>xmlNode);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HitTest(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CPoint&amp;<sp/>pt);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetTopIndex()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CRect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetItemRect(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nSubItem=0);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>DrawItem(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT,<sp/>CRect<sp/>rcItem,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RedrawItem(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nItem);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NotifySelChange(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nOldSel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nNewSel,<sp/>BOOL<sp/>checkBox<sp/>=<sp/>FALSE);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnPaint(<ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref><sp/>*pRT);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnDestroy();</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnHeaderClick(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pEvt);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnHeaderSizeChanging(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pEvt);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OnHeaderSwap(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref><sp/>*pEvt);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/><sp/><sp/><sp/>OnScroll(BOOL<sp/>bVertical,UINT<sp/>uCode,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPos);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>OnLButtonDown(UINT<sp/>nFlags,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLButtonDbClick(UINT<sp/>nFlags,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>OnLButtonUp(UINT<sp/>nFlags,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>OnMouseMove(UINT<sp/>nFlags,<sp/>CPoint<sp/>pt);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>OnMouseLeave();</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>OnSize(UINT<sp/>nType,<sp/>CSize<sp/>size);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>UpdateChildrenPosition();</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CRect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetListRect();</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateScrollBar();</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UpdateHeaderCtrl();</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HitCheckBox(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CPoint&amp;<sp/>pt);</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="532" refid="class_s_o_u_i_1_1_s_list_ctrl_1ac28553289c49afdce420a3a4bf323c75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1ac28553289c49afdce420a3a4bf323c75" kindref="member">m_nHeaderHeight</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="533" refid="class_s_o_u_i_1_1_s_list_ctrl_1ab7f9ddf78f49e5ed1cdb920b33d4fdc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1ab7f9ddf78f49e5ed1cdb920b33d4fdc4" kindref="member">m_nItemHeight</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="535" refid="class_s_o_u_i_1_1_s_list_ctrl_1ab68d24ed525724fd5008c200f3166c6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1ab68d24ed525724fd5008c200f3166c6b" kindref="member">m_nSelectItem</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="536" refid="class_s_o_u_i_1_1_s_list_ctrl_1a529c8071a9d247b66753536feb5fb769" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a529c8071a9d247b66753536feb5fb769" kindref="member">m_nHoverItem</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bHotTrack;<sp/><sp/></highlight></codeline>
+<codeline lineno="539" refid="class_s_o_u_i_1_1_s_list_ctrl_1a48d10222858187f316c8da3fe961ce0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a48d10222858187f316c8da3fe961ce0f" kindref="member">m_ptIcon</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="540" refid="class_s_o_u_i_1_1_s_list_ctrl_1ae396b4336795b83b5bcc21a002a5feb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1ae396b4336795b83b5bcc21a002a5feb0" kindref="member">m_ptText</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="542" refid="class_s_o_u_i_1_1_s_list_ctrl_1a3462fafb19d13d175c2906a05c160c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a3462fafb19d13d175c2906a05c160c31" kindref="member">m_crItemBg</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="543" refid="class_s_o_u_i_1_1_s_list_ctrl_1a129d4350fa67c31f72b3a12d54fd63ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a129d4350fa67c31f72b3a12d54fd63ab" kindref="member">m_crItemBg2</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="544" refid="class_s_o_u_i_1_1_s_list_ctrl_1ab93b2e4c085f59a4881430bdc76032cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1ab93b2e4c085f59a4881430bdc76032cd" kindref="member">m_crItemSelBg</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="545" refid="class_s_o_u_i_1_1_s_list_ctrl_1aa7184ae0a4e21e40446a0fe38b2484a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1aa7184ae0a4e21e40446a0fe38b2484a4" kindref="member">m_crItemHotBg</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="546" refid="class_s_o_u_i_1_1_s_list_ctrl_1a899b6ca79a1051e0f61c5167c51b53fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a899b6ca79a1051e0f61c5167c51b53fe" kindref="member">m_crText</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="547" refid="class_s_o_u_i_1_1_s_list_ctrl_1aeedc4da9e3699e257203dd2c5176ea97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>COLORREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1aeedc4da9e3699e257203dd2c5176ea97" kindref="member">m_crSelText</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref>*<sp/><sp/><sp/><sp/>m_pItemSkin;<sp/><sp/></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref>*<sp/><sp/><sp/><sp/>m_pIconSkin;<sp/><sp/></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref>*<sp/><sp/><sp/><sp/>m_pCheckSkin;<sp/></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bCheckBox;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bMultiSelection;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="556" refid="class_s_o_u_i_1_1_s_list_ctrl_1a126ff0fd5b418aab4dd1598992aba625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>SArray&lt;DXLVITEM&gt;<sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a126ff0fd5b418aab4dd1598992aba625" kindref="member">ArrLvItem</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="558" refid="class_s_o_u_i_1_1_s_list_ctrl_1a958b5b942a9a61f56189c06336e1df0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_header_ctrl" kindref="compound">SHeaderCtrl</ref>*<sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a958b5b942a9a61f56189c06336e1df0c" kindref="member">m_pHeader</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_list_ctrl_1a126ff0fd5b418aab4dd1598992aba625" kindref="member">ArrLvItem</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_arrItems;<sp/><sp/></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CPoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_ptOrigin;<sp/><sp/></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_BEGIN()</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;headerHeight&quot;,<sp/>m_nHeaderHeight,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;itemHeight&quot;,<sp/>m_nItemHeight,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;checkBox&quot;,<sp/>m_bCheckBox,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;multiSelection&quot;,<sp/>m_bMultiSelection,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;itemSkin&quot;,<sp/>m_pItemSkin,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;iconSkin&quot;,<sp/>m_pIconSkin,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_SKIN(L&quot;checkSkin&quot;,<sp/>m_pCheckSkin,<sp/>TRUE)</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorItemBkgnd&quot;,<sp/>m_crItemBg,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorItemBkgnd2&quot;,<sp/>m_crItemBg2,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorItemHotBkgnd&quot;,<sp/>m_crItemHotBg,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorItemSelBkgnd&quot;,<sp/>m_crItemSelBg,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorText&quot;,<sp/>m_crText,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_COLOR(L&quot;colorSelText&quot;,<sp/>m_crSelText,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;icon-x&quot;,<sp/>m_ptIcon.x,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;icon-y&quot;,<sp/>m_ptIcon.y,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;text-x&quot;,<sp/>m_ptText.x,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;text-y&quot;,<sp/>m_ptText.y,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ATTR_INT(L&quot;hotTrack&quot;,<sp/>m_bHotTrack,<sp/>FALSE)</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_ATTRS_END()</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_BEGIN()</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_PAINT_EX(OnPaint)</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_DESTROY(OnDestroy)</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_SIZE(OnSize)</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_LBUTTONDBLCLK(OnLButtonDbClick)</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_LBUTTONDOWN(OnLButtonDown)</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_LBUTTONUP(OnLButtonUp)</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_MOUSEMOVE(OnMouseMove)</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSG_WM_MOUSELEAVE(OnMouseLeave)</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI_MSG_MAP_END()</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal">}</highlight><highlight class="comment">//end<sp/>of<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListCtrl.h"/>
+  </compounddef>
+</doxygen>

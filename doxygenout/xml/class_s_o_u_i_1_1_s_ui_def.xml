@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_ui_def" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SUiDef</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SUiDef &gt;</basecompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_ui_def_1aadb44ba0fa2e08b5fdeba4601584fc2d" prot="protected" static="yes" mutable="no">
+        <type>FunFontCheck</type>
+        <definition>FunFontCheck SOUI::SUiDef::s_funFontCheck</definition>
+        <argsstring></argsstring>
+        <name>s_funFontCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="57" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_ui_def_1a4a15e8b6ae470879b9e61c1eb87c4487" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_ui_def_info" kindref="compound">IUiDefInfo</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IUiDefInfo&gt; SOUI::SUiDef::m_pCurUiDef</definition>
+        <argsstring></argsstring>
+        <name>m_pCurUiDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="59" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1aa055b89ee24e76f45449f4796f55a41f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SUiDef::SUiDef</definition>
+        <argsstring>(void)</argsstring>
+        <name>SUiDef</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1aa70079c8406cc4839a182e02b76f4be1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SUiDef::~SUiDef</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SUiDef</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1ad4290fb4489549d81d7b9444180d6de9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_ui_def_info" kindref="compound">IUiDefInfo</ref> *</type>
+        <definition>IUiDefInfo* SOUI::SUiDef::GetUiDef</definition>
+        <argsstring>()</argsstring>
+        <name>GetUiDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="48" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1a37445492279696bf2dc2a038153e7a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SUiDef::SetUiDef</definition>
+        <argsstring>(IUiDefInfo *pUiDefInfo, bool bUpdateDefFont)</argsstring>
+        <name>SetUiDef</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_ui_def_info" kindref="compound">IUiDefInfo</ref> *</type>
+          <declname>pUiDefInfo</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bUpdateDefFont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="50" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1ad04ad55a7181ba8f2edfcfbdf2406501" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_ui_def_info" kindref="compound">IUiDefInfo</ref> *</type>
+        <definition>static IUiDefInfo* SOUI::SUiDef::CreateUiDefInfo</definition>
+        <argsstring>(IResProvider *pResProvider, LPCTSTR pszUiDef)</argsstring>
+        <name>CreateUiDefInfo</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszUiDef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="43" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1a4d08b7e79841b82f1c1c6aee7491a106" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_ui_def_info" kindref="compound">IUiDefInfo</ref> *</type>
+        <definition>static IUiDefInfo* SOUI::SUiDef::CreateUiDefInfo2</definition>
+        <argsstring>(IResProvider *pResProvider, LPCTSTR pszUiDef)</argsstring>
+        <name>CreateUiDefInfo2</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszUiDef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="45" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1a5b084f66ea81cf7151e0adbd179f49f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SUiDef::SetFontChecker</definition>
+        <argsstring>(FunFontCheck fontCheck)</argsstring>
+        <name>SetFontChecker</name>
+        <param>
+          <type>FunFontCheck</type>
+          <declname>fontCheck</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_ui_def_1a188d6362d8731f675d76b95c6df6403e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SUiDef::CheckFont</definition>
+        <argsstring>(const SStringW &amp;strFontName)</argsstring>
+        <name>CheckFont</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strFontName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="54" column="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SUiDef</label>
+        <link refid="class_s_o_u_i_1_1_s_ui_def"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SUiDef &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SUiDef</label>
+        <link refid="class_s_o_u_i_1_1_s_ui_def"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SUiDef &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" line="37" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SUiDef.h" bodystart="36" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1a188d6362d8731f675d76b95c6df6403e" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>CheckFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1ad04ad55a7181ba8f2edfcfbdf2406501" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>CreateUiDefInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1a4d08b7e79841b82f1c1c6aee7491a106" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>CreateUiDefInfo2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1ad4290fb4489549d81d7b9444180d6de9" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>GetUiDef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1a4a15e8b6ae470879b9e61c1eb87c4487" prot="protected" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>m_pCurUiDef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1aadb44ba0fa2e08b5fdeba4601584fc2d" prot="protected" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>s_funFontCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1a5b084f66ea81cf7151e0adbd179f49f7" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>SetFontChecker</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1a37445492279696bf2dc2a038153e7a5a" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>SetUiDef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1aa055b89ee24e76f45449f4796f55a41f" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>SUiDef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SUiDef</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_ui_def_1aa70079c8406cc4839a182e02b76f4be1" prot="public" virt="non-virtual"><scope>SOUI::SUiDef</scope><name>~SUiDef</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

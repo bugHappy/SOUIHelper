@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_translator" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ITranslator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_translator-i_8h" local="no">STranslator-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1ad592d2b4219eb4d302480bac104fed29" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITranslator::Load</definition>
+        <argsstring>(LPVOID pData, UINT uType)=0</argsstring>
+        <name>Load</name>
+        <param>
+          <type>LPVOID</type>
+          <declname>pData</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uType</declname>
+        </param>
+        <briefdescription>
+<para>从资源中加载语言翻译数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Load <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPVOID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pData <ndash/> 资源指针，具体含义由接口的实现来解释 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uType <ndash/> 资源类型，具体含义由接口的实现来解释 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL true-加载成功, false-加载失败</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="40" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1a4cc2be9cb7356763335417c932fb3b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITranslator::GetName</definition>
+        <argsstring>(wchar_t szBuf[TR_MAX_NAME_LEN])=0</argsstring>
+        <name>GetName</name>
+        <param>
+          <type>wchar_t</type>
+          <declname>szBuf</declname>
+          <array>[TR_MAX_NAME_LEN]</array>
+        </param>
+        <briefdescription>
+<para>获取翻译资源的name </para>
+        </briefdescription>
+        <detaileddescription>
+<para>name <simplesect kind="return"><para>SOUI::SStringW 翻译资源的name</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="48" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1a4ea520a49f092091a00c53499ce8e7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ITranslator::NameEqual</definition>
+        <argsstring>(LPCWSTR pszName)=0</argsstring>
+        <name>NameEqual</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1a70a8d4489cb22a8f4c5c5d2038b595ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>GUID</type>
+        <definition>virtual GUID SOUI::ITranslator::guid</definition>
+        <argsstring>()=0</argsstring>
+        <name>guid</name>
+        <briefdescription>
+<para>获取翻译资源的ID </para>
+        </briefdescription>
+        <detaileddescription>
+<para>guid <simplesect kind="return"><para>GUID 翻译资源的ID</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="58" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1ab06204e682b37508e3410102a0b6be52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ITranslator::tr</definition>
+        <argsstring>(const SStringW &amp;strSrc, const SStringW &amp;strCtx, wchar_t *pszOut, int nLen) const =0</argsstring>
+        <name>tr</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strSrc</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strCtx</declname>
+        </param>
+        <param>
+          <type>wchar_t *</type>
+          <declname>pszOut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+<para>执行翻译的接口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>tr <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strSrc <ndash/> 原字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strCtx <ndash/> 翻译上下文 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SStringW</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; strRet <ndash/> 翻译后的字符串 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int - buflen; 0 - no translation; -1 - buf size not enough; <linebreak/>
+</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="69" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_1a79b70efd24405bfad04bf41654e78e91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>SStringW</type>
+        <definition>virtual SStringW SOUI::ITranslator::getFontInfo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getFontInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="71" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>语言翻译接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ITranslator</label>
+        <link refid="struct_s_o_u_i_1_1_i_translator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ITranslator</label>
+        <link refid="struct_s_o_u_i_1_1_i_translator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="30" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" bodystart="29" bodyend="72"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1a79b70efd24405bfad04bf41654e78e91" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>getFontInfo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1a4cc2be9cb7356763335417c932fb3b8b" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>GetName</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1a70a8d4489cb22a8f4c5c5d2038b595ab" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>guid</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1ad592d2b4219eb4d302480bac104fed29" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>Load</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1a4ea520a49f092091a00c53499ce8e7cf" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>NameEqual</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_1ab06204e682b37508e3410102a0b6be52" prot="public" virt="pure-virtual"><scope>SOUI::ITranslator</scope><name>tr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_event_args" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::EventArgs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; IObjRef &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">SObjectImpl&lt; IObject &gt;</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_event_cmn_args" prot="public" virt="non-virtual">SOUI::EventCmnArgs</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_tpl_event_args" prot="public" virt="non-virtual">SOUI::TplEventArgs&lt; T &gt;</derivedcompoundref>
+    <includes refid="_s_events_8h" local="no">SEvents.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_args_1a843d54de064ce05a7e7256eeb17c1819" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::EventArgs::bubbleUp</definition>
+        <argsstring></argsstring>
+        <name>bubbleUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>indicating whether the event should bubble up along the event handle chain, event handler can set the value to true to cancel the procedure <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="191" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_args_1a5c0704ddd487eba5c3ab4f400f1ed915" prot="public" static="no" mutable="no">
+        <type>UINT</type>
+        <definition>UINT SOUI::EventArgs::handled</definition>
+        <argsstring></argsstring>
+        <name>handled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>handlers should increment this if they handled the event. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="192" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_args_1acbb5ab241002e00783d45c7e469ed6eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::EventArgs::idFrom</definition>
+        <argsstring></argsstring>
+        <name>idFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>事件发送者ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="194" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_args_1a5338880ba34aaae7b87411157536759c" prot="public" static="no" mutable="no">
+        <type>LPCWSTR</type>
+        <definition>LPCWSTR SOUI::EventArgs::nameFrom</definition>
+        <argsstring></argsstring>
+        <name>nameFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>事件发送者name </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="195" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_args_1a31d2e20eb8d1edf90085c0596340f8ef" prot="public" static="no" mutable="no">
+        <type>SObject *</type>
+        <definition>SObject* SOUI::EventArgs::sender</definition>
+        <argsstring></argsstring>
+        <name>sender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>产生事件的原始SOUI对象，可能和idFrom and nameFrom指定的对象不同 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="197" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_event_args_1ae93ba53106011baa45fdcca0ab915c3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::EventArgs::EventArgs</definition>
+        <argsstring>(SObject *pSender)</argsstring>
+        <name>EventArgs</name>
+        <param>
+          <type>SObject *</type>
+          <declname>pSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="172" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="172" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_event_args_1a059c1925caacbe42a97a97f901b7f885" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::EventArgs::~EventArgs</definition>
+        <argsstring>(void)</argsstring>
+        <name>~EventArgs</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="186" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class used as the argument to all subscribers Event object. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The base <ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> class does not contain any useful information, it is intended to be specialised for each type of event that can be generated by objects within the system. The use of this base class allows all event subscribers to have the same function signature.</para>
+<para>The <emphasis>handled</emphasis> field is used to signal whether an event was actually handled or not. While the event system does not look at this value, code at a higher level can use it to determine how far to propagate an event. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SOUI::EventCmnArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_cmn_args"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SObjectImpl&lt; IObject &gt;</label>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::EventArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_args"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::TplEventArgs&lt; T &gt;</label>
+        <link refid="class_s_o_u_i_1_1_tpl_event_args"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>SObjectImpl&lt; IObject &gt;</label>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::EventArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_args"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="166" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="165" bodyend="198"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_event_args_1a843d54de064ce05a7e7256eeb17c1819" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>bubbleUp</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1ae93ba53106011baa45fdcca0ab915c3d" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>EventArgs</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a5c0704ddd487eba5c3ab4f400f1ed915" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>handled</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1acbb5ab241002e00783d45c7e469ed6eb" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>idFrom</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a5338880ba34aaae7b87411157536759c" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>nameFrom</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a31d2e20eb8d1edf90085c0596340f8ef" prot="public" virt="non-virtual"><scope>SOUI::EventArgs</scope><name>sender</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a059c1925caacbe42a97a97f901b7f885" prot="public" virt="virtual"><scope>SOUI::EventArgs</scope><name>~EventArgs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

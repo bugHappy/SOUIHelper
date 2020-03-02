@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_alpha_animation" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAlphaAnimation</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_animation" prot="public" virt="non-virtual">SOUI::SAnimation</basecompoundref>
+    <includes refid="_s_alpha_animation_8h" local="no">SAlphaAnimation.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_alpha_animation_1a8382df448880f9559238f0d8e8844b9a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAlphaAnimation::mFromAlpha</definition>
+        <argsstring></argsstring>
+        <name>mFromAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="30" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_alpha_animation_1ad6d09e3ffc112942e654954323c12b1d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAlphaAnimation::mToAlpha</definition>
+        <argsstring></argsstring>
+        <name>mToAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="31" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_alpha_animation_1a6694bc0561686a86586cc90b6add38af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAlphaAnimation::SAlphaAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>SAlphaAnimation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor to use when building an AlphaAnimation from code</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting alpha value for the animation, where 1.0 means fully opaque and 0.0 means fully transparent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ending alpha value for the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_alpha_animation_1a2b93517c1c990666bb12a5aa8b2f0d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SAlphaAnimation::init</definition>
+        <argsstring>(float fromAlpha=0.0f, float toAlpha=0.0f)</argsstring>
+        <name>init</name>
+        <param>
+          <type>float</type>
+          <declname>fromAlpha</declname>
+          <defval>0.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>toAlpha</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="48" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_alpha_animation_1aca25187b4abfbfbf93553d3a75328145" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SAlphaAnimation::hasAlpha</definition>
+        <argsstring>() const override</argsstring>
+        <name>hasAlpha</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_animation_1a2c7ab0a85e5471003359779a4c156770">hasAlpha</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@hide </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="60" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_alpha_animation_1a6281329be31e0f439c0bfa7569b77ca5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAlphaAnimation::applyTransformation</definition>
+        <argsstring>(float interpolatedTime, STransformation &amp;t)</argsstring>
+        <name>applyTransformation</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_animation_1af03bd7a1d91676f3bed0707358ccd620">applyTransformation</reimplements>
+        <param>
+          <type>float</type>
+          <declname>interpolatedTime</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the alpha property of the supplied <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="53" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_alpha_animation_1a64d42654d3aa5e26e229946f75bce270" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SAlphaAnimation::copy</definition>
+        <argsstring>(const IAnimation *src)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_animation_1a3431a0cc7851927ac6d475d902aa0288">copy</reimplements>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_animation" kindref="compound">IAnimation</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="55" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An animation that controls the alpha level of an object. Useful for fading things in and out. This animation ends up changing the alpha property of a <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SAlphaAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_alpha_animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IAnimation &gt; &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_animation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SAlphaAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_alpha_animation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IAnimation &gt; &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SAnimation</label>
+        <link refid="class_s_o_u_i_1_1_s_animation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" line="27" column="33" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAlphaAnimation.h" bodystart="27" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1a6281329be31e0f439c0bfa7569b77ca5" prot="protected" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>applyTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a7247aaeec8870b4ab804ade7b608921c" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>cancel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a8f74c5b7fe9284ff19a878aa76f8c051" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>clone</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4d4bca94e8adf0e7ace52a778d7d9109" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>computeDurationHint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1a64d42654d3aa5e26e229946f75bce270" prot="protected" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>copy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5044907b466b291cb6102ce02e2ee1f5" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>ensureInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a25e57876f90a9bf9bcfcb43df5ad5d3d" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>fireAnimationEnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a28e1531b0d51c31d7e04f56080ac1126" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>fireAnimationRepeat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae40a56244fa9fb2601bb06a5ae25e31c" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>fireAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a77598cab3c6d55e304193cf400b4247d" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa1742e296c78b0de546439caf1fb3d67" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5c61e92c59978ef2b2a7a6412929b5a5" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aab75b59c1e87dbdc0e23acaeda47f714" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6edb6b3ba78ada70a885259f9ddf108f" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1af12ea35f226040fc658fe99ccb51f7ad" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4eb8963e373fea2a7cc319985368da72" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a17e089416cbff2c489d29fdb1ba7a6bc" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a60ce867d32bc70f07b77f9a1f584c717" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getScaleFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0b88b85e2f41bc549cbb88c3622a1952" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aac80598fa561c798b4abfb88520d3eea" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a365ad135f4294c5e2491df59f6f678a0" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>getTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1afc4c1da95d94b9ebd0eb01fb8cfa2826" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1abd04f2d926af4bc13c08cfeee8c342e6" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac660e16d75dbc1b3a5e978ee946a81cc" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>getZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1aca25187b4abfbfbf93553d3a75328145" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>hasAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa1c641535d870bf7b0a657604c3b12b8" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>hasEnded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1af9512cf26b3ef5f1a67abcef2e306f1c" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>hasStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1a2b93517c1c990666bb12a5aa8b2f0d0c" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5993d25b7e5517d5496191043c90ccce" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>initialize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae0102b82e0182c8dc7aab9151f3a5c0d" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>isCanceled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aedeee47428e82cbc51c182b6069f31b6" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>isFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a536e387cb2a088b811a4d9e71b677554" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mCycleFlip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aacd66eb0f813d92f36e7ee582e5f8a74" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6184f2c04ea2ee505bd16a8109894b19" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mEnded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1abb0261ec8cf38e2ec5c4887f9d14b974" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a950c7a788550ba8d2605b9db899055bb" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a2ebc80fde77101daa1086c9b8ec69565" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1a8382df448880f9559238f0d8e8844b9a" prot="private" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mFromAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5edabb1a7046e97454bb6edd5f8d4029" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a042435eddb1258e4e07a7485758c037c" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6a675b272b61528b301ed2fd602843a1" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae82db000e7f4e04dbeee78e22b3f2fa1" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1add16ede5cfb7674388e836a809f76e30" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a10e4dd5bda4b92527b5ce285ad5c7662" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mRepeated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a1b546924588a2e3a2a955db5d02397a3" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a740320ab21f6a6d2b2d003a37ba522a4" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mScaleFactor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5617be9bc088f346a78d705b81b351c9" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a3ebb4a9bf266d374f9d8710ea7ef6310" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a21eb9ef7a896f374b47620e231c5440e" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1ad6d09e3ffc112942e654954323c12b1d" prot="private" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mToAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac554d4fe2c2cfe7f2b1dc00af9505063" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ac19ce69880a42cca46ffe41924a6afd9" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>mZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a4a01c0174018ce3446fbd148c444c798" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>reset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5da5e65f90b57bc830c4b2f95ab86925" prot="protected" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>resolveSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_alpha_animation_1a6694bc0561686a86586cc90b6add38af" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>SAlphaAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a57c5d0867f383cecee0ba5234f63457d" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>SAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aa807a7cc23b1165d2b7d6629155eec66" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>scaleCurrentDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a24bdeb8afeddfce50d91971917d0d1e7" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setAnimationListener</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a611ff193ac5fabff622ba0bb0721b246" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setDuration</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ae0dbe3aea00667fe7c05d840ac71dea3" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setFillAfter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0bc048bad76b91b0c1aa2ee02c19527d" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setFillBefore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a9142a6caf87b97ff9d08e1ca948a6762" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setFillEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ad8df3802f56ca6ad0ed3ebcf6fe7e5e3" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a936c7fb67d1da39de03cee86cad9545d" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setRepeatCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a5f39c0d0397af249497a3e3064edf4ba" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setRepeatMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1aebe9a23fe4becd31e8b0fb3caab41192" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setStartOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a923485da61f1469161364d7639a0a26a" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setStartTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a80874922b8281fbe6858e9aec80fc238" prot="public" virt="virtual"><scope>SOUI::SAlphaAnimation</scope><name>setUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1ad1eca7b2e26b8ed1868c7e1a24470524" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>setZAdjustment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a44dc192afea5e347c30af4a3e0903f0a" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>start</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a0a1cca403d6860e132f1ce62a0b4c99a" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>startNow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_animation_1a6d51dfcba21dcf577dde733ea46cd889" prot="public" virt="non-virtual"><scope>SOUI::SAlphaAnimation</scope><name>~SAnimation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

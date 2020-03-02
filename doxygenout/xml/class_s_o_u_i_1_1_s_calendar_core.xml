@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_calendar_core" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SCalendarCore</compoundname>
+    <includes refid="_s_calendar_8h" local="no">SCalendar.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a59e544d31c3cd771791b6dc9e73f9e97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SCalendarCore::IsLeapYear</definition>
+        <argsstring>(WORD wYear, BOOL &amp;bLeapYear)</argsstring>
+        <name>IsLeapYear</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>BOOL &amp;</type>
+          <declname>bLeapYear</declname>
+        </param>
+        <briefdescription>
+<para>判断闰年 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a59e544d31c3cd771791b6dc9e73f9e97" kindref="member">SCalendarCore::IsLeapYear</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 待判断的公历年份 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;bLeapYear <ndash/> 【输出参数】TRUE：闰年，FALSE：平年 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE <ndash/> 成功 FALSE <ndash/> 失败</para>
+</simplesect>
+Describe 判断是否是闰年 注意：有效范围是（1600年到6999年） </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="38" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a6b21e74389931bff15534cda8c389c99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SCalendarCore::GetDaysNumInYear</definition>
+        <argsstring>(WORD wYear, WORD wMonth, WORD wDay, WORD &amp;wDays)</argsstring>
+        <name>GetDaysNumInYear</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMonth</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wDay</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wDays</declname>
+        </param>
+        <briefdescription>
+<para>计算日期在年内的序数（序数从0开始，即0为元旦） </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a6b21e74389931bff15534cda8c389c99" kindref="member">SCalendarCore::GetDaysNumInYear</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 公历年 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wMonth <ndash/> 公历月 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wDay <ndash/> 公历日 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;wDays <ndash/> 【输出参数】年内序数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE <ndash/> 成功 FALSE <ndash/> 失败</para>
+</simplesect>
+Describe 输入日期，计算该日期在这一年内的序数，序数从0开始 注意：有效范围是（START_YEAR年到END_YEAR-1年） </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a17c739146c7086c97bccca7b9944d748" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SCalendarCore::GetDateFromDays</definition>
+        <argsstring>(WORD wYear, WORD wDays, WORD &amp;wMonth, WORD &amp;wDay)</argsstring>
+        <name>GetDateFromDays</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wDays</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wMonth</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wDay</declname>
+        </param>
+        <briefdescription>
+<para>从年内序数计算月、日 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a17c739146c7086c97bccca7b9944d748" kindref="member">SCalendarCore::GetDateFromDays</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 公历年 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wDays <ndash/> 年内序数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;wMonth <ndash/> 【输出参数】公历月 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;wDay <ndash/> 【输出参数】公历日 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE <ndash/> 成功 FALSE <ndash/> 失败</para>
+</simplesect>
+Describe 输入年份以及年内序数，计算出月和日 注意：有效范围是（START_YEAR年到END_YEAR-1年 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="66" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a5847fbad32810c136d3cf314162124e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>static short SOUI::SCalendarCore::GetDayOfWeek</definition>
+        <argsstring>(WORD wYear, WORD wMonth, WORD wDay)</argsstring>
+        <name>GetDayOfWeek</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMonth</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wDay</declname>
+        </param>
+        <briefdescription>
+<para>返回星期几 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a5847fbad32810c136d3cf314162124e7" kindref="member">SCalendarCore::GetDayOfWeek</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 公历年 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wMonth <ndash/> 公历月 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wDay <ndash/> 公历日 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回:0,1,2,3,4,5,6分别对应日、一、二、三、四、五、六，-1表示日期错误或超出范围</para>
+</simplesect>
+Describe 输入年月日返回星期几 注意:有效范围是(START_YEAR年1月1日 <mdash/> END_YEAR-1年12月31日) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1aae2cc135f752259bd17a1a3ca57caa52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>WORD</type>
+        <definition>static WORD SOUI::SCalendarCore::GetDaysOfMonth</definition>
+        <argsstring>(WORD wYear, WORD wMonth)</argsstring>
+        <name>GetDaysOfMonth</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMonth</declname>
+        </param>
+        <briefdescription>
+<para>返回指定月份的天数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1aae2cc135f752259bd17a1a3ca57caa52" kindref="member">SCalendarCore::GetDaysOfMonth</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 公历年 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wMonth <ndash/> 公历月 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回该月的天数，返回0表示输入年月有误</para>
+</simplesect>
+Describe 输入年月返回本月的天数 注意:有效范围是(START_YEAR年1月 <mdash/> END_YEAR-1年12月) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="91" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a9ed61e5c31de4d3be4fdc6a17026d85c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SCalendarCore::DateCheck</definition>
+        <argsstring>(WORD wYear, WORD wMonth, WORD wDay)</argsstring>
+        <name>DateCheck</name>
+        <param>
+          <type>WORD</type>
+          <declname>wYear</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMonth</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wDay</declname>
+        </param>
+        <briefdescription>
+<para>检验年、月、日的合法性 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a9ed61e5c31de4d3be4fdc6a17026d85c" kindref="member">SCalendarCore::DateCheck</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wYear <ndash/> 公历年 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wMonth <ndash/> 公历月 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>wDay <ndash/> 公历日 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FALSE-失败，TRUE-成功</para>
+</simplesect>
+Describe 输入公历日期，检查日期的合法性 注意:有效范围是(START_YEAR年1月1日<mdash/>END_YEAR-1年12月31日) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="105" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1ae8465d78b38a08d37abe0416bab8f8cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>static SStringT SOUI::SCalendarCore::FormatYear</definition>
+        <argsstring>(WORD iYear)</argsstring>
+        <name>FormatYear</name>
+        <param>
+          <type>WORD</type>
+          <declname>iYear</declname>
+        </param>
+        <briefdescription>
+<para>格式化年份显示型式 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1ae8465d78b38a08d37abe0416bab8f8cf" kindref="member">SCalendarCore::FormatYear</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iYear <ndash/> 年</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 指定阴历年返回采用干支纪年法 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="114" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1ae826ba3e3e4b0ceb7332ed054d9ba804" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>static SStringT SOUI::SCalendarCore::FormatMonth</definition>
+        <argsstring>(WORD iMonth)</argsstring>
+        <name>FormatMonth</name>
+        <param>
+          <type>WORD</type>
+          <declname>iMonth</declname>
+        </param>
+        <briefdescription>
+<para>格式化月份显示型式 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1ae826ba3e3e4b0ceb7332ed054d9ba804" kindref="member">SCalendarCore::FormatMonth</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iMonth <ndash/> 月 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="121" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_calendar_core_1a3efe8dc930ae96f991b572038b96fea7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>static SStringT SOUI::SCalendarCore::FormatDay</definition>
+        <argsstring>(WORD wiDay)</argsstring>
+        <name>FormatDay</name>
+        <param>
+          <type>WORD</type>
+          <declname>wiDay</declname>
+        </param>
+        <briefdescription>
+<para>格式化日期显示型式 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_calendar_core_1a3efe8dc930ae96f991b572038b96fea7" kindref="member">SCalendarCore::FormatDay</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iDay <ndash/> 日 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="128" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>日历核心类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 此类是日历的核心类 大部分函数都是静态函数 </para>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" line="26" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SCalendar.h" bodystart="25" bodyend="130"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a9ed61e5c31de4d3be4fdc6a17026d85c" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>DateCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a3efe8dc930ae96f991b572038b96fea7" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>FormatDay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1ae826ba3e3e4b0ceb7332ed054d9ba804" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>FormatMonth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1ae8465d78b38a08d37abe0416bab8f8cf" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>FormatYear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a17c739146c7086c97bccca7b9944d748" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>GetDateFromDays</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a5847fbad32810c136d3cf314162124e7" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>GetDayOfWeek</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a6b21e74389931bff15534cda8c389c99" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>GetDaysNumInYear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1aae2cc135f752259bd17a1a3ca57caa52" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>GetDaysOfMonth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_calendar_core_1a59e544d31c3cd771791b6dc9e73f9e97" prot="public" virt="non-virtual"><scope>SOUI::SCalendarCore</scope><name>IsLeapYear</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

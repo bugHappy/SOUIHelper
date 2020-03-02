@@ -1,0 +1,1399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="souistd_8h" kind="file" language="C++">
+    <compoundname>souistd.h</compoundname>
+    <includes local="no">core-def.h</includes>
+    <includes local="no">windows.h</includes>
+    <includes local="no">CommCtrl.h</includes>
+    <includes local="no">Shlwapi.h</includes>
+    <includes local="no">OleCtl.h</includes>
+    <includes local="no">tchar.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">trace.h</includes>
+    <includes local="no">utilities.h</includes>
+    <includes refid="_s_define_8h" local="no">core/SDefine.h</includes>
+    <includes local="no">souicoll.h</includes>
+    <includes local="no">wtl.mini/msgcrack.h</includes>
+    <includes local="no">wtl.mini/souimisc.h</includes>
+    <includes local="no">atl.mini/atldef.h</includes>
+    <includes local="no">atl.mini/scomcli.h</includes>
+    <includes local="no">string/tstring.h</includes>
+    <includes local="no">string/strcpcvt.h</includes>
+    <includes local="no">pugixml/pugixml.hpp</includes>
+    <includes refid="_s_render-i_8h" local="no">interface/SRender-i.h</includes>
+    <includes refid="_s_img_decoder-i_8h" local="no">interface/SImgDecoder-i.h</includes>
+    <includes refid="soui-version_8h" local="no">soui-version.h</includes>
+    <includes refid="slog_8h" local="no">helper/SLog.h</includes>
+    <includes refid="_s_log_def_8h" local="no">helper/SLogDef.h</includes>
+    <includes refid="_s_assert_fmt_8h" local="no">helper/SAssertFmt.h</includes>
+    <includes refid="_s_app_8h" local="no">SApp.h</includes>
+    <includes refid="_s_attr_cracker_8h" local="no">helper/SAttrCracker.h</includes>
+    <includes refid="_s_color_8h" local="no">helper/SColor.h</includes>
+    <includes refid="_s_host_mgr_8h" local="no">helper/SHostMgr.h</includes>
+    <includes refid="_s_font_pool_8h" local="no">res.mgr/sfontpool.h</includes>
+    <includes refid="_s_res_provider_8h" local="no">res.mgr/sresprovider.h</includes>
+    <includes refid="_soui_ctrls_8h" local="no">control/souictrls.h</includes>
+    <includes refid="_s_message_box_8h" local="no">control/SMessageBox.h</includes>
+    <includedby refid="souistd_8h_8cpp" local="yes">H:/OpenSourcesCode/soui3/SOUI/include/souistd.h.cpp</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="14">
+        <label>wtl.mini/souimisc.h</label>
+      </node>
+      <node id="70">
+        <label>helper/SColor.h</label>
+        <link refid="_s_color_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>SSpinButtonCtrl.h</label>
+        <link refid="_s_spin_button_ctrl_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>sobject/sobject.hpp</label>
+      </node>
+      <node id="101">
+        <label>core/SAccelerator.h</label>
+        <link refid="_s_accelerator_8h_source"/>
+      </node>
+      <node id="87">
+        <label>helper/STimerEx.h</label>
+        <link refid="_s_timer_ex_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>core/SScrollBarHandler.h</label>
+        <link refid="_s_scroll_bar_handler_8h_source"/>
+      </node>
+      <node id="109">
+        <label>SSliderBar.h</label>
+        <link refid="_s_slider_bar_8h"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>activex/flash10t.tlh</label>
+      </node>
+      <node id="90">
+        <label>SwndStyle.h</label>
+        <link refid="_s_wnd_style_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>windows.h</label>
+      </node>
+      <node id="35">
+        <label>assert.h</label>
+      </node>
+      <node id="104">
+        <label>Srealwnd.h</label>
+        <link refid="_s_real_wnd_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>res.mgr/SDpiAwareFont.h</label>
+        <link refid="_s_dpi_aware_font_8h_source"/>
+      </node>
+      <node id="139">
+        <label>interface/SAdapter-i.h</label>
+        <link refid="_s_adapter-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>res.mgr/SFontPool.h</label>
+        <link refid="_s_font_pool_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>control/souictrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>core/shostdialog.h</label>
+        <link refid="_s_host_dialog_8h"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="124">
+        <label>SDropDown.h</label>
+        <link refid="_s_drop_down_8h"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>wtl.mini/msgcrack.h</label>
+      </node>
+      <node id="113">
+        <label>Sscrollbar.h</label>
+        <link refid="_s_scrollbar_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>STree.h</label>
+        <link refid="_s_tree_8h_source"/>
+      </node>
+      <node id="53">
+        <label>stdint.h</label>
+        <link refid="stdint_8h_source"/>
+      </node>
+      <node id="62">
+        <label>core/SSingleton2.h</label>
+        <link refid="_s_singleton2_8h_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>core/SSingletonMap.h</label>
+        <link refid="_s_singleton_map_8h_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>core/shostwnd.h</label>
+        <link refid="_s_host_wnd_8h_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>SCalendar.h</label>
+        <link refid="_s_calendar_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>res.mgr/SSkinPool.h</label>
+        <link refid="_s_skin_pool_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Stabctrl.h</label>
+        <link refid="_s_tab_ctrl_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>interface/scaret-i.h</label>
+        <link refid="scaret-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>SListCtrl.h</label>
+        <link refid="_s_list_ctrl_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>res.mgr/SStylePool.h</label>
+        <link refid="_s_style_pool_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>interface/STooltip-i.h</label>
+        <link refid="stooltip-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>interface/STreeViewItemLocator-i.h</label>
+        <link refid="_s_tree_view_item_locator-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>core/STimerlineHandlerMgr.h</label>
+        <link refid="_s_timerline_handler_mgr_8h_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>TextServ.h</label>
+      </node>
+      <node id="9">
+        <label>trace.h</label>
+      </node>
+      <node id="97">
+        <label>animation/SInterpolatorImpl.h</label>
+        <link refid="_s_interpolator_impl_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>SActiveX.h</label>
+        <link refid="_s_active_x_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>OleCtl.h</label>
+      </node>
+      <node id="5">
+        <label>Shlwapi.h</label>
+      </node>
+      <node id="82">
+        <label>SWindowMgr.h</label>
+        <link refid="_s_window_mgr_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>STreeCtrl.h</label>
+        <link refid="_s_tree_ctrl_8h_source"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>core/SDefine.h</label>
+        <link refid="_s_define_8h_source"/>
+      </node>
+      <node id="47">
+        <label>interface/SAnimation-i.h</label>
+        <link refid="_s_animation-i_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>interface/sresprovider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>STileView.h</label>
+        <link refid="_s_tile_view_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Imm.h</label>
+      </node>
+      <node id="131">
+        <label>event/SEventcrack.h</label>
+        <link refid="_s_event_crack_8h_source"/>
+      </node>
+      <node id="78">
+        <label>helper/SResID.h</label>
+        <link refid="_s_res_i_d_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>matrix/SFloat.h</label>
+        <link refid="_s_float_8h_source"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SSkinObjBase.h</label>
+        <link refid="_s_skin_obj_base_8h_source"/>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>res.mgr/SFontInfo.h</label>
+        <link refid="_s_font_info_8h_source"/>
+      </node>
+      <node id="88">
+        <label>helper/SwndMsgCracker.h</label>
+        <link refid="_swnd_msg_cracker_8h_source"/>
+      </node>
+      <node id="39">
+        <label>SEvents.h</label>
+        <link refid="_s_events_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>animation/STransformation.h</label>
+        <link refid="_s_transformation_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CommCtrl.h</label>
+      </node>
+      <node id="23">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="68">
+        <label>res.mgr/SObjDefAttr.h</label>
+        <link refid="_s_obj_def_attr_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>event/SEventSet.h</label>
+        <link refid="_s_event_set_8h_source"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>helper/SMenu.h</label>
+        <link refid="_s_menu_8h_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>core/SWnd.h</label>
+        <link refid="_s_wnd_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>SwndContainer-i.h</label>
+        <link refid="_s_wnd_container-i_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>matrix/SMatrix.h</label>
+        <link refid="_s_matrix_8h_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>SSkin.h</label>
+        <link refid="_s_skin_8h_source"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>helper/SLogDef.h</label>
+        <link refid="_s_log_def_8h_source"/>
+      </node>
+      <node id="50">
+        <label>SRect.h</label>
+        <link refid="_s_rect_8h_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>helper/STileViewItemLocator.h</label>
+        <link refid="_s_tile_view_item_locator_8h_source"/>
+      </node>
+      <node id="150">
+        <label>control/SMessageBox.h</label>
+        <link refid="_s_message_box_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>interface/slog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>SComboBox.h</label>
+        <link refid="_s_combo_box_8h_source"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>pugixml/pugixml.hpp</label>
+      </node>
+      <node id="21">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="26">
+        <label>soui-version.h</label>
+        <link refid="soui-version_8h"/>
+      </node>
+      <node id="65">
+        <label>interface/Sskinobj-i.h</label>
+        <link refid="_s_skinobj-i_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>SHotKeyCtrl.h</label>
+        <link refid="_s_hot_key_ctrl_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>atl.mini/scomcli.h</label>
+      </node>
+      <node id="58">
+        <label>res.mgr/SResProviderMgr.h</label>
+        <link refid="_s_res_provider_mgr_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>interface/SHostMsgHandler-i.h</label>
+        <link refid="_s_host_msg_handler-i_8h_source"/>
+      </node>
+      <node id="60">
+        <label>helper/SCriticalSection.h</label>
+      </node>
+      <node id="46">
+        <label>sobject/sobject-i.h</label>
+      </node>
+      <node id="132">
+        <label>core/SHostMsgDef.h</label>
+        <link refid="_s_host_msg_def_8h_source"/>
+      </node>
+      <node id="103">
+        <label>SCaption.h</label>
+        <link refid="_s_caption_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>mshtmhst.h</label>
+      </node>
+      <node id="12">
+        <label>souicoll.h</label>
+      </node>
+      <node id="72">
+        <label>core/SObjectFactory.h</label>
+        <link refid="_s_object_factory_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>helper/SAttrCracker.h</label>
+        <link refid="_s_attr_cracker_8h"/>
+      </node>
+      <node id="15">
+        <label>atl.mini/atldef.h</label>
+      </node>
+      <node id="45">
+        <label>interface/SInterpolator-i.h</label>
+        <link refid="sinterpolator-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="73">
+        <label>OleAcc.h</label>
+      </node>
+      <node id="25">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>core/SFocusManager.h</label>
+        <link refid="_s_focus_manager_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>SMCListView.h</label>
+        <link refid="_s_m_c_list_view_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core-def.h</label>
+      </node>
+      <node id="33">
+        <label>SApp.h</label>
+        <link refid="_s_app_8h_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>time.h</label>
+      </node>
+      <node id="54">
+        <label>math.h</label>
+      </node>
+      <node id="20">
+        <label>interface/SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>../core/smsgloop.h</label>
+        <link refid="_s_msg_loop_8h_source"/>
+      </node>
+      <node id="110">
+        <label>SSplitWnd.h</label>
+        <link refid="_s_split_wnd_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>Slistbox.h</label>
+        <link refid="_s_listbox_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>STreeView.h</label>
+        <link refid="_s_tree_view_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>core/SItemPanel.h</label>
+        <link refid="_s_item_panel_8h_source"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>SRichEdit.h</label>
+        <link refid="_s_rich_edit_8h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>interface/SListViewItemLocator-i.h</label>
+        <link refid="_s_list_view_item_locator-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>helper/SLog.h</label>
+        <link refid="slog_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>SCmnCtrl.h</label>
+        <link refid="_s_cmn_ctrl_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>helper/SAssertFmt.h</label>
+        <link refid="_s_assert_fmt_8h_source"/>
+      </node>
+      <node id="34">
+        <label>core/ssingleton.h</label>
+        <link refid="_s_singleton_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>animation/SAnimation.h</label>
+        <link refid="_s_animation_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>interface/slayout-i.h</label>
+        <link refid="slayout-i_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>SPoint.h</label>
+        <link refid="_s_point_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>control/SRealWndHandler-i.h</label>
+        <link refid="_s_real_wnd_handler-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>tchar.h</label>
+      </node>
+      <node id="55">
+        <label>interface/SValueAnimator-i.h</label>
+        <link refid="_s_value_animator-i_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>utilities.h</label>
+      </node>
+      <node id="77">
+        <label>res.mgr/sresprovider.h</label>
+        <link refid="_s_res_provider_8h_source"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>layout/SLayoutSize.h</label>
+        <link refid="_s_layout_size_8h_source"/>
+      </node>
+      <node id="75">
+        <label>helper/SHostMgr.h</label>
+        <link refid="_s_host_mgr_8h_source"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>interface/SAttrStorage-i.h</label>
+        <link refid="_s_attr_storage-i_8h_source"/>
+      </node>
+      <node id="80">
+        <label>core/SPanel.h</label>
+        <link refid="_s_panel_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>event/SEventSubscriber.h</label>
+        <link refid="_s_event_subscriber_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>core/SNativeWnd.h</label>
+        <link refid="_s_native_wnd_8h_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>string/strcpcvt.h</label>
+      </node>
+      <node id="119">
+        <label>Richedit.h</label>
+      </node>
+      <node id="134">
+        <label>helper/SScriptTimer.h</label>
+        <link refid="_s_script_timer_8h_source"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>core/SCaret.h</label>
+        <link refid="_s_caret_8h_source"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>res.mgr/SUiDef.h</label>
+        <link refid="_s_ui_def_8h_source"/>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>res.mgr/SNamedValue.h</label>
+        <link refid="_s_named_value_8h_source"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>SMenuBar.h</label>
+        <link refid="_s_menu_bar_8h_source"/>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>SHeaderCtrl.h</label>
+        <link refid="_s_header_ctrl_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>core/SDropTargetDispatcher.h</label>
+        <link refid="_s_drop_target_dispatcher_8h"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>SComboBase.h</label>
+        <link refid="_s_combo_base_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>helper/SWndSpy.h</label>
+        <link refid="swndspy_8h_source"/>
+      </node>
+      <node id="37">
+        <label>interface/SScriptModule-i.h</label>
+        <link refid="_s_script_module-i_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>../helper/SplitString.h</label>
+        <link refid="_split_string_8h_source"/>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="126">
+        <label>core/SWndContainerImpl.h</label>
+        <link refid="_s_wnd_container_impl_8h"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>interface/saccproxy-i.h</label>
+        <link refid="saccproxy-i_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>interface/STimelineHandler-i.h</label>
+        <link refid="_s_timeline_handler-i_8h_source"/>
+      </node>
+      <node id="28">
+        <label>intrin.h</label>
+      </node>
+      <node id="95">
+        <label>OCIdl.h</label>
+      </node>
+      <node id="149">
+        <label>SDateTimePicker.h</label>
+        <link refid="_s_date_time_picker_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>interface/STranslator-i.h</label>
+        <link refid="_s_translator-i_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>SListView.h</label>
+        <link refid="_s_list_view_8h_source"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="souistd_8h_1a2f0cdb4f69e2f07741bd5b05a10bf715" prot="public" static="no">
+        <name>SOUI_EXP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="13" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1a966cd377b9f3fdeb1432460c33352af1" prot="public" static="no">
+        <name>WINVER</name>
+        <initializer>0x0500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="18" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1ac50762666aa00bd3a4308158510f1748" prot="public" static="no">
+        <name>_WIN32_WINNT</name>
+        <initializer>0x0502</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="19" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1ad4562ce705fe4682e63dc8f1ea9dd344" prot="public" static="no">
+        <name>_WIN32_IE</name>
+        <initializer>0x0601</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="23" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1a044f8032029a472640adc8eeca632733" prot="public" static="no">
+        <name>_RICHEDIT_VER</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="27" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1a33bb8226e4ffe6240216fc84962a0330" prot="public" static="no">
+        <name>_CRT_NON_CONFORMING_SWPRINTFS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="31" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1ac7bef5d85e3dcd73eef56ad39ffc84a9" prot="public" static="no">
+        <name>WIN32_LEAN_AND_MEAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="40" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="souistd_8h_1a6f697d168199376ccfcaef5c3d2fa3cc" prot="public" static="no">
+        <name>_WTYPES_NS</name>
+        <initializer>SOUI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" line="55" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;core-def.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//需要IAccessible接口支持打开下面的宏:<sp/>2018.10.17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SOUI_ENABLE_ACC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DLL_CORE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>SOUI_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SOUI_EXP<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SOUI_EXP<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif<sp/>//<sp/>SOUI_EXPORTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SOUI_EXP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Change<sp/>these<sp/>values<sp/>to<sp/>use<sp/>different<sp/>versions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WINVER<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WINVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_WINNT<sp/><sp/><sp/><sp/>0x0502</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif//WINVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIN32_IE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_IE<sp/><sp/><sp/><sp/>0x0601</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_RICHEDIT_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_RICHEDIT_VER<sp/><sp/><sp/><sp/>0x0200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CRT_NON_CONFORMING_SWPRINTFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CRT_NON_CONFORMING_SWPRINTFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif//_CRT_NON_CONFORMING_SWPRINTFS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>warning(disable:4661)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>warning(disable:4251)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>warning(disable:4100)<sp/><sp/><sp/><sp/>//unreferenced<sp/>formal<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>pragma<sp/>warning(disable:4355)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WIN32_LEAN_AND_MEAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/>WIN32_LEAN_AND_MEAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CommCtrl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Shlwapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;OleCtl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tchar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;trace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utilities.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/SDefine.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WTYPES_NS<sp/>SOUI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;souicoll.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wtl.mini/msgcrack.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wtl.mini/souimisc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atl.mini/atldef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atl.mini/scomcli.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string/tstring.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string/strcpcvt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pugixml/pugixml.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;interface/SRender-i.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;interface/SImgDecoder-i.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="soui-version_8h" kindref="compound">soui-version.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SLog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SLogDef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SAssertFmt.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SApp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_attr_cracker_8h" kindref="compound">helper/SAttrCracker.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SColor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SHostMgr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_font_pool_8h" kindref="compound">res.mgr/sfontpool.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;res.mgr/sresprovider.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;control/souictrls.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_s_message_box_8h" kindref="compound">control/SMessageBox.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>comment(lib,&quot;shlwapi.lib&quot;)</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/souistd.h"/>
+  </compounddef>
+</doxygen>

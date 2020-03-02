@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_task_loop" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ITaskLoop</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Priority</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445a82f0aca797f5c7463ff802c6fdfa6a32" prot="public">
+          <name>High</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445aa669f09350e174e17136e0ef831c62ad" prot="public">
+          <name>Normal</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445a0142bf8da568d37d34427c64f41ad92e" prot="public">
+          <name>Low</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="18" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" bodystart="17" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a4d596d4c6ff3e7b105670325efa7c90f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ITaskLoop::getName</definition>
+        <argsstring>(char *pszBuf, int nBufLen)=0</argsstring>
+        <name>getName</name>
+        <param>
+          <type>char *</type>
+          <declname>pszBuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1aed89d09b79a01bfbcb238b97d065fc3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITaskLoop::start</definition>
+        <argsstring>(const char *pszName, Priority priority=Normal)=0</argsstring>
+        <name>start</name>
+        <param>
+          <type>const char *</type>
+          <declname>pszName</declname>
+        </param>
+        <param>
+          <type>Priority</type>
+          <declname>priority</declname>
+          <defval>Normal</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a thread to run. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the thread priority </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="30" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a8e57ef1820572590e2eeff2cee7718f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITaskLoop::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop thread synchronized. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="35" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1ae45c6d0cceb55ecd7cfb9db334d57b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>long</type>
+        <definition>virtual long SOUI::ITaskLoop::postTask</definition>
+        <argsstring>(const IRunnable *runnable, bool waitUntilDone, int priority=0)=0</argsstring>
+        <name>postTask</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_runnable" kindref="compound">IRunnable</ref> *</type>
+          <declname>runnable</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>priority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>postTask post or send a tasks to this task manager. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>runnable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the to be run task object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>waitUntilDone</parametername>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for send and false for post. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+<parametername>the</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>task priority. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the task id, can be used by cancelTask. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a35a43ea043142cba0992adad7e3fd9ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITaskLoop::cancelTasksForObject</definition>
+        <argsstring>(void *object)=0</argsstring>
+        <name>cancelTasksForObject</name>
+        <param>
+          <type>void *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove tasks for a specific object from task loop pending task list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the specific object wants pending functors to be removed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a4d83c86ab172711b4d80265592b03526" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ITaskLoop::cancelTask</definition>
+        <argsstring>(long taskId)=0</argsstring>
+        <name>cancelTask</name>
+        <param>
+          <type>long</type>
+          <declname>taskId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cancel tasks for a specific task ID list <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>taskList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the task ID list to be canceled </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the removed task list. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a04a3e1df8c484bde5f3ad9435a8c1e62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ITaskLoop::getTaskCount</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getTaskCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the total task number in the task loop queue. <simplesect kind="return"><para>total task number in task loop queue </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="63" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1aa03b42d6c118da99f4f71f4c0e63025c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ITaskLoop::isRunning</definition>
+        <argsstring>()=0</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the run loop status. <simplesect kind="return"><para>the running status </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="69" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_task_loop_1a61a3514c7c95c95b6b3505207ab3513e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ITaskLoop::getRunningTaskInfo</definition>
+        <argsstring>(char *buf, int bufLen)=0</argsstring>
+        <name>getRunningTaskInfo</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get the running task info. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receive task info buf. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufLen</parametername>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>length </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false - no task is running; true - succeed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="77" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ITaskLoop</label>
+        <link refid="struct_s_o_u_i_1_1_i_task_loop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ITaskLoop</label>
+        <link refid="struct_s_o_u_i_1_1_i_task_loop"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" line="16" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STaskLoop-i.h" bodystart="15" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a4d83c86ab172711b4d80265592b03526" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>cancelTask</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a35a43ea043142cba0992adad7e3fd9ec" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>cancelTasksForObject</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a4d596d4c6ff3e7b105670325efa7c90f" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>getName</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a61a3514c7c95c95b6b3505207ab3513e" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>getRunningTaskInfo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a04a3e1df8c484bde5f3ad9435a8c1e62" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>getTaskCount</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445a82f0aca797f5c7463ff802c6fdfa6a32" prot="public" virt="non-virtual"><scope>SOUI::ITaskLoop</scope><name>High</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1aa03b42d6c118da99f4f71f4c0e63025c" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>isRunning</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445a0142bf8da568d37d34427c64f41ad92e" prot="public" virt="non-virtual"><scope>SOUI::ITaskLoop</scope><name>Low</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445aa669f09350e174e17136e0ef831c62ad" prot="public" virt="non-virtual"><scope>SOUI::ITaskLoop</scope><name>Normal</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1ae45c6d0cceb55ecd7cfb9db334d57b6a" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>postTask</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a2cad0fd192e87cea790c6405aa1d5445" prot="public" virt="non-virtual"><scope>SOUI::ITaskLoop</scope><name>Priority</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1aed89d09b79a01bfbcb238b97d065fc3f" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>start</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_task_loop_1a8e57ef1820572590e2eeff2cee7718f7" prot="public" virt="pure-virtual"><scope>SOUI::ITaskLoop</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_skin_shape" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SSkinShape</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_skin_obj_base" prot="public" virt="non-virtual">SOUI::SSkinObjBase</basecompoundref>
+    <innerclass refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size" prot="private">SOUI::SSkinShape::SCornerSize</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_gradient" prot="private">SOUI::SSkinShape::SGradient</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_shape_ring" prot="private">SOUI::SSkinShape::SShapeRing</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_shape_size" prot="private">SOUI::SSkinShape::SShapeSize</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_stroke" prot="private">SOUI::SSkinShape::SStroke</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394" prot="private" static="no" strong="no">
+        <type></type>
+        <name>Shape</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394ac92b343bf67a245adbc2905be4a919fb" prot="private">
+          <name>rectangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394a883f0be3b0fce49ea6a287d71e483174" prot="private">
+          <name>oval</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394ad948d2d6acf341d6211953c72b1d48d6" prot="private">
+          <name>ring</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="319" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="319" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1a67e8d501718859775e47f681cfe0d90d" prot="protected" static="no" mutable="no">
+        <type>Shape</type>
+        <definition>Shape SOUI::SSkinShape::m_shape</definition>
+        <argsstring></argsstring>
+        <name>m_shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="458" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1ac38a0d2f7bb7f47580238a68caad3c56" prot="protected" static="no" mutable="no">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SSkinShape::m_crSolid</definition>
+        <argsstring></argsstring>
+        <name>m_crSolid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="460" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1a133450da26c7a8cba6a96d67dff76648" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; SShapeSize &gt;</type>
+        <definition>SAutoRefPtr&lt;SShapeSize&gt; SOUI::SSkinShape::m_shapeSize</definition>
+        <argsstring></argsstring>
+        <name>m_shapeSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="461" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1a4e738606e448c8b6a84b2ce8258b9d53" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; SCornerSize &gt;</type>
+        <definition>SAutoRefPtr&lt;SCornerSize&gt; SOUI::SSkinShape::m_cornerSize</definition>
+        <argsstring></argsstring>
+        <name>m_cornerSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="462" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1ab3df9b003f3092f028241e670937eba7" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; SStroke &gt;</type>
+        <definition>SAutoRefPtr&lt;SStroke&gt; SOUI::SSkinShape::m_stroke</definition>
+        <argsstring></argsstring>
+        <name>m_stroke</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="463" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1a073622dfbcf123431ae41b0aaee1c760" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; SGradient &gt;</type>
+        <definition>SAutoRefPtr&lt;SGradient&gt; SOUI::SSkinShape::m_gradient</definition>
+        <argsstring></argsstring>
+        <name>m_gradient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="464" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1a9b460ce01decdf173c76afeeaf142e2c" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; SShapeRing &gt;</type>
+        <definition>SAutoRefPtr&lt;SShapeRing&gt; SOUI::SSkinShape::m_ringParam</definition>
+        <argsstring></argsstring>
+        <name>m_ringParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="465" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1ade2d5de1b77c6707b25cf8ed1825529a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinShape::SSkinShape</definition>
+        <argsstring>()</argsstring>
+        <name>SSkinShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="435" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1a747191be77cd039ad2fd763be8120183" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>SIZE</type>
+        <definition>virtual SIZE SOUI::SSkinShape::GetSkinSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSkinSize</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1ae9511e52d6a3ee23739d45ba5fa2f399">GetSkinSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="438" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1a4a6bccd71a933fc18b3738f813bdfe4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SSkinShape::GetStates</definition>
+        <argsstring>()</argsstring>
+        <name>GetStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="440" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="440" bodyend="440"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1ab8cf64fc88d9a25d6dea9f603718aa8a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SSkinShape::OnInitFinished</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>OnInitFinished</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="451" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1a8e384631763ba7637f102393cd2e9b86" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SSkinShape::_DrawByIndex</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, int iState, BYTE byAlpha) const</argsstring>
+        <name>_DrawByIndex</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1a877908320fa6a08bcaa1c85a72acd759">_DrawByIndex</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iState</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="453" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1ab548516ecaf20eafc53b2e293a3a3500" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SSkinShape::_Scale</definition>
+        <argsstring>(ISkinObj *pObj, int nScale)</argsstring>
+        <name>_Scale</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1a0abeb218d563c3efb828815ffbaacabc">_Scale</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="455" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinShape</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_shape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="4">
+        <label>SOUI::SState2Index</label>
+        <link refid="class_s_o_u_i_1_1_s_state2_index"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_state2Index</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinShape</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_shape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="317" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="316" bodyend="466"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a8e384631763ba7637f102393cd2e9b86" prot="protected" virt="virtual"><scope>SOUI::SSkinShape</scope><name>_DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ae131787137d4985f058330654c524481" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>_DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1ab548516ecaf20eafc53b2e293a3a3500" prot="protected" virt="virtual"><scope>SOUI::SSkinShape</scope><name>_Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a494b94de3dfde5afefdeec63a0866089" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aa851327d1ee03e28ba3da4e1db4a6d8c" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a9583a1614db8f4706281a72894788983" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ac6a2341abeef55ad39f052ffe203ab32" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a6573f8e6533301c5a3d029c078c5c0e2" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2433008bbd67ce50586039d0f3db9c42" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a400f5d0a9da274d0f2af9e5a3056dab9" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a747191be77cd039ad2fd763be8120183" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>GetSkinSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a4a6bccd71a933fc18b3738f813bdfe4c" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>GetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1abd3001c1531b1ff608b3db377fed1906" prot="public" virt="virtual" ambiguityscope="SOUI::SSkinObjBase::"><scope>SOUI::SSkinShape</scope><name>GetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aedb2d5420d1fcd212f7a78acedf49534" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_bEnableColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1afb9533a5def9a8bd0338c72f3630d9fd" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_bEnableScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2b43172a77fa986c7a41eab684310bc2" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_byAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb31f79eb45ca3ea745b9ee6d947a8e9" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_checkAsPushdown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a4e738606e448c8b6a84b2ce8258b9d53" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_cornerSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a7ef7e225a1ad31bc2bfcd42490675f07" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1ac38a0d2f7bb7f47580238a68caad3c56" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_crSolid</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a073622dfbcf123431ae41b0aaee1c760" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_gradient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a91d1e1288fc38ccc91c887377c813443" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a9b460ce01decdf173c76afeeaf142e2c" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_ringParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a67e8d501718859775e47f681cfe0d90d" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_shape</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a133450da26c7a8cba6a96d67dff76648" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_shapeSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ab176a283f58e7856cb02fd945febbf4b" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_state2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1abe6640497664d40855ea5bff87e81388" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1ab3df9b003f3092f028241e670937eba7" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>m_stroke</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1ab8cf64fc88d9a25d6dea9f603718aa8a" prot="protected" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>OnInitFinished</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394a883f0be3b0fce49ea6a287d71e483174" prot="private" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>oval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394ac92b343bf67a245adbc2905be4a919fb" prot="private" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>rectangle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394ad948d2d6acf341d6211953c72b1d48d6" prot="private" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>ring</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adcf138383885bc023a0e3bdb5e12701c" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adf57100a724c4f2cb2cca26094da029e" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1a290348eb9a85a6b94fa66cd8ae8a8394" prot="private" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>Shape</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a1d5c6b77ed0ea87b971704c6f950b4de" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>SSkinObjBase</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1ade2d5de1b77c6707b25cf8ed1825529a" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape</scope><name>SSkinShape</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb3128c5d3e46337568c79f0d9984a45" prot="public" virt="virtual"><scope>SOUI::SSkinShape</scope><name>State2Index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

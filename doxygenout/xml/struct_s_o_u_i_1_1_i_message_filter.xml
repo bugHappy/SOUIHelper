@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_message_filter" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IMessageFilter</compoundname>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_tool_tip" prot="public" virt="non-virtual">SOUI::IToolTip</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_drop_down_wnd" prot="public" virt="non-virtual">SOUI::SDropDownWnd</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_message_filter_1a505c438963d21ccd178fefeb6a0ca2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IMessageFilter::PreTranslateMessage</definition>
+        <argsstring>(MSG *pMsg)=0</argsstring>
+        <name>PreTranslateMessage</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tip_ctrl_1a777a4c3c71770679852bcc9b4696cb90">PreTranslateMessage</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box_1a70305f593817e602c160df0486e4ccc1">PreTranslateMessage</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_drop_down_wnd_1a0093653f7218080bb2cd7899c54b885c">PreTranslateMessage</reimplementedby>
+        <param>
+          <type>MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="25" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="5">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="24" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="23" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_message_filter_1a505c438963d21ccd178fefeb6a0ca2bf" prot="public" virt="pure-virtual"><scope>SOUI::IMessageFilter</scope><name>PreTranslateMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_host_msg_handler" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IHostMsgHandler</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_host_wnd" prot="protected" virt="non-virtual">SOUI::SHostWnd</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_host_msg_handler_1adcbdf69f79db0252f8947373fadd7017" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IHostMsgHandler::OnHostMsg</definition>
+        <argsstring>(bool bRelayout, UINT uMsg, WPARAM wp, LPARAM lp)=0</argsstring>
+        <name>OnHostMsg</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a2980e4f2c326ded61ea81c6ca33cf6e0">OnHostMsg</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bRelayout</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wp</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SHostMsgHandler-i.h" line="7" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IHostMsgHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_host_msg_handler"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SHostMsgHandler-i.h" line="6" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SHostMsgHandler-i.h" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_host_msg_handler_1adcbdf69f79db0252f8947373fadd7017" prot="public" virt="pure-virtual"><scope>SOUI::IHostMsgHandler</scope><name>OnHostMsg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

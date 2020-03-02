@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_param_stream" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SParamStream</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_param_stream_1a530c59d0a5dc718e92cd2b4d3d7c468b" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_share_buffer" kindref="compound">IShareBuffer</ref> *</type>
+        <definition>IShareBuffer* SOUI::SParamStream::m_pBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_pBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="69" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1a8c208da4f49d25fa68e9e2f8b51083b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SParamStream::SParamStream</definition>
+        <argsstring>(IShareBuffer *pBuf)</argsstring>
+        <name>SParamStream</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_share_buffer" kindref="compound">IShareBuffer</ref> *</type>
+          <declname>pBuf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="35" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1ac5721fea782b0b32c608a13b1dde8b55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_share_buffer" kindref="compound">IShareBuffer</ref> *</type>
+        <definition>IShareBuffer* SOUI::SParamStream::GetBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="39" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1a4f1dc5ff97305c1263d0ad7c70e0a0fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SParamStream</ref> &amp;</type>
+        <definition>SParamStream&amp; SOUI::SParamStream::operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;data)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="44" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1ac57e003b7d17d4726f160f0ba5ee7f1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SParamStream</ref> &amp;</type>
+        <definition>SParamStream&amp; SOUI::SParamStream::operator&gt;&gt;</definition>
+        <argsstring>(T &amp;data)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="52" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1a585b127d237fb430e20650177b1125f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SParamStream::Write</definition>
+        <argsstring>(const void *data, int nLen)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="59" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_param_stream_1a4f1c6baace97e4aa0232607791b36d57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SParamStream::Read</definition>
+        <argsstring>(void *buf, int nLen)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="63" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IShareBuffer</label>
+        <link refid="struct_s_o_u_i_1_1_i_share_buffer"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SParamStream</label>
+        <link refid="class_s_o_u_i_1_1_s_param_stream"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_pBuffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="33" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="32" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1ac5721fea782b0b32c608a13b1dde8b55" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>GetBuffer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1a530c59d0a5dc718e92cd2b4d3d7c468b" prot="protected" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>m_pBuffer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1a4f1dc5ff97305c1263d0ad7c70e0a0fe" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1ac57e003b7d17d4726f160f0ba5ee7f1c" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1a4f1c6baace97e4aa0232607791b36d57" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>Read</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1a8c208da4f49d25fa68e9e2f8b51083b0" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>SParamStream</name></member>
+      <member refid="class_s_o_u_i_1_1_s_param_stream_1a585b127d237fb430e20650177b1125f9" prot="public" virt="non-virtual"><scope>SOUI::SParamStream</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

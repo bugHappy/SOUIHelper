@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_accelerator_mgr" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::IAcceleratorMgr</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_focus_manager" prot="public" virt="non-virtual">SOUI::SFocusManager</derivedcompoundref>
+    <includes refid="_s_accelerator_8h" local="no">SAccelerator.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_accelerator_mgr_1a1692cf409490832d1c79aa155e16e81b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IAcceleratorMgr::RegisterAccelerator</definition>
+        <argsstring>(const SAccelerator &amp;accelerator, IAcceleratorTarget *target)</argsstring>
+        <name>RegisterAccelerator</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_focus_manager_1aeb4545b419c4fa108cb9d0fc098747c3">RegisterAccelerator</reimplementedby>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="158" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_accelerator_mgr_1a2bdee867c5cb331c6e34bdfef1d59889" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IAcceleratorMgr::UnregisterAccelerator</definition>
+        <argsstring>(const SAccelerator &amp;accelerator, IAcceleratorTarget *target)</argsstring>
+        <name>UnregisterAccelerator</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_focus_manager_1ac82953897a17d350d5181cecaa9d26ee">UnregisterAccelerator</reimplementedby>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="162" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_accelerator_mgr_1abf255cd40faf148ebc61d6655d1bcc9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IAcceleratorMgr::UnregisterAccelerators</definition>
+        <argsstring>(IAcceleratorTarget *target)</argsstring>
+        <name>UnregisterAccelerators</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_focus_manager_1a4f0ddf34bf0647c8a8d933ebac09885f">UnregisterAccelerators</reimplementedby>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="166" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>加速键管理接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="148" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="147" bodyend="167"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1a1692cf409490832d1c79aa155e16e81b" prot="public" virt="virtual"><scope>SOUI::IAcceleratorMgr</scope><name>RegisterAccelerator</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1a2bdee867c5cb331c6e34bdfef1d59889" prot="public" virt="virtual"><scope>SOUI::IAcceleratorMgr</scope><name>UnregisterAccelerator</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1abf255cd40faf148ebc61d6655d1bcc9a" prot="public" virt="virtual"><scope>SOUI::IAcceleratorMgr</scope><name>UnregisterAccelerators</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

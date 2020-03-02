@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1tag_l_b_i_t_e_m" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::tagLBITEM</compoundname>
+    <includes refid="_s_listbox_8h" local="no">SListbox.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1af9e47b21641feb37d53d1f4bf704fc38" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_tr_text" kindref="compound">STrText</ref></type>
+        <definition>STrText SOUI::tagLBITEM::strText</definition>
+        <argsstring></argsstring>
+        <name>strText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>文本 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" line="26" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1a76cdf58fae7456fb6699b16ae553e10c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::tagLBITEM::nImage</definition>
+        <argsstring></argsstring>
+        <name>nImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>图标 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" line="27" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1ab97d4b008c249f9f9aee0eaf8cdb2492" prot="public" static="no" mutable="no">
+        <type>LPARAM</type>
+        <definition>LPARAM SOUI::tagLBITEM::lParam</definition>
+        <argsstring></argsstring>
+        <name>lParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>附加参数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" line="28" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1a5f0b0c2609c1fe7bcf10efed16c48eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::tagLBITEM::tagLBITEM</definition>
+        <argsstring>(ITrCtxProvider *pTrCtx)</argsstring>
+        <name>tagLBITEM</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_tr_ctx_provider" kindref="compound">ITrCtxProvider</ref> *</type>
+          <declname>pTrCtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" line="30" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LBitem </para>
+    </briefdescription>
+    <detaileddescription>
+<para>@Describe LBitem结构体 </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::tagLBITEM</label>
+        <link refid="struct_s_o_u_i_1_1tag_l_b_i_t_e_m"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>strText</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" line="25" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SListbox.h" bodystart="24" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1ab97d4b008c249f9f9aee0eaf8cdb2492" prot="public" virt="non-virtual"><scope>SOUI::tagLBITEM</scope><name>lParam</name></member>
+      <member refid="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1a76cdf58fae7456fb6699b16ae553e10c" prot="public" virt="non-virtual"><scope>SOUI::tagLBITEM</scope><name>nImage</name></member>
+      <member refid="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1af9e47b21641feb37d53d1f4bf704fc38" prot="public" virt="non-virtual"><scope>SOUI::tagLBITEM</scope><name>strText</name></member>
+      <member refid="struct_s_o_u_i_1_1tag_l_b_i_t_e_m_1a5f0b0c2609c1fe7bcf10efed16c48eff" prot="public" virt="non-virtual"><scope>SOUI::tagLBITEM</scope><name>tagLBITEM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

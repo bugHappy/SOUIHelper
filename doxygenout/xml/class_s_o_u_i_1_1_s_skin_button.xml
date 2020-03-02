@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_skin_button" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SSkinButton</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_skin_obj_base" prot="public" virt="non-virtual">SOUI::SSkinObjBase</basecompoundref>
+    <innerclass refid="struct_s_o_u_i_1_1_s_skin_button_1_1_b_t_n_c_o_l_o_r_s" prot="private">SOUI::SSkinButton::BTNCOLORS</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54d" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@15</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54dabb453e2a5ee9c9c017fe98e99fd65887" prot="private">
+          <name>ST_NORMAL</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da2168c3693a570fe198aea5cd72744ac1" prot="private">
+          <name>ST_HOVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da2eb4d7158e04fff131bb23042e93e36e" prot="private">
+          <name>ST_PUSHDOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da6983aad18f1b2cff0b992d2b3c853aa7" prot="private">
+          <name>ST_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="135" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="135" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a66d3acdc9b0f5f3e7b09d995e164c988" prot="protected" static="no" mutable="no">
+        <type>BTNCOLORS</type>
+        <definition>BTNCOLORS SOUI::SSkinButton::m_colors</definition>
+        <argsstring></argsstring>
+        <name>m_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="160" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a4d9ca60e8d326f82fb3e25340e908193" prot="protected" static="no" mutable="no">
+        <type>BTNCOLORS</type>
+        <definition>BTNCOLORS SOUI::SSkinButton::m_colorsBackup</definition>
+        <argsstring></argsstring>
+        <name>m_colorsBackup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="161" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a69c1d7696d29f81e70b42350483ab450" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SSkinButton::m_nCornerRadius</definition>
+        <argsstring></argsstring>
+        <name>m_nCornerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="163" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a509e07bf6b722c114503772c78855e43" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SSkinButton::m_fCornerPercent</definition>
+        <argsstring></argsstring>
+        <name>m_fCornerPercent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="164" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a76c26eb2d497fa25abe5745023494b3f" prot="protected" static="no" mutable="no">
+        <type>m_colors</type>
+        <definition>m_colors SOUI::SSkinButton::m_crBorder[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>m_crBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="168" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1ad3c86f65e5694f148c2f5f4c04c65554" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors</type>
+        <definition>m_colors TRUE m_colors SOUI::SSkinButton::m_crBorder[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>m_crBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="170" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1af32e0a88e268a418eb6b5fe9f194d6fc" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors TRUE m_colors</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors SOUI::SSkinButton::m_crDown[ST_NORMAL]</definition>
+        <argsstring>[ST_NORMAL]</argsstring>
+        <name>m_crDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="172" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a27a24ba098aa7c54cea1353f6bf414d0" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors SOUI::SSkinButton::m_crDown[ST_HOVER]</definition>
+        <argsstring>[ST_HOVER]</argsstring>
+        <name>m_crDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="174" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a8ea32859adfd4c6779f4e911fb486c3e" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors SOUI::SSkinButton::m_crDown[ST_PUSHDOWN]</definition>
+        <argsstring>[ST_PUSHDOWN]</argsstring>
+        <name>m_crDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="176" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a3e4b9e9445d3137412b1df732caa8e0d" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors SOUI::SSkinButton::m_crDown[ST_DISABLE]</definition>
+        <argsstring>[ST_DISABLE]</argsstring>
+        <name>m_crDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="178" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_button_1a7873dbda5b6a8083ab8f77c02e7a9768" prot="protected" static="no" mutable="no">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE SOUI::SSkinButton::m_fCornerPercent</definition>
+        <argsstring></argsstring>
+        <name>m_fCornerPercent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="180" column="2" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1ae6e3e2b2f60feb5e34e913d5f0d78653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinButton::SSkinButton</definition>
+        <argsstring>()</argsstring>
+        <name>SSkinButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="149" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a4c0755f1151e6003118d0a1c71bdba88" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SSkinButton::GetStates</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStates</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1abd3001c1531b1ff608b3db377fed1906">GetStates</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="151" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a05a59ccb94ca47261d393356e3a50950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SSkinButton::SetColors</definition>
+        <argsstring>(COLORREF crUp[4], COLORREF crDown[4], COLORREF crBorder[4])</argsstring>
+        <name>SetColors</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>crUp</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crDown</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crBorder</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a3a51ae0a52baee8ad3a5fff3fc22f032" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>virtual ISkinObj* SOUI::SSkinButton::Scale</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>Scale</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1adcf138383885bc023a0e3bdb5e12701c">Scale</reimplements>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="155" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a17aed6fa106d1470a67d27e2347f1f6a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SSkinButton::_DrawByIndex</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, int iState, BYTE byAlpha) const</argsstring>
+        <name>_DrawByIndex</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_skin_obj_base_1a877908320fa6a08bcaa1c85a72acd759">_DrawByIndex</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iState</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="158" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a1468fe3966af2af4d075f0ec2a7291f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SSkinButton::OnColorize</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>OnColorize</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="159" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a9fc557a8151625ed6e318d93a138392d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorBorder&quot;, m_colors.m_crBorder[0], TRUE) ATTR_COLOR(L&quot;colorBorderHover&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorBorder&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crBorder</declname>
+          <array>[0]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="167" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a24427bda4f7248f162f166af3df6fb81" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE</type>
+        <definition>m_colors TRUE SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorBorderPush&quot;, m_colors.m_crBorder[2], TRUE) ATTR_COLOR(L&quot;colorBorderDisable&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorBorderPush&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crBorder</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a54e796c686a3c6a8a4c2e7a728799fde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorUp&quot;, m_colors.m_crUp[ST_NORMAL], TRUE) ATTR_COLOR(L&quot;colorDown&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorUp&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crUp</declname>
+          <array>[ST_NORMAL]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="171" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1ad2b90aa5525a0997bcaad17c15eaf895" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorUpHover&quot;, m_colors.m_crUp[ST_HOVER], TRUE) ATTR_COLOR(L&quot;colorDownHover&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorUpHover&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crUp</declname>
+          <array>[ST_HOVER]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="173" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a35d31109d21cc32c83ee14b19fc8eb66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorUpPush&quot;, m_colors.m_crUp[ST_PUSHDOWN], TRUE) ATTR_COLOR(L&quot;colorDownPush&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorUpPush&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crUp</declname>
+          <array>[ST_PUSHDOWN]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="175" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a06953f7026ee2de6c91c302035d5e048" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE SOUI::SSkinButton::ATTR_COLOR</definition>
+        <argsstring>(L&quot;colorUpDisable&quot;, m_colors.m_crUp[ST_DISABLE], TRUE) ATTR_COLOR(L&quot;colorDownDisable&quot;</argsstring>
+        <name>ATTR_COLOR</name>
+        <param>
+          <type>L&quot;colorUpDisable&quot;</type>
+        </param>
+        <param>
+          <type>m_colors.</type>
+          <declname>m_crUp</declname>
+          <array>[ST_DISABLE]</array>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="177" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_button_1a54f64332e1b1e54acd54f09e534c8226" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE</type>
+        <definition>m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE m_colors TRUE SOUI::SSkinButton::ATTR_INT</definition>
+        <argsstring>(L&quot;cornerRadius&quot;, m_nCornerRadius, TRUE) ATTR_FLOAT(L&quot;cornerPercent&quot;</argsstring>
+        <name>ATTR_INT</name>
+        <param>
+          <type>L&quot;cornerRadius&quot;</type>
+        </param>
+        <param>
+          <type>m_nCornerRadius</type>
+        </param>
+        <param>
+          <type>TRUE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="179" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinButton</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_button"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>SOUI::SSkinButton::BTNCOLORS</label>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="4">
+        <label>SOUI::SState2Index</label>
+        <link refid="class_s_o_u_i_1_1_s_state2_index"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinButton</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_button"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_colorsBackup</edgelabel>
+          <edgelabel>m_colors</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_state2Index</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="132" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="131" bodyend="184"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a17aed6fa106d1470a67d27e2347f1f6a" prot="protected" virt="virtual"><scope>SOUI::SSkinButton</scope><name>_DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ae131787137d4985f058330654c524481" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>_DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a0abeb218d563c3efb828815ffbaacabc" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>_Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a9fc557a8151625ed6e318d93a138392d" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a24427bda4f7248f162f166af3df6fb81" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a54e796c686a3c6a8a4c2e7a728799fde" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1ad2b90aa5525a0997bcaad17c15eaf895" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a35d31109d21cc32c83ee14b19fc8eb66" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a06953f7026ee2de6c91c302035d5e048" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_COLOR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a54f64332e1b1e54acd54f09e534c8226" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ATTR_INT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a494b94de3dfde5afefdeec63a0866089" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aa851327d1ee03e28ba3da4e1db4a6d8c" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a9583a1614db8f4706281a72894788983" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ac6a2341abeef55ad39f052ffe203ab32" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a6573f8e6533301c5a3d029c078c5c0e2" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2433008bbd67ce50586039d0f3db9c42" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a400f5d0a9da274d0f2af9e5a3056dab9" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ae9511e52d6a3ee23739d45ba5fa2f399" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>GetSkinSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a4c0755f1151e6003118d0a1c71bdba88" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>GetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aedb2d5420d1fcd212f7a78acedf49534" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_bEnableColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1afb9533a5def9a8bd0338c72f3630d9fd" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_bEnableScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2b43172a77fa986c7a41eab684310bc2" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_byAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb31f79eb45ca3ea745b9ee6d947a8e9" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_checkAsPushdown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a66d3acdc9b0f5f3e7b09d995e164c988" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_colors</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a4d9ca60e8d326f82fb3e25340e908193" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_colorsBackup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a76c26eb2d497fa25abe5745023494b3f" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crBorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1ad3c86f65e5694f148c2f5f4c04c65554" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crBorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a7ef7e225a1ad31bc2bfcd42490675f07" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1af32e0a88e268a418eb6b5fe9f194d6fc" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a27a24ba098aa7c54cea1353f6bf414d0" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a8ea32859adfd4c6779f4e911fb486c3e" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a3e4b9e9445d3137412b1df732caa8e0d" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_crDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a509e07bf6b722c114503772c78855e43" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_fCornerPercent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a7873dbda5b6a8083ab8f77c02e7a9768" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_fCornerPercent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a69c1d7696d29f81e70b42350483ab450" prot="protected" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_nCornerRadius</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a91d1e1288fc38ccc91c887377c813443" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ab176a283f58e7856cb02fd945febbf4b" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_state2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1abe6640497664d40855ea5bff87e81388" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a1468fe3966af2af4d075f0ec2a7291f6" prot="protected" virt="virtual"><scope>SOUI::SSkinButton</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a3a51ae0a52baee8ad3a5fff3fc22f032" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adf57100a724c4f2cb2cca26094da029e" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1a05a59ccb94ca47261d393356e3a50950" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>SetColors</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1ae6e3e2b2f60feb5e34e913d5f0d78653" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>SSkinButton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a1d5c6b77ed0ea87b971704c6f950b4de" prot="public" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>SSkinObjBase</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da6983aad18f1b2cff0b992d2b3c853aa7" prot="private" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ST_DISABLE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da2168c3693a570fe198aea5cd72744ac1" prot="private" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ST_HOVER</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54dabb453e2a5ee9c9c017fe98e99fd65887" prot="private" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ST_NORMAL</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_button_1aaf67a075fd918a597e68509cef47c54da2eb4d7158e04fff131bb23042e93e36e" prot="private" virt="non-virtual"><scope>SOUI::SSkinButton</scope><name>ST_PUSHDOWN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb3128c5d3e46337568c79f0d9984a45" prot="public" virt="virtual"><scope>SOUI::SSkinButton</scope><name>State2Index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

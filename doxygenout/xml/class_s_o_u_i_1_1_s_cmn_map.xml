@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_cmn_map" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SCmnMap</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class TObj</type>
+      </param>
+      <param>
+        <type>class TKey</type>
+        <defval>SStringA</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* SOUI::SCmnMap&lt; TObj, TKey &gt;::m_pFunOnKeyRemoved) (const TObj &amp;obj)</definition>
+        <argsstring>)(const TObj &amp;obj)</argsstring>
+        <name>m_pFunOnKeyRemoved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="74" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" static="no" mutable="no">
+        <type>SMap&lt; TKey, TObj &gt; *</type>
+        <definition>SMap&lt;TKey,TObj&gt;* SOUI::SCmnMap&lt; TObj, TKey &gt;::m_mapNamedObj</definition>
+        <argsstring></argsstring>
+        <name>m_mapNamedObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="76" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SCmnMap&lt; TObj, TKey &gt;::SCmnMap</definition>
+        <argsstring>(void(*funOnKeyRemoved)(const TObj &amp;)=NULL)</argsstring>
+        <name>SCmnMap</name>
+        <param>
+          <type>void(*)(const TObj &amp;)</type>
+          <declname>funOnKeyRemoved</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="11" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SCmnMap&lt; TObj, TKey &gt;::~SCmnMap</definition>
+        <argsstring>()</argsstring>
+        <name>~SCmnMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="15" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SCmnMap&lt; TObj, TKey &gt;::HasKey</definition>
+        <argsstring>(const TKey &amp;key) const</argsstring>
+        <name>HasKey</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="21" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SCmnMap&lt; TObj, TKey &gt;::GetKeyObject</definition>
+        <argsstring>(const TKey &amp;key, TObj &amp;obj) const</argsstring>
+        <name>GetKeyObject</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>TObj &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="25" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TObj &amp;</type>
+        <definition>TObj&amp; SOUI::SCmnMap&lt; TObj, TKey &gt;::GetKeyObject</definition>
+        <argsstring>(const TKey &amp;key) const</argsstring>
+        <name>GetKeyObject</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="31" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SCmnMap&lt; TObj, TKey &gt;::AddKeyObject</definition>
+        <argsstring>(const TKey &amp;key, const TObj &amp;obj)</argsstring>
+        <name>AddKeyObject</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const TObj &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="35" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SCmnMap&lt; TObj, TKey &gt;::SetKeyObject</definition>
+        <argsstring>(const TKey &amp;key, const TObj &amp;obj)</argsstring>
+        <name>SetKeyObject</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const TObj &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="41" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SCmnMap&lt; TObj, TKey &gt;::RemoveKeyObject</definition>
+        <argsstring>(const TKey &amp;key)</argsstring>
+        <name>RemoveKeyObject</name>
+        <param>
+          <type>const TKey &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="46" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SCmnMap&lt; TObj, TKey &gt;::RemoveAll</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="56" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="56" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SOUI::SCmnMap&lt; TObj, TKey &gt;::GetCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="69" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" line="9" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSingletonMap.h" bodystart="8" bodyend="77"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SCmnMap</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SCmnMap</scope><name>~SCmnMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

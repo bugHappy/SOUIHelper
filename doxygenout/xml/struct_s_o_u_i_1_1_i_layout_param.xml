@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_layout_param" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ILayoutParam</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IObject</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1ae7dc0a385b6044db8948cbcfa5ed7f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILayoutParam::Clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a8908e9828bfdf0bab1344768ef263dc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILayoutParam::IsMatchParent</definition>
+        <argsstring>(ORIENTATION orientation) const =0</argsstring>
+        <name>IsMatchParent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="27" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a48c3b3514de132b295b212a61636da6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILayoutParam::IsWrapContent</definition>
+        <argsstring>(ORIENTATION orientation) const =0</argsstring>
+        <name>IsWrapContent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a022b8ffaf17fcd50952beffad9807595" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILayoutParam::IsSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation) const =0</argsstring>
+        <name>IsSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="29" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1aaf4b1e16dd1f980416199496a5f3298d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>virtual SLayoutSize SOUI::ILayoutParam::GetSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation) const =0</argsstring>
+        <name>GetSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="30" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a35dee5f9f3dfaf2dce263af1aeec4855" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILayoutParam::SetMatchParent</definition>
+        <argsstring>(ORIENTATION orientation)=0</argsstring>
+        <name>SetMatchParent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a225a52fbca07f69a073b37199bfbbad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILayoutParam::SetWrapContent</definition>
+        <argsstring>(ORIENTATION orientation)=0</argsstring>
+        <name>SetWrapContent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a5b7a9b2de719d55a8c56addcc2689636" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILayoutParam::SetSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation, const SLayoutSize &amp;layoutSize)=0</argsstring>
+        <name>SetSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref> &amp;</type>
+          <declname>layoutSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a4f42293ba0464cc7fcf47f1ae4d8c6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* SOUI::ILayoutParam::GetRawData</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetRawData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="34" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_param_1a9b84c7b9c8ddbe11a34186121eb510e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::ILayoutParam::Clone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="35" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ILayoutParam</label>
+        <link refid="struct_s_o_u_i_1_1_i_layout_param"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ILayoutParam</label>
+        <link refid="struct_s_o_u_i_1_1_i_layout_param"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="25" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" bodystart="24" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1ae7dc0a385b6044db8948cbcfa5ed7f33" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>Clear</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a9b84c7b9c8ddbe11a34186121eb510e8" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>Clone</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a4f42293ba0464cc7fcf47f1ae4d8c6d5" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>GetRawData</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1aaf4b1e16dd1f980416199496a5f3298d" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>GetSpecifiedSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a8908e9828bfdf0bab1344768ef263dc2" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>IsMatchParent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a022b8ffaf17fcd50952beffad9807595" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>IsSpecifiedSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a48c3b3514de132b295b212a61636da6b" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>IsWrapContent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a35dee5f9f3dfaf2dce263af1aeec4855" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>SetMatchParent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a5b7a9b2de719d55a8c56addcc2689636" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>SetSpecifiedSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_param_1a225a52fbca07f69a073b37199bfbbad4" prot="public" virt="pure-virtual"><scope>SOUI::ILayoutParam</scope><name>SetWrapContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

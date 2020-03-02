@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_task_helper" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STaskHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1aa73d0b75b1bfadb713a2708d8156cb4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="534" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="534" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1aa10c724e62d5bfe7e35cb8f246264a34" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="541" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="541" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a49ab55be8055ed059441772d5aefb4f9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="548" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="548" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a1c1dc30e83f980d5d82f2de6b77be098" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="555" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="555" bodyend="559"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a32bc7f3f2a8b0d819038a7ecb05588db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="562" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="562" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1ae0d44d137d59ee8943c65b3f4ac350f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, P5 p5, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5</type>
+          <declname>p5</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="569" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="569" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a3e11981bf1b37384bc11acba93ddfb1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+          <param>
+            <type>typename P6</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, P5 p5, P6 p6, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5</type>
+          <declname>p5</declname>
+        </param>
+        <param>
+          <type>P6</type>
+          <declname>p6</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="576" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="576" bodyend="580"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a6dfd11873e537f6a8218d462317433d0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+          <param>
+            <type>typename P6</type>
+          </param>
+          <param>
+            <type>typename P7</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, P5 p5, P6 p6, P7 p7, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5</type>
+          <declname>p5</declname>
+        </param>
+        <param>
+          <type>P6</type>
+          <declname>p6</declname>
+        </param>
+        <param>
+          <type>P7</type>
+          <declname>p7</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="583" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="583" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1a49f461836a30725222e2aaa8a64eb5e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+          <param>
+            <type>typename P6</type>
+          </param>
+          <param>
+            <type>typename P7</type>
+          </param>
+          <param>
+            <type>typename P8</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, P5 p5, P6 p6, P7 p7, P8 p8, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5</type>
+          <declname>p5</declname>
+        </param>
+        <param>
+          <type>P6</type>
+          <declname>p6</declname>
+        </param>
+        <param>
+          <type>P7</type>
+          <declname>p7</declname>
+        </param>
+        <param>
+          <type>P8</type>
+          <declname>p8</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="590" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="590" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_task_helper_1ae173e149344272a50721286c9581299a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TClass</type>
+          </param>
+          <param>
+            <type>typename Fun</type>
+          </param>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+          <param>
+            <type>typename P6</type>
+          </param>
+          <param>
+            <type>typename P7</type>
+          </param>
+          <param>
+            <type>typename P8</type>
+          </param>
+          <param>
+            <type>typename P9</type>
+          </param>
+        </templateparamlist>
+        <type>long</type>
+        <definition>static long SOUI::STaskHelper::post</definition>
+        <argsstring>(ITaskLoop *pTaskLoop, TClass *pObj, Fun fun, P1 p1, P2 p2, P3 p3, P4 p4, P5 p5, P6 p6, P7 p7, P8 p8, P9 p9, bool waitUntilDone, int nPriority=0)</argsstring>
+        <name>post</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_task_loop" kindref="compound">ITaskLoop</ref> *</type>
+          <declname>pTaskLoop</declname>
+        </param>
+        <param>
+          <type>TClass *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type>Fun</type>
+          <declname>fun</declname>
+        </param>
+        <param>
+          <type>P1</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5</type>
+          <declname>p5</declname>
+        </param>
+        <param>
+          <type>P6</type>
+          <declname>p6</declname>
+        </param>
+        <param>
+          <type>P7</type>
+          <declname>p7</declname>
+        </param>
+        <param>
+          <type>P8</type>
+          <declname>p8</declname>
+        </param>
+        <param>
+          <type>P9</type>
+          <declname>p9</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>waitUntilDone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPriority</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="597" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="597" bodyend="601"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="531" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="531" bodyend="603"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1aa73d0b75b1bfadb713a2708d8156cb4c" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1aa10c724e62d5bfe7e35cb8f246264a34" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a49ab55be8055ed059441772d5aefb4f9" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a1c1dc30e83f980d5d82f2de6b77be098" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a32bc7f3f2a8b0d819038a7ecb05588db" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1ae0d44d137d59ee8943c65b3f4ac350f0" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a3e11981bf1b37384bc11acba93ddfb1d" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a6dfd11873e537f6a8218d462317433d0" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1a49f461836a30725222e2aaa8a64eb5e7" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+      <member refid="class_s_o_u_i_1_1_s_task_helper_1ae173e149344272a50721286c9581299a" prot="public" virt="non-virtual"><scope>SOUI::STaskHelper</scope><name>post</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

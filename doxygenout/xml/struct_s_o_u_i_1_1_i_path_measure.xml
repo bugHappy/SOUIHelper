@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_path_measure" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IPathMeasure</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_measure_1a0260694c20c3496c8539682ae6b76418" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPathMeasure::setPath</definition>
+        <argsstring>(IPath *path, bool forceClosed)=0</argsstring>
+        <name>setPath</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceClosed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a new path, or null to have none. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1038" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_measure_1ae9f6913d962a0ac1dd62277845ec33b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float SOUI::IPathMeasure::getLength</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the total length of the current contour, or 0 if no path is associated with this measure object. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1044" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_measure_1a586cf0789b053248c3826abb4c34291d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPathMeasure::getPosTan</definition>
+        <argsstring>(float distance, float pos[], float tan[])=0</argsstring>
+        <name>getPosTan</name>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pos</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tan</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pins distance to 0 &lt;= distance &lt;= <ref refid="struct_s_o_u_i_1_1_i_path_measure_1ae9f6913d962a0ac1dd62277845ec33b4" kindref="member">getLength()</ref>, and then computes the corresponding position and tangent. Returns false if there is no path, or a zero-length path was specified, in which case position and tangent are unchanged.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance along the current contour to sample </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, eturns the sampled position (x==[0], y==[1]) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, returns the sampled tangent (x==[0], y==[1]) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>false if there was no path associated with this measure object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1057" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_measure_1a9c187077381175f8f9116283beff42f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPathMeasure::getSegment</definition>
+        <argsstring>(float startD, float stopD, IPath *dst, bool startWithMoveTo)=0</argsstring>
+        <name>getSegment</name>
+        <param>
+          <type>float</type>
+          <declname>startD</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>stopD</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>startWithMoveTo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Given a start and stop distance, return in dst the intervening segment(s). If the segment is zero-length, return false, else return true. startD and stopD are pinned to legal values (0..<ref refid="struct_s_o_u_i_1_1_i_path_measure_1ae9f6913d962a0ac1dd62277845ec33b4" kindref="member">getLength()</ref>). If startD &gt;= stopD then return false (and leave dst untouched). Begin the segment with a moveTo if startWithMoveTo is true.</para>
+<para>On <ref refid="" kindref="compound">android.os.Build.VERSION_CODES#KITKAT</ref> and earlier releases, the resulting path may not display on a hardware-accelerated Canvas. A simple workaround is to add a single operation to this path, such as <computeroutput>dst.rLineTo(0, 0)</computeroutput>.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1071" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IPathMeasure</label>
+        <link refid="struct_s_o_u_i_1_1_i_path_measure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IPathMeasure</label>
+        <link refid="struct_s_o_u_i_1_1_i_path_measure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1034" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1033" bodyend="1072"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_path_measure_1ae9f6913d962a0ac1dd62277845ec33b4" prot="public" virt="pure-virtual"><scope>SOUI::IPathMeasure</scope><name>getLength</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_measure_1a586cf0789b053248c3826abb4c34291d" prot="public" virt="pure-virtual"><scope>SOUI::IPathMeasure</scope><name>getPosTan</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_measure_1a9c187077381175f8f9116283beff42f9" prot="public" virt="pure-virtual"><scope>SOUI::IPathMeasure</scope><name>getSegment</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_measure_1a0260694c20c3496c8539682ae6b76418" prot="public" virt="pure-virtual"><scope>SOUI::IPathMeasure</scope><name>setPath</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

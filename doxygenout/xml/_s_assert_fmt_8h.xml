@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_assert_fmt_8h" kind="file" language="C++">
+    <compoundname>SAssertFmt.h</compoundname>
+    <includedby refid="souistd_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h</label>
+        <link refid="_s_assert_fmt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_assert_fmt_8h_1a2ddb9372f59b1d4ea16cb1a3e148296f" prot="public" static="no">
+        <name>SASSERT_FMTW</name>
+        <param><defname>expr</defname></param>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>if(!(expr)) SLOGFMTW(format,__VA_ARGS__);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" line="15" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_assert_fmt_8h_1a642c77fb2f34cd15658168ab576a1bf6" prot="public" static="no">
+        <name>SASSERT_FMTA</name>
+        <param><defname>expr</defname></param>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>if(!(expr)) SLOGFMTW(format,__VA_ARGS__);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" line="18" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_assert_fmt_8h_1aba6b515796b52532780ff4953adca354" prot="public" static="no">
+        <name>SASSERT_FMT</name>
+        <initializer>SASSERT_FMTA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" line="25" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;crtdbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMTW(expr,<sp/>format,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(void)<sp/>((!!(expr))<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(1<sp/>!=<sp/>_CrtDbgReportW(_CRT_ASSERT,<sp/>_CRT_WIDE(__FILE__),<sp/>__LINE__,<sp/>NULL,<sp/>format,<sp/>__VA_ARGS__))<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(_CrtDbgBreak(),<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMTA(expr,<sp/>format,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(void)<sp/>((!!(expr))<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(1<sp/>!=<sp/>_CrtDbgReport(_CRT_ASSERT,<sp/>__FILE__,<sp/>__LINE__,<sp/>NULL,<sp/>format,<sp/>__VA_ARGS__))<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(_CrtDbgBreak(),<sp/>0))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMTW(expr,<sp/>format,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(!(expr))<sp/>SLOGFMTW(format,__VA_ARGS__);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMTA(expr,<sp/>format,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(!(expr))<sp/>SLOGFMTW(format,__VA_ARGS__);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_UNICODE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMT<sp/><sp/><sp/><sp/>SASSERT_FMTW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/>define<sp/>SASSERT_FMT<sp/><sp/><sp/><sp/>SASSERT_FMTA</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor">#endif//_UNICODE</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAssertFmt.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_s_rect" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::SRect</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1f_rect" prot="public" virt="non-virtual">SOUI::fRect</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a68fab3112fc688cb37d3e9099111c04a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref></type>
+        <definition>static SRect SOUI::SRect::IMake</definition>
+        <argsstring>(const RECT &amp;src)</argsstring>
+        <name>IMake</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="26" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ae1c10ffb17d555a6734e973ecdb9e132" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SRect::isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return true if the rectangle&apos;s width or height are &lt;= 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="37" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1abaeb9ed400658257cfeeecd281a054e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SRect::isLargest</definition>
+        <argsstring>() const</argsstring>
+        <name>isLargest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="39" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a78938f71ccbf1bfc415d8fecedf218be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SRect::isFinite</definition>
+        <argsstring>() const</argsstring>
+        <name>isFinite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true iff all values in the rect are finite. If any are infinite or NaN (or SK_FixedNaN when float is fixed) then this returns false. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="49" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="49" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ae04459dfa681d061e254f47c24902de0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::x</definition>
+        <argsstring>() const</argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="64" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ae664ae5f98daa5624c8da652104f52fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::y</definition>
+        <argsstring>() const</argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="65" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a4a5ea41e6f0f2643d76ef9026d2d726d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::left</definition>
+        <argsstring>() const</argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="66" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a1959c835039d2d468279d9c1e6029f17" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::top</definition>
+        <argsstring>() const</argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="67" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ac5091de01e5bffe8bb8e8fd920e6960c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::right</definition>
+        <argsstring>() const</argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="68" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a99e443106eb29d8ba7594f4edde5fb27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::bottom</definition>
+        <argsstring>() const</argsstring>
+        <name>bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="69" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a1251541f3223dcba77428b564465d8a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="70" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a46e3fb24c276a921a44b10db4acbbe42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="71" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ada1091a607b0edc21abd3fa48b77cce9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::centerX</definition>
+        <argsstring>() const</argsstring>
+        <name>centerX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="72" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a1399e9da1818a4c1761eb452c3dfb152" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SRect::centerY</definition>
+        <argsstring>() const</argsstring>
+        <name>centerY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="73" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a9c87214167ddbc8b5cd19ceb299df431" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::toQuad</definition>
+        <argsstring>(SPoint quad[4]) const</argsstring>
+        <name>toQuad</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>quad</declname>
+          <array>[4]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the 4 points that enclose the rectangle (top-left, top-right, bottom-right, bottom-left). TODO: Consider adding param to control whether quad is CW or CCW. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a9a2f1a1db2bc35d72e48e02a9f6e355e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::setEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>setEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set this rectangle to the empty rectangle (0,0,0,0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="90" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1af415ae7633ee7d2334b6d3d6956383ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::iset</definition>
+        <argsstring>(const RECT &amp;src)</argsstring>
+        <name>iset</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="92" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a1c15a5db38077f2fb136a80a358dd279" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>RECT</type>
+        <definition>RECT SOUI::SRect::toRect</definition>
+        <argsstring>() const</argsstring>
+        <name>toRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="100" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="100" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1aee52657fc70069fa759954533a832578" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::set</definition>
+        <argsstring>(float left, float top, float right, float bottom)</argsstring>
+        <name>set</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="110" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a5689db5f90ee949451f6949953c85106" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::iset</definition>
+        <argsstring>(int left, int top, int right, int bottom)</argsstring>
+        <name>iset</name>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the rect with the 4 specified integers. The routine handles converting them to scalars (by calling SkIntToScalar) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="120" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="120" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a4958aac9d146a30ec5507af7b054fbf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::set</definition>
+        <argsstring>(const SPoint pts[], int count)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set this rectangle to be the bounds of the array of points. If the array is empty (count == 0), then set this rectangle to the empty rectangle (0,0,0,0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="131" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="131" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a96faca31c317cd86debc014dda33a029" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::setBounds</definition>
+        <argsstring>(const SPoint pts[], int count)</argsstring>
+        <name>setBounds</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="139" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ad9fa87ad1306a4814aac92f16b52a5d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SRect::setBoundsCheck</definition>
+        <argsstring>(const SPoint pts[], int count)</argsstring>
+        <name>setBoundsCheck</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute the bounds of the array of points, and set this rect to that bounds and return true... unless a non-finite value is encountered, in which case this rect is set to empty and false is returned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1ae7dbf7564243ab4364aafb6867bfe664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::set</definition>
+        <argsstring>(const SPoint &amp;p0, const SPoint &amp;p1)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>p0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="150" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="150" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a5aeb203cf07b316a856242939476ea7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::offset</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>offset</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset set the rectangle by adding dx to its left and right, and adding dy to its top and bottom. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="160" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="160" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a280706406125791b0dd8d721f369e691" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::offset</definition>
+        <argsstring>(const SPoint &amp;delta)</argsstring>
+        <name>offset</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="167" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a2f757877909c7a9f675bb21a732754aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::offsetTo</definition>
+        <argsstring>(float newX, float newY)</argsstring>
+        <name>offsetTo</name>
+        <param>
+          <type>float</type>
+          <declname>newX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>newY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset this rect such its new x() and y() will equal newX and newY. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="174" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="174" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a06f3bbc2c02fd7cafd37bdf6673c3d71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::inset</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>inset</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Inset the rectangle by (dx,dy). If dx is positive, then the sides are moved inwards, making the rectangle narrower. If dx is negative, then the sides are moved outwards, making the rectangle wider. The same holds true for dy and the top and bottom. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="186" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="186" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a370ec9e02125d4baa8ff54242484b724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::outset</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>outset</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Outset the rectangle by (dx,dy). If dx is positive, then the sides are moved outwards, making the rectangle wider. If dx is negative, then the sides are moved inwards, making the rectangle narrower. The same holds true for dy and the top and bottom. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="198" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a134024cd0ef6ae0c8404a84b77e42814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SRect::sort</definition>
+        <argsstring>()</argsstring>
+        <name>sort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Swap top/bottom or left/right if there are flipped (i.e. if width() or height() would have returned a negative value.) This should be called if the edges are computed separately, and may have crossed over each other. When this returns, left &lt;= right &amp;&amp; top &lt;= bottom </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="206" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_rect_1a5c93a3e72eea064a00aa286a5dac8a68" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const float *</type>
+        <definition>const float* SOUI::SRect::asScalars</definition>
+        <argsstring>() const</argsstring>
+        <name>asScalars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>cast-safe way to treat the rect as an array of (4) SFloats. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="211" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="211" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_rect_1a7b1df79026eead8f6ecaf25fdaf0828c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const SRect &amp;a, const SRect &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="75" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_rect_1ac8e07094a5572e1d5da5de56c74d310b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const SRect &amp;a, const SRect &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="79" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::fRect</label>
+        <link refid="struct_s_o_u_i_1_1f_rect"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SRect</label>
+        <link refid="struct_s_o_u_i_1_1_s_rect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::fRect</label>
+        <link refid="struct_s_o_u_i_1_1f_rect"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SRect</label>
+        <link refid="struct_s_o_u_i_1_1_s_rect"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="25" column="28" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="25" bodyend="214"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a5c93a3e72eea064a00aa286a5dac8a68" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>asScalars</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a99e443106eb29d8ba7594f4edde5fb27" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>bottom</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ada1091a607b0edc21abd3fa48b77cce9" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>centerX</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a1399e9da1818a4c1761eb452c3dfb152" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>centerY</name></member>
+      <member refid="struct_s_o_u_i_1_1f_rect_1a6d92ad1c6629e3efef84c739c0f0b81c" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>fBottom</name></member>
+      <member refid="struct_s_o_u_i_1_1f_rect_1a3819e0dd0f545eeaa7342b800006c842" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>fLeft</name></member>
+      <member refid="struct_s_o_u_i_1_1f_rect_1afd00289a8e4e98c69949d1d3fb36fa8d" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>fRight</name></member>
+      <member refid="struct_s_o_u_i_1_1f_rect_1ab4957abcd39779ef1b5e6c86616b06c4" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>fTop</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a46e3fb24c276a921a44b10db4acbbe42" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>height</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a68fab3112fc688cb37d3e9099111c04a" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>IMake</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a06f3bbc2c02fd7cafd37bdf6673c3d71" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>inset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ae1c10ffb17d555a6734e973ecdb9e132" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>isEmpty</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1af415ae7633ee7d2334b6d3d6956383ba" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>iset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a5689db5f90ee949451f6949953c85106" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>iset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a78938f71ccbf1bfc415d8fecedf218be" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>isFinite</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1abaeb9ed400658257cfeeecd281a054e9" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>isLargest</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a4a5ea41e6f0f2643d76ef9026d2d726d" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>left</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a5aeb203cf07b316a856242939476ea7e" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>offset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a280706406125791b0dd8d721f369e691" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>offset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a2f757877909c7a9f675bb21a732754aa" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>offsetTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ac8e07094a5572e1d5da5de56c74d310b" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>operator!=</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a7b1df79026eead8f6ecaf25fdaf0828c" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>operator==</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a370ec9e02125d4baa8ff54242484b724" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>outset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ac5091de01e5bffe8bb8e8fd920e6960c" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>right</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1aee52657fc70069fa759954533a832578" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>set</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a4958aac9d146a30ec5507af7b054fbf1" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>set</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ae7dbf7564243ab4364aafb6867bfe664" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>set</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a96faca31c317cd86debc014dda33a029" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>setBounds</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ad9fa87ad1306a4814aac92f16b52a5d4" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>setBoundsCheck</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a9a2f1a1db2bc35d72e48e02a9f6e355e" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>setEmpty</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a134024cd0ef6ae0c8404a84b77e42814" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>sort</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a1959c835039d2d468279d9c1e6029f17" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>top</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a9c87214167ddbc8b5cd19ceb299df431" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>toQuad</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a1c15a5db38077f2fb136a80a358dd279" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>toRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1a1251541f3223dcba77428b564465d8a0" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>width</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ae04459dfa681d061e254f47c24902de0" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>x</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_rect_1ae664ae5f98daa5624c8da652104f52fc" prot="public" virt="non-virtual"><scope>SOUI::SRect</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

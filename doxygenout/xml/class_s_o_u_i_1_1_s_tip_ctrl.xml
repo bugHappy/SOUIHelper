@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tip_ctrl" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STipCtrl</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_tool_tip" prot="public" virt="non-virtual">SOUI::IToolTip</basecompoundref>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_native_wnd" prot="public" virt="non-virtual">SOUI::SNativeWnd</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1aa054bb73b43bb31cb66eaac42b791ea2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STipCtrl::m_nDelay</definition>
+        <argsstring></argsstring>
+        <name>m_nDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="39" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1af96cc3c53ed686db5ee128b9be9e9f9e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STipCtrl::m_nShowSpan</definition>
+        <argsstring></argsstring>
+        <name>m_nShowSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="40" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1adc837aa73749c45634b66f16deb6f582" prot="protected" static="no" mutable="no">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::STipCtrl::m_strTip</definition>
+        <argsstring></argsstring>
+        <name>m_strTip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="41" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1a5e979d89101c8b9d0b0d9241133fb7d0" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STipCtrl::m_nScale</definition>
+        <argsstring></argsstring>
+        <name>m_nScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="42" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1ad7817ba60d6fcb15f57572778dd4c90d" prot="protected" static="no" mutable="no">
+        <type>CRect</type>
+        <definition>CRect SOUI::STipCtrl::m_rcTarget</definition>
+        <argsstring></argsstring>
+        <name>m_rcTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="43" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1a748cfb9674607eb43c44a3da5e8b220f" prot="protected" static="no" mutable="no">
+        <type>HFONT</type>
+        <definition>HFONT SOUI::STipCtrl::m_font</definition>
+        <argsstring></argsstring>
+        <name>m_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="44" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tip_ctrl_1ac3a1b5f4a4288bbf98925b459bd28f2f" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_t_i_p_i_d" kindref="compound">TIPID</ref></type>
+        <definition>TIPID SOUI::STipCtrl::m_id</definition>
+        <argsstring></argsstring>
+        <name>m_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="46" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1ad6660f304622c42819007f0f9cee69ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STipCtrl::STipCtrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>STipCtrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="12" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1aac510e4afdf2cfc9d9d8cc3bf3f3e829" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::STipCtrl::~STipCtrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>~STipCtrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="13" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1afcf455c3e1ad9f3d2ff943a521acbcb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STipCtrl::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1a06e8f7721edd7405ab29fe10d638cfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::RelayEvent</definition>
+        <argsstring>(const MSG *pMsg)</argsstring>
+        <name>RelayEvent</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_tool_tip_1a938c8c737d64ab16e3d2b5f029843432">RelayEvent</reimplements>
+        <param>
+          <type>const MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+<para>鼠标消息的中继 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>RelayEvent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MSG * pMsg <ndash/> 鼠标消息 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="18" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1adab4593a3e2ec3a56976924add31d311" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::UpdateTip</definition>
+        <argsstring>(const TIPID &amp;id, CRect rc, LPCTSTR pszTip, int nScale)</argsstring>
+        <name>UpdateTip</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_tool_tip_1aed974d3613e2a9e65e6cea6fbf537ae3">UpdateTip</reimplements>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_t_i_p_i_d" kindref="compound">TIPID</ref> &amp;</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>CRect</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszTip</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+<para>更新当前的tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UpdateTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_t_i_p_i_d" kindref="compound">TIPID</ref> &amp; id <ndash/> tooltip的ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rc <ndash/> tooltip的感应区 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszTip <ndash/> tooltip字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nScale <ndash/> 当前的缩放比例 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="20" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1a3c7c095193b225f69b3b36c6a288d395" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::ClearTip</definition>
+        <argsstring>()</argsstring>
+        <name>ClearTip</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_tool_tip_1ad00333f20d5d27e0f32bf592e3c74a05">ClearTip</reimplements>
+        <briefdescription>
+<para>清除当前的tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ClearTip <simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="22" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1a777a4c3c71770679852bcc9b4696cb90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STipCtrl::PreTranslateMessage</definition>
+        <argsstring>(MSG *pMsg)</argsstring>
+        <name>PreTranslateMessage</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_message_filter_1a505c438963d21ccd178fefeb6a0ca2bf">PreTranslateMessage</reimplements>
+        <param>
+          <type>MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="24" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1ae953dd83263bace4282c71ed3d20707a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STipCtrl::OnFinalMessage</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>OnFinalMessage</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_native_wnd_1a4d8c7966c871ecc3fb59b88e5486fd8b">OnFinalMessage</reimplements>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="26" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1a92b141a10b55cc431bb0aff19afc76be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::OnTimer</definition>
+        <argsstring>(UINT_PTR idEvent)</argsstring>
+        <name>OnTimer</name>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>idEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1aa7e05f961c961cb3b687a457e8f4c7a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::OnPaint</definition>
+        <argsstring>(HDC dc)</argsstring>
+        <name>OnPaint</name>
+        <param>
+          <type>HDC</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tip_ctrl_1af0af6c6798d4006f12f659333dd94b43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STipCtrl::ShowTip</definition>
+        <argsstring>(BOOL bShow)</argsstring>
+        <name>ShowTip</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bShow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="30" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="6">
+        <label>SOUI::TIPID</label>
+        <link refid="struct_s_o_u_i_1_1_t_i_p_i_d"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" line="10" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SToolTip.h" bodystart="8" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae7db0c8539947cfbebbf5c874d09852f" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>CenterWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a3c7c095193b225f69b3b36c6a288d395" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>ClearTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae76b040fb207bfe209a860d19fdc9f79" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a337dbb45781eee2d2f100fab68a9b714" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1afcf455c3e1ad9f3d2ff943a521acbcb3" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e2fd1ebc4ba0b4eb3f123e889577cf5" prot="public" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::STipCtrl</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1cac9ee1fed482a82bc26b77320fa9a7" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2216c31f08c5b63efe92da1c4f289643" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>CreateGrayCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af2717c6574ebd4356ecd8efe50a2d919" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>CreateSolidCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1f0a65ecd272743c10be1541c8933a88" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>DefaultReflectionHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8fd32a77fe171c5cf0cb869b25c79918" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9e60c00d24fce32a433203d93024a775" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1d439ec2538d347aed93d17cf8afee1c" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a749459fa2001aec402580f5c7f26bdd8" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ForwardNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9fd18bae24ae60bd68e984b9b64cdfd3" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae73894c2610e54aec010b508b963e2da" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetCurrentMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a85d734630f4c89d0273b1eb5d9fba5b8" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b9e971fe7e37ba7b4cb60341078caf5" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetDlgCtrlID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a931a0700fbea08b60bb1bf2a8e5a069e" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetExStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc75f72d1012125fbd2e073330434321" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81490884fd21d8c2b2167399fb6dc2ea" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a18fa87a0ee2bca6528b411fb616b5de9" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetWindowDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa0fbb768f0ed67e2e284d1ea049e08e4" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a546e9561847bec230bcd4f2c4c9bb6a3" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aed199e49e917057b28b71582bafc50f6" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab8ac1334d4061c837fb938adf63515cd" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>HideCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ade5b0055fbebcec7e2680b953ed9af12" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa32edae64de9d4bd96afa4f8b49b8bcc" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83a218aeaacf52718edd9da35109ca32" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>IsIconic</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afb4281f73bf3ef28477b60511fea4179" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>IsWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e1c170b3d93f295ec77051dfa0efded" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>IsWindowEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a617b8bcc3ca353fb645578be4ea3ea42" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>IsWindowVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a646008357eeb4cd2e97952777bd310d0" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>IsZoomed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afbdded6c7256009005b7f69e08ac79ea" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae481cfa8687a81ab3bfbedb25e8f66f4" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_bDestoryed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a748cfb9674607eb43c44a3da5e8b220f" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_font</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a00088e09d3601c253f658a7e1b7822b4" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_hWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1ac3a1b5f4a4288bbf98925b459bd28f2f" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_id</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1aa054bb73b43bb31cb66eaac42b791ea2" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_nDelay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a5e979d89101c8b9d0b0d9241133fb7d0" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1af96cc3c53ed686db5ee128b9be9e9f9e" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_nShowSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a40129e803a175f7301dad2482be99bad" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_pCurrentMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9bfe94142ee6f297cff8bb591edf40cf" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_pfnSuperWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab1755d07793fd4ced829bc65a4d3c061" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_pThunk</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1ad7817ba60d6fcb15f57572778dd4c90d" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_rcTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1adc837aa73749c45634b66f16deb6f582" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>m_strTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc6007ef2e9160ea3a5c114867f7d632" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a821292a06c4cad35e2bbed9f90559f7a" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aea08577c49fd9b5a03fa3e235720b527" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ModifyStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3a33ddbe2721ea01f49587e65fe57240" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ModifyStyleEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0e69cf9276281073e379d42b7d69f3ec" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3c7b9c811f1b7716068ec6334b5f24af" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1ae953dd83263bace4282c71ed3d20707a" prot="protected" virt="virtual"><scope>SOUI::STipCtrl</scope><name>OnFinalMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1aa7e05f961c961cb3b687a457e8f4c7a4" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a92b141a10b55cc431bb0aff19afc76be" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>OnTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af7570ddbff8319b70d46e86573475497" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>OnWindowTextChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af96d0cdc596fdb10f98a63e223d320f1" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>PostMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a777a4c3c71770679852bcc9b4696cb90" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>PreTranslateMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>ProcessWindowMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a97af1ea77880e227464f788ef22bb125" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ReflectNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a352cb70ad8715456885410860b192353" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>RegisterSimpleWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a615774057963164100d331ccf289fa26" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>RegisterSimpleWnd2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1a06e8f7721edd7405ab29fe10d638cfe0" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>RelayEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83165461a89e3a4fa546259da63f467d" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ReleaseDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a92d18cbf51e670992d6d4d7d6b15e765" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81ee7ba311f5a9775cf8bb5a169afe9f" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0ef25c95c4a14516adf4326050d670d8" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3518257469568cec4fd68e44be81bc04" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SendNotifyMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a332d5ea6e6b7482b8c53ecb8dda79a8c" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a5583a5875191ef01acdb0bd14c531501" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa87a3067b96744a69bbc79756d6c98c2" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetLayeredWindowAttributes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a219e52660deeeac6ec4320ddd64e7840" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afad497321f8bc706ff4bf8fc68d414ea" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2622349ba0e4a73685334951253fe916" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af3ed1854d29222863e881620958c86fe" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetWindowPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a234b0318aaee60c3505008ee08d28e47" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0a29a4cf219a8b7cc5297efef0169107" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7b089d19a65c67f6263e88c7ed012200" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1af0af6c6798d4006f12f659333dd94b43" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ShowTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a04eb888e46fa0aee64e5b78dea3793fe" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>ShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a713a258605bd7f0b687bff54d822269f" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b01f11bf4a421168a050482805332bc" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>StartWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1ad6660f304622c42819007f0f9cee69ea" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>STipCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aedf20baf8bb1812ab1089c7c0a055fca" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>SubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a33c025619fedeada3d794b9f41a1a64b" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>UnsubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a033be00379ec5b66e58951293568eeff" prot="public" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>UpdateLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1adab4593a3e2ec3a56976924add31d311" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>UpdateTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81c229b200cf8c1f1704df3a42aab4bd" prot="protected" virt="non-virtual"><scope>SOUI::STipCtrl</scope><name>WindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ac2ada5966059755cd94787c2cdd66088" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>~SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tip_ctrl_1aac510e4afdf2cfc9d9d8cc3bf3f3e829" prot="public" virt="virtual"><scope>SOUI::STipCtrl</scope><name>~STipCtrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

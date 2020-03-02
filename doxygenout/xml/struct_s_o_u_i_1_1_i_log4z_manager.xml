@@ -1,0 +1,691 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_log4z_manager" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ILog4zManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="slog-i_8h" local="no">slog-i.h</includes>
+    <innerclass refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder" prot="public">SOUI::ILog4zManager::IOutputFileBuilder</innerclass>
+    <innerclass refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_listener" prot="public">SOUI::ILog4zManager::IOutputListener</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ENUM_LOG_LEVEL</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba40a757af6d15f9d6627cdd9d770f849b" prot="public">
+          <name>LOG_LEVEL_TRACE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba2b26f07ba7aab87ebf99e3f2e55c7354" prot="public">
+          <name>LOG_LEVEL_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba8172dcb10589fa37365825f589f72b17" prot="public">
+          <name>LOG_LEVEL_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bae9996323264c9fc634322b8c1f0cb51c" prot="public">
+          <name>LOG_LEVEL_WARN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba17b844e8f08fff30731ed67b715a91ef" prot="public">
+          <name>LOG_LEVEL_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bad78a4aaa39326d0f83128ee76bddd9f2" prot="public">
+          <name>LOG_LEVEL_ALARM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bac63690a97482534fefc284cff7e67e3d" prot="public">
+          <name>LOG_LEVEL_FATAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LOG Level </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="23" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" bodystart="22" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a1d88fc0c4ef55065a389c5bd41140cbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::ILog4zManager::~ILog4zManager</definition>
+        <argsstring>()</argsstring>
+        <name>~ILog4zManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="51" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a1fca33f85c5a07f75d056287f97b037d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::config</definition>
+        <argsstring>(const char *configPath)=0</argsstring>
+        <name>config</name>
+        <param>
+          <type>const char *</type>
+          <declname>configPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Config or overwrite configure Needs to be called before ILog4zManager::Start,, OR Do not call. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a3f9ef79c392f63f5e4ba1a2600abfbfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::configFromString</definition>
+        <argsstring>(const char *configContent)=0</argsstring>
+        <name>configFromString</name>
+        <param>
+          <type>const char *</type>
+          <declname>configContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="56" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1aaeb28f2831a821f409ef3d5bf74906ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>LoggerId</type>
+        <definition>virtual LoggerId SOUI::ILog4zManager::createLogger</definition>
+        <argsstring>(const char *key)=0</argsstring>
+        <name>createLogger</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create or overwrite logger. Needs to be called before ILog4zManager::Start, OR Do not call. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="60" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1aa26adb4f943b725bcf8ef1ae21066782" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>Start Log Thread. This method can only be called once by one process. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ab0ced1e7cadef376713675e5eb32270b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::stop</definition>
+        <argsstring>()=0</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default the method will be calling at process exit auto. Default no need to call and no recommended. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="67" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ae5dad4e558019ceb56dcdb96fc8fe14f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>LoggerId</type>
+        <definition>virtual LoggerId SOUI::ILog4zManager::findLogger</definition>
+        <argsstring>(const char *key)=0</argsstring>
+        <name>findLogger</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Find logger. thread safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="70" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ac8bf995eb950862d87b4cb2a71e5ab9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::prePushLog</definition>
+        <argsstring>(LoggerId id, int level)=0</argsstring>
+        <name>prePushLog</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a376cd41fb4a660814457b381ea535f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::prePushLog</definition>
+        <argsstring>(const char *name, int level)=0</argsstring>
+        <name>prePushLog</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="74" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a7fe0b1100dbb98a57fd70c6a2524a397" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::pushLog</definition>
+        <argsstring>(LoggerId id, int level, const char *filter, const char *log, const char *file, int line, const char *func, const void *pRetAddr)=0</argsstring>
+        <name>pushLog</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>pRetAddr</declname>
+        </param>
+        <briefdescription>
+<para>Push log, thread safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="77" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1af69dfce5ec670f3a2f521cc1af012b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::pushLog</definition>
+        <argsstring>(const char *name, int level, const char *filter, const char *log, const char *file, int line, const char *func, const void *pRetAddr)=0</argsstring>
+        <name>pushLog</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filter</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>log</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>pRetAddr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="79" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ad439a3a9d616fb42a6952346ab4dc73b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::enableLogger</definition>
+        <argsstring>(LoggerId id, bool enable)=0</argsstring>
+        <name>enableLogger</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>set logger&apos;s attribute, thread safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="82" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1aeca61bf839311aabae0781e36b5fbd08" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerName</definition>
+        <argsstring>(LoggerId id, const char *name)=0</argsstring>
+        <name>setLoggerName</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="83" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a51435053b1afb4408117a3a025e43942" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerPath</definition>
+        <argsstring>(LoggerId id, const char *path)=0</argsstring>
+        <name>setLoggerPath</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="84" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a3b1d444fcbe982834d5197e8b67cac03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerLevel</definition>
+        <argsstring>(LoggerId id, int nLevel)=0</argsstring>
+        <name>setLoggerLevel</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a9e92eff32dd91bbf29df91d38ff11e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerFileLine</definition>
+        <argsstring>(LoggerId id, bool enable)=0</argsstring>
+        <name>setLoggerFileLine</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a7ae7af2cba1e783d4810862e6cf91810" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerDisplay</definition>
+        <argsstring>(LoggerId id, bool enable)=0</argsstring>
+        <name>setLoggerDisplay</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="87" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a687542afad06360a244d09a1feb4142c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerOutFile</definition>
+        <argsstring>(LoggerId id, bool enable)=0</argsstring>
+        <name>setLoggerOutFile</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="88" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ab6ae63b651aee77b7e1b095096feae43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setLoggerLimitsize</definition>
+        <argsstring>(LoggerId id, unsigned int limitsize)=0</argsstring>
+        <name>setLoggerLimitsize</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>limitsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="89" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a08adde2fb42a40827bc44e5f1c5402fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILog4zManager::setOutputFileBuilder</definition>
+        <argsstring>(IOutputFileBuilder *pOutputFileBuilder)=0</argsstring>
+        <name>setOutputFileBuilder</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder" kindref="compound">IOutputFileBuilder</ref> *</type>
+          <declname>pOutputFileBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="92" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a647f6bf7a8c2dfcff240863d0e265f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::setAutoUpdate</definition>
+        <argsstring>(int interval)=0</argsstring>
+        <name>setAutoUpdate</name>
+        <param>
+          <type>int</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Update logger&apos;s attribute from config file, thread safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a136ea9b1dfedc500a43bfe059eb42807" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::updateConfig</definition>
+        <argsstring>()=0</argsstring>
+        <name>updateConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="96" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1aba6033bf0f9570aa604da0a1a4fefc9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::isLoggerEnable</definition>
+        <argsstring>(LoggerId id)=0</argsstring>
+        <name>isLoggerEnable</name>
+        <param>
+          <type>LoggerId</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Log4z status statistics, thread safe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1ae2c7366b3ab9e8bf45a884c7a1d5a977" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned long long</type>
+        <definition>virtual unsigned long long SOUI::ILog4zManager::getStatusTotalWriteCount</definition>
+        <argsstring>()=0</argsstring>
+        <name>getStatusTotalWriteCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="100" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1acaad32b0dbf6ed3f64f64193aab966b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned long long</type>
+        <definition>virtual unsigned long long SOUI::ILog4zManager::getStatusTotalWriteBytes</definition>
+        <argsstring>()=0</argsstring>
+        <name>getStatusTotalWriteBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="101" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a794ea8cb8213278504faa00e4c21615b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned long long</type>
+        <definition>virtual unsigned long long SOUI::ILog4zManager::getStatusWaitingCount</definition>
+        <argsstring>()=0</argsstring>
+        <name>getStatusWaitingCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="102" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1a5d00741f43079920d975e46bf5eb1503" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int SOUI::ILog4zManager::getStatusActiveLoggers</definition>
+        <argsstring>()=0</argsstring>
+        <name>getStatusActiveLoggers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="103" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1aef86f6cd3d450f1c79c49ea84804e94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILog4zManager::setOutputListener</definition>
+        <argsstring>(IOutputListener *pListener)=0</argsstring>
+        <name>setOutputListener</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_listener" kindref="compound">IOutputListener</ref> *</type>
+          <declname>pListener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="104" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>log4z class </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ILog4zManager</label>
+        <link refid="struct_s_o_u_i_1_1_i_log4z_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ILog4zManager</label>
+        <link refid="struct_s_o_u_i_1_1_i_log4z_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="20" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" bodystart="19" bodyend="105"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a1fca33f85c5a07f75d056287f97b037d" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>config</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a3f9ef79c392f63f5e4ba1a2600abfbfa" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>configFromString</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1aaeb28f2831a821f409ef3d5bf74906ac" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>createLogger</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ad439a3a9d616fb42a6952346ab4dc73b" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>enableLogger</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92b" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>ENUM_LOG_LEVEL</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ae5dad4e558019ceb56dcdb96fc8fe14f" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>findLogger</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a5d00741f43079920d975e46bf5eb1503" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>getStatusActiveLoggers</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1acaad32b0dbf6ed3f64f64193aab966b6" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>getStatusTotalWriteBytes</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ae2c7366b3ab9e8bf45a884c7a1d5a977" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>getStatusTotalWriteCount</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a794ea8cb8213278504faa00e4c21615b" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>getStatusWaitingCount</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1aba6033bf0f9570aa604da0a1a4fefc9d" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>isLoggerEnable</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bad78a4aaa39326d0f83128ee76bddd9f2" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_ALARM</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba2b26f07ba7aab87ebf99e3f2e55c7354" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_DEBUG</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba17b844e8f08fff30731ed67b715a91ef" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_ERROR</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bac63690a97482534fefc284cff7e67e3d" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_FATAL</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba8172dcb10589fa37365825f589f72b17" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_INFO</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92ba40a757af6d15f9d6627cdd9d770f849b" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_TRACE</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1adbdc372e002912cd6ee97a7ffe8ea92bae9996323264c9fc634322b8c1f0cb51c" prot="public" virt="non-virtual"><scope>SOUI::ILog4zManager</scope><name>LOG_LEVEL_WARN</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ac8bf995eb950862d87b4cb2a71e5ab9c" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>prePushLog</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a376cd41fb4a660814457b381ea535f18" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>prePushLog</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a7fe0b1100dbb98a57fd70c6a2524a397" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>pushLog</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1af69dfce5ec670f3a2f521cc1af012b0e" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>pushLog</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a647f6bf7a8c2dfcff240863d0e265f07" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setAutoUpdate</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a7ae7af2cba1e783d4810862e6cf91810" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerDisplay</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a9e92eff32dd91bbf29df91d38ff11e01" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerFileLine</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a3b1d444fcbe982834d5197e8b67cac03" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerLevel</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ab6ae63b651aee77b7e1b095096feae43" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerLimitsize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1aeca61bf839311aabae0781e36b5fbd08" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerName</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a687542afad06360a244d09a1feb4142c" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerOutFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a51435053b1afb4408117a3a025e43942" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setLoggerPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a08adde2fb42a40827bc44e5f1c5402fd" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setOutputFileBuilder</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1aef86f6cd3d450f1c79c49ea84804e94c" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>setOutputListener</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1aa26adb4f943b725bcf8ef1ae21066782" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>start</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1ab0ced1e7cadef376713675e5eb32270b" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>stop</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a136ea9b1dfedc500a43bfe059eb42807" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager</scope><name>updateConfig</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1a1d88fc0c4ef55065a389c5bd41140cbd" prot="public" virt="virtual"><scope>SOUI::ILog4zManager</scope><name>~ILog4zManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

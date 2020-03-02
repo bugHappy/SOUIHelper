@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_transformation" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STransformation</compoundname>
+    <includes refid="_s_transformation_8h" local="no">STransformation.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cafcfc444da5e0cce3240bb93c7631ffb4" prot="public">
+          <name>TYPE_IDENTITY</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates a transformation that has no effect (alpha = 1 and identity matrix.) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca746c221da72d88eac296ff920ee8c500" prot="public">
+          <name>TYPE_ALPHA</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates a transformation that applies an alpha only (uses an identity matrix.) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca5aa01afc109aabcea5753b6e7b34765f" prot="public">
+          <name>TYPE_MATRIX</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates a transformation that applies a matrix only (alpha = 1.) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cadbd09318d1db2c08b52ad05bbf022272" prot="public">
+          <name>TYPE_BOTH</name>
+          <initializer>= TYPE_ALPHA | TYPE_MATRIX</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicates a transformation that applies an alpha and a matrix. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="30" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" bodystart="30" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_transformation_1a457c54a07618c6e9ea9e3fd6dcb62b60" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref></type>
+        <definition>SMatrix SOUI::STransformation::mMatrix</definition>
+        <argsstring></argsstring>
+        <name>mMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="50" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_transformation_1a2505c7424057fb086d1f46816b67abe5" prot="protected" static="no" mutable="no">
+        <type>BYTE</type>
+        <definition>BYTE SOUI::STransformation::mAlpha</definition>
+        <argsstring></argsstring>
+        <name>mAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="51" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_transformation_1aa7eecae77f85064c9994b90773a67c69" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STransformation::mTransformationType</definition>
+        <argsstring></argsstring>
+        <name>mTransformationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="52" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a36f8a3654a6bd68531de38af3351a6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STransformation::STransformation</definition>
+        <argsstring>()</argsstring>
+        <name>STransformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new transformation with alpha = 1 and the identity matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a95c69aa4b086ee5df44c40234edcba33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the transformation to a state that leaves the object being animated in an unmodified state. The transformation type is <ref refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cadbd09318d1db2c08b52ad05bbf022272" kindref="member">TYPE_BOTH</ref> by default. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="65" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a9bb8b49e5d1e15e461773ad1c28c5a9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STransformation::getTransformationType</definition>
+        <argsstring>() const</argsstring>
+        <name>getTransformationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the nature of this transformation.</para>
+<para><simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca746c221da72d88eac296ff920ee8c500" kindref="member">TYPE_ALPHA</ref>, <ref refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca5aa01afc109aabcea5753b6e7b34765f" kindref="member">TYPE_MATRIX</ref>, <ref refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cadbd09318d1db2c08b52ad05bbf022272" kindref="member">TYPE_BOTH</ref> or <ref refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cafcfc444da5e0cce3240bb93c7631ffb4" kindref="member">TYPE_IDENTITY</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="73" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1ae29e9645100891eb0595199fec182bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::setTransformationType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setTransformationType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="75" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a53a4bcf81c1d07f04864ee3d147cd5a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::set</definition>
+        <argsstring>(STransformation t)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clones the specified transformation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transformation to clone. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a594bcf49771c2282a37497f841fd5926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::compose</definition>
+        <argsstring>(STransformation t)</argsstring>
+        <name>compose</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref> to an existing <ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref>, e.g. apply a scale effect to something that has already been rotated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1ad262c31e67b0fce0adaccbac254233a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::postCompose</definition>
+        <argsstring>(STransformation t)</argsstring>
+        <name>postCompose</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Like <ref refid="class_s_o_u_i_1_1_s_transformation_1a594bcf49771c2282a37497f841fd5926" kindref="member">compose(STransformation)</ref> but does this.postConcat(t) of the transformation matrix. @hide </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a24307b22ea74389884b96ed7b0ebea7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>const SMatrix&amp; SOUI::STransformation::getMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The 3x3 Matrix representing the transformation to apply to the coordinates of the object being animated </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="101" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a3549e2f50fd6dc2548b919d05e8c264a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::STransformation::getMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1aed11bcf352464728f26bc8f7303d9604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::setMatrix</definition>
+        <argsstring>(const SMatrix &amp;mtx)</argsstring>
+        <name>setMatrix</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>mtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="105" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1afe320493c297ddf5cd0b2acf9f700cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::setAlpha</definition>
+        <argsstring>(BYTE alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>BYTE</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the degree of transparency <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>255 means fully opaqe and 0 means fully transparent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1ab63bb6ac9b4747644b64ee12a6c937e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STransformation::updateMatrixType</definition>
+        <argsstring>()</argsstring>
+        <name>updateMatrixType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="112" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a185991ed7720ade163f5c2015a1e769e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BYTE</type>
+        <definition>BYTE SOUI::STransformation::getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The degree of transparency </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="117" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1aef3d6fd3fa403f6f2124d9e41fe36ac5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STransformation::hasAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>hasAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="120" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a4bb356b88e7e851cd460753ef923cc47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STransformation::hasMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>hasMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="122" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_transformation_1a1bf17bc83f2b2aa6b31ede6b99ad6ba7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STransformation::isIdentity</definition>
+        <argsstring>() const</argsstring>
+        <name>isIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="124" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines the transformation to be applied at one point in time of an Animation. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="1">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" line="28" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/STransformation.h" bodystart="28" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a95c69aa4b086ee5df44c40234edcba33" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>clear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a594bcf49771c2282a37497f841fd5926" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>compose</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a185991ed7720ade163f5c2015a1e769e" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>getAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a24307b22ea74389884b96ed7b0ebea7a" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>getMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a3549e2f50fd6dc2548b919d05e8c264a" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>getMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a9bb8b49e5d1e15e461773ad1c28c5a9d" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>getTransformationType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1aef3d6fd3fa403f6f2124d9e41fe36ac5" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>hasAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a4bb356b88e7e851cd460753ef923cc47" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>hasMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a1bf17bc83f2b2aa6b31ede6b99ad6ba7" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>isIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a2505c7424057fb086d1f46816b67abe5" prot="protected" virt="non-virtual"><scope>SOUI::STransformation</scope><name>mAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a457c54a07618c6e9ea9e3fd6dcb62b60" prot="protected" virt="non-virtual"><scope>SOUI::STransformation</scope><name>mMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1aa7eecae77f85064c9994b90773a67c69" prot="protected" virt="non-virtual"><scope>SOUI::STransformation</scope><name>mTransformationType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1ad262c31e67b0fce0adaccbac254233a3" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>postCompose</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a53a4bcf81c1d07f04864ee3d147cd5a0" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>set</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1afe320493c297ddf5cd0b2acf9f700cdb" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>setAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1aed11bcf352464728f26bc8f7303d9604" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>setMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1ae29e9645100891eb0595199fec182bba" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>setTransformationType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a36f8a3654a6bd68531de38af3351a6f9" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>STransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca746c221da72d88eac296ff920ee8c500" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>TYPE_ALPHA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cadbd09318d1db2c08b52ad05bbf022272" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>TYPE_BOTH</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887cafcfc444da5e0cce3240bb93c7631ffb4" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>TYPE_IDENTITY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1a0c023aa5e972f7f8db7654b022ef887ca5aa01afc109aabcea5753b6e7b34765f" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>TYPE_MATRIX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_transformation_1ab63bb6ac9b4747644b64ee12a6c937e5" prot="public" virt="non-virtual"><scope>SOUI::STransformation</scope><name>updateMatrixType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

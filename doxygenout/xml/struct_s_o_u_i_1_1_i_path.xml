@@ -1,0 +1,2034 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_path" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::IPath</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_render_obj" prot="public" virt="non-virtual">SOUI::IRenderObj</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FillType</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a8fe589adc3ae2d828f7ebb1edf448ea1" prot="public">
+          <name>kWinding_FillType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies that &quot;inside&quot; is computed by a non-zero sum of signed edge crossings </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a98d79e35fbd294a55a5dee67717bb111" prot="public">
+          <name>kEvenOdd_FillType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies that &quot;inside&quot; is computed by an odd number of edge crossings </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63af1403b93baf63519650a5ae93b284135" prot="public">
+          <name>kInverseWinding_FillType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as Winding, but draws outside of the path, rather than inside </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a6baaabdfdc4bfc3400082400745461bb" prot="public">
+          <name>kInverseEvenOdd_FillType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Same as EvenOdd, but draws outside of the path, rather than inside </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="545" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="545" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Convexity</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a794189dc864ae5a0d56ee792cf74aa07" prot="public">
+          <name>kUnknown_Convexity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a2b56479988d917d777e5f7dc609be777" prot="public">
+          <name>kConvex_Convexity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a93c89261333c912817974d0c3ced5e0d" prot="public">
+          <name>kConcave_Convexity</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="562" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="562" bodyend="566"/>
+      </memberdef>
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Direction</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00a709bf451a79b58ea62a8dbc43726a34b" prot="public">
+          <name>kUnknown_Direction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Direction either has not been or could not be computed </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" prot="public">
+          <name>kCW_Direction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>clockwise direction for adding closed contours </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00a3bd22a66281081af3aa99a71a3684e32" prot="public">
+          <name>kCCW_Direction</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>counter-clockwise direction for adding closed contours </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="846" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="846" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AddPathMode</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2ea4e4a888b76ffadbd06d455603e222667" prot="public">
+          <name>kAppend_AddPathMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Source path contours are added as new contours. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2ead6923ee09525cd657b591b79ccceb528" prot="public">
+          <name>kExtend_AddPathMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Path is added by extending the last contour of the destination path with the first contour of the source path. If the last contour of the destination path is closed, then it will not be extended. Instead, the start of source path will be extended by a straight line to the end point of the destination path. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="964" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="964" bodyend="975"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a8252053fe7ca747a6c9e17597455da46" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63" kindref="member">FillType</ref></type>
+        <definition>virtual FillType SOUI::IPath::getFillType</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>getFillType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the path&apos;s fill type. This is used to define how &quot;inside&quot; is computed. The default value is kWinding_FillType.</para>
+<para><simplesect kind="return"><para>the path&apos;s fill type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="573" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ab16d8c84cc5eac27e2ae58bd514c2d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::setFillType</definition>
+        <argsstring>(FillType ft) PURE</argsstring>
+        <name>setFillType</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63" kindref="member">FillType</ref></type>
+          <declname>ft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the path&apos;s fill type. This is used to define how &quot;inside&quot; is computed. The default value is kWinding_FillType.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new fill type for this path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="580" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a3c2d005e29b8f803c3850ced464f0477" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isInverseFillType</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>isInverseFillType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the filltype is one of the Inverse variants </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="583" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aa49667abdb06a0f5ca5e7209815db111" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::toggleInverseFillType</definition>
+        <argsstring>() PURE</argsstring>
+        <name>toggleInverseFillType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Toggle between inverse and normal filltypes. This reverse the return value of <ref refid="struct_s_o_u_i_1_1_i_path_1a3c2d005e29b8f803c3850ced464f0477" kindref="member">isInverseFillType()</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="589" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a5d737e21d3e70142e3890005ae79c2f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>Convexity</type>
+        <definition>virtual Convexity SOUI::IPath::getConvexity</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>getConvexity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the path&apos;s convexity, as stored in the path. If it is currently unknown, then this function will attempt to compute the convexity (and cache the result). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="595" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a2d88b8c61d71fcd8ee759f7df892eb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::setConvexity</definition>
+        <argsstring>(Convexity c) PURE</argsstring>
+        <name>setConvexity</name>
+        <param>
+          <type>Convexity</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Store a convexity setting in the path. There is no automatic check to see if this value actually agrees with the return value that would be computed by <ref refid="struct_s_o_u_i_1_1_i_path_1a5d737e21d3e70142e3890005ae79c2f2" kindref="member">getConvexity()</ref>.</para>
+<para>Note: even if this is set to a &quot;known&quot; value, if the path is later changed (e.g. <ref refid="struct_s_o_u_i_1_1_i_path_1a5b7586b5f4045413ff62aedca3ac62bf" kindref="member">lineTo()</ref>, <ref refid="struct_s_o_u_i_1_1_i_path_1a8fd7dce730be569a460a92f71c42c6ea" kindref="member">addRect()</ref>, etc.) then the cached value will be reset to kUnknown_Convexity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="607" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aed9736fefc9123cd3c3e5ee28d130b42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isConvex</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>isConvex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path is flagged as being convex. This is not a confirmed by any analysis, it is just the value set earlier. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="613" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a0cfa2007f2c877a49b3b9fbc61ac5481" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isOval</definition>
+        <argsstring>(RECT *rect) const PURE</argsstring>
+        <name>isOval</name>
+        <param>
+          <type>RECT *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path is an oval.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>returns the bounding rect of this oval. It&apos;s a circle if the height and width are the same.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this path is an oval. Tracking whether a path is an oval is considered an optimization for performance and so some paths that are in fact ovals can report false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="625" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a69c76d5f3ae51941142181780d9864d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::reset</definition>
+        <argsstring>() PURE</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear any lines and curves from the path, making it empty. This frees up internal storage associated with those segments. On Android, does not change fSourcePath. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="631" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a21067360665d72c04f4e16d3c0bb7776" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rewind</definition>
+        <argsstring>() PURE</argsstring>
+        <name>rewind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="struct_s_o_u_i_1_1_i_path_1a69c76d5f3ae51941142181780d9864d3" kindref="member">reset()</ref>, in that all lines and curves are removed from the path. However, any internal storage for those lines/curves is retained, making reuse of the path potentially faster. On Android, does not change fSourcePath. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="638" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ab9f292c3cd5573051a756db514b08ee1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isEmpty</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path is empty (contains no lines or curves)</para>
+<para><simplesect kind="return"><para>true if the path is empty (contains no lines or curves) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="644" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aa2d92c2b14a1f9067b63445208209fdd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isFinite</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>isFinite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if all of the points in this path are finite, meaning there are no infinities and no NaNs. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="650" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af9979c475e0a55e52f0ba7d4926dcce7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isLine</definition>
+        <argsstring>(POINT line[2]) const PURE</argsstring>
+        <name>isLine</name>
+        <param>
+          <type>POINT</type>
+          <declname>line</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path specifies a single line (i.e. it contains just a moveTo and a lineTo). If so, and line[] is not null, it sets the 2 points in line[] to the end-points of the line. If the path is not a line, returns false and ignores line[]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="658" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a9b46374a0555293a4f6affa0ffaf5b9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isRect</definition>
+        <argsstring>(RECT *rect) const PURE</argsstring>
+        <name>isRect</name>
+        <param>
+          <type>RECT *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path specifies a rectangle. If so, and if rect is not null, set rect to the bounds of the path. If the path does not specify a rectangle, return false and ignore rect.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, returns the bounds of the path if it specifies a rectangle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the path specifies a rectangle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="668" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a9b3acd4917bc1cef63739937a75b4f98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IPath::countPoints</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>countPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of points in the path </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="672" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aede8d84810e7b537036e1c687ca484db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1f_point" kindref="compound">fPoint</ref></type>
+        <definition>virtual fPoint SOUI::IPath::getPoint</definition>
+        <argsstring>(int index) const PURE</argsstring>
+        <name>getPoint</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the point at the specified index. If the index is out of range (i.e. is not 0 &lt;= index &lt; <ref refid="struct_s_o_u_i_1_1_i_path_1a9b3acd4917bc1cef63739937a75b4f98" kindref="member">countPoints()</ref>) then the returned coordinates will be (0,0) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="678" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a9a4a9499015cb3f9c28930ffae270dfb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IPath::getPoints</definition>
+        <argsstring>(fPoint points[], int max) const PURE</argsstring>
+        <name>getPoints</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1f_point" kindref="compound">fPoint</ref></type>
+          <declname>points</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of points in the path. Up to max points are copied.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, receives up to max points </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of points to copy into points </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actual number of points in the path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="686" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af63b3ef64f26a6ee319ba932d9bcbcc4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IPath::countVerbs</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>countVerbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of verbs in the path </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="690" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a9410b3a772fa00723a28a012aa41d391" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IPath::getVerbs</definition>
+        <argsstring>(BYTE verbs[], int max) const PURE</argsstring>
+        <name>getVerbs</name>
+        <param>
+          <type>BYTE</type>
+          <declname>verbs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the number of verbs in the path. Up to max verbs are copied. The verbs are copied as one byte per verb.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>verbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, receives up to max verbs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of verbs to copy into verbs </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the actual number of verbs in the path </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="699" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ad37e2cadc4a9e096f24ebc1e6c76d57c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>RECT</type>
+        <definition>virtual RECT SOUI::IPath::getBounds</definition>
+        <argsstring>() const PURE</argsstring>
+        <name>getBounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the bounds of the path&apos;s points. If the path contains 0 or 1 points, the bounds is set to (0,0,0,0), and <ref refid="struct_s_o_u_i_1_1_i_path_1ab9f292c3cd5573051a756db514b08ee1" kindref="member">isEmpty()</ref> will return true. Note: this bounds may be larger than the actual shape, since curves do not extend as far as their control points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="706" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::moveTo</definition>
+        <argsstring>(float x, float y) PURE</argsstring>
+        <name>moveTo</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the beginning of the next contour to the point (x,y).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the start of a new contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the start of a new contour </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="717" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a567f22893803845269cbb286f8223072" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rMoveTo</definition>
+        <argsstring>(float dx, float dy) PURE</argsstring>
+        <name>rMoveTo</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the beginning of the next contour relative to the last point on the previous contour. If there is no previous contour, this is treated the same as <ref refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" kindref="member">moveTo()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the end of the previous contour, to specify the start of a new contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the end of the previous contour, to specify the start of a new contour </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="729" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a5b7586b5f4045413ff62aedca3ac62bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::lineTo</definition>
+        <argsstring>(float x, float y) PURE</argsstring>
+        <name>lineTo</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a line from the last point to the specified point (x,y). If no <ref refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" kindref="member">moveTo()</ref> call has been made for this contour, the first point is automatically set to (0,0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the end of a line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the end of a line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="738" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a48a4497ce439b593eec9856f9d710426" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rLineTo</definition>
+        <argsstring>(float dx, float dy) PURE</argsstring>
+        <name>rLineTo</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as lineTo, but the coordinates are considered relative to the last point on this contour. If there is no previous point, then a moveTo(0,0) is inserted automatically.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the previous point on this contour, to specify a line </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the previous point on this contour, to specify a line </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="750" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1adf32d41f5222407185838b928c3c8ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::quadTo</definition>
+        <argsstring>(float x1, float y1, float x2, float y2) PURE</argsstring>
+        <name>quadTo</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a quadratic bezier from the last point, approaching control point (x1,y1), and ending at (x2,y2). If no <ref refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" kindref="member">moveTo()</ref> call has been made for this contour, the first point is automatically set to (0,0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the control point on a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the control point on a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the end point on a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the end point on a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="761" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a2fcde0e37330efec2026e09ceccd676d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rQuadTo</definition>
+        <argsstring>(float dx1, float dy1, float dx2, float dy2) PURE</argsstring>
+        <name>rQuadTo</name>
+        <param>
+          <type>float</type>
+          <declname>dx1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as quadTo, but the coordinates are considered relative to the last point on this contour. If there is no previous point, then a moveTo(0,0) is inserted automatically.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the last point on this contour, to specify the control point of a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the last point on this contour, to specify the control point of a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the last point on this contour, to specify the end point of a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the last point on this contour, to specify the end point of a quadratic curve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="777" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ac112ee9d0e82b66afcaa0c23b217e1a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::conicTo</definition>
+        <argsstring>(float x1, float y1, float x2, float y2, float w) PURE</argsstring>
+        <name>conicTo</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="779" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a1cf9c4788a8c6bf0006e75b2b26987ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rConicTo</definition>
+        <argsstring>(float dx1, float dy1, float dx2, float dy2, float w) PURE</argsstring>
+        <name>rConicTo</name>
+        <param>
+          <type>float</type>
+          <declname>dx1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="781" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a1c0bf814e0f0b8c0deeadb34137138b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::cubicTo</definition>
+        <argsstring>(float x1, float y1, float x2, float y2, float x3, float y3) PURE</argsstring>
+        <name>cubicTo</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a cubic bezier from the last point, approaching control points (x1,y1) and (x2,y2), and ending at (x3,y3). If no <ref refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" kindref="member">moveTo()</ref> call has been made for this contour, the first point is automatically set to (0,0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the 1st control point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the 1st control point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the 2nd control point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the 2nd control point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the end point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the end point on a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="795" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aa1c73029c4c148c360db1fd3a0b383ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::rCubicTo</definition>
+        <argsstring>(float x1, float y1, float x2, float y2, float x3, float y3) PURE</argsstring>
+        <name>rCubicTo</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x3</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as cubicTo, but the coordinates are considered relative to the current point on this contour. If there is no previous point, then a moveTo(0,0) is inserted automatically.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the last point on this contour, to specify the 1st control point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the last point on this contour, to specify the 1st control point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the last point on this contour, to specify the 2nd control point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the last point on this contour, to specify the 2nd control point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the x-coordinate of the last point on this contour, to specify the end point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to add to the y-coordinate of the last point on this contour, to specify the end point of a cubic curve </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="816" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a6166812b4958fe77d12542e081566ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::arcTo</definition>
+        <argsstring>(const RECT &amp;oval, float startAngle, float sweepAngle, bool forceMoveTo) PURE</argsstring>
+        <name>arcTo</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>oval</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sweepAngle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>forceMoveTo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append the specified arc to the path as a new contour. If the start of the path is different from the path&apos;s current last point, then an automatic <ref refid="struct_s_o_u_i_1_1_i_path_1a5b7586b5f4045413ff62aedca3ac62bf" kindref="member">lineTo()</ref> is added to connect the current contour to the start of the arc. However, if the path is empty, then we call <ref refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" kindref="member">moveTo()</ref> with the first point of the arc. The sweep angle is treated mod 360.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding oval defining the shape and size of the arc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting angle (in degrees) where the arc begins </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sweepAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sweep angle (in degrees) measured clockwise. This is treated mod 360. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>forceMoveTo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, always begin a new contour with the arc </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="831" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aa8a723b18197ad65644bb78533a80a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::arcTo</definition>
+        <argsstring>(float x1, float y1, float x2, float y2, float radius) PURE</argsstring>
+        <name>arcTo</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append a line and arc to the current path. This is the same as the PostScript call &quot;arct&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="837" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ac02d24fa56506f854d4d8ea43c7a1ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::close</definition>
+        <argsstring>() PURE</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Close the current contour. If the current point is not equal to the first point of the contour, a line segment is automatically added. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="844" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a85c9d4a97dbd85df7642cbdd8a93bc62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::isRect</definition>
+        <argsstring>(bool *isClosed, Direction *direction) const PURE</argsstring>
+        <name>isRect</name>
+        <param>
+          <type>bool *</type>
+          <declname>isClosed</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref> *</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the path specifies a rectangle. If so, and if isClosed is not null, set isClosed to true if the path is closed. Also, if returning true and direction is not null, return the rect direction. If the path does not specify a rectangle, return false and ignore isClosed and direction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isClosed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, set to true if the path is closed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If not null, set to the rectangle&apos;s direction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the path specifies a rectangle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="865" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a8fd7dce730be569a460a92f71c42c6ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addRect</definition>
+        <argsstring>(const RECT &amp;rect, Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addRect</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed rectangle contour to the path <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the rectangle&apos;s contour. Cannot be kUnknown_Direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="873" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af13265db89f27cf914e47eaee179031c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addRect</definition>
+        <argsstring>(float left, float top, float right, float bottom, Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addRect</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed rectangle contour to the path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left side of a rectangle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The top of a rectangle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right side of a rectangle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bottom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bottom of a rectangle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the rectangle&apos;s contour. Cannot be kUnknown_Direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="889" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1afd1d1c7597b78346ceccfa4b2d42999f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addOval</definition>
+        <argsstring>(const RECT &amp;oval, Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addOval</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>oval</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed oval contour to the path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounding oval to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the oval&apos;s contour. Cannot be kUnknown_Direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="899" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a8251c6a3ce15da671c2705144a36e229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addCircle</definition>
+        <argsstring>(float x, float y, float radius, Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addCircle</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed circle contour to the path</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate of the center of a circle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate of the center of a circle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of a circle to add as a closed contour to the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the circle&apos;s contour. Cannot be kUnknown_Direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="913" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a21401fd65973c2b787a13e525be11381" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addArc</definition>
+        <argsstring>(const RECT &amp;oval, float startAngle, float sweepAngle) PURE</argsstring>
+        <name>addArc</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>oval</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sweepAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add the specified arc to the path as a new contour.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounds of oval used to define the size of the arc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Starting angle (in degrees) where the arc begins </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sweepAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sweep angle (in degrees) measured clockwise </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="922" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1aa81a1413094d80e1cf46c8fd16af8336" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addRoundRect</definition>
+        <argsstring>(const RECT &amp;rect, float rx, float ry, Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addRoundRect</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ry</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed round-rectangle contour to the path <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounds of a round-rectangle to add as a closed contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-radius of the rounded corners on the round-rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-radius of the rounded corners on the round-rectangle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the rectangle&apos;s contour. Cannot be kUnknown_Direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="932" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af58820d4e30fb8e8c293d930b2f8c00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addRoundRect</definition>
+        <argsstring>(const RECT &amp;rect, const float radii[], Direction dir=kCW_Direction) PURE</argsstring>
+        <name>addRoundRect</name>
+        <param>
+          <type>const RECT &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>radii</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" kindref="member">kCW_Direction</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a closed round-rectangle contour to the path. Each corner receives two radius values [X, Y]. The corners are ordered top-left, top-right, bottom-right, bottom-left. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bounds of a round-rectangle to add as a closed contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of 8 scalars, 4 [X,Y] pairs for each corner </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The direction to wind the rectangle&apos;s contour. Cannot be kUnknown_Direction. Note: The radii here now go through the same constraint handling as the SkRRect radii (i.e., either radii at a corner being 0 implies a sqaure corner and oversized radii are proportionally scaled down). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="947" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ac5d5b625aba28cc88ce7e9c896b03cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addPoly</definition>
+        <argsstring>(const POINT pts[], int count, bool close) PURE</argsstring>
+        <name>addPoly</name>
+        <param>
+          <type>const POINT</type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>close</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new contour made of just lines. This is just a fast version of the following: this-&gt;moveTo(pts[0]); for (int i = 1; i &lt; count; ++i) { this-&gt;lineTo(pts[i]); } if (close) { this-&gt;<ref refid="struct_s_o_u_i_1_1_i_path_1ac02d24fa56506f854d4d8ea43c7a1ba6" kindref="member">close()</ref>; } </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="962" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1ab20df42409d5f4aca56447088b2e362d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addPath</definition>
+        <argsstring>(const IPath *src, float dx, float dy, AddPathMode mode=kAppend_AddPathMode) PURE</argsstring>
+        <name>addPath</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2e" kindref="member">AddPathMode</ref></type>
+          <declname>mode</declname>
+          <defval><ref refid="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2ea4e4a888b76ffadbd06d455603e222667" kindref="member">kAppend_AddPathMode</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a copy of src to the path, offset by (dx,dy) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to add as a new contour </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to translate the path in X as it is added </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount to translate the path in Y as it is added </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="982" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af7892892b087110c36ca4bd02db49118" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::reverseAddPath</definition>
+        <argsstring>(const IPath *src) PURE</argsstring>
+        <name>reverseAddPath</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as <ref refid="struct_s_o_u_i_1_1_i_path_1ab20df42409d5f4aca56447088b2e362d" kindref="member">addPath()</ref>, but reverses the src input </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="989" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1af724364179bfa2c26f5989e310490fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::offset</definition>
+        <argsstring>(float dx, float dy) PURE</argsstring>
+        <name>offset</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset the path by (dx,dy), returning true on success</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount in the X direction to offset the entire path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount in the Y direction to offset the entire path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="997" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1acdde1f5365b37fd35736710ece94bad1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::transform</definition>
+        <argsstring>(const IxForm *matrix) PURE</argsstring>
+        <name>transform</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_ix_form" kindref="compound">IxForm</ref> *</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transform the points in this path by matrix</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to apply to the path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1003" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a5a79094efd88174c9305ecee7beaf8f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IPath::getLastPt</definition>
+        <argsstring>(POINT *lastPt) const PURE</argsstring>
+        <name>getLastPt</name>
+        <param>
+          <type>POINT *</type>
+          <declname>lastPt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the last point on the path. If no points have been added, (0,0) is returned. If there are no points, this returns false, otherwise it returns true.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lastPt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The last point on the path is returned here </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1011" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a1078851e38bc76f68c67ab20abd75351" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::setLastPt</definition>
+        <argsstring>(float x, float y) PURE</argsstring>
+        <name>setLastPt</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the last point on the path. If no points have been added, moveTo(x,y) is automatically called.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x-coordinate for the last point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y-coordinate for the last point </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1019" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1afee7ca3c23c86274d45645340e2bf1bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IPath::addString</definition>
+        <argsstring>(LPCTSTR pszText, int nLen, float x, float y, const IFont *pFont) PURE</argsstring>
+        <name>addString</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFont</ref> *</type>
+          <declname>pFont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1021" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_path_1a060bf645d84d033371e43b8a4d6f7560" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_path_info" kindref="compound">IPathInfo</ref> *</type>
+        <definition>virtual IPathInfo* SOUI::IPath::approximate</definition>
+        <argsstring>(float acceptableError) PURE</argsstring>
+        <name>approximate</name>
+        <param>
+          <type>float</type>
+          <declname>acceptableError</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1030" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IPath</label>
+        <link refid="struct_s_o_u_i_1_1_i_path"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IPath</label>
+        <link refid="struct_s_o_u_i_1_1_i_path"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="543" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="542" bodyend="1031"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a21401fd65973c2b787a13e525be11381" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addArc</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a8251c6a3ce15da671c2705144a36e229" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addCircle</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1afd1d1c7597b78346ceccfa4b2d42999f" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addOval</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab20df42409d5f4aca56447088b2e362d" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2e" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>AddPathMode</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ac5d5b625aba28cc88ce7e9c896b03cfc" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addPoly</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a8fd7dce730be569a460a92f71c42c6ea" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af13265db89f27cf914e47eaee179031c" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa81a1413094d80e1cf46c8fd16af8336" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af58820d4e30fb8e8c293d930b2f8c00a" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1afee7ca3c23c86274d45645340e2bf1bb" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>addString</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a060bf645d84d033371e43b8a4d6f7560" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>approximate</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a6166812b4958fe77d12542e081566ffb" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>arcTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa8a723b18197ad65644bb78533a80a33" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>arcTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ac02d24fa56506f854d4d8ea43c7a1ba6" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>close</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ac112ee9d0e82b66afcaa0c23b217e1a2" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>conicTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>Convexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a9b3acd4917bc1cef63739937a75b4f98" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>countPoints</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af63b3ef64f26a6ee319ba932d9bcbcc4" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>countVerbs</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a1c0bf814e0f0b8c0deeadb34137138b5" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>cubicTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>Direction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>FillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ad37e2cadc4a9e096f24ebc1e6c76d57c" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getBounds</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a5d737e21d3e70142e3890005ae79c2f2" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getConvexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a8252053fe7ca747a6c9e17597455da46" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getFillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a5a79094efd88174c9305ecee7beaf8f7" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getLastPt</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aede8d84810e7b537036e1c687ca484db" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getPoint</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a9a4a9499015cb3f9c28930ffae270dfb" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getPoints</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IPath</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a9410b3a772fa00723a28a012aa41d391" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>getVerbs</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aed9736fefc9123cd3c3e5ee28d130b42" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isConvex</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab9f292c3cd5573051a756db514b08ee1" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isEmpty</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa2d92c2b14a1f9067b63445208209fdd" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isFinite</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a3c2d005e29b8f803c3850ced464f0477" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isInverseFillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af9979c475e0a55e52f0ba7d4926dcce7" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isLine</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a0cfa2007f2c877a49b3b9fbc61ac5481" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isOval</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a9b46374a0555293a4f6affa0ffaf5b9e" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a85c9d4a97dbd85df7642cbdd8a93bc62" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>isRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2ea4e4a888b76ffadbd06d455603e222667" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kAppend_AddPathMode</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00a3bd22a66281081af3aa99a71a3684e32" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kCCW_Direction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a93c89261333c912817974d0c3ced5e0d" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kConcave_Convexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a2b56479988d917d777e5f7dc609be777" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kConvex_Convexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00af929b55d8fb28cf3f909aa52957f2eaa" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kCW_Direction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a98d79e35fbd294a55a5dee67717bb111" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kEvenOdd_FillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab206367c889c0aaeeec14e220ff5ce2ead6923ee09525cd657b591b79ccceb528" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kExtend_AddPathMode</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a6baaabdfdc4bfc3400082400745461bb" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kInverseEvenOdd_FillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63af1403b93baf63519650a5ae93b284135" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kInverseWinding_FillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ae6f78ea95ee04e02560ddd192348b301a794189dc864ae5a0d56ee792cf74aa07" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kUnknown_Convexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa8935075e2f5c8c8b98c02449c8cee00a709bf451a79b58ea62a8dbc43726a34b" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kUnknown_Direction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ada5d003df075d1bdee895f01dce35e63a8fe589adc3ae2d828f7ebb1edf448ea1" prot="public" virt="non-virtual"><scope>SOUI::IPath</scope><name>kWinding_FillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a5b7586b5f4045413ff62aedca3ac62bf" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>lineTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aad1731404dafa0bc0a45eae0579fb4f6" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>moveTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6" prot="public" virt="pure-virtual"><scope>SOUI::IPath</scope><name>ObjectType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af724364179bfa2c26f5989e310490fb7" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>offset</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1adf32d41f5222407185838b928c3c8ac9" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>quadTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a1cf9c4788a8c6bf0006e75b2b26987ef" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rConicTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa1c73029c4c148c360db1fd3a0b383ce" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rCubicTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a69c76d5f3ae51941142181780d9864d3" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>reset</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1af7892892b087110c36ca4bd02db49118" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>reverseAddPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a21067360665d72c04f4e16d3c0bb7776" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rewind</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a48a4497ce439b593eec9856f9d710426" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rLineTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a567f22893803845269cbb286f8223072" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rMoveTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a2fcde0e37330efec2026e09ceccd676d" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>rQuadTo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a2d88b8c61d71fcd8ee759f7df892eb92" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>setConvexity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1ab16d8c84cc5eac27e2ae58bd514c2d8e" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>setFillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1a1078851e38bc76f68c67ab20abd75351" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>setLastPt</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1aa49667abdb06a0f5ca5e7209815db111" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>toggleInverseFillType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_path_1acdde1f5365b37fd35736710ece94bad1" prot="public" virt="virtual"><scope>SOUI::IPath</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

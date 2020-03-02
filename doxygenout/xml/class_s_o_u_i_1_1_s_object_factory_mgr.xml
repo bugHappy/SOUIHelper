@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_object_factory_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SObjectFactoryMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_cmn_map" prot="public" virt="non-virtual">SOUI::SCmnMap&lt; SObjectFactoryPtr, SObjectInfo &gt;</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_application" prot="public" virt="non-virtual">SOUI::SApplication</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1ae85dc3432e7c8dbc2d035cd3cbf60108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SObjectFactoryMgr::SObjectFactoryMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SObjectFactoryMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a85b403eab698256d86b8ddc183899091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SObjectFactoryMgr::RegisterFactory</definition>
+        <argsstring>(SObjectFactory &amp;objFactory, bool bReplace=false)</argsstring>
+        <name>RegisterFactory</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_object_factory" kindref="compound">SObjectFactory</ref> &amp;</type>
+          <declname>objFactory</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bReplace</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="145" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a375b718cf8ded9a4c801df674c43215d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SObjectFactoryMgr::UnregisterFactory</definition>
+        <argsstring>(const SObjectInfo &amp;objInfo)</argsstring>
+        <name>UnregisterFactory</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref> &amp;</type>
+          <declname>objInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="154" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a49feaa3977cb6ac964f5abe92f5f0de0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>IObject *</type>
+        <definition>IObject* SOUI::SObjectFactoryMgr::CreateObject</definition>
+        <argsstring>(const SObjectInfo &amp;objInfo) const</argsstring>
+        <name>CreateObject</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref> &amp;</type>
+          <declname>objInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="156" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a25cd80a74163fe637d5e16c8cd4d327d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SObjectFactoryMgr::SetSwndDefAttr</definition>
+        <argsstring>(IObject *pObject) const</argsstring>
+        <name>SetSwndDefAttr</name>
+        <param>
+          <type>IObject *</type>
+          <declname>pObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="158" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a72e91cdb71cf221b4f30d8142e62d4a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref></type>
+        <definition>SObjectInfo SOUI::SObjectFactoryMgr::BaseObjectInfoFromObjectInfo</definition>
+        <argsstring>(const SObjectInfo &amp;objInfo)</argsstring>
+        <name>BaseObjectInfoFromObjectInfo</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref> &amp;</type>
+          <declname>objInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="160" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1ac13ae6ddde184c9eb8d23f68dac0636a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SObjectFactoryMgr::TplRegisterFactory</definition>
+        <argsstring>()</argsstring>
+        <name>TplRegisterFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="163" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a2fcdfc4dc029666d7ea5c4f7240b95e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SObjectFactoryMgr::TplUnregisterFactory</definition>
+        <argsstring>()</argsstring>
+        <name>TplUnregisterFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="169" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a489a49869098f00254f9f44970419243" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IObject *</type>
+        <definition>virtual IObject* SOUI::SObjectFactoryMgr::OnCreateUnknownObject</definition>
+        <argsstring>(const SObjectInfo &amp;objInfo) const</argsstring>
+        <name>OnCreateUnknownObject</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref> &amp;</type>
+          <declname>objInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="174" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a4adf38205da865ad257f5f3c44016968" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SObjectFactoryMgr::AddStandardFactory</definition>
+        <argsstring>()</argsstring>
+        <name>AddStandardFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="178" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_object_factory_mgr_1a19d079d4162b27a8c81b71477e0324dd" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SObjectFactoryMgr::OnFactoryRemoved</definition>
+        <argsstring>(const SObjectFactoryPtr &amp;obj)</argsstring>
+        <name>OnFactoryRemoved</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_object_factory" kindref="compound">SObjectFactoryPtr</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="176" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; SObjectFactoryPtr, SObjectInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SObjectFactoryMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SApplication</label>
+        <link refid="class_s_o_u_i_1_1_s_application"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SCmnMap&lt; SObjectFactoryPtr, SObjectInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SObjectFactoryMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="133" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="131" bodyend="179"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a4adf38205da865ad257f5f3c44016968" prot="protected" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>AddStandardFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a72e91cdb71cf221b4f30d8142e62d4a2" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>BaseObjectInfoFromObjectInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a49feaa3977cb6ac964f5abe92f5f0de0" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>CreateObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a489a49869098f00254f9f44970419243" prot="protected" virt="virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>OnCreateUnknownObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a19d079d4162b27a8c81b71477e0324dd" prot="protected" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>OnFactoryRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a85b403eab698256d86b8ddc183899091" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>RegisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a25cd80a74163fe637d5e16c8cd4d327d" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>SetSwndDefAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1ae85dc3432e7c8dbc2d035cd3cbf60108" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>SObjectFactoryMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1ac13ae6ddde184c9eb8d23f68dac0636a" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>TplRegisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a2fcdfc4dc029666d7ea5c4f7240b95e7" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>TplUnregisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a375b718cf8ded9a4c801df674c43215d" prot="public" virt="non-virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>UnregisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SObjectFactoryMgr</scope><name>~SCmnMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

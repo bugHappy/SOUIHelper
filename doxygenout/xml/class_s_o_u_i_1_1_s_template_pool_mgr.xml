@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_template_pool_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STemplatePoolMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; STemplatePoolMgr &gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_template_pool_mgr_1a905f11ad075ad74ddfcc2a754c58e305" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> * &gt;</type>
+        <definition>SList&lt;STemplatePool *&gt; SOUI::STemplatePoolMgr::m_lstTemplatePools</definition>
+        <argsstring></argsstring>
+        <name>m_lstTemplatePools</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="153" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_mgr_1a3249058d56a6b0e285e9d969b2e81b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STemplatePoolMgr::~STemplatePoolMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~STemplatePoolMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_mgr_1a5ff0aa5114cf7d2e2d69fe94e3e8931f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::STemplatePoolMgr::GetTemplateString</definition>
+        <argsstring>(const SStringW &amp;strName)</argsstring>
+        <name>GetTemplateString</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <briefdescription>
+<para>Get style object from pool by class name </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetTemplateString <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strName <ndash/> name of template </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="class_s_o_u_i_1_1_swnd_style" kindref="compound">SwndStyle</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; style <ndash/> style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: success; FALSE: not exist Describe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_mgr_1ae50f99a0ddc4f000d7c824b9d8a3c516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STemplatePoolMgr::PushTemplatePool</definition>
+        <argsstring>(STemplatePool *pTemplatePool)</argsstring>
+        <name>PushTemplatePool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> *</type>
+          <declname>pTemplatePool</declname>
+        </param>
+        <briefdescription>
+<para>push a new <ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> to the tail of style pool list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PushTemplatePool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pTemplatePool <ndash/> the target style pool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="142" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_template_pool_mgr_1abe15a754b8ccd5b096e25955ac9c3dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> *</type>
+        <definition>STemplatePool* SOUI::STemplatePoolMgr::PopTemplatePool</definition>
+        <argsstring>(STemplatePool *pTemplatePool)</argsstring>
+        <name>PopTemplatePool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> *</type>
+          <declname>pTemplatePool</declname>
+        </param>
+        <briefdescription>
+<para>remove the target template pool from list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PopTemplatePool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pTemplatePool <ndash/> the target template pool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> * <ndash/> the removed template pool Describe if <ref refid="class_s_o_u_i_1_1_s_template_pool" kindref="compound">STemplatePool</ref> is null, it remove the last template pool from the list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="151" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STemplatePoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_template_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; STemplatePoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STemplatePoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_template_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; STemplatePoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="120" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="119" bodyend="154"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_mgr_1a5ff0aa5114cf7d2e2d69fe94e3e8931f" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>GetTemplateString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_mgr_1a905f11ad075ad74ddfcc2a754c58e305" prot="protected" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>m_lstTemplatePools</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_mgr_1abe15a754b8ccd5b096e25955ac9c3dc4" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>PopTemplatePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_mgr_1ae50f99a0ddc4f000d7c824b9d8a3c516" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>PushTemplatePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::STemplatePoolMgr</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_template_pool_mgr_1a3249058d56a6b0e285e9d969b2e81b01" prot="public" virt="non-virtual"><scope>SOUI::STemplatePoolMgr</scope><name>~STemplatePoolMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

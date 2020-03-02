@@ -1,0 +1,2159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_m_c_list_view" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMCListView</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_panel" prot="public" virt="non-virtual">SOUI::SPanel</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_item_container" prot="protected" virt="non-virtual">SOUI::IItemContainer</basecompoundref>
+    <innerclass refid="struct_s_o_u_i_1_1_s_m_c_list_view_1_1_item_info" prot="protected">SOUI::SMCListView::ItemInfo</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_m_c_list_view_1a21108b31dfeeb78c22a1ef2cfa5e96c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SMCListViewDataSetObserver</definition>
+        <argsstring></argsstring>
+        <name>SMCListViewDataSetObserver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="27" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a986af5b4e19eb740ef14ec90e6a53eca" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IMcAdapter &gt;</type>
+        <definition>SAutoRefPtr&lt;IMcAdapter&gt; SOUI::SMCListView::m_adapter</definition>
+        <argsstring></argsstring>
+        <name>m_adapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="156" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a66bb11cfb7ea581aa6522bef50bd3c53" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; ILvDataSetObserver &gt;</type>
+        <definition>SAutoRefPtr&lt;ILvDataSetObserver&gt; SOUI::SMCListView::m_observer</definition>
+        <argsstring></argsstring>
+        <name>m_observer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="157" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a39152bd5440b2eaf2071c5cac995c757" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IListViewItemLocator &gt;</type>
+        <definition>SAutoRefPtr&lt;IListViewItemLocator&gt; SOUI::SMCListView::m_lvItemLocator</definition>
+        <argsstring></argsstring>
+        <name>m_lvItemLocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="158" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a0167df2ed64415a9b43f5e704e22ce33" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::SMCListView::m_bPendingUpdate</definition>
+        <argsstring></argsstring>
+        <name>m_bPendingUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="165" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a5ad0c51a7a788724c67bb76408e5c558" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::m_iPendingUpdateItem</definition>
+        <argsstring></argsstring>
+        <name>m_iPendingUpdateItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="166" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1aa3cd3142b53022b1ce886f3e9618b0c1" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::m_iFirstVisible</definition>
+        <argsstring></argsstring>
+        <name>m_iFirstVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="168" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a2d9f0265ba4de1576a4a0f0f1fc03e84" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_s_m_c_list_view_1_1_item_info" kindref="compound">ItemInfo</ref> &gt;</type>
+        <definition>SList&lt;ItemInfo&gt; SOUI::SMCListView::m_lstItems</definition>
+        <argsstring></argsstring>
+        <name>m_lstItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="169" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a37455cbfd780c01c76bdc14af0607987" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+        <definition>SItemPanel* SOUI::SMCListView::m_itemCapture</definition>
+        <argsstring></argsstring>
+        <name>m_itemCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="170" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a9c1cfe35b91bd77c70a092e6a26e19ec" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::m_iSelItem</definition>
+        <argsstring></argsstring>
+        <name>m_iSelItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="172" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a879208d52911c7b8df526f48cc870f55" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+        <definition>SItemPanel* SOUI::SMCListView::m_pHoverItem</definition>
+        <argsstring></argsstring>
+        <name>m_pHoverItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="173" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1ad691c39641ed431b9baf249020d5c2c7" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; SList&lt; <ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> * &gt; * &gt;</type>
+        <definition>SArray&lt;SList&lt;SItemPanel*&gt; *&gt; SOUI::SMCListView::m_itemRecycle</definition>
+        <argsstring></argsstring>
+        <name>m_itemRecycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="175" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1abf8b6cd3729ea83d80569e62ec9b7b24" prot="protected" static="no" mutable="no">
+        <type>pugi::xml_document</type>
+        <definition>pugi::xml_document SOUI::SMCListView::m_xmlTemplate</definition>
+        <argsstring></argsstring>
+        <name>m_xmlTemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="177" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a1857a6502fdf967b6cb18110e9e822d0" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::SMCListView::m_pSkinDivider</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinDivider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="178" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a55b99c669eb9cc4a8f6661e074a9ee13" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SMCListView::m_nDividerSize</definition>
+        <argsstring></argsstring>
+        <name>m_nDividerSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="179" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a8b81e0d2c031ec4068c1bbbbc2683e8e" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMCListView::m_bWantTab</definition>
+        <argsstring></argsstring>
+        <name>m_bWantTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="180" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1ab25af821d749fbf7fd7ef3ae45f76386" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMCListView::m_bDatasetInvalidated</definition>
+        <argsstring></argsstring>
+        <name>m_bDatasetInvalidated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="181" column="41" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1adf68f27da4b16478c9a1353562cdae52" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_header_ctrl" kindref="compound">SHeaderCtrl</ref> *</type>
+        <definition>SHeaderCtrl* SOUI::SMCListView::m_pHeader</definition>
+        <argsstring></argsstring>
+        <name>m_pHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="231" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1a128d424f0ae94a0ea0eff43c7d5a6a40" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SMCListView::m_nHeaderHeight</definition>
+        <argsstring></argsstring>
+        <name>m_nHeaderHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>列表头高度 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="232" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_m_c_list_view_1afe8ceff2b2521b0996df73d5de4f579b" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMCListView::m_bHotTrack</definition>
+        <argsstring></argsstring>
+        <name>m_bHotTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="233" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a8be89503d6cbdacd4083c3ad2472cf50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMCListView::SMCListView</definition>
+        <argsstring>()</argsstring>
+        <name>SMCListView</name>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1a8be89503d6cbdacd4083c3ad2472cf50" kindref="member">SMCListView::SMCListView</ref> Describe 构造函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="35" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aa477c51f34c5315bb766400c860e3c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SMCListView::~SMCListView</definition>
+        <argsstring>()</argsstring>
+        <name>~SMCListView</name>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa477c51f34c5315bb766400c860e3c28" kindref="member">SMCListView::~SMCListView</ref> Describe 析构函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="43" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ac7be786540e6a75e0da2c7e39331344e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::InsertColumn</definition>
+        <argsstring>(int nIndex, LPCTSTR pszText, int nWidth, LPARAM lParam=0)</argsstring>
+        <name>InsertColumn</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>插入一列 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1ac7be786540e6a75e0da2c7e39331344e" kindref="member">SMCListView::InsertColumn</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszText <ndash/> 标题 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nWidth <ndash/> 宽度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lParam <ndash/> 附加参数</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 插入一列 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a8db41dd2f65b4bcfc662f471515a7d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::DeleteColumn</definition>
+        <argsstring>(int iCol)</argsstring>
+        <name>DeleteColumn</name>
+        <param>
+          <type>int</type>
+          <declname>iCol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aa09f3f3f3cfd2a8f72ce0d7154a6ce5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::GetColumnCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetColumnCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="58" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ae60a50e315653cf960229874cd14a97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMCListView::SetAdapter</definition>
+        <argsstring>(IMcAdapter *adapter)</argsstring>
+        <name>SetAdapter</name>
+        <param>
+          <type>IMcAdapter *</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1adfedef90ed258947221ba697414b98fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ILvAdapter *</type>
+        <definition>ILvAdapter* SOUI::SMCListView::GetAdapter</definition>
+        <argsstring>()</argsstring>
+        <name>GetAdapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="63" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a2acab6c3daabf14b89b124449256a282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IListViewItemLocator *</type>
+        <definition>IListViewItemLocator* SOUI::SMCListView::GetItemLocator</definition>
+        <argsstring>()</argsstring>
+        <name>GetItemLocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="67" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a444a08843d887df6aa438f728e5a2bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::UpdateVisibleItems</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateVisibleItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="71" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a5c43c19914c67b9adc80f1e1a79e1720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::UpdateVisibleItem</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>UpdateVisibleItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="72" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a5d048286dfb50d30158ea51e16fec5bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::SetItemLocator</definition>
+        <argsstring>(IListViewItemLocator *pItemLocator)</argsstring>
+        <name>SetItemLocator</name>
+        <param>
+          <type>IListViewItemLocator *</type>
+          <declname>pItemLocator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="74" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aeaa3a176b23bc761f49147f936c03311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::EnsureVisible</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>EnsureVisible</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="75" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a24c7d93a627b03a79210e8a1f56627ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::SetSel</definition>
+        <argsstring>(int iItem, BOOL bNotify=FALSE)</argsstring>
+        <name>SetSel</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bNotify</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aa9b86dfc3d63f106ee4ac59b188dc12c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::GetSel</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="78" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ab899d7ee9a9343e6290edfe1aa1e336b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+        <definition>SItemPanel* SOUI::SMCListView::HitTest</definition>
+        <argsstring>(CPoint &amp;pt)</argsstring>
+        <name>HitTest</name>
+        <param>
+          <type>CPoint &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="79" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1afef0e0c578806ebe8c228c1f29e3013d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_header_ctrl" kindref="compound">SHeaderCtrl</ref> *</type>
+        <definition>SHeaderCtrl* SOUI::SMCListView::GetHeaderCtrl</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeaderCtrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="81" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a4cc1e5e9aa641339c64e3e1fbaeedfde" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMCListView::OnItemSetCapture</definition>
+        <argsstring>(SItemPanel *pItem, BOOL bCapture)</argsstring>
+        <name>OnItemSetCapture</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_item_container_1a4ef4d0ba6f27a3aeb1403e50d48d42d4">OnItemSetCapture</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bCapture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="83" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ab96bd5cc60eb017e1f9028743a6ff5ed" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::OnItemGetRect</definition>
+        <argsstring>(const SItemPanel *pItem, CRect &amp;rcItem) const</argsstring>
+        <name>OnItemGetRect</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_item_container_1a83c7f7527eba7a9acc90486dc3cee0dc">OnItemGetRect</reimplements>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>CRect &amp;</type>
+          <declname>rcItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="84" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ad0c0187d51eaf293970f7721d29b9791" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::IsItemRedrawDelay</definition>
+        <argsstring>() const</argsstring>
+        <name>IsItemRedrawDelay</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_item_container_1a8c3f2207f148ffd8b0fcfad497763dbe">IsItemRedrawDelay</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="85" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a4c3963a890a8beae88b6092faf1a96c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMCListView::OnItemRequestRelayout</definition>
+        <argsstring>(SItemPanel *pItem)</argsstring>
+        <name>OnItemRequestRelayout</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_item_container_1a7bc85c0c58ac464dc036f29fac31ee69">OnItemRequestRelayout</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="86" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a4e8d9343dcf80e1a9593549c29d13ec3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::onDataSetChanged</definition>
+        <argsstring>()</argsstring>
+        <name>onDataSetChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="89" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aaf30a1621d39e313caf2ee2f6ed87dcf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::onDataSetInvalidated</definition>
+        <argsstring>()</argsstring>
+        <name>onDataSetInvalidated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="90" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a03494cf319bcffb3633b2d9c9f4b6f68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::onItemDataChanged</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>onItemDataChanged</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="91" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1adf8f4d01e21aed5038a72c014f76a514" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMCListView::OnItemClick</definition>
+        <argsstring>(EventArgs *pEvt)</argsstring>
+        <name>OnItemClick</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="93" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a99cc6d9cdc3fdfb0d408f08ea8a81f34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::OnScroll</definition>
+        <argsstring>(BOOL bVertical, UINT uCode, int nPos)</argsstring>
+        <name>OnScroll</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_panel_1af0ff33e0198f3995182149c04c1b2943">OnScroll</reimplements>
+        <param>
+          <type>BOOL</type>
+          <declname>bVertical</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="96" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a865f4f63c7e2081a27e4f39fe0ce7f19" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SMCListView::GetScrollLineSize</definition>
+        <argsstring>(BOOL bVertical)</argsstring>
+        <name>GetScrollLineSize</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_panel_1ac9c65eb9309f06a3584b732df7d4fb22">GetScrollLineSize</reimplements>
+        <param>
+          <type>BOOL</type>
+          <declname>bVertical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="97" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a92e9b4147dd6a099f752d2c48226bde7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::CreateChildren</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>CreateChildren</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ab24c41e701b99857cd33b15dcc20d6d8">CreateChildren</reimplements>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="98" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ab4759967a9e1b66880a21b14862a092f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::OnUpdateToolTip</definition>
+        <argsstring>(CPoint pt, SwndToolTipInfo &amp;tipInfo)</argsstring>
+        <name>OnUpdateToolTip</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1adc7efe0aeb2f38ccba818e8c7d0ab010">OnUpdateToolTip</reimplements>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref> &amp;</type>
+          <declname>tipInfo</declname>
+        </param>
+        <briefdescription>
+<para>处理tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnUpdateToolTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPoint &amp; pt <ndash/> 测试点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; tipInfo <ndash/> tip信息 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE:更新tooltip，FALSE:不更新tooltip</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="100" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a433fe617653d64a1d49b336c7305478e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::SMCListView::OnGetDlgCode</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetDlgCode</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a1d52071628c938dd064b6765856f9be5">OnGetDlgCode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="101" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a522e2ebf5dffcfbe047dd10129306f98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMCListView::OnSetCursor</definition>
+        <argsstring>(const CPoint &amp;pt)</argsstring>
+        <name>OnSetCursor</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ad471787523b5750321b0704726414314">OnSetCursor</reimplements>
+        <param>
+          <type>const CPoint &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="102" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aee4d4568319987ad1243d9bfa02e711d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMCListView::OnColorize</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>OnColorize</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_panel_1a849cf30e335ea4b7fdb2a97ede34e6a1">OnColorize</reimplements>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>调节窗口色调 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OoColorize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>COLORREF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cr <ndash/> 目标颜色 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="103" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a85ee766238ba8a4b5c1e26f40191b204" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMCListView::OnScaleChanged</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>OnScaleChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_panel_1a229db71e4ae6f7bc9df8ea65cd2794fb">OnScaleChanged</reimplements>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="104" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a5b2271a35a803fd2549042e36471d7d4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::SMCListView::OnLanguageChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnLanguageChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a4038fd089860fbccacfd6d8198924e4d">OnLanguageChanged</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1af6526349ea90c5bdf3b93f208f25dd10" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMCListView::OnRebuildFont</definition>
+        <argsstring>()</argsstring>
+        <name>OnRebuildFont</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a24d68e1faa2511768f4734bc145ffd34">OnRebuildFont</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="106" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ae587d3cc410efaa39f79bc1e6ff8dfb2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::DispatchMessage2Items</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>DispatchMessage2Items</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="108" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a99310e7195f25e07279245dc97f4cd29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::UpdateScrollBar</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateScrollBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="110" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ae90e0f6787e385309db7ee0d14a5bf3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::RedrawItem</definition>
+        <argsstring>(SItemPanel *pItem)</argsstring>
+        <name>RedrawItem</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="111" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1aa30323ac81d8fbe21743cae1d1870086" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+        <definition>SItemPanel* SOUI::SMCListView::GetItemPanel</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>GetItemPanel</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="112" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a98ca6d726994edef05c9c91033b028d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnPaint</definition>
+        <argsstring>(IRenderTarget *pRT)</argsstring>
+        <name>OnPaint</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="115" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1af7e0ad5822994742f30bcbd0318cd203" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnSize</definition>
+        <argsstring>(UINT nType, CSize size)</argsstring>
+        <name>OnSize</name>
+        <param>
+          <type>UINT</type>
+          <declname>nType</declname>
+        </param>
+        <param>
+          <type>CSize</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="116" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a315aa8dff9f47d4610fa3b3522bd815c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="117" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a4c0f1a30bf67888b8af2d01aca28587d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SMCListView::OnMouseEvent</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>OnMouseEvent</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="119" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1adbce893ef57fa31eb5c0d23dceabcab8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SMCListView::OnKeyEvent</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>OnKeyEvent</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="121" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a557e7686740c4f268d8bc0f5e6bce100" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnKeyDown</definition>
+        <argsstring>(TCHAR nChar, UINT nRepCnt, UINT nFlags)</argsstring>
+        <name>OnKeyDown</name>
+        <param>
+          <type>TCHAR</type>
+          <declname>nChar</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nRepCnt</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="122" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a6ead47fbb3f4c4535d443b724afd6517" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnMouseLeave</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseLeave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="124" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ac96c35d97049dad3e2e951bf7f52fbfb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMCListView::OnMouseWheel</definition>
+        <argsstring>(UINT nFlags, short zDelta, CPoint pt)</argsstring>
+        <name>OnMouseWheel</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>zDelta</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="126" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ae16f7120063a5b0237aa44f8cf437694" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnKillFocus</definition>
+        <argsstring>(SWND wndFocus)</argsstring>
+        <name>OnKillFocus</name>
+        <param>
+          <type>SWND</type>
+          <declname>wndFocus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="127" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a033b8ac4cffb0e83da23bfb1e200e941" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnSetFocus</definition>
+        <argsstring>(SWND wndOld)</argsstring>
+        <name>OnSetFocus</name>
+        <param>
+          <type>SWND</type>
+          <declname>wndOld</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="128" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a9c3d3d7d73a15b06c46dddd95127ae63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::OnShowWindow</definition>
+        <argsstring>(BOOL bShow, UINT nStatus)</argsstring>
+        <name>OnShowWindow</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bShow</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="129" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a194e4f0215f8e1fcae7e2663a709a6e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMCListView::OnHeaderClick</definition>
+        <argsstring>(EventArgs *pEvt)</argsstring>
+        <name>OnHeaderClick</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+<para>列表头单击事件 <ndash/> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1a194e4f0215f8e1fcae7e2663a709a6e0" kindref="member">SMCListView::OnHeaderClick</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pEvt</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 列表头单击事件 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="191" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ae0cd5c343511a722907bd318880716d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMCListView::OnHeaderSizeChanging</definition>
+        <argsstring>(EventArgs *pEvt)</argsstring>
+        <name>OnHeaderSizeChanging</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+<para>列表头大小改变 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae0cd5c343511a722907bd318880716d7" kindref="member">SMCListView::OnHeaderSizeChanging</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pEvt <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 列表头大小改变 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="199" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a0d469cd33de3f832ff9b2c6ff05bc34d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMCListView::OnHeaderSwap</definition>
+        <argsstring>(EventArgs *pEvt)</argsstring>
+        <name>OnHeaderSwap</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+<para>列表头交换 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1a0d469cd33de3f832ff9b2c6ff05bc34d" kindref="member">SMCListView::OnHeaderSwap</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pEvt <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 列表头交换 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="207" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a272c5507f4a409041176752da1543938" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SMCListView::GetListRect</definition>
+        <argsstring>()</argsstring>
+        <name>GetListRect</name>
+        <briefdescription>
+<para>获取list位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1a272c5507f4a409041176752da1543938" kindref="member">SMCListView::GetListRect</ref> <simplesect kind="return"><para>返回CRect</para>
+</simplesect>
+Describe 获取list位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="216" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a72ea134f9e476deace2bec3571c9e983" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::UpdateHeaderCtrl</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateHeaderCtrl</name>
+        <briefdescription>
+<para>更新列表头控件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_m_c_list_view_1a72ea134f9e476deace2bec3571c9e983" kindref="member">SMCListView::UpdateHeaderCtrl</ref> Describe 更新列表头控件 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="224" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1ab7dbdeb16aa27b46367fe92cf662aafa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SMCListView::UpdateChildrenPosition</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateChildrenPosition</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1aba50375cd77cfeb4361bf7cfe8327b4c">UpdateChildrenPosition</reimplements>
+        <briefdescription>
+<para>更新子窗口位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UpdateChildrenPosition <simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="225" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a84eda612cf4bdf5ae012b979899138cd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMCListView::GetHeaderHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeaderHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="227" column="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_m_c_list_view_1a5d08bf9d0eff7136433fe5857ed234c9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SMCListView::_OnItemGetRect</definition>
+        <argsstring>(int iPosition) const</argsstring>
+        <name>_OnItemGetRect</name>
+        <param>
+          <type>int</type>
+          <declname>iPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="229" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="4">
+        <label>SObject</label>
+      </node>
+      <node id="3">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_panel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SMCListView</label>
+        <link refid="class_s_o_u_i_1_1_s_m_c_list_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="8">
+        <label>SOUI::IScrollBarHost</label>
+        <link refid="struct_s_o_u_i_1_1_i_scroll_bar_host"/>
+      </node>
+      <node id="9">
+        <label>SOUI::IItemContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_item_container"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="37">
+        <label>IDropTarget</label>
+      </node>
+      <node id="5">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="35">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>SOUI::SDropTargetDispatcher</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_target_dispatcher"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="40">
+        <label>SOUI::SHeaderCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_header_ctrl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_pSkinSort</edgelabel>
+          <edgelabel>m_pSkinItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SObject</label>
+      </node>
+      <node id="12">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="27">
+        <label>SOUI::SSkinScrollbar</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_scrollbar"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="21">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>m_timelineHandlerMgr</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>m_dropTarget</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>m_focusMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="15">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SOUI::SState2Index</label>
+        <link refid="class_s_o_u_i_1_1_s_state2_index"/>
+      </node>
+      <node id="28">
+        <label>SOUI::SSkinImgList</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_list"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SOUI::SScrollBarHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_scroll_bar_handler"/>
+        <childnode refid="10" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_panel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_nSbRight</edgelabel>
+          <edgelabel>m_nSbBottom</edgelabel>
+          <edgelabel>m_nSbTop</edgelabel>
+          <edgelabel>m_nSbLeft</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_sbHorz</edgelabel>
+          <edgelabel>m_sbVert</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>m_pSkinSb</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="16">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="14">
+        <label>IObject</label>
+      </node>
+      <node id="7">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="29">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>m_state2Index</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SMCListView</label>
+        <link refid="class_s_o_u_i_1_1_s_m_c_list_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_nDividerSize</edgelabel>
+          <edgelabel>m_nHeaderHeight</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>m_itemCapture</edgelabel>
+          <edgelabel>m_pHoverItem</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_pSkinDivider</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>m_pHeader</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="13">
+        <label>IObjRef</label>
+      </node>
+      <node id="6">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="25">
+        <label>SOUI::IScrollBarHost</label>
+        <link refid="struct_s_o_u_i_1_1_i_scroll_bar_host"/>
+      </node>
+      <node id="33">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>m_pItemContainer</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pFrmHost</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="18">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SOUI::IItemContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_item_container"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" line="25" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SMCListView.h" bodystart="23" bodyend="234"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4f7aec07b3d67d9334e9465ed8ced4db" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_ApplyMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1202e1e2d35caf0a3a02cc4b9d2cb196" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_ConvertRect2RenderRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad5a23edef9a18d53ab4cc9bf92b7b752" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a25923a14b45b2d129666b0f7d67b56f5" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af6474657f02dd8876a05e33b9cd47c45" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_GetCurrentLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf0fe0bf79dfe169c68c135d749611cb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_GetMatrixEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a5d08bf9d0eff7136433fe5857ed234c9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_OnItemGetRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7775b1fd4a7d25a2b68a64a759808a7a" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_PaintChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ace0b4789c2b09715e797ac21560bd725" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_PaintClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88da487f3441bf790b533180d2947a54" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_PaintNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6acfef3a3ad982e4f2a4c549c52527b8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_PaintRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adfa488cef4ca81f66b037e2cf5777be9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_RedrawNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8f0dc8efaad35dfc7996383ce56dc64d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_Update</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a26db921236b404f711f9b43a55c57690" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>_WndRectInRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf9ef86a26d57a90a7f262a85e0d192f" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>accNotifyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6f2cd6a7943d7bcbc5f172a5d1ca123d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>AdjustZOrder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e451823d77789563ba3b462c3d046d6" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>AfterAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abd86a009594f9fffa064bafaa5c0ce75" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>AfterPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2c86bf8485cd1d04efb81524449b3aef" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ATTR_CHAIN_PTR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9dd09cacdc43c7988b180857187094d9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ATTR_CUSTOM</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5acabc38c9b479799aae59fe98c67b16" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ATTR_SKIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a857d8b7407ad8c153c79f789144e6ad9" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>BeforePaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1add4ffbe391168d83216ff0eeeb5f0f32" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>BeforePaintEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5905fa07378248c9d9a7ff9ad981028d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>BringWindowToTop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8eb66d6e169a9feda53a7030ea4b872" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ClearAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37061054c3dd68c100e94d09e28296a7" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a92e9b4147dd6a099f752d2c48226bde7" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a632062c625df6e5cdc6ab5c8b66ac6f5" prot="public" virt="non-virtual" ambiguityscope="SOUI::SPanel::"><scope>SOUI::SMCListView</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3bb0f2cbf47eb477062b672ea63a78d7" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DefAttributeProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a8db41dd2f65b4bcfc662f471515a7d29" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DeleteColumn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d5846acd45d8685dfb9d74925118410" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DestroyChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab65f99da1766c8c5e71fd94ccb481c19" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925af2bb91b743698b2dfc2147fa7dac8d05" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>dirty_child</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a00e8341bd64ad23992671c210ca85f0d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>dirty_clean</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a6f166895461bc7dde7f26b7fddf6914c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>dirty_self</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae587d3cc410efaa39f79bc1e6ff8dfb2" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DispatchMessage2Items</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0d1c67bd321a29d73917ff226d61b590" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>DispatchPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aadfe4964cd88757d019229646c728ef3" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DoColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abcb0e59dec10489ed133a8a2a57f42c6" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>DrawDefFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a535465979865bafd55b5d7620ae7aa31" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>DrawFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa0f57e46cc741a284418625d3ceadd8" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>DrawText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ae99e6fb317dea4c377fdccee9dcabc70" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>EnableScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac15fdc97bc52927fe40ae00531402f4c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>EnableWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aeaa3a176b23bc761f49147f936c03311" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>EnsureVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ceb20cf5134305ae537d82438bffe41" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5b88c203f19039606ab8207acff911d7" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5a5ab80a2410e009b64dff1efdf2036" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByID2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6cfff5bb97a100aa6b04479e22aa14e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a53f6211eb1c98d1a40e1343488eae3cf" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a641ce730c844dedac014eec1233f6008" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad09240f7e2fb8ba8455eabec775f2b97" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a743238efbf7d1d7d5b450b6e4e1ffbf0" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FireCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1b41ec792e70af4b5b84de961763fa52" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>FireCtxMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a74d1344ff872e4bfb6c1ba4ce3db9ad1" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac273d06c46f686e7e2399dae59c5fd8f" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a49b3abddf7dcdb5155fb66b6e4aa89" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1adfedef90ed258947221ba697414b98fa" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetAdapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab6d45c6c1f61b65ab944d9a4d62f1a4f" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7163e835d29acc2d71227096edb37a5c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb36a9c7d1c51f792f6ec13ac724827e" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a0544d797f0eed085a1c7133e18216a" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a062794d497acb9696f3dcc4b9628bffe" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6be523a0e661a48989de4e8f365a1619" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad4d40b97eef06dc486e24f8a21bb101a" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetChildrenLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a7bcc1a114a4d4cc131bcc2724a6c2acd" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1af5214233834a08b841f3c416c7fe93bf" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a158bb1db1271bdc6a57945252a044883" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetColorizeColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa09f3f3f3cfd2a8f72ce0d7154a6ce5c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetColumnCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a168ce1a0daffa4f72f8aede1a78034e2" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0b48463079ea404178ef9ecb1d4d22d6" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a17535f75280b4de8d67feb6e46b2fb1b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a67203f925ea9185f56ef92623638ee" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08fa72505378ac8295b1255177788935" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1afef0e0c578806ebe8c228c1f29e3013d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetHeaderCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a84eda612cf4bdf5ae012b979899138cd" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetHeaderHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab55ae205e8fd681ba9a3fcac1d931fdd" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a2acab6c3daabf14b89b124449256a282" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetItemLocator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa30323ac81d8fbe21743cae1d1870086" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetItemPanel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a824d5cdd2ebd2483edae7493dc304b29" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad54c79e0dd91b7214ce0af9168e3e483" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a889297ad5c45b2a0c838d094e30e8322" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetLayoutParamT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a272c5507f4a409041176752da1543938" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetListRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1ce596c052ea27920e2ea6e8651928c5" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4a96f19a6439a013b2c0481acb246c72" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetNextLayoutChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8816fcadb2c0a7c9e59aa20f1d295192" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ba6fd68b2bb1a06b47e4dbc68de17cb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9957ff0e957f36b478ffe07685700e84" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aca2b8f7c11d6c0ac20baa4ade46c25d0" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab3c2a2d33fafb9a8912882bad32cc4af" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetRoot</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1aef969acce8b876c268f47e08f108481b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetSbWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa9d18960397ccbfaed109914be86f44f" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7fbfdc3d2482f5692a1ed2b6f1d156cc" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetScaleSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f2316b754b4b56b7d06ea926a77e7cb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a6b82e89c40cd89ff82c80b6485390520" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollBarArrowSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a884ee725d8d1b0f54d145e897643b2b2" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollBarContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a4a86a03d306a93e318b7635afb8d9939" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollBarInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a8fd9cab61f3e887524478e01277cbc88" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollBarRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ae224ff321cd43ff4b01d51042e237e72" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollBarSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a6969e990322ed049d730300385c85ebb" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollFadeFrames</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a2c2601ce5ccb00d5b64fdefce5c9c4a3" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a865f4f63c7e2081a27e4f39fe0ce7f19" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollLineSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a23cc6976a661f0a173335efef84bb5ac" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetScrollPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a0bde90ed887cf1385179dbfacbd2967b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetScrollRange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a78b4e2f8e66c9ff557aa81f8caa2076f" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetScrollThumbTrackMinAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa9b86dfc3d63f106ee4ac59b188dc12c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetSel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa15ef57dfa020a433684dcf08f0086b" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetSelectedChildInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a45f599b24be57fe843e569e94a168117" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetSelectedSiblingInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3165c225c9af63e49ff6daac52715cb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5da2e8ca27640844b3fc963a7166d38d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a797a5d2427431bf870298174a25f47b2" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2043e966fca57f2727a84da71791a001" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afee836ecfe282561f04fd489c85e73d7" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetTextAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a701e0978b502b8a911d83b92104df353" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetTextRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eaace5eafbd001e7a966ac284202a71" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aec897a2bb2c6145b3f2edceb37948752" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetTopLevelParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af1a8444dab958c9565e0736060d00334" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6aa61f8fd3852502d866087a08982f9d" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa0591eab0c198fee236e6083af92c342" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eb7a1b0b03e7b2ab266bf046bff19c3" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8760f18f5c59ff1c2ba50da42c65fa1" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5779283a662e4145c25d86ee3854977" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bae8c4270ddb40d9c79047d0819d567" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>GetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79998d91aef3049b514dc6fd0e6aa8bb" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a4c28cb6cb3955e6405ef54aef73777d3" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>HasScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab899d7ee9a9343e6290edfe1aa1e336b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>HitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a193389b19a7f5128a3fd8c96e1d437af" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>InitFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e81448460818325210cf5c2a830aa22" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>InsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ac7be786540e6a75e0da2c7e39331344e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>InsertColumn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad9775f0384a21501de5a83d13aeddab7" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a077137f2773be5b376b56c7a14957d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acfb3d670ef9ef7b672737e031faafc74" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a54e1d70e0345ca81cd9bd232742a6bdb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a86bb1d73a84c76647881e809bf2c040f" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsChecked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6070bb0bef9660f7a840cc4f18fd219d" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6da8af0fd7826625d6a7f20d29c9576" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsContainPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8c9a7b209eae739a4d57af5f65606db7" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsDescendant</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe6e48aedcfaeef60f4d6ba588cb8221" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsDisabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a941f7d50672180da3ca41c73ea83b848" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae86fb10386208b133bda4dfae5bd2bd5" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsDrawToCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab99d4da910a63fd1949a2f11260b2a4" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8c57ee5e9c70e570ee97142b0313ffe" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aff78f3beb70ad95e8719b714ddac7328" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsFocused</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ad0c0187d51eaf293970f7721d29b9791" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsItemRedrawDelay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32cbbee125a2b20460715ef5768509e8" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a635bfcb6349dda7110d7968a50275aec" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsLayoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ad6a56a890d2e1ba930373fb7d2b7fd85" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab820de4bcfb2895868e32052043a75ee" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ad4cf5459260372f97b902a8fb0d48313" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsScrollBarEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a346c1ad1ad0c6ffc66d98e9cae2e918b" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsScrollBarEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a39eba5818d9356dd1ee8014a8a5d0cc7" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>IsSiblingsAutoGroupped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a10708bf2d2ba3f47162a49cfd660a420" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsUpdateLocked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1864e76f4c2a2fab4ee883e25d9384bb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8055d84af3f5a46dc70297aef983107b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>KillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac215f33ea3dfa00b4f81cf80b5ce461e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae5fe646db7bcd55266d15b927c92033f" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>KillTimer2</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502ca" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>kSbConst</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caac3011637cf86b5bcb7d21d4ed1b7e819" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>kTime_Go</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caaa97148a354f477ffd7cb39e18b90e7fb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>kTime_Wait</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>LayoutDirtyType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79515e1475ac8696b90043b2bf18910e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>LockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a986af5b4e19eb740ef14ec90e6a53eca" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_adapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d880d3ae6ffffccc7cf033e3dae8f88" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_animation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a6d921587888f3b70465f218a93613e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_animationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2ea7e7c73901e10fe6b7c6bd8165dd01" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_attrStorage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32bfb9aee220d68d2e839b095244fa8c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4846f2a7857cd35d65f474e743501247" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bCacheDraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af673ccecde4eb3e6276a28c1bc63c03b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab25af821d749fbf7fd7ef3ae45f76386" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bDatasetInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af165bd7220b8816f818a988786c23080" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bDisable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a02980687f61228aebbfcf80749dca8eb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad3df6e93c63654a4037989ca350c41f0" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bDrawFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abaad9c0ebc77bd4faa13d01739dfeef6" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a00f55c6c822a1a72f442ce421501f5b8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1afe8ceff2b2521b0996df73d5de4f579b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bHotTrack</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1accee35d52c295a1b4b2fcaa7bf40eeb4" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a80435f0e90b1db4ec28a7be652a97120" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab4c959e5240b734343c7d9fb20914c5" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a0167df2ed64415a9b43f5e704e22ce33" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bPendingUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4c7ff4974e210b645bc7a798893d26fb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a8b81e0d2c031ec4068c1bbbbc2683e8e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bWantTab</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a9812afc9b8697793a1bd25b7bf16e894" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_bySbThumbTrackMinAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b184f526fe7bf42886168a344430012" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_cachedRT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af47fea7cbc561e7c8821b61fefec741b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_clipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41763193b38a46b9a66a444931de86b2" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_clipRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ab90746a315606b791fd698c633b896" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a43cf30fed47117ef009995f36d1187a5" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_dragSb</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a36968b055add7746709d131e9e98a672" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_dwState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a23dfa5cd8c82f8ea7965e809e15f7b6f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_dwUpdateInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ac191d547b81de8a3277c0a477bfb3284" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_dwUpdateTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9403a80dd9dae0f9d00acd1c711fab2e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_evtSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1aab58ea11c6ea78426803d855224f4e2f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_fadeFrames</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a4f4dc92a5e23de5cf5c2899873a27efe" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_fadeInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a4cbdb9d306b15cdd534d2fab641a5fd7" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_hitSb</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa3cd3142b53022b1ce886f3e9618b0c1" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_iFirstVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a507875bcaac23d34cd30c95324fd3d6d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_invalidRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a5ad0c51a7a788724c67bb76408e5c558" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_iPendingUpdateItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ee1ab9f163c102070f96da71b08acec" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_isAnimating</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa234c501aa7108210984fbe906e74c10" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_isDestroying</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a9c1cfe35b91bd77c70a092e6a26e19ec" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_iSelItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a37455cbfd780c01c76bdc14af0607987" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_itemCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ad691c39641ed431b9baf249020d5c2c7" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_itemRecycle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a730690734d265f51d2a69d0d220b0d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_layoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a2d9f0265ba4de1576a4a0f0f1fc03e84" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_lstItems</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a39152bd5440b2eaf2071c5cac995c757" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_lvItemLocator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5c57effbbd1e2cb3c8c33eeac1457e26" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a55b99c669eb9cc4a8f6661e074a9ee13" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nDividerSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a128d424f0ae94a0ea0eff43c7d5a6a40" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nHeaderHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af0a9e017255444fd2d5529b5be24b2fe" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a57bc97feaee9e513b29e9f5ad6f64846" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nMaxWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a2de3d16a20dd558e8e28e3cbee375e96" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nSbBottom</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ad3f0dddb4261bce4ed59f3b27aceeee4" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nSbLeft</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1aa14aac0fc8e0726ab302b4e3e03d64c3" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nSbRight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ad00daf09412405e638277ed3496de6fb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nSbTop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1acf8fd5d7be330f5020899a068d4114cf" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nScrollSpeed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32798b93a37362d19c669779cce65545" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_nUpdateLockCnt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a66bb11cfb7ea581aa6522bef50bd3c53" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_observer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a22e05b34f42d57b86d719295de1f58dc" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pBgSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88a23d232bd9cc301687cc5eb5edbf9c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8552d2e988d5e2e89be8bed2af4a560" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a118446810afe249237d9e25f1378fa7b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pFirstChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6131c58a4ee43c9e9469b8dcb75fda92" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pGetRTData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1adf68f27da4b16478c9a1353562cdae52" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pHeader</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a879208d52911c7b8df526f48cc870f55" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pHoverItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab9007baa36d9a89dd2f51a682fddfc6b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pLastChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f6eec303632698387fe7cd336b30d09" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f70befbe0b9f866b94de0cf52c22903" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aacc1f98bfba1141984fd40fd95e57615" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pNcSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1908afe346230e4995646f50b3e2fba6" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pNextSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76ff6fb7f0329c12a5ddb8be1d1f3413" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a107180ec1b1df18ebc33845448249f9f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab92ab823183150ab54a29a209cc7c965" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pPrevSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a1857a6502fdf967b6cb18110e9e822d0" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pSkinDivider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a4a0cb192f89ab42caa55c545fcf15948" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_pSkinSb</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a086f6189991aec9689a1f2a002fc71f8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_rcClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a9c8b784552224c3776031888789f5425" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_sbHorz</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a13f2cd20244e03e4817b1495d173fd14" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_sbVert</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a9cc517c3febd5e51f3faedb8f3039930" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_siHoz</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ae2774414df119787bef84ab50cad357a" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_siVer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aea8f9ff013cf7c2610d59d173cf19855" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a31bd9e5d19d2a6aa2181d37cf3bd09c3" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_strText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afd31d32e2e8b4752846146ae027de295" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_strToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab20f26f9a0e17ac1e88894de068876d9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abb6b3d37c77f4cf73a78637dadad523b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_style</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b3b11872efbd0bc73cb94003e51ffb4" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_swnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a1cfd0deea0598efce21d791f3080bf" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_transform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4ba4df406827d08c7a3fc974674b7ea1" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_uData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae9cad19aadf0118ca14ff121d223f72e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_uZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a952c3edd4fb73f4e1ea42fa8bf7af389" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_wBarEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ab7dde426f0e37447e451c9b959b9aa6e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_wBarVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1abf8b6cd3729ea83d80569e62ec9b7b24" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_xmlTemplate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ad6de3de67a7ef7fa903006895e99343e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>m_zDelta</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeee48becf350c2abdeb7364b0e1fde8e" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>MarkCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a95d2c67b4af8e623fc3f8084a625060e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ModifyState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6b53d030ac767195e1f041d18c1243fb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7987099b1b6eeaeb03894450f520ae34" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac94a7a38467c2fcd7d9261d7f0e37139" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>NeedRedrawWhenStateChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44be24fc2b43b41e0ce1a30121770479" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnAnimationInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a46df2971c566254d1a12bfae60633761" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa709922c42009ebefd75295097079fa" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnAnimationStop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a98ca0528efc0a748611b729ac37d7814" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3c8417580183b8251065b182ff14376" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aaeff70dea6b6b1f904ce3e7f3e76fbd6" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3b1c375cfb3ea50d227f28c9ac792664" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06d3628182e1f6b05b91c18296fb74d8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c42e330309ffe2599d707d7e32e9f54" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06c368d196491184e1bbc3b42ad5451a" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2fcb0714453179731d01d92f639b32ce" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a19ad5d0167930e7be2b2a2a20a0979a8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrScrollbarSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5e9eb423d768b4f9e981b4504c5c70f1" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a768e82033883ee2a1654b24a6552539f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a215c4a9bd488d3d93faa6f06c89edb44" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aad6b2db56568aa005e5d702284aa0166" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnAttrTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aee4d4568319987ad1243d9bfa02e711d" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdeb9825fcc7fee97121b8b636a554f3" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnContentChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a94c09be5ed82c0f839b796022586695c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4e8d9343dcf80e1a9593549c29d13ec3" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>onDataSetChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aaf30a1621d39e313caf2ee2f6ed87dcf" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>onDataSetInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a315aa8dff9f47d4610fa3b3522bd815c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a0efbcf1614a3e00a3f61c9b6b3cdaf1b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a673aeaf6d12e09fcca6bd72771ae9c4b" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a433fe617653d64a1d49b336c7305478e" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnGetDlgCode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a194e4f0215f8e1fcae7e2663a709a6e0" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnHeaderClick</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae0cd5c343511a722907bd318880716d7" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnHeaderSizeChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a0d469cd33de3f832ff9b2c6ff05bc34d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnHeaderSwap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ac5f885b49cd3d6f8e4a7dae9a527afbe" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnHScroll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acef46d7eec198d15acf2292eaaf38528" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnInsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1adf8f4d01e21aed5038a72c014f76a514" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnItemClick</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a03494cf319bcffb3633b2d9c9f4b6f68" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>onItemDataChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab96bd5cc60eb017e1f9028743a6ff5ed" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnItemGetRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4c3963a890a8beae88b6092faf1a96c9" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnItemRequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4cc1e5e9aa641339c64e3e1fbaeedfde" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnItemSetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a557e7686740c4f268d8bc0f5e6bce100" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1adbce893ef57fa31eb5c0d23dceabcab8" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnKeyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae16f7120063a5b0237aa44f8cf437694" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a5b2271a35a803fd2549042e36471d7d4" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnLanguageChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdbcc55e9a2f42e68ac4c67aeeb1bcc1" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7ec660b24eb2f74d4f63eef92d41d1da" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4c0f1a30bf67888b8af2d01aca28587d" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a42a4184c1e3063a3bba246004e72fc8f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnMouseHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a6ead47fbb3f4c4535d443b724afd6517" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a70e43afbd0615a892daa3d7e6cb001e9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ac96c35d97049dad3e2e951bf7f52fbfb" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1aae8f8c91521aad44d3cd5186077275d0" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcCalcSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1af8bce1eb03776b8274d3b00b2c570002" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ae705ea5a64db708e97e1d90cb880afde" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a434752bc56dadd1ba0643be8bae67a19" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a07125d15003feb971275e6045e1b75d3" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a68392e63eba22f95ddc19dbd956658d9" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1ae12d273846185d7c9ec24345e5a73e76" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a98ca6d726994edef05c9c91033b028d3" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aac5432e91f351e847e64bcf907c6cbd2" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnRButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c2c1a2bba4560c6ea286e3b74997f2f" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnRButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1af6526349ea90c5bdf3b93f208f25dd10" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnRebuildFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa27217e295a1e1d0b9e281602eb15c57" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad98dfcb41ba176f535472c88bad90c08" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnRemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a85ee766238ba8a4b5c1e26f40191b204" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScaleChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a99cc6d9cdc3fdfb0d408f08ea8a81f34" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScroll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a5b81772a478d1945c50aadeb9b32a437" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScrollCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a8301ba1d93aaa150165247259dc36852" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScrollKillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a32839b408b67e5db3d060d22d521a470" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScrollSetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a3732c471e4db1a6673259fb98335a4d1" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScrollUpdatePart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a83fdafd06121a189f53c11264d68a405" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnScrollUpdateThumbTrack</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6db7d982ba3777860fe90ce1cfee2b74" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnSetColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a522e2ebf5dffcfbe047dd10129306f98" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a033b8ac4cffb0e83da23bfb1e200e941" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a75b84fc4334cbb4533408972b12e1fab" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnSetLanguage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1abe11ceb96c2cb8c733e2ab06f04d4a" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnSetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a9c3d3d7d73a15b06c46dddd95127ae63" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1af7e0ad5822994742f30bcbd0318cd203" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44d2fcb3712aba89fee24a61c43ea460" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnStateChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37ce3a8cde6a6f2870fea58f76c75840" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnStateChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a5641a6c3b30092aaa22d028af251422c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08e308a374e9324c6203bedcd36e957d" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnUpdateFloatPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f417fae345f4c8e8f89441f4a02c259" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnUpdateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab4759967a9e1b66880a21b14862a092f" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>OnUpdateToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1af9bf9e49d03381c7d053387af3573f30" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>OnVScroll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a292bbaec718496b74a9438848faafff9" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>PaintBackground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f33f680d2fdbf901dda6981a5c371f1" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>PaintForeground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1157a053b1289583666029d0c7c36b83" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>PaintForeground2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8522762efbd9469c1564f180e1da86e4" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>PGETRTDATA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae90e0f6787e385309db7ee0d14a5bf3c" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>RedrawItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa40464c02efa982fa99867c026829c18" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>RedrawRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2d689bb3df90df8e535b4ab76d66df88" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ReleaseCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a03b2cd92a9fa7c422028bef67c4868e0" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0b3c7e4c11cf70d017dff85691a90f5" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>RemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a423c5fc77e4bc49da6bfdccc252418fe" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a599c670bfea7efdf69386b6a6f326a30" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a0178d4a1329027f79f90c5305f175c70" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ScrollUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4047a87e3950a60f90a5f756f3ece798" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SDispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ae60a50e315653cf960229874cd14a97d" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetAdapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ef77d3dc52e89dee5ee166a17d875e1" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae7e13f473d81650a33fc71defe2387b4" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf007ba4da0d1a0f77210db2682c5a4e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe47e5e6fce61ae0593f273d4f4793c6" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>SetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad30625112b837bfd62f18e25dd7a5ac6" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad26192c9d9acd51f9b52b958f7f9ff0c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetClipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8e7e73cbc7a38d86e593e343ccab1c82" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5110427bfa426316d896144a9375c87c" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac97abd6d65dd0bab67ece0c1eec39b9a" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a5d048286dfb50d30158ea51e16fec5bf" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetItemLocator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0975d08e87484a8ebf3718a8d268ebc5" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8517636a84fb0b737455ddde63e1519e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a4db3a48ac66fc20b8657a5b24a9bfe24" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76010d050623dbcd7011fe7509a8d71b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac0d143c645c0a55d686940c48a425ddf" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a73e760b2717b4a4a09f3079a8b6d5dcd" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetScrollInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a3f50656f14de4a1e37658a5b2acf14eb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetScrollPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a8ef33beb7e8cb30561064f5cecb4b811" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetScrollRange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a24c7d93a627b03a79210e8a1f56627ca" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetSel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a195ac5bec3b984b1a0167bcfaad42a39" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7f99124f11ad80f37e4580c1e3a2f295" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a11c07193b1d917e7a9ba25f4adcea5ce" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>SetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a85cf0bd5b9cebb9154f061fc0e3a960e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae1e45461caedfa5ed443e0f5774959b5" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8beaccf8aa31e59a44838c0e0a5701e" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a224adc79b03beb66f55a25468b292ed0" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a68dd4b179d424b676d17342aa6b5f262" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a371eb6c5e5aef0eff8bd4b26c257c077" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>ShowScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a8be89503d6cbdacd4083c3ad2472cf50" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SMCListView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a21108b31dfeeb78c22a1ef2cfa5e96c6" prot="private" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SMCListViewDataSetObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ae454c913bbbdc1cfdad7e1293c46793b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SMsgHandleState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a948ba0bfd6149cdf276b25d0ca447d0b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SPanel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a51e87f3d340ea7fd0149fc423979a46b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SSendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0449ad5f88983ce2a64568cb49e58fd" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>StartAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a645cd258bbe5cebf25e79fde5f4bfbeb" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa163d9e34d6e6def39b09cdb733289f2" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>SwndFromPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a99c3e101e01931c02ac6a1edb1f4d861" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>SwndProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5d32d519b7acc412dc014b0845fc8e96" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>TestMainThread</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa1339cbcf8eb413aceaf58ca65d46c149" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>Timer_Go</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa111e154c6246735ca7c86a1af374aa87" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>Timer_Wait</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3902d3332153936f258b756ea7fbdfb2" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac22b67d1562309587e4cc46087ad0ed6" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>TransformPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac2dd78f931b6f9d59b0ae530f5aa75b1" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>TransformPointEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad21ad32c5e2f6f9361212405fbd4c49b" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UnlockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac3bdbb3244522318be542c08f619c053" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateCacheMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab7dbdeb16aa27b46367fe92cf662aafa" prot="protected" virt="virtual"><scope>SOUI::SMCListView</scope><name>UpdateChildrenPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a72ea134f9e476deace2bec3571c9e983" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateHeaderCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8b7805b9c005e6967eeff4636ef33a78" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>UpdateLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a99310e7195f25e07279245dc97f4cd29" prot="protected" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a5c43c19914c67b9adc80f1e1a79e1720" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateVisibleItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1a444a08843d887df6aa438f728e5a2bd7" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateVisibleItems</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9ae8f38ff291599b761e08bdd5c57084" prot="public" virt="non-virtual"><scope>SOUI::SMCListView</scope><name>UpdateWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_m_c_list_view_1aa477c51f34c5315bb766400c860e3c28" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>~SMCListView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_panel_1a7e4147ca74661ff0ec3b771806e9a26f" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>~SPanel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a73cf687f9a4862ab0768cfbde2dd86e4" prot="public" virt="virtual"><scope>SOUI::SMCListView</scope><name>~SWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

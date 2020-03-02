@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_event_set" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SEventSet</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_notify_center" prot="public" virt="non-virtual">SOUI::SNotifyCenter</derivedcompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_event_set_1a2eae8b88616991b4d76006685a16033f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SWindow</definition>
+        <argsstring></argsstring>
+        <name>SWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="41" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_event_set_1a67657c0ea63cb1aec1b10df734f16b1b" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="class_s_o_u_i_1_1_s_event" kindref="compound">SEvent</ref> * &gt;</type>
+        <definition>SArray&lt;SEvent *&gt; SOUI::SEventSet::m_evtArr</definition>
+        <argsstring></argsstring>
+        <name>m_evtArr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="171" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_event_set_1a9c9e47cc4db930b6b2f543b2ecabcfa7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SEventSet::m_nMuted</definition>
+        <argsstring></argsstring>
+        <name>m_nMuted</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="172" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a4f771b3adebf8b16cd6feeedb25fe7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SEventSet::SEventSet</definition>
+        <argsstring>(void)</argsstring>
+        <name>SEventSet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="43" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1ab5e1a61e9f1dab2a9b9104d17ddee6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SEventSet::~SEventSet</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SEventSet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="44" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1affdcff4499a38ba481dde3501473d8a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SEventSet::addEvent</definition>
+        <argsstring>(const DWORD dwEventID, LPCWSTR pszEventHandlerName)</argsstring>
+        <name>addEvent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszEventHandlerName</declname>
+        </param>
+        <briefdescription>
+<para>Add a new Event to the EventSet with the given name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object containing the name to give the new Event. The name must be unique for the EventSet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nothing</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>AlreadyExistsException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown if an Event already exists named <emphasis>name</emphasis>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="58" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a0cac95789a2b6a5dfc10e07dac5c7ba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SEventSet::removeEvent</definition>
+        <argsstring>(const DWORD dwEventID)</argsstring>
+        <name>removeEvent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <briefdescription>
+<para>Removes the Event with the given name. All connections to the event are disconnected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object containing the name of the Event to remove. If no such Event exists, nothing happens.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nothing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="71" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a2adcfe9aeb4973bbb07cddcb706fef34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SEventSet::removeAllEvents</definition>
+        <argsstring>(void)</argsstring>
+        <name>removeAllEvents</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Remove all Event objects from the EventSet </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nothing </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="81" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1ad48c256770bd6f904e74e7223cf27588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::isEventPresent</definition>
+        <argsstring>(const DWORD dwEventID)</argsstring>
+        <name>isEventPresent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <briefdescription>
+<para>Checks to see if an Event with the given name is present in the EventSet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if an Event named <emphasis>name</emphasis> was found, or false if the Event was not found </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="91" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a7ce4fb36caf14d645fe8bd0046d1f874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::setEventScriptHandler</definition>
+        <argsstring>(const SStringW &amp;strEventName, const SStringA strScriptHandler)</argsstring>
+        <name>setEventScriptHandler</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strEventName</declname>
+        </param>
+        <param>
+          <type>const SStringA</type>
+          <declname>strScriptHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="93" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a19cdf6e0cc95614aadf7045abc628788" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringA</type>
+        <definition>SStringA SOUI::SEventSet::getEventScriptHandler</definition>
+        <argsstring>(const SStringW &amp;strEventName) const</argsstring>
+        <name>getEventScriptHandler</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strEventName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="95" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1ab8602878987efd059f99f17f4d9a053f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::subscribeEvent</definition>
+        <argsstring>(DWORD dwEventID, const ISlotFunctor &amp;subscriber)</argsstring>
+        <name>subscribeEvent</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+<para>Subscribes a handler to Event. . </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dwEventID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event ID to subscribe to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function or object that is to be subscribed to the Event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="106" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1abcbd86f7a2aee4df711512010ff47fab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::subscribeEvent</definition>
+        <argsstring>(bool(T::*pFn)(A *), T *pObject)</argsstring>
+        <name>subscribeEvent</name>
+        <param>
+          <type>bool(T::*)(A *)</type>
+          <declname>pFn</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="112" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1aa8f5c49821437497ad832c43fede0075" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::subscribeEvent</definition>
+        <argsstring>(bool(*pFn)(A *))</argsstring>
+        <name>subscribeEvent</name>
+        <param>
+          <type>bool(*)(A *)</type>
+          <declname>pFn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="116" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a6781d4866ec72b233fc63e3dc09823e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::subscribeEvent</definition>
+        <argsstring>(const DWORD dwEventID, bool(T::*pFn)(EventArgs *), T *pObject)</argsstring>
+        <name>subscribeEvent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <param>
+          <type>bool(T::*)(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *)</type>
+          <declname>pFn</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="121" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a01b972e07d8a5aa46941d41efdb51359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::unsubscribeEvent</definition>
+        <argsstring>(const DWORD dwEventID, const ISlotFunctor &amp;subscriber)</argsstring>
+        <name>unsubscribeEvent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>subscriber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="125" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a56b894081a8a38ec0b0e432595e3033a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::unsubscribeEvent</definition>
+        <argsstring>(bool(T::*pFn)(A *), T *pObject)</argsstring>
+        <name>unsubscribeEvent</name>
+        <param>
+          <type>bool(T::*)(A *)</type>
+          <declname>pFn</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="128" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a54238c93651a4acce66303e3a99aeddc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::unsubscribeEvent</definition>
+        <argsstring>(bool(*pFn)(A *))</argsstring>
+        <name>unsubscribeEvent</name>
+        <param>
+          <type>bool(*)(A *)</type>
+          <declname>pFn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="132" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1af858c55b0349c85c39163461374a9f6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::unsubscribeEvent</definition>
+        <argsstring>(const DWORD dwEventID, bool(T::*pFn)(EventArgs *), T *pObject)</argsstring>
+        <name>unsubscribeEvent</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <param>
+          <type>bool(T::*)(<ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *)</type>
+          <declname>pFn</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>pObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="137" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a2bf2a4ef5534486adbf639afac317366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SEventSet::FireEvent</definition>
+        <argsstring>(EventArgs &amp;args)</argsstring>
+        <name>FireEvent</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="140" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1adb6d5de01231598f1477760d473111e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SEventSet::isMuted</definition>
+        <argsstring>(void) const</argsstring>
+        <name>isMuted</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return whether the EventSet is muted or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><itemizedlist>
+<listitem><para>true if the EventSet is muted. All requests to fire events will be ignored.</para>
+</listitem><listitem><para>false if the EventSet is not muted. All requests to fire events are processed as normal. </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="150" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1a8705d60856244eb73f019f871b9f1dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SEventSet::setMutedState</definition>
+        <argsstring>(bool setting)</argsstring>
+        <name>setMutedState</name>
+        <param>
+          <type>bool</type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+<para>Set the mute state for this EventSet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>setting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><itemizedlist>
+<listitem><para>true if the EventSet is to be muted (no further event firing requests will be honoured until EventSet is unmuted).</para>
+</listitem><listitem><para>false if the EventSet is not to be muted and all events should fired as requested.</para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nothing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="167" column="9"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_event_set_1ad10597d0b3bcda6fe8c7f4aea19f6610" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_event" kindref="compound">SEvent</ref> *</type>
+        <definition>SEvent* SOUI::SEventSet::GetEventObject</definition>
+        <argsstring>(const DWORD dwEventID)</argsstring>
+        <name>GetEventObject</name>
+        <param>
+          <type>const DWORD</type>
+          <declname>dwEventID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="170" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SNotifyCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_notify_center"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" line="40" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSet.h" bodystart="39" bodyend="173"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1affdcff4499a38ba481dde3501473d8a2" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>addEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a2bf2a4ef5534486adbf639afac317366" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ad10597d0b3bcda6fe8c7f4aea19f6610" prot="protected" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>GetEventObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a19cdf6e0cc95614aadf7045abc628788" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>getEventScriptHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ad48c256770bd6f904e74e7223cf27588" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>isEventPresent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1adb6d5de01231598f1477760d473111e8" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>isMuted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a67657c0ea63cb1aec1b10df734f16b1b" prot="protected" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>m_evtArr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a9c9e47cc4db930b6b2f543b2ecabcfa7" prot="protected" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>m_nMuted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a2adcfe9aeb4973bbb07cddcb706fef34" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>removeAllEvents</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a0cac95789a2b6a5dfc10e07dac5c7ba5" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>removeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a7ce4fb36caf14d645fe8bd0046d1f874" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>setEventScriptHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a8705d60856244eb73f019f871b9f1dbf" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>setMutedState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a4f771b3adebf8b16cd6feeedb25fe7f4" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>SEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ab8602878987efd059f99f17f4d9a053f" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1abcbd86f7a2aee4df711512010ff47fab" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1aa8f5c49821437497ad832c43fede0075" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a6781d4866ec72b233fc63e3dc09823e7" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a2eae8b88616991b4d76006685a16033f" prot="private" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a01b972e07d8a5aa46941d41efdb51359" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a56b894081a8a38ec0b0e432595e3033a" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a54238c93651a4acce66303e3a99aeddc" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1af858c55b0349c85c39163461374a9f6a" prot="public" virt="non-virtual"><scope>SOUI::SEventSet</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ab5e1a61e9f1dab2a9b9104d17ddee6c9" prot="public" virt="virtual"><scope>SOUI::SEventSet</scope><name>~SEventSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

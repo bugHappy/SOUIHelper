@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_res_provider_8h" kind="file" language="C++">
+    <compoundname>SResProvider.h</compoundname>
+    <includes refid="_s_res_provider-i_8h" local="yes">interface/SResProvider-i.h</includes>
+    <includes refid="_s_res_i_d_8h" local="no">helper/SResID.h</includes>
+    <includes local="no">unknown/obj-ref-impl.hpp</includes>
+    <includedby refid="souistd_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>string/tstring.h</label>
+      </node>
+      <node id="13">
+        <label>unknown/obj-ref-impl.hpp</label>
+      </node>
+      <node id="9">
+        <label>SImgDecoder-i.h</label>
+        <link refid="_s_img_decoder-i_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>interface/SResProvider-i.h</label>
+        <link refid="_s_res_provider-i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>helper/SResID.h</label>
+        <link refid="_s_res_i_d_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sobject/Sobject.hpp</label>
+      </node>
+      <node id="3">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="5">
+        <label>souicoll.h</label>
+      </node>
+      <node id="7">
+        <label>core/sobjType.h</label>
+        <link refid="_s_obj_type_8h_source"/>
+      </node>
+      <node id="10">
+        <label>SPathEffect-i.h</label>
+        <link refid="_s_path_effect-i_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SRender-i.h</label>
+        <link refid="_s_render-i_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>tchar.h</label>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProvider.h</label>
+        <link refid="_s_res_provider_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProvider.h</label>
+        <link refid="_s_res_provider_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_u_i_1_1_s_res_load_from_memory" prot="public">SOUI::SResLoadFromMemory</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_res_provider_p_e" prot="public">SOUI::SResProviderPE</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_res_load_from_file" prot="public">SOUI::SResLoadFromFile</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_s_res_provider_files" prot="public">SOUI::SResProviderFiles</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>File<sp/>Name:<sp/>sresprovider.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description:<sp/>Resource<sp/>Provider</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_res_provider-i_8h" kindref="compound">interface/SResProvider-i.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;helper/SResID.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unknown/obj-ref-impl.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//定义3种系统资源类型</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>TCHAR<sp/>KTypeBitmap[];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>TCHAR<sp/>KTypeCursor[];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>TCHAR<sp/>KTypeIcon[];<sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/>TCHAR<sp/>KTypeHtml[];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_s_o_u_i_1_1_s_res_load_from_memory" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_res_load_from_memory" kindref="compound">SResLoadFromMemory</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref><sp/>*<sp/>LoadImage(LPVOID<sp/>pBuf,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref><sp/><sp/><sp/>*<sp/>LoadImgX(LPVOID<sp/>pBuf,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="class_s_o_u_i_1_1_s_res_provider_p_e" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_s_res_provider_p_e" kindref="compound">SResProviderPE</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TObjRefImpl&lt;IResProvider&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_res_provider_p_e" kindref="compound">SResProviderPE</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>Init(WPARAM<sp/>wParam,LPARAM<sp/>lParam);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HBITMAP<sp/><sp/><sp/><sp/>LoadBitmap(LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HICON<sp/><sp/><sp/>LoadIcon(LPCTSTR<sp/>pszResName,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx=0,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cy=0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HCURSOR<sp/><sp/><sp/>LoadCursor(LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref><sp/>*<sp/>LoadImage(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref><sp/><sp/><sp/>*<sp/>LoadImgX(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>GetRawBuffer(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName,LPVOID<sp/>pBuf,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>HasResource(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>GetRawBufferSize(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPVOID<sp/>GetRawBufferPtr(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CheckResUsage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SMap&lt;SStringT,int&gt;<sp/>&amp;<sp/>mapResUsage);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HRSRC<sp/>MyFindResource(LPCTSTR<sp/>strType,<sp/>LPCTSTR<sp/>pszResName<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HINSTANCE<sp/>m_hResInst;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_s_o_u_i_1_1_s_res_load_from_file" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SOUI_EXP<sp/><ref refid="class_s_o_u_i_1_1_s_res_load_from_file" kindref="compound">SResLoadFromFile</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>HBITMAP<sp/>LoadBitmap(LPCTSTR<sp/>pszFileName);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>HICON<sp/><sp/><sp/>LoadIcon(LPCTSTR<sp/>pszFileName,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx=0,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cy=0);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>HCURSOR<sp/>LoadCursor(LPCTSTR<sp/>pszFileName);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref><sp/>*<sp/>LoadImage(LPCTSTR<sp/>pszFileName);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref><sp/><sp/><sp/>*<sp/>LoadImgX(LPCTSTR<sp/>pszFileName);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>GetRawBufferSize(LPCTSTR<sp/>pszFileName);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>BOOL<sp/>GetRawBuffer(LPCTSTR<sp/>pszFileName,LPVOID<sp/>pBuf,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_s_o_u_i_1_1_s_res_provider_files" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_s_res_provider_files" kindref="compound">SResProviderFiles</ref>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TObjRefImpl&lt;IResProvider&gt;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_s_res_provider_files" kindref="compound">SResProviderFiles</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>Init(WPARAM<sp/>wParam,LPARAM<sp/>lParam);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>HasResource(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HBITMAP<sp/><sp/><sp/><sp/>LoadBitmap(LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HICON<sp/><sp/><sp/>LoadIcon(LPCTSTR<sp/>pszResName,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cx=0,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cy=0);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HCURSOR<sp/>LoadCursor(LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref><sp/>*<sp/>LoadImage(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref><sp/><sp/><sp/>*<sp/>LoadImgX(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>GetRawBufferSize(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>GetRawBuffer(LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName,LPVOID<sp/>pBuf,</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CheckResUsage(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SMap&lt;SStringT,int&gt;<sp/>&amp;<sp/>mapResUsage);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SStringT<sp/>GetRes(<sp/>LPCTSTR<sp/>strType,LPCTSTR<sp/>pszResName<sp/>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SStringT<sp/>m_strPath;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SMap&lt;SResID,SStringT&gt;<sp/>m_mapFiles;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>SOUI_EXP<sp/>CreateResProvider(BUILTIN_RESTYPE<sp/>resType,IObjRef<sp/>**pObj);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight><highlight class="comment">//namespace<sp/>SOUI</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProvider.h"/>
+  </compounddef>
+</doxygen>

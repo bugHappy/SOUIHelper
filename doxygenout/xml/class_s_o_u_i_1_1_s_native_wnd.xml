@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_native_wnd" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SNativeWnd</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_message_map" prot="public" virt="non-virtual">SOUI::SMessageMap</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_drag_wnd" prot="public" virt="non-virtual">SOUI::SDragWnd</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_host_wnd" prot="public" virt="non-virtual">SOUI::SHostWnd</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_menu_o_d_wnd" prot="public" virt="non-virtual">SOUI::SMenuODWnd</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_task_handler" prot="protected" virt="non-virtual">SOUI::STaskHandler</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_tip_ctrl" prot="public" virt="non-virtual">SOUI::STipCtrl</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_native_wnd_1a40129e803a175f7301dad2482be99bad" prot="protected" static="no" mutable="no">
+        <type>const MSG *</type>
+        <definition>const MSG* SOUI::SNativeWnd::m_pCurrentMsg</definition>
+        <argsstring></argsstring>
+        <name>m_pCurrentMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="456" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_native_wnd_1ae481cfa8687a81ab3bfbedb25e8f66f4" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::m_bDestoryed</definition>
+        <argsstring></argsstring>
+        <name>m_bDestoryed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="457" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_native_wnd_1ab1755d07793fd4ced829bc65a4d3c061" prot="protected" static="no" mutable="no">
+        <type>tagThunk *</type>
+        <definition>tagThunk* SOUI::SNativeWnd::m_pThunk</definition>
+        <argsstring></argsstring>
+        <name>m_pThunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="469" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_native_wnd_1a9bfe94142ee6f297cff8bb591edf40cf" prot="protected" static="no" mutable="no">
+        <type>WNDPROC</type>
+        <definition>WNDPROC SOUI::SNativeWnd::m_pfnSuperWindowProc</definition>
+        <argsstring></argsstring>
+        <name>m_pfnSuperWindowProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="470" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_native_wnd_1a00088e09d3601c253f658a7e1b7822b4" prot="public" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::m_hWnd</definition>
+        <argsstring></argsstring>
+        <name>m_hWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="460" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a713a258605bd7f0b687bff54d822269f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SNativeWnd::SNativeWnd</definition>
+        <argsstring>(HWND hWnd=0)</argsstring>
+        <name>SNativeWnd</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="122" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ac2ada5966059755cd94787c2cdd66088" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SNativeWnd::~SNativeWnd</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SNativeWnd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="123" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a8e2fd1ebc4ba0b4eb3f123e889577cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::Create</definition>
+        <argsstring>(LPCTSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle, int x, int y, int nWidth, int nHeight, HWND hWndParent, LPVOID lpParam)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpWindowName</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwStyle</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwExStyle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWndParent</declname>
+        </param>
+        <param>
+          <type>LPVOID</type>
+          <declname>lpParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aedf20baf8bb1812ab1089c7c0a055fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::SubclassWindow</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>SubclassWindow</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a33c025619fedeada3d794b9f41a1a64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::UnsubclassWindow</definition>
+        <argsstring>(BOOL bForce)</argsstring>
+        <name>UnsubclassWindow</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bForce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ae73894c2610e54aec010b508b963e2da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const MSG *</type>
+        <definition>const MSG* SOUI::SNativeWnd::GetCurrentMessage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="135" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a3b9e971fe7e37ba7b4cb60341078caf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::GetDlgCtrlID</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDlgCtrlID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="140" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="140" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a81490884fd21d8c2b2167399fb6dc2ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SNativeWnd::GetStyle</definition>
+        <argsstring>() const</argsstring>
+        <name>GetStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="146" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a931a0700fbea08b60bb1bf2a8e5a069e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SNativeWnd::GetExStyle</definition>
+        <argsstring>() const</argsstring>
+        <name>GetExStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="152" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aa0fbb768f0ed67e2e284d1ea049e08e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LONG_PTR</type>
+        <definition>LONG_PTR SOUI::SNativeWnd::GetWindowLongPtr</definition>
+        <argsstring>(int nIndex) const</argsstring>
+        <name>GetWindowLongPtr</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="158" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="158" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a2622349ba0e4a73685334951253fe916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LONG_PTR</type>
+        <definition>LONG_PTR SOUI::SNativeWnd::SetWindowLongPtr</definition>
+        <argsstring>(int nIndex, LONG_PTR dwNewLong)</argsstring>
+        <name>SetWindowLongPtr</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <param>
+          <type>LONG_PTR</type>
+          <declname>dwNewLong</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="164" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1acc75f72d1012125fbd2e073330434321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::GetParent</definition>
+        <argsstring>()</argsstring>
+        <name>GetParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="170" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a219e52660deeeac6ec4320ddd64e7840" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::SetParent</definition>
+        <argsstring>(HWND hWndNewParent)</argsstring>
+        <name>SetParent</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWndNewParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="176" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="176" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a8e1c170b3d93f295ec77051dfa0efded" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::IsWindowEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>IsWindowEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="182" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="182" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aea08577c49fd9b5a03fa3e235720b527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ModifyStyle</definition>
+        <argsstring>(DWORD dwRemove, DWORD dwAdd, UINT nFlags=0)</argsstring>
+        <name>ModifyStyle</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwRemove</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwAdd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="188" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a3a33ddbe2721ea01f49587e65fe57240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ModifyStyleEx</definition>
+        <argsstring>(DWORD dwRemove, DWORD dwAdd, UINT nFlags=0)</argsstring>
+        <name>ModifyStyleEx</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwRemove</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwAdd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="190" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1af3ed1854d29222863e881620958c86fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::SetWindowPos</definition>
+        <argsstring>(HWND hWndInsertAfter, int x, int y, int cx, int cy, UINT nFlags)</argsstring>
+        <name>SetWindowPos</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWndInsertAfter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cy</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="192" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="192" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ae7db0c8539947cfbebbf5c874d09852f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::CenterWindow</definition>
+        <argsstring>(HWND hWndCenter=NULL)</argsstring>
+        <name>CenterWindow</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWndCenter</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="197" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a1d439ec2538d347aed93d17cf8afee1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::DestroyWindow</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="199" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1afb4281f73bf3ef28477b60511fea4179" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::IsWindow</definition>
+        <argsstring>()</argsstring>
+        <name>IsWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="204" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ade5b0055fbebcec7e2680b953ed9af12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::Invalidate</definition>
+        <argsstring>(BOOL bErase=TRUE)</argsstring>
+        <name>Invalidate</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bErase</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="210" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="210" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aa32edae64de9d4bd96afa4f8b49b8bcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::InvalidateRect</definition>
+        <argsstring>(LPCRECT lpRect, BOOL bErase=TRUE)</argsstring>
+        <name>InvalidateRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bErase</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="216" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="216" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a546e9561847bec230bcd4f2c4c9bb6a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::GetWindowRect</definition>
+        <argsstring>(LPRECT lpRect) const</argsstring>
+        <name>GetWindowRect</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="221" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="221" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a9fd18bae24ae60bd68e984b9b64cdfd3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::GetClientRect</definition>
+        <argsstring>(LPRECT lpRect) const</argsstring>
+        <name>GetClientRect</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="227" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="227" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ae76b040fb207bfe209a860d19fdc9f79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ClientToScreen</definition>
+        <argsstring>(LPPOINT lpPoint) const</argsstring>
+        <name>ClientToScreen</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lpPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="232" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a337dbb45781eee2d2f100fab68a9b714" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ClientToScreen</definition>
+        <argsstring>(LPRECT lpRect) const</argsstring>
+        <name>ClientToScreen</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="238" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="238" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a92d18cbf51e670992d6d4d7d6b15e765" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ScreenToClient</definition>
+        <argsstring>(LPPOINT lpPoint) const</argsstring>
+        <name>ScreenToClient</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lpPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="246" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a81ee7ba311f5a9775cf8bb5a169afe9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ScreenToClient</definition>
+        <argsstring>(LPRECT lpRect) const</argsstring>
+        <name>ScreenToClient</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="252" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="252" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1acc6007ef2e9160ea3a5c114867f7d632" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::MapWindowPoints</definition>
+        <argsstring>(HWND hWndTo, LPPOINT lpPoint, UINT nCount) const</argsstring>
+        <name>MapWindowPoints</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWndTo</declname>
+        </param>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lpPoint</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="260" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="260" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a821292a06c4cad35e2bbed9f90559f7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::MapWindowPoints</definition>
+        <argsstring>(HWND hWndTo, LPRECT lpRect) const</argsstring>
+        <name>MapWindowPoints</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWndTo</declname>
+        </param>
+        <param>
+          <type>LPRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="266" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="266" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1afad497321f8bc706ff4bf8fc68d414ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UINT_PTR</type>
+        <definition>UINT_PTR SOUI::SNativeWnd::SetTimer</definition>
+        <argsstring>(UINT_PTR nIDEvent, UINT nElapse, void(CALLBACK *lpfnTimer)(HWND, UINT, UINT_PTR, DWORD)=NULL)</argsstring>
+        <name>SetTimer</name>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>nIDEvent</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nElapse</declname>
+        </param>
+        <param>
+          <type>void(CALLBACK *lpfnTimer)(HWND, UINT, UINT_PTR, DWORD)</type>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="273" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="273" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1afbdded6c7256009005b7f69e08ac79ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::KillTimer</definition>
+        <argsstring>(UINT_PTR nIDEvent)</argsstring>
+        <name>KillTimer</name>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>nIDEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="279" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="279" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a85d734630f4c89d0273b1eb5d9fba5b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HDC</type>
+        <definition>HDC SOUI::SNativeWnd::GetDC</definition>
+        <argsstring>()</argsstring>
+        <name>GetDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="285" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="285" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a18fa87a0ee2bca6528b411fb616b5de9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HDC</type>
+        <definition>HDC SOUI::SNativeWnd::GetWindowDC</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindowDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="291" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="291" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a83165461a89e3a4fa546259da63f467d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::ReleaseDC</definition>
+        <argsstring>(HDC hDC)</argsstring>
+        <name>ReleaseDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hDC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="297" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="297" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a1cac9ee1fed482a82bc26b77320fa9a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::CreateCaret</definition>
+        <argsstring>(HBITMAP hBitmap)</argsstring>
+        <name>CreateCaret</name>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hBitmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="303" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="303" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1af2717c6574ebd4356ecd8efe50a2d919" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::CreateSolidCaret</definition>
+        <argsstring>(int nWidth, int nHeight)</argsstring>
+        <name>CreateSolidCaret</name>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="309" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="309" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a2216c31f08c5b63efe92da1c4f289643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::CreateGrayCaret</definition>
+        <argsstring>(int nWidth, int nHeight)</argsstring>
+        <name>CreateGrayCaret</name>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="315" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="315" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1ab8ac1334d4061c837fb938adf63515cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::HideCaret</definition>
+        <argsstring>()</argsstring>
+        <name>HideCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="321" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="321" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a7b089d19a65c67f6263e88c7ed012200" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ShowCaret</definition>
+        <argsstring>()</argsstring>
+        <name>ShowCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="327" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="327" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a332d5ea6e6b7482b8c53ecb8dda79a8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::SetCapture</definition>
+        <argsstring>()</argsstring>
+        <name>SetCapture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="332" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="332" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a5583a5875191ef01acdb0bd14c531501" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SNativeWnd::SetFocus</definition>
+        <argsstring>()</argsstring>
+        <name>SetFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="338" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="338" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a0ef25c95c4a14516adf4326050d670d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SNativeWnd::SendMessage</definition>
+        <argsstring>(UINT message, WPARAM wParam=0, LPARAM lParam=0)</argsstring>
+        <name>SendMessage</name>
+        <param>
+          <type>UINT</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="344" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="344" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1af96d0cdc596fdb10f98a63e223d320f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::PostMessage</definition>
+        <argsstring>(UINT message, WPARAM wParam=0, LPARAM lParam=0)</argsstring>
+        <name>PostMessage</name>
+        <param>
+          <type>UINT</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="350" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="350" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a3518257469568cec4fd68e44be81bc04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::SendNotifyMessage</definition>
+        <argsstring>(UINT message, WPARAM wParam=0, LPARAM lParam=0)</argsstring>
+        <name>SendNotifyMessage</name>
+        <param>
+          <type>UINT</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="356" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="356" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a0a29a4cf219a8b7cc5297efef0169107" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::SetWindowText</definition>
+        <argsstring>(LPCTSTR lpszString)</argsstring>
+        <name>SetWindowText</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpszString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="362" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="362" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1af7570ddbff8319b70d46e86573475497" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SNativeWnd::OnWindowTextChanged</definition>
+        <argsstring>(LPCTSTR lpszString)</argsstring>
+        <name>OnWindowTextChanged</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpszString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="373" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="373" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aed199e49e917057b28b71582bafc50f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::GetWindowText</definition>
+        <argsstring>(LPTSTR lpszStringBuf, int nMaxCount) const</argsstring>
+        <name>GetWindowText</name>
+        <param>
+          <type>LPTSTR</type>
+          <declname>lpszStringBuf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMaxCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="375" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="375" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a83a218aeaacf52718edd9da35109ca32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::IsIconic</definition>
+        <argsstring>() const</argsstring>
+        <name>IsIconic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="380" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="380" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a646008357eeb4cd2e97952777bd310d0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::IsZoomed</definition>
+        <argsstring>() const</argsstring>
+        <name>IsZoomed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="386" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="386" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a617b8bcc3ca353fb645578be4ea3ea42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::IsWindowVisible</definition>
+        <argsstring>() const</argsstring>
+        <name>IsWindowVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="392" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="392" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a0e69cf9276281073e379d42b7d69f3ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::MoveWindow</definition>
+        <argsstring>(int x, int y, int nWidth, int nHeight, BOOL bRepaint=TRUE)</argsstring>
+        <name>MoveWindow</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bRepaint</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="398" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="398" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a3c7b9c811f1b7716068ec6334b5f24af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::MoveWindow</definition>
+        <argsstring>(LPCRECT lpRect, BOOL bRepaint=TRUE)</argsstring>
+        <name>MoveWindow</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lpRect</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bRepaint</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="404" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="404" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a04eb888e46fa0aee64e5b78dea3793fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ShowWindow</definition>
+        <argsstring>(int nCmdShow)</argsstring>
+        <name>ShowWindow</name>
+        <param>
+          <type>int</type>
+          <declname>nCmdShow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="410" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="410" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a234b0318aaee60c3505008ee08d28e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SNativeWnd::SetWindowRgn</definition>
+        <argsstring>(HRGN hRgn, BOOL bRedraw=TRUE)</argsstring>
+        <name>SetWindowRgn</name>
+        <param>
+          <type>HRGN</type>
+          <declname>hRgn</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bRedraw</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="416" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="416" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1aa87a3067b96744a69bbc79756d6c98c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::SetLayeredWindowAttributes</definition>
+        <argsstring>(COLORREF crKey, BYTE bAlpha, DWORD dwFlags)</argsstring>
+        <name>SetLayeredWindowAttributes</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>crKey</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>bAlpha</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="422" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="422" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a033be00379ec5b66e58951293568eeff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::UpdateLayeredWindow</definition>
+        <argsstring>(HDC hdcDst, POINT *pptDst, SIZE *psize, HDC hdcSrc, POINT *pptSrc, COLORREF crKey, BLENDFUNCTION *pblend, DWORD dwFlags)</argsstring>
+        <name>UpdateLayeredWindow</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdcDst</declname>
+        </param>
+        <param>
+          <type>POINT *</type>
+          <declname>pptDst</declname>
+        </param>
+        <param>
+          <type>SIZE *</type>
+          <declname>psize</declname>
+        </param>
+        <param>
+          <type>HDC</type>
+          <declname>hdcSrc</declname>
+        </param>
+        <param>
+          <type>POINT *</type>
+          <declname>pptSrc</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crKey</declname>
+        </param>
+        <param>
+          <type>BLENDFUNCTION *</type>
+          <declname>pblend</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="428" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="428" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a8fd32a77fe171c5cf0cb869b25c79918" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SNativeWnd::DefWindowProc</definition>
+        <argsstring>()</argsstring>
+        <name>DefWindowProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="434" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="434" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a749459fa2001aec402580f5c7f26bdd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SNativeWnd::ForwardNotifications</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled)</argsstring>
+        <name>ForwardNotifications</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>BOOL &amp;</type>
+          <declname>bHandled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="442" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a97af1ea77880e227464f788ef22bb125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SNativeWnd::ReflectNotifications</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL &amp;bHandled)</argsstring>
+        <name>ReflectNotifications</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>BOOL &amp;</type>
+          <declname>bHandled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="443" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNativeWnd::ProcessWindowMessage</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT &amp;lResult, DWORD dwMsgMapID=0)</argsstring>
+        <name>ProcessWindowMessage</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_message_map_1a9cc26d80bf3cd524dadcffe762d64836">ProcessWindowMessage</reimplements>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>LRESULT &amp;</type>
+          <declname>lResult</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwMsgMapID</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="447" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="447" bodyend="450"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a352cb70ad8715456885410860b192353" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ATOM</type>
+        <definition>static ATOM SOUI::SNativeWnd::RegisterSimpleWnd</definition>
+        <argsstring>(HINSTANCE hInst, LPCTSTR pszSimpleWndName)</argsstring>
+        <name>RegisterSimpleWnd</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInst</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszSimpleWndName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="125" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a615774057963164100d331ccf289fa26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ATOM</type>
+        <definition>static ATOM SOUI::SNativeWnd::RegisterSimpleWnd2</definition>
+        <argsstring>(HINSTANCE hInst, LPCTSTR pszSimpleWndName)</argsstring>
+        <name>RegisterSimpleWnd2</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInst</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszSimpleWndName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="127" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a1f0a65ecd272743c10be1541c8933a88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SNativeWnd::DefaultReflectionHandler</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT &amp;lResult)</argsstring>
+        <name>DefaultReflectionHandler</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>LRESULT &amp;</type>
+          <declname>lResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="444" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a9e60c00d24fce32a433203d93024a775" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT</type>
+        <definition>LRESULT SOUI::SNativeWnd::DefWindowProc</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>DefWindowProc</name>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="452" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a4d8c7966c871ecc3fb59b88e5486fd8b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SNativeWnd::OnFinalMessage</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>OnFinalMessage</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tip_ctrl_1ae953dd83263bace4282c71ed3d20707a">OnFinalMessage</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_drop_down_wnd_1adee5ae34402c872bc47cf1da512ea9ba">OnFinalMessage</reimplementedby>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="454" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a81c229b200cf8c1f1704df3a42aab4bd" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>static LRESULT CALLBACK SOUI::SNativeWnd::WindowProc</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>WindowProc</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="462" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_native_wnd_1a3b01f11bf4a421168a050482805332bc" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>static LRESULT CALLBACK SOUI::SNativeWnd::StartWindowProc</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>StartWindowProc</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="466" column="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::SMenuODWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_o_d_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::STaskHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_task_handler"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SDragWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drag_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="120" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="119" bodyend="471"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae7db0c8539947cfbebbf5c874d09852f" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>CenterWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae76b040fb207bfe209a860d19fdc9f79" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a337dbb45781eee2d2f100fab68a9b714" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e2fd1ebc4ba0b4eb3f123e889577cf5" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1cac9ee1fed482a82bc26b77320fa9a7" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2216c31f08c5b63efe92da1c4f289643" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>CreateGrayCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af2717c6574ebd4356ecd8efe50a2d919" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>CreateSolidCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1f0a65ecd272743c10be1541c8933a88" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>DefaultReflectionHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8fd32a77fe171c5cf0cb869b25c79918" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9e60c00d24fce32a433203d93024a775" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1d439ec2538d347aed93d17cf8afee1c" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a749459fa2001aec402580f5c7f26bdd8" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ForwardNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9fd18bae24ae60bd68e984b9b64cdfd3" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae73894c2610e54aec010b508b963e2da" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetCurrentMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a85d734630f4c89d0273b1eb5d9fba5b8" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b9e971fe7e37ba7b4cb60341078caf5" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetDlgCtrlID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a931a0700fbea08b60bb1bf2a8e5a069e" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetExStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc75f72d1012125fbd2e073330434321" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81490884fd21d8c2b2167399fb6dc2ea" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a18fa87a0ee2bca6528b411fb616b5de9" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetWindowDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa0fbb768f0ed67e2e284d1ea049e08e4" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a546e9561847bec230bcd4f2c4c9bb6a3" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aed199e49e917057b28b71582bafc50f6" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab8ac1334d4061c837fb938adf63515cd" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>HideCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ade5b0055fbebcec7e2680b953ed9af12" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa32edae64de9d4bd96afa4f8b49b8bcc" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83a218aeaacf52718edd9da35109ca32" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>IsIconic</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afb4281f73bf3ef28477b60511fea4179" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>IsWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e1c170b3d93f295ec77051dfa0efded" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>IsWindowEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a617b8bcc3ca353fb645578be4ea3ea42" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>IsWindowVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a646008357eeb4cd2e97952777bd310d0" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>IsZoomed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afbdded6c7256009005b7f69e08ac79ea" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae481cfa8687a81ab3bfbedb25e8f66f4" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>m_bDestoryed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a00088e09d3601c253f658a7e1b7822b4" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>m_hWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a40129e803a175f7301dad2482be99bad" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>m_pCurrentMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9bfe94142ee6f297cff8bb591edf40cf" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>m_pfnSuperWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab1755d07793fd4ced829bc65a4d3c061" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>m_pThunk</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc6007ef2e9160ea3a5c114867f7d632" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a821292a06c4cad35e2bbed9f90559f7a" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aea08577c49fd9b5a03fa3e235720b527" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ModifyStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3a33ddbe2721ea01f49587e65fe57240" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ModifyStyleEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0e69cf9276281073e379d42b7d69f3ec" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3c7b9c811f1b7716068ec6334b5f24af" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a4d8c7966c871ecc3fb59b88e5486fd8b" prot="protected" virt="virtual"><scope>SOUI::SNativeWnd</scope><name>OnFinalMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af7570ddbff8319b70d46e86573475497" prot="public" virt="virtual"><scope>SOUI::SNativeWnd</scope><name>OnWindowTextChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af96d0cdc596fdb10f98a63e223d320f1" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>PostMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8" prot="public" virt="virtual"><scope>SOUI::SNativeWnd</scope><name>ProcessWindowMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a97af1ea77880e227464f788ef22bb125" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ReflectNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a352cb70ad8715456885410860b192353" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>RegisterSimpleWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a615774057963164100d331ccf289fa26" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>RegisterSimpleWnd2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83165461a89e3a4fa546259da63f467d" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ReleaseDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a92d18cbf51e670992d6d4d7d6b15e765" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81ee7ba311f5a9775cf8bb5a169afe9f" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0ef25c95c4a14516adf4326050d670d8" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3518257469568cec4fd68e44be81bc04" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SendNotifyMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a332d5ea6e6b7482b8c53ecb8dda79a8c" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a5583a5875191ef01acdb0bd14c531501" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa87a3067b96744a69bbc79756d6c98c2" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetLayeredWindowAttributes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a219e52660deeeac6ec4320ddd64e7840" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afad497321f8bc706ff4bf8fc68d414ea" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2622349ba0e4a73685334951253fe916" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af3ed1854d29222863e881620958c86fe" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetWindowPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a234b0318aaee60c3505008ee08d28e47" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0a29a4cf219a8b7cc5297efef0169107" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7b089d19a65c67f6263e88c7ed012200" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a04eb888e46fa0aee64e5b78dea3793fe" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>ShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a713a258605bd7f0b687bff54d822269f" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b01f11bf4a421168a050482805332bc" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>StartWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aedf20baf8bb1812ab1089c7c0a055fca" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>SubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a33c025619fedeada3d794b9f41a1a64b" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>UnsubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a033be00379ec5b66e58951293568eeff" prot="public" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>UpdateLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81c229b200cf8c1f1704df3a42aab4bd" prot="protected" virt="non-virtual"><scope>SOUI::SNativeWnd</scope><name>WindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ac2ada5966059755cd94787c2cdd66088" prot="public" virt="virtual"><scope>SOUI::SNativeWnd</scope><name>~SNativeWnd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

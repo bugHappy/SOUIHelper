@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_timeline_handler" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ITimelineHandler</compoundname>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_caret" prot="public" virt="non-virtual">SOUI::ICaret</derivedcompoundref>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_swnd_container" prot="public" virt="non-virtual">SOUI::ISwndContainer</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_animate_img_wnd" prot="public" virt="non-virtual">SOUI::SAnimateImgWnd</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_button" prot="public" virt="non-virtual">SOUI::SButton</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler" prot="public" virt="non-virtual">SOUI::SHostWnd::SHostAnimationHandler</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_scroll_bar_handler" prot="private" virt="non-virtual">SOUI::SScrollBarHandler</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_timerline_handler_mgr" prot="public" virt="non-virtual">SOUI::STimerlineHandlerMgr</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_value_animator" prot="private" virt="non-virtual">SOUI::SValueAnimator</derivedcompoundref>
+    <includes refid="_s_timeline_handler-i_8h" local="no">STimelineHandler-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITimelineHandler::OnNextFrame</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnNextFrame</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a7b9969d764f3235a9974721e2243c17f">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_handler_1aa20bf3ba8d6f28aab055c4b43cdff7a1">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_button_1a624c42568f4d4437e831c4b381ea9a32">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_animate_img_wnd_1a1a9a230195de92458d62b404af66c242">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a966a4283d706a6740d91b340754178dc">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a5951dbfb784d57608175887407d87721">OnNextFrame</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_value_animator_1a936e9b811653821fa8ba292f62fbaa31">OnNextFrame</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" line="14" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>时间轴处理接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>SOUI::SValueAnimator</label>
+        <link refid="class_s_o_u_i_1_1_s_value_animator"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SOUI::SHostWnd::SHostAnimationHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="3">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>SOUI::SScrollBarHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_scroll_bar_handler"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SOUI::SImageButton</label>
+        <link refid="class_s_o_u_i_1_1_s_image_button"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ICaret</label>
+        <link refid="struct_s_o_u_i_1_1_i_caret"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>SOUI::SButton</label>
+        <link refid="class_s_o_u_i_1_1_s_button"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SOUI::SAnimateImgWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_animate_img_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" line="13" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69" prot="public" virt="pure-virtual"><scope>SOUI::ITimelineHandler</scope><name>OnNextFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_menu_ex" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMenuEx</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_host_wnd" prot="protected" virt="non-virtual">SOUI::SHostWnd</basecompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_menu_ex_1adc4084bd7c50a1ed87d1eba72a6aa13c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SMenuExItem</definition>
+        <argsstring></argsstring>
+        <name>SMenuExItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="65" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_menu_ex_1a273e8362736c57c6dc7a3b8c8cccd82f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SMenuExRunData</definition>
+        <argsstring></argsstring>
+        <name>SMenuExRunData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="66" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_ex_1af89b726fce06dd3b12b651f786fbc0a5" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+        <definition>SMenuExItem* SOUI::SMenuEx::m_pParent</definition>
+        <argsstring></argsstring>
+        <name>m_pParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="133" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_ex_1a8a62caff027df603e8a05445307ba7cb" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+        <definition>SMenuExItem* SOUI::SMenuEx::m_pHoverItem</definition>
+        <argsstring></argsstring>
+        <name>m_pHoverItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="134" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_ex_1a4ea911dee4cb226b668ce8c67ae3f96d" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+        <definition>SMenuExItem* SOUI::SMenuEx::m_pCheckItem</definition>
+        <argsstring></argsstring>
+        <name>m_pCheckItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="135" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_ex_1a169be1a71f3c710337000b725c13e77b" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::m_bMenuInitialized</definition>
+        <argsstring></argsstring>
+        <name>m_bMenuInitialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="137" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_ex_1a5d4341095d8b7788cf41405d52ef2b7c" prot="protected" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND SOUI::SMenuEx::m_hParent</definition>
+        <argsstring></argsstring>
+        <name>m_hParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="138" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a5219bb955983bb1fd0a038e23525f8c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenuEx::SMenuEx</definition>
+        <argsstring>(void)</argsstring>
+        <name>SMenuEx</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="68" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a345f63c9c12552a9b96b32d205cce358" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SMenuEx::~SMenuEx</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SMenuEx</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="69" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a541b6657f8ca1c7f1578836d760f21ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::LoadMenu</definition>
+        <argsstring>(const SStringT &amp;strMenu, HWND hParent=NULL)</argsstring>
+        <name>LoadMenu</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strMenu</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hParent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a3d3aa6a040124736d79e24d93b248229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::LoadMenu</definition>
+        <argsstring>(pugi::xml_node xmlNode, HWND hParent=NULL)</argsstring>
+        <name>LoadMenu</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hParent</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="72" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a651db711a8faaf260ac299eccb2bc137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT</type>
+        <definition>UINT SOUI::SMenuEx::TrackPopupMenu</definition>
+        <argsstring>(UINT flag, int x, int y, HWND hOwner, int nScale=100)</argsstring>
+        <name>TrackPopupMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>flag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hOwner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="73" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1aa40f35f89ac645af7a7d1ef210b0610e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+        <definition>SMenuExItem* SOUI::SMenuEx::GetParentItem</definition>
+        <argsstring>()</argsstring>
+        <name>GetParentItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="76" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a367a48e3876bcabeea3b0f0d3980017f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex" kindref="compound">SMenuEx</ref> *</type>
+        <definition>SMenuEx* SOUI::SMenuEx::GetSubMenu</definition>
+        <argsstring>(int nID)</argsstring>
+        <name>GetSubMenu</name>
+        <param>
+          <type>int</type>
+          <declname>nID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="77" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a99bf17c6349882e604e2d04dc98ef551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+        <definition>SMenuExItem* SOUI::SMenuEx::GetMenuItem</definition>
+        <argsstring>(int nID)</argsstring>
+        <name>GetMenuItem</name>
+        <param>
+          <type>int</type>
+          <declname>nID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="78" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a1fbcbe886d6bed8793913fc5e032765e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SMenuEx::GetContextHelpId</definition>
+        <argsstring>() const</argsstring>
+        <name>GetContextHelpId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="80" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a2201ecc3995e45a4ef3d873968a70b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::SetContextHelpId</definition>
+        <argsstring>(DWORD dwId)</argsstring>
+        <name>SetContextHelpId</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="82" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1abeaa7531205484862075cea2976c86ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SMenuEx::GetParentWnd</definition>
+        <argsstring>()</argsstring>
+        <name>GetParentWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="84" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a2d78bac24d4b04765f5eed61a000ee2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::InsertMenu</definition>
+        <argsstring>(UINT uPos, UINT uFlag, int nId, LPCTSTR lpNewItem)</argsstring>
+        <name>InsertMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPos</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nId</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpNewItem</declname>
+        </param>
+        <briefdescription>
+<para>插入菜单项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>InsertMenu <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uPos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> 插入位置，-1代表append </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> uFlag, MF_BYPOSITION|MF_BYCOMMAND </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> menu id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lpNewItem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> menu string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL, true or false</para>
+</simplesect>
+Describe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="96" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1aa4a4251c7b5327cc0ece481ebfcf9ad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::DeleteMenu</definition>
+        <argsstring>(UINT uPos, UINT uFlag)</argsstring>
+        <name>DeleteMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPos</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="98" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a88ca3c9b98e50872b62bb493eb56e2b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::CheckMenuItem</definition>
+        <argsstring>(UINT uPos, UINT uFlag)</argsstring>
+        <name>CheckMenuItem</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPos</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="100" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a1a79d6238521ccbf1b088806ac1c1083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::CheckMenuRadioltem</definition>
+        <argsstring>(UINT idFirst, UINT idLast, UINT idCheck, UINT uFlags)</argsstring>
+        <name>CheckMenuRadioltem</name>
+        <param>
+          <type>UINT</type>
+          <declname>idFirst</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>idLast</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>idCheck</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="102" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a69639cd5cea1b3fb1098e55467c3d7d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMenuEx::ExitPopupMenu</definition>
+        <argsstring>(int nCmdId=0)</argsstring>
+        <name>ExitPopupMenu</name>
+        <param>
+          <type>int</type>
+          <declname>nCmdId</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="74" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a8ee7930792b8d36fa53dbdc7c418d339" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMenuEx::IniNullMenu</definition>
+        <argsstring>(SMenuExRoot *ParentRoot)</argsstring>
+        <name>IniNullMenu</name>
+        <param>
+          <type>SMenuExRoot *</type>
+          <declname>ParentRoot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="105" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1ab68b923c268321c4bc7c48595d5d327f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMenuEx::OnMouseActivate</definition>
+        <argsstring>(HWND wndTopLevel, UINT nHitTest, UINT message)</argsstring>
+        <name>OnMouseActivate</name>
+        <param>
+          <type>HWND</type>
+          <declname>wndTopLevel</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nHitTest</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="106" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a4c5f8cc1c4747dfa4f71e361845f6e1c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::OnTimer</definition>
+        <argsstring>(UINT_PTR timeID)</argsstring>
+        <name>OnTimer</name>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>timeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="107" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1ad69e6608e1770f04e8ebfa65970adc85" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::OnKeyDown</definition>
+        <argsstring>(UINT nChar, UINT nRepCnt, UINT nFlags)</argsstring>
+        <name>OnKeyDown</name>
+        <param>
+          <type>UINT</type>
+          <declname>nChar</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nRepCnt</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="108" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1aee4452eb27c0b0b7e0d4fe4ca2399075" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMenuEx::_HandleEvent</definition>
+        <argsstring>(EventArgs *pEvt)</argsstring>
+        <name>_HandleEvent</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_host_wnd_1a1863a13ed26429e0ec2d1d7bfa6ce69a">_HandleEvent</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="117" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1acf80ed653128ee3c3bf2e6c32b2a0770" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const SStringW &amp;</type>
+        <definition>virtual const SStringW&amp; SOUI::SMenuEx::GetTranslatorContext</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTranslatorContext</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_host_wnd_1a5c37666eea9033d3bf9a581facf2dc8e">GetTranslatorContext</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="118" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a2c7e8bb8fc7c814d7d32197bc9709e52" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SMenuEx::GetScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScale</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_host_wnd_1ae5b1ff51ec667d89974ccc380f3815ab">GetScale</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="119" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a53b77d1dc328b231acafbd039e1d755f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SMenuEx::FindItem</definition>
+        <argsstring>(UINT uPos, UINT uFlag)</argsstring>
+        <name>FindItem</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPos</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1ae440b687f805dd6b9cf8cb7e8bf9c80f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::ShowMenu</definition>
+        <argsstring>(UINT uFlag, int x, int y)</argsstring>
+        <name>ShowMenu</name>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="123" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a09cef68402be44f961b512b9ac0bf41f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::HideMenu</definition>
+        <argsstring>(BOOL bUncheckParentItem)</argsstring>
+        <name>HideMenu</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bUncheckParentItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="124" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1ae4d9693ccd15cce96e3003f2909f6268" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::HideSubMenu</definition>
+        <argsstring>()</argsstring>
+        <name>HideSubMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="125" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a99c74b38e3a1fda63874c7655246c52f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::RunMenu</definition>
+        <argsstring>(HWND hOwner)</argsstring>
+        <name>RunMenu</name>
+        <param>
+          <type>HWND</type>
+          <declname>hOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="126" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a53aedf10c326ffef1536d4d91ae2f1a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::PopupSubMenu</definition>
+        <argsstring>(SMenuExItem *pItem, BOOL bCheckFirstItem)</argsstring>
+        <name>PopupSubMenu</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bCheckFirstItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="128" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a3ce65365d4d2105208fab6b5fb22baac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::OnSubMenuHided</definition>
+        <argsstring>(BOOL bUncheckItem)</argsstring>
+        <name>OnSubMenuHided</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bUncheckItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="129" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1ae81e302ccd9349397f85952fdfc47f6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenuEx::SMenuEx</definition>
+        <argsstring>(SMenuExItem *pParent)</argsstring>
+        <name>SMenuEx</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_menu_ex_item" kindref="compound">SMenuExItem</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="131" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_ex_1a3f1d6b7f6760a4b54c9adb1a2f34afee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuEx::SendInitPopupMenu2Owner</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>SendInitPopupMenu2Owner</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="132" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>SOUI::IHostMsgHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_host_msg_handler"/>
+      </node>
+      <node id="9">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SObject</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="10">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="13">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="33">
+        <label>SOUI::IHostMsgHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_host_msg_handler"/>
+      </node>
+      <node id="28">
+        <label>IDropTarget</label>
+      </node>
+      <node id="9">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>m_pCheckItem</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pHoverItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>SOUI::SHostWnd::SHostAnimationHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>m_hostTransform</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_pHostWnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>SOUI::SDropTargetDispatcher</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_target_dispatcher"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="36">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SObject</label>
+      </node>
+      <node id="13">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="25">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="22">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_timelineHandlerMgr</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>m_dropTarget</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_focusMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="16">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="17">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="15">
+        <label>IObject</label>
+      </node>
+      <node id="11">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>m_hostAttr</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>m_hostAnimationHandler</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>m_pTipCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>SOUI::SHostWndAttr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_attr"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_szMin</edgelabel>
+          <edgelabel>m_rcMaxInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_strTitle</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="14">
+        <label>IObjRef</label>
+      </node>
+      <node id="10">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="12">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="19">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>SOUI::SMenuExItem</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex_item"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>m_pSubMenu</edgelabel>
+          <edgelabel>m_pOwnerMenu</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" line="64" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h" bodystart="63" bodyend="140"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4f7aec07b3d67d9334e9465ed8ced4db" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_ApplyMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a67b9fad46849fd5858bf23999569c784" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_BuildWndTreeZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1202e1e2d35caf0a3a02cc4b9d2cb196" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_ConvertRect2RenderRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad5a23edef9a18d53ab4cc9bf92b7b752" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a25923a14b45b2d129666b0f7d67b56f5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af6474657f02dd8876a05e33b9cd47c45" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_GetCurrentLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf0fe0bf79dfe169c68c135d749611cb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_GetMatrixEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1aee4452eb27c0b0b7e0d4fe4ca2399075" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>_HandleEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1af789d627027d90a47d86a71b286a7751" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7775b1fd4a7d25a2b68a64a759808a7a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_PaintChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ace0b4789c2b09715e797ac21560bd725" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_PaintClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88da487f3441bf790b533180d2947a54" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_PaintNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6acfef3a3ad982e4f2a4c549c52527b8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_PaintRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aa06ecaf94bd914dcc645c4483a238fef" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_Redraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adfa488cef4ca81f66b037e2cf5777be9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_RedrawNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8cb12684750c351c4f69814666dc6377" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_RestoreClickState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8f0dc8efaad35dfc7996383ce56dc64d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_Update</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a34c80c17e14ccbe762a044066b448b00" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_UpdateNonBkgndBlendSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a26db921236b404f711f9b43a55c57690" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>_WndRectInRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf9ef86a26d57a90a7f262a85e0d192f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>accNotifyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6f2cd6a7943d7bcbc5f172a5d1ca123d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>AdjustZOrder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e451823d77789563ba3b462c3d046d6" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>AfterAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a506f3491cb654b71c39a6985d4142a7d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>AfterPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a5694cfcf198fb94dd53e55e68db221c9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>AnimateHostWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2c86bf8485cd1d04efb81524449b3aef" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ATTR_CHAIN_PTR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9dd09cacdc43c7988b180857187094d9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ATTR_CUSTOM</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5acabc38c9b479799aae59fe98c67b16" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ATTR_SKIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aededc5119fb56461c8456069c95fba4c" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>BeforePaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1add4ffbe391168d83216ff0eeeb5f0f32" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>BeforePaintEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5905fa07378248c9d9a7ff9ad981028d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>BringWindowToTop</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a4967c01e3b8d3487ba6b9488b2e9d316" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>BuildWndTreeZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae7db0c8539947cfbebbf5c874d09852f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CenterWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a88ca3c9b98e50872b62bb493eb56e2b4" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CheckMenuItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a1a79d6238521ccbf1b088806ac1c1083" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CheckMenuRadioltem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8eb66d6e169a9feda53a7030ea4b872" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ClearAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1adab353c562088688aeb34aa97fc1fd0c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>clearTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae76b040fb207bfe209a860d19fdc9f79" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a337dbb45781eee2d2f100fab68a9b714" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a42531571c93877dac34c0b276ae48446" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a5a9bc78849215e87b12723811ce3f4c3" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e2fd1ebc4ba0b4eb3f123e889577cf5" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37061054c3dd68c100e94d09e28296a7" prot="protected" virt="virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1cac9ee1fed482a82bc26b77320fa9a7" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a632062c625df6e5cdc6ab5c8b66ac6f5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab24c41e701b99857cd33b15dcc20d6d8" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2216c31f08c5b63efe92da1c4f289643" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CreateGrayCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af2717c6574ebd4356ecd8efe50a2d919" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>CreateSolidCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a3322f57fac0c62e7520bcc41df6df9b3" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>CreateTooltip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3bb0f2cbf47eb477062b672ea63a78d7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DefAttributeProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a1f0a65ecd272743c10be1541c8933a88" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DefaultReflectionHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8fd32a77fe171c5cf0cb869b25c79918" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9e60c00d24fce32a433203d93024a775" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DefWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1aa4a4251c7b5327cc0ece481ebfcf9ad7" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DeleteMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d5846acd45d8685dfb9d74925118410" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DestroyChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a91c4a235d617690440a2387bdd80be7d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>DestroyTooltip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a074669b15b3d4aeca54b277ad37f7c7b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925af2bb91b743698b2dfc2147fa7dac8d05" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>dirty_child</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a00e8341bd64ad23992671c210ca85f0d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>dirty_clean</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a6f166895461bc7dde7f26b7fddf6914c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>dirty_self</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0d1c67bd321a29d73917ff226d61b590" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>DispatchPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aadfe4964cd88757d019229646c728ef3" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DoColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ab34020dd8f131001b839b3eaeb7b72dc" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>DoFrameEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abcb0e59dec10489ed133a8a2a57f42c6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>DrawDefFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a535465979865bafd55b5d7620ae7aa31" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>DrawFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa0f57e46cc741a284418625d3ceadd8" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>DrawText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ad13f23ad9c97a35cb73968d4d7808517" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>EnableIME</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac15fdc97bc52927fe40ae00531402f4c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>EnableWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a69639cd5cea1b3fb1098e55467c3d7d7" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ExitPopupMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ceb20cf5134305ae537d82438bffe41" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5b88c203f19039606ab8207acff911d7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5a5ab80a2410e009b64dff1efdf2036" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByID2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6cfff5bb97a100aa6b04479e22aa14e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a53f6211eb1c98d1a40e1343488eae3cf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a641ce730c844dedac014eec1233f6008" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad09240f7e2fb8ba8455eabec775f2b97" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a53b77d1dc328b231acafbd039e1d755f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FindItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a743238efbf7d1d7d5b450b6e4e1ffbf0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FireCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1b41ec792e70af4b5b84de961763fa52" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>FireCtxMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a74d1344ff872e4bfb6c1ba4ce3db9ad1" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a749459fa2001aec402580f5c7f26bdd8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ForwardNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1aa20afd521233e92fd9d610b346c73041" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>FrameToHost</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a810a975d429a1390d692282d36954e0d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetAcceleratorMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac273d06c46f686e7e2399dae59c5fd8f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a49b3abddf7dcdb5155fb66b6e4aa89" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab6d45c6c1f61b65ab944d9a4d62f1a4f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7163e835d29acc2d71227096edb37a5c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb36a9c7d1c51f792f6ec13ac724827e" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a0544d797f0eed085a1c7133e18216a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1acdc68933c4e9ae69f422bf2221978dcf" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a062794d497acb9696f3dcc4b9628bffe" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6be523a0e661a48989de4e8f365a1619" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad4d40b97eef06dc486e24f8a21bb101a" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetChildrenLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a2fa5236fb8c8a6429640e23eca64e6c1" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a91846f5b1a751e4667de2e2a123adb5c" prot="protected" virt="virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9fd18bae24ae60bd68e984b9b64cdfd3" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a158bb1db1271bdc6a57945252a044883" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetColorizeColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a168ce1a0daffa4f72f8aede1a78034e2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0b48463079ea404178ef9ecb1d4d22d6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1acae1f2dbda79233999c7b4427b099018" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetContainerRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a1fbcbe886d6bed8793913fc5e032765e" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetContextHelpId</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a17535f75280b4de8d67feb6e46b2fb1b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae73894c2610e54aec010b508b963e2da" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetCurrentMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a85d734630f4c89d0273b1eb5d9fba5b8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a67203f925ea9185f56ef92623638ee" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b9e971fe7e37ba7b4cb60341078caf5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetDlgCtrlID</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1abd800b014e00422c52aa4f0067aedd83" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetDropTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08fa72505378ac8295b1255177788935" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a931a0700fbea08b60bb1bf2a8e5a069e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetExStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ac769f40a493edddd8601a635837143c4" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a5ce8fdcf7425affd524fe95cfa8afdc2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetFocusManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a89fa5e673d8fbdc5375b62050e2b10f2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetHostAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1afcff8a14418a422b0379431d2db334fa" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetHostHwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1af1877762cbd74309e3e17604196ff94c" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab55ae205e8fd681ba9a3fcac1d931fdd" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a824d5cdd2ebd2483edae7493dc304b29" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad54c79e0dd91b7214ce0af9168e3e483" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a889297ad5c45b2a0c838d094e30e8322" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetLayoutParamT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a99bf17c6349882e604e2d04dc98ef551" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetMenuItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a4043726e77bbc9716254834862593a81" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1ce596c052ea27920e2ea6e8651928c5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ab662df91a90c2ca6bcea48d222addf61" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetNative</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4a96f19a6439a013b2c0481acb246c72" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetNextLayoutChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8816fcadb2c0a7c9e59aa20f1d295192" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ba6fd68b2bb1a06b47e4dbc68de17cb" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc75f72d1012125fbd2e073330434321" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1aa40f35f89ac645af7a7d1ef210b0610e" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetParentItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1abeaa7531205484862075cea2976c86ee" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetParentWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9957ff0e957f36b478ffe07685700e84" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aca2b8f7c11d6c0ac20baa4ade46c25d0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1abfa851e5a7b6c1b02886360b23e63f75" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetRoot</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a2c7e8bb8fc7c814d7d32197bc9709e52" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7fbfdc3d2482f5692a1ed2b6f1d156cc" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetScaleSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a3e5956845b970324b972f60228a0cbb0" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa15ef57dfa020a433684dcf08f0086b" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetSelectedChildInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a45f599b24be57fe843e569e94a168117" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetSelectedSiblingInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3165c225c9af63e49ff6daac52715cb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5da2e8ca27640844b3fc963a7166d38d" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a797a5d2427431bf870298174a25f47b2" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81490884fd21d8c2b2167399fb6dc2ea" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a367a48e3876bcabeea3b0f0d3980017f" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetSubMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2043e966fca57f2727a84da71791a001" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afee836ecfe282561f04fd489c85e73d7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetTextAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a701e0978b502b8a911d83b92104df353" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetTextRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae1f571400236ca53e29e05b9b850813d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eaace5eafbd001e7a966ac284202a71" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aec897a2bb2c6145b3f2edceb37948752" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetTopLevelParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af1a8444dab958c9565e0736060d00334" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1acf80ed653128ee3c3bf2e6c32b2a0770" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetTranslatorContext</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6aa61f8fd3852502d866087a08982f9d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa0591eab0c198fee236e6083af92c342" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eb7a1b0b03e7b2ab266bf046bff19c3" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a18fa87a0ee2bca6528b411fb616b5de9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetWindowDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa0fbb768f0ed67e2e284d1ea049e08e4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a2acfb123a0187c5732cf69c909174be6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8760f18f5c59ff1c2ba50da42c65fa1" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a546e9561847bec230bcd4f2c4c9bb6a3" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bae8c4270ddb40d9c79047d0819d567" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>GetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79998d91aef3049b514dc6fd0e6aa8bb" prot="protected" virt="virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aed199e49e917057b28b71582bafc50f6" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab8ac1334d4061c837fb938adf63515cd" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>HideCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a09cef68402be44f961b512b9ac0bf41f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>HideMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1ae4d9693ccd15cce96e3003f2909f6268" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>HideSubMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a8ee7930792b8d36fa53dbdc7c418d339" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IniNullMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a38041b81224be9eb3ad97d05396fac24" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>InitFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e81448460818325210cf5c2a830aa22" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>InsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a2d78bac24d4b04765f5eed61a000ee2d" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>InsertMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad9775f0384a21501de5a83d13aeddab7" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ade5b0055fbebcec7e2680b953ed9af12" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a077137f2773be5b376b56c7a14957d" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acfb3d670ef9ef7b672737e031faafc74" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa32edae64de9d4bd96afa4f8b49b8bcc" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a54e1d70e0345ca81cd9bd232742a6bdb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a86bb1d73a84c76647881e809bf2c040f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsChecked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6070bb0bef9660f7a840cc4f18fd219d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6da8af0fd7826625d6a7f20d29c9576" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsContainPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8c9a7b209eae739a4d57af5f65606db7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsDescendant</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe6e48aedcfaeef60f4d6ba588cb8221" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsDisabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a941f7d50672180da3ca41c73ea83b848" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae86fb10386208b133bda4dfae5bd2bd5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsDrawToCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab99d4da910a63fd1949a2f11260b2a4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8c57ee5e9c70e570ee97142b0313ffe" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aff78f3beb70ad95e8719b714ddac7328" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsFocused</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83a218aeaacf52718edd9da35109ca32" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsIconic</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a3cf23f7324d25ace1e8a19922735d8e9" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a635bfcb6349dda7110d7968a50275aec" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsLayoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ad6a56a890d2e1ba930373fb7d2b7fd85" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab820de4bcfb2895868e32052043a75ee" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a5f19eba66b3e3e222bfc42cfaedde801" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsSendWheel2Hover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a39eba5818d9356dd1ee8014a8a5d0cc7" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsSiblingsAutoGroupped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8c1798ccf4b0664d2ef4c5a48c3714f5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>IsTranslucent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a10708bf2d2ba3f47162a49cfd660a420" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsUpdateLocked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1864e76f4c2a2fab4ee883e25d9384bb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afb4281f73bf3ef28477b60511fea4179" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a8e1c170b3d93f295ec77051dfa0efded" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsWindowEnabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a617b8bcc3ca353fb645578be4ea3ea42" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsWindowVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a646008357eeb4cd2e97952777bd310d0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>IsZoomed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8055d84af3f5a46dc70297aef983107b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>KillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a280e0be509992b18084c166f3cdd463b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac215f33ea3dfa00b4f81cf80b5ce461e" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae5fe646db7bcd55266d15b927c92033f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>KillTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae2b07c2419f0c230fa6e4f700ed1fd5ca7ba3220f2cd1a095724f28235629dc28" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>kPulseInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae2b07c2419f0c230fa6e4f700ed1fd5ca8900cea0772f53f62b891408ca07a96e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>kPulseTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>LayoutDirtyType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a541b6657f8ca1c7f1578836d760f21ad" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>LoadMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a3d3aa6a040124736d79e24d93b248229" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>LoadMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79515e1475ac8696b90043b2bf18910e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>LockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d880d3ae6ffffccc7cf033e3dae8f88" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_animation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a6d921587888f3b70465f218a93613e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_animationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2ea7e7c73901e10fe6b7c6bd8165dd01" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_attrStorage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32bfb9aee220d68d2e839b095244fa8c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4846f2a7857cd35d65f474e743501247" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bCacheDraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af673ccecde4eb3e6276a28c1bc63c03b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ae481cfa8687a81ab3bfbedb25e8f66f4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bDestoryed</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af165bd7220b8816f818a988786c23080" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bDisable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a02980687f61228aebbfcf80749dca8eb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad3df6e93c63654a4037989ca350c41f0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bDrawFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abaad9c0ebc77bd4faa13d01739dfeef6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a00f55c6c822a1a72f442ce421501f5b8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1accee35d52c295a1b4b2fcaa7bf40eeb4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a169be1a71f3c710337000b725c13e77b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bMenuInitialized</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a80435f0e90b1db4ec28a7be652a97120" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab4c959e5240b734343c7d9fb20914c5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1adf07694fe6a688e9cc635716e4c78615" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bNcHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1abaf6cbcad7871f2585f620180ec17154" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bNeedAllRepaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a34e6a4efd1e7d3f396e25fa4754d42d7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bNeedRepaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a7c96efa950b21de4db73fe053178c8ff" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bRendering</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a10895dc49d9cd354055addd582beb55b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bResizing</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8a70696b9fa2d227e7307faa5a664342" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bTrackFlag</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4c7ff4974e210b645bc7a798893d26fb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a7d3a1b77b187f7290a3f439383685429" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_bZorderDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b184f526fe7bf42886168a344430012" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_cachedRT</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3dad3d40daa418696fc584c752aec90e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_caret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af47fea7cbc561e7c8821b61fefec741b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_clipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41763193b38a46b9a66a444931de86b2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_clipRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ab90746a315606b791fd698c633b896" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3d4dc2c8f62dacc737f36def144ba6bd" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_dropTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a5fe38c13aaee0918bba52f8744e380ea" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_dummyWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a36968b055add7746709d131e9e98a672" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_dwState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9403a80dd9dae0f9d00acd1c711fab2e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_evtSet</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a58a47ca34d987b18f88fc2ad2d376b34" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_focusMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a52179f8b4bf37546f97f2ccc4d0fa3b6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1af4d078b31db5435a262e9077493ee330" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a94431b314580565851cc88a7e9da1aa7" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hostAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a6699d7484054efd720e7d25133ad5d01" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hostAnimationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a39d57127f6a1da104b928e76d4a047ce" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hostAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a5d4341095d8b7788cf41405d52ef2b7c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a9002dcb9dd406cedc9b34c504c4aadca" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hSpyWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a00088e09d3601c253f658a7e1b7822b4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_hWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a507875bcaac23d34cd30c95324fd3d6d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_invalidRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ee1ab9f163c102070f96da71b08acec" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_isAnimating</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa234c501aa7108210984fbe906e74c10" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_isDestroying</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a730690734d265f51d2a69d0d220b0d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_layoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1aa70ab4b0b7b1029d34bb58490eb441e8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_lstTrackMouseEvtWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1add53be1758ae1f7aa2f5f4af1d03b9ef" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_lstUpdatedRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae4d0c33e53b922ed3098b29c74a69327" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_lstUpdateSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a81ef70737772da7ef3417ef83154a228" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_memRT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a7e2f32b118e3c53f5d24de3a103ffab0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_msgMouse</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a69a48f95c67f4bb873f93b88fbe0fc13" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nAutoSizing</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5c57effbbd1e2cb3c8c33eeac1457e26" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af0a9e017255444fd2d5529b5be24b2fe" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a57bc97feaee9e513b29e9f5ad6f64846" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nMaxWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aee2f31076b1d315d226c625629cbadb2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32798b93a37362d19c669779cce65545" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_nUpdateLockCnt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a22e05b34f42d57b86d719295de1f58dc" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pBgSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a4ea911dee4cb226b668ce8c67ae3f96d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pCheckItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88a23d232bd9cc301687cc5eb5edbf9c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8552d2e988d5e2e89be8bed2af4a560" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a40129e803a175f7301dad2482be99bad" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pCurrentMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a118446810afe249237d9e25f1378fa7b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pFirstChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a9bfe94142ee6f297cff8bb591edf40cf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pfnSuperWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6131c58a4ee43c9e9469b8dcb75fda92" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pGetRTData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a8a62caff027df603e8a05445307ba7cb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pHoverItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab9007baa36d9a89dd2f51a682fddfc6b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pLastChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f6eec303632698387fe7cd336b30d09" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f70befbe0b9f866b94de0cf52c22903" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aacc1f98bfba1141984fd40fd95e57615" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pNcSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1908afe346230e4995646f50b3e2fba6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pNextSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76ff6fb7f0329c12a5ddb8be1d1f3413" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1af89b726fce06dd3b12b651f786fbc0a5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab92ab823183150ab54a29a209cc7c965" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pPrevSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1adb342eb508eab651c06e658cfdc2d9ae" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_privateSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a0730a522178b2f6b107a4cdcafa37a99" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_privateStylePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a071640c7002f0514158c8c0716c062e8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_privateTemplatePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a38a29c5fcba7e68836e95ef38e4fe280" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ab1755d07793fd4ced829bc65a4d3c061" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pThunk</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aedcd4b91b6cd3157dff605aae5684619" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_pTipCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a1a7a095496334817ae236f459e148371" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_rgnInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aea8f9ff013cf7c2610d59d173cf19855" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a31bd9e5d19d2a6aa2181d37cf3bd09c3" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_strText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afd31d32e2e8b4752846146ae027de295" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_strToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab20f26f9a0e17ac1e88894de068876d9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a4f26c41d966bacb458a3336829948cd5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_strXmlLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abb6b3d37c77f4cf73a78637dadad523b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_style</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b3b11872efbd0bc73cb94003e51ffb4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_swnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a0e441afa04e2894630d2cc12e00f8aae" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_szAppSetted</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3c47b4117250ad263900a2bc3c72f2b0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_timelineHandlerMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a1cfd0deea0598efce21d791f3080bf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_transform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4ba4df406827d08c7a3fc974674b7ea1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_uData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae9cad19aadf0118ca14ff121d223f72e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>m_uZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1acc6007ef2e9160ea3a5c114867f7d632" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a821292a06c4cad35e2bbed9f90559f7a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>MapWindowPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeee48becf350c2abdeb7364b0e1fde8e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>MarkCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a5622b8eb893b8d8d443ad7b4649211cc" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>MarkWndTreeZorderDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a95d2c67b4af8e623fc3f8084a625060e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ModifyState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aea08577c49fd9b5a03fa3e235720b527" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ModifyStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3a33ddbe2721ea01f49587e65fe57240" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ModifyStyleEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6b53d030ac767195e1f041d18c1243fb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7987099b1b6eeaeb03894450f520ae34" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0e69cf9276281073e379d42b7d69f3ec" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3c7b9c811f1b7716068ec6334b5f24af" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>MoveWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac94a7a38467c2fcd7d9261d7f0e37139" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>NeedRedrawWhenStateChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aa34a23838663f8a45fa524f9e0b866cc" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a04045c8cc0e777fc5e607e240e81510a" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aa97340bba6647bde77f9bd1eb12dfd21" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnActivateApp</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a627f596d0b47c74a57c37d39718a2944" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnActivateApp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44be24fc2b43b41e0ce1a30121770479" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnAnimationInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a46df2971c566254d1a12bfae60633761" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa709922c42009ebefd75295097079fa" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnAnimationStop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a98ca0528efc0a748611b729ac37d7814" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3c8417580183b8251065b182ff14376" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aaeff70dea6b6b1f904ce3e7f3e76fbd6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3b1c375cfb3ea50d227f28c9ac792664" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06d3628182e1f6b05b91c18296fb74d8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c42e330309ffe2599d707d7e32e9f54" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06c368d196491184e1bbc3b42ad5451a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2fcb0714453179731d01d92f639b32ce" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5e9eb423d768b4f9e981b4504c5c70f1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a768e82033883ee2a1654b24a6552539f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a215c4a9bd488d3d93faa6f06c89edb44" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aad6b2db56568aa005e5d702284aa0166" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnAttrTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a50a84f14f310d1c8dfe5048005cd2178" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnCaptureChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ab7d47de5564e8dad1be536eda5d91ec8" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnCavasInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb396d00c1a676881a464ce7f4794c47" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdeb9825fcc7fee97121b8b636a554f3" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnContentChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a94ea7798a6afa1d0d6926007bf7a1269" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bd0e2e5d4827b2f0d7628b070fd5483" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae7d2d2471553fdb3e4bbd02df8e4cf4a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a48eec3b03f19d306a98eaf37341c3a53" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8b80e87dd7bff7ea92b16821acadc765" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a673aeaf6d12e09fcca6bd72771ae9c4b" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a4d8c7966c871ecc3fb59b88e5486fd8b" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnFinalMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a1b70d5c5ceb6f2ef600ca246caa2963b" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnFireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a53e4aa8cddeced123f712e3fe83b8333" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ada364c0850a4b32426d863959cb0488b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameKeyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3593bd2fd4508fdf5df976e58a0ba61b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a0af7745ff0b9e592ff7fbd296a1efe6e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a77d9feb10b1bce312525368284c361a5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1afeecc8657b05bbc3430db12f61915d76" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ae78db1f5ee7c343d678be383b0781b63" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnFrameSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1d52071628c938dd064b6765856f9be5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnGetDlgCode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a5c3e6e0b93aad92243e3e7a9678bd39e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnGetMinMaxInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1af8e2b6308fdd30183bd8e4f09f15c867" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnGetObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a54e4b1eced5ab9e09e36c694ec2418a7" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnGetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a9aee16b6a773846a6c5f6d0f3afa7251" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnGetSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ab83d7771222f269e4df7a632a08c028f" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnHostAnimationStarted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae971cfcf5632e83ba8174906c9c22a08" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnHostAnimationStoped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a2980e4f2c326ded61ea81c6ca33cf6e0" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnHostMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acef46d7eec198d15acf2292eaaf38528" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnInsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1ad69e6608e1770f04e8ebfa65970adc85" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a123a952eb770e97cda6431b02c03a7e6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnKeyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a201099252695c9e98699a410ca6e7f4b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afaf581a2fa62fc4633f75b4c0f777593" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a1abfa2c37a960774a7301c46cec5322a" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnLanguageChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdbcc55e9a2f42e68ac4c67aeeb1bcc1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7ec660b24eb2f74d4f63eef92d41d1da" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a904db0c14bc8cc58fda08107aa54f8c5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnLoadLayoutFromResourceID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ad2f0439d7b2a4ba21a62d6c58fdf19f4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMenuExEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1ab68b923c268321c4bc7c48595d5d327f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a3192fdc8c8162b45375fe6a8bc12e507" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a42a4184c1e3063a3bba246004e72fc8f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1af2185a4d9465eef0ad3bc10cdd3342ce" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a25f45345d5c850abf8c9f894b1529f4e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1af48413eaf70ebd7cc8f7221d17d10a0b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a6a8db6c49a2d11fad89ef2baa2e9cdc8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnNcActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8eaf134b386f15f80c743ab62ad59667" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnNcCalcSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6daa5f708da04f3e939fd5fe9b337a75" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7687154b8595554e4526d4f64edfa248" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a7b9969d764f3235a9974721e2243c17f" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnNextFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a17775910a33975a5b6dba4c8805a18d5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adb4a7fb11e83e39dab80811b359228c6" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1abc4ab2f3d6a9cd77510fd70c69f8fd0b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnPrint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aac5432e91f351e847e64bcf907c6cbd2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnRButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c2c1a2bba4560c6ea286e3b74997f2f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnRButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a24d68e1faa2511768f4734bc145ffd34" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnRebuildFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a409c25b5200eeec9ced908e951c44aab" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnRedraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa27217e295a1e1d0b9e281602eb15c57" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a49f34568b7939f05552a91bd4d51e147" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a00ab9ce4c83384ae33e4f48c418187e0" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnReleaseSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad98dfcb41ba176f535472c88bad90c08" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnRemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a53a4ac95cc5c7465d1c354f42c55e54e" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>onRootResize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a7a86489bbf3f90410b9068f919a2a12a" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnScaleChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a9f03510188f875aab8cff26c06142043" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnScriptTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6db7d982ba3777860fe90ce1cfee2b74" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSetColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a36f7f21caa18622af85239e331a31c28" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad471787523b5750321b0704726414314" prot="protected" virt="virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a2af7170b2bd15b729d018eeeb39153f8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b27995464abc2623e5bf6e570e075b4" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a75b84fc4334cbb4533408972b12e1fab" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSetLanguage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1abe11ceb96c2cb8c733e2ab06f04d4a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a8aa518e16c7b595e54edeb1e3c664bb6" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnSetSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a70e984d774e3b1787aea0959847e0d04" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnSetSwndFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeab02f42078e8c997452a1c56142d0e6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ae4859a30ae45a516bcc2e152402b1ccf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a098cfa19d2d19845f6a0c59200c3e910" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSpyMsgHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1afb9d468d7695532da55b9ab3f869bfcd" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSpyMsgSetSpy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1af3ed6de4a2cf2e483c289314fd92f817" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSpyMsgSwndEnum</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ab0e04db9cf3a4b8f82671700a28faedf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSpyMsgSwndSpy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44d2fcb3712aba89fee24a61c43ea460" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnStateChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37ce3a8cde6a6f2870fea58f76c75840" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnStateChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a3ce65365d4d2105208fab6b5fb22baac" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnSubMenuHided</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a4c5f8cc1c4747dfa4f71e361845f6e1c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08e308a374e9324c6203bedcd36e957d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnUpdateFloatPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f417fae345f4c8e8f89441f4a02c259" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnUpdateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adc7efe0aeb2f38ccba818e8c7d0ab010" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnUpdateToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aa4b6b55f19efb6d36981ec8081730977" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnUserXmlNode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a4cba078f571da8ec03147e81b01c2cdb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnWindowPosChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af7570ddbff8319b70d46e86573475497" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>OnWindowTextChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a81fa0941354caf87f2682427ecc7c86a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>OnWndNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a292bbaec718496b74a9438848faafff9" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PaintBackground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f33f680d2fdbf901dda6981a5c371f1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PaintForeground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1157a053b1289583666029d0c7c36b83" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PaintForeground2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8522762efbd9469c1564f180e1da86e4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PGETRTDATA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a53aedf10c326ffef1536d4d91ae2f1a0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PopupSubMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af96d0cdc596fdb10f98a63e223d320f1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>PostMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>ProcessWindowMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa40464c02efa982fa99867c026829c18" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>RedrawRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a97af1ea77880e227464f788ef22bb125" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ReflectNotifications</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a4d1494b7c32ff7289318ed7f13c02e7a" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>RegisterDragDrop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a352cb70ad8715456885410860b192353" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>RegisterSimpleWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a615774057963164100d331ccf289fa26" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>RegisterSimpleWnd2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aa610bb7c34f37071413223743d2151fb" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>RegisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a0e723785305dbd4cea320d26fdedbb5e" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>RegisterTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2d689bb3df90df8e535b4ab76d66df88" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ReleaseCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a83165461a89e3a4fa546259da63f467d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ReleaseDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a03b2cd92a9fa7c422028bef67c4868e0" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0b3c7e4c11cf70d017dff85691a90f5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>RemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a171d4f7d4ecb3c50cac04bd9a62acb44" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a423c5fc77e4bc49da6bfdccc252418fe" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a6dbd5e8af0c11f512ff8a149ebbd001d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>RevokeDragDrop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a99c74b38e3a1fda63874c7655246c52f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>RunMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a92d18cbf51e670992d6d4d7d6b15e765" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81ee7ba311f5a9775cf8bb5a169afe9f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4047a87e3950a60f90a5f756f3ece798" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SDispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a3f1d6b7f6760a4b54c9adb1a2f34afee" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SendInitPopupMenu2Owner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0ef25c95c4a14516adf4326050d670d8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3518257469568cec4fd68e44be81bc04" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SendNotifyMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ef77d3dc52e89dee5ee166a17d875e1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae7e13f473d81650a33fc71defe2387b4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf007ba4da0d1a0f77210db2682c5a4e" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a332d5ea6e6b7482b8c53ecb8dda79a8c" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe47e5e6fce61ae0593f273d4f4793c6" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>SetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad30625112b837bfd62f18e25dd7a5ac6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad26192c9d9acd51f9b52b958f7f9ff0c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetClipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8e7e73cbc7a38d86e593e343ccab1c82" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a2201ecc3995e45a4ef3d873968a70b1d" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetContextHelpId</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5110427bfa426316d896144a9375c87c" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a5583a5875191ef01acdb0bd14c531501" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a846d8d1b3ad191cd555ee161d8f2f1dc" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetHostAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac97abd6d65dd0bab67ece0c1eec39b9a" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1ab8e1bdda93c875bc8d0ffa16b3c68a5c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>setInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aa87a3067b96744a69bbc79756d6c98c2" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetLayeredWindowAttributes</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0975d08e87484a8ebf3718a8d268ebc5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8517636a84fb0b737455ddde63e1519e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a4db3a48ac66fc20b8657a5b24a9bfe24" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76010d050623dbcd7011fe7509a8d71b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac0d143c645c0a55d686940c48a425ddf" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a219e52660deeeac6ec4320ddd64e7840" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a96699f3fcee663358fe7d6ee1e347495" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>setTimeout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a15bc8f394e09d877bdf26dc37d397fe8" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a195ac5bec3b984b1a0167bcfaad42a39" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SMenuEx</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1afad497321f8bc706ff4bf8fc68d414ea" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7f99124f11ad80f37e4580c1e3a2f295" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a11c07193b1d917e7a9ba25f4adcea5ce" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>SetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a85cf0bd5b9cebb9154f061fc0e3a960e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae1e45461caedfa5ed443e0f5774959b5" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a2622349ba0e4a73685334951253fe916" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetWindowLongPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1af3ed1854d29222863e881620958c86fe" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SetWindowPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8beaccf8aa31e59a44838c0e0a5701e" prot="protected" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a234b0318aaee60c3505008ee08d28e47" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a224adc79b03beb66f55a25468b292ed0" prot="protected" virt="virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a0a29a4cf219a8b7cc5297efef0169107" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a858022d201a2c4b8d5ff50d6a14df475" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SHostWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a68dd4b179d424b676d17342aa6b5f262" prot="protected" virt="virtual" ambiguityscope="SOUI::"><scope>SOUI::SMenuEx</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a7b089d19a65c67f6263e88c7ed012200" prot="protected" virt="non-virtual" ambiguityscope="SOUI::SNativeWnd::"><scope>SOUI::SMenuEx</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1ae440b687f805dd6b9cf8cb7e8bf9c80f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ShowMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a04eb888e46fa0aee64e5b78dea3793fe" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>ShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a5219bb955983bb1fd0a038e23525f8c9" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SMenuEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1ae81e302ccd9349397f85952fdfc47f6c" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SMenuEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1adc4084bd7c50a1ed87d1eba72a6aa13c" prot="private" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SMenuExItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a273e8362736c57c6dc7a3b8c8cccd82f" prot="private" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SMenuExRunData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ae454c913bbbdc1cfdad7e1293c46793b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SMsgHandleState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a713a258605bd7f0b687bff54d822269f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a51e87f3d340ea7fd0149fc423979a46b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SSendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0449ad5f88983ce2a64568cb49e58fd" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>StartAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a3a844750b904914e0096f7bea8e6c9aa" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>StartHostAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a3b01f11bf4a421168a050482805332bc" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>StartWindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a7256b53e53c878385a7bae72ff0744e6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>StopHostAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1aedf20baf8bb1812ab1089c7c0a055fca" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a645cd258bbe5cebf25e79fde5f4bfbeb" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a9660859142b3740284f1c091f21df58e" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>SwndContainerImpl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa163d9e34d6e6def39b09cdb733289f2" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>SwndFromPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a99c3e101e01931c02ac6a1edb1f4d861" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>SwndProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5d32d519b7acc412dc014b0845fc8e96" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>TestMainThread</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3902d3332153936f258b756ea7fbdfb2" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a651db711a8faaf260ac299eccb2bc137" prot="public" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>TrackPopupMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac22b67d1562309587e4cc46087ad0ed6" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>TransformPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac2dd78f931b6f9d59b0ae530f5aa75b1" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>TransformPointEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad21ad32c5e2f6f9361212405fbd4c49b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UnlockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a1c274a5c049cff7f9be82eb0be547e1d" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UnregisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1acfc42fd96d581d8b098e2e53fe65372e" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UnregisterTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a33c025619fedeada3d794b9f41a1a64b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UnsubclassWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a69aaab65c41da6b1fb80c83f2d251f4f" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UpdateAutoSizeCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac3bdbb3244522318be542c08f619c053" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UpdateCacheMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aba50375cd77cfeb4361bf7cfe8327b4c" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UpdateChildrenPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1aec894db6180eb91e44abd28c587baa85" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UpdateHost</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a033be00379ec5b66e58951293568eeff" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UpdateLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a00c2275451a5a543af5b076337c0a55b" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>UpdateLayerFromRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1adbdc529b7e9e6877bc85a7884d51cdc5" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UpdateLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a02e647947e5f4866a9b5c6b50d35b762" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UpdateTooltip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a1dc60680086c0bab8b0d4a5afb9317a4" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>UpdateWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1a81c229b200cf8c1f1704df3a42aab4bd" prot="protected" virt="non-virtual"><scope>SOUI::SMenuEx</scope><name>WindowProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1a35af7d8e4e8bb2d5abddc01acff4d335" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>~SHostWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_ex_1a345f63c9c12552a9b96b32d205cce358" prot="public" virt="virtual"><scope>SOUI::SMenuEx</scope><name>~SMenuEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_native_wnd_1ac2ada5966059755cd94787c2cdd66088" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>~SNativeWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a73cf687f9a4862ab0768cfbde2dd86e4" prot="protected" virt="virtual"><scope>SOUI::SMenuEx</scope><name>~SWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

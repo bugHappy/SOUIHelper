@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_skin_pool_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SSkinPoolMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SSkinPoolMgr &gt;</basecompoundref>
+    <includes refid="_s_skin_pool_8h" local="no">SSkinPool.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a5817df6f6181f6a6142544430d8d9003" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> * &gt;</type>
+        <definition>SList&lt;SSkinPool *&gt; SOUI::SSkinPoolMgr::m_lstSkinPools</definition>
+        <argsstring></argsstring>
+        <name>m_lstSkinPools</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="208" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a212b6b5fc3a326a6ef53394202c5a6cc" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;SSkinPool&gt; SOUI::SSkinPoolMgr::m_bulitinSkinPool</definition>
+        <argsstring></argsstring>
+        <name>m_bulitinSkinPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="209" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a936df069b239fa46a1cbe6eebe77a18c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinPoolMgr::SSkinPoolMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SSkinPoolMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="157" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1af7f633c54faa04a24d9ab0711c0e7941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinPoolMgr::~SSkinPoolMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SSkinPoolMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="158" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a0b4e24cceb4a50d5fbaeab615d6a9273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::SSkinPoolMgr::GetSkin</definition>
+        <argsstring>(const SStringW &amp;strSkinName, int nScale)</argsstring>
+        <name>GetSkin</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strSkinName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+<para>获得与指定name匹配的SkinObj </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetSkin <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strSkinName <ndash/> Name of Skin Object <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ISkinObj* <ndash/> 找到的Skin Object Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="167" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a202a2d3179eb19639ad548867234e441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SSkinPoolMgr::PushSkinPool</definition>
+        <argsstring>(SSkinPool *pSkinPool)</argsstring>
+        <name>PushSkinPool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> *</type>
+          <declname>pSkinPool</declname>
+        </param>
+        <briefdescription>
+<para>向列表中增加一个新的SSkinPool对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PushSkinPool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pSkinPool <ndash/> SSkinPool对象 <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="176" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1af91a998105ff5ad3c83d75ce60d9f4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> *</type>
+        <definition>SSkinPool* SOUI::SSkinPoolMgr::PopSkinPool</definition>
+        <argsstring>(SSkinPool *pSkinPool)</argsstring>
+        <name>PopSkinPool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> *</type>
+          <declname>pSkinPool</declname>
+        </param>
+        <briefdescription>
+<para>弹出一个SSkinPool对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PopSkinPool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pSkinPool <ndash/> 准备弹出的SSkinPool对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> * 在列表中找到后弹出的SSkinPool对象 Describe 内建SkinPool不用调用PopSkinPool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="185" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1aa9830787534ee2732ff0bcc8b10ee57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::SSkinPoolMgr::GetBuiltinSkin</definition>
+        <argsstring>(SYS_SKIN uID, int nScale)</argsstring>
+        <name>GetBuiltinSkin</name>
+        <param>
+          <type>SYS_SKIN</type>
+          <declname>uID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+<para>获得SOUI系统内建的命名SkinObj </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetBuiltinSkin <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SYS_SKIN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uID <ndash/> 内建SKIN的ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> * 与SKINID对应的ISkinObj Describe 可能返回失败 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="194" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a5fd8e7d4ec2bf6a793c09d78192e120a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> *</type>
+        <definition>SSkinPool* SOUI::SSkinPoolMgr::GetBuiltinSkinPool</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuiltinSkinPool</name>
+        <briefdescription>
+<para>获得管理内建SkinPool对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetBuiltinSkinPool <simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> * <ndash/> 内建SkinPool指针 Describe 用户在代码中创建的SkinObj可以交给内建SkinPool管理 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="202" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_pool_mgr_1a467b3d3d6adca87b6d43eebb697f0452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SSkinPoolMgr::SetBuiltinSkinPool</definition>
+        <argsstring>(SSkinPool *pSkinPool)</argsstring>
+        <name>SetBuiltinSkinPool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_skin_pool" kindref="compound">SSkinPool</ref> *</type>
+          <declname>pSkinPool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="204" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" bodystart="204" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>管理一个name和ISkinObj的映射表的列表 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SSkinPoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinPoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SSkinPoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinPoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" line="154" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SSkinPool.h" bodystart="153" bodyend="211"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1aa9830787534ee2732ff0bcc8b10ee57e" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>GetBuiltinSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a5fd8e7d4ec2bf6a793c09d78192e120a" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>GetBuiltinSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a0b4e24cceb4a50d5fbaeab615d6a9273" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>GetSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a212b6b5fc3a326a6ef53394202c5a6cc" prot="protected" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>m_bulitinSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a5817df6f6181f6a6142544430d8d9003" prot="protected" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>m_lstSkinPools</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1af91a998105ff5ad3c83d75ce60d9f4de" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>PopSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a202a2d3179eb19639ad548867234e441" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>PushSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a467b3d3d6adca87b6d43eebb697f0452" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>SetBuiltinSkinPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1a936df069b239fa46a1cbe6eebe77a18c" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>SSkinPoolMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SSkinPoolMgr</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_pool_mgr_1af7f633c54faa04a24d9ab0711c0e7941" prot="public" virt="non-virtual"><scope>SOUI::SSkinPoolMgr</scope><name>~SSkinPoolMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

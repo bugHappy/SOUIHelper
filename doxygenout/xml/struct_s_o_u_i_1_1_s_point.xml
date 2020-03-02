@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_s_point" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::SPoint</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1f_point" prot="public" virt="non-virtual">SOUI::fPoint</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a1e23f26bed256764184a5e0de39b33fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>static SPoint SOUI::SPoint::Make</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>Make</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="17" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1abe8544a8979f9ed087c7f0634bd245aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>static SPoint SOUI::SPoint::IMake</definition>
+        <argsstring>(int32_t x, int32_t y)</argsstring>
+        <name>IMake</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="23" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a262230480c7d5f3e3c792884808bdf7d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>static SPoint SOUI::SPoint::IMake</definition>
+        <argsstring>(const POINT &amp;src)</argsstring>
+        <name>IMake</name>
+        <param>
+          <type>const POINT &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="30" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1ac394d5c3b7a56738d7f90c5cdacf1765" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float SOUI::SPoint::Length</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>Length</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the euclidian distance from (0,0) to (x,y) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="110" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1ac7d16f4f5b9cb98f32382bcedfa9eeb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float SOUI::SPoint::DotProduct</definition>
+        <argsstring>(const SPoint &amp;a, const SPoint &amp;b)</argsstring>
+        <name>DotProduct</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the dot product of a and b, treating them as 2D vectors </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="114" column="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a4aef52f64df8cf1f7f6c6afc692bbf79" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SPoint::x</definition>
+        <argsstring>() const</argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="37" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a8c88dc526db7616488b67b18f1cbef91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SPoint::y</definition>
+        <argsstring>() const</argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="38" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a182ddf484942424444820de645db5b44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SPoint::isZero</definition>
+        <argsstring>() const</argsstring>
+        <name>isZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true iff fX and fY are both zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="43" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a9842b1d22b0772459b6019307e73bab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPoint::set</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>set</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the point&apos;s X and Y coordinates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="46" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a2dc2c872a2954a3110708ba55241731a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPoint::iset</definition>
+        <argsstring>(int32_t x, int32_t y)</argsstring>
+        <name>iset</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the point&apos;s X and Y coordinates by automatically promoting (x,y) to float values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a0a744af8c057077dc807d8938bd6de01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPoint::iset</definition>
+        <argsstring>(const POINT &amp;p)</argsstring>
+        <name>iset</name>
+        <param>
+          <type>const POINT &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the point&apos;s X and Y coordinates by automatically promoting p&apos;s coordinates to float values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="56" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a940600808cdbcbbadb18f53e14c25a05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SPoint::length</definition>
+        <argsstring>() const</argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the euclidian distance from (0,0) to the point </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="60" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1ae8da551ec2903da4e668ac508f805e87" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>SPoint SOUI::SPoint::operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a new point whose coordinates are the negative of the point&apos;s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="63" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1aa05fb07c723fa467188444e1f77e5bc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPoint::operator+=</definition>
+        <argsstring>(const SPoint &amp;v)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add v&apos;s coordinates to the point&apos;s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="72" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a6da9a7996fd85e3cac1d31e01e678949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPoint::operator-=</definition>
+        <argsstring>(const SPoint &amp;v)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Subtract v&apos;s coordinates from the point&apos;s </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="79" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a0204f084d457ec81f60ce6e3e2691ccf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SPoint::dot</definition>
+        <argsstring>(const SPoint &amp;vec) const</argsstring>
+        <name>dot</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="116" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_point_1a52d9c68e7f355840eae89c8bee4ba4b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>POINT</type>
+        <definition>POINT SOUI::SPoint::toPoint</definition>
+        <argsstring>() const</argsstring>
+        <name>toPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="118" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_point_1ad0ef86bbf7ff86a3ad2dd306438e9c43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const SPoint &amp;a, const SPoint &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="84" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_point_1a32748f498173723b911e7a36335bad13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const SPoint &amp;a, const SPoint &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="88" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_point_1a8fd542fa349c60d5d11fd34f6ceef04d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>SPoint operator-</definition>
+        <argsstring>(const SPoint &amp;a, const SPoint &amp;b)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a new point whose coordinates are the difference between a&apos;s and b&apos;s (a - b) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="95" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="friend" id="struct_s_o_u_i_1_1_s_point_1abcb98d049a50c4e237d1b68d305c7531" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>SPoint operator+</definition>
+        <argsstring>(const SPoint &amp;a, const SPoint &amp;b)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a new point whose coordinates are the sum of a&apos;s and b&apos;s (a + b) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="103" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::fPoint</label>
+        <link refid="struct_s_o_u_i_1_1f_point"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SPoint</label>
+        <link refid="struct_s_o_u_i_1_1_s_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::fPoint</label>
+        <link refid="struct_s_o_u_i_1_1f_point"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SPoint</label>
+        <link refid="struct_s_o_u_i_1_1_s_point"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" line="16" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SPoint.h" bodystart="16" bodyend="119"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a0204f084d457ec81f60ce6e3e2691ccf" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>dot</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1ac7d16f4f5b9cb98f32382bcedfa9eeb4" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>DotProduct</name></member>
+      <member refid="struct_s_o_u_i_1_1f_point_1ada28ffedb08932a8b8351766a446d4ca" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>fX</name></member>
+      <member refid="struct_s_o_u_i_1_1f_point_1a67f2c0ee9a21ef788eb77620a4fba2dc" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>fY</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1abe8544a8979f9ed087c7f0634bd245aa" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>IMake</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a262230480c7d5f3e3c792884808bdf7d" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>IMake</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a2dc2c872a2954a3110708ba55241731a" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>iset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a0a744af8c057077dc807d8938bd6de01" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>iset</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a182ddf484942424444820de645db5b44" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>isZero</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a940600808cdbcbbadb18f53e14c25a05" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>length</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1ac394d5c3b7a56738d7f90c5cdacf1765" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>Length</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a1e23f26bed256764184a5e0de39b33fe" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>Make</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a32748f498173723b911e7a36335bad13" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator!=</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1abcb98d049a50c4e237d1b68d305c7531" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator+</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1aa05fb07c723fa467188444e1f77e5bc7" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator+=</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1ae8da551ec2903da4e668ac508f805e87" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator-</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a8fd542fa349c60d5d11fd34f6ceef04d" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator-</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a6da9a7996fd85e3cac1d31e01e678949" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator-=</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1ad0ef86bbf7ff86a3ad2dd306438e9c43" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>operator==</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a9842b1d22b0772459b6019307e73bab4" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>set</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a52d9c68e7f355840eae89c8bee4ba4b3" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>toPoint</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a4aef52f64df8cf1f7f6c6afc692bbf79" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>x</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_point_1a8c88dc526db7616488b67b18f1cbef91" prot="public" virt="non-virtual"><scope>SOUI::SPoint</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

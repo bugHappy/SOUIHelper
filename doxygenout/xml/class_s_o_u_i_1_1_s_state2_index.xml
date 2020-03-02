@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_state2_index" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SState2Index</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_state2_index_1a8ef41e09572cce4e82500f85f2942a07" prot="protected" static="no" mutable="no">
+        <type>SMap&lt; DWORD, int &gt;</type>
+        <definition>SMap&lt;DWORD,int&gt; SOUI::SState2Index::m_mapOfStates</definition>
+        <argsstring></argsstring>
+        <name>m_mapOfStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="23" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1a76b29dff744a5013f2872fe79e6098d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SState2Index::SState2Index</definition>
+        <argsstring>()</argsstring>
+        <name>SState2Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="12" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1a5afeeb986253a49194f05e0b646e6de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SState2Index::SState2Index</definition>
+        <argsstring>(const SState2Index &amp;src)</argsstring>
+        <name>SState2Index</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_state2_index" kindref="compound">SState2Index</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1afef98e500952bcc3679d26656fe629a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SState2Index::GetIndex</definition>
+        <argsstring>(DWORD dwState, bool checkAsPushdown) const</argsstring>
+        <name>GetIndex</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkAsPushdown</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="15" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1a1b76c11a71fde95dd15ef5f7b6f539ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SState2Index::Init</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="17" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1aa243ec8251dced8fa8461b051faf2238" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SOUI::SState2Index::GetDefIndex</definition>
+        <argsstring>(DWORD dwState, bool checkAsPushdown=false)</argsstring>
+        <name>GetDefIndex</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>checkAsPushdown</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="19" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_state2_index_1a50eb0b7726d2249b4238fb7b8e7aceef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>static DWORD SOUI::SState2Index::String2State</definition>
+        <argsstring>(const SStringW &amp;strState)</argsstring>
+        <name>String2State</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="21" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" line="10" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkinObjBase.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1aa243ec8251dced8fa8461b051faf2238" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>GetDefIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1afef98e500952bcc3679d26656fe629a7" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>GetIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1a1b76c11a71fde95dd15ef5f7b6f539ca" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1a8ef41e09572cce4e82500f85f2942a07" prot="protected" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>m_mapOfStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1a76b29dff744a5013f2872fe79e6098d0" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>SState2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1a5afeeb986253a49194f05e0b646e6de4" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>SState2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_state2_index_1a50eb0b7726d2249b4238fb7b8e7aceef" prot="public" virt="non-virtual"><scope>SOUI::SState2Index</scope><name>String2State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

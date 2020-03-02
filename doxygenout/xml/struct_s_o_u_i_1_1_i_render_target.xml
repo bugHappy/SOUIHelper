@@ -1,0 +1,1652 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_render_target" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IRenderTarget</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">SObject</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a246f6b91266a840e57893e7d37df5ace" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::CreateCompatibleRenderTarget</definition>
+        <argsstring>(SIZE szTarget, IRenderTarget **ppRenderTarget)=0</argsstring>
+        <name>CreateCompatibleRenderTarget</name>
+        <param>
+          <type>SIZE</type>
+          <declname>szTarget</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> **</type>
+          <declname>ppRenderTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1083" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a41efe9cb58aab91384014e141e4aa82e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::CreatePen</definition>
+        <argsstring>(int iStyle, COLORREF cr, int cWidth, IPen **ppPen)=0</argsstring>
+        <name>CreatePen</name>
+        <param>
+          <type>int</type>
+          <declname>iStyle</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cWidth</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_pen" kindref="compound">IPen</ref> **</type>
+          <declname>ppPen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1084" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a2090b5c256cec0da2e7819cd1c3857a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::CreateSolidColorBrush</definition>
+        <argsstring>(COLORREF cr, IBrush **ppBrush)=0</argsstring>
+        <name>CreateSolidColorBrush</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_brush" kindref="compound">IBrush</ref> **</type>
+          <declname>ppBrush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1085" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a537621fe8c321adf6f920ca6ce671a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::CreateBitmapBrush</definition>
+        <argsstring>(IBitmap *pBmp, IBrush **ppBrush)=0</argsstring>
+        <name>CreateBitmapBrush</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBmp</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_brush" kindref="compound">IBrush</ref> **</type>
+          <declname>ppBrush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1086" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a66cc8c87a7744c4c6307d605c806d713" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::CreateRegion</definition>
+        <argsstring>(IRegion **ppRegion)=0</argsstring>
+        <name>CreateRegion</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> **</type>
+          <declname>ppRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1087" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a97e5f58c6ccc73f21deb5b378b61e1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::Resize</definition>
+        <argsstring>(SIZE sz)=0</argsstring>
+        <name>Resize</name>
+        <param>
+          <type>SIZE</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1089" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1abc2bdd47f06827b9b51ed9a3f6008bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::OffsetViewportOrg</definition>
+        <argsstring>(int xOff, int yOff, LPPOINT lpPoint=NULL)=0</argsstring>
+        <name>OffsetViewportOrg</name>
+        <param>
+          <type>int</type>
+          <declname>xOff</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yOff</declname>
+        </param>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lpPoint</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1091" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a6cbb040fa7a96eaaaf4342ddec3f2502" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GetViewportOrg</definition>
+        <argsstring>(LPPOINT lpPoint)=0</argsstring>
+        <name>GetViewportOrg</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lpPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1092" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a230f9253753138d63369ecd045ff7efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SetViewportOrg</definition>
+        <argsstring>(POINT pt)=0</argsstring>
+        <name>SetViewportOrg</name>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1093" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a617a7a0191445ff66502273f0d8be4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PushClipRect</definition>
+        <argsstring>(LPCRECT pRect, UINT mode=RGN_AND)=0</argsstring>
+        <name>PushClipRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>mode</declname>
+          <defval>RGN_AND</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1095" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ab3244fee6d323f6a5c624f800781858b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PushClipRegion</definition>
+        <argsstring>(IRegion *pRegion, UINT mode=RGN_AND)=0</argsstring>
+        <name>PushClipRegion</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> *</type>
+          <declname>pRegion</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>mode</declname>
+          <defval>RGN_AND</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1096" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a3e0876f06758e75b16e3dd5340419935" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PopClip</definition>
+        <argsstring>()=0</argsstring>
+        <name>PopClip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1097" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1adcc5ff7c03e90d9939245d7443e7d088" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::ExcludeClipRect</definition>
+        <argsstring>(LPCRECT pRc)=0</argsstring>
+        <name>ExcludeClipRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1099" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1aac10d12f499ca1c211757dbcf00a114b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::IntersectClipRect</definition>
+        <argsstring>(LPCRECT pRc)=0</argsstring>
+        <name>IntersectClipRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1100" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a15567186a2d6816f1f22cb715fc52d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SaveClip</definition>
+        <argsstring>(int *pnState)=0</argsstring>
+        <name>SaveClip</name>
+        <param>
+          <type>int *</type>
+          <declname>pnState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1102" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ac39861ea012706c42e835aa60c008c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::RestoreClip</definition>
+        <argsstring>(int nState=-1)=0</argsstring>
+        <name>RestoreClip</name>
+        <param>
+          <type>int</type>
+          <declname>nState</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1103" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a1b6961846fd7fcbd4500d7980ad7b9d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GetClipRegion</definition>
+        <argsstring>(IRegion **ppRegion)=0</argsstring>
+        <name>GetClipRegion</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> **</type>
+          <declname>ppRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1105" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a60f542af22154f5464420a8ca294a8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GetClipBox</definition>
+        <argsstring>(LPRECT prc)=0</argsstring>
+        <name>GetClipBox</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>prc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1106" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a7390d3d19802de0b70c860ddcbc2d449" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawText</definition>
+        <argsstring>(LPCTSTR pszText, int cchLen, LPRECT pRc, UINT uFormat)=0</argsstring>
+        <name>DrawText</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cchLen</declname>
+        </param>
+        <param>
+          <type>LPRECT</type>
+          <declname>pRc</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1108" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ab0a667b960af3c502219f4944f3994d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::MeasureText</definition>
+        <argsstring>(LPCTSTR pszText, int cchLen, SIZE *psz)=0</argsstring>
+        <name>MeasureText</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cchLen</declname>
+        </param>
+        <param>
+          <type>SIZE *</type>
+          <declname>psz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1109" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a3ddcdbc8b0511e1a4be2392d06416983" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::TextOut</definition>
+        <argsstring>(int x, int y, LPCTSTR lpszString, int nCount)=0</argsstring>
+        <name>TextOut</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpszString</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1110" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a4cbd7558cdd0e2e0a985659aa51f152b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawRectangle</definition>
+        <argsstring>(LPCRECT pRect)=0</argsstring>
+        <name>DrawRectangle</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1112" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a9d69b3df32526c3d261a06f8ee318f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillRectangle</definition>
+        <argsstring>(LPCRECT pRect)=0</argsstring>
+        <name>FillRectangle</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1113" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1af04803e531626f4b8a07ad77cd716852" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillSolidRect</definition>
+        <argsstring>(LPCRECT pRect, COLORREF cr)=0</argsstring>
+        <name>FillSolidRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1114" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a8445052fb5742b30fc38d4af4c55cdf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawRoundRect</definition>
+        <argsstring>(LPCRECT pRect, POINT pt)=0</argsstring>
+        <name>DrawRoundRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1115" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1aeb43e289ceb7f8285b863985b7cdc069" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillRoundRect</definition>
+        <argsstring>(LPCRECT pRect, POINT pt)=0</argsstring>
+        <name>FillRoundRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1116" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a683956e015155c0c6407387097cf78bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillSolidRoundRect</definition>
+        <argsstring>(LPCRECT pRect, POINT pt, COLORREF cr)=0</argsstring>
+        <name>FillSolidRoundRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1117" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a0db0af2ba31c1c1820f381a425ea7756" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::ClearRect</definition>
+        <argsstring>(LPCRECT pRect, COLORREF cr)=0</argsstring>
+        <name>ClearRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1118" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a3b2d4c1ba616b72e488e29c750ff9708" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::InvertRect</definition>
+        <argsstring>(LPCRECT pRect)=0</argsstring>
+        <name>InvertRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1119" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a73ff8c80de937da6f1d5759a0ec1148c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawEllipse</definition>
+        <argsstring>(LPCRECT pRect)=0</argsstring>
+        <name>DrawEllipse</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1120" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a72dfe42cfaead6103bbf2778eca2534a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillEllipse</definition>
+        <argsstring>(LPCRECT pRect)=0</argsstring>
+        <name>FillEllipse</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1121" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ad1914f7c22342048c05040bd1b63aa60" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillSolidEllipse</definition>
+        <argsstring>(LPCRECT pRect, COLORREF cr)=0</argsstring>
+        <name>FillSolidEllipse</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1122" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a2d857bebc635438c4457110683824d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawArc</definition>
+        <argsstring>(LPCRECT pRect, float startAngle, float sweepAngle, bool useCenter)=0</argsstring>
+        <name>DrawArc</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sweepAngle</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useCenter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1124" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a985911844435b61a3fad4bbac7473138" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillArc</definition>
+        <argsstring>(LPCRECT pRect, float startAngle, float sweepAngle)=0</argsstring>
+        <name>FillArc</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sweepAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1125" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1afd90ec94a08fb31fc2a2a3ba474422a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawLines</definition>
+        <argsstring>(LPPOINT pPt, size_t nCount)=0</argsstring>
+        <name>DrawLines</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>pPt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1127" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a4ffefb403b571655c07d44eb1c5dcc98" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GradientFill</definition>
+        <argsstring>(LPCRECT pRect, BOOL bVert, COLORREF crBegin, COLORREF crEnd, BYTE byAlpha=0xFF)=0</argsstring>
+        <name>GradientFill</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crBegin</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crEnd</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1128" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a9acb0446846a4460a3c95bf9e9c7d372" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GradientFillEx</definition>
+        <argsstring>(LPCRECT pRect, const POINT *pts, COLORREF *colors, float *pos, int nCount, BYTE byAlpha=0xFF)=0</argsstring>
+        <name>GradientFillEx</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>const POINT *</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>COLORREF *</type>
+          <declname>colors</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCount</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1129" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a5311ddd3255e321013c47b21fb504804" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GradientFill2</definition>
+        <argsstring>(LPCRECT pRect, GradientType type, COLORREF crStart, COLORREF crCenter, COLORREF crEnd, float fLinearAngle, float fCenterX, float fCenterY, int nRadius, BYTE byAlpha=0xff)=0</argsstring>
+        <name>GradientFill2</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>GradientType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crStart</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crCenter</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crEnd</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fLinearAngle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fCenterX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fCenterY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nRadius</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xff</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1130" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a2b96abf8115264beea0ec17f11417b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawIconEx</definition>
+        <argsstring>(int xLeft, int yTop, HICON hIcon, int cxWidth, int cyWidth, UINT diFlags)=0</argsstring>
+        <name>DrawIconEx</name>
+        <param>
+          <type>int</type>
+          <declname>xLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>yTop</declname>
+        </param>
+        <param>
+          <type>HICON</type>
+          <declname>hIcon</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cxWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cyWidth</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>diFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1131" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a1db36d8a2d3d686c1c406519804cbf2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawBitmap</definition>
+        <argsstring>(LPCRECT pRcDest, IBitmap *pBitmap, int xSrc, int ySrc, BYTE byAlpha=0xFF)=0</argsstring>
+        <name>DrawBitmap</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcDest</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBitmap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xSrc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ySrc</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1132" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ae0c2f983fef4d0925d820657990e9f4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawBitmapEx</definition>
+        <argsstring>(LPCRECT pRcDest, IBitmap *pBitmap, LPCRECT pRcSrc, UINT expendMode, BYTE byAlpha=0xFF)=0</argsstring>
+        <name>DrawBitmapEx</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcDest</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBitmap</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcSrc</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>expendMode</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1133" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1aec91a02b0de3b1f8f0f04bcdb5973510" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawBitmap9Patch</definition>
+        <argsstring>(LPCRECT pRcDest, IBitmap *pBitmap, LPCRECT pRcSrc, LPCRECT pRcSourMargin, UINT expendMode, BYTE byAlpha=0xFF)=0</argsstring>
+        <name>DrawBitmap9Patch</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcDest</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBitmap</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcSrc</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcSourMargin</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>expendMode</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xFF</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1134" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a99c1cb7bb0b182e14c74339ffa361028" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::BitBlt</definition>
+        <argsstring>(LPCRECT pRcDest, IRenderTarget *pRTSour, int xSrc, int ySrc, DWORD dwRop=kSrcCopy)=0</argsstring>
+        <name>BitBlt</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcDest</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRTSour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xSrc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ySrc</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwRop</declname>
+          <defval>kSrcCopy</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1135" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1accb1870a77836f967935936e441c9e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::AlphaBlend</definition>
+        <argsstring>(LPCRECT pRcDest, IRenderTarget *pRTSrc, LPCRECT pRcSrc, BYTE byAlpha)=0</argsstring>
+        <name>AlphaBlend</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcDest</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRTSrc</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>pRcSrc</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1136" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a7611c5bf773e378b043a6afbe7db3264" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_render_obj" kindref="compound">IRenderObj</ref> *</type>
+        <definition>virtual IRenderObj* SOUI::IRenderTarget::GetCurrentObject</definition>
+        <argsstring>(OBJTYPE uType)=0</argsstring>
+        <name>GetCurrentObject</name>
+        <param>
+          <type>OBJTYPE</type>
+          <declname>uType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1137" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a75eb5fb4cf464d8e4ac018fd0a480948" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SelectDefaultObject</definition>
+        <argsstring>(OBJTYPE objType, IRenderObj **pOldObj=NULL)=0</argsstring>
+        <name>SelectDefaultObject</name>
+        <param>
+          <type>OBJTYPE</type>
+          <declname>objType</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_obj" kindref="compound">IRenderObj</ref> **</type>
+          <declname>pOldObj</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1139" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ad553ffef7a554ab18e5b9ea795f7ecc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SelectObject</definition>
+        <argsstring>(IRenderObj *pObj, IRenderObj **pOldObj=NULL)=0</argsstring>
+        <name>SelectObject</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_obj" kindref="compound">IRenderObj</ref> *</type>
+          <declname>pObj</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_obj" kindref="compound">IRenderObj</ref> **</type>
+          <declname>pOldObj</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1140" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ac99d7c2b31f5164058977806a9d15061" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>COLORREF</type>
+        <definition>virtual COLORREF SOUI::IRenderTarget::GetTextColor</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetTextColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1141" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a6d63b5726e05d2d9f89ec61f76065841" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>COLORREF</type>
+        <definition>virtual COLORREF SOUI::IRenderTarget::SetTextColor</definition>
+        <argsstring>(COLORREF color)=0</argsstring>
+        <name>SetTextColor</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1142" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a8829d58a6ba65b88df091498fdf0b1ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HDC</type>
+        <definition>virtual HDC SOUI::IRenderTarget::GetDC</definition>
+        <argsstring>(UINT uFlag=0)=0</argsstring>
+        <name>GetDC</name>
+        <param>
+          <type>UINT</type>
+          <declname>uFlag</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1145" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1aac5f703dd00b64678503bcc6f62aff80" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRenderTarget::ReleaseDC</definition>
+        <argsstring>(HDC hdc)=0</argsstring>
+        <name>ReleaseDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1146" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a2af8d1a8ef7161de68f9b05374bdd220" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SetTransform</definition>
+        <argsstring>(const float matrix[9], float oldMatrix[9]=NULL)=0</argsstring>
+        <name>SetTransform</name>
+        <param>
+          <type>const float</type>
+          <declname>matrix</declname>
+          <array>[9]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>oldMatrix</declname>
+          <array>[9]</array>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>设置坐标变换矩阵 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetTransform <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_ix_form" kindref="compound">IxForm</ref> * pXForm <ndash/> 3*3变换矩阵 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_ix_form" kindref="compound">IxForm</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pOldXFrom <ndash/> 原变换矩阵 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1157" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a5192e916ba90cbe068c36136aac8946a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::GetTransform</definition>
+        <argsstring>(float matrix[9]) const =0</argsstring>
+        <name>GetTransform</name>
+        <param>
+          <type>float</type>
+          <declname>matrix</declname>
+          <array>[9]</array>
+        </param>
+        <briefdescription>
+<para>获取当前坐标变换矩阵 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetTransform <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_ix_form" kindref="compound">IxForm</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pXForm <ndash/> 2*3变换矩阵 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> 成功返回S_OK</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1167" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a29437c9fe72fc22cbe9d33a5e334808f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>COLORREF</type>
+        <definition>virtual COLORREF SOUI::IRenderTarget::GetPixel</definition>
+        <argsstring>(int x, int y)=0</argsstring>
+        <name>GetPixel</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>获取指定像素颜色值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetPixel <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x <ndash/> x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y <ndash/> y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>COLORREF <ndash/> 像素颜色值</para>
+</simplesect>
+Describe 和::GetPixel一致 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1179" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a73d204a358596c2c5c2cdaf983f9597f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>COLORREF</type>
+        <definition>virtual COLORREF SOUI::IRenderTarget::SetPixel</definition>
+        <argsstring>(int x, int y, COLORREF cr)=0</argsstring>
+        <name>SetPixel</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>设置指定像素颜色值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetPixel <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x <ndash/> x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y <ndash/> y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>COLORREF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cr <ndash/> 设置的颜色值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>COLORREF <ndash/> 原像素颜色值</para>
+</simplesect>
+Describe 和::SetPixel一致 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1191" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1ab50de853f46972cc3860a6a2a2b2d2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PushClipPath</definition>
+        <argsstring>(const IPath *path, UINT mode, bool doAntiAlias=false)=0</argsstring>
+        <name>PushClipPath</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doAntiAlias</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modify the current clip with the specified path. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to combine with the current clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region op to apply to the current clip </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doAntiAlias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if the clip should be anti aliased </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1199" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a3f42541605ffab818e327c444c66a409" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::DrawPath</definition>
+        <argsstring>(const IPath *path, IPathEffect *pathEffect=NULL)=0</argsstring>
+        <name>DrawPath</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_effect" kindref="compound">IPathEffect</ref> *</type>
+          <declname>pathEffect</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw the specified path frame using current selected pen <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to be drawn </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1204" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a552176e949b13d1b75787cd0f5de4d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::FillPath</definition>
+        <argsstring>(const IPath *path)=0</argsstring>
+        <name>FillPath</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill the specified path frame using current selected brush <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to be drawn </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1209" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1aa0047dbdaf48d635066d016fa5f72ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PushLayer</definition>
+        <argsstring>(const RECT *pRect, BYTE byAlpha=0xff)=0</argsstring>
+        <name>PushLayer</name>
+        <param>
+          <type>const RECT *</type>
+          <declname>pRect</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+          <defval>0xff</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This behaves the same as save(), but in addition it allocates an offscreen bitmap. All drawing calls are directed there, and only when the balancing call to restore() is made is that offscreen transfered to the canvas (or the previous layer). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(may be null) This rect, if non-null, is used as a hint to limit the size of the offscreen, and thus drawing may be clipped to it, though that clipping is not guaranteed to happen. If exact clipping is desired, use clipRect(). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is applied to the offscreen when restore() is called. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value to pass to restoreToCount() to balance this save() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1222" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1af5934b5f3b0e6fff0e90e2e6457cf4dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::PopLayer</definition>
+        <argsstring>()=0</argsstring>
+        <name>PopLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1224" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_target_1a2f1d46b5715312094d7522c6b0b4c906" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IRenderTarget::SetXfermode</definition>
+        <argsstring>(int mode, int *pOldMode=NULL)=0</argsstring>
+        <name>SetXfermode</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pOldMode</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1226" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RenderTarget对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 实现各位渲染接口并创建设备相关资源 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IRenderTarget</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_target"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IRenderTarget</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_target"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="1082" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="1081" bodyend="1227"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1accb1870a77836f967935936e441c9e8d" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>AlphaBlend</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a99c1cb7bb0b182e14c74339ffa361028" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>BitBlt</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a0db0af2ba31c1c1820f381a425ea7756" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>ClearRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a537621fe8c321adf6f920ca6ce671a37" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>CreateBitmapBrush</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a246f6b91266a840e57893e7d37df5ace" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>CreateCompatibleRenderTarget</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a41efe9cb58aab91384014e141e4aa82e" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>CreatePen</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a66cc8c87a7744c4c6307d605c806d713" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>CreateRegion</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a2090b5c256cec0da2e7819cd1c3857a9" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>CreateSolidColorBrush</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a2d857bebc635438c4457110683824d99" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawArc</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a1db36d8a2d3d686c1c406519804cbf2c" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawBitmap</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1aec91a02b0de3b1f8f0f04bcdb5973510" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawBitmap9Patch</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ae0c2f983fef4d0925d820657990e9f4c" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawBitmapEx</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a73ff8c80de937da6f1d5759a0ec1148c" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawEllipse</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a2b96abf8115264beea0ec17f11417b03" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawIconEx</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1afd90ec94a08fb31fc2a2a3ba474422a4" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawLines</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a3f42541605ffab818e327c444c66a409" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a4cbd7558cdd0e2e0a985659aa51f152b" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawRectangle</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a8445052fb5742b30fc38d4af4c55cdf8" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a7390d3d19802de0b70c860ddcbc2d449" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>DrawText</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1adcc5ff7c03e90d9939245d7443e7d088" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>ExcludeClipRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a985911844435b61a3fad4bbac7473138" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillArc</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a72dfe42cfaead6103bbf2778eca2534a" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillEllipse</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a552176e949b13d1b75787cd0f5de4d52" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a9d69b3df32526c3d261a06f8ee318f43" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillRectangle</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1aeb43e289ceb7f8285b863985b7cdc069" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ad1914f7c22342048c05040bd1b63aa60" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillSolidEllipse</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1af04803e531626f4b8a07ad77cd716852" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillSolidRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a683956e015155c0c6407387097cf78bb" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>FillSolidRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a60f542af22154f5464420a8ca294a8b3" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetClipBox</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a1b6961846fd7fcbd4500d7980ad7b9d6" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetClipRegion</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a7611c5bf773e378b043a6afbe7db3264" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetCurrentObject</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a8829d58a6ba65b88df091498fdf0b1ce" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetDC</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a29437c9fe72fc22cbe9d33a5e334808f" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetPixel</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ac99d7c2b31f5164058977806a9d15061" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetTextColor</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a5192e916ba90cbe068c36136aac8946a" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetTransform</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a6cbb040fa7a96eaaaf4342ddec3f2502" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GetViewportOrg</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a4ffefb403b571655c07d44eb1c5dcc98" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GradientFill</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a5311ddd3255e321013c47b21fb504804" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GradientFill2</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a9acb0446846a4460a3c95bf9e9c7d372" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>GradientFillEx</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1aac10d12f499ca1c211757dbcf00a114b" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>IntersectClipRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a3b2d4c1ba616b72e488e29c750ff9708" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>InvertRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ab0a667b960af3c502219f4944f3994d1" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>MeasureText</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1abc2bdd47f06827b9b51ed9a3f6008bdc" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>OffsetViewportOrg</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a3e0876f06758e75b16e3dd5340419935" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PopClip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1af5934b5f3b0e6fff0e90e2e6457cf4dc" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PopLayer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ab50de853f46972cc3860a6a2a2b2d2f3" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PushClipPath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a617a7a0191445ff66502273f0d8be4c8" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PushClipRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ab3244fee6d323f6a5c624f800781858b" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PushClipRegion</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1aa0047dbdaf48d635066d016fa5f72ae5" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>PushLayer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1aac5f703dd00b64678503bcc6f62aff80" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>ReleaseDC</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a97e5f58c6ccc73f21deb5b378b61e1d8" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>Resize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ac39861ea012706c42e835aa60c008c73" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>RestoreClip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a15567186a2d6816f1f22cb715fc52d2d" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SaveClip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a75eb5fb4cf464d8e4ac018fd0a480948" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SelectDefaultObject</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1ad553ffef7a554ab18e5b9ea795f7ecc1" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SelectObject</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a73d204a358596c2c5c2cdaf983f9597f" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SetPixel</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a6d63b5726e05d2d9f89ec61f76065841" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SetTextColor</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a2af8d1a8ef7161de68f9b05374bdd220" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SetTransform</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a230f9253753138d63369ecd045ff7efb" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SetViewportOrg</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a2f1d46b5715312094d7522c6b0b4c906" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>SetXfermode</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_target_1a3ddcdbc8b0511e1a4be2392d06416983" prot="public" virt="pure-virtual"><scope>SOUI::IRenderTarget</scope><name>TextOut</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

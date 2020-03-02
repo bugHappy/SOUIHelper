@@ -1,0 +1,1747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_header_ctrl" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SHeaderCtrl</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_window" prot="public" virt="non-virtual">SOUI::SWindow</basecompoundref>
+    <includes refid="_s_header_ctrl_8h" local="no">SHeaderCtrl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_header_ctrl_1ab987f01f5e1d98cb25448eba2f9c6541" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@3</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_header_ctrl_1ab987f01f5e1d98cb25448eba2f9c6541a7467d3f1381845eb3ed1b9969ac1ba76" prot="private">
+          <name>MARGIN_ADJUST_ENABLE</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_header_ctrl_1ab987f01f5e1d98cb25448eba2f9c6541a9ffa878744a288fa9902fce055d61611" prot="private">
+          <name>MARGIN_ADJUST_DISABLE</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="69" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1a341f41fb35525ea8e1b1b9d332dd2e76" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::SHeaderCtrl::m_pSkinItem</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>表头绘制Skin </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="336" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1a30c936544ddc349f7d9f37cc3b494008" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::SHeaderCtrl::m_pSkinSort</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>排序标志Skin </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="337" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1a2be3e9b212f8860ef20104d5dea12371" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::m_bSortHeader</definition>
+        <argsstring></argsstring>
+        <name>m_bSortHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>表头可以点击排序 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="338" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1af7dccd01c1053e1e9802f93e0b5eb2a7" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::m_bFixWidth</definition>
+        <argsstring></argsstring>
+        <name>m_bFixWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>表项宽度固定开关 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="339" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1a0e7ba95d100d447744a6435fa5662379" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::m_bItemSwapEnable</definition>
+        <argsstring></argsstring>
+        <name>m_bItemSwapEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>允许拖动调整位置开关 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="340" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ac130e33029ad2e1ea68c4d45a1e31853" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::m_bDragging</definition>
+        <argsstring></argsstring>
+        <name>m_bDragging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>正在拖动标志 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="342" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ae94acd63437c6cd98d686438b2af0348" prot="protected" static="no" mutable="no">
+        <type>HBITMAP</type>
+        <definition>HBITMAP SOUI::SHeaderCtrl::m_hDragImg</definition>
+        <argsstring></argsstring>
+        <name>m_hDragImg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>显示拖动窗口的临时位图 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="343" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ad47d81ccf99b349d07c4df0d324eea8a" prot="protected" static="no" mutable="no">
+        <type>CPoint</type>
+        <definition>CPoint SOUI::SHeaderCtrl::m_ptClick</definition>
+        <argsstring></argsstring>
+        <name>m_ptClick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>当前点击坐标 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="344" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ac99340230e2b01b1ae252702d775cf2c" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHeaderCtrl::m_dwHitTest</definition>
+        <argsstring></argsstring>
+        <name>m_dwHitTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>鼠标位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="345" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ae1e76dae434d4e842e7bf9f12e45619a" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHeaderCtrl::m_dwDragTo</definition>
+        <argsstring></argsstring>
+        <name>m_dwDragTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>拖放目标 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="346" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1a4a49455ebc661e3c5afa855889464d1c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::m_nAdjItemOldWidth</definition>
+        <argsstring></argsstring>
+        <name>m_nAdjItemOldWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>保存被拖动项的原始宽度 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="347" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1aeb28aea96f2763779b6ffd7007c85073" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1_s_h_d_i_t_e_m" kindref="compound">SHDITEM</ref> &gt;</type>
+        <definition>SArray&lt;SHDITEM&gt; SOUI::SHeaderCtrl::m_arrItems</definition>
+        <argsstring></argsstring>
+        <name>m_arrItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>列表项集合 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="348" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_header_ctrl_1ad2bd84d39011bb60e7ede964443348c3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::m_nScale</definition>
+        <argsstring></argsstring>
+        <name>m_nScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current Scale </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="349" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a48d99757a7fc8d4c5374d3a032ff5d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHeaderCtrl::SHeaderCtrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>SHeaderCtrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a48d99757a7fc8d4c5374d3a032ff5d05" kindref="member">SHeaderCtrl::SHeaderCtrl</ref> Describe 构造函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="80" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1adc1252142148973c7de59a3b5249c2a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHeaderCtrl::~SHeaderCtrl</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SHeaderCtrl</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1adc1252142148973c7de59a3b5249c2a1" kindref="member">SHeaderCtrl::~SHeaderCtrl</ref> Describe 析构函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="87" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a01fe1281ae773703c002775b942aeb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::InsertItem</definition>
+        <argsstring>(int iItem, LPCTSTR pszText, int nWidth, SHDSORTFLAG stFlag, LPARAM lParam)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>SHDSORTFLAG</type>
+          <declname>stFlag</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>插入新项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a01fe1281ae773703c002775b942aeb0c" kindref="member">SHeaderCtrl::InsertItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 新项索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszText <ndash/> 新项标题 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nWidth <ndash/> 宽度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>SHDSORTFLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stFlag <ndash/> 排序标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lParam <ndash/> 附加参数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 插入新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="101" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a05bb3dea056a83f6160573692684be66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::InsertItem</definition>
+        <argsstring>(int iItem, LPCTSTR pszText, int nWidth, SLayoutSize::Unit unit, SHDSORTFLAG stFlag, LPARAM lParam)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszText</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>SLayoutSize::Unit</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>SHDSORTFLAG</type>
+          <declname>stFlag</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="102" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a017706a5ae823cd9ce3981dce06591af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::GetItem</definition>
+        <argsstring>(int iItem, SHDITEM *pItem) const</argsstring>
+        <name>GetItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_h_d_i_t_e_m" kindref="compound">SHDITEM</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+<para>获得新项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a017706a5ae823cd9ce3981dce06591af" kindref="member">SHeaderCtrl::GetItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_s_h_d_i_t_e_m" kindref="compound">SHDITEM</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pItem <ndash/> 返回列表项结构 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 获得新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="112" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a176aabef77c779a530d5695fad5dba72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::SetItem</definition>
+        <argsstring>(int iItem, const SHDITEM *pItem)</argsstring>
+        <name>SetItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_h_d_i_t_e_m" kindref="compound">SHDITEM</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="114" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1ade63b780c80834a99b239aaa986167c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SOUI::SHeaderCtrl::GetItemCount</definition>
+        <argsstring>() const</argsstring>
+        <name>GetItemCount</name>
+        <briefdescription>
+<para>获取列表项个数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1ade63b780c80834a99b239aaa986167c3" kindref="member">SHeaderCtrl::GetItemCount</ref> <simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取列表项个数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="123" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a8cc77bc2d928ba01f0d42a15596066bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::GetTotalWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalWidth</name>
+        <briefdescription>
+<para>获得所有宽度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a8cc77bc2d928ba01f0d42a15596066bc" kindref="member">SHeaderCtrl::GetTotalWidth</ref> <simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获得所有宽度 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="131" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a45ed2a1c2d0931b2ba237b106c73e536" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::GetItemWidth</definition>
+        <argsstring>(int iItem) const</argsstring>
+        <name>GetItemWidth</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+<para>获得指定项宽度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a45ed2a1c2d0931b2ba237b106c73e536" kindref="member">SHeaderCtrl::GetItemWidth</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获得新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="141" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a7ba2b129d9bb69eb73883f48da0a8f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::DeleteItem</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>DeleteItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+<para>删除指定项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a7ba2b129d9bb69eb73883f48da0a8f70" kindref="member">SHeaderCtrl::DeleteItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 删除指定项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="150" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a9df0e1bd1e96d6a6682c468d2155b076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::DeleteAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>DeleteAllItems</name>
+        <briefdescription>
+<para>删除所有项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a9df0e1bd1e96d6a6682c468d2155b076" kindref="member">SHeaderCtrl::DeleteAllItems</ref> Describe 获得新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="158" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a41724dcf1471347d572b4f99db20c8be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::SetItemSort</definition>
+        <argsstring>(int iItem, SHDSORTFLAG stFlag)</argsstring>
+        <name>SetItemSort</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>SHDSORTFLAG</type>
+          <declname>stFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="160" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a4c181a1e7326e571b8ac34a2857b336d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::SetItemVisible</definition>
+        <argsstring>(int iItem, bool visible)</argsstring>
+        <name>SetItemVisible</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="162" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1ab04e1ea900ca53aa5cdffca2bf64f7f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SHeaderCtrl::IsItemVisible</definition>
+        <argsstring>(int iItem) const</argsstring>
+        <name>IsItemVisible</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="164" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a7b2d127273123df83b98856a52e42e95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SHeaderCtrl::GetItemRect</definition>
+        <argsstring>(UINT iItem) const</argsstring>
+        <name>GetItemRect</name>
+        <param>
+          <type>UINT</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+<para>获取表头项得位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a7b2d127273123df83b98856a52e42e95" kindref="member">SHeaderCtrl::GetItemRect</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 索引</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 获取表头项得位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="173" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1af8f9324e64ad8992e71472b9caf1b57b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SHeaderCtrl::GetOriItemIndex</definition>
+        <argsstring>(int iOrder) const</argsstring>
+        <name>GetOriItemIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iOrder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="175" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a0e281cf245a3766983535c72e9b7f885" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SHeaderCtrl::CreateChildren</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>CreateChildren</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ab24c41e701b99857cd33b15dcc20d6d8">CreateChildren</reimplements>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+<para>创建新项 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a0e281cf245a3766983535c72e9b7f885" kindref="member">SHeaderCtrl::CreateChildren</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pugi::xml_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xmlNode <ndash/> xml配置文件</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 创建新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="192" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1ab87e1c5ec0123d9dc73ea54a5108bde5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SHeaderCtrl::OnSetCursor</definition>
+        <argsstring>(const CPoint &amp;pt)</argsstring>
+        <name>OnSetCursor</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ad471787523b5750321b0704726414314">OnSetCursor</reimplements>
+        <param>
+          <type>const CPoint &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>设置选中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1ab87e1c5ec0123d9dc73ea54a5108bde5" kindref="member">SHeaderCtrl::OnSetCursor</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPoint &amp;pt <ndash/> 坐标点</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 获得新项 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="201" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a198d01a4d8c15e6bf10aba80940a6a49" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnPaint</definition>
+        <argsstring>(IRenderTarget *pRT)</argsstring>
+        <name>OnPaint</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <briefdescription>
+<para>设置选中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a198d01a4d8c15e6bf10aba80940a6a49" kindref="member">SHeaderCtrl::OnPaint</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 渲染目标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 消息响应函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="209" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a80063fadd3b47b70da44ebffa20af989" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SHeaderCtrl::DrawItem</definition>
+        <argsstring>(IRenderTarget *pRT, CRect rcItem, const LPSHDITEM pItem)</argsstring>
+        <name>DrawItem</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>CRect</type>
+          <declname>rcItem</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_h_d_i_t_e_m" kindref="compound">LPSHDITEM</ref></type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+<para>绘画 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a80063fadd3b47b70da44ebffa20af989" kindref="member">SHeaderCtrl::DrawItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 渲染目标 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rcItem <ndash/> 目标区域 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LPSHDITEM pItem <ndash/> 列表头</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 绘画 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="220" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1aceb2f60e6e7188aa75b6eb171533ed74" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SHeaderCtrl::OnColorize</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>OnColorize</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1afb396d00c1a676881a464ce7f4794c47">OnColorize</reimplements>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>调节窗口色调 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OoColorize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>COLORREF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cr <ndash/> 目标颜色 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="223" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a68e107870adfc142001ed695858d939a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::SHeaderCtrl::OnLanguageChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnLanguageChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a4038fd089860fbccacfd6d8198924e4d">OnLanguageChanged</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="225" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a3299f4addbea06174c0918aa0b1144a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SHeaderCtrl::OnScaleChanged</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>OnScaleChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a20bc6fab178a2f8316db40cb68a42d0c">OnScaleChanged</reimplements>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="227" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1aed719b3571675d2db8c0c50fe35454d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SHeaderCtrl::OnRelayout</definition>
+        <argsstring>(const CRect &amp;rcWnd)</argsstring>
+        <name>OnRelayout</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1aa27217e295a1e1d0b9e281602eb15c57">OnRelayout</reimplements>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rcWnd</declname>
+        </param>
+        <briefdescription>
+<para>窗口位置发生变化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnRelayout <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CRect &amp; rcWnd <ndash/> 新位置 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe 窗口位置发生变化,更新窗口及计算子窗口位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="229" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1ab89849e1ee784fd6c782309d77c55d87" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHeaderCtrl::HitTest</definition>
+        <argsstring>(CPoint pt)</argsstring>
+        <name>HitTest</name>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1ab89849e1ee784fd6c782309d77c55d87" kindref="member">SHeaderCtrl::HitTest</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pt <ndash/> 坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 鼠标位置分析，返回一个DWORD，LOWORD为前面的项， HIWORD为后面的项， 相同时代表在一个项的中间 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="238" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a59c18ce16244b250bfd73c1181fd32a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::RedrawItem</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>RedrawItem</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+<para>重绘 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a59c18ce16244b250bfd73c1181fd32a4" kindref="member">SHeaderCtrl::RedrawItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pt <ndash/> 坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 重绘 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="247" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a7e319beb08b9829f6c38b432121fd7c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::DrawDraggingState</definition>
+        <argsstring>(DWORD dwDragTo)</argsstring>
+        <name>DrawDraggingState</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwDragTo</declname>
+        </param>
+        <briefdescription>
+<para>绘制拖拽状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a7e319beb08b9829f6c38b432121fd7c0" kindref="member">SHeaderCtrl::DrawDraggingState</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwDragTo <ndash/> <linebreak/>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 绘制拖拽状态 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="256" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a61ab2ac924df06f427138539479563b8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SHeaderCtrl::IsItemHover</definition>
+        <argsstring>(DWORD dwHitTest)</argsstring>
+        <name>IsItemHover</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwHitTest</declname>
+        </param>
+        <briefdescription>
+<para>判断是否Hover状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a61ab2ac924df06f427138539479563b8" kindref="member">SHeaderCtrl::IsItemHover</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwHitTest </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 判断是否Hover状态 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="266" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="266" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a5dd86b02583a047eb7cb2e240a4cbf48" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HBITMAP</type>
+        <definition>HBITMAP SOUI::SHeaderCtrl::CreateDragImage</definition>
+        <argsstring>(UINT iItem)</argsstring>
+        <name>CreateDragImage</name>
+        <param>
+          <type>UINT</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+<para>创建拖拽图片 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a5dd86b02583a047eb7cb2e240a4cbf48" kindref="member">SHeaderCtrl::CreateDragImage</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 列表项 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HBITMAP</para>
+</simplesect>
+Describe 判断是否Hover状态 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="279" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1ae4d89083bab78c993dd425e2182c6d86" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnLButtonDown</definition>
+        <argsstring>(UINT nFlags, CPoint pt)</argsstring>
+        <name>OnLButtonDown</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>左键按下事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1ae4d89083bab78c993dd425e2182c6d86" kindref="member">SHeaderCtrl::OnLButtonDown</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point <ndash/> 鼠标坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="288" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a6aa90404bb8e1d89cc9147bef6014478" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnLButtonUp</definition>
+        <argsstring>(UINT nFlags, CPoint pt)</argsstring>
+        <name>OnLButtonUp</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>左键抬起事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a6aa90404bb8e1d89cc9147bef6014478" kindref="member">SHeaderCtrl::OnLButtonUp</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point <ndash/> 鼠标坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="297" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a0460f9020e9627fc8051688ed9704c26" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnMouseMove</definition>
+        <argsstring>(UINT nFlags, CPoint pt)</argsstring>
+        <name>OnMouseMove</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>鼠标移动事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a0460f9020e9627fc8051688ed9704c26" kindref="member">SHeaderCtrl::OnMouseMove</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point <ndash/> 鼠标坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="306" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1a94b617893fb89b9e0ff41ca2d63a127a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnMouseLeave</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseLeave</name>
+        <briefdescription>
+<para>鼠标离开事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1a94b617893fb89b9e0ff41ca2d63a127a" kindref="member">SHeaderCtrl::OnMouseLeave</ref> Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="314" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1aa6ac438e1387553247bd1a88587036c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+<para>销毁事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_header_ctrl_1aa6ac438e1387553247bd1a88587036c5" kindref="member">SHeaderCtrl::OnDestroy</ref> Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="322" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_header_ctrl_1aaefe10a7ab3a2be8bebcd8cbf4a483c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHeaderCtrl::OnActivateApp</definition>
+        <argsstring>(BOOL bActive, DWORD dwThreadID)</argsstring>
+        <name>OnActivateApp</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bActive</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwThreadID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="324" column="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>表头控件 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 表头控件 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SHeaderCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_header_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="16">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SHeaderCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_header_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_pSkinSort</edgelabel>
+          <edgelabel>m_pSkinItem</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="11">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="23">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="20">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="13">
+        <label>IObject</label>
+      </node>
+      <node id="6">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="21">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="12">
+        <label>IObjRef</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="17">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" line="66" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SHeaderCtrl.h" bodystart="65" bodyend="351"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4f7aec07b3d67d9334e9465ed8ced4db" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_ApplyMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1202e1e2d35caf0a3a02cc4b9d2cb196" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_ConvertRect2RenderRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad5a23edef9a18d53ab4cc9bf92b7b752" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a25923a14b45b2d129666b0f7d67b56f5" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af6474657f02dd8876a05e33b9cd47c45" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_GetCurrentLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf0fe0bf79dfe169c68c135d749611cb" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_GetMatrixEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7775b1fd4a7d25a2b68a64a759808a7a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_PaintChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ace0b4789c2b09715e797ac21560bd725" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_PaintClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88da487f3441bf790b533180d2947a54" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_PaintNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6acfef3a3ad982e4f2a4c549c52527b8" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_PaintRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adfa488cef4ca81f66b037e2cf5777be9" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_RedrawNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8f0dc8efaad35dfc7996383ce56dc64d" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_Update</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a26db921236b404f711f9b43a55c57690" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>_WndRectInRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf9ef86a26d57a90a7f262a85e0d192f" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>accNotifyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6f2cd6a7943d7bcbc5f172a5d1ca123d" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>AdjustZOrder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e451823d77789563ba3b462c3d046d6" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>AfterAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abd86a009594f9fffa064bafaa5c0ce75" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>AfterPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2c86bf8485cd1d04efb81524449b3aef" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ATTR_CHAIN_PTR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9dd09cacdc43c7988b180857187094d9" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ATTR_CUSTOM</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5acabc38c9b479799aae59fe98c67b16" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ATTR_SKIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a857d8b7407ad8c153c79f789144e6ad9" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>BeforePaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1add4ffbe391168d83216ff0eeeb5f0f32" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>BeforePaintEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5905fa07378248c9d9a7ff9ad981028d" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>BringWindowToTop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8eb66d6e169a9feda53a7030ea4b872" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ClearAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37061054c3dd68c100e94d09e28296a7" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a0e281cf245a3766983535c72e9b7f885" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a632062c625df6e5cdc6ab5c8b66ac6f5" prot="public" virt="non-virtual" ambiguityscope="SOUI::SWindow::"><scope>SOUI::SHeaderCtrl</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a5dd86b02583a047eb7cb2e240a4cbf48" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>CreateDragImage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3bb0f2cbf47eb477062b672ea63a78d7" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DefAttributeProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a9df0e1bd1e96d6a6682c468d2155b076" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DeleteAllItems</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a7ba2b129d9bb69eb73883f48da0a8f70" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DeleteItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d5846acd45d8685dfb9d74925118410" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DestroyChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab65f99da1766c8c5e71fd94ccb481c19" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925af2bb91b743698b2dfc2147fa7dac8d05" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>dirty_child</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a00e8341bd64ad23992671c210ca85f0d" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>dirty_clean</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a6f166895461bc7dde7f26b7fddf6914c" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>dirty_self</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0d1c67bd321a29d73917ff226d61b590" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>DispatchPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aadfe4964cd88757d019229646c728ef3" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DoColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abcb0e59dec10489ed133a8a2a57f42c6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DrawDefFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a7e319beb08b9829f6c38b432121fd7c0" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>DrawDraggingState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a535465979865bafd55b5d7620ae7aa31" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>DrawFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a80063fadd3b47b70da44ebffa20af989" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>DrawItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa0f57e46cc741a284418625d3ceadd8" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>DrawText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac15fdc97bc52927fe40ae00531402f4c" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>EnableWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ceb20cf5134305ae537d82438bffe41" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5b88c203f19039606ab8207acff911d7" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5a5ab80a2410e009b64dff1efdf2036" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByID2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6cfff5bb97a100aa6b04479e22aa14e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a53f6211eb1c98d1a40e1343488eae3cf" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a641ce730c844dedac014eec1233f6008" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad09240f7e2fb8ba8455eabec775f2b97" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a743238efbf7d1d7d5b450b6e4e1ffbf0" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FireCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1b41ec792e70af4b5b84de961763fa52" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>FireCtxMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a74d1344ff872e4bfb6c1ba4ce3db9ad1" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac273d06c46f686e7e2399dae59c5fd8f" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a49b3abddf7dcdb5155fb66b6e4aa89" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab6d45c6c1f61b65ab944d9a4d62f1a4f" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7163e835d29acc2d71227096edb37a5c" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb36a9c7d1c51f792f6ec13ac724827e" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a0544d797f0eed085a1c7133e18216a" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a062794d497acb9696f3dcc4b9628bffe" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6be523a0e661a48989de4e8f365a1619" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad4d40b97eef06dc486e24f8a21bb101a" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetChildrenLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a91846f5b1a751e4667de2e2a123adb5c" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41018b5ea1338a4c725c1736d1bc07ad" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a158bb1db1271bdc6a57945252a044883" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetColorizeColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a168ce1a0daffa4f72f8aede1a78034e2" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0b48463079ea404178ef9ecb1d4d22d6" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a17535f75280b4de8d67feb6e46b2fb1b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a67203f925ea9185f56ef92623638ee" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08fa72505378ac8295b1255177788935" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab55ae205e8fd681ba9a3fcac1d931fdd" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a017706a5ae823cd9ce3981dce06591af" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ade63b780c80834a99b239aaa986167c3" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetItemCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a7b2d127273123df83b98856a52e42e95" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetItemRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a45ed2a1c2d0931b2ba237b106c73e536" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetItemWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a824d5cdd2ebd2483edae7493dc304b29" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad54c79e0dd91b7214ce0af9168e3e483" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a889297ad5c45b2a0c838d094e30e8322" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetLayoutParamT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1ce596c052ea27920e2ea6e8651928c5" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4a96f19a6439a013b2c0481acb246c72" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetNextLayoutChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1af8f9324e64ad8992e71472b9caf1b57b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetOriItemIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8816fcadb2c0a7c9e59aa20f1d295192" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ba6fd68b2bb1a06b47e4dbc68de17cb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9957ff0e957f36b478ffe07685700e84" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aca2b8f7c11d6c0ac20baa4ade46c25d0" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab3c2a2d33fafb9a8912882bad32cc4af" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetRoot</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa9d18960397ccbfaed109914be86f44f" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7fbfdc3d2482f5692a1ed2b6f1d156cc" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetScaleSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f2316b754b4b56b7d06ea926a77e7cb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa15ef57dfa020a433684dcf08f0086b" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetSelectedChildInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a45f599b24be57fe843e569e94a168117" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetSelectedSiblingInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3165c225c9af63e49ff6daac52715cb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5da2e8ca27640844b3fc963a7166d38d" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a797a5d2427431bf870298174a25f47b2" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2043e966fca57f2727a84da71791a001" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afee836ecfe282561f04fd489c85e73d7" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTextAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a701e0978b502b8a911d83b92104df353" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTextRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eaace5eafbd001e7a966ac284202a71" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aec897a2bb2c6145b3f2edceb37948752" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTopLevelParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a8cc77bc2d928ba01f0d42a15596066bc" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTotalWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af1a8444dab958c9565e0736060d00334" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6aa61f8fd3852502d866087a08982f9d" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa0591eab0c198fee236e6083af92c342" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eb7a1b0b03e7b2ab266bf046bff19c3" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8760f18f5c59ff1c2ba50da42c65fa1" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5779283a662e4145c25d86ee3854977" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bae8c4270ddb40d9c79047d0819d567" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79998d91aef3049b514dc6fd0e6aa8bb" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ab89849e1ee784fd6c782309d77c55d87" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>HitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a193389b19a7f5128a3fd8c96e1d437af" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>InitFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e81448460818325210cf5c2a830aa22" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>InsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a01fe1281ae773703c002775b942aeb0c" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>InsertItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a05bb3dea056a83f6160573692684be66" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>InsertItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad9775f0384a21501de5a83d13aeddab7" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a077137f2773be5b376b56c7a14957d" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acfb3d670ef9ef7b672737e031faafc74" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a54e1d70e0345ca81cd9bd232742a6bdb" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a86bb1d73a84c76647881e809bf2c040f" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsChecked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6070bb0bef9660f7a840cc4f18fd219d" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6da8af0fd7826625d6a7f20d29c9576" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsContainPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8c9a7b209eae739a4d57af5f65606db7" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsDescendant</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe6e48aedcfaeef60f4d6ba588cb8221" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsDisabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a941f7d50672180da3ca41c73ea83b848" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae86fb10386208b133bda4dfae5bd2bd5" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsDrawToCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab99d4da910a63fd1949a2f11260b2a4" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8c57ee5e9c70e570ee97142b0313ffe" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aff78f3beb70ad95e8719b714ddac7328" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsFocused</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a61ab2ac924df06f427138539479563b8" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsItemHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ab04e1ea900ca53aa5cdffca2bf64f7f4" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsItemVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32cbbee125a2b20460715ef5768509e8" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a635bfcb6349dda7110d7968a50275aec" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsLayoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ad6a56a890d2e1ba930373fb7d2b7fd85" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab820de4bcfb2895868e32052043a75ee" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a39eba5818d9356dd1ee8014a8a5d0cc7" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsSiblingsAutoGroupped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a10708bf2d2ba3f47162a49cfd660a420" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsUpdateLocked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1864e76f4c2a2fab4ee883e25d9384bb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8055d84af3f5a46dc70297aef983107b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>KillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac215f33ea3dfa00b4f81cf80b5ce461e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae5fe646db7bcd55266d15b927c92033f" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>KillTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>LayoutDirtyType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79515e1475ac8696b90043b2bf18910e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>LockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d880d3ae6ffffccc7cf033e3dae8f88" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_animation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a6d921587888f3b70465f218a93613e" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_animationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1aeb28aea96f2763779b6ffd7007c85073" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_arrItems</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2ea7e7c73901e10fe6b7c6bd8165dd01" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_attrStorage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32bfb9aee220d68d2e839b095244fa8c" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4846f2a7857cd35d65f474e743501247" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bCacheDraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af673ccecde4eb3e6276a28c1bc63c03b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af165bd7220b8816f818a988786c23080" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bDisable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a02980687f61228aebbfcf80749dca8eb" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ac130e33029ad2e1ea68c4d45a1e31853" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bDragging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad3df6e93c63654a4037989ca350c41f0" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bDrawFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1af7dccd01c1053e1e9802f93e0b5eb2a7" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bFixWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abaad9c0ebc77bd4faa13d01739dfeef6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a00f55c6c822a1a72f442ce421501f5b8" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a0e7ba95d100d447744a6435fa5662379" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bItemSwapEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1accee35d52c295a1b4b2fcaa7bf40eeb4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a80435f0e90b1db4ec28a7be652a97120" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab4c959e5240b734343c7d9fb20914c5" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a2be3e9b212f8860ef20104d5dea12371" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bSortHeader</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4c7ff4974e210b645bc7a798893d26fb" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b184f526fe7bf42886168a344430012" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_cachedRT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af47fea7cbc561e7c8821b61fefec741b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_clipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41763193b38a46b9a66a444931de86b2" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_clipRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ab90746a315606b791fd698c633b896" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ae1e76dae434d4e842e7bf9f12e45619a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_dwDragTo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ac99340230e2b01b1ae252702d775cf2c" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_dwHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a36968b055add7746709d131e9e98a672" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_dwState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9403a80dd9dae0f9d00acd1c711fab2e" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_evtSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ae94acd63437c6cd98d686438b2af0348" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_hDragImg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a507875bcaac23d34cd30c95324fd3d6d" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_invalidRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ee1ab9f163c102070f96da71b08acec" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_isAnimating</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa234c501aa7108210984fbe906e74c10" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_isDestroying</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a730690734d265f51d2a69d0d220b0d" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_layoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a4a49455ebc661e3c5afa855889464d1c" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nAdjItemOldWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5c57effbbd1e2cb3c8c33eeac1457e26" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af0a9e017255444fd2d5529b5be24b2fe" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a57bc97feaee9e513b29e9f5ad6f64846" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nMaxWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ad2bd84d39011bb60e7ede964443348c3" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32798b93a37362d19c669779cce65545" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_nUpdateLockCnt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a22e05b34f42d57b86d719295de1f58dc" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pBgSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88a23d232bd9cc301687cc5eb5edbf9c" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8552d2e988d5e2e89be8bed2af4a560" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a118446810afe249237d9e25f1378fa7b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pFirstChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6131c58a4ee43c9e9469b8dcb75fda92" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pGetRTData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab9007baa36d9a89dd2f51a682fddfc6b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pLastChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f6eec303632698387fe7cd336b30d09" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f70befbe0b9f866b94de0cf52c22903" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aacc1f98bfba1141984fd40fd95e57615" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pNcSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1908afe346230e4995646f50b3e2fba6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pNextSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76ff6fb7f0329c12a5ddb8be1d1f3413" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a107180ec1b1df18ebc33845448249f9f" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab92ab823183150ab54a29a209cc7c965" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pPrevSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a341f41fb35525ea8e1b1b9d332dd2e76" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pSkinItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a30c936544ddc349f7d9f37cc3b494008" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_pSkinSort</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ad47d81ccf99b349d07c4df0d324eea8a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_ptClick</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aea8f9ff013cf7c2610d59d173cf19855" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a31bd9e5d19d2a6aa2181d37cf3bd09c3" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_strText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afd31d32e2e8b4752846146ae027de295" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_strToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab20f26f9a0e17ac1e88894de068876d9" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abb6b3d37c77f4cf73a78637dadad523b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_style</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b3b11872efbd0bc73cb94003e51ffb4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_swnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a1cfd0deea0598efce21d791f3080bf" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_transform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4ba4df406827d08c7a3fc974674b7ea1" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_uData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae9cad19aadf0118ca14ff121d223f72e" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>m_uZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ab987f01f5e1d98cb25448eba2f9c6541a9ffa878744a288fa9902fce055d61611" prot="private" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>MARGIN_ADJUST_DISABLE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ab987f01f5e1d98cb25448eba2f9c6541a7467d3f1381845eb3ed1b9969ac1ba76" prot="private" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>MARGIN_ADJUST_ENABLE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeee48becf350c2abdeb7364b0e1fde8e" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>MarkCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a95d2c67b4af8e623fc3f8084a625060e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ModifyState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6b53d030ac767195e1f041d18c1243fb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7987099b1b6eeaeb03894450f520ae34" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac94a7a38467c2fcd7d9261d7f0e37139" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>NeedRedrawWhenStateChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1aaefe10a7ab3a2be8bebcd8cbf4a483c3" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnActivateApp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44be24fc2b43b41e0ce1a30121770479" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAnimationInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a46df2971c566254d1a12bfae60633761" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa709922c42009ebefd75295097079fa" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAnimationStop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a98ca0528efc0a748611b729ac37d7814" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3c8417580183b8251065b182ff14376" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aaeff70dea6b6b1f904ce3e7f3e76fbd6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3b1c375cfb3ea50d227f28c9ac792664" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06d3628182e1f6b05b91c18296fb74d8" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c42e330309ffe2599d707d7e32e9f54" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06c368d196491184e1bbc3b42ad5451a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2fcb0714453179731d01d92f639b32ce" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5e9eb423d768b4f9e981b4504c5c70f1" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a768e82033883ee2a1654b24a6552539f" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a215c4a9bd488d3d93faa6f06c89edb44" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aad6b2db56568aa005e5d702284aa0166" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnAttrTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1aceb2f60e6e7188aa75b6eb171533ed74" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdeb9825fcc7fee97121b8b636a554f3" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnContentChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bd0e2e5d4827b2f0d7628b070fd5483" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1aa6ac438e1387553247bd1a88587036c5" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a48eec3b03f19d306a98eaf37341c3a53" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a673aeaf6d12e09fcca6bd72771ae9c4b" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1d52071628c938dd064b6765856f9be5" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnGetDlgCode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acef46d7eec198d15acf2292eaaf38528" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnInsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afaf581a2fa62fc4633f75b4c0f777593" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a68e107870adfc142001ed695858d939a" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnLanguageChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ae4d89083bab78c993dd425e2182c6d86" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a6aa90404bb8e1d89cc9147bef6014478" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a42a4184c1e3063a3bba246004e72fc8f" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnMouseHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a94b617893fb89b9e0ff41ca2d63a127a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a0460f9020e9627fc8051688ed9704c26" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6598e48f71ac345850f725d79951c5e6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6daa5f708da04f3e939fd5fe9b337a75" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7687154b8595554e4526d4f64edfa248" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a198d01a4d8c15e6bf10aba80940a6a49" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aac5432e91f351e847e64bcf907c6cbd2" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnRButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c2c1a2bba4560c6ea286e3b74997f2f" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnRButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a24d68e1faa2511768f4734bc145ffd34" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnRebuildFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1aed719b3571675d2db8c0c50fe35454d0" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad98dfcb41ba176f535472c88bad90c08" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnRemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a3299f4addbea06174c0918aa0b1144a0" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnScaleChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6db7d982ba3777860fe90ce1cfee2b74" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSetColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1ab87e1c5ec0123d9dc73ea54a5108bde5" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b27995464abc2623e5bf6e570e075b4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a75b84fc4334cbb4533408972b12e1fab" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSetLanguage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1abe11ceb96c2cb8c733e2ab06f04d4a" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeab02f42078e8c997452a1c56142d0e6" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1c66ecfe8c85d9c6e7286735c629c6d4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44d2fcb3712aba89fee24a61c43ea460" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnStateChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37ce3a8cde6a6f2870fea58f76c75840" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnStateChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08e308a374e9324c6203bedcd36e957d" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnUpdateFloatPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f417fae345f4c8e8f89441f4a02c259" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnUpdateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adc7efe0aeb2f38ccba818e8c7d0ab010" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>OnUpdateToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a292bbaec718496b74a9438848faafff9" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>PaintBackground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f33f680d2fdbf901dda6981a5c371f1" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>PaintForeground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1157a053b1289583666029d0c7c36b83" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>PaintForeground2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8522762efbd9469c1564f180e1da86e4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>PGETRTDATA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a59c18ce16244b250bfd73c1181fd32a4" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>RedrawItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa40464c02efa982fa99867c026829c18" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>RedrawRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2d689bb3df90df8e535b4ab76d66df88" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ReleaseCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a03b2cd92a9fa7c422028bef67c4868e0" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>ReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0b3c7e4c11cf70d017dff85691a90f5" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>RemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a423c5fc77e4bc49da6bfdccc252418fe" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a599c670bfea7efdf69386b6a6f326a30" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4047a87e3950a60f90a5f756f3ece798" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SDispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ef77d3dc52e89dee5ee166a17d875e1" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae7e13f473d81650a33fc71defe2387b4" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf007ba4da0d1a0f77210db2682c5a4e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe47e5e6fce61ae0593f273d4f4793c6" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad30625112b837bfd62f18e25dd7a5ac6" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad26192c9d9acd51f9b52b958f7f9ff0c" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetClipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8e7e73cbc7a38d86e593e343ccab1c82" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5110427bfa426316d896144a9375c87c" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac97abd6d65dd0bab67ece0c1eec39b9a" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a176aabef77c779a530d5695fad5dba72" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a41724dcf1471347d572b4f99db20c8be" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetItemSort</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a4c181a1e7326e571b8ac34a2857b336d" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetItemVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0975d08e87484a8ebf3718a8d268ebc5" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8517636a84fb0b737455ddde63e1519e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a4db3a48ac66fc20b8657a5b24a9bfe24" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76010d050623dbcd7011fe7509a8d71b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac0d143c645c0a55d686940c48a425ddf" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a195ac5bec3b984b1a0167bcfaad42a39" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7f99124f11ad80f37e4580c1e3a2f295" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a11c07193b1d917e7a9ba25f4adcea5ce" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a85cf0bd5b9cebb9154f061fc0e3a960e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae1e45461caedfa5ed443e0f5774959b5" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8beaccf8aa31e59a44838c0e0a5701e" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a224adc79b03beb66f55a25468b292ed0" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1a48d99757a7fc8d4c5374d3a032ff5d05" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SHeaderCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a68dd4b179d424b676d17342aa6b5f262" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ae454c913bbbdc1cfdad7e1293c46793b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SMsgHandleState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a51e87f3d340ea7fd0149fc423979a46b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SSendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0449ad5f88983ce2a64568cb49e58fd" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>StartAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a645cd258bbe5cebf25e79fde5f4bfbeb" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa163d9e34d6e6def39b09cdb733289f2" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>SwndFromPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a99c3e101e01931c02ac6a1edb1f4d861" prot="protected" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>SwndProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5d32d519b7acc412dc014b0845fc8e96" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>TestMainThread</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3902d3332153936f258b756ea7fbdfb2" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac22b67d1562309587e4cc46087ad0ed6" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>TransformPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac2dd78f931b6f9d59b0ae530f5aa75b1" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>TransformPointEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad21ad32c5e2f6f9361212405fbd4c49b" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>UnlockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac3bdbb3244522318be542c08f619c053" prot="protected" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>UpdateCacheMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aba50375cd77cfeb4361bf7cfe8327b4c" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>UpdateChildrenPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8b7805b9c005e6967eeff4636ef33a78" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>UpdateLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9ae8f38ff291599b761e08bdd5c57084" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>UpdateWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_header_ctrl_1adc1252142148973c7de59a3b5249c2a1" prot="public" virt="non-virtual"><scope>SOUI::SHeaderCtrl</scope><name>~SHeaderCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a73cf687f9a4862ab0768cfbde2dd86e4" prot="public" virt="virtual"><scope>SOUI::SHeaderCtrl</scope><name>~SWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

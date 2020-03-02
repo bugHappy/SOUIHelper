@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_anticipate_interpolator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAnticipateInterpolator</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_interpolator_base" prot="public" virt="non-virtual">SOUI::SInterpolatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_anticipate_interpolator_1a09ea00592f920df6748e020f1e07bd59" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateInterpolator::mTension</definition>
+        <argsstring></argsstring>
+        <name>mTension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="77" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_interpolator_1af7d5044393f9b72b3f5d50eccb109fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAnticipateInterpolator::SAnticipateInterpolator</definition>
+        <argsstring>()</argsstring>
+        <name>SAnticipateInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="79" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_interpolator_1aeff7d6b416ebb2ecedaea1a488f78964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAnticipateInterpolator::SAnticipateInterpolator</definition>
+        <argsstring>(float tension)</argsstring>
+        <name>SAnticipateInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>tension</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of anticipation. When tension equals 0.0f, there is no anticipation and the interpolator becomes a simple acceleration interpolator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="86" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_interpolator_1a3156faa4ffe8ecf20e9756acd8e195b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateInterpolator::getInterpolation</definition>
+        <argsstring>(float t) const</argsstring>
+        <name>getInterpolation</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="89" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SAnticipateInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_anticipate_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SAnticipateInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_anticipate_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="74" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="74" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_interpolator_1a3156faa4ffe8ecf20e9756acd8e195b7" prot="public" virt="non-virtual"><scope>SOUI::SAnticipateInterpolator</scope><name>getInterpolation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_interpolator_1a09ea00592f920df6748e020f1e07bd59" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateInterpolator</scope><name>mTension</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_interpolator_1af7d5044393f9b72b3f5d50eccb109fa0" prot="public" virt="non-virtual"><scope>SOUI::SAnticipateInterpolator</scope><name>SAnticipateInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_interpolator_1aeff7d6b416ebb2ecedaea1a488f78964" prot="public" virt="non-virtual"><scope>SOUI::SAnticipateInterpolator</scope><name>SAnticipateInterpolator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

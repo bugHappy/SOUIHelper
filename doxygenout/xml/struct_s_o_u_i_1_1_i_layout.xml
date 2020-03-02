@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_layout" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ILayout</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_1a0fa5d3273d8599ad0b4170e98ff5b221" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILayout::IsParamAcceptable</definition>
+        <argsstring>(ILayoutParam *pLayoutParam) const =0</argsstring>
+        <name>IsParamAcceptable</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+          <declname>pLayoutParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="39" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_1ad3900c4e8891c85de0fd3c0d41137307" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ILayout::LayoutChildren</definition>
+        <argsstring>(SWindow *pParent)=0</argsstring>
+        <name>LayoutChildren</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="40" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_1a10d1c907a2b86a5c931da1e069ad0be1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::ILayout::CreateLayoutParam</definition>
+        <argsstring>() const =0</argsstring>
+        <name>CreateLayoutParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="41" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_layout_1a8c2f1c8f7bc6e45a80b02b265603ad4e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>CSize</type>
+        <definition>virtual CSize SOUI::ILayout::MeasureChildren</definition>
+        <argsstring>(const SWindow *pParent, int nWidth, int nHeight) const =0</argsstring>
+        <name>MeasureChildren</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="42" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::ILayout</label>
+        <link refid="struct_s_o_u_i_1_1_i_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::ILayout</label>
+        <link refid="struct_s_o_u_i_1_1_i_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" line="38" column="36" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slayout-i.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_layout_1a10d1c907a2b86a5c931da1e069ad0be1" prot="public" virt="pure-virtual"><scope>SOUI::ILayout</scope><name>CreateLayoutParam</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_1a0fa5d3273d8599ad0b4170e98ff5b221" prot="public" virt="pure-virtual"><scope>SOUI::ILayout</scope><name>IsParamAcceptable</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_1ad3900c4e8891c85de0fd3c0d41137307" prot="public" virt="pure-virtual"><scope>SOUI::ILayout</scope><name>LayoutChildren</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_layout_1a8c2f1c8f7bc6e45a80b02b265603ad4e" prot="public" virt="pure-virtual"><scope>SOUI::ILayout</scope><name>MeasureChildren</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

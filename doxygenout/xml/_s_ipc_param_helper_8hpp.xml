@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_ipc_param_helper_8hpp" kind="file" language="C++">
+    <compoundname>SIpcParamHelper.hpp</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1abfd318aef2fc19eab7e20011a1464489" prot="public" static="no">
+        <name>FUNID</name>
+        <param><defname>id</defname></param>
+        <initializer>enum{FUN_ID=id};\
+UINT GetID() {return FUN_ID;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="3" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a113ec75ecb9e6906fef68565504022d2" prot="public" static="no">
+        <name>FUN_BEGIN</name>
+        <initializer>bool HandleFun(UINT uMsg, <ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;ps){ \
+	bool bHandled = false; \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="7" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a893269ddd7b28a5d286df1d23b27b0df" prot="public" static="no">
+        <name>FUN_HANDLER</name>
+        <param><defname>x</defname></param>
+        <param><defname>fun</defname></param>
+        <initializer>	if(!bHandled &amp;&amp; uMsg == x::FUN_ID) \
+	{\
+		x param; \
+		GetIpcHandle()-&gt;FromStream4Input(&amp;param,ps.GetBuffer());\
+		DWORD dwPos=ps.GetBuffer()-&gt;Tell();\
+		fun(param); \
+		ps.GetBuffer()-&gt;Seek(SOUI::IShareBuffer::seek_set,dwPos);\
+		GetIpcHandle()-&gt;ToStream4Output(&amp;param,ps.GetBuffer());\
+		bHandled = true;\
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="11" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a99456e2b349f966a0bc7ac13cfdb2d52" prot="public" static="no">
+        <name>FUN_END</name>
+        <initializer>	return bHandled; \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="23" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1af31f20be6e7a7a90943d97890d9187a8" prot="public" static="no">
+        <name>CHAIN_MSG_MAP_2_IPC</name>
+        <param><defname>ipc</defname></param>
+        <initializer>		if(ipc)\
+		{\
+			BOOL bHandled = FALSE;\
+			lResult = (ipc)-&gt;OnMessage((ULONG_PTR)hWnd,uMsg,wParam,lParam,bHandled);\
+			if(bHandled)\
+			{\
+				return true;\
+			}\
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="27" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a48d11e4f44600c838e73d63b8545feb6" prot="public" static="no">
+        <name>PARAMS1</name>
+        <param><defname>type</defname></param>
+        <param><defname>p1</defname></param>
+        <initializer>void ToStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){ toParamStream(ps,p1);}\
+void FromStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){fromParamStream(ps,p1);}\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="50" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a3c375d56bbd89f6206a07e22f406a698" prot="public" static="no">
+        <name>PARAMS2</name>
+        <param><defname>type</defname></param>
+        <param><defname>p1</defname></param>
+        <param><defname>p2</defname></param>
+        <initializer>void ToStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){ toParamStream(ps,p1,p2);}\
+void FromStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){fromParamStream(ps,p1,p2);}\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="66" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a2eb87b8daf91f8fd6240f19425231542" prot="public" static="no">
+        <name>PARAMS3</name>
+        <param><defname>type</defname></param>
+        <param><defname>p1</defname></param>
+        <param><defname>p2</defname></param>
+        <param><defname>p3</defname></param>
+        <initializer>void ToStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){ toParamStream(ps,p1,p2,p3);}\
+void FromStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){fromParamStream(ps,p1,p2,p3);}\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="83" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a4ea671d53395513a7dd584ca5f7331e8" prot="public" static="no">
+        <name>PARAMS4</name>
+        <param><defname>type</defname></param>
+        <param><defname>p1</defname></param>
+        <param><defname>p2</defname></param>
+        <param><defname>p3</defname></param>
+        <param><defname>p4</defname></param>
+        <initializer>void ToStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){ toParamStream(ps,p1,p2,p3,p4);}\
+void FromStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){fromParamStream(ps,p1,p2,p3,p4);}\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="99" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_ipc_param_helper_8hpp_1a57ae4869c52571e6917937ad88faa5fc" prot="public" static="no">
+        <name>PARAMS5</name>
+        <param><defname>type</defname></param>
+        <param><defname>p1</defname></param>
+        <param><defname>p2</defname></param>
+        <param><defname>p3</defname></param>
+        <param><defname>p4</defname></param>
+        <param><defname>p5</defname></param>
+        <initializer>void ToStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){ toParamStream(ps,p1,p2,p3,p4,p5);}\
+void FromStream4##type(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;  ps){fromParamStream(ps,p1,p2,p3,p4,p5);}\</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="116" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a14a0330f763297530a655459695fe4a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void toParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1)</argsstring>
+        <name>toParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="40" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a5e5f9eebb48fa5ea9b747c294d24a68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fromParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1)</argsstring>
+        <name>fromParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="45" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a6999fd6a58991ebae853a3bb2d3b4568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void toParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2)</argsstring>
+        <name>toParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="56" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1aa2b5419a1c0a3488a86143ed63b01d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fromParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2)</argsstring>
+        <name>fromParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="61" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a7baf02f7ea2d29c303d78f9c086786d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void toParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3)</argsstring>
+        <name>toParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="73" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a4611367021e307a1aff763d8111fd28c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fromParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3)</argsstring>
+        <name>fromParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="78" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a87d5052e9d2aec5031bfbe7e2f62e4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void toParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3, P4 &amp;p4)</argsstring>
+        <name>toParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4 &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="89" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a378d6876514172568f5caa82a890fb3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fromParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3, P4 &amp;p4)</argsstring>
+        <name>fromParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4 &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="94" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1afc1b51b1d7e431493b55bb4ac825b642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void toParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3, P4 &amp;p4, P5 &amp;p5)</argsstring>
+        <name>toParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4 &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5 &amp;</type>
+          <declname>p5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="106" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="_s_ipc_param_helper_8hpp_1a0f60d57d36769054d79007acf4a7e650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+          <param>
+            <type>typename P3</type>
+          </param>
+          <param>
+            <type>typename P4</type>
+          </param>
+          <param>
+            <type>typename P5</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fromParamStream</definition>
+        <argsstring>(SOUI::SParamStream &amp;ps, P1 &amp;p1, P2 &amp;p2, P3 &amp;p3, P4 &amp;p4, P5 &amp;p5)</argsstring>
+        <name>fromParamStream</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <param>
+          <type>P1 &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>P2 &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>P3 &amp;</type>
+          <declname>p3</declname>
+        </param>
+        <param>
+          <type>P4 &amp;</type>
+          <declname>p4</declname>
+        </param>
+        <param>
+          <type>P5 &amp;</type>
+          <declname>p5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" line="111" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUNID(id)<sp/>\</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor">enum{FUN_ID=id};\</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor">UINT<sp/>GetID()<sp/>{return<sp/>FUN_ID;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUN_BEGIN<sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor">bool<sp/>HandleFun(UINT<sp/>uMsg,<sp/>SOUI::SParamStream<sp/>&amp;ps){<sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>bool<sp/>bHandled<sp/>=<sp/>false;<sp/>\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUN_HANDLER(x,fun)<sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(!bHandled<sp/>&amp;&amp;<sp/>uMsg<sp/>==<sp/>x::FUN_ID)<sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>param;<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetIpcHandle()-&gt;FromStream4Input(&amp;param,ps.GetBuffer());\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>dwPos=ps.GetBuffer()-&gt;Tell();\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fun(param);<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ps.GetBuffer()-&gt;Seek(SOUI::IShareBuffer::seek_set,dwPos);\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetIpcHandle()-&gt;ToStream4Output(&amp;param,ps.GetBuffer());\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bHandled<sp/>=<sp/>true;\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUN_END<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>bHandled;<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHAIN_MSG_MAP_2_IPC(ipc)<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(ipc)\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOL<sp/>bHandled<sp/>=<sp/>FALSE;\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lResult<sp/>=<sp/>(ipc)-&gt;OnMessage((ULONG_PTR)hWnd,uMsg,wParam,lParam,bHandled);\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(bHandled)\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>true;\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;p1)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&lt;&lt;<sp/>p1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;<sp/>p1)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&gt;&gt;<sp/>p1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMS1(type,p1)<sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor">void<sp/>ToStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){<sp/>toParamStream(ps,p1);}\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor">void<sp/>FromStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){fromParamStream(ps,p1);}\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2&gt;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;p1,<sp/>P2<sp/>&amp;<sp/>p2)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&lt;&lt;<sp/>p1<sp/>&lt;&lt;<sp/>p2;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;<sp/>p1,<sp/>P2<sp/>&amp;p2)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&gt;&gt;<sp/>p1<sp/>&gt;&gt;<sp/>p2;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMS2(type,p1,p2)<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">void<sp/>ToStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){<sp/>toParamStream(ps,p1,p2);}\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">void<sp/>FromStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){fromParamStream(ps,p1,p2);}\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3&gt;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;p1,<sp/>P2<sp/>&amp;<sp/>p2,<sp/>P3<sp/>&amp;<sp/>p3)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&lt;&lt;<sp/>p1<sp/>&lt;&lt;<sp/>p2<sp/>&lt;&lt;<sp/>p3;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3&gt;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;<sp/>p1,<sp/>P2<sp/>&amp;p2,<sp/>P3<sp/>&amp;<sp/>p3)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&gt;&gt;<sp/>p1<sp/>&gt;&gt;<sp/>p2<sp/>&gt;&gt;<sp/>p3;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMS3(type,p1,p2,p3)<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor">void<sp/>ToStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){<sp/>toParamStream(ps,p1,p2,p3);}\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">void<sp/>FromStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){fromParamStream(ps,p1,p2,p3);}\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P4&gt;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;p1,<sp/>P2<sp/>&amp;<sp/>p2,<sp/>P3<sp/>&amp;<sp/>p3,<sp/>P4<sp/>&amp;<sp/>p4)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&lt;&lt;<sp/>p1<sp/>&lt;&lt;<sp/>p2<sp/>&lt;&lt;<sp/>p3&lt;&lt;p4;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P4&gt;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;<sp/>p1,<sp/>P2<sp/>&amp;p2,<sp/>P3<sp/>&amp;<sp/>p3,<sp/>P4<sp/>&amp;<sp/>p4)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&gt;&gt;<sp/>p1<sp/>&gt;&gt;<sp/>p2<sp/>&gt;&gt;<sp/>p3&gt;&gt;p4;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMS4(type,p1,p2,p3,p4)<sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor">void<sp/>ToStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){<sp/>toParamStream(ps,p1,p2,p3,p4);}\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor">void<sp/>FromStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){fromParamStream(ps,p1,p2,p3,p4);}\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P4,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P5&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;p1,<sp/>P2<sp/>&amp;<sp/>p2,<sp/>P3<sp/>&amp;<sp/>p3,<sp/>P4<sp/>&amp;<sp/>p4,<sp/>P5<sp/>&amp;p5)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&lt;&lt;<sp/>p1<sp/>&lt;&lt;<sp/>p2<sp/>&lt;&lt;<sp/>p3<sp/>&lt;&lt;<sp/>p4<sp/>&lt;&lt;p5;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P2,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P3,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P4,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>P5&gt;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fromParamStream(<ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SOUI::SParamStream</ref><sp/>&amp;<sp/><sp/>ps,<sp/>P1<sp/>&amp;<sp/>p1,<sp/>P2<sp/>&amp;p2,<sp/>P3<sp/>&amp;<sp/>p3,<sp/>P4<sp/>&amp;<sp/>p4,<sp/>P5<sp/>&amp;p5)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>ps<sp/>&gt;&gt;<sp/>p1<sp/>&gt;&gt;<sp/>p2<sp/>&gt;&gt;<sp/>p3<sp/>&gt;&gt;<sp/>p4&gt;&gt;p5;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARAMS5(type,p1,p2,p3,p4,p5)<sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor">void<sp/>ToStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){<sp/>toParamStream(ps,p1,p2,p3,p4,p5);}\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor">void<sp/>FromStream4##type(SOUI::SParamStream<sp/>&amp;<sp/><sp/>ps){fromParamStream(ps,p1,p2,p3,p4,p5);}\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SIpcParamHelper.hpp"/>
+  </compounddef>
+</doxygen>

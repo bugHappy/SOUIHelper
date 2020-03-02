@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IValueAnimator::IAnimatorListener</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a2a9f757ac20451fbfb9568a278005761" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IValueAnimator::IAnimatorListener::onAnimationStart</definition>
+        <argsstring>(IValueAnimator *pAnimator)=0</argsstring>
+        <name>onAnimationStart</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+          <declname>pAnimator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the start of the animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The started animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SValueAnimator-i.h" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a30d32390bf65db705efa51d35c528d18" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IValueAnimator::IAnimatorListener::onAnimationEnd</definition>
+        <argsstring>(IValueAnimator *pAnimator)=0</argsstring>
+        <name>onAnimationEnd</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+          <declname>pAnimator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the end of the animation. This callback is not invoked for animations with repeat count set to INFINITE.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation which reached its end. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SValueAnimator-i.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a758d2e942fcf885b2082757af20c4861" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IValueAnimator::IAnimatorListener::onAnimationRepeat</definition>
+        <argsstring>(IValueAnimator *pAnimator)=0</argsstring>
+        <name>onAnimationRepeat</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+          <declname>pAnimator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the repetition of the animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation which was repeated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SValueAnimator-i.h" line="35" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SValueAnimator-i.h" line="14" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SValueAnimator-i.h" bodystart="14" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a30d32390bf65db705efa51d35c528d18" prot="public" virt="pure-virtual"><scope>SOUI::IValueAnimator::IAnimatorListener</scope><name>onAnimationEnd</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a758d2e942fcf885b2082757af20c4861" prot="public" virt="pure-virtual"><scope>SOUI::IValueAnimator::IAnimatorListener</scope><name>onAnimationRepeat</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_value_animator_1_1_i_animator_listener_1a2a9f757ac20451fbfb9568a278005761" prot="public" virt="pure-virtual"><scope>SOUI::IValueAnimator::IAnimatorListener</scope><name>onAnimationStart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

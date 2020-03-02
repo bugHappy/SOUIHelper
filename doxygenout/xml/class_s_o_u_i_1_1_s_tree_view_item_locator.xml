@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tree_view_item_locator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STreeViewItemLocator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; ITreeViewItemLocator &gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a451f67cd359bf306b6f8c4e614e09bca" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; ITvAdapter &gt;</type>
+        <definition>SAutoRefPtr&lt;ITvAdapter&gt; SOUI::STreeViewItemLocator::m_adapter</definition>
+        <argsstring></argsstring>
+        <name>m_adapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="86" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a7856b7428211af00f3aa51ef1f79757f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::m_nLineHeight</definition>
+        <argsstring></argsstring>
+        <name>m_nLineHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="87" column="33" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a5e4ba0fd8500ee40db8332f168074d9b" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::m_nIndent</definition>
+        <argsstring></argsstring>
+        <name>m_nIndent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="88" column="33" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a1d6d0af008cc6d73defb1d8120d9a906" prot="protected" static="no" mutable="no">
+        <type>CSize</type>
+        <definition>CSize SOUI::STreeViewItemLocator::m_szDef</definition>
+        <argsstring></argsstring>
+        <name>m_szDef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="89" column="33" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ad39b500f4d2e1e0174fde25219cc7e43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STreeViewItemLocator::STreeViewItemLocator</definition>
+        <argsstring>(int nIndent=10)</argsstring>
+        <name>STreeViewItemLocator</name>
+        <param>
+          <type>int</type>
+          <declname>nIndent</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a93ba29d7177c5743c48d91f762107c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STreeViewItemLocator::~STreeViewItemLocator</definition>
+        <argsstring>()</argsstring>
+        <name>~STreeViewItemLocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="16" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ad8606cf8f373f3529d3f2eb81dcabba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeViewItemLocator::SetAdapter</definition>
+        <argsstring>(ITvAdapter *pAdapter)</argsstring>
+        <name>SetAdapter</name>
+        <param>
+          <type>ITvAdapter *</type>
+          <declname>pAdapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="18" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1abdfc772ac7853ccd6cb6c5f0e26d80e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeViewItemLocator::OnBranchChanged</definition>
+        <argsstring>(HTREEITEM hItem)</argsstring>
+        <name>OnBranchChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="20" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a727e17ae9605a8fbd9e449e5ad96e5d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeViewItemLocator::OnBranchExpandedChanged</definition>
+        <argsstring>(HTREEITEM hItem, BOOL bExpandedOld, BOOL bExpandedNew)</argsstring>
+        <name>OnBranchExpandedChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedOld</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedNew</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="22" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a317cf336e6b12016c73224fa02ba4829" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetTotalHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="24" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ae60d0ea63c256a53cb0fd8254d8d653a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetTotalWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="26" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a8272c816929ff166a8b823868aaf68f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetScrollLineSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScrollLineSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="28" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a132c27f83af7a1be6d2856323209bdf8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::Item2Position</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>Item2Position</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="30" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a259029ba5bcbe6e256e3bb122b51879c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeViewItemLocator::Position2Item</definition>
+        <argsstring>(int position) const</argsstring>
+        <name>Position2Item</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="32" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a42a1cc3e1258579b3c306e85a69b3a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeViewItemLocator::SetItemWidth</definition>
+        <argsstring>(HTREEITEM hItem, int nWidth)</argsstring>
+        <name>SetItemWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="34" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a3567b604bd90ed64a1230dcb1d273540" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeViewItemLocator::SetItemHeight</definition>
+        <argsstring>(HTREEITEM hItem, int nHeight)</argsstring>
+        <name>SetItemHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="36" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1aba64e96a47dc27fc9bbb0fd477dd4bc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetItemWidth</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetItemWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="38" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a16992c0a79074271b0a3182fcd71efa5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetItemHeight</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetItemHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="40" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a45fddd897cb205142e7b50c056b7711c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeViewItemLocator::GetItemIndent</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetItemIndent</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="42" column="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2b4e76df39c7c78bec396c36a1ecb6f7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STreeViewItemLocator::IsItemExpanded</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>IsItemExpanded</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a916284c2fd866dd301fc0b0f52849890" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_UpdateBranchWidth</definition>
+        <argsstring>(HTREEITEM hItem, int nOldWidth, int nNewWidth)</argsstring>
+        <name>_UpdateBranchWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nOldWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nNewWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2a7e7147c496fd2efa4ea35d021fd911" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::_GetBranchWidth</definition>
+        <argsstring>(HTREEITEM hBranch) const</argsstring>
+        <name>_GetBranchWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a123ce77da19cab94d212fd15425e2943" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_SetBranchWidth</definition>
+        <argsstring>(HTREEITEM hBranch, int nWidth)</argsstring>
+        <name>_SetBranchWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="54" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ab73a0b291b62d7be2035283f5da9a74c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_SetItemWidth</definition>
+        <argsstring>(HTREEITEM hItem, int nWidth)</argsstring>
+        <name>_SetItemWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="56" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1acf9e6f3ba4bd4401503cbde2d5439e45" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::_GetBranchHeight</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>_GetBranchHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="59" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ac87b7e9a796eafaad1a8b6c74f6d6ef9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_SetBranchHeight</definition>
+        <argsstring>(HTREEITEM hItem, int nHeight)</argsstring>
+        <name>_SetBranchHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="61" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2c911da14810e932e26dd72a767f9e1b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_UpdateBranchHeight</definition>
+        <argsstring>(HTREEITEM hItem, int nDiff)</argsstring>
+        <name>_UpdateBranchHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDiff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="63" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a04675af049dcbf1c14b23ed50802b5aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_UpdateSiblingsOffset</definition>
+        <argsstring>(HTREEITEM hItem)</argsstring>
+        <name>_UpdateSiblingsOffset</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="66" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a9f2acb8ec287d359fef3277757cc6f13" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::_GetItemOffset</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>_GetItemOffset</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="68" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1aaa29a44e6e1d1231c28797b545ec4381" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_SetItemOffset</definition>
+        <argsstring>(HTREEITEM hItem, int nOffset)</argsstring>
+        <name>_SetItemOffset</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ab9d60a7d343b8498c8e5c570a8eb4440" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_SetItemHeight</definition>
+        <argsstring>(HTREEITEM hItem, int nHeight)</argsstring>
+        <name>_SetItemHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="72" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ac5ef809ec83cd344e4137d8cf62631bb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::_GetItemVisibleHeight</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>_GetItemVisibleHeight</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="75" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a68dd1daa9548cc37ebf5d564034956d0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STreeViewItemLocator::_GetItemVisibleWidth</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>_GetItemVisibleWidth</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="77" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1a7936cb9b76ba4fa0d9123d3191514b18" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>HTREEITEM</type>
+        <definition>HTREEITEM SOUI::STreeViewItemLocator::_Position2Item</definition>
+        <argsstring>(int position, HTREEITEM hParent, int nParentPosition) const</argsstring>
+        <name>_Position2Item</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nParentPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="79" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1abd1f88487cc29b96d07e63a625bcad5a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STreeViewItemLocator::_IsItemVisible</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>_IsItemVisible</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_view_item_locator_1ae02d10e92a2aa0a00c0e2641ac5b6895" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeViewItemLocator::_InitBranch</definition>
+        <argsstring>(HTREEITEM hItem)</argsstring>
+        <name>_InitBranch</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="83" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STreeViewItemLocator</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_view_item_locator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; ITreeViewItemLocator &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STreeViewItemLocator</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_view_item_locator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; ITreeViewItemLocator &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" line="12" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STreeView.h" bodystart="11" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1acf9e6f3ba4bd4401503cbde2d5439e45" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_GetBranchHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2a7e7147c496fd2efa4ea35d021fd911" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_GetBranchWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a9f2acb8ec287d359fef3277757cc6f13" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_GetItemOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ac5ef809ec83cd344e4137d8cf62631bb" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_GetItemVisibleHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a68dd1daa9548cc37ebf5d564034956d0" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_GetItemVisibleWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ae02d10e92a2aa0a00c0e2641ac5b6895" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_InitBranch</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1abd1f88487cc29b96d07e63a625bcad5a" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_IsItemVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a7936cb9b76ba4fa0d9123d3191514b18" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_Position2Item</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ac87b7e9a796eafaad1a8b6c74f6d6ef9" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_SetBranchHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a123ce77da19cab94d212fd15425e2943" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_SetBranchWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ab9d60a7d343b8498c8e5c570a8eb4440" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_SetItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1aaa29a44e6e1d1231c28797b545ec4381" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_SetItemOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ab73a0b291b62d7be2035283f5da9a74c" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_SetItemWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2c911da14810e932e26dd72a767f9e1b" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_UpdateBranchHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a916284c2fd866dd301fc0b0f52849890" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_UpdateBranchWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a04675af049dcbf1c14b23ed50802b5aa" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>_UpdateSiblingsOffset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a16992c0a79074271b0a3182fcd71efa5" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a45fddd897cb205142e7b50c056b7711c" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetItemIndent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1aba64e96a47dc27fc9bbb0fd477dd4bc3" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetItemWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a8272c816929ff166a8b823868aaf68f0" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetScrollLineSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a317cf336e6b12016c73224fa02ba4829" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetTotalHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ae60d0ea63c256a53cb0fd8254d8d653a" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>GetTotalWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a2b4e76df39c7c78bec396c36a1ecb6f7" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>IsItemExpanded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a132c27f83af7a1be6d2856323209bdf8" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>Item2Position</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a451f67cd359bf306b6f8c4e614e09bca" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>m_adapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a5e4ba0fd8500ee40db8332f168074d9b" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>m_nIndent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a7856b7428211af00f3aa51ef1f79757f" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>m_nLineHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a1d6d0af008cc6d73defb1d8120d9a906" prot="protected" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>m_szDef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1abdfc772ac7853ccd6cb6c5f0e26d80e2" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>OnBranchChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a727e17ae9605a8fbd9e449e5ad96e5d6" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>OnBranchExpandedChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a259029ba5bcbe6e256e3bb122b51879c" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>Position2Item</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ad8606cf8f373f3529d3f2eb81dcabba0" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>SetAdapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a3567b604bd90ed64a1230dcb1d273540" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>SetItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a42a1cc3e1258579b3c306e85a69b3a50" prot="public" virt="virtual"><scope>SOUI::STreeViewItemLocator</scope><name>SetItemWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1ad39b500f4d2e1e0174fde25219cc7e43" prot="public" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>STreeViewItemLocator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_view_item_locator_1a93ba29d7177c5743c48d91f762107c20" prot="public" virt="non-virtual"><scope>SOUI::STreeViewItemLocator</scope><name>~STreeViewItemLocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

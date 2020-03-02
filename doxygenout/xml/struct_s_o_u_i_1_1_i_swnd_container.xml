@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_swnd_container" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ISwndContainer</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handler" prot="public" virt="non-virtual">SOUI::ITimelineHandler</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr" prot="public" virt="non-virtual">SOUI::ITimelineHandlersMgr</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_swnd_container_impl" prot="public" virt="non-virtual">SOUI::SwndContainerImpl</derivedcompoundref>
+    <includes refid="_s_wnd_container-i_8h" local="no">SWndContainer-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a49c9cd71c9b2fff475857565a2355d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::RegisterDragDrop</definition>
+        <argsstring>(SWND swnd, IDropTarget *pDropTarget)=0</argsstring>
+        <name>RegisterDragDrop</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a4d1494b7c32ff7289318ed7f13c02e7a">RegisterDragDrop</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <param>
+          <type>IDropTarget *</type>
+          <declname>pDropTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="41" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a5624fd1244cbdc0e0055aefc5a794165" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::RevokeDragDrop</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>RevokeDragDrop</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a6dbd5e8af0c11f512ff8a149ebbd001d">RevokeDragDrop</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="43" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a0ed39c5cc26378e05899b4d0b12b9639" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::OnFireEvent</definition>
+        <argsstring>(EventArgs &amp;evt)=0</argsstring>
+        <name>OnFireEvent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ae249c7a9d0fca4185c9bf6632a78f88d">OnFireEvent</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a1b70d5c5ceb6f2ef600ca246caa2963b">OnFireEvent</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="45" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a009ee69e0a0d834bd945cbcbde694bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HWND</type>
+        <definition>virtual HWND SOUI::ISwndContainer::GetHostHwnd</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetHostHwnd</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a9a76a11c837d0c0cd807d008993d8ecb">GetHostHwnd</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1afcff8a14418a422b0379431d2db334fa">GetHostHwnd</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a096804a998134de8981e3e35b9cd0cbf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const SStringW &amp;</type>
+        <definition>virtual const SStringW&amp; SOUI::ISwndContainer::GetTranslatorContext</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetTranslatorContext</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ab3f8e5c9d595cd44a521e3b9f4fc2ab5">GetTranslatorContext</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_menu_ex_1acf80ed653128ee3c3bf2e6c32b2a0770">GetTranslatorContext</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a5c37666eea9033d3bf9a581facf2dc8e">GetTranslatorContext</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="49" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a8aaf65349d724e775bf85f776c389ca5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::IsTranslucent</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsTranslucent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a67520867438526f3ad00df7806e42c81">IsTranslucent</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a8c1798ccf4b0664d2ef4c5a48c3714f5">IsTranslucent</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="51" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1ac955b0b0443da06fd72153c8e29f5e61" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::IsSendWheel2Hover</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsSendWheel2Hover</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ae3e7c4a82e12c8222d25f01e521afd2d">IsSendWheel2Hover</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a5f19eba66b3e3e222bfc42cfaedde801">IsSendWheel2Hover</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="53" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1af45b839277f3fe7b5307743efd049d57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>CRect</type>
+        <definition>virtual CRect SOUI::ISwndContainer::GetContainerRect</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetContainerRect</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ad9d0382e01bfe5529c9562c029e2fc96">GetContainerRect</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1acae1f2dbda79233999c7b4427b099018">GetContainerRect</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="55" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a32f5059178b200797957beb7ab79a37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+        <definition>virtual IRenderTarget* SOUI::ISwndContainer::OnGetRenderTarget</definition>
+        <argsstring>(const CRect &amp;rc, GrtFlag gdcFlags)=0</argsstring>
+        <name>OnGetRenderTarget</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ab5beecb607552d2f25e5d7554b5448b6">OnGetRenderTarget</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a54e4b1eced5ab9e09e36c694ec2418a7">OnGetRenderTarget</reimplementedby>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>GrtFlag</type>
+          <declname>gdcFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="57" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1abbf6b2734f811a22d6958b319769bd56" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::OnReleaseRenderTarget</definition>
+        <argsstring>(IRenderTarget *pRT, const CRect &amp;rc, GrtFlag gdcFlags)=0</argsstring>
+        <name>OnReleaseRenderTarget</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ad6ba456a6c3dfba41b8d9687a23b6f06">OnReleaseRenderTarget</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a49f34568b7939f05552a91bd4d51e147">OnReleaseRenderTarget</reimplementedby>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>GrtFlag</type>
+          <declname>gdcFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="59" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a5d67a4b21fda9f796ed8f26ff9b1441e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::OnRedraw</definition>
+        <argsstring>(const CRect &amp;rc)=0</argsstring>
+        <name>OnRedraw</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ac1b9923cfbd409304d49621c0ad5f54b">OnRedraw</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a409c25b5200eeec9ced908e951c44aab">OnRedraw</reimplementedby>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="61" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a781de424ac8b4d3bbb344f318767984b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::ISwndContainer::OnGetSwndCapture</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnGetSwndCapture</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a9aee16b6a773846a6c5f6d0f3afa7251">OnGetSwndCapture</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="63" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a2bdf300a3370483a4f94599a494df412" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::OnReleaseSwndCapture</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnReleaseSwndCapture</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a17b3c11cd77f9854ee71983414ea9709">OnReleaseSwndCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ac77050b7fcba2cb7c628604cf7c24012">OnReleaseSwndCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_drop_down_wnd_1af94d44d5a61436c84d37469f19c59209">OnReleaseSwndCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a00ab9ce4c83384ae33e4f48c418187e0">OnReleaseSwndCapture</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="65" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a98b5da7308f0ae310d478c83b9369fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::ISwndContainer::OnSetSwndCapture</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>OnSetSwndCapture</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a50d1110ddada0cec45ba5c75d11cc79f">OnSetSwndCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ad3c0818420583dd8967b70b6576000f0">OnSetSwndCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a8aa518e16c7b595e54edeb1e3c664bb6">OnSetSwndCapture</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="67" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a44a139be9f9720b738d0f89b40a3f8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::OnSetSwndFocus</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>OnSetSwndFocus</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a70e984d774e3b1787aea0959847e0d04">OnSetSwndFocus</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="69" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1afbc48f673880003b64f857a5b7c7adbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::ISwndContainer::GetHover</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetHover</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1af1877762cbd74309e3e17604196ff94c">GetHover</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="71" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a997f643bd5cdef0e1f08940421191b23" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::ISwndContainer::GetFocus</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetFocus</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1ac769f40a493edddd8601a635837143c4">GetFocus</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="73" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a00e11b2ec8f1bb4d124b0249bf432b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::UpdateWindow</definition>
+        <argsstring>()=0</argsstring>
+        <name>UpdateWindow</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ae51f6c386efae4cd3468c18b318eb8bd">UpdateWindow</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a1dc60680086c0bab8b0d4a5afb9317a4">UpdateWindow</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="75" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a4cc4d5610ae839e8feb30634c50b8ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::UpdateTooltip</definition>
+        <argsstring>()=0</argsstring>
+        <name>UpdateTooltip</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1ad77801bbf91a5a4bb43fa7892a34b8b4">UpdateTooltip</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a02e647947e5f4866a9b5c6b50d35b762">UpdateTooltip</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a538420957af5c8b5ff286113299f77bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::FrameToHost</definition>
+        <argsstring>(RECT &amp;rc) const =0</argsstring>
+        <name>FrameToHost</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1aa20afd521233e92fd9d610b346c73041">FrameToHost</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a799ca4d27a3ced0183d65b025b344c7d">FrameToHost</reimplementedby>
+        <param>
+          <type>RECT &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="80" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a465a383b96fcc3e790f6e0beafbe2814" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_mgr" kindref="compound">IAcceleratorMgr</ref> *</type>
+        <definition>virtual IAcceleratorMgr* SOUI::ISwndContainer::GetAcceleratorMgr</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetAcceleratorMgr</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a810a975d429a1390d692282d36954e0d">GetAcceleratorMgr</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="82" column="33"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a74993adb56355e619a945d8647b2e12b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::RegisterTrackMouseEvent</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>RegisterTrackMouseEvent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a0e723785305dbd4cea320d26fdedbb5e">RegisterTrackMouseEvent</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="84" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a33bfcb55342baade3d1b353f5fe1e84f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ISwndContainer::UnregisterTrackMouseEvent</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>UnregisterTrackMouseEvent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1acfc42fd96d581d8b098e2e53fe65372e">UnregisterTrackMouseEvent</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="86" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a9f7763f3aee039d4235191edd175f10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+        <definition>virtual SMessageLoop* SOUI::ISwndContainer::GetMsgLoop</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetMsgLoop</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_dialog_1a8c4c2a1a934647fa6478f410d6b3e478">GetMsgLoop</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a40bf6a1d86b4d3cb3a55e57ad5b55a18">GetMsgLoop</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_drop_down_wnd_1af1991a876e2c71afd1ee4ae8dd28486c">GetMsgLoop</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a4043726e77bbc9716254834862593a81">GetMsgLoop</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="88" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a07880b6f509fd9ad4f730421370ebd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::MarkWndTreeZorderDirty</definition>
+        <argsstring>()=0</argsstring>
+        <name>MarkWndTreeZorderDirty</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a5622b8eb893b8d8d443ad7b4649211cc">MarkWndTreeZorderDirty</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="91" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1ac99d4b26cc41f9eaabe8d3bf7a4cb5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::BuildWndTreeZorder</definition>
+        <argsstring>()=0</argsstring>
+        <name>BuildWndTreeZorder</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a4967c01e3b8d3487ba6b9488b2e9d316">BuildWndTreeZorder</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="94" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a8dda0ca61deee69fb3126de62fec6ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_script_module" kindref="compound">IScriptModule</ref> *</type>
+        <definition>virtual IScriptModule* SOUI::ISwndContainer::GetScriptModule</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetScriptModule</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1af5380d3f120124525f8b722a91b96c59">GetScriptModule</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a3e5956845b970324b972f60228a0cbb0">GetScriptModule</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="96" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a7cbfe6656ce4e913ae4bc8f3a738dc84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ISwndContainer::GetScale</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetScale</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a96f24b4556e5caee63574b4baa61d343">GetScale</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_menu_ex_1a2c7e8bb8fc7c814d7d32197bc9709e52">GetScale</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1ae5b1ff51ec667d89974ccc380f3815ab">GetScale</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="98" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1ac7779b03b481ff2a79bbce48fa548bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_caret" kindref="compound">ICaret</ref> *</type>
+        <definition>virtual ICaret* SOUI::ISwndContainer::GetCaret</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetCaret</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1acdc68933c4e9ae69f422bf2221978dcf">GetCaret</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="100" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1a8f97e1dfa43c7f33ba155bcedfd7a00e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::OnCavasInvalidate</definition>
+        <argsstring>(SWND swnd)=0</argsstring>
+        <name>OnCavasInvalidate</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1aebf147ad97cf894a5c0b0ace22eb1d44">OnCavasInvalidate</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1ab7d47de5564e8dad1be536eda5d91ec8">OnCavasInvalidate</reimplementedby>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="102" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_swnd_container_1aabec135f771ce3218f99f5a07a28b342" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISwndContainer::EnableIME</definition>
+        <argsstring>(BOOL bEnable)=0</argsstring>
+        <name>EnableIME</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_item_panel_1a8131eb8897585b4718fb88421f0ba695">EnableIME</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1ad13f23ad9c97a35cb73968d4d7808517">EnableIME</reimplementedby>
+        <param>
+          <type>BOOL</type>
+          <declname>bEnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="104" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SOUI窗口容器接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="1">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="11">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="1">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" line="40" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SWndContainer-i.h" bodystart="39" bodyend="105"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1ac99d4b26cc41f9eaabe8d3bf7a4cb5cc" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>BuildWndTreeZorder</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1aabec135f771ce3218f99f5a07a28b342" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>EnableIME</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a538420957af5c8b5ff286113299f77bb" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>FrameToHost</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a465a383b96fcc3e790f6e0beafbe2814" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetAcceleratorMgr</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1ac7779b03b481ff2a79bbce48fa548bce" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetCaret</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1af45b839277f3fe7b5307743efd049d57" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetContainerRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a997f643bd5cdef0e1f08940421191b23" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetFocus</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a009ee69e0a0d834bd945cbcbde694bea" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetHostHwnd</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1afbc48f673880003b64f857a5b7c7adbd" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetHover</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a9f7763f3aee039d4235191edd175f10a" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetMsgLoop</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a7cbfe6656ce4e913ae4bc8f3a738dc84" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetScale</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a8dda0ca61deee69fb3126de62fec6ba8" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetScriptModule</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a096804a998134de8981e3e35b9cd0cbf" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>GetTranslatorContext</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1ac955b0b0443da06fd72153c8e29f5e61" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>IsSendWheel2Hover</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a8aaf65349d724e775bf85f776c389ca5" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>IsTranslucent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a07880b6f509fd9ad4f730421370ebd9e" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>MarkWndTreeZorderDirty</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a8f97e1dfa43c7f33ba155bcedfd7a00e" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnCavasInvalidate</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a0ed39c5cc26378e05899b4d0b12b9639" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnFireEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a32f5059178b200797957beb7ab79a37e" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnGetRenderTarget</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a781de424ac8b4d3bbb344f318767984b" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnGetSwndCapture</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnNextFrame</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a5d67a4b21fda9f796ed8f26ff9b1441e" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnRedraw</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1abbf6b2734f811a22d6958b319769bd56" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnReleaseRenderTarget</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a2bdf300a3370483a4f94599a494df412" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnReleaseSwndCapture</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a98b5da7308f0ae310d478c83b9369fbe" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnSetSwndCapture</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a44a139be9f9720b738d0f89b40a3f8fc" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>OnSetSwndFocus</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a49c9cd71c9b2fff475857565a2355d70" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>RegisterDragDrop</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1aa420ff25f0a4a0b2e46f937aad9fc9c3" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>RegisterTimelineHandler</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a74993adb56355e619a945d8647b2e12b" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>RegisterTrackMouseEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a5624fd1244cbdc0e0055aefc5a794165" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>RevokeDragDrop</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1a42e2b9e6be10200ba39438a806d16ceb" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>UnregisterTimelineHandler</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a33bfcb55342baade3d1b353f5fe1e84f" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>UnregisterTrackMouseEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a4cc4d5610ae839e8feb30634c50b8ce3" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>UpdateTooltip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_swnd_container_1a00e11b2ec8f1bb4d124b0249bf432b39" prot="public" virt="pure-virtual"><scope>SOUI::ISwndContainer</scope><name>UpdateWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_soui_layout" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SouiLayout</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</basecompoundref>
+    <innerclass refid="struct_s_o_u_i_1_1_soui_layout_1_1_wnd_pos" prot="protected">SOUI::SouiLayout::WndPos</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1aa46b55497df52fb928796baedce187f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SouiLayout::SouiLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>SouiLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1ad6a92eb3d33fe79538dce4b2688b757c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SouiLayout::~SouiLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SouiLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a7cf1cefeea9c5e6dbbac361c2008d678" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SouiLayout::IsParamAcceptable</definition>
+        <argsstring>(ILayoutParam *pLayoutParam) const</argsstring>
+        <name>IsParamAcceptable</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+          <declname>pLayoutParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="80" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a84bce7db69d9103e7f371dda432fd5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SouiLayout::LayoutChildren</definition>
+        <argsstring>(SWindow *pParent)</argsstring>
+        <name>LayoutChildren</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="82" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a70cab9cf6e37b101fe8ccd3223b4b7a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::SouiLayout::CreateLayoutParam</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateLayoutParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="84" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a2d54db91c2091ca149823508f2698ae4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>CSize</type>
+        <definition>virtual CSize SOUI::SouiLayout::MeasureChildren</definition>
+        <argsstring>(const SWindow *pParent, int nWidth, int nHeight) const</argsstring>
+        <name>MeasureChildren</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="86" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1ac6de9d1f384e3fed5307cf7222b5310a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SouiLayout::CalcPositionEx</definition>
+        <argsstring>(SList&lt; WndPos &gt; *pListChildren, int nWidth, int nHeight) const</argsstring>
+        <name>CalcPositionEx</name>
+        <param>
+          <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_soui_layout_1_1_wnd_pos" kindref="compound">WndPos</ref> &gt; *</type>
+          <declname>pListChildren</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="95" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1aff8d83aecc0225bea6273980823304cc" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::CalcPostion</definition>
+        <argsstring>(SList&lt; WndPos &gt; *pListChildren, int nWidth, int nHeight) const</argsstring>
+        <name>CalcPostion</name>
+        <param>
+          <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_soui_layout_1_1_wnd_pos" kindref="compound">WndPos</ref> &gt; *</type>
+          <declname>pListChildren</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="96" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1ae5ae7fea066bac65ec274253b3180bb7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::PositionItem2Value</definition>
+        <argsstring>(SList&lt; WndPos &gt; *pLstChilds, SPOSITION position, const POS_INFO &amp;pos, int nMax, BOOL bX, int nScale) const</argsstring>
+        <name>PositionItem2Value</name>
+        <param>
+          <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_soui_layout_1_1_wnd_pos" kindref="compound">WndPos</ref> &gt; *</type>
+          <declname>pLstChilds</declname>
+        </param>
+        <param>
+          <type>SPOSITION</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o" kindref="compound">POS_INFO</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMax</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="98" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a6870475032ae72b4edb2765590f3ece1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::CalcChildLeft</definition>
+        <argsstring>(SWindow *pWindow, SouiLayoutParam *pParam)</argsstring>
+        <name>CalcChildLeft</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_soui_layout_param" kindref="compound">SouiLayoutParam</ref> *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="100" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a0a2e692e6272cfceb9cef097a889c1fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::CalcChildRight</definition>
+        <argsstring>(SWindow *pWindow, SouiLayoutParam *pParam)</argsstring>
+        <name>CalcChildRight</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_soui_layout_param" kindref="compound">SouiLayoutParam</ref> *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="101" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a51ff61d17b54b5a7cea080e02651ab66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::CalcChildTop</definition>
+        <argsstring>(SWindow *pWindow, SouiLayoutParam *pParam)</argsstring>
+        <name>CalcChildTop</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_soui_layout_param" kindref="compound">SouiLayoutParam</ref> *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="102" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a9740590496276838c647341e0d55b3e8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SouiLayout::CalcChildBottom</definition>
+        <argsstring>(SWindow *pWindow, SouiLayoutParam *pParam)</argsstring>
+        <name>CalcChildBottom</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_soui_layout_param" kindref="compound">SouiLayoutParam</ref> *</type>
+          <declname>pParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="103" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1a8c51d5e984d6bc13a0c9d094db648ceb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SouiLayout::IsWaitingPos</definition>
+        <argsstring>(int nPos) const</argsstring>
+        <name>IsWaitingPos</name>
+        <param>
+          <type>int</type>
+          <declname>nPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="106" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1aa79db6f82f759effa63c3a396e8f0c68" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SouiLayout::GetRefSibling</definition>
+        <argsstring>(SWindow *pCurWnd, int uCode)</argsstring>
+        <name>GetRefSibling</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pCurWnd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>uCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_soui_layout_1af1bab711d19fc97c45b0a46f996c4018" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SouiLayout::GetWindowLayoutRect</definition>
+        <argsstring>(SWindow *pWindow)</argsstring>
+        <name>GetWindowLayoutRect</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWindow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="108" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SouiLayout</label>
+        <link refid="class_s_o_u_i_1_1_soui_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SouiLayout</label>
+        <link refid="class_s_o_u_i_1_1_soui_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" line="73" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayout.h" bodystart="72" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a9740590496276838c647341e0d55b3e8" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcChildBottom</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a6870475032ae72b4edb2765590f3ece1" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcChildLeft</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a0a2e692e6272cfceb9cef097a889c1fc" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcChildRight</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a51ff61d17b54b5a7cea080e02651ab66" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcChildTop</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1ac6de9d1f384e3fed5307cf7222b5310a" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcPositionEx</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1aff8d83aecc0225bea6273980823304cc" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>CalcPostion</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a70cab9cf6e37b101fe8ccd3223b4b7a3" prot="public" virt="virtual"><scope>SOUI::SouiLayout</scope><name>CreateLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1aa79db6f82f759effa63c3a396e8f0c68" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>GetRefSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1af1bab711d19fc97c45b0a46f996c4018" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>GetWindowLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a7cf1cefeea9c5e6dbbac361c2008d678" prot="public" virt="virtual"><scope>SOUI::SouiLayout</scope><name>IsParamAcceptable</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a8c51d5e984d6bc13a0c9d094db648ceb" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>IsWaitingPos</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a84bce7db69d9103e7f371dda432fd5d7" prot="public" virt="virtual"><scope>SOUI::SouiLayout</scope><name>LayoutChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1a2d54db91c2091ca149823508f2698ae4" prot="public" virt="virtual"><scope>SOUI::SouiLayout</scope><name>MeasureChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1ae5ae7fea066bac65ec274253b3180bb7" prot="protected" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>PositionItem2Value</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1aa46b55497df52fb928796baedce187f9" prot="public" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>SouiLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_soui_layout_1ad6a92eb3d33fe79538dce4b2688b757c" prot="public" virt="non-virtual"><scope>SOUI::SouiLayout</scope><name>~SouiLayout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

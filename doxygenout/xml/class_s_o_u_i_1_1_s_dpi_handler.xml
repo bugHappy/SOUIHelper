@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_dpi_handler" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SDpiHandler</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_handler_1a17d35602d580a793b6a95383056d22bc" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SDpiHandler&lt; T &gt;::IsDpiAware</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDpiAware</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="127" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="127" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_handler_1ab4f54089da1c412ef685d9f683e4656b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SDpiHandler&lt; T &gt;::OnDpiChanged</definition>
+        <argsstring>(WORD dpi, const RECT *desRect)</argsstring>
+        <name>OnDpiChanged</name>
+        <param>
+          <type>WORD</type>
+          <declname>dpi</declname>
+        </param>
+        <param>
+          <type>const RECT *</type>
+          <declname>desRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="130" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="130" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_handler_1a33c04105c4b06458ec470827c8edaed1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SDpiHandler&lt; T &gt;::HandleScaleChange</definition>
+        <argsstring>(WORD nScale, const RECT *desRect)</argsstring>
+        <name>HandleScaleChange</name>
+        <param>
+          <type>WORD</type>
+          <declname>nScale</declname>
+        </param>
+        <param>
+          <type>const RECT *</type>
+          <declname>desRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="141" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="141" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_handler_1a3b6c4869d6f8f2489acdbe246e114287" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SDpiHandler&lt; T &gt;::ScaleHost</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>ScaleHost</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="159" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="159" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_handler_1ad3a21add02744fde9b3fe54c3b48989b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SDpiHandler&lt; T &gt;::ProcessWindowMessage</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT &amp;lResult, DWORD dwMsgMapID=0)</argsstring>
+        <name>ProcessWindowMessage</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>LRESULT &amp;</type>
+          <declname>lResult</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwMsgMapID</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="176" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="176" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="125" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="124" bodyend="195"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_dpi_handler_1a33c04105c4b06458ec470827c8edaed1" prot="protected" virt="virtual"><scope>SOUI::SDpiHandler</scope><name>HandleScaleChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_handler_1a17d35602d580a793b6a95383056d22bc" prot="protected" virt="virtual"><scope>SOUI::SDpiHandler</scope><name>IsDpiAware</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_handler_1ab4f54089da1c412ef685d9f683e4656b" prot="protected" virt="non-virtual"><scope>SOUI::SDpiHandler</scope><name>OnDpiChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_handler_1ad3a21add02744fde9b3fe54c3b48989b" prot="public" virt="non-virtual"><scope>SOUI::SDpiHandler</scope><name>ProcessWindowMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_handler_1a3b6c4869d6f8f2489acdbe246e114287" prot="protected" virt="non-virtual"><scope>SOUI::SDpiHandler</scope><name>ScaleHost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

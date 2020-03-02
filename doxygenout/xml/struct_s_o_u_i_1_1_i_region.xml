@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_region" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IRegion</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_render_obj" prot="public" virt="non-virtual">SOUI::IRenderObj</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a0b10c1d798be188c5418daaca8f04d80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const OBJTYPE</type>
+        <definition>virtual const OBJTYPE SOUI::IRegion::ObjectType</definition>
+        <argsstring>() const</argsstring>
+        <name>ObjectType</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6">ObjectType</reimplements>
+        <briefdescription>
+<para>查询对象类型 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ObjectType <simplesect kind="return"><para>const UINT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="421" column="31" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="421" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a668f71c8f5e332232039e03181f17be2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::CombineRect</definition>
+        <argsstring>(LPCRECT lprect, int nCombineMode)=0</argsstring>
+        <name>CombineRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprect</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCombineMode</declname>
+        </param>
+        <briefdescription>
+<para>将一个矩形与this组合 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CombineRect <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprect <ndash/> 要组合的矩形 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nCombineMode <ndash/> 组合模式 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 组合模式同Win32 API CombineRect </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="434" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1aba3bc0c074d8cec8b81bf34f7f2f8dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::CombineRgn</definition>
+        <argsstring>(const IRegion *pRgnSrc, int nCombineMode)=0</argsstring>
+        <name>CombineRgn</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> *</type>
+          <declname>pRgnSrc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCombineMode</declname>
+        </param>
+        <briefdescription>
+<para>将一个矩形与this组合 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CombineRect <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> * pRgnSrc <ndash/> 要组合的Region </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nCombineMode <ndash/> 组合模式 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 组合模式同Win32 API CombineRgn </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="444" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1acac38dcc05edec1aefd6ba5c8a732d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::CombineRoundRect</definition>
+        <argsstring>(LPCRECT lprect, POINT ptConner, int nCombineMode)=0</argsstring>
+        <name>CombineRoundRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprect</declname>
+        </param>
+        <param>
+          <type>POINT</type>
+          <declname>ptConner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCombineMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="446" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1abf24c9d5ff0716cb99fb41655c5b9670" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::CombineEllipse</definition>
+        <argsstring>(LPCRECT lprect, int nCombineMode)=0</argsstring>
+        <name>CombineEllipse</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprect</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCombineMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="448" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a7a9c3297851d5e6a1280cfc85413b522" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::CombinePolygon</definition>
+        <argsstring>(const POINT *pts, int count, int nPolygonMode, int nCombineMode)=0</argsstring>
+        <name>CombinePolygon</name>
+        <param>
+          <type>const POINT *</type>
+          <declname>pts</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPolygonMode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCombineMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="450" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a89143189a2193c0bcaba60808e4c893f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRegion::PtInRegion</definition>
+        <argsstring>(POINT pt) const =0</argsstring>
+        <name>PtInRegion</name>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>检测一个点是否在region范围内 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PtInRegion <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>POINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pt <ndash/> 被检测的点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> true在region内 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="458" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a37f8bcbddf1befc25a9637ef8746b344" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRegion::RectInRegion</definition>
+        <argsstring>(LPCRECT lprect) const =0</argsstring>
+        <name>RectInRegion</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprect</declname>
+        </param>
+        <briefdescription>
+<para>检测一个矩形是否与this相交 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>RectInRegion <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprect <ndash/> 被检测的的矩形。 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> true在region内 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="467" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1aa41f4171b3203759b23881b6b16e634f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::GetRgnBox</definition>
+        <argsstring>(LPRECT lprect) const =0</argsstring>
+        <name>GetRgnBox</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>lprect</declname>
+        </param>
+        <briefdescription>
+<para>获得this的外包矩形 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRgnBox <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">LPRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprect <ndash/> 外包矩形 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void <linebreak/>
+ Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="476" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a45c8fe4ac0b1667f56f6e1b58d05e90f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRegion::IsEmpty</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+<para>查询region是否为空 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsEmpty <simplesect kind="return"><para>BOOL <ndash/> true为空 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="484" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1abb9a5e603123453022dfaaf049441455" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::Offset</definition>
+        <argsstring>(POINT pt)=0</argsstring>
+        <name>Offset</name>
+        <param>
+          <type>POINT</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>将this整体平移 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>POINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pt <ndash/> 平移在x,y方向的的位移 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="493" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1a80326a7ef0fd0b22a8b52f5d927aa99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRegion::Clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>清空region </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear <simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="501" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_region_1afdf62b69aa621acbf6d50488d708f2a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRegion::IsEqual</definition>
+        <argsstring>(const IRegion *testRgn) const =0</argsstring>
+        <name>IsEqual</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> *</type>
+          <declname>testRgn</declname>
+        </param>
+        <briefdescription>
+<para>Test whether two region is equal </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsEqual <simplesect kind="return"><para>bool, true-this and testRgn are equal Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="509" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Region对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IRegion</label>
+        <link refid="struct_s_o_u_i_1_1_i_region"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IRegion</label>
+        <link refid="struct_s_o_u_i_1_1_i_region"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="420" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="419" bodyend="510"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a80326a7ef0fd0b22a8b52f5d927aa99b" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>Clear</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1abf24c9d5ff0716cb99fb41655c5b9670" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>CombineEllipse</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a7a9c3297851d5e6a1280cfc85413b522" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>CombinePolygon</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a668f71c8f5e332232039e03181f17be2" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>CombineRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1aba3bc0c074d8cec8b81bf34f7f2f8dbd" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>CombineRgn</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1acac38dcc05edec1aefd6ba5c8a732d5e" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>CombineRoundRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1aa41f4171b3203759b23881b6b16e634f" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>GetRgnBox</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a45c8fe4ac0b1667f56f6e1b58d05e90f" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>IsEmpty</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1afdf62b69aa621acbf6d50488d708f2a1" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>IsEqual</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a0b10c1d798be188c5418daaca8f04d80" prot="public" virt="virtual"><scope>SOUI::IRegion</scope><name>ObjectType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1abb9a5e603123453022dfaaf049441455" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>Offset</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a89143189a2193c0bcaba60808e4c893f" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>PtInRegion</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_region_1a37f8bcbddf1befc25a9637ef8746b344" prot="public" virt="pure-virtual"><scope>SOUI::IRegion</scope><name>RectInRegion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

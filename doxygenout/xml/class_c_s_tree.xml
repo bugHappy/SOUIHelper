@@ -1,0 +1,994 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_c_s_tree" kind="class" language="C++" prot="public">
+    <compoundname>CSTree</compoundname>
+    <innerclass refid="struct_c_s_tree_1_1___s_t_r_e_e_l_i_n_k" prot="private">CSTree::_STREELINK</innerclass>
+    <innerclass refid="struct_c_s_tree_1_1___s_t_r_e_e_n_o_d_e" prot="private">CSTree::_STREENODE</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_c_s_tree_1ae4295a5b158981674acb9ac7f61ddfe5" prot="private" static="no">
+        <type>struct CSTree::_STREENODE</type>
+        <definition>typedef struct CSTree::_STREENODE CSTree&lt; T &gt;::STREENODE</definition>
+        <argsstring></argsstring>
+        <name>STREENODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_s_tree_1afd81aa373ca92d7610452b7ca74112d9" prot="private" static="no">
+        <type>struct CSTree::_STREENODE *</type>
+        <definition>typedef struct CSTree::_STREENODE* CSTree&lt; T &gt;::HSTREENODE</definition>
+        <argsstring></argsstring>
+        <name>HSTREENODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="62" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_s_tree_1a6e599dbb92b63bc3b3b0e83baba3de6a" prot="private" static="no">
+        <type>struct CSTree::_STREELINK</type>
+        <definition>typedef struct CSTree::_STREELINK CSTree&lt; T &gt;::STREELINK</definition>
+        <argsstring></argsstring>
+        <name>STREELINK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_s_tree_1a2d4b89ebe5888718d52739376fad10e4" prot="private" static="no">
+        <type>struct CSTree::_STREELINK *</type>
+        <definition>typedef struct CSTree::_STREELINK* CSTree&lt; T &gt;::PSTREELINK</definition>
+        <argsstring></argsstring>
+        <name>PSTREELINK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="76" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_s_tree_1a45eb05b753a498105f328adc3db56aaa" prot="private" static="no">
+        <type>BOOL(*</type>
+        <definition>typedef BOOL(* CSTree&lt; T &gt;::CBTRAVERSING) (T *, LPARAM)</definition>
+        <argsstring>)(T *, LPARAM)</argsstring>
+        <name>CBTRAVERSING</name>
+        <briefdescription>
+<para>下拉窗口鼠标左键按下事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>回调函数 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*:当前遍历到的结点的数据 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM:回调时使用的参数</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>FALSE－继续，TRUE－中断遍历</para>
+</simplesect>
+Describe 遍历一个树结点的回调函数原型， </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="87" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_s_tree_1adab63ab8525d202fa92a62a3a3eee13f" prot="protected" static="no" mutable="no">
+        <type>HSTREENODE</type>
+        <definition>HSTREENODE CSTree&lt; T &gt;::m_hRootFirst</definition>
+        <argsstring></argsstring>
+        <name>m_hRootFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>第一个根节点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="686" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_s_tree_1ad42af28eff51ca163aa94124c7be6424" prot="protected" static="no" mutable="no">
+        <type>HSTREENODE</type>
+        <definition>HSTREENODE CSTree&lt; T &gt;::m_hRootLast</definition>
+        <argsstring></argsstring>
+        <name>m_hRootLast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>最后一个根节点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="687" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_s_tree_1aa3c3e6b27b7a58e0bbf56d1fadde6899" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CSTree&lt; T &gt;::CSTree</definition>
+        <argsstring>()</argsstring>
+        <name>CSTree</name>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1aa3c3e6b27b7a58e0bbf56d1fadde6899" kindref="member">CSTree::CSTree</ref> Describe 构造函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="96" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="96" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a6fc4ff28759df4a496d3912601a539de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual CSTree&lt; T &gt;::~CSTree</definition>
+        <argsstring>()</argsstring>
+        <name>~CSTree</name>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a6fc4ff28759df4a496d3912601a539de" kindref="member">CSTree::~CSTree</ref> Describe 析构函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="108" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a7869d961d7681e0087526d28a8ff50d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSTree&lt; T &gt;::DeleteAllItems</definition>
+        <argsstring>()</argsstring>
+        <name>DeleteAllItems</name>
+        <briefdescription>
+<para>删除所有节点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a7869d961d7681e0087526d28a8ff50d9" kindref="member">CSTree::DeleteAllItems</ref> Describe 删除所有节点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="116" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="116" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a3e9a32d94803a4a5d677570a933b4f35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::GetChildItem</definition>
+        <argsstring>(HSTREEITEM hItem, BOOL bFirst=TRUE) const</argsstring>
+        <name>GetChildItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bFirst</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+<para>获取第一个子结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a3e9a32d94803a4a5d677570a933b4f35" kindref="member">CSTree::GetChildItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bFirst <ndash/> 是否第一个节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 获取第一个子结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="216" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="216" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a7349baa8928ee87d0781ee2f13085c4d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CSTree&lt; T &gt;::GetChildrenCount</definition>
+        <argsstring>(HSTREEITEM hItem) const</argsstring>
+        <name>GetChildrenCount</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取子结点数量 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a7349baa8928ee87d0781ee2f13085c4d" kindref="member">CSTree::GetChildrenCount</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取子结点数量 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="244" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="244" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a72a25f4bb5d0817eae1e1412eca43411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CSTree&lt; T &gt;::DeleteItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>DeleteItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>删除一个节点，可以被派生类重载 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a72a25f4bb5d0817eae1e1412eca43411" kindref="member">CSTree::DeleteItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 删除一个节点，可以被派生类重载 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="263" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="263" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a9e9e32c065c123abdc9ac74eaeab8e07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL CSTree&lt; T &gt;::DeleteItemEx</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>DeleteItemEx</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>删除一个结点分枝，如果该结点的父结点没有其它子节点则一起删除 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a9e9e32c065c123abdc9ac74eaeab8e07" kindref="member">CSTree::DeleteItemEx</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 删除一个结点分枝，如果该结点的父结点没有其它子节点则一起删除 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="300" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="300" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1ab97b3f098b701ae4c21e4d5301662035" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::InsertItem</definition>
+        <argsstring>(const T &amp;data, HSTREEITEM hParent=STVI_ROOT, HSTREEITEM hInsertAfter=STVI_LAST)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hParent</declname>
+          <defval>STVI_ROOT</defval>
+        </param>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hInsertAfter</declname>
+          <defval>STVI_LAST</defval>
+        </param>
+        <briefdescription>
+<para>插入一个新结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1ab97b3f098b701ae4c21e4d5301662035" kindref="member">CSTree::InsertItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>T &amp;data <ndash/> 结点数据 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hParent <ndash/> 新结点的父结点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hInsertAfter <ndash/> 新结点的前一个兄弟结点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM 新结点的指针</para>
+</simplesect>
+Describe 获取结点中保存的数据 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="367" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="367" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a440a2e9c64bbe12db07e60ffde440c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::TraversingRecursion</definition>
+        <argsstring>(HSTREEITEM hItem, CBTRAVERSING funTraversing, LPARAM lParam)</argsstring>
+        <name>TraversingRecursion</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>CBTRAVERSING</type>
+          <declname>funTraversing</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>采用递归方式遍历一个树结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a440a2e9c64bbe12db07e60ffde440c9b" kindref="member">CSTree::TraversingRecursion</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 起始结点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CBTRAVERSING</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>funTraversing <ndash/> 执行实际操作的回调函数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lParam <ndash/> 回调时使用的参数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 采用递归方式遍历一个树结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="447" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="447" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a7a504c1c6ae8a2e7e29bc913bf7ab25d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::TraversingSequence</definition>
+        <argsstring>(HSTREEITEM hItem, CBTRAVERSING funTraversing, LPARAM lParam)</argsstring>
+        <name>TraversingSequence</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>CBTRAVERSING</type>
+          <declname>funTraversing</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>按顺序方式从指定结点开始查找后面的结点，包括自己的子节点及自己向下的兄弟结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a7a504c1c6ae8a2e7e29bc913bf7ab25d" kindref="member">CSTree::TraversingSequence</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 起始结点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CBTRAVERSING</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>funTraversing <ndash/> 执行实际操作的回调函数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPARAM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lParam <ndash/> 回调时使用的参数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 按顺序方式从指定结点开始查找后面的结点，包括自己的子节点及自己向下的兄弟结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="481" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="481" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1afb18b90e16b36cea50d1d0cc3e60be67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::GetRootItem</definition>
+        <argsstring>(BOOL bFirst=TRUE)</argsstring>
+        <name>GetRootItem</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bFirst</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+<para>获取根节点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1ad2feb34583dc60f376e573b6abb5be92" kindref="member">CSTree::GetRootItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bFirst <ndash/> 是否从根节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 获取根节点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="505" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="505" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1af214da1e6eeeae7e1fef1ae1b2ee3ce8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CSTree&lt; T &gt;::GetDesendants</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetDesendants</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取结点的子孙结点数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1af214da1e6eeeae7e1fef1ae1b2ee3ce8" kindref="member">CSTree::GetDesendants</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 起始结点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取结点的子孙结点数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="517" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="517" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a65df9d188381bf364aa2f49cb365f5e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::GetNextItem</definition>
+        <argsstring>(HSTREEITEM hItem) const</argsstring>
+        <name>GetNextItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取当前结点的下一个结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a65df9d188381bf364aa2f49cb365f5e4" kindref="member">CSTree::GetNextItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 当前结点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM 当前结点的下一个结点</para>
+</simplesect>
+Describe 获取当前结点的下一个结点 如果当前结点有子结点，则返回自己的第一个子结点， 否则如果有向下的兄弟结点，则返回自己向下兄弟结点、 否则搜索自己的父结点的向下兄弟结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="540" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="540" bodyend="554"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a74ef24147f2cc66b129803af490db442" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM CSTree&lt; T &gt;::GetNextItem</definition>
+        <argsstring>(HSTREEITEM hItem, int &amp;nLevel) const</argsstring>
+        <name>GetNextItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nLevel</declname>
+        </param>
+        <briefdescription>
+<para>获取当前结点的下一个结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a65df9d188381bf364aa2f49cb365f5e4" kindref="member">CSTree::GetNextItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 当前结点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;nLevel <ndash/> 当前结点(hItem)与目标结点(return)的层次关系, 1-父子关系，0－兄弟关系，-n－子-&gt;父的兄弟 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM 当前结点的下一个结点</para>
+</simplesect>
+Describe 获取当前结点的下一个结点 如果当前结点有子结点，则返回自己的第一个子结点， 否则如果有向下的兄弟结点，则返回自己向下兄弟结点、 否则搜索自己的父结点的向下兄弟结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="569" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="569" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1ae4cd742f8403cae6ed512ac45fbdb91a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSTree&lt; T &gt;::SortChildren</definition>
+        <argsstring>(HSTREEITEM hItem, int(__cdecl *funSort)(void *, const void *, const void *), void *pCtx)</argsstring>
+        <name>SortChildren</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>int(__cdecl *funSort)(void *, const void *, const void *)</type>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pCtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="595" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="595" bodyend="650"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_c_s_tree_1a8999a40f56c49fc705a96d8cf13452a0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>static HSTREEITEM CSTree&lt; T &gt;::GetNextSiblingItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetNextSiblingItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取下一个兄弟 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a8999a40f56c49fc705a96d8cf13452a0" kindref="member">CSTree::GetNextSiblingItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 获取下一个兄弟 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="133" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="133" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1acb4c7dbc8a1add87a4fd95124f936e14" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>static HSTREEITEM CSTree&lt; T &gt;::GetPrevSiblingItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetPrevSiblingItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取上一个兄弟 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1acb4c7dbc8a1add87a4fd95124f936e14" kindref="member">CSTree::GetPrevSiblingItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 获取上一个兄弟 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="147" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="147" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a4c52f1c2fda9e1dc024eb84e054be060" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>static HSTREEITEM CSTree&lt; T &gt;::GetParentItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetParentItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取父结点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a4c52f1c2fda9e1dc024eb84e054be060" kindref="member">CSTree::GetParentItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HSTREEITEM</para>
+</simplesect>
+Describe 获取父结点 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="162" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="162" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a752f9f2643fa3d980600d5e60ce808e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int CSTree&lt; T &gt;::GetItemLevel</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetItemLevel</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取结点层数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a752f9f2643fa3d980600d5e60ce808e3" kindref="member">CSTree::GetItemLevel</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取结点层数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="177" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="177" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1ad2feb34583dc60f376e573b6abb5be92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>static HSTREEITEM CSTree&lt; T &gt;::GetRootItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetRootItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取指定节点的根节点 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRootItem <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 当前节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HSTREEITEM 根节点</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="197" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="197" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1a15dd0d6b33bdfe3ed486c4e10310a183" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T CSTree&lt; T &gt;::GetItem</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetItem</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取结点中保存的数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a15dd0d6b33bdfe3ed486c4e10310a183" kindref="member">CSTree::GetItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回T</para>
+</simplesect>
+Describe 获取结点中保存的数据 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="320" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="320" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1ac4203d2dce433ac72ca9324f56ece6dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>static T&amp; CSTree&lt; T &gt;::GetItemRef</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetItemRef</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取结点中保存的数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a15dd0d6b33bdfe3ed486c4e10310a183" kindref="member">CSTree::GetItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回T</para>
+</simplesect>
+Describe 获取结点中保存的数据 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="335" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="335" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_s_tree_1ad6708d1689ef8c8756c384f55c5e1b38" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>static T* CSTree&lt; T &gt;::GetItemPt</definition>
+        <argsstring>(HSTREEITEM hItem)</argsstring>
+        <name>GetItemPt</name>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+<para>获取结点中保存的数据 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1ad6708d1689ef8c8756c384f55c5e1b38" kindref="member">CSTree::GetItemPt</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREEITEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hItem <ndash/> 节点 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回T*</para>
+</simplesect>
+Describe 获取结点中保存的数据 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="350" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="350" bodyend="355"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_s_tree_1af4a3c199a1010d9db1e6e5a320c4f1ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CSTree&lt; T &gt;::FreeNode</definition>
+        <argsstring>(HSTREENODE hsNode)</argsstring>
+        <name>FreeNode</name>
+        <param>
+          <type>HSTREENODE</type>
+          <declname>hsNode</declname>
+        </param>
+        <briefdescription>
+<para>采用后序遍历的方式释放结点占用的空间 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CSTree::FreeNode <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HSTREENODE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hsNode <ndash/> 当前结点</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 采用后序遍历的方式释放结点占用的空间 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="659" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="659" bodyend="674"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_c_s_tree_1a1e55f71a293a86935793b29cbe7edde2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CSTree&lt; T &gt;::OnNodeFree</definition>
+        <argsstring>(T &amp;data)</argsstring>
+        <name>OnNodeFree</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>在派生类中实现数据的释放操作 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_s_tree_1a1e55f71a293a86935793b29cbe7edde2" kindref="member">CSTree::OnNodeFree</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; data <ndash/> 数据</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 在派生类中实现数据的释放操作 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="684" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="684" bodyend="684"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_c_s_tree" kindref="compound">CSTree</ref> 模板类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <ref refid="class_c_s_tree" kindref="compound">CSTree</ref> 模板类 </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>CSTree&lt; T &gt;::_STREENODE</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hParent</edgelabel>
+          <edgelabel>hNextSibling</edgelabel>
+          <edgelabel>hChildFirst</edgelabel>
+          <edgelabel>hPrevSibling</edgelabel>
+          <edgelabel>hChildLast</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CSTree&lt; T &gt;</label>
+        <link refid="class_c_s_tree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_hRootFirst</edgelabel>
+          <edgelabel>m_hRootLast</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" line="48" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STree.h" bodystart="47" bodyend="688"/>
+    <listofallmembers>
+      <member refid="class_c_s_tree_1a45eb05b753a498105f328adc3db56aaa" prot="private" virt="non-virtual"><scope>CSTree</scope><name>CBTRAVERSING</name></member>
+      <member refid="class_c_s_tree_1aa3c3e6b27b7a58e0bbf56d1fadde6899" prot="public" virt="non-virtual"><scope>CSTree</scope><name>CSTree</name></member>
+      <member refid="class_c_s_tree_1a7869d961d7681e0087526d28a8ff50d9" prot="public" virt="non-virtual"><scope>CSTree</scope><name>DeleteAllItems</name></member>
+      <member refid="class_c_s_tree_1a72a25f4bb5d0817eae1e1412eca43411" prot="public" virt="virtual"><scope>CSTree</scope><name>DeleteItem</name></member>
+      <member refid="class_c_s_tree_1a9e9e32c065c123abdc9ac74eaeab8e07" prot="public" virt="non-virtual"><scope>CSTree</scope><name>DeleteItemEx</name></member>
+      <member refid="class_c_s_tree_1af4a3c199a1010d9db1e6e5a320c4f1ea" prot="private" virt="non-virtual"><scope>CSTree</scope><name>FreeNode</name></member>
+      <member refid="class_c_s_tree_1a3e9a32d94803a4a5d677570a933b4f35" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetChildItem</name></member>
+      <member refid="class_c_s_tree_1a7349baa8928ee87d0781ee2f13085c4d" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetChildrenCount</name></member>
+      <member refid="class_c_s_tree_1af214da1e6eeeae7e1fef1ae1b2ee3ce8" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetDesendants</name></member>
+      <member refid="class_c_s_tree_1a15dd0d6b33bdfe3ed486c4e10310a183" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetItem</name></member>
+      <member refid="class_c_s_tree_1a752f9f2643fa3d980600d5e60ce808e3" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetItemLevel</name></member>
+      <member refid="class_c_s_tree_1ad6708d1689ef8c8756c384f55c5e1b38" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetItemPt</name></member>
+      <member refid="class_c_s_tree_1ac4203d2dce433ac72ca9324f56ece6dc" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetItemRef</name></member>
+      <member refid="class_c_s_tree_1a65df9d188381bf364aa2f49cb365f5e4" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetNextItem</name></member>
+      <member refid="class_c_s_tree_1a74ef24147f2cc66b129803af490db442" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetNextItem</name></member>
+      <member refid="class_c_s_tree_1a8999a40f56c49fc705a96d8cf13452a0" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetNextSiblingItem</name></member>
+      <member refid="class_c_s_tree_1a4c52f1c2fda9e1dc024eb84e054be060" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetParentItem</name></member>
+      <member refid="class_c_s_tree_1acb4c7dbc8a1add87a4fd95124f936e14" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetPrevSiblingItem</name></member>
+      <member refid="class_c_s_tree_1ad2feb34583dc60f376e573b6abb5be92" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetRootItem</name></member>
+      <member refid="class_c_s_tree_1afb18b90e16b36cea50d1d0cc3e60be67" prot="public" virt="non-virtual"><scope>CSTree</scope><name>GetRootItem</name></member>
+      <member refid="class_c_s_tree_1afd81aa373ca92d7610452b7ca74112d9" prot="private" virt="non-virtual"><scope>CSTree</scope><name>HSTREENODE</name></member>
+      <member refid="class_c_s_tree_1ab97b3f098b701ae4c21e4d5301662035" prot="public" virt="non-virtual"><scope>CSTree</scope><name>InsertItem</name></member>
+      <member refid="class_c_s_tree_1adab63ab8525d202fa92a62a3a3eee13f" prot="protected" virt="non-virtual"><scope>CSTree</scope><name>m_hRootFirst</name></member>
+      <member refid="class_c_s_tree_1ad42af28eff51ca163aa94124c7be6424" prot="protected" virt="non-virtual"><scope>CSTree</scope><name>m_hRootLast</name></member>
+      <member refid="class_c_s_tree_1a1e55f71a293a86935793b29cbe7edde2" prot="protected" virt="virtual"><scope>CSTree</scope><name>OnNodeFree</name></member>
+      <member refid="class_c_s_tree_1a2d4b89ebe5888718d52739376fad10e4" prot="private" virt="non-virtual"><scope>CSTree</scope><name>PSTREELINK</name></member>
+      <member refid="class_c_s_tree_1ae4cd742f8403cae6ed512ac45fbdb91a" prot="public" virt="non-virtual"><scope>CSTree</scope><name>SortChildren</name></member>
+      <member refid="class_c_s_tree_1a6e599dbb92b63bc3b3b0e83baba3de6a" prot="private" virt="non-virtual"><scope>CSTree</scope><name>STREELINK</name></member>
+      <member refid="class_c_s_tree_1ae4295a5b158981674acb9ac7f61ddfe5" prot="private" virt="non-virtual"><scope>CSTree</scope><name>STREENODE</name></member>
+      <member refid="class_c_s_tree_1a440a2e9c64bbe12db07e60ffde440c9b" prot="public" virt="non-virtual"><scope>CSTree</scope><name>TraversingRecursion</name></member>
+      <member refid="class_c_s_tree_1a7a504c1c6ae8a2e7e29bc913bf7ab25d" prot="public" virt="non-virtual"><scope>CSTree</scope><name>TraversingSequence</name></member>
+      <member refid="class_c_s_tree_1a6fc4ff28759df4a496d3912601a539de" prot="public" virt="virtual"><scope>CSTree</scope><name>~CSTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

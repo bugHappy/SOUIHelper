@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_render_factory" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IRenderFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1aeb9335c989dee1c82b6c13cdd4e77d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_img_decoder_factory" kindref="compound">IImgDecoderFactory</ref> *</type>
+        <definition>virtual IImgDecoderFactory* SOUI::IRenderFactory::GetImgDecoderFactory</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetImgDecoderFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="102" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1ade7f9b140f2d26a6247e95af9fc2605a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRenderFactory::SetImgDecoderFactory</definition>
+        <argsstring>(IImgDecoderFactory *pImgDecoderFac)=0</argsstring>
+        <name>SetImgDecoderFactory</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_img_decoder_factory" kindref="compound">IImgDecoderFactory</ref> *</type>
+          <declname>pImgDecoderFac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="103" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a8d67f75e03828dc32521927f4f222a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreateRenderTarget</definition>
+        <argsstring>(IRenderTarget **ppRenderTarget, int nWid, int nHei)=0</argsstring>
+        <name>CreateRenderTarget</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> **</type>
+          <declname>ppRenderTarget</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="104" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a4a844f575ef3062f87c2e3c96ed6fe48" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreateFont</definition>
+        <argsstring>(IFont **ppFont, const LOGFONT &amp;lf)=0</argsstring>
+        <name>CreateFont</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFont</ref> **</type>
+          <declname>ppFont</declname>
+        </param>
+        <param>
+          <type>const LOGFONT &amp;</type>
+          <declname>lf</declname>
+        </param>
+        <briefdescription>
+<para>创建字体 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CreateFont <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFont</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>** ppFont <ndash/> 字体对象 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LOGFONT &amp;lf <ndash/> 字体属性 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPropBag * pPropBag <ndash/> 字体扩展属性，由渲染引擎解析 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE:SUCCEED, FASLE:FAILED</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="116" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a81c39c104757a8c273a7377c89ce9c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreateBitmap</definition>
+        <argsstring>(IBitmap **ppBitmap)=0</argsstring>
+        <name>CreateBitmap</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> **</type>
+          <declname>ppBitmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="118" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a38890e4cbefe875c8ae9e7d0137ea398" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreateRegion</definition>
+        <argsstring>(IRegion **ppRgn)=0</argsstring>
+        <name>CreateRegion</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_region" kindref="compound">IRegion</ref> **</type>
+          <declname>ppRgn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="120" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1ad7a7db5465b340721a8032184f650d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreatePath</definition>
+        <argsstring>(IPath **ppPath)=0</argsstring>
+        <name>CreatePath</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> **</type>
+          <declname>ppPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="122" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a2fb901965a462e438a8b583e52c2b780" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreatePathEffect</definition>
+        <argsstring>(REFGUID guidEffect, IPathEffect **ppPathEffect)=0</argsstring>
+        <name>CreatePathEffect</name>
+        <param>
+          <type>REFGUID</type>
+          <declname>guidEffect</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_effect" kindref="compound">IPathEffect</ref> **</type>
+          <declname>ppPathEffect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="124" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_render_factory_1a539a7dac8396dd3f71c7771096b95ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRenderFactory::CreatePathMeasure</definition>
+        <argsstring>(IPathMeasure **ppPathMeasure)=0</argsstring>
+        <name>CreatePathMeasure</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path_measure" kindref="compound">IPathMeasure</ref> **</type>
+          <declname>ppPathMeasure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="126" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RenderFactory对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IRenderFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IRenderFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="101" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="100" bodyend="127"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a81c39c104757a8c273a7377c89ce9c44" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreateBitmap</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a4a844f575ef3062f87c2e3c96ed6fe48" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreateFont</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1ad7a7db5465b340721a8032184f650d19" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreatePath</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a2fb901965a462e438a8b583e52c2b780" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreatePathEffect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a539a7dac8396dd3f71c7771096b95ac5" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreatePathMeasure</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a38890e4cbefe875c8ae9e7d0137ea398" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreateRegion</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1a8d67f75e03828dc32521927f4f222a1d" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>CreateRenderTarget</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1aeb9335c989dee1c82b6c13cdd4e77d17" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>GetImgDecoderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_factory_1ade7f9b140f2d26a6247e95af9fc2605a" prot="public" virt="pure-virtual"><scope>SOUI::IRenderFactory</scope><name>SetImgDecoderFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

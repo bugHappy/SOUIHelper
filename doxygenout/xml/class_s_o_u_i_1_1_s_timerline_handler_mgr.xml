@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_timerline_handler_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STimerlineHandlerMgr</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handler" prot="public" virt="non-virtual">SOUI::ITimelineHandler</basecompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1aeebbbf912f4b07a84394c4363a7e2703" prot="protected" static="no">
+        <type>SMap&lt; <ref refid="struct_s_o_u_i_1_1_i_timeline_handler" kindref="compound">ITimelineHandler</ref> *, bool &gt;</type>
+        <definition>typedef SMap&lt;ITimelineHandler *,bool&gt; SOUI::STimerlineHandlerMgr::TLMAP</definition>
+        <argsstring></argsstring>
+        <name>TLMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="24" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1aae2c22e9ce8795e65a180015b3622330" prot="protected" static="no" mutable="no">
+        <type>TLMAP</type>
+        <definition>TLMAP SOUI::STimerlineHandlerMgr::m_mapHandlers</definition>
+        <argsstring></argsstring>
+        <name>m_mapHandlers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="25" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a50d47591eb09c4c0a55b4f6f57d7cc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STimerlineHandlerMgr::STimerlineHandlerMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>STimerlineHandlerMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a7c77bd5e7e8394a31c0f7851bd768a1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STimerlineHandlerMgr::~STimerlineHandlerMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~STimerlineHandlerMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1acc62afbac5869c6c2ae2107f3e8399f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimerlineHandlerMgr::RegisterTimelineHandler</definition>
+        <argsstring>(ITimelineHandler *pHandler)</argsstring>
+        <name>RegisterTimelineHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handler" kindref="compound">ITimelineHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="15" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a7f2d110806a98a481ccacfb314618025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimerlineHandlerMgr::UnregisterTimelineHandler</definition>
+        <argsstring>(ITimelineHandler *pHandler)</argsstring>
+        <name>UnregisterTimelineHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handler" kindref="compound">ITimelineHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="17" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a8f27e1dcae806f78d4a28f6c22a63c22" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STimerlineHandlerMgr::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="19" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a966a4283d706a6740d91b340754178dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STimerlineHandlerMgr::OnNextFrame</definition>
+        <argsstring>() override</argsstring>
+        <name>OnNextFrame</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69">OnNextFrame</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="21" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" line="10" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/STimerlineHandlerMgr.h" bodystart="9" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a8f27e1dcae806f78d4a28f6c22a63c22" prot="public" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>IsEmpty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1aae2c22e9ce8795e65a180015b3622330" prot="protected" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>m_mapHandlers</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a966a4283d706a6740d91b340754178dc" prot="public" virt="virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>OnNextFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1acc62afbac5869c6c2ae2107f3e8399f2" prot="public" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>RegisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a50d47591eb09c4c0a55b4f6f57d7cc88" prot="public" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>STimerlineHandlerMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1aeebbbf912f4b07a84394c4363a7e2703" prot="protected" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>TLMAP</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a7f2d110806a98a481ccacfb314618025" prot="public" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>UnregisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_timerline_handler_mgr_1a7c77bd5e7e8394a31c0f7851bd768a1c" prot="public" virt="non-virtual"><scope>SOUI::STimerlineHandlerMgr</scope><name>~STimerlineHandlerMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

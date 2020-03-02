@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_img_decoder_factory" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IImgDecoderFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_img_decoder-i_8h" local="no">SImgDecoder-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_decoder_factory_1ad0a005859487bd4a999d3144750374cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IImgDecoderFactory::CreateImgX</definition>
+        <argsstring>(IImgX **ppImgDecoder)=0</argsstring>
+        <name>CreateImgX</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> **</type>
+          <declname>ppImgDecoder</declname>
+        </param>
+        <briefdescription>
+<para>create a <ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> object </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CreateImgX <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* * ppImgDecoder <ndash/> the created <ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="132" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_decoder_factory_1a30648dab73912747b575980ebe29ab55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IImgDecoderFactory::SaveImage</definition>
+        <argsstring>(IBitmap *pImg, LPCWSTR pszFileName, const LPVOID pFormat)</argsstring>
+        <name>SaveImage</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pImg</declname>
+        </param>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <param>
+          <type>const LPVOID</type>
+          <declname>pFormat</declname>
+        </param>
+        <briefdescription>
+<para>Write a <ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> Object to File with the specified format </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SaveImage <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in"><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pImg <ndash/> <ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> Object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszFileName <ndash/> file name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">LPVOID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pFormat <ndash/> format param </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="143" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_decoder_factory_1a233086e99fca113c67b52b7238bd767d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>LPCWSTR</type>
+        <definition>virtual LPCWSTR SOUI::IImgDecoderFactory::GetDescription</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDescription</name>
+        <briefdescription>
+<para>query image decoder description </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetImgDecoderDesc <simplesect kind="return"><para>LPCWSTR Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="157" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>image decoder factory </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IImgDecoderFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_img_decoder_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IImgDecoderFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_img_decoder_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="124" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" bodystart="123" bodyend="161"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_img_decoder_factory_1ad0a005859487bd4a999d3144750374cd" prot="public" virt="pure-virtual"><scope>SOUI::IImgDecoderFactory</scope><name>CreateImgX</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_decoder_factory_1a233086e99fca113c67b52b7238bd767d" prot="public" virt="virtual"><scope>SOUI::IImgDecoderFactory</scope><name>GetDescription</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_decoder_factory_1a30648dab73912747b575980ebe29ab55" prot="public" virt="virtual"><scope>SOUI::IImgDecoderFactory</scope><name>SaveImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

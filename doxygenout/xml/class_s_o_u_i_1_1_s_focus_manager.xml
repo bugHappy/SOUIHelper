@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_focus_manager" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SFocusManager</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_accelerator_mgr" prot="public" virt="non-virtual">SOUI::IAcceleratorMgr</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FocusChangeReason</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378eafceb9fe46d6e29904c2a720a30d51e31" prot="public">
+          <name>kReasonDirectFocusChange</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378ea056b060e1f939e62ed6a8209c21301ba" prot="public">
+          <name>kReasonFocusTraversal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378ea9abc520eb44fe241dbabf115631e7c0b" prot="public">
+          <name>kReasonFocusRestore</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="111" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="110" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_focus_manager_1a9d2d3cb31e250aa687df01502ad96084" prot="private" static="no">
+        <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> * &gt;</type>
+        <definition>typedef SList&lt;IAcceleratorTarget*&gt; SOUI::SFocusManager::AcceleratorTargetList</definition>
+        <argsstring></argsstring>
+        <name>AcceleratorTargetList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="196" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_focus_manager_1a1523874f720ac802e68b00a0db3849e8" prot="private" static="no">
+        <type>SMap&lt; <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref>, AcceleratorTargetList &gt;</type>
+        <definition>typedef SMap&lt;SAccelerator, AcceleratorTargetList&gt; SOUI::SFocusManager::AcceleratorMap</definition>
+        <argsstring></argsstring>
+        <name>AcceleratorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="197" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_focus_manager_1a143ab88c2df7f857381ab38e21cab14f" prot="private" static="no" mutable="no">
+        <type>SWND</type>
+        <definition>SWND SOUI::SFocusManager::focused_view_</definition>
+        <argsstring></argsstring>
+        <name>focused_view_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="188" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_focus_manager_1a1d99a430fd049d5afd4d08e9442f4b68" prot="private" static="no" mutable="no">
+        <type>SWND</type>
+        <definition>SWND SOUI::SFocusManager::focused_backup_</definition>
+        <argsstring></argsstring>
+        <name>focused_backup_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="190" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_focus_manager_1a1e0259ab0bb9d5dfa10d1cbeb857716f" prot="private" static="no" mutable="no">
+        <type>FocusChangeReason</type>
+        <definition>FocusChangeReason SOUI::SFocusManager::focus_change_reason_</definition>
+        <argsstring></argsstring>
+        <name>focus_change_reason_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="192" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_focus_manager_1a892aa8989b169c7c187f91c840f9f6b0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SFocusManager::m_pOwner</definition>
+        <argsstring></argsstring>
+        <name>m_pOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="194" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_focus_manager_1a253e3e6013d1f8fb1afa3aeac54c42df" prot="private" static="no" mutable="no">
+        <type>AcceleratorMap</type>
+        <definition>AcceleratorMap SOUI::SFocusManager::accelerators_</definition>
+        <argsstring></argsstring>
+        <name>accelerators_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="198" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1aaa41c918cdc2c4563eea012b583e2ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SFocusManager::SFocusManager</definition>
+        <argsstring>(SWindow *pOwner)</argsstring>
+        <name>SFocusManager</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="125" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a8b4f96777e6f4cb7aaa27a662f9f47ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SFocusManager::~SFocusManager</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SFocusManager</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="126" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1aeb1d018f6f51095d17f1cf1a90a6f59b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SFocusManager::IsTabTraversalKey</definition>
+        <argsstring>(UINT vKey)</argsstring>
+        <name>IsTabTraversalKey</name>
+        <param>
+          <type>UINT</type>
+          <declname>vKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="128" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a51d635c57bec00631ff3739690ec0c7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SFocusManager::OnKeyDown</definition>
+        <argsstring>(UINT vKey)</argsstring>
+        <name>OnKeyDown</name>
+        <param>
+          <type>UINT</type>
+          <declname>vKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="129" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1abdaae0a9b3ea70d8b3063156124b8a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::AdvanceFocus</definition>
+        <argsstring>(bool reverse)</argsstring>
+        <name>AdvanceFocus</name>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="132" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a530edd962b03ab8edfb37e3fed5e8262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::SetFocusedHwndWithReason</definition>
+        <argsstring>(SWND swnd, FocusChangeReason reason)</argsstring>
+        <name>SetFocusedHwndWithReason</name>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <param>
+          <type>FocusChangeReason</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a8de595f285221d92592a18f34d64f1f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::SetFocusedHwnd</definition>
+        <argsstring>(SWND swnd)</argsstring>
+        <name>SetFocusedHwnd</name>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="138" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a60394bf24012a53f3e5d981bf661577f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::ClearFocus</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFocus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="142" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a8bdc6c861af543d708735ab3bec114a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SWND</type>
+        <definition>SWND SOUI::SFocusManager::GetFocusedHwnd</definition>
+        <argsstring>()</argsstring>
+        <name>GetFocusedHwnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="144" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a50d4a97ed2060fdbc8f0f5c56f163637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::StoreFocusedView</definition>
+        <argsstring>()</argsstring>
+        <name>StoreFocusedView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="148" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a56ebabddd414bd4a6975ec7821e11421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::RestoreFocusedView</definition>
+        <argsstring>()</argsstring>
+        <name>RestoreFocusedView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="149" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1aeb4545b419c4fa108cb9d0fc098747c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::RegisterAccelerator</definition>
+        <argsstring>(const SAccelerator &amp;accelerator, IAcceleratorTarget *target)</argsstring>
+        <name>RegisterAccelerator</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1a1692cf409490832d1c79aa155e16e81b">RegisterAccelerator</reimplements>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="162" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1ac82953897a17d350d5181cecaa9d26ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::UnregisterAccelerator</definition>
+        <argsstring>(const SAccelerator &amp;accelerator, IAcceleratorTarget *target)</argsstring>
+        <name>UnregisterAccelerator</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1a2bdee867c5cb331c6e34bdfef1d59889">UnregisterAccelerator</reimplements>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="166" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a4f0ddf34bf0647c8a8d933ebac09885f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::UnregisterAccelerators</definition>
+        <argsstring>(IAcceleratorTarget *target)</argsstring>
+        <name>UnregisterAccelerators</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_accelerator_mgr_1abf255cd40faf148ebc61d6655d1bcc9a">UnregisterAccelerators</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_accelerator_target" kindref="compound">IAcceleratorTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="170" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1a4ae6e67598447d6f1549e403d9030bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SFocusManager::ProcessAccelerator</definition>
+        <argsstring>(const SAccelerator &amp;accelerator)</argsstring>
+        <name>ProcessAccelerator</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="178" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1aa818296bf2ea188e9dfc272f022b6ff6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SFocusManager::GetNextFocusableView</definition>
+        <argsstring>(SWindow *pWndStarting, bool bReverse, bool bLoop)</argsstring>
+        <name>GetNextFocusableView</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWndStarting</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bReverse</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bLoop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="181" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_focus_manager_1ab8cb4ddc86a280f6d7449cbdebc4fad0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFocusManager::ValidateFocusedView</definition>
+        <argsstring>()</argsstring>
+        <name>ValidateFocusedView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="185" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="107" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="106" bodyend="200"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a1523874f720ac802e68b00a0db3849e8" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>AcceleratorMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a253e3e6013d1f8fb1afa3aeac54c42df" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>accelerators_</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a9d2d3cb31e250aa687df01502ad96084" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>AcceleratorTargetList</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1abdaae0a9b3ea70d8b3063156124b8a29" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>AdvanceFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a60394bf24012a53f3e5d981bf661577f" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>ClearFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a1e0259ab0bb9d5dfa10d1cbeb857716f" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>focus_change_reason_</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378e" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>FocusChangeReason</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a1d99a430fd049d5afd4d08e9442f4b68" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>focused_backup_</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a143ab88c2df7f857381ab38e21cab14f" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>focused_view_</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a8bdc6c861af543d708735ab3bec114a0" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>GetFocusedHwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1aa818296bf2ea188e9dfc272f022b6ff6" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>GetNextFocusableView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1aeb1d018f6f51095d17f1cf1a90a6f59b" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>IsTabTraversalKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378eafceb9fe46d6e29904c2a720a30d51e31" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>kReasonDirectFocusChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378ea9abc520eb44fe241dbabf115631e7c0b" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>kReasonFocusRestore</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a7b952730aec73b8c17509da4f720378ea056b060e1f939e62ed6a8209c21301ba" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>kReasonFocusTraversal</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a892aa8989b169c7c187f91c840f9f6b0" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a51d635c57bec00631ff3739690ec0c7a" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>OnKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a4ae6e67598447d6f1549e403d9030bf0" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>ProcessAccelerator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1aeb4545b419c4fa108cb9d0fc098747c3" prot="public" virt="virtual"><scope>SOUI::SFocusManager</scope><name>RegisterAccelerator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a56ebabddd414bd4a6975ec7821e11421" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>RestoreFocusedView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a8de595f285221d92592a18f34d64f1f2" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>SetFocusedHwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a530edd962b03ab8edfb37e3fed5e8262" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>SetFocusedHwndWithReason</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1aaa41c918cdc2c4563eea012b583e2ff6" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>SFocusManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a50d4a97ed2060fdbc8f0f5c56f163637" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>StoreFocusedView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1ac82953897a17d350d5181cecaa9d26ee" prot="public" virt="virtual"><scope>SOUI::SFocusManager</scope><name>UnregisterAccelerator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a4f0ddf34bf0647c8a8d933ebac09885f" prot="public" virt="virtual"><scope>SOUI::SFocusManager</scope><name>UnregisterAccelerators</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1ab8cb4ddc86a280f6d7449cbdebc4fad0" prot="private" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>ValidateFocusedView</name></member>
+      <member refid="class_s_o_u_i_1_1_s_focus_manager_1a8b4f96777e6f4cb7aaa27a662f9f47ba" prot="public" virt="non-virtual"><scope>SOUI::SFocusManager</scope><name>~SFocusManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

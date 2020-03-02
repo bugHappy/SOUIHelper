@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SAnticipateOvershootInterpolator</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_interpolator_base" prot="public" virt="non-virtual">SOUI::SInterpolatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a26bda7b078820733592ee421fd22c13c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateOvershootInterpolator::mTension</definition>
+        <argsstring></argsstring>
+        <name>mTension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="99" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a9221ad6606dea4c9dd93d40ed2470123" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateOvershootInterpolator::mExtraTension</definition>
+        <argsstring></argsstring>
+        <name>mExtraTension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="100" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a1a0fa0fdec2d17ea7bad6c821b147710" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SAnticipateOvershootInterpolator::SAnticipateOvershootInterpolator</definition>
+        <argsstring>(float tension=2.0f, float extraTension=1.5f)</argsstring>
+        <name>SAnticipateOvershootInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>tension</declname>
+          <defval>2.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>extraTension</declname>
+          <defval>1.5f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount of anticipation/overshoot. When tension equals 0.0f, there is no anticipation/overshoot and the interpolator becomes a simple acceleration/deceleration interpolator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extraTension</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount by which to multiply the tension. For instance, to get the same overshoot as an OvershootInterpolator with a tension of 2.0f, you would use an extraTension of 1.5f. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="110" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1ac9d651e86363ddf200e5fa0f13f9d443" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateOvershootInterpolator::getInterpolation</definition>
+        <argsstring>(float t) const</argsstring>
+        <name>getInterpolation</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="120" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a93c9071be840a1a37c6a5ae5a986b7ea" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float SOUI::SAnticipateOvershootInterpolator::a</definition>
+        <argsstring>(float t, float s)</argsstring>
+        <name>a</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="114" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1ae9ca2f484cbbc518fb62bbaa7b477c39" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float SOUI::SAnticipateOvershootInterpolator::o</definition>
+        <argsstring>(float t, float s)</argsstring>
+        <name>o</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="116" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a7662465edb15c95697704ca9968965d3" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SAnticipateOvershootInterpolator::getTensionMulti</definition>
+        <argsstring>() const</argsstring>
+        <name>getTensionMulti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="117" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="117" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SAnticipateOvershootInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SAnticipateOvershootInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="97" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="97" bodyend="127"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a93c9071be840a1a37c6a5ae5a986b7ea" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>a</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1ac9d651e86363ddf200e5fa0f13f9d443" prot="public" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>getInterpolation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a7662465edb15c95697704ca9968965d3" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>getTensionMulti</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a9221ad6606dea4c9dd93d40ed2470123" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>mExtraTension</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a26bda7b078820733592ee421fd22c13c" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>mTension</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1ae9ca2f484cbbc518fb62bbaa7b477c39" prot="private" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>o</name></member>
+      <member refid="class_s_o_u_i_1_1_s_anticipate_overshoot_interpolator_1a1a0fa0fdec2d17ea7bad6c821b147710" prot="public" virt="non-virtual"><scope>SOUI::SAnticipateOvershootInterpolator</scope><name>SAnticipateOvershootInterpolator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

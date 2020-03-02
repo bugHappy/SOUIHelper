@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_real_wnd_handler" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::IRealWndHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_real_wnd_handler-i_8h" local="no">SRealWndHandler-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_real_wnd_handler_1a4a1eaf95545a7d6f2bc18e1f6ce28aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HWND</type>
+        <definition>virtual HWND SOUI::IRealWndHandler::OnRealWndCreate</definition>
+        <argsstring>(SRealWnd *pRealWnd)</argsstring>
+        <name>OnRealWndCreate</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref> *</type>
+          <declname>pRealWnd</declname>
+        </param>
+        <briefdescription>
+<para>窗口创建 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SRealWnd::OnRealWndCreate <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRealWnd <ndash/> 窗口指针</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 窗口创建 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="34" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_real_wnd_handler_1a0fbbc348e9b3c6e71615254f10c18a5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IRealWndHandler::OnRealWndDestroy</definition>
+        <argsstring>(SRealWnd *pRealWnd)</argsstring>
+        <name>OnRealWndDestroy</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref> *</type>
+          <declname>pRealWnd</declname>
+        </param>
+        <briefdescription>
+<para>销毁窗口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SRealWnd::OnRealWndDestroy <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRealWnd <ndash/> 窗口指针</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 销毁窗口 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="43" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_real_wnd_handler_1a41927791eeea8704bc46b69c56b3b2a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRealWndHandler::OnRealWndInit</definition>
+        <argsstring>(SRealWnd *pRealWnd)</argsstring>
+        <name>OnRealWndInit</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref> *</type>
+          <declname>pRealWnd</declname>
+        </param>
+        <briefdescription>
+<para>初始化窗口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SRealWnd::OnRealWndInit <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRealWnd <ndash/> 窗口指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> FALSE:交由系统处理，TRUE:用户处理</para>
+</simplesect>
+Describe 初始化窗口 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="53" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_real_wnd_handler_1ab6be37dd82ab5ba3fb79088a98a32dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRealWndHandler::OnRealWndSize</definition>
+        <argsstring>(SRealWnd *pRealWnd)</argsstring>
+        <name>OnRealWndSize</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref> *</type>
+          <declname>pRealWnd</declname>
+        </param>
+        <briefdescription>
+<para>调整窗口大小 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SRealWnd::OnRealWndSize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRealWnd <ndash/> 窗口指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> FALSE：交由SOUI处理; TRUE:用户管理窗口的移动</para>
+</simplesect>
+Describe 调整窗口大小,该方法由OnRealWndPosition代替 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="63" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_real_wnd_handler_1a0b7dd9df4d50456729d0606d6531fd54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IRealWndHandler::OnRealWndPosition</definition>
+        <argsstring>(SRealWnd *pRealWnd, const CRect &amp;rcWnd)</argsstring>
+        <name>OnRealWndPosition</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref> *</type>
+          <declname>pRealWnd</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rcWnd</declname>
+        </param>
+        <briefdescription>
+<para>调整窗口位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SRealWnd::OnRealWndPosition <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_real_wnd" kindref="compound">SRealWnd</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRealWnd <ndash/> 窗口指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> FALSE：交由SOUI处理; TRUE:用户管理窗口的移动</para>
+</simplesect>
+Describe 调整窗口大小 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="73" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IRealWndHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_real_wnd_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IRealWndHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_real_wnd_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" line="26" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRealWndHandler-i.h" bodystart="25" bodyend="74"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_real_wnd_handler_1a4a1eaf95545a7d6f2bc18e1f6ce28aa4" prot="public" virt="virtual"><scope>SOUI::IRealWndHandler</scope><name>OnRealWndCreate</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_real_wnd_handler_1a0fbbc348e9b3c6e71615254f10c18a5d" prot="public" virt="virtual"><scope>SOUI::IRealWndHandler</scope><name>OnRealWndDestroy</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_real_wnd_handler_1a41927791eeea8704bc46b69c56b3b2a8" prot="public" virt="virtual"><scope>SOUI::IRealWndHandler</scope><name>OnRealWndInit</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_real_wnd_handler_1a0b7dd9df4d50456729d0606d6531fd54" prot="public" virt="virtual"><scope>SOUI::IRealWndHandler</scope><name>OnRealWndPosition</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_real_wnd_handler_1ab6be37dd82ab5ba3fb79088a98a32dfa" prot="public" virt="virtual"><scope>SOUI::IRealWndHandler</scope><name>OnRealWndSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_skin_img_center" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SSkinImgCenter</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_skin_img_list" prot="public" virt="non-virtual">SOUI::SSkinImgList</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_img_center_1ae0ca3c8cdba25efb720563c3bc2e0254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SSkinImgCenter::SSkinImgCenter</definition>
+        <argsstring>()</argsstring>
+        <name>SSkinImgCenter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="78" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_img_center_1ac07e4903dfd557a5c7803997a37ea5de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SSkinImgCenter::_DrawByIndex</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, int iState, BYTE byAlpha)</argsstring>
+        <name>_DrawByIndex</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iState</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="81" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SSkinImgCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_center"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinImgList</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_list"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SSkinImgCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_center"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="5">
+        <label>SOUI::SState2Index</label>
+        <link refid="class_s_o_u_i_1_1_s_state2_index"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SSkinImgList</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_list"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_state2Index</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="75" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="74" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_center_1ac07e4903dfd557a5c7803997a37ea5de" prot="protected" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>_DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1ad88fff88fff3b177d3a78c554ddd638d" prot="protected" virt="virtual" ambiguityscope="SOUI::SSkinImgList::"><scope>SOUI::SSkinImgCenter</scope><name>_DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ae131787137d4985f058330654c524481" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>_DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a784b6f8b377bc4ea8c2bab703ed72d73" prot="protected" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>_Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a8d55412a837c1725948831a15755e24f" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>ATTR_IMAGEAUTOREF</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1aad54026a7c832103d90bc6190b5d651a" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>ATTR_INT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a494b94de3dfde5afefdeec63a0866089" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aa851327d1ee03e28ba3da4e1db4a6d8c" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a9583a1614db8f4706281a72894788983" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ac6a2341abeef55ad39f052ffe203ab32" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a6573f8e6533301c5a3d029c078c5c0e2" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a0fa146c454e980c48d10762f2fc3708e" prot="protected" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetExpandMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a94cb7539935d69bf617a1ed0b7700d49" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetImage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2433008bbd67ce50586039d0f3db9c42" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a400f5d0a9da274d0f2af9e5a3056dab9" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1aafe02f74a13ce956fa510b8896d7efab" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetSkinSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a6be7f84fe7e01d3bf48c40f0c0a947bb" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>GetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a3e3920ea68c5ef8e84ec50eb16e13a8b" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>IsTile</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1afd1057cf758a64e1e9bab2a3345b5e63" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>IsVertical</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1aa445504f9d144f2854642953dac67948" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bAutoFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1aedb2d5420d1fcd212f7a78acedf49534" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bEnableColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1afb9533a5def9a8bd0338c72f3630d9fd" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bEnableScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a833491416e848fad0d6cf03f9432d5a9" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bTile</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1adb2a581ae2881d7784d1b2d591c6ed03" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bTile</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a2557ae57b96580bf37f52603f04665aa" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bVertical</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a767eff8c889480c5ebff7c3b69843401" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_bVertical</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a2b43172a77fa986c7a41eab684310bc2" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_byAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb31f79eb45ca3ea745b9ee6d947a8e9" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_checkAsPushdown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a7ef7e225a1ad31bc2bfcd42490675f07" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a85f7b15cf6b6ba20ae2b5049cf2cd516" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_filterLevel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1af86fb4fb9cc3a650b3a65b2954562ac9" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_imgBackup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a91d1e1288fc38ccc91c887377c813443" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a64092f8b9039427aeae5b9b5a6a2100c" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_nStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a9efaaacfe1086f014d3cb053fbe0430e" prot="protected" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_pImg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1ab176a283f58e7856cb02fd945febbf4b" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_state2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1abe6640497664d40855ea5bff87e81388" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1aade7e7c1a16b84466847dc0e813baf29" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adcf138383885bc023a0e3bdb5e12701c" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adf57100a724c4f2cb2cca26094da029e" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1ab49713ca06ce6b015e4d9b009c102dab" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>SetImage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1afb4bb73535c92774455cf765cff2a03b" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>SetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a59b19eb70d88d57256c46655375dd4c5" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>SetTile</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a383b40c3b0ac56d11d37645f0a4f6072" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>SetVertical</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_center_1ae0ca3c8cdba25efb720563c3bc2e0254" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>SSkinImgCenter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a72e76772dc390a13cc565ee0220454e2" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>SSkinImgList</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1a1d5c6b77ed0ea87b971704c6f950b4de" prot="public" virt="non-virtual"><scope>SOUI::SSkinImgCenter</scope><name>SSkinObjBase</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_obj_base_1adb3128c5d3e46337568c79f0d9984a45" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>State2Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_img_list_1a818289da66881ee8443f7618c22b79df" prot="public" virt="virtual"><scope>SOUI::SSkinImgCenter</scope><name>~SSkinImgList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

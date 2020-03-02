@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_ipc_factory" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IIpcFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_factory_1acf3dc7da11b867060811791da9f3d28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IIpcFactory::CreateIpcServer</definition>
+        <argsstring>(IIpcServer **ppServer)=0</argsstring>
+        <name>CreateIpcServer</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_ipc_server" kindref="compound">IIpcServer</ref> **</type>
+          <declname>ppServer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="145" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_factory_1a2f3678a8d20a891bdce6b3f274d06341" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IIpcFactory::CreateIpcHandle</definition>
+        <argsstring>(IIpcHandle **ppHandle)=0</argsstring>
+        <name>CreateIpcHandle</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_ipc_handle" kindref="compound">IIpcHandle</ref> **</type>
+          <declname>ppHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="146" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IIpcFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IIpcFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="144" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="143" bodyend="147"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_factory_1a2f3678a8d20a891bdce6b3f274d06341" prot="public" virt="pure-virtual"><scope>SOUI::IIpcFactory</scope><name>CreateIpcHandle</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_factory_1acf3dc7da11b867060811791da9f3d28b" prot="public" virt="pure-virtual"><scope>SOUI::IIpcFactory</scope><name>CreateIpcServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1966 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_text_host" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STextHost</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ITextHost</basecompoundref>
+    <includes refid="_s_rich_edit_8h" local="no">SRichEdit.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_text_host_1ae8250ecc8b0664bbdcc80cbcdd34403d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SRichEdit</definition>
+        <argsstring></argsstring>
+        <name>SRichEdit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="119" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_host_1a921b0765eb8db2ac98dd83c278de2272" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STextHost::m_fUiActive</definition>
+        <argsstring></argsstring>
+        <name>m_fUiActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether control is inplace active </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="602" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_host_1a6d780e822c79b1a4173f8adeeb289b9f" prot="protected" static="no" mutable="no">
+        <type>ULONG</type>
+        <definition>ULONG SOUI::STextHost::cRefs</definition>
+        <argsstring></argsstring>
+        <name>cRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reference Count </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="604" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_host_1a0b54073cba590d2636c1d0d54ff3c1f4" prot="protected" static="no" mutable="no">
+        <type>ITextServices *</type>
+        <definition>ITextServices* SOUI::STextHost::pserv</definition>
+        <argsstring></argsstring>
+        <name>pserv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pointer to Text Services object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="605" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_host_1a860c448ef80be2cacd8d75caa9edfef4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_rich_edit" kindref="compound">SRichEdit</ref> *</type>
+        <definition>SRichEdit* SOUI::STextHost::m_pRichEdit</definition>
+        <argsstring></argsstring>
+        <name>m_pRichEdit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>swindow for text host </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="606" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="606" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_host_1a08695edccdc9f245f692100130803d74" prot="protected" static="no" mutable="no">
+        <type>POINT</type>
+        <definition>POINT SOUI::STextHost::m_ptCaret</definition>
+        <argsstring></argsstring>
+        <name>m_ptCaret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="607" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a5a7bb533e117c93ece4810219ab92877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STextHost::STextHost</definition>
+        <argsstring>(void)</argsstring>
+        <name>STextHost</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a5a7bb533e117c93ece4810219ab92877" kindref="member">STextHost::STextHost</ref> Describe 构造函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="127" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a3713e7499832d6a828656c561205ca92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STextHost::~STextHost</definition>
+        <argsstring>(void)</argsstring>
+        <name>~STextHost</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a3713e7499832d6a828656c561205ca92" kindref="member">STextHost::~STextHost</ref> Describe 析构函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="134" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1aa14b997e75995038712470559255c489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STextHost::Init</definition>
+        <argsstring>(SRichEdit *pRichEdit)</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_rich_edit" kindref="compound">SRichEdit</ref> *</type>
+          <declname>pRichEdit</declname>
+        </param>
+        <briefdescription>
+<para>初始化函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1aa14b997e75995038712470559255c489" kindref="member">STextHost::Init</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SRichEdit*</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pRichEdit <ndash/> SRichEdit对象</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 初始化函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="142" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a7b7f8bc4072314f358b3a998e447b1b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ITextServices *</type>
+        <definition>ITextServices* SOUI::STextHost::GetTextService</definition>
+        <argsstring>()</argsstring>
+        <name>GetTextService</name>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a7b7f8bc4072314f358b3a998e447b1b7" kindref="member">STextHost::GetTextService</ref> Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="149" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="149" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a3fba307fac390d4faae599e0612e4ede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>POINT</type>
+        <definition>POINT SOUI::STextHost::GetCaretPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetCaretPos</name>
+        <briefdescription>
+<para>获取坐标 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a3fba307fac390d4faae599e0612e4ede" kindref="member">STextHost::GetCaretPos</ref> Describe 获取坐标 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="160" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1abc96610bbf15a79a0db42239650cedf4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT _stdcall</type>
+        <definition>virtual HRESULT _stdcall SOUI::STextHost::QueryInterface</definition>
+        <argsstring>(REFIID riid, void **ppvObject)</argsstring>
+        <name>QueryInterface</name>
+        <param>
+          <type>REFIID</type>
+          <declname>riid</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>ppvObject</declname>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1abc96610bbf15a79a0db42239650cedf4" kindref="member">STextHost::QueryInterface</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>REFIID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>riid </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**ppvObject</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="171" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ab558e9a03181b9cc7f633375caf4ef45" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ULONG _stdcall</type>
+        <definition>virtual ULONG _stdcall SOUI::STextHost::AddRef</definition>
+        <argsstring>(void)</argsstring>
+        <name>AddRef</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ab558e9a03181b9cc7f633375caf4ef45" kindref="member">STextHost::AddRef</ref></para>
+<para><linebreak/>
+ <simplesect kind="return"><para>返回UNLONG</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="180" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1adf54ed1443276fc9fd7844765acbf2b0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>ULONG _stdcall</type>
+        <definition>virtual ULONG _stdcall SOUI::STextHost::Release</definition>
+        <argsstring>(void)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1adf54ed1443276fc9fd7844765acbf2b0" kindref="member">STextHost::Release</ref> <simplesect kind="return"><para>返回UNLONG</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="188" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ab6585849c37ea13d7fb0c715fe6ae503" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HDC</type>
+        <definition>virtual HDC SOUI::STextHost::TxGetDC</definition>
+        <argsstring>()</argsstring>
+        <name>TxGetDC</name>
+        <briefdescription>
+<para>Get the DC for the host </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ab6585849c37ea13d7fb0c715fe6ae503" kindref="member">STextHost::TxGetDC</ref> <simplesect kind="return"><para>返回HDC</para>
+</simplesect>
+Describe Get the DC for the host <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="197" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ac2694796c017b8dcc13808bfecf85b1a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>INT</type>
+        <definition>virtual INT SOUI::STextHost::TxReleaseDC</definition>
+        <argsstring>(HDC hdc)</argsstring>
+        <name>TxReleaseDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdc</declname>
+        </param>
+        <briefdescription>
+<para>Release the DC gotten from the host </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ac2694796c017b8dcc13808bfecf85b1a" kindref="member">STextHost::TxReleaseDC</ref> <simplesect kind="return"><para>返回INT</para>
+</simplesect>
+Describe Release the DC gotten from the host <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="206" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a02528c6194c03aa037879c36c537a303" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxShowScrollBar</definition>
+        <argsstring>(INT fnBar, BOOL fShow)</argsstring>
+        <name>TxShowScrollBar</name>
+        <param>
+          <type>INT</type>
+          <declname>fnBar</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>fShow</declname>
+        </param>
+        <briefdescription>
+<para>Show the scroll bar </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a02528c6194c03aa037879c36c537a303" kindref="member">STextHost::TxShowScrollBar</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fnBar <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fShow <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Show the scroll bar <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="217" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ad8d06f502efca6836c6647eb0e3fd402" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxEnableScrollBar</definition>
+        <argsstring>(INT fuSBFlags, INT fuArrowflags)</argsstring>
+        <name>TxEnableScrollBar</name>
+        <param>
+          <type>INT</type>
+          <declname>fuSBFlags</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>fuArrowflags</declname>
+        </param>
+        <briefdescription>
+<para>Enable the scroll bar </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ad8d06f502efca6836c6647eb0e3fd402" kindref="member">STextHost::TxEnableScrollBar</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fuSBFlags <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fuArrowflags <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Enable the scroll bar <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="228" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ac9ef059cec207d6532f711f7d15c4f0f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxSetScrollRange</definition>
+        <argsstring>(INT fnBar, LONG nMinPos, INT nMaxPos, BOOL fRedraw)</argsstring>
+        <name>TxSetScrollRange</name>
+        <param>
+          <type>INT</type>
+          <declname>fnBar</declname>
+        </param>
+        <param>
+          <type>LONG</type>
+          <declname>nMinPos</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>nMaxPos</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>fRedraw</declname>
+        </param>
+        <briefdescription>
+<para>Set the scroll range </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ad8d06f502efca6836c6647eb0e3fd402" kindref="member">STextHost::TxEnableScrollBar</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fnBar <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LONG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nMinPos <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nMaxPos <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fRedraw <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Set the scroll range <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="241" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a4b2a6b4b9279f9582e5bf1762ba03094" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxSetScrollPos</definition>
+        <argsstring>(INT fnBar, INT nPos, BOOL fRedraw)</argsstring>
+        <name>TxSetScrollPos</name>
+        <param>
+          <type>INT</type>
+          <declname>fnBar</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>nPos</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>fRedraw</declname>
+        </param>
+        <briefdescription>
+<para>Set the scroll position </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a4b2a6b4b9279f9582e5bf1762ba03094" kindref="member">STextHost::TxSetScrollPos</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fnBar <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nPos <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fRedraw <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Set the scroll position <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="257" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a89d6cc1ca06aa235d43d3ba32b075eef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxInvalidateRect</definition>
+        <argsstring>(LPCRECT prc, BOOL fMode)</argsstring>
+        <name>TxInvalidateRect</name>
+        <param>
+          <type>LPCRECT</type>
+          <declname>prc</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>fMode</declname>
+        </param>
+        <briefdescription>
+<para>InvalidateRect </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a89d6cc1ca06aa235d43d3ba32b075eef" kindref="member">STextHost::TxInvalidateRect</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prc <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fMode <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Set the scroll position <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="267" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a1741167265fd67464a9a4dfa54c691bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxViewChange</definition>
+        <argsstring>(BOOL fUpdate)</argsstring>
+        <name>TxViewChange</name>
+        <param>
+          <type>BOOL</type>
+          <declname>fUpdate</declname>
+        </param>
+        <briefdescription>
+<para>Send a WM_PAINT to the window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a1741167265fd67464a9a4dfa54c691bf" kindref="member">STextHost::TxViewChange</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fUpdate <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Send a WM_PAINT to the window </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="276" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a738cf101ed5a2e25622e19e0ac5941a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxCreateCaret</definition>
+        <argsstring>(HBITMAP hbmp, INT xWidth, INT yHeight)</argsstring>
+        <name>TxCreateCaret</name>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hbmp</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>xWidth</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>yHeight</declname>
+        </param>
+        <briefdescription>
+<para>Create the caret </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a738cf101ed5a2e25622e19e0ac5941a3" kindref="member">STextHost::TxCreateCaret</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HBITMAP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hbmp <ndash/> caret bitmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xWidth <ndash/> caret width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>yHeight <ndash/> caret height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Create the caret </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="288" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1af98733c5862b99616d3213bb47d90d66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxShowCaret</definition>
+        <argsstring>(BOOL fShow)</argsstring>
+        <name>TxShowCaret</name>
+        <param>
+          <type>BOOL</type>
+          <declname>fShow</declname>
+        </param>
+        <briefdescription>
+<para>Show the caret </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1af98733c5862b99616d3213bb47d90d66" kindref="member">STextHost::TxShowCaret</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fShow <ndash/> true to show the caret </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Show the caret </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="298" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a8842da097a65f369755c483fd07c0c94" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxSetCaretPos</definition>
+        <argsstring>(INT x, INT y)</argsstring>
+        <name>TxSetCaretPos</name>
+        <param>
+          <type>INT</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Set the caret position </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a8842da097a65f369755c483fd07c0c94" kindref="member">STextHost::TxSetCaretPos</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>x <ndash/> caret position:x </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>y <ndash/> caret position:y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Set the caret position </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="309" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ac8e7d3bd87a9f036a9648efe1e777c3b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxSetTimer</definition>
+        <argsstring>(UINT idTimer, UINT uTimeout)</argsstring>
+        <name>TxSetTimer</name>
+        <param>
+          <type>UINT</type>
+          <declname>idTimer</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uTimeout</declname>
+        </param>
+        <briefdescription>
+<para>Create a timer with the specified timeout </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ac8e7d3bd87a9f036a9648efe1e777c3b" kindref="member">STextHost::TxSetTimer</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>idTimer <ndash/> timer ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uTimeout <ndash/> time interval </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Create a timer with the specified timeout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="320" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a4c65f5f7db7e70f1161a38b1fad9c0c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxKillTimer</definition>
+        <argsstring>(UINT idTimer)</argsstring>
+        <name>TxKillTimer</name>
+        <param>
+          <type>UINT</type>
+          <declname>idTimer</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a timer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ac8e7d3bd87a9f036a9648efe1e777c3b" kindref="member">STextHost::TxSetTimer</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>idTimer <ndash/> timer id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Destroy a timer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="330" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a26461b5d31e6bc3a73d4b1a111d18002" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxScrollWindowEx</definition>
+        <argsstring>(INT dx, INT dy, LPCRECT lprcScroll, LPCRECT lprcClip, HRGN hrgnUpdate, LPRECT lprcUpdate, UINT fuScroll)</argsstring>
+        <name>TxScrollWindowEx</name>
+        <param>
+          <type>INT</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>INT</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprcScroll</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>lprcClip</declname>
+        </param>
+        <param>
+          <type>HRGN</type>
+          <declname>hrgnUpdate</declname>
+        </param>
+        <param>
+          <type>LPRECT</type>
+          <declname>lprcUpdate</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>fuScroll</declname>
+        </param>
+        <briefdescription>
+<para>Scroll the content of the specified window&apos;s client area </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a26461b5d31e6bc3a73d4b1a111d18002" kindref="member">STextHost::TxScrollWindowEx</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dx <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>INT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dy <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprcScroll <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprcClip <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HRGN</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hrgnUpdate <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lprcUpdate <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fuScroll <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Scroll the content of the specified window&apos;s client area </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="345" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ab4345bc35d0d253c9d0ac27d60a804d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxSetCapture</definition>
+        <argsstring>(BOOL fCapture)</argsstring>
+        <name>TxSetCapture</name>
+        <param>
+          <type>BOOL</type>
+          <declname>fCapture</declname>
+        </param>
+        <briefdescription>
+<para>Get mouse capture </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ab4345bc35d0d253c9d0ac27d60a804d0" kindref="member">STextHost::TxSetCapture</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fCapture <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Get mouse capture </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="361" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a9de3cb85cf40029d0613e5500b5e7edf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxSetFocus</definition>
+        <argsstring>()</argsstring>
+        <name>TxSetFocus</name>
+        <briefdescription>
+<para>Set the focus to the text window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a9de3cb85cf40029d0613e5500b5e7edf" kindref="member">STextHost::TxSetFocus</ref> Describe Set the focus to the text window </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="369" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a492cdc6dc7bf52fceb12c0a141d342dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxSetCursor</definition>
+        <argsstring>(HCURSOR hcur, BOOL fText)</argsstring>
+        <name>TxSetCursor</name>
+        <param>
+          <type>HCURSOR</type>
+          <declname>hcur</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>fText</declname>
+        </param>
+        <briefdescription>
+<para>Establish a new cursor shape </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a492cdc6dc7bf52fceb12c0a141d342dd" kindref="member">STextHost::TxSetCursor</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HCURSOR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hcur <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fText <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Establish a new cursor shape </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="379" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ae86aa625554c962538f00e05448d6cea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxScreenToClient</definition>
+        <argsstring>(LPPOINT lppt)</argsstring>
+        <name>TxScreenToClient</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lppt</declname>
+        </param>
+        <briefdescription>
+<para>Converts screen coordinates of a specified point to the client coordinates </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ae86aa625554c962538f00e05448d6cea" kindref="member">STextHost::TxScreenToClient</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPPOINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lppt <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Converts screen coordinates of a specified point to the client coordinates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="389" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1acec81ec47de57dcf599a1542dbbfce67" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STextHost::TxClientToScreen</definition>
+        <argsstring>(LPPOINT lppt)</argsstring>
+        <name>TxClientToScreen</name>
+        <param>
+          <type>LPPOINT</type>
+          <declname>lppt</declname>
+        </param>
+        <briefdescription>
+<para>Converts the client coordinates of a specified point to screen coordinates </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1acec81ec47de57dcf599a1542dbbfce67" kindref="member">STextHost::TxClientToScreen</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPPOINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lppt <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe Converts the client coordinates of a specified point to screen coordinates </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="399" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a17abf598ce58eb46f5b824cdf9711f5a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxActivate</definition>
+        <argsstring>(LONG *plOldState)</argsstring>
+        <name>TxActivate</name>
+        <param>
+          <type>LONG *</type>
+          <declname>plOldState</declname>
+        </param>
+        <briefdescription>
+<para>Request host to activate text services </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a17abf598ce58eb46f5b824cdf9711f5a" kindref="member">STextHost::TxActivate</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LONG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* plOldState <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Request host to activate text services </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="409" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a836e9fa24d84576c47bab4bfe7b4357c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxDeactivate</definition>
+        <argsstring>(LONG lNewState)</argsstring>
+        <name>TxDeactivate</name>
+        <param>
+          <type>LONG</type>
+          <declname>lNewState</declname>
+        </param>
+        <briefdescription>
+<para>Request host to deactivate text services </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a836e9fa24d84576c47bab4bfe7b4357c" kindref="member">STextHost::TxDeactivate</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LONG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lNewState <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Request host to deactivate text services </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="419" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a52318b01eac882c103dfff3cd8e45d34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetClientRect</definition>
+        <argsstring>(LPRECT prc)</argsstring>
+        <name>TxGetClientRect</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>prc</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the coordinates of a window&apos;s client area </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a52318b01eac882c103dfff3cd8e45d34" kindref="member">STextHost::TxGetClientRect</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prc <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Retrieves the coordinates of a window&apos;s client area </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="429" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1aff1f70245c5be84e0e6e480b8f73cd53" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetViewInset</definition>
+        <argsstring>(LPRECT prc)</argsstring>
+        <name>TxGetViewInset</name>
+        <param>
+          <type>LPRECT</type>
+          <declname>prc</declname>
+        </param>
+        <briefdescription>
+<para>Get the view rectangle relative to the inset </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1aff1f70245c5be84e0e6e480b8f73cd53" kindref="member">STextHost::TxGetViewInset</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>prc <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the view rectangle relative to the inset </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="439" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a0f730e3deb234daf1e72c4c23c00b0e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetCharFormat</definition>
+        <argsstring>(const CHARFORMATW **ppCF)</argsstring>
+        <name>TxGetCharFormat</name>
+        <param>
+          <type>const CHARFORMATW **</type>
+          <declname>ppCF</declname>
+        </param>
+        <briefdescription>
+<para>Get the default character format for the text </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a0f730e3deb234daf1e72c4c23c00b0e6" kindref="member">STextHost::TxGetCharFormat</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CHARFORMATW **ppCF <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the default character format for the text </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="449" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1aac3c3fd24b4c8cfa6021c0a4ff1b86c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetParaFormat</definition>
+        <argsstring>(const PARAFORMAT **ppPF)</argsstring>
+        <name>TxGetParaFormat</name>
+        <param>
+          <type>const PARAFORMAT **</type>
+          <declname>ppPF</declname>
+        </param>
+        <briefdescription>
+<para>Get the default paragraph format for the text </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1aac3c3fd24b4c8cfa6021c0a4ff1b86c1" kindref="member">STextHost::TxGetParaFormat</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PARAFORMAT **ppPF <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the default character format for the text </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="459" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a9c11fe8b00d0988c2a8e18c3300a3d03" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>COLORREF</type>
+        <definition>virtual COLORREF SOUI::STextHost::TxGetSysColor</definition>
+        <argsstring>(int nIndex)</argsstring>
+        <name>TxGetSysColor</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the background color for the window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a9c11fe8b00d0988c2a8e18c3300a3d03" kindref="member">STextHost::TxGetSysColor</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回COLORREF <linebreak/>
+</para>
+</simplesect>
+Describe Get the background color for the window </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="469" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a522be93b713d7e6381d60180900d1086" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetBackStyle</definition>
+        <argsstring>(TXTBACKSTYLE *pstyle)</argsstring>
+        <name>TxGetBackStyle</name>
+        <param>
+          <type>TXTBACKSTYLE *</type>
+          <declname>pstyle</declname>
+        </param>
+        <briefdescription>
+<para>Get the background (either opaque or transparent) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a522be93b713d7e6381d60180900d1086" kindref="member">STextHost::TxGetBackStyle</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TXTBACKSTYLE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pstyle <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the background (either opaque or transparent) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="479" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a8c52bea2947b03d5272c545cf145cae9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetMaxLength</definition>
+        <argsstring>(DWORD *plength)</argsstring>
+        <name>TxGetMaxLength</name>
+        <param>
+          <type>DWORD *</type>
+          <declname>plength</declname>
+        </param>
+        <briefdescription>
+<para>Get the maximum length for the text </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a8c52bea2947b03d5272c545cf145cae9" kindref="member">STextHost::TxGetMaxLength</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*plength <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the maximum length for the text </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="489" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ad5b43ebafe49ef4dea797077086e0e35" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetScrollBars</definition>
+        <argsstring>(DWORD *pdwScrollBar)</argsstring>
+        <name>TxGetScrollBars</name>
+        <param>
+          <type>DWORD *</type>
+          <declname>pdwScrollBar</declname>
+        </param>
+        <briefdescription>
+<para>Get the bits representing requested scroll bars for the window </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ad5b43ebafe49ef4dea797077086e0e35" kindref="member">STextHost::TxGetScrollBars</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pdwScrollBar <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the bits representing requested scroll bars for the window </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="499" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a93e0f698ea63c38abd212992a60303a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetPasswordChar</definition>
+        <argsstring>(TCHAR *pch)</argsstring>
+        <name>TxGetPasswordChar</name>
+        <param>
+          <type>TCHAR *</type>
+          <declname>pch</declname>
+        </param>
+        <briefdescription>
+<para>Get the character to display for password input </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a93e0f698ea63c38abd212992a60303a9" kindref="member">STextHost::TxGetPasswordChar</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TCHAR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pch <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the character to display for password input </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="509" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a47b0e13806faceb8d778d925c7f616fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetAcceleratorPos</definition>
+        <argsstring>(LONG *pcp)</argsstring>
+        <name>TxGetAcceleratorPos</name>
+        <param>
+          <type>LONG *</type>
+          <declname>pcp</declname>
+        </param>
+        <briefdescription>
+<para>Get the accelerator character </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a47b0e13806faceb8d778d925c7f616fd" kindref="member">STextHost::TxGetAcceleratorPos</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LONG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pcp <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the accelerator character </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="519" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a42c1859173eca76bcb751ef1b3f237bc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetExtent</definition>
+        <argsstring>(LPSIZEL lpExtent)</argsstring>
+        <name>TxGetExtent</name>
+        <param>
+          <type>LPSIZEL</type>
+          <declname>lpExtent</declname>
+        </param>
+        <briefdescription>
+<para>Get the native size </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a42c1859173eca76bcb751ef1b3f237bc" kindref="member">STextHost::TxGetExtent</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPSIZEL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lpExtent <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Get the native size </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="529" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1a86f9a6af98b6a48ec26de8810eff016f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::OnTxCharFormatChange</definition>
+        <argsstring>(const CHARFORMATW *pcf)</argsstring>
+        <name>OnTxCharFormatChange</name>
+        <param>
+          <type>const CHARFORMATW *</type>
+          <declname>pcf</declname>
+        </param>
+        <briefdescription>
+<para>Notify host that default character format has changed </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1a86f9a6af98b6a48ec26de8810eff016f" kindref="member">STextHost::OnTxCharFormatChange</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CHARFORMATW * pcf <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Notify host that default character format has changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="539" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ac0503ec0d7afeed4ec2fe2165d7f37ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::OnTxParaFormatChange</definition>
+        <argsstring>(const PARAFORMAT *ppf)</argsstring>
+        <name>OnTxParaFormatChange</name>
+        <param>
+          <type>const PARAFORMAT *</type>
+          <declname>ppf</declname>
+        </param>
+        <briefdescription>
+<para>Notify host that default paragraph format has changed </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ac0503ec0d7afeed4ec2fe2165d7f37ec" kindref="member">STextHost::OnTxParaFormatChange</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PARAFORMAT * ppf <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Notify host that default paragraph format has changed </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="549" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1aa8f4f561e23f7eea285f3f22d40086af" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetPropertyBits</definition>
+        <argsstring>(DWORD dwMask, DWORD *pdwBits)</argsstring>
+        <name>TxGetPropertyBits</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwMask</declname>
+        </param>
+        <param>
+          <type>DWORD *</type>
+          <declname>pdwBits</declname>
+        </param>
+        <briefdescription>
+<para>Bulk access to bit properties </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1aa8f4f561e23f7eea285f3f22d40086af" kindref="member">STextHost::TxGetPropertyBits</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwMask <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pdwBits <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Bulk access to bit properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="560" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1ac85da3b37b234e50e4138ea63d70921d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxNotify</definition>
+        <argsstring>(DWORD iNotify, void *pv)</argsstring>
+        <name>TxNotify</name>
+        <param>
+          <type>DWORD</type>
+          <declname>iNotify</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pv</declname>
+        </param>
+        <briefdescription>
+<para>Notify host of events </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1ac85da3b37b234e50e4138ea63d70921d" kindref="member">STextHost::TxNotify</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iNotify <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pv <ndash/> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT</para>
+</simplesect>
+Describe Bulk access to bit properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="571" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1afd758afd698da66ba06b6840bd0eee39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HIMC</type>
+        <definition>virtual HIMC SOUI::STextHost::TxImmGetContext</definition>
+        <argsstring>()</argsstring>
+        <name>TxImmGetContext</name>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1afd758afd698da66ba06b6840bd0eee39" kindref="member">STextHost::TxImmGetContext</ref> <simplesect kind="return"><para>返回HIMC</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="582" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1af331a01496d6dbe25f92eecf8e17d937" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STextHost::TxImmReleaseContext</definition>
+        <argsstring>(HIMC himc)</argsstring>
+        <name>TxImmReleaseContext</name>
+        <param>
+          <type>HIMC</type>
+          <declname>himc</declname>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1af331a01496d6dbe25f92eecf8e17d937" kindref="member">STextHost::TxImmReleaseContext</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HIMC</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>himc <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="590" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_host_1aad513c6c3406b44af5da9fde772ab02c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STextHost::TxGetSelectionBarWidth</definition>
+        <argsstring>(LONG *plSelBarWidth)</argsstring>
+        <name>TxGetSelectionBarWidth</name>
+        <param>
+          <type>LONG *</type>
+          <declname>plSelBarWidth</declname>
+        </param>
+        <briefdescription>
+<para>Returns HIMETRIC size of the control bar </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_host_1aad513c6c3406b44af5da9fde772ab02c" kindref="member">STextHost::TxGetSelectionBarWidth</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LONG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*plSelBarWidth <ndash/></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe Returns HIMETRIC size of the control bar </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="600" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STextHost</label>
+        <link refid="class_s_o_u_i_1_1_s_text_host"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ITextHost</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="1">
+        <label>SOUI::STextHost</label>
+        <link refid="class_s_o_u_i_1_1_s_text_host"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pRichEdit</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="6">
+        <label>SObject</label>
+      </node>
+      <node id="14">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="29">
+        <label>SOUI::SSkinScrollbar</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_scrollbar"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="23">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="5">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ITextHost</label>
+      </node>
+      <node id="32">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; ISkinObj &gt; &gt;</label>
+      </node>
+      <node id="3">
+        <label>SOUI::SRichEdit</label>
+        <link refid="class_s_o_u_i_1_1_s_rich_edit"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>m_pTxtHost</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>SOUI::SState2Index</label>
+        <link refid="class_s_o_u_i_1_1_s_state2_index"/>
+      </node>
+      <node id="30">
+        <label>SOUI::SSkinImgList</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_img_list"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>SOUI::SScrollBarHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_scroll_bar_handler"/>
+        <childnode refid="12" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_panel"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_nSbRight</edgelabel>
+          <edgelabel>m_nSbBottom</edgelabel>
+          <edgelabel>m_nSbTop</edgelabel>
+          <edgelabel>m_nSbLeft</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_sbHorz</edgelabel>
+          <edgelabel>m_sbVert</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_pSkinSb</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="16">
+        <label>IObject</label>
+      </node>
+      <node id="9">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="31">
+        <label>SOUI::SSkinObjBase</label>
+        <link refid="class_s_o_u_i_1_1_s_skin_obj_base"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>m_state2Index</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="15">
+        <label>IObjRef</label>
+      </node>
+      <node id="8">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="27">
+        <label>SOUI::IScrollBarHost</label>
+        <link refid="struct_s_o_u_i_1_1_i_scroll_bar_host"/>
+      </node>
+      <node id="10">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="20">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="118" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="117" bodyend="608"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ab558e9a03181b9cc7f633375caf4ef45" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>AddRef</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a6d780e822c79b1a4173f8adeeb289b9f" prot="protected" virt="non-virtual"><scope>SOUI::STextHost</scope><name>cRefs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a3fba307fac390d4faae599e0612e4ede" prot="public" virt="non-virtual"><scope>SOUI::STextHost</scope><name>GetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a7b7f8bc4072314f358b3a998e447b1b7" prot="public" virt="non-virtual"><scope>SOUI::STextHost</scope><name>GetTextService</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1aa14b997e75995038712470559255c489" prot="public" virt="non-virtual"><scope>SOUI::STextHost</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a921b0765eb8db2ac98dd83c278de2272" prot="protected" virt="non-virtual"><scope>SOUI::STextHost</scope><name>m_fUiActive</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a860c448ef80be2cacd8d75caa9edfef4" prot="protected" virt="non-virtual"><scope>SOUI::STextHost</scope><name>m_pRichEdit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a08695edccdc9f245f692100130803d74" prot="protected" virt="non-virtual"><scope>SOUI::STextHost</scope><name>m_ptCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a86f9a6af98b6a48ec26de8810eff016f" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>OnTxCharFormatChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ac0503ec0d7afeed4ec2fe2165d7f37ec" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>OnTxParaFormatChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a0b54073cba590d2636c1d0d54ff3c1f4" prot="protected" virt="non-virtual"><scope>SOUI::STextHost</scope><name>pserv</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1abc96610bbf15a79a0db42239650cedf4" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>QueryInterface</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1adf54ed1443276fc9fd7844765acbf2b0" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>Release</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ae8250ecc8b0664bbdcc80cbcdd34403d" prot="private" virt="non-virtual"><scope>SOUI::STextHost</scope><name>SRichEdit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a5a7bb533e117c93ece4810219ab92877" prot="public" virt="non-virtual"><scope>SOUI::STextHost</scope><name>STextHost</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a17abf598ce58eb46f5b824cdf9711f5a" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1acec81ec47de57dcf599a1542dbbfce67" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxClientToScreen</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a738cf101ed5a2e25622e19e0ac5941a3" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxCreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a836e9fa24d84576c47bab4bfe7b4357c" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxDeactivate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ad8d06f502efca6836c6647eb0e3fd402" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxEnableScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a47b0e13806faceb8d778d925c7f616fd" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetAcceleratorPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a522be93b713d7e6381d60180900d1086" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetBackStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a0f730e3deb234daf1e72c4c23c00b0e6" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetCharFormat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a52318b01eac882c103dfff3cd8e45d34" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ab6585849c37ea13d7fb0c715fe6ae503" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a42c1859173eca76bcb751ef1b3f237bc" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetExtent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a8c52bea2947b03d5272c545cf145cae9" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetMaxLength</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1aac3c3fd24b4c8cfa6021c0a4ff1b86c1" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetParaFormat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a93e0f698ea63c38abd212992a60303a9" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetPasswordChar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1aa8f4f561e23f7eea285f3f22d40086af" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetPropertyBits</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ad5b43ebafe49ef4dea797077086e0e35" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetScrollBars</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1aad513c6c3406b44af5da9fde772ab02c" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetSelectionBarWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a9c11fe8b00d0988c2a8e18c3300a3d03" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetSysColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1aff1f70245c5be84e0e6e480b8f73cd53" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxGetViewInset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1afd758afd698da66ba06b6840bd0eee39" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxImmGetContext</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1af331a01496d6dbe25f92eecf8e17d937" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxImmReleaseContext</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a89d6cc1ca06aa235d43d3ba32b075eef" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxInvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a4c65f5f7db7e70f1161a38b1fad9c0c0" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxKillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ac85da3b37b234e50e4138ea63d70921d" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxNotify</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ac2694796c017b8dcc13808bfecf85b1a" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxReleaseDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ae86aa625554c962538f00e05448d6cea" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxScreenToClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a26461b5d31e6bc3a73d4b1a111d18002" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxScrollWindowEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ab4345bc35d0d253c9d0ac27d60a804d0" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a8842da097a65f369755c483fd07c0c94" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a492cdc6dc7bf52fceb12c0a141d342dd" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a9de3cb85cf40029d0613e5500b5e7edf" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a4b2a6b4b9279f9582e5bf1762ba03094" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetScrollPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ac9ef059cec207d6532f711f7d15c4f0f" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetScrollRange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1ac8e7d3bd87a9f036a9648efe1e777c3b" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxSetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1af98733c5862b99616d3213bb47d90d66" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a02528c6194c03aa037879c36c537a303" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxShowScrollBar</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a1741167265fd67464a9a4dfa54c691bf" prot="protected" virt="virtual"><scope>SOUI::STextHost</scope><name>TxViewChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_host_1a3713e7499832d6a828656c561205ca92" prot="public" virt="non-virtual"><scope>SOUI::STextHost</scope><name>~STextHost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

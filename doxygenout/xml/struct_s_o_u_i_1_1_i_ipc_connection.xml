@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_ipc_connection" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IIpcConnection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_connection_1a5fc3306186e876a5690498ae8c3e92e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IIpcConnection::GetBufSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetBufSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="117" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_connection_1a709ea808fd582c439013471c4fc684f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IIpcConnection::GetStackSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetStackSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="118" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_connection_1af56075d092cada5ba083e52fafe1b7dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_ipc_handle" kindref="compound">IIpcHandle</ref> *</type>
+        <definition>virtual IIpcHandle* SOUI::IIpcConnection::GetIpcHandle</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetIpcHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="119" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_connection_1a85a42f4634936a4efacf4c5cc698b781" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IIpcConnection::HandleFun</definition>
+        <argsstring>(UINT uFunID, SParamStream &amp;ps)=0</argsstring>
+        <name>HandleFun</name>
+        <param>
+          <type>UINT</type>
+          <declname>uFunID</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_param_stream" kindref="compound">SParamStream</ref> &amp;</type>
+          <declname>ps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="120" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_connection_1ab09752e9ccf32c8b06a888e8091eb0a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IIpcConnection::BuildShareBufferName</definition>
+        <argsstring>(ULONG_PTR idLocal, ULONG_PTR idRemote, TCHAR szBuf[MAX_PATH]) const =0</argsstring>
+        <name>BuildShareBufferName</name>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>idLocal</declname>
+        </param>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>idRemote</declname>
+        </param>
+        <param>
+          <type>TCHAR</type>
+          <declname>szBuf</declname>
+          <array>[MAX_PATH]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="121" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IIpcConnection</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_connection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IIpcConnection</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_connection"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="116" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="115" bodyend="122"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_connection_1ab09752e9ccf32c8b06a888e8091eb0a0" prot="public" virt="pure-virtual"><scope>SOUI::IIpcConnection</scope><name>BuildShareBufferName</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_connection_1a5fc3306186e876a5690498ae8c3e92e4" prot="public" virt="pure-virtual"><scope>SOUI::IIpcConnection</scope><name>GetBufSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_connection_1af56075d092cada5ba083e52fafe1b7dd" prot="public" virt="pure-virtual"><scope>SOUI::IIpcConnection</scope><name>GetIpcHandle</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_connection_1a709ea808fd582c439013471c4fc684f5" prot="public" virt="pure-virtual"><scope>SOUI::IIpcConnection</scope><name>GetStackSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_connection_1a85a42f4634936a4efacf4c5cc698b781" prot="public" virt="pure-virtual"><scope>SOUI::IIpcConnection</scope><name>HandleFun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

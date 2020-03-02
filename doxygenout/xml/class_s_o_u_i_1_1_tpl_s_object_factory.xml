@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_tpl_s_object_factory" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::TplSObjectFactory</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_object_factory" prot="public" virt="non-virtual">SOUI::SObjectFactory</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tpl_s_object_factory_1a634093e2b0d22d81e5cb1a57a31851e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::TplSObjectFactory&lt; T &gt;::TplSObjectFactory</definition>
+        <argsstring>()</argsstring>
+        <name>TplSObjectFactory</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="102" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tpl_s_object_factory_1a3571b4e67a89f155bea313af7f03d671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>LPCWSTR</type>
+        <definition>LPCWSTR SOUI::TplSObjectFactory&lt; T &gt;::BaseClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>BaseClassName</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_object_factory_1a08e765f261d9aef484b78e6328f8c7d6">BaseClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="106" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tpl_s_object_factory_1aea80ac2e3c5d5feef9dc8ab62007921f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>IObject *</type>
+        <definition>virtual IObject* SOUI::TplSObjectFactory&lt; T &gt;::NewObject</definition>
+        <argsstring>() const</argsstring>
+        <name>NewObject</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_object_factory_1ac72d51d92dc7afd3a305abb57df2eace">NewObject</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="110" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tpl_s_object_factory_1a97ced0af7c6e063d0811baa4c61bc117" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_tpl_s_object_factory" kindref="compound">TplSObjectFactory</ref> *</type>
+        <definition>virtual TplSObjectFactory* SOUI::TplSObjectFactory&lt; T &gt;::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_object_factory_1a9bbb1865ef5ea8a1c4597d1eb4b49ee7">Clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="115" column="35" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tpl_s_object_factory_1aab9a0c3421c9373c40711c82e30061f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_object_info" kindref="compound">SObjectInfo</ref></type>
+        <definition>virtual SObjectInfo SOUI::TplSObjectFactory&lt; T &gt;::GetObjectInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetObjectInfo</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_object_factory_1a6bb38c5a8e36066c17196cddcaf458dd">GetObjectInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="121" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SObjectFactory</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory"/>
+      </node>
+      <node id="1">
+        <label>SOUI::TplSObjectFactory&lt; T &gt;</label>
+        <link refid="class_s_o_u_i_1_1_tpl_s_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SObjectFactory</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory"/>
+      </node>
+      <node id="1">
+        <label>SOUI::TplSObjectFactory&lt; T &gt;</label>
+        <link refid="class_s_o_u_i_1_1_tpl_s_object_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" line="99" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SObjectFactory.h" bodystart="98" bodyend="125"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_tpl_s_object_factory_1a3571b4e67a89f155bea313af7f03d671" prot="public" virt="virtual"><scope>SOUI::TplSObjectFactory</scope><name>BaseClassName</name></member>
+      <member refid="class_s_o_u_i_1_1_tpl_s_object_factory_1a97ced0af7c6e063d0811baa4c61bc117" prot="public" virt="virtual"><scope>SOUI::TplSObjectFactory</scope><name>Clone</name></member>
+      <member refid="class_s_o_u_i_1_1_tpl_s_object_factory_1aab9a0c3421c9373c40711c82e30061f9" prot="public" virt="virtual"><scope>SOUI::TplSObjectFactory</scope><name>GetObjectInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_tpl_s_object_factory_1aea80ac2e3c5d5feef9dc8ab62007921f" prot="public" virt="virtual"><scope>SOUI::TplSObjectFactory</scope><name>NewObject</name></member>
+      <member refid="class_s_o_u_i_1_1_tpl_s_object_factory_1a634093e2b0d22d81e5cb1a57a31851e7" prot="public" virt="non-virtual"><scope>SOUI::TplSObjectFactory</scope><name>TplSObjectFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_1a1bfdbd3054898de6bfcf08bd4191380f" prot="public" virt="virtual"><scope>SOUI::TplSObjectFactory</scope><name>~SObjectFactory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

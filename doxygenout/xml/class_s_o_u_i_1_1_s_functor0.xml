@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_functor0" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SFunctor0</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_runnable" prot="public" virt="non-virtual">SOUI::SRunnable</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename TClass</type>
+      </param>
+      <param>
+        <type>typename Func</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_functor0_1a268cc196dda3e1757828ace53ceb649a" prot="private" static="no" mutable="no">
+        <type>Func</type>
+        <definition>Func SOUI::SFunctor0&lt; TClass, Func &gt;::_func</definition>
+        <argsstring></argsstring>
+        <name>_func</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="52" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_functor0_1a077e27e0f7b3ccf6d8f7b20c90d3ce20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SFunctor0&lt; TClass, Func &gt;::SFunctor0</definition>
+        <argsstring>(TClass *obj, Func func)</argsstring>
+        <name>SFunctor0</name>
+        <param>
+          <type>TClass *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="36" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_functor0_1a13e79d38beb9ceeeee74248a519f0498" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_runnable" kindref="compound">IRunnable</ref> *</type>
+        <definition>virtual IRunnable* SOUI::SFunctor0&lt; TClass, Func &gt;::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_runnable_1a0f1f529caea8194d4470de8b83fd3387">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="42" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_functor0_1abb9de271456fa7af6d81e2be9ec01790" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SFunctor0&lt; TClass, Func &gt;::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_runnable_1abaeaa8a679bb80b44f20a1f6978dea8b">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="46" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::IRunnable</label>
+        <link refid="struct_s_o_u_i_1_1_i_runnable"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SFunctor0&lt; TClass, Func &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_functor0"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SRunnable</label>
+        <link refid="class_s_o_u_i_1_1_s_runnable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>SOUI::IRunnable</label>
+        <link refid="struct_s_o_u_i_1_1_i_runnable"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SFunctor0&lt; TClass, Func &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_functor0"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SRunnable</label>
+        <link refid="class_s_o_u_i_1_1_s_runnable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" line="33" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SFunctor.hpp" bodystart="32" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_functor0_1a268cc196dda3e1757828ace53ceb649a" prot="private" virt="non-virtual"><scope>SOUI::SFunctor0</scope><name>_func</name></member>
+      <member refid="class_s_o_u_i_1_1_s_runnable_1af2fa399bc025b49bb6ff162c8e2ca0f4" prot="protected" virt="non-virtual"><scope>SOUI::SFunctor0</scope><name>_pObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_functor0_1a13e79d38beb9ceeeee74248a519f0498" prot="public" virt="virtual"><scope>SOUI::SFunctor0</scope><name>clone</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_runnable_1a96472302a4d867009adc9462ce675e38" prot="public" virt="pure-virtual"><scope>SOUI::SFunctor0</scope><name>getClassInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_runnable_1a1afa24502ea91eebfffd78f0a821b08b" prot="public" virt="virtual"><scope>SOUI::SFunctor0</scope><name>getObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_functor0_1abb9de271456fa7af6d81e2be9ec01790" prot="public" virt="virtual"><scope>SOUI::SFunctor0</scope><name>run</name></member>
+      <member refid="class_s_o_u_i_1_1_s_functor0_1a077e27e0f7b3ccf6d8f7b20c90d3ce20" prot="public" virt="non-virtual"><scope>SOUI::SFunctor0</scope><name>SFunctor0</name></member>
+      <member refid="class_s_o_u_i_1_1_s_runnable_1a1ec507e49c6a101a467089d7328d9fa7" prot="public" virt="non-virtual"><scope>SOUI::SFunctor0</scope><name>SRunnable</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_runnable_1a99de84c4b7b1184f466db2d789325b92" prot="public" virt="virtual"><scope>SOUI::SFunctor0</scope><name>~IRunnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_runnable_1aab9345c5c31c82f17213d46d6b881100" prot="public" virt="virtual"><scope>SOUI::SFunctor0</scope><name>~SRunnable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

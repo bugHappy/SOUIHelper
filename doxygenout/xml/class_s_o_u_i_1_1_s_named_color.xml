@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_named_color" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SNamedColor</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_named_value" prot="public" virt="non-virtual">SOUI::SNamedValue&lt; COLORREF, SColorParser &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_color_1a902111609883e5d059a0b65bb0ed788e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const COLORREF &amp;</type>
+        <definition>const COLORREF&amp; SOUI::SNamedColor::Get</definition>
+        <argsstring>(const SStringW &amp;strValue) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="126" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_color_1ac1dfe9211b1796eb492b8dc0472ff9ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const COLORREF &amp;</type>
+        <definition>const COLORREF&amp; SOUI::SNamedColor::Get</definition>
+        <argsstring>(int idx) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="127" column="25" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="127" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SNamedValue&lt; COLORREF, SColorParser &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_named_value"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SNamedColor</label>
+        <link refid="class_s_o_u_i_1_1_s_named_color"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SNamedValue&lt; COLORREF, SColorParser &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_named_value"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SNamedColor</label>
+        <link refid="class_s_o_u_i_1_1_s_named_color"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="123" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="122" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a10ffba18a3bc170bdd6e5f6387712706" prot="protected" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>Compare</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_color_1a902111609883e5d059a0b65bb0ed788e" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>Get</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_color_1ac1dfe9211b1796eb492b8dc0472ff9ed" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>Get</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1ab7860ce128b5daf4eb1db240d99985a2" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>GetAt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a5c31460b5f421260b0bdefa8dde432ae" prot="public" virt="virtual"><scope>SOUI::SNamedColor</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a3e0db50df2b0547618c22fde357d5fd6" prot="protected" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>m_lstNamedValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1aa14bc387ddc4ad6091d363a855ed09ea" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>Merge</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1ad4c09a942cf5e820f77ab6f5238c7fbf" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>NAMEDVALUE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1aba16d6a6142bc69a7d6ccb1f39a34e3a" prot="public" virt="non-virtual"><scope>SOUI::SNamedColor</scope><name>String2Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

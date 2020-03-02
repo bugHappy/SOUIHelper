@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_img_x" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IImgX</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_img_decoder-i_8h" local="no">SImgDecoder-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_x_1a7b4024d166a49bfee2070646773c6a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IImgX::LoadFromMemory</definition>
+        <argsstring>(void *pBuf, size_t bufLen)=0</argsstring>
+        <name>LoadFromMemory</name>
+        <param>
+          <type>void *</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufLen</declname>
+        </param>
+        <briefdescription>
+<para>load image data from a mememory buffer </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadFromMemory <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pBuf <ndash/> point of buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size_t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bufLen <ndash/> size of buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="79" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_x_1a5326f29da51be7ef679a47b7de649fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IImgX::LoadFromFile</definition>
+        <argsstring>(LPCWSTR pszFileName)=0</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <briefdescription>
+<para>load image from file </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadFromFile <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszFileName <ndash/> file name in unicode </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="87" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_x_1aa863ecfe652d4bd37b2f6249c454d8e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IImgX::LoadFromFile</definition>
+        <argsstring>(LPCSTR pszFileName)=0</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type>LPCSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <briefdescription>
+<para>load image from file </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadFromFile <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszFileName <ndash/> file name in char </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="96" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_x_1a597599e9d5f6ce39e5d1ee1fad9e6961" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::IImgX::GetFrameCount</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetFrameCount</name>
+        <briefdescription>
+<para>get frame count of the image data </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetFrameCount <simplesect kind="return"><para>UINT <ndash/> image frame count Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="104" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_x_1a5622eaf1d7834cdb0d035942bbed64c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_img_frame" kindref="compound">IImgFrame</ref> *</type>
+        <definition>virtual IImgFrame* SOUI::IImgX::GetFrame</definition>
+        <argsstring>(UINT iFrame)=0</argsstring>
+        <name>GetFrame</name>
+        <param>
+          <type>UINT</type>
+          <declname>iFrame</declname>
+        </param>
+        <briefdescription>
+<para>get frame data </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetFrame <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iFrame <ndash/> the target frame index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_img_frame" kindref="compound">IImgFrame</ref> * <ndash/> the associated image frame with the input frame index Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="113" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>image data </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IImgX</label>
+        <link refid="struct_s_o_u_i_1_1_i_img_x"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+      <node id="1">
+        <label>SOUI::IImgX</label>
+        <link refid="struct_s_o_u_i_1_1_i_img_x"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="70" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" bodystart="69" bodyend="114"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_img_x_1a5622eaf1d7834cdb0d035942bbed64c9" prot="public" virt="pure-virtual"><scope>SOUI::IImgX</scope><name>GetFrame</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_x_1a597599e9d5f6ce39e5d1ee1fad9e6961" prot="public" virt="pure-virtual"><scope>SOUI::IImgX</scope><name>GetFrameCount</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_x_1a5326f29da51be7ef679a47b7de649fc1" prot="public" virt="pure-virtual"><scope>SOUI::IImgX</scope><name>LoadFromFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_x_1aa863ecfe652d4bd37b2f6249c454d8e5" prot="public" virt="pure-virtual"><scope>SOUI::IImgX</scope><name>LoadFromFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_x_1a7b4024d166a49bfee2070646773c6a24" prot="public" virt="pure-virtual"><scope>SOUI::IImgX</scope><name>LoadFromMemory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

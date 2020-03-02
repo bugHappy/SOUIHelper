@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_attr_storage_factory" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IAttrStorageFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_attr_storage_factory_1a6dcdddd0da2eb7d36fdfb831673983c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IAttrStorageFactory::CreateAttrStorage</definition>
+        <argsstring>(SWindow *owner, IAttrStorage **ppAttrStorage) const =0</argsstring>
+        <name>CreateAttrStorage</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_attr_storage" kindref="compound">IAttrStorage</ref> **</type>
+          <declname>ppAttrStorage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" line="13" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IAttrStorageFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_attr_storage_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IAttrStorageFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_attr_storage_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" line="12" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_attr_storage_factory_1a6dcdddd0da2eb7d36fdfb831673983c5" prot="public" virt="pure-virtual"><scope>SOUI::IAttrStorageFactory</scope><name>CreateAttrStorage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_notify_center" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SNotifyCenter</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton" prot="public" virt="non-virtual">SOUI::SSingleton&lt; SNotifyCenter &gt;</basecompoundref>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_event_set" prot="public" virt="non-virtual">SOUI::SEventSet</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_notify_callback" prot="protected" virt="non-virtual">SOUI::INotifyCallback</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1aaf6c854f9de61c7f6fbc2d7a69a52feb" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SNotifyCenter::m_dwMainTrdID</definition>
+        <argsstring></argsstring>
+        <name>m_dwMainTrdID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="112" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1a63ae8c6c56058aff2e88e9781b375053" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> * &gt;</type>
+        <definition>SList&lt;ISlotFunctor*&gt; SOUI::SNotifyCenter::m_evtHandlerMap</definition>
+        <argsstring></argsstring>
+        <name>m_evtHandlerMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="114" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1a6c51d1331d5e65d54365f9837920aaed" prot="protected" static="no" mutable="no">
+        <type>SNotifyReceiver *</type>
+        <definition>SNotifyReceiver* SOUI::SNotifyCenter::m_pReceiver</definition>
+        <argsstring></argsstring>
+        <name>m_pReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="116" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1a54b4ac3613bf25b675509632a21fa1b6" prot="protected" static="no" mutable="no">
+        <type>SCriticalSection</type>
+        <definition>SCriticalSection SOUI::SNotifyCenter::m_cs</definition>
+        <argsstring></argsstring>
+        <name>m_cs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="118" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1aeb5fc82085af81b0fb1cb45682393453" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> * &gt;</type>
+        <definition>SList&lt;EventArgs *&gt; SOUI::SNotifyCenter::m_ayncEvent</definition>
+        <argsstring></argsstring>
+        <name>m_ayncEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="119" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1ab80036f86a849fa7b1f162fe863373bb" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SNotifyCenter::m_bRunning</definition>
+        <argsstring></argsstring>
+        <name>m_bRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="120" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_notify_center_1a39a3005ee472e3f0d2bec7e27e1d9b8f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SNotifyCenter::m_nInterval</definition>
+        <argsstring></argsstring>
+        <name>m_nInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="121" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1a5861f1503acb9414910ebfa73eacfa41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SNotifyCenter::SNotifyCenter</definition>
+        <argsstring>(int nIntervel=20)</argsstring>
+        <name>SNotifyCenter</name>
+        <param>
+          <type>int</type>
+          <declname>nIntervel</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1a2d0a07d7286bf3f1f4ae1a07154761bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SNotifyCenter::~SNotifyCenter</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SNotifyCenter</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1a8c3fde954e025e640f08a13fa3281a6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SNotifyCenter::FireEventSync</definition>
+        <argsstring>(EventArgs *e)</argsstring>
+        <name>FireEventSync</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>触发一个同步通知事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FireEventSync <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*e <ndash/> 事件对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+</para>
+</simplesect>
+Describe 只能在UI线程中调用 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="77" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1aa72e80f8bc90446f7f444d0a3a529ea2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SNotifyCenter::FireEventAsync</definition>
+        <argsstring>(EventArgs *e)</argsstring>
+        <name>FireEventAsync</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>触发一个异步通知事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FireEventAsync <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*e <ndash/> 事件对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+</para>
+</simplesect>
+Describe 可以在非UI线程中调用，EventArgs *e必须是从堆上分配的内存，调用后使用Release释放引用计数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="87" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1a886626301b41829ad5b56a36c0ce0e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SNotifyCenter::RegisterEventMap</definition>
+        <argsstring>(const ISlotFunctor &amp;slot)</argsstring>
+        <name>RegisterEventMap</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>注册一个处理通知的对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>RegisterEventMap <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;slot <ndash/> 事件处理对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+</para>
+</simplesect>
+Describe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="97" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1a9f17d7cd2099396f1155e29fcb37a07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SNotifyCenter::UnregisterEventMap</definition>
+        <argsstring>(const ISlotFunctor &amp;slot)</argsstring>
+        <name>UnregisterEventMap</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>注销一个处理通知的对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>RegisterEventMap <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;slot <ndash/> 事件处理对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+</para>
+</simplesect>
+Describe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="107" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1adad6aba81fbc17e99684be5fc655e8f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SNotifyCenter::OnFireEvent</definition>
+        <argsstring>(EventArgs *e)</argsstring>
+        <name>OnFireEvent</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_notify_callback_1afec7ed99dfa58ea153866ba9122a4f79">OnFireEvent</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="109" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_notify_center_1adbbac991203a03788a32fadebfea9c9e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SNotifyCenter::OnFireEvts</definition>
+        <argsstring>()</argsstring>
+        <name>OnFireEvts</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_notify_callback_1a0f117c89e92e45db1632c176479d67c5">OnFireEvts</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="110" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="4">
+        <label>SOUI::INotifyCallback</label>
+        <link refid="struct_s_o_u_i_1_1_i_notify_callback"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SNotifyCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_notify_center"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton&lt; SNotifyCenter &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="4">
+        <label>SOUI::INotifyCallback</label>
+        <link refid="struct_s_o_u_i_1_1_i_notify_callback"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SNotifyCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_notify_center"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton&lt; SNotifyCenter &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ms_Singleton</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="64" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="61" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1affdcff4499a38ba481dde3501473d8a2" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>addEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a2bf2a4ef5534486adbf639afac317366" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1aa72e80f8bc90446f7f444d0a3a529ea2" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>FireEventAsync</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a8c3fde954e025e640f08a13fa3281a6c" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>FireEventSync</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ad10597d0b3bcda6fe8c7f4aea19f6610" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>GetEventObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a19cdf6e0cc95614aadf7045abc628788" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>getEventScriptHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1a764c236d85f4041a0f0ad4aa949cc0ab" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1aea3a33fb5d566ac0f41519d4e21c545a" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ad48c256770bd6f904e74e7223cf27588" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>isEventPresent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1adb6d5de01231598f1477760d473111e8" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>isMuted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1aeb5fc82085af81b0fb1cb45682393453" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_ayncEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1ab80036f86a849fa7b1f162fe863373bb" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_bRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a54b4ac3613bf25b675509632a21fa1b6" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_cs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1aaf6c854f9de61c7f6fbc2d7a69a52feb" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_dwMainTrdID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a67657c0ea63cb1aec1b10df734f16b1b" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_evtArr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a63ae8c6c56058aff2e88e9781b375053" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_evtHandlerMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a39a3005ee472e3f0d2bec7e27e1d9b8f" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_nInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a9c9e47cc4db930b6b2f543b2ecabcfa7" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_nMuted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a6c51d1331d5e65d54365f9837920aaed" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>m_pReceiver</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1a6798b6f18b844c695d19a050fed460da" prot="protected" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>ms_Singleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1adad6aba81fbc17e99684be5fc655e8f6" prot="protected" virt="virtual"><scope>SOUI::SNotifyCenter</scope><name>OnFireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1adbbac991203a03788a32fadebfea9c9e" prot="protected" virt="virtual"><scope>SOUI::SNotifyCenter</scope><name>OnFireEvts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a886626301b41829ad5b56a36c0ce0e22" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>RegisterEventMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a2adcfe9aeb4973bbb07cddcb706fef34" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>removeAllEvents</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a0cac95789a2b6a5dfc10e07dac5c7ba5" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>removeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a7ce4fb36caf14d645fe8bd0046d1f874" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>setEventScriptHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a8705d60856244eb73f019f871b9f1dbf" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>setMutedState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a4f771b3adebf8b16cd6feeedb25fe7f4" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>SEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a5861f1503acb9414910ebfa73eacfa41" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>SNotifyCenter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1ae300c684202ae44b96870043a08c42de" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>SSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ab8602878987efd059f99f17f4d9a053f" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1abcbd86f7a2aee4df711512010ff47fab" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1aa8f5c49821437497ad832c43fede0075" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a6781d4866ec72b233fc63e3dc09823e7" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>subscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a9f17d7cd2099396f1155e29fcb37a07d" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>UnregisterEventMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a01b972e07d8a5aa46941d41efdb51359" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a56b894081a8a38ec0b0e432595e3033a" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1a54238c93651a4acce66303e3a99aeddc" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1af858c55b0349c85c39163461374a9f6a" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>unsubscribeEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_event_set_1ab5e1a61e9f1dab2a9b9104d17ddee6c9" prot="public" virt="virtual"><scope>SOUI::SNotifyCenter</scope><name>~SEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_notify_center_1a2d0a07d7286bf3f1f4ae1a07154761bc" prot="public" virt="non-virtual"><scope>SOUI::SNotifyCenter</scope><name>~SNotifyCenter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1abb26a63f225ec36d5d4376d695b9e2fa" prot="public" virt="virtual"><scope>SOUI::SNotifyCenter</scope><name>~SSingleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_host_wnd_attr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SHostWndAttr</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObject</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_tr_ctx_provider" prot="public" virt="non-virtual">SOUI::ITrCtxProvider</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@11</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25a19c3250cad62cbe6bc3460eb407dc050" prot="private">
+          <name>WT_UNDEFINE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25a483bea12484a853a68bcd96d9f139a80" prot="private">
+          <name>WT_APPMAIN</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25aecc6a245578c2729fbf25aeac887f0fd" prot="private">
+          <name>WT_NORMAL</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="25" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_host_wnd_attr_1aa58f26b75faeb361aa237eff33791ef2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SHostWnd</definition>
+        <argsstring></argsstring>
+        <name>SHostWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="26" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a76f03ef756df62fedea1e6faf176c1f5" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SHostWndAttr::m_rcMargin[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_rcMargin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="76" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a524cf96c53ebd083769be41803c20330" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SHostWndAttr::m_szMin[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>m_szMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="77" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1ab79d10cb687476bf41fe6dc02d46a084" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SHostWndAttr::m_rcMaxInset[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>m_rcMaxInset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="78" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a1dc3b438be030fc1877ef11e8bb63a97" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_byAlpha</definition>
+        <argsstring></argsstring>
+        <name>m_byAlpha</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="80" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1ae2427a588cc9e950b420fe6ad0439442" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_byWndType</definition>
+        <argsstring></argsstring>
+        <name>m_byWndType</name>
+        <bitfield>8</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="81" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1aaf585c53ea2fa4cfdb9e4f4b6dbe6157" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bResizable</definition>
+        <argsstring></argsstring>
+        <name>m_bResizable</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="82" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1acbc71ceebb38a0ad530e4bdc292c8a82" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bAppWnd</definition>
+        <argsstring></argsstring>
+        <name>m_bAppWnd</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="83" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a2572c1c7e193adca854d1addda362fc3" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bToolWnd</definition>
+        <argsstring></argsstring>
+        <name>m_bToolWnd</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="84" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a5d7b867860ad47fa16541a5013111f96" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bTranslucent</definition>
+        <argsstring></argsstring>
+        <name>m_bTranslucent</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="85" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a4720f6abb5c66bd064a04a87a3527689" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bAllowSpy</definition>
+        <argsstring></argsstring>
+        <name>m_bAllowSpy</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="86" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a27608b90908d7059698bad8252e51c3e" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_bSendWheel2Hover</definition>
+        <argsstring></argsstring>
+        <name>m_bSendWheel2Hover</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="87" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1acaecfb0e3dc9ebe711db64aa08817e93" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_dwStyle</definition>
+        <argsstring></argsstring>
+        <name>m_dwStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="89" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a36b723ec7070f7ab108b420517e6497a" prot="protected" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD SOUI::SHostWndAttr::m_dwExStyle</definition>
+        <argsstring></argsstring>
+        <name>m_dwExStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="90" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a7ed87bde7aed1c26e6cfe7839c232fe1" prot="protected" static="no" mutable="no">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SHostWndAttr::m_strTrCtx</definition>
+        <argsstring></argsstring>
+        <name>m_strTrCtx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="92" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a32164dab87f9188dfd88dc0fea369537" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_tr_text" kindref="compound">STrText</ref></type>
+        <definition>STrText SOUI::SHostWndAttr::m_strTitle</definition>
+        <argsstring></argsstring>
+        <name>m_strTitle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="93" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1af71e0998cf75e819aa8d55b8bbb0a0c0" prot="protected" static="no" mutable="no">
+        <type>HICON</type>
+        <definition>HICON SOUI::SHostWndAttr::m_hAppIconSmall</definition>
+        <argsstring></argsstring>
+        <name>m_hAppIconSmall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="94" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a320ceb91e110d117c5a44969b4d77152" prot="protected" static="no" mutable="no">
+        <type>HICON</type>
+        <definition>HICON SOUI::SHostWndAttr::m_hAppIconBig</definition>
+        <argsstring></argsstring>
+        <name>m_hAppIconBig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="95" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1af79224800fb4de07dad3e482733f9300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHostWndAttr::SHostWndAttr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SHostWndAttr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1ad7422e0a75fba83797460606394a37a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SHostWndAttr::~SHostWndAttr</definition>
+        <argsstring>()</argsstring>
+        <name>~SHostWndAttr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a12bc1680e0063348e69b9616c654df85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHostWndAttr::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="32" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1ae1c9a7d71068ea4eb49eecfba3bb86a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const SStringW &amp;</type>
+        <definition>virtual const SStringW&amp; SOUI::SHostWndAttr::GetTrCtx</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTrCtx</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_tr_ctx_provider_1a8c4c2e3e62fac6183f9254c626b47a86">GetTrCtx</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="34" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a2c9228e696513613b675ad58ac48c651" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SHostWndAttr::GetMaxInset</definition>
+        <argsstring>(int nScale) const</argsstring>
+        <name>GetMaxInset</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="36" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a9c10ba4d1486ba8a32d3fa703048cd02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SHostWndAttr::GetMargin</definition>
+        <argsstring>(int nScale) const</argsstring>
+        <name>GetMargin</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="38" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1abd88d3a2038f02e9caf3e7267cdcb05c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CSize</type>
+        <definition>CSize SOUI::SHostWndAttr::GetMinSize</definition>
+        <argsstring>(int nScale) const</argsstring>
+        <name>GetMinSize</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="40" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a76d6e484ee5b359852124ca4ed5f2095" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHostWndAttr::SetTranslucent</definition>
+        <argsstring>(bool bTranslucent)</argsstring>
+        <name>SetTranslucent</name>
+        <param>
+          <type>bool</type>
+          <declname>bTranslucent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="42" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_attr_1a12b239dc143953d50002950bdaa9827b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SHostWndAttr::SetTrCtx</definition>
+        <argsstring>(const SStringW &amp;strTrCtx)</argsstring>
+        <name>SetTrCtx</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strTrCtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="46" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="46" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SHostWndAttr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_attr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SObject</label>
+      </node>
+      <node id="5">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SHostWndAttr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_attr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_szMin</edgelabel>
+          <edgelabel>m_rcMaxInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_strTitle</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="23" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="22" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a9c10ba4d1486ba8a32d3fa703048cd02" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>GetMargin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a2c9228e696513613b675ad58ac48c651" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>GetMaxInset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1abd88d3a2038f02e9caf3e7267cdcb05c" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>GetMinSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1ae1c9a7d71068ea4eb49eecfba3bb86a3" prot="public" virt="virtual"><scope>SOUI::SHostWndAttr</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a12bc1680e0063348e69b9616c654df85" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a4720f6abb5c66bd064a04a87a3527689" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bAllowSpy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1acbc71ceebb38a0ad530e4bdc292c8a82" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bAppWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1aaf585c53ea2fa4cfdb9e4f4b6dbe6157" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bResizable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a27608b90908d7059698bad8252e51c3e" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bSendWheel2Hover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a2572c1c7e193adca854d1addda362fc3" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bToolWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a5d7b867860ad47fa16541a5013111f96" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_bTranslucent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a1dc3b438be030fc1877ef11e8bb63a97" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_byAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1ae2427a588cc9e950b420fe6ad0439442" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_byWndType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a36b723ec7070f7ab108b420517e6497a" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_dwExStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1acaecfb0e3dc9ebe711db64aa08817e93" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_dwStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a320ceb91e110d117c5a44969b4d77152" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_hAppIconBig</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1af71e0998cf75e819aa8d55b8bbb0a0c0" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_hAppIconSmall</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a76f03ef756df62fedea1e6faf176c1f5" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_rcMargin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1ab79d10cb687476bf41fe6dc02d46a084" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_rcMaxInset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a32164dab87f9188dfd88dc0fea369537" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_strTitle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a7ed87bde7aed1c26e6cfe7839c232fe1" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a524cf96c53ebd083769be41803c20330" prot="protected" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>m_szMin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a76d6e484ee5b359852124ca4ed5f2095" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>SetTranslucent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a12b239dc143953d50002950bdaa9827b" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>SetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1aa58f26b75faeb361aa237eff33791ef2" prot="private" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>SHostWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1af79224800fb4de07dad3e482733f9300" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>SHostWndAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25a483bea12484a853a68bcd96d9f139a80" prot="private" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>WT_APPMAIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25aecc6a245578c2729fbf25aeac887f0fd" prot="private" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>WT_NORMAL</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1a685b14ed5b6d08d22af73a2e8030fc25a19c3250cad62cbe6bc3460eb407dc050" prot="private" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>WT_UNDEFINE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_attr_1ad7422e0a75fba83797460606394a37a0" prot="public" virt="non-virtual"><scope>SOUI::SHostWndAttr</scope><name>~SHostWndAttr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

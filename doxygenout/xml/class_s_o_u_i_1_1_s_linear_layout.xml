@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_linear_layout" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SLinearLayout</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</basecompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_h_box" prot="public" virt="non-virtual">SOUI::SHBox</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_v_box" prot="public" virt="non-virtual">SOUI::SVBox</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_linear_layout_1a7a83eec001b3cee15f9847c40575ee94" prot="protected" static="no" mutable="no">
+        <type>ORIENTATION</type>
+        <definition>ORIENTATION SOUI::SLinearLayout::m_orientation</definition>
+        <argsstring></argsstring>
+        <name>m_orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="95" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_linear_layout_1a5f4428d9865129f4fdd05f82a3b3e022" prot="protected" static="no" mutable="no">
+        <type>Gravity</type>
+        <definition>Gravity SOUI::SLinearLayout::m_gravity</definition>
+        <argsstring></argsstring>
+        <name>m_gravity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="96" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_linear_layout_1a1ab3694f3728b4bc7836412eac25d3a6" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SLinearLayout::m_interval</definition>
+        <argsstring></argsstring>
+        <name>m_interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="97" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1acb03a1974255614eb387339d9536ef6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SLinearLayout::SLinearLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>SLinearLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="69" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1a097cbcb7ad338f8e10a8516efb8a48da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SLinearLayout::~SLinearLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SLinearLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="70" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1a4afdc278721c6fb97308fb6ba38bf062" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SLinearLayout::LayoutChildren</definition>
+        <argsstring>(SWindow *pParent)</argsstring>
+        <name>LayoutChildren</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="72" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1ad36853ce4be4a63b42dade0e836af666" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::SLinearLayout::CreateLayoutParam</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateLayoutParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="73" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1a335f919cfbd300b94f6d0f4ad3f748e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>CSize</type>
+        <definition>virtual CSize SOUI::SLinearLayout::MeasureChildren</definition>
+        <argsstring>(const SWindow *pParent, int nWidth, int nHeight) const</argsstring>
+        <name>MeasureChildren</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="74" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_linear_layout_1a686bf40a905a7ff53a02c6c1ac330d41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SLinearLayout::IsParamAcceptable</definition>
+        <argsstring>(ILayoutParam *pLayoutParam) const</argsstring>
+        <name>IsParamAcceptable</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+          <declname>pLayoutParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="75" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::SHBox</label>
+        <link refid="class_s_o_u_i_1_1_s_h_box"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SVBox</label>
+        <link refid="class_s_o_u_i_1_1_s_v_box"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SLinearLayout</label>
+        <link refid="class_s_o_u_i_1_1_s_linear_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SLinearLayout</label>
+        <link refid="class_s_o_u_i_1_1_s_linear_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_interval</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+      <node id="3">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" line="66" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SLinearLayout.h" bodystart="65" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1ad36853ce4be4a63b42dade0e836af666" prot="public" virt="virtual"><scope>SOUI::SLinearLayout</scope><name>CreateLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a686bf40a905a7ff53a02c6c1ac330d41" prot="public" virt="virtual"><scope>SOUI::SLinearLayout</scope><name>IsParamAcceptable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a4afdc278721c6fb97308fb6ba38bf062" prot="public" virt="virtual"><scope>SOUI::SLinearLayout</scope><name>LayoutChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a5f4428d9865129f4fdd05f82a3b3e022" prot="protected" virt="non-virtual"><scope>SOUI::SLinearLayout</scope><name>m_gravity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a1ab3694f3728b4bc7836412eac25d3a6" prot="protected" virt="non-virtual"><scope>SOUI::SLinearLayout</scope><name>m_interval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a7a83eec001b3cee15f9847c40575ee94" prot="protected" virt="non-virtual"><scope>SOUI::SLinearLayout</scope><name>m_orientation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a335f919cfbd300b94f6d0f4ad3f748e0" prot="public" virt="virtual"><scope>SOUI::SLinearLayout</scope><name>MeasureChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1acb03a1974255614eb387339d9536ef6e" prot="public" virt="non-virtual"><scope>SOUI::SLinearLayout</scope><name>SLinearLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_linear_layout_1a097cbcb7ad338f8e10a8516efb8a48da" prot="public" virt="non-virtual"><scope>SOUI::SLinearLayout</scope><name>~SLinearLayout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

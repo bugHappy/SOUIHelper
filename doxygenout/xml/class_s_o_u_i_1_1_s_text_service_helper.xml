@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_text_service_helper" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STextServiceHelper</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; STextServiceHelper &gt;</basecompoundref>
+    <includes refid="_s_rich_edit_8h" local="no">SRichEdit.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_service_helper_1a8c19f68fe2900271d2fc53f287014e36" prot="protected" static="no" mutable="no">
+        <type>HINSTANCE</type>
+        <definition>HINSTANCE SOUI::STextServiceHelper::m_rich20</definition>
+        <argsstring></argsstring>
+        <name>m_rich20</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>richedit module </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="71" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_text_service_helper_1a71d30e793578a9ec87628e9250d7bd70" prot="protected" static="no" mutable="no">
+        <type>PCreateTextServices</type>
+        <definition>PCreateTextServices SOUI::STextServiceHelper::m_funCreateTextServices</definition>
+        <argsstring></argsstring>
+        <name>m_funCreateTextServices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>回调函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="72" column="32" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_service_helper_1a23966192b8e0d6dd7421511fd53ea839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::STextServiceHelper::CreateTextServices</definition>
+        <argsstring>(IUnknown *punkOuter, ITextHost *pITextHost, IUnknown **ppUnk)</argsstring>
+        <name>CreateTextServices</name>
+        <param>
+          <type>IUnknown *</type>
+          <declname>punkOuter</declname>
+        </param>
+        <param>
+          <type>ITextHost *</type>
+          <declname>pITextHost</declname>
+        </param>
+        <param>
+          <type>IUnknown **</type>
+          <declname>ppUnk</declname>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_service_helper_1a23966192b8e0d6dd7421511fd53ea839" kindref="member">STextServiceHelper::CreateTextServices</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>IUnknown</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*punkOuter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ITextHost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pITextHost </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IUnknown</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**ppUnk </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回HRESULT <linebreak/>
+</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="53" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_service_helper_1a096eea508551d9f4b0d18a7690fa8382" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STextServiceHelper::STextServiceHelper</definition>
+        <argsstring>()</argsstring>
+        <name>STextServiceHelper</name>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_service_helper_1a096eea508551d9f4b0d18a7690fa8382" kindref="member">STextServiceHelper::STextServiceHelper</ref> Describe 构造函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="62" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_text_service_helper_1a6886acf6bae08303ee8f6d03f7d98f66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STextServiceHelper::~STextServiceHelper</definition>
+        <argsstring>()</argsstring>
+        <name>~STextServiceHelper</name>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_text_service_helper_1a6886acf6bae08303ee8f6d03f7d98f66" kindref="member">STextServiceHelper::~STextServiceHelper</ref> Describe 析构函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="69" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STextServiceHelper</label>
+        <link refid="class_s_o_u_i_1_1_s_text_service_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; STextServiceHelper &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STextServiceHelper</label>
+        <link refid="class_s_o_u_i_1_1_s_text_service_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; STextServiceHelper &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" line="40" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/SRichEdit.h" bodystart="39" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_text_service_helper_1a23966192b8e0d6dd7421511fd53ea839" prot="public" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>CreateTextServices</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_service_helper_1a71d30e793578a9ec87628e9250d7bd70" prot="protected" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>m_funCreateTextServices</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_service_helper_1a8c19f68fe2900271d2fc53f287014e36" prot="protected" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>m_rich20</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_service_helper_1a096eea508551d9f4b0d18a7690fa8382" prot="protected" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>STextServiceHelper</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::STextServiceHelper</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_text_service_helper_1a6886acf6bae08303ee8f6d03f7d98f66" prot="protected" virt="non-virtual"><scope>SOUI::STextServiceHelper</scope><name>~STextServiceHelper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

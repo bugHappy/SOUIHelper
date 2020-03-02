@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_style_pool_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SStylePoolMgr</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SStylePoolMgr &gt;</basecompoundref>
+    <includes refid="_s_style_pool_8h" local="no">SStylePool.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_style_pool_mgr_1a9324a806f2648d66493f23c5b1d68f25" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> * &gt;</type>
+        <definition>SList&lt;SStylePool *&gt; SOUI::SStylePoolMgr::m_lstStylePools</definition>
+        <argsstring></argsstring>
+        <name>m_lstStylePools</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="100" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_mgr_1a803b4b53ea4401ee14580c4498c6ea7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SStylePoolMgr::~SStylePoolMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SStylePoolMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="70" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_mgr_1aba577f848965656cce3fe842fdb01d43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pugi::xml_node</type>
+        <definition>pugi::xml_node SOUI::SStylePoolMgr::GetStyle</definition>
+        <argsstring>(LPCWSTR lpszName)</argsstring>
+        <name>GetStyle</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>lpszName</declname>
+        </param>
+        <briefdescription>
+<para>Get style object from pool by class name </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetStyle <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lpszName <ndash/> name of style </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="class_s_o_u_i_1_1_swnd_style" kindref="compound">SwndStyle</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; style <ndash/> style </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: success; FALSE: not exist Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="80" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_mgr_1ad9dc907103442b93ba6b57ba7c527d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SStylePoolMgr::PushStylePool</definition>
+        <argsstring>(SStylePool *pStylePool)</argsstring>
+        <name>PushStylePool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> *</type>
+          <declname>pStylePool</declname>
+        </param>
+        <briefdescription>
+<para>push a new <ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> to the tail of style pool list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PushStylePool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pStylePool <ndash/> the target style pool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="89" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_style_pool_mgr_1a07a22b447acb014862e339c9bf7ced4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> *</type>
+        <definition>SStylePool* SOUI::SStylePoolMgr::PopStylePool</definition>
+        <argsstring>(SStylePool *pStylePool)</argsstring>
+        <name>PopStylePool</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> *</type>
+          <declname>pStylePool</declname>
+        </param>
+        <briefdescription>
+<para>remove the target style pool from list </para>
+        </briefdescription>
+        <detaileddescription>
+<para>PopStylePool <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pStylePool <ndash/> the target style pool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_s_o_u_i_1_1_s_style_pool" kindref="compound">SStylePool</ref> * <ndash/> the removed style pool Describe if pStylePool is null, it remove the last style pool from the list </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="98" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SwndStyle的映射表的列表 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SStylePoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_style_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SStylePoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SStylePoolMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_style_pool_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SStylePoolMgr &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" line="67" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SStylePool.h" bodystart="66" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_mgr_1aba577f848965656cce3fe842fdb01d43" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_mgr_1a9324a806f2648d66493f23c5b1d68f25" prot="protected" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>m_lstStylePools</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_mgr_1a07a22b447acb014862e339c9bf7ced4c" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>PopStylePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_mgr_1ad9dc907103442b93ba6b57ba7c527d44" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>PushStylePool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SStylePoolMgr</scope><name>~SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_style_pool_mgr_1a803b4b53ea4401ee14580c4498c6ea7d" prot="public" virt="non-virtual"><scope>SOUI::SStylePoolMgr</scope><name>~SStylePoolMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

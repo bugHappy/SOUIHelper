@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_attr_storage" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IAttrStorage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_attr_storage_1a1037f252caefb38477cf5c75b8ddfac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IAttrStorage::OnSetAttribute</definition>
+        <argsstring>(const SStringW &amp;strName, const SStringW &amp;strValue, bool bHandled)=0</argsstring>
+        <name>OnSetAttribute</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bHandled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" line="7" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_attr_storage_1acd73128231722f1fc7fadade6c0c0a2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>SStringW</type>
+        <definition>virtual SStringW SOUI::IAttrStorage::OnGetAttribute</definition>
+        <argsstring>(const SStringW &amp;strName) const =0</argsstring>
+        <name>OnGetAttribute</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" line="8" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IAttrStorage</label>
+        <link refid="struct_s_o_u_i_1_1_i_attr_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IAttrStorage</label>
+        <link refid="struct_s_o_u_i_1_1_i_attr_storage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" line="6" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SAttrStorage-i.h" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_attr_storage_1acd73128231722f1fc7fadade6c0c0a2b" prot="public" virt="pure-virtual"><scope>SOUI::IAttrStorage</scope><name>OnGetAttribute</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_attr_storage_1a1037f252caefb38477cf5c75b8ddfac0" prot="public" virt="pure-virtual"><scope>SOUI::IAttrStorage</scope><name>OnSetAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

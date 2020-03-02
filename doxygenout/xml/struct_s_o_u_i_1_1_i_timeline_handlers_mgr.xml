@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_timeline_handlers_mgr" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ITimelineHandlersMgr</compoundname>
+    <derivedcompoundref refid="struct_s_o_u_i_1_1_i_swnd_container" prot="public" virt="non-virtual">SOUI::ISwndContainer</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1aa420ff25f0a4a0b2e46f937aad9fc9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITimelineHandlersMgr::RegisterTimelineHandler</definition>
+        <argsstring>(ITimelineHandler *pHandler)=0</argsstring>
+        <name>RegisterTimelineHandler</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1ae3081da2b3d7f033b74d1df93f11839c">RegisterTimelineHandler</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1aa610bb7c34f37071413223743d2151fb">RegisterTimelineHandler</reimplementedby>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handler" kindref="compound">ITimelineHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1a42e2b9e6be10200ba39438a806d16ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITimelineHandlersMgr::UnregisterTimelineHandler</definition>
+        <argsstring>(ITimelineHandler *pHandler)=0</argsstring>
+        <name>UnregisterTimelineHandler</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_swnd_container_impl_1a57002cf98d64c99f75540ed0cf292e15">UnregisterTimelineHandler</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_host_wnd_1a1c274a5c049cff7f9be82eb0be547e1d">UnregisterTimelineHandler</reimplementedby>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_timeline_handler" kindref="compound">ITimelineHandler</ref> *</type>
+          <declname>pHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" line="22" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="10">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" line="19" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STimelineHandler-i.h" bodystart="18" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1aa420ff25f0a4a0b2e46f937aad9fc9c3" prot="public" virt="pure-virtual"><scope>SOUI::ITimelineHandlersMgr</scope><name>RegisterTimelineHandler</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr_1a42e2b9e6be10200ba39438a806d16ceb" prot="public" virt="pure-virtual"><scope>SOUI::ITimelineHandlersMgr</scope><name>UnregisterTimelineHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

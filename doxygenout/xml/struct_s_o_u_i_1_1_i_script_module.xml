@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_script_module" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IScriptModule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_script_module-i_8h" local="no">SScriptModule-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a74b7245e3394e364599a7586203e131c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* SOUI::IScriptModule::GetScriptEngine</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetScriptEngine</name>
+        <briefdescription>
+<para>获得脚本引擎的指针 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetScriptEngine <simplesect kind="return"><para>void * <ndash/> 脚本引擎的指针 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="36" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1aac4744226ffb714c75f2f796f0d2d426" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScriptModule::executeScriptFile</definition>
+        <argsstring>(LPCSTR pszScriptFile)=0</argsstring>
+        <name>executeScriptFile</name>
+        <param>
+          <type>LPCSTR</type>
+          <declname>pszScriptFile</declname>
+        </param>
+        <briefdescription>
+<para>Execute a script file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pszScriptFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object holding the filename of the script file that is to be executed </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="49" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a36337a337cb8c7c22aa69470700c88ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScriptModule::executeScriptBuffer</definition>
+        <argsstring>(const char *buff, size_t sz)=0</argsstring>
+        <name>executeScriptBuffer</name>
+        <param>
+          <type>const char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+<para>Execute a script buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>buffer of the script that is to be executed</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="61" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a089efbf63c36925b12c5ffff8de9f74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScriptModule::executeString</definition>
+        <argsstring>(LPCSTR str)=0</argsstring>
+        <name>executeString</name>
+        <param>
+          <type>LPCSTR</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Execute script code contained in the given String object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object holding the valid script code that should be executed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Nothing. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="72" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a6411cc8f8ad971cb6b041292b9c8de0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IScriptModule::executeScriptedEventHandler</definition>
+        <argsstring>(LPCSTR handler_name, EventArgs *pEvt)=0</argsstring>
+        <name>executeScriptedEventHandler</name>
+        <param>
+          <type>LPCSTR</type>
+          <declname>handler_name</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pEvt</declname>
+        </param>
+        <briefdescription>
+<para>Execute a scripted global &apos;event handler&apos; function. The function should take some kind of <ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> like parameter that the concrete implementation of this function can create from the passed <ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> based object. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handler_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object holding the name of the scripted handler function.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pEvt <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> based object that should be passed, by any appropriate means, to the scripted function.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><itemizedlist>
+<listitem><para>true if the event was handled.</para>
+</listitem><listitem><para>false if the event was not handled. </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="90" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a554789cec2c98e2f4e9a53bc42826b8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>LPCSTR</type>
+        <definition>virtual LPCSTR SOUI::IScriptModule::getIdentifierString</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getIdentifierString</name>
+        <briefdescription>
+<para>Return identification string for the ScriptModule. If the internal id string has not been set by the ScriptModule creator, a generic string of &quot;Unknown scripting module&quot; will be returned. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String object holding a string that identifies the ScriptModule in use. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="101" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a926b405d11cdb3d709ca3f3c38733c4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IScriptModule::subscribeEvent</definition>
+        <argsstring>(SWindow *target, UINT uEvent, LPCSTR subscriber_name)=0</argsstring>
+        <name>subscribeEvent</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uEvent</declname>
+        </param>
+        <param>
+          <type>LPCSTR</type>
+          <declname>subscriber_name</declname>
+        </param>
+        <briefdescription>
+<para>Subscribes or unsubscribe the named Event to a scripted function </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target EventSet for the subscription.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event ID to subscribe to.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subscriber_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String object containing the name of the script function that is to be subscribed to the Event.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="118" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_script_module_1a1a388977cdc887c0a920570e70e47504" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IScriptModule::unsubscribeEvent</definition>
+        <argsstring>(SWindow *target, UINT uEvent, LPCSTR subscriber_name)=0</argsstring>
+        <name>unsubscribeEvent</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uEvent</declname>
+        </param>
+        <param>
+          <type>LPCSTR</type>
+          <declname>subscriber_name</declname>
+        </param>
+        <briefdescription>
+<para>取消事件订阅 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>unsubscribeEvent <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* target <ndash/> 目标窗口 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uEvent <ndash/> 目标事件 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>subscriber_name <ndash/> 脚本函数名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool <ndash/> true操作成功 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="129" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract interface required for all scripting support modules to be used with the <ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref> system. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IScriptModule</label>
+        <link refid="struct_s_o_u_i_1_1_i_script_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IScriptModule</label>
+        <link refid="struct_s_o_u_i_1_1_i_script_module"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" line="29" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SScriptModule-i.h" bodystart="28" bodyend="131"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a36337a337cb8c7c22aa69470700c88ca" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>executeScriptBuffer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a6411cc8f8ad971cb6b041292b9c8de0b" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>executeScriptedEventHandler</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1aac4744226ffb714c75f2f796f0d2d426" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>executeScriptFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a089efbf63c36925b12c5ffff8de9f74b" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>executeString</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a554789cec2c98e2f4e9a53bc42826b8f" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>getIdentifierString</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a74b7245e3394e364599a7586203e131c" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>GetScriptEngine</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a926b405d11cdb3d709ca3f3c38733c4c" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>subscribeEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_script_module_1a1a388977cdc887c0a920570e70e47504" prot="public" virt="pure-virtual"><scope>SOUI::IScriptModule</scope><name>unsubscribeEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

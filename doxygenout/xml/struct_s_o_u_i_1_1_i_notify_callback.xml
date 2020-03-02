@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_notify_callback" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::INotifyCallback</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_notify_center" prot="protected" virt="non-virtual">SOUI::SNotifyCenter</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_notify_callback_1afec7ed99dfa58ea153866ba9122a4f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::INotifyCallback::OnFireEvent</definition>
+        <argsstring>(EventArgs *e)=0</argsstring>
+        <name>OnFireEvent</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_notify_center_1adad6aba81fbc17e99684be5fc655e8f6">OnFireEvent</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_notify_callback_1a0f117c89e92e45db1632c176479d67c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::INotifyCallback::OnFireEvts</definition>
+        <argsstring>()=0</argsstring>
+        <name>OnFireEvts</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_notify_center_1adbbac991203a03788a32fadebfea9c9e">OnFireEvts</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="56" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::INotifyCallback</label>
+        <link refid="struct_s_o_u_i_1_1_i_notify_callback"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SNotifyCenter</label>
+        <link refid="class_s_o_u_i_1_1_s_notify_center"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" line="54" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SNotifyCenter.h" bodystart="54" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_notify_callback_1afec7ed99dfa58ea153866ba9122a4f79" prot="public" virt="pure-virtual"><scope>SOUI::INotifyCallback</scope><name>OnFireEvent</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_notify_callback_1a0f117c89e92e45db1632c176479d67c5" prot="public" virt="pure-virtual"><scope>SOUI::INotifyCallback</scope><name>OnFireEvts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

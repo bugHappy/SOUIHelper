@@ -1,0 +1,3193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_matrix" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMatrix</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_ix_form" prot="public" virt="non-virtual">SOUI::IxForm</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypeMask</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4af85b201c3fc9a68dba1dca02450c95cf" prot="public">
+          <name>kIdentity_Mask</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4aac26b1df81f490add11b2158212914d3" prot="public">
+          <name>kTranslate_Mask</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>set if the matrix has translation </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a7264ce400f15a22ecb0cff014ea886f1" prot="public">
+          <name>kScale_Mask</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para>set if the matrix has X or Y scale </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a66ca838415e9989a82badee44dcdd112" prot="public">
+          <name>kAffine_Mask</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para>set if the matrix skews or rotates </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a77941b67d3a6cd52407288a5edfd8bad" prot="public">
+          <name>kPerspective_Mask</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>set if the matrix is in perspective </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum of bit fields for the mask return by <ref refid="class_s_o_u_i_1_1_s_matrix_1a919035e36241e500ecec17fe5f57eb74" kindref="member">getType()</ref>. Use this to identify the complexity of the matrix. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="86" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@30</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a6dd0d8f8e2040eb999cef4dd8d26790e" prot="public">
+          <name>kAScaleX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525af0e0287674a629a649a5ec7f01b5899f" prot="public">
+          <name>kASkewY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525af3baa0056d8813acef802b50f174338e" prot="public">
+          <name>kASkewX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a00237548959666ff83778887678046e8" prot="public">
+          <name>kAScaleY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a51c6969f92bd57bf86c83f932849eacd" prot="public">
+          <name>kATransX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a03313832bf838613bf257c4fb1bf77d8" prot="public">
+          <name>kATransY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Affine arrays are in column major order because that&apos;s how PDF and XPS like it. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="153" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ScaleToFit</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba0434db34583aa765219329375a441ec5" prot="public">
+          <name>kFill_ScaleToFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Scale in X and Y independently, so that src matches dst exactly. This may change the aspect ratio of the src. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccbafdb5bb1cb6f1504d655763956e070e04" prot="public">
+          <name>kStart_ScaleToFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. kStart aligns the result to the left and top edges of dst. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba71e4b12decbd396fba65d72a6c328511" prot="public">
+          <name>kCenter_ScaleToFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. The result is centered inside dst. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba4de0a4e7ae39f6e73a06de8e62d6d6a1" prot="public">
+          <name>kEnd_ScaleToFit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Compute a scale that will maintain the original src aspect ratio, but will also ensure that src fits entirely inside dst. At least one axis (X or Y) will fit exactly. kEnd aligns the result to the right and bottom edges of dst. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="314" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="314" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_matrix_1a795527dfd7d4a6862815ba706214c7c3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@31</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a795527dfd7d4a6862815ba706214c7c3a5643e6a649b53bbf161bde2ce27245dc" prot="public">
+          <name>kMaxFlattenSize</name>
+          <initializer>= 9 * sizeof(float) + sizeof(uint32_t)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="552" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_matrix_1a6b3160c908afd1be0391d7759de86626" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SOUI::SMatrix::MapXYProc) (const SMatrix &amp;mat, float x, float y, SPoint *result)</definition>
+        <argsstring>)(const SMatrix &amp;mat, float x, float y, SPoint *result)</argsstring>
+        <name>MapXYProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="516" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_matrix_1a930fc4f75002e82cbe168154b7628e77" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* SOUI::SMatrix::MapPtsProc) (const SMatrix &amp;mat, SPoint dst[], const SPoint src[], int count)</definition>
+        <argsstring>)(const SMatrix &amp;mat, SPoint dst[], const SPoint src[], int count)</argsstring>
+        <name>MapPtsProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="528" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@32</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a4ba9602cd5d30e187f50070f90de5469" prot="private">
+          <name>kRectStaysRect_Mask</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Set if the matrix will map a rectangle to another rectangle. This can be true if the matrix is scale-only, or rotates a multiple of 90 degrees.</para>
+<para>This bit will be set on identity matrices </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a81ac5abbdff74279048499f86f3dae29" prot="private">
+          <name>kOnlyPerspectiveValid_Mask</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Set if the perspective bit is valid even though the rest of the matrix is Unknown. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5abdd364e63840f52735f9174638e8bbc0" prot="private">
+          <name>kUnknown_Mask</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a3535a2e193e88b63166ba7dbf8ba3a02" prot="private">
+          <name>kORableMasks</name>
+          <initializer>=  kTranslate_Mask |
+                        kScale_Mask |
+                        kAffine_Mask |
+                        kPerspective_Mask</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5aaf01471e6851877320ba34eee4edacc9" prot="private">
+          <name>kAllMasks</name>
+          <initializer>= kTranslate_Mask |
+                    kScale_Mask |
+                    kAffine_Mask |
+                    kPerspective_Mask |
+                    kRectStaysRect_Mask</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="609" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="609" bodyend="635"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_matrix_1adebd95d70c34538fd775726b33f596e0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::fMat[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>fMat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="637" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_matrix_1a06d0a174c7f0cd093da9127c660d903b" prot="private" static="no" mutable="yes">
+        <type>uint32_t</type>
+        <definition>uint32_t SOUI::SMatrix::fTypeMask</definition>
+        <argsstring></argsstring>
+        <name>fTypeMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="638" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_matrix_1ab0c0f2d75ddba63f034f08a411cf2c9d" prot="private" static="yes" mutable="no">
+        <type>const MapXYProc</type>
+        <definition>const MapXYProc SOUI::SMatrix::gMapXYProcs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>gMapXYProcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="685" column="28" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_matrix_1a23c65cf49c3fa3413004590c579d64c4" prot="private" static="yes" mutable="no">
+        <type>const MapPtsProc</type>
+        <definition>const MapPtsProc SOUI::SMatrix::gMapPtsProcs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>gMapPtsProcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="696" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_matrix_1ae61bf0dc568d9ff21a34994ed6529033" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SkPerspIter</definition>
+        <argsstring></argsstring>
+        <name>SkPerspIter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="699" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_matrix_1aeb29b5fdbbb7c339c81f3909157c4f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const SMatrix &amp;a, const SMatrix &amp;b)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="52" column="13"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_matrix_1a83df3194dadea295342e9b5bd30d4b83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const SMatrix &amp;a, const SMatrix &amp;b)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="53" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a6836f4797487ea6512271308e0bc8ebf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMatrix::SMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>SMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="29" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a0c3ccd9939910dced89d094624cd75a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMatrix::SMatrix</definition>
+        <argsstring>(const float data[9])</argsstring>
+        <name>SMatrix</name>
+        <param>
+          <type>const float</type>
+          <declname>data</declname>
+          <array>[9]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ada1f6658a3c9d93aeea0b2f648d8dec9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float SOUI::SMatrix::GetValue</definition>
+        <argsstring>(Index idx) const</argsstring>
+        <name>GetValue</name>
+        <reimplements refid="struct_s_o_u_i_1_1_ix_form_1afcc35fcd9a13c4a14845d064ff3e301a">GetValue</reimplements>
+        <param>
+          <type>Index</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="36" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac7a7fd873b1c6a63d3d130c3c5457839" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const float *</type>
+        <definition>virtual const float* SOUI::SMatrix::GetData</definition>
+        <argsstring>() const</argsstring>
+        <name>GetData</name>
+        <reimplements refid="struct_s_o_u_i_1_1_ix_form_1a0bd8215995e5740f901130234487265d">GetData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="38" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a601fc36204e80f78905452729fd59513" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float *</type>
+        <definition>virtual float* SOUI::SMatrix::GetData</definition>
+        <argsstring>()</argsstring>
+        <name>GetData</name>
+        <reimplements refid="struct_s_o_u_i_1_1_ix_form_1a12cb7fd38b83a067005a8b9832023d79">GetData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a13d6111e7035e3049b81a45eb7267a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMatrix::SetValue</definition>
+        <argsstring>(Index idx, float v)</argsstring>
+        <name>SetValue</name>
+        <reimplements refid="struct_s_o_u_i_1_1_ix_form_1a083cea5d30d29b15346458bf0fedb125">SetValue</reimplements>
+        <param>
+          <type>Index</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a827f6391cf862c1b4ad8d09092f4d886" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMatrix::SetData</definition>
+        <argsstring>(const float fMat[9])</argsstring>
+        <name>SetData</name>
+        <reimplements refid="struct_s_o_u_i_1_1_ix_form_1a2ec35003e64d71915403f8e1a9f6a0c3">SetData</reimplements>
+        <param>
+          <type>const float</type>
+          <declname>fMat</declname>
+          <array>[9]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ad2defe96ca10f30bcf8398493fba2d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::operator*=</definition>
+        <argsstring>(const SMatrix &amp;src)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="47" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae55dcda28f0f46594a8c278054b77429" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref></type>
+        <definition>SMatrix SOUI::SMatrix::operator*</definition>
+        <argsstring>(const SMatrix &amp;src) const</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="48" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a8175b575f8f61230e758d414e2cf66a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::operator=</definition>
+        <argsstring>(const SMatrix &amp;src)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="50" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a1aa1c0863bf1ebb323cbcc93bea5eebc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::translate</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>translate</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="58" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a899d3909030274b36053d590da4e5468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::scale</definition>
+        <argsstring>(float sx, float sy)</argsstring>
+        <name>scale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="64" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac769b42e5848f4c5e64aaedf910029c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::shear</definition>
+        <argsstring>(float sh, float sv)</argsstring>
+        <name>shear</name>
+        <param>
+          <type>float</type>
+          <declname>sh</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="70" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aa87fcfc4a34d17b4c89148d69bfa7d66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>SMatrix&amp; SOUI::SMatrix::rotate</definition>
+        <argsstring>(float deg)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>float</type>
+          <declname>deg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="76" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a919035e36241e500ecec17fe5f57eb74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" kindref="member">TypeMask</ref></type>
+        <definition>TypeMask SOUI::SMatrix::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a bitfield describing the transformations the matrix may perform. The bitfield is computed conservatively, so it may include false positives. For example, when kPerspective_Mask is true, all other bits may be set to true even in the case of a pure perspective transform. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="100" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a84ed389baefdecb2b9e720e7daf88529" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::isIdentity</definition>
+        <argsstring>() const</argsstring>
+        <name>isIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the matrix is identity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="110" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae69a6bca4868216523a1748b57012e0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::isScaleTranslate</definition>
+        <argsstring>() const</argsstring>
+        <name>isScaleTranslate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="114" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a547f516582abdb1e92634c3aa3433d61" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::rectStaysRect</definition>
+        <argsstring>() const</argsstring>
+        <name>rectStaysRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if will map a rectangle to another rectangle. This can be true if the matrix is identity, scale-only, or rotates a multiple of 90 degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="122" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5745342f52584c4c2b017ae83bcbc0cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::preservesAxisAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>preservesAxisAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="129" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aa8b03a4303d5d76a14819cdd989210a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::hasPerspective</definition>
+        <argsstring>() const</argsstring>
+        <name>hasPerspective</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the matrix contains perspective elements. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="134" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a1267ea1ce61b2eafe3ba3bad890c74f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::isSimilarity</definition>
+        <argsstring>(float tol=SK_ScalarNearlyZero) const</argsstring>
+        <name>isSimilarity</name>
+        <param>
+          <type>float</type>
+          <declname>tol</declname>
+          <defval>SK_ScalarNearlyZero</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the matrix contains only translation, rotation/reflection or uniform scale Returns false if other transformation types are included or is degenerate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5019bd45f5531db5472cac6cc118b956" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::preservesRightAngles</definition>
+        <argsstring>(float tol=SK_ScalarNearlyZero) const</argsstring>
+        <name>preservesRightAngles</name>
+        <param>
+          <type>float</type>
+          <declname>tol</declname>
+          <defval>SK_ScalarNearlyZero</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if the matrix contains only translation, rotation/reflection or scale (non-uniform scale is allowed). Returns false if other transformation types are included or is degenerate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac8dc099d3e2bcd99309e3bc2739d42f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::operator[]</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="162" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a043aac4d9b535f941300910bbe113916" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::get</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="167" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a13b7accc2c2b9260b46b0b5003271df1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float &amp;</type>
+        <definition>float&amp; SOUI::SMatrix::operator[]</definition>
+        <argsstring>(int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="172" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a49c71204d76908b6e35ec8362efb42c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::set</definition>
+        <argsstring>(int index, float value)</argsstring>
+        <name>set</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="178" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a71ca6a752391cdeb141b1f1126c66da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to identity </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="187" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a1d46f8d9c68fc0463278792c4284d2f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>setIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="189" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="189" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a4661fce71e761035e20f361d43813875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setTranslate</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>setTranslate</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to translate by (dx, dy). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="193" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae1e57a79e5ca91dd5a3ab763ab4c1f0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setTranslate</definition>
+        <argsstring>(const SVector2D &amp;v)</argsstring>
+        <name>setTranslate</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SVector2D</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="194" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="194" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a4fb740ca2e547476b9d6180124776c47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setScale</definition>
+        <argsstring>(float sx, float sy, float px, float py)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to scale by sx and sy, with a pivot point at (px, py). The pivot point is the coordinate that should remain unchanged by the specified transformation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="200" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a82f6a2636290f2d860edb442f3666bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setScale</definition>
+        <argsstring>(float sx, float sy)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to scale by sx and sy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a2af565c6f509880b38b7ee685379a9e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::setIDiv</definition>
+        <argsstring>(int divx, int divy)</argsstring>
+        <name>setIDiv</name>
+        <param>
+          <type>int</type>
+          <declname>divx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>divy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to scale by 1/divx and 1/divy. Returns false and doesn&apos;t touch the matrix if either divx or divy is zero. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="207" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1abf66812ab783cf0ed36fc6812fa13306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setRotate</definition>
+        <argsstring>(float degrees, float px, float py)</argsstring>
+        <name>setRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to rotate by the specified number of degrees, with a pivot point at (px, py). The pivot point is the coordinate that should remain unchanged by the specified transformation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="212" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a2bf628f301ba29f5c09529e56ab58c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setRotate</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>setRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to rotate about (0,0) by the specified number of degrees. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="215" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac8e824c4415f3a6a78a744e6991e9794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setSinCos</definition>
+        <argsstring>(float sinValue, float cosValue, float px, float py)</argsstring>
+        <name>setSinCos</name>
+        <param>
+          <type>float</type>
+          <declname>sinValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cosValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to rotate by the specified sine and cosine values, with a pivot point at (px, py). The pivot point is the coordinate that should remain unchanged by the specified transformation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="220" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a55887d1a963a1d7c5270e37c6bb18f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setSinCos</definition>
+        <argsstring>(float sinValue, float cosValue)</argsstring>
+        <name>setSinCos</name>
+        <param>
+          <type>float</type>
+          <declname>sinValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cosValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to rotate by the specified sine and cosine values. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="224" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a048209f797b960b0fc92d361c109bde4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setSkew</definition>
+        <argsstring>(float kx, float ky, float px, float py)</argsstring>
+        <name>setSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to skew by sx and sy, with a pivot point at (px, py). The pivot point is the coordinate that should remain unchanged by the specified transformation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="229" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a08f1f3d180824e7c063bf0e9451a90af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setSkew</definition>
+        <argsstring>(float kx, float ky)</argsstring>
+        <name>setSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to skew by sx and sy. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="232" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a3dbb666084099b102982142f47e79d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setConcat</definition>
+        <argsstring>(const SMatrix &amp;a, const SMatrix &amp;b)</argsstring>
+        <name>setConcat</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to the concatenation of the two specified matrices. Either of the two matrices may also be the target matrix. this = a * b; </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="237" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a91175ea87025097a72496c29fe029150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preTranslate</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>preTranslate</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified translation. M&apos; = M * T(dx, dy) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="242" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a04fda9a745ba889ddb6448faa5a341dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preTranslate</definition>
+        <argsstring>(int dx, int dy)</argsstring>
+        <name>preTranslate</name>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="244" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a877387188e95eff826c78678f1d1a8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preScale</definition>
+        <argsstring>(float sx, float sy, float px, float py)</argsstring>
+        <name>preScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified scale. M&apos; = M * S(sx, sy, px, py) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="249" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a134a150917d76e3fee4d6fd1c42ad266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preScale</definition>
+        <argsstring>(float sx, float sy)</argsstring>
+        <name>preScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified scale. M&apos; = M * S(sx, sy) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="253" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a97471562191fc5f8f2da7548341b5d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preRotate</definition>
+        <argsstring>(float degrees, float px, float py)</argsstring>
+        <name>preRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified rotation. M&apos; = M * R(degrees, px, py) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="257" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a613185368ebbe696888682cf31ae0d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preRotate</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>preRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified rotation. M&apos; = M * R(degrees) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="261" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac04bc99714ed6ec83c768ab8ca8b3b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preSkew</definition>
+        <argsstring>(float kx, float ky, float px, float py)</argsstring>
+        <name>preSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified skew. M&apos; = M * K(kx, ky, px, py) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="265" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a1822a2fb01c146f244b1738802fa2607" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preSkew</definition>
+        <argsstring>(float kx, float ky)</argsstring>
+        <name>preSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified skew. M&apos; = M * K(kx, ky) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="269" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a52a62995cf481ec7136a0f8c486e8193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::preConcat</definition>
+        <argsstring>(const SMatrix &amp;other)</argsstring>
+        <name>preConcat</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Preconcats the matrix with the specified matrix. M&apos; = M * other </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="273" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ab2f4a3a45c3ccac41f3c10fb5c873f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postTranslate</definition>
+        <argsstring>(float dx, float dy)</argsstring>
+        <name>postTranslate</name>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified translation. M&apos; = T(dx, dy) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="278" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a2e96b1584a114b55fe097610e76124b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postTranslate</definition>
+        <argsstring>(int dx, int dy)</argsstring>
+        <name>postTranslate</name>
+        <param>
+          <type>int</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified scale. M&apos; = S(sx, sy, px, py) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="282" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a2542ebf203bb0a20a8d302c4c4a59944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postScale</definition>
+        <argsstring>(float sx, float sy, float px, float py)</argsstring>
+        <name>postScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="284" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae832d70c012f2e80ab644bb927792ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postScale</definition>
+        <argsstring>(float sx, float sy)</argsstring>
+        <name>postScale</name>
+        <param>
+          <type>float</type>
+          <declname>sx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified scale. M&apos; = S(sx, sy) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="288" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a846b34924ff82d0b52abbe353bcc24d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::postIDiv</definition>
+        <argsstring>(int divx, int divy)</argsstring>
+        <name>postIDiv</name>
+        <param>
+          <type>int</type>
+          <declname>divx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>divy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix by dividing it by the specified integers. M&apos; = S(1/divx, 1/divy, 0, 0) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="292" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac2f6801ac1eb5fd44cd79a831a0591be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postRotate</definition>
+        <argsstring>(float degrees, float px, float py)</argsstring>
+        <name>postRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified rotation. M&apos; = R(degrees, px, py) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="296" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a2f64efcb34f5494fedc15caff37a71f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postRotate</definition>
+        <argsstring>(float degrees)</argsstring>
+        <name>postRotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified rotation. M&apos; = R(degrees) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="300" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a59f53c56ff136672890913c2d1d6e52e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postSkew</definition>
+        <argsstring>(float kx, float ky, float px, float py)</argsstring>
+        <name>postSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>px</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>py</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified skew. M&apos; = K(kx, ky, px, py) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="304" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aef161a9dfc2672cf3905a8a56e7e54d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postSkew</definition>
+        <argsstring>(float kx, float ky)</argsstring>
+        <name>postSkew</name>
+        <param>
+          <type>float</type>
+          <declname>kx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ky</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified skew. M&apos; = K(kx, ky) * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="308" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ab12cb8a6245405ab532b050456e436e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::postConcat</definition>
+        <argsstring>(const SMatrix &amp;other)</argsstring>
+        <name>postConcat</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Postconcats the matrix with the specified matrix. M&apos; = other * M </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="312" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae6233be06df5848b4d0113bb351e7e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::setRectToRect</definition>
+        <argsstring>(const SRect &amp;src, const SRect &amp;dst, ScaleToFit stf)</argsstring>
+        <name>setRectToRect</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccb" kindref="member">ScaleToFit</ref></type>
+          <declname>stf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix to the scale and translate values that map the source rectangle to the destination rectangle, returning true if the the result can be represented. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the source rectangle to map from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination rectangle to map to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the ScaleToFit option </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the matrix can be represented by the rectangle mapping. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="350" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a3c9e3fb44ff80d002fe72426813f5168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::setPolyToPoly</definition>
+        <argsstring>(const SPoint src[], const SPoint dst[], int count)</argsstring>
+        <name>setPolyToPoly</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>src</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the matrix such that the specified src points would map to the specified dst points. count must be within [0..4]. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of src points </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of dst points </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points to use for the transformation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the matrix was set to the specified transformation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="359" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a30902c44709d1a75786a261348d18ffb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::invert</definition>
+        <argsstring>(SMatrix *inverse) const</argsstring>
+        <name>invert</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> *</type>
+          <declname>inverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If this matrix can be inverted, return true and if inverse is not null, set inverse to be the inverse of this matrix. If this matrix cannot be inverted, ignore inverse and return false </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="365" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="365" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a4821c725e518a11e4ab88f0ef46a14cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::asAffine</definition>
+        <argsstring>(float affine[6]) const</argsstring>
+        <name>asAffine</name>
+        <param>
+          <type>float</type>
+          <declname>affine</declname>
+          <array>[6]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fills the passed array with the affine values in column major order. If the matrix is a perspective transform, returns false and does not change the passed array. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>affine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array to fill with affine values. Ignored if NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="388" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aa1c3ffc22c2382887fa53774739aba73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapPoints</definition>
+        <argsstring>(SPoint dst[], const SPoint src[], int count) const</argsstring>
+        <name>mapPoints</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>src</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the array of points specified by src, and write the transformed points into the array of points specified by dst. dst[] = M * src[] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the transformed coordinates are written. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original coordinates that are to be transformed. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points in src to read, and then transform into dst. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="400" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a69e657d90fce24375cec63789f93a0d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapPoints</definition>
+        <argsstring>(SPoint pts[], int count) const</argsstring>
+        <name>mapPoints</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the array of points, overwriting it with the transformed values. dst[] = M * pts[] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The points to be transformed. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points in pts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="409" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="409" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5882236a7bd6f8a731cd69fed49ec424" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapPointsWithStride</definition>
+        <argsstring>(SPoint pts[], size_t stride, int count) const</argsstring>
+        <name>mapPointsWithStride</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>pts</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Like mapPoints but with custom byte stride between the points. Stride should be a multiple of sizeof(float). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="416" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="416" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a76d1c4074efa41322aa3d8526d6b7c2c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapPointsWithStride</definition>
+        <argsstring>(SPoint dst[], SPoint src[], size_t stride, int count) const</argsstring>
+        <name>mapPointsWithStride</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>src</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>stride</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Like mapPoints but with custom byte stride between the points. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="427" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="427" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a9000f3e6e1627937280be026272423e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapHomogeneousPoints</definition>
+        <argsstring>(float dst[], const float src[], int count) const</argsstring>
+        <name>mapHomogeneousPoints</name>
+        <param>
+          <type>float</type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>src</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the array of homogeneous points, specified by src, where a homogeneous point is defined by 3 contiguous scalar values, and write the transformed points into the array of scalars specified by dst. dst[] = M * src[] <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the transformed coordinates are written. It must contain at least 3 * count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original coordinates that are to be transformed. It must contain at least 3 * count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of triples (homogeneous points) in src to read, and then transform into dst. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="449" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aa1f27f38c3a5067de2fb9dd45411acb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapXY</definition>
+        <argsstring>(float x, float y, SPoint *result) const</argsstring>
+        <name>mapXY</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="451" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5f89b3c813c220ffc8b5aaa3e82804b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapVectors</definition>
+        <argsstring>(SVector2D dst[], const SVector2D src[], int count) const</argsstring>
+        <name>mapVectors</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SVector2D</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SVector2D</ref></type>
+          <declname>src</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the array of vectors specified by src, and write the transformed vectors into the array of vectors specified by dst. This is similar to mapPoints, but ignores any translation in the matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the transformed coordinates are written. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original coordinates that are to be transformed. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of vectors in src to read, and then transform into dst. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="466" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1abc59a21213dded17bca71273152774a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapVectors</definition>
+        <argsstring>(SVector2D vecs[], int count) const</argsstring>
+        <name>mapVectors</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SVector2D</ref></type>
+          <declname>vecs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the array of vectors specified by src, and write the transformed vectors into the array of vectors specified by dst. This is similar to mapPoints, but ignores any translation in the matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vecs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vectors to be transformed. It must contain at least count entries </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of vectors in vecs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="475" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="475" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a83dce9ec17e03797da3f51ed9f973958" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::mapRect</definition>
+        <argsstring>(SRect *dst, const SRect &amp;src) const</argsstring>
+        <name>mapRect</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the src rectangle, and write the transformed rectangle into dst. This is accomplished by transforming the 4 corners of src, and then setting dst to the bounds of those points. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the transformed rectangle is written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original rectangle to be transformed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the result of calling <ref refid="class_s_o_u_i_1_1_s_matrix_1a547f516582abdb1e92634c3aa3433d61" kindref="member">rectStaysRect()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="486" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a4fe2690d08e8536f8e0ad614bc94f26a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::mapRect</definition>
+        <argsstring>(SRect *rect) const</argsstring>
+        <name>mapRect</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the rectangle, and write the transformed rectangle back into it. This is accomplished by transforming the 4 corners of rect, and then setting it to the bounds of those points <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to transform. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the result of calling <ref refid="class_s_o_u_i_1_1_s_matrix_1a547f516582abdb1e92634c3aa3433d61" kindref="member">rectStaysRect()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="494" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="494" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1afc5f73a3a1b84f4bbaac94381de5c1fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::mapRectToQuad</definition>
+        <argsstring>(SPoint dst[4], const SRect &amp;rect) const</argsstring>
+        <name>mapRectToQuad</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_rect" kindref="compound">SRect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Apply this matrix to the src rectangle, and write the four transformed points into dst. The points written to dst will be the original top-left, top-right, bottom-right, and bottom-left points transformed by the matrix. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Where the transformed quad is written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original rectangle to be transformed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="504" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="504" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ad75aad260a777a813add97f9c35747ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::mapRadius</definition>
+        <argsstring>(float radius) const</argsstring>
+        <name>mapRadius</name>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the mean radius of a circle after it has been mapped by this matrix. NOTE: in perspective this value assumes the circle has its center at the origin. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="514" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a6b7bfddf39b7f2f00a11be16ca2378f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MapXYProc</type>
+        <definition>MapXYProc SOUI::SMatrix::getMapXYProc</definition>
+        <argsstring>() const</argsstring>
+        <name>getMapXYProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="524" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="524" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a14f2ac95090e4f880a11322dafa1906c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>MapPtsProc</type>
+        <definition>MapPtsProc SOUI::SMatrix::getMapPtsProc</definition>
+        <argsstring>() const</argsstring>
+        <name>getMapPtsProc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="536" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="536" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a722fe2222010b4a0279363dc3b8d294d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::cheapEqualTo</definition>
+        <argsstring>(const SMatrix &amp;m) const</argsstring>
+        <name>cheapEqualTo</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Efficient comparison of two matrices. It distinguishes between zero and negative zero. It will return false when the sign of zero values is the only difference between the two matrices. It considers NaN values to be equal to themselves. So a matrix full of NaNs is &quot;cheap equal&quot; to another matrix full of NaNs iff the NaN values are bitwise identical while according to strict the strict == test a matrix with a NaN value is equal to nothing, including itself. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="548" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="548" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a550c2274963abfaec1f9188a9a9d3d39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::getMinScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the minimum scaling factor of the matrix as computed from the SVD of the upper left 2x2. If the matrix has perspective -1 is returned.</para>
+<para><simplesect kind="return"><para>minumum scale factor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="563" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ab4a420e41458d1908f228c7854b280c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SMatrix::getMaxScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculates the maximum scaling factor of the matrix as computed from the SVD of the upper left 2x2. If the matrix has perspective -1 is returned.</para>
+<para><simplesect kind="return"><para>maximum scale factor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="571" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5999fbd21edb9ccfcfbc42fef64af68e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::getMinMaxScales</definition>
+        <argsstring>(float scaleFactors[2]) const</argsstring>
+        <name>getMinMaxScales</name>
+        <param>
+          <type>float</type>
+          <declname>scaleFactors</declname>
+          <array>[2]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets both the min and max scale factors. The min scale factor is scaleFactors[0] and the max is scaleFactors[1]. If the matrix has perspective false will be returned and scaleFactors will be unchanged. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="578" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1af78473cc65c33ab36eb65f1ddc8eeeb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::dirtyMatrixTypeCache</definition>
+        <argsstring>()</argsstring>
+        <name>dirtyMatrixTypeCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Testing routine; the matrix&apos;s type cache should never need to be manually invalidated during normal use. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="604" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="604" bodyend="606"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a6a0f66693b1aac30982498ea0846860e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::SetAffineIdentity</definition>
+        <argsstring>(float affine[6])</argsstring>
+        <name>SetAffineIdentity</name>
+        <param>
+          <type>float</type>
+          <declname>affine</declname>
+          <array>[6]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fills the passed array with affine identity values in column major order. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>affine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array to fill with affine identity values. Must not be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="381" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a6ae8f89c3253bd07b3a7b38931843c2c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MapXYProc</type>
+        <definition>static MapXYProc SOUI::SMatrix::GetMapXYProc</definition>
+        <argsstring>(TypeMask mask)</argsstring>
+        <name>GetMapXYProc</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" kindref="member">TypeMask</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="519" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="519" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1af55f211590a7378e7a260381d6a230fa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>MapPtsProc</type>
+        <definition>static MapPtsProc SOUI::SMatrix::GetMapPtsProc</definition>
+        <argsstring>(TypeMask mask)</argsstring>
+        <name>GetMapPtsProc</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" kindref="member">TypeMask</ref></type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="531" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="531" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1acc81e2ca9bfdb7d6a1dd0a7e6613ce42" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>static const SMatrix&amp; SOUI::SMatrix::I</definition>
+        <argsstring>()</argsstring>
+        <name>I</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a reference to a const identity matrix </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="583" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1af5199382ea137ea750429203f4cfd9be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        <definition>static const SMatrix&amp; SOUI::SMatrix::InvalidMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a reference to a const matrix that is &quot;invalid&quot;, one that could never be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="589" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a609130bd43295954ee8048bd46c6ed57" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref></type>
+        <definition>static SMatrix SOUI::SMatrix::Concat</definition>
+        <argsstring>(const SMatrix &amp;a, const SMatrix &amp;b)</argsstring>
+        <name>Concat</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the concatenation of two matrices, a * b. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="594" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="594" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a5aaff9a8fee9a3e490bb2ea0b028bd34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float SOUI::SMatrix::SFloatSinCos</definition>
+        <argsstring>(float radians, float *cosValue)</argsstring>
+        <name>SFloatSinCos</name>
+        <param>
+          <type>float</type>
+          <declname>radians</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>cosValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="701" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a0074770f5f7dae4fcac67c7a09fc9d32" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t SOUI::SMatrix::computeTypeMask</definition>
+        <argsstring>() const</argsstring>
+        <name>computeTypeMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="640" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a48090e73cb77840876f5647fef5fe0b3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t SOUI::SMatrix::computePerspectiveTypeMask</definition>
+        <argsstring>() const</argsstring>
+        <name>computePerspectiveTypeMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="641" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1aeeaeb3f26b511954fd06c5b0fec11fb8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::setTypeMask</definition>
+        <argsstring>(int mask)</argsstring>
+        <name>setTypeMask</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="643" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a63ac41e6e69ef8204b09e4a908be1601" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::orTypeMask</definition>
+        <argsstring>(int mask)</argsstring>
+        <name>orTypeMask</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="645" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a4cd30ef6e07fc8d60496fe6dd2c3d4ec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMatrix::clearTypeMask</definition>
+        <argsstring>(int mask)</argsstring>
+        <name>clearTypeMask</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="647" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="647" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a53813097f5738f6cd56f87b0cf425412" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" kindref="member">TypeMask</ref></type>
+        <definition>TypeMask SOUI::SMatrix::getPerspectiveTypeMaskOnly</definition>
+        <argsstring>() const</argsstring>
+        <name>getPerspectiveTypeMaskOnly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="653" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="653" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae6e37422dc4e0c3d579ff86e4c318436" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::isTriviallyIdentity</definition>
+        <argsstring>() const</argsstring>
+        <name>isTriviallyIdentity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns true if we already know that the matrix is identity; false otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="664" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="664" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a630e8d225006fe6a914017d69d3501db" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::SMatrix::invertNonIdentity</definition>
+        <argsstring>(SMatrix *inverse) const</argsstring>
+        <name>invertNonIdentity</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> *</type>
+          <declname>inverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="671" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1af3f2b87c07f8a2b32cd4370a9ff817c2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SMatrix::Poly2Proc</definition>
+        <argsstring>(const SPoint[], SMatrix *, const SPoint &amp;scale)</argsstring>
+        <name>Poly2Proc</name>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> *</type>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="673" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ae43311c3811b9f4fa9b859fcfc857190" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SMatrix::Poly3Proc</definition>
+        <argsstring>(const SPoint[], SMatrix *, const SPoint &amp;scale)</argsstring>
+        <name>Poly3Proc</name>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> *</type>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="674" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a3d817d628b4831e33f6b611d658238f3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SMatrix::Poly4Proc</definition>
+        <argsstring>(const SPoint[], SMatrix *, const SPoint &amp;scale)</argsstring>
+        <name>Poly4Proc</name>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> *</type>
+        </param>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="675" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ac017cf3f813b457a471db608f1497bd7" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Identity_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>Identity_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="677" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a7260a93f6975e86ab95cadb90ec93a28" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Trans_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>Trans_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="678" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a6434e9555fee03035f6e344499eb6d40" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Scale_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>Scale_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="679" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a63d2acf3cc94de312bee01f2f14d832c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::ScaleTrans_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>ScaleTrans_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="680" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1af8046016893ace035cadab4b87b0d65c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Rot_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>Rot_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="681" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a8603a36f5d99caf77b8e837d10404cfb" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::RotTrans_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>RotTrans_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="682" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a08cf3cb2ee6b71e8d27f93ce3fea0f68" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Persp_xy</definition>
+        <argsstring>(const SMatrix &amp;, float, float, SPoint *)</argsstring>
+        <name>Persp_xy</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="683" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a612b42e5a6ed686584418077c8f66d89" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Identity_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint[], const SPoint[], int)</argsstring>
+        <name>Identity_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="687" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a805596e8d6cc1475f7d8a90900b926eb" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Trans_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int)</argsstring>
+        <name>Trans_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="688" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a944ac2c748a489d15c066b2e6ac9fad9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Scale_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int)</argsstring>
+        <name>Scale_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="689" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a7de6ec27e2c010b4387f23d335181b55" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::ScaleTrans_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int count)</argsstring>
+        <name>ScaleTrans_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="690" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a8df83d1a33b96a0dbd6ac315898429c1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Rot_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int)</argsstring>
+        <name>Rot_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="692" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1ab2713a0c9dbfbd6200274dcd03b1aad9" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::RotTrans_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int count)</argsstring>
+        <name>RotTrans_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="693" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_matrix_1a9103959d97c71b81724d5827e421bbb0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMatrix::Persp_pts</definition>
+        <argsstring>(const SMatrix &amp;, SPoint dst[], const SPoint[], int)</argsstring>
+        <name>Persp_pts</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_matrix" kindref="compound">SMatrix</ref> &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+          <declname>dst</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>const</type>
+          <declname>SPoint</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="695" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" line="27" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SMatrix.h" bodystart="27" bodyend="702"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a4821c725e518a11e4ab88f0ef46a14cf" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>asAffine</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a722fe2222010b4a0279363dc3b8d294d" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>cheapEqualTo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a4cd30ef6e07fc8d60496fe6dd2c3d4ec" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>clearTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a48090e73cb77840876f5647fef5fe0b3" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>computePerspectiveTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a0074770f5f7dae4fcac67c7a09fc9d32" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>computeTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a609130bd43295954ee8048bd46c6ed57" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Concat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1af78473cc65c33ab36eb65f1ddc8eeeb0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>dirtyMatrixTypeCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1adebd95d70c34538fd775726b33f596e0" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>fMat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a06d0a174c7f0cd093da9127c660d903b" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>fTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a043aac4d9b535f941300910bbe113916" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>get</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac7a7fd873b1c6a63d3d130c3c5457839" prot="public" virt="virtual"><scope>SOUI::SMatrix</scope><name>GetData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a601fc36204e80f78905452729fd59513" prot="public" virt="virtual"><scope>SOUI::SMatrix</scope><name>GetData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1af55f211590a7378e7a260381d6a230fa" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>GetMapPtsProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a14f2ac95090e4f880a11322dafa1906c" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getMapPtsProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6ae8f89c3253bd07b3a7b38931843c2c" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>GetMapXYProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6b7bfddf39b7f2f00a11be16ca2378f5" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getMapXYProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ab4a420e41458d1908f228c7854b280c0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getMaxScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5999fbd21edb9ccfcfbc42fef64af68e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getMinMaxScales</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a550c2274963abfaec1f9188a9a9d3d39" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getMinScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a53813097f5738f6cd56f87b0cf425412" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getPerspectiveTypeMaskOnly</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a919035e36241e500ecec17fe5f57eb74" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>getType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ada1f6658a3c9d93aeea0b2f648d8dec9" prot="public" virt="virtual"><scope>SOUI::SMatrix</scope><name>GetValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a23c65cf49c3fa3413004590c579d64c4" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>gMapPtsProcs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ab0c0f2d75ddba63f034f08a411cf2c9d" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>gMapXYProcs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aa8b03a4303d5d76a14819cdd989210a2" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>hasPerspective</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1acc81e2ca9bfdb7d6a1dd0a7e6613ce42" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>I</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a612b42e5a6ed686584418077c8f66d89" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Identity_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac017cf3f813b457a471db608f1497bd7" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Identity_xy</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Index</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1af5199382ea137ea750429203f4cfd9be" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>InvalidMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a30902c44709d1a75786a261348d18ffb" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>invert</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a630e8d225006fe6a914017d69d3501db" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>invertNonIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a84ed389baefdecb2b9e720e7daf88529" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>isIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae69a6bca4868216523a1748b57012e0f" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>isScaleTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a1267ea1ce61b2eafe3ba3bad890c74f6" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>isSimilarity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae6e37422dc4e0c3d579ff86e4c318436" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>isTriviallyIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a66ca838415e9989a82badee44dcdd112" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kAffine_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5aaf01471e6851877320ba34eee4edacc9" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kAllMasks</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a6dd0d8f8e2040eb999cef4dd8d26790e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kAScaleX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a00237548959666ff83778887678046e8" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kAScaleY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525af3baa0056d8813acef802b50f174338e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kASkewX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525af0e0287674a629a649a5ec7f01b5899f" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kASkewY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a51c6969f92bd57bf86c83f932849eacd" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kATransX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac0132feabcab99a5f9d9c10329e04525a03313832bf838613bf257c4fb1bf77d8" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kATransY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba71e4b12decbd396fba65d72a6c328511" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kCenter_ScaleToFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba4de0a4e7ae39f6e73a06de8e62d6d6a1" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kEnd_ScaleToFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccba0434db34583aa765219329375a441ec5" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kFill_ScaleToFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4af85b201c3fc9a68dba1dca02450c95cf" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kIdentity_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a795527dfd7d4a6862815ba706214c7c3a5643e6a649b53bbf161bde2ce27245dc" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMaxFlattenSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552a946db2c48be470ec791375894d59c84f" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMPersp0</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552acdafbd7107bab4b07e19aeb2a87e38d5" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMPersp1</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552abc5ea0f873a0b77be815d1c7610fbd82" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMPersp2</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552a2ea091d375769de6619ed76172a437bd" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMScaleX</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552a82602d26d739cc473ab65c47d0d23912" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMScaleY</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552a30068265b16fc3a3d6a4e25a4b9eaca0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMSkewX</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552ac55d606249f4ef4eb0b749923ac095cc" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMSkewY</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552ad7084c1fc8354841025b6ed3fa943794" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMTransX</name></member>
+      <member refid="struct_s_o_u_i_1_1_ix_form_1af836d35ca952bc8ca270d7ea1a106552a617f778038c35bf197d92f50f3bf06fd" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kMTransY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a81ac5abbdff74279048499f86f3dae29" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kOnlyPerspectiveValid_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a3535a2e193e88b63166ba7dbf8ba3a02" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kORableMasks</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a77941b67d3a6cd52407288a5edfd8bad" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kPerspective_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5a4ba9602cd5d30e187f50070f90de5469" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kRectStaysRect_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4a7264ce400f15a22ecb0cff014ea886f1" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kScale_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccbafdb5bb1cb6f1504d655763956e070e04" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kStart_ScaleToFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4aac26b1df81f490add11b2158212914d3" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kTranslate_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6bc29c5a038413a58ed5bb7dda6d28b5abdd364e63840f52735f9174638e8bbc0" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>kUnknown_Mask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a9000f3e6e1627937280be026272423e3" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapHomogeneousPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aa1c3ffc22c2382887fa53774739aba73" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a69e657d90fce24375cec63789f93a0d1" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapPoints</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5882236a7bd6f8a731cd69fed49ec424" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapPointsWithStride</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a76d1c4074efa41322aa3d8526d6b7c2c" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapPointsWithStride</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a930fc4f75002e82cbe168154b7628e77" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>MapPtsProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ad75aad260a777a813add97f9c35747ab" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapRadius</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a83dce9ec17e03797da3f51ed9f973958" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a4fe2690d08e8536f8e0ad614bc94f26a" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1afc5f73a3a1b84f4bbaac94381de5c1fa" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapRectToQuad</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5f89b3c813c220ffc8b5aaa3e82804b6" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapVectors</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1abc59a21213dded17bca71273152774a0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapVectors</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aa1f27f38c3a5067de2fb9dd45411acb4" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>mapXY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6b3160c908afd1be0391d7759de86626" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>MapXYProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a83df3194dadea295342e9b5bd30d4b83" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator!=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae55dcda28f0f46594a8c278054b77429" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator*</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ad2defe96ca10f30bcf8398493fba2d7e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator*=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a8175b575f8f61230e758d414e2cf66a7" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aeb29b5fdbbb7c339c81f3909157c4f54" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator==</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac8dc099d3e2bcd99309e3bc2739d42f7" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator[]</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a13b7accc2c2b9260b46b0b5003271df1" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>operator[]</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a63ac41e6e69ef8204b09e4a908be1601" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>orTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a9103959d97c71b81724d5827e421bbb0" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Persp_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a08cf3cb2ee6b71e8d27f93ce3fea0f68" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Persp_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1af3f2b87c07f8a2b32cd4370a9ff817c2" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Poly2Proc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae43311c3811b9f4fa9b859fcfc857190" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Poly3Proc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a3d817d628b4831e33f6b611d658238f3" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Poly4Proc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ab12cb8a6245405ab532b050456e436e3" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postConcat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a846b34924ff82d0b52abbe353bcc24d8" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postIDiv</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac2f6801ac1eb5fd44cd79a831a0591be" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a2f64efcb34f5494fedc15caff37a71f3" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a2542ebf203bb0a20a8d302c4c4a59944" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae832d70c012f2e80ab644bb927792ebf" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a59f53c56ff136672890913c2d1d6e52e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aef161a9dfc2672cf3905a8a56e7e54d0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ab2f4a3a45c3ccac41f3c10fb5c873f7c" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a2e96b1584a114b55fe097610e76124b9" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>postTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a52a62995cf481ec7136a0f8c486e8193" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preConcat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a97471562191fc5f8f2da7548341b5d49" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a613185368ebbe696888682cf31ae0d9e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a877387188e95eff826c78678f1d1a8d4" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a134a150917d76e3fee4d6fd1c42ad266" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5745342f52584c4c2b017ae83bcbc0cd" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preservesAxisAlignment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5019bd45f5531db5472cac6cc118b956" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preservesRightAngles</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac04bc99714ed6ec83c768ab8ca8b3b69" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a1822a2fb01c146f244b1738802fa2607" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a91175ea87025097a72496c29fe029150" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a04fda9a745ba889ddb6448faa5a341dc" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>preTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a547f516582abdb1e92634c3aa3433d61" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>rectStaysRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a71ca6a752391cdeb141b1f1126c66da0" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>reset</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a8df83d1a33b96a0dbd6ac315898429c1" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Rot_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1af8046016893ace035cadab4b87b0d65c" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Rot_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aa87fcfc4a34d17b4c89148d69bfa7d66" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>rotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ab2713a0c9dbfbd6200274dcd03b1aad9" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>RotTrans_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a8603a36f5d99caf77b8e837d10404cfb" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>RotTrans_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a899d3909030274b36053d590da4e5468" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>scale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a944ac2c748a489d15c066b2e6ac9fad9" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Scale_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6434e9555fee03035f6e344499eb6d40" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Scale_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a21d4466c2cc3e20b127f0cc4a0949ccb" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>ScaleToFit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a7de6ec27e2c010b4387f23d335181b55" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>ScaleTrans_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a63d2acf3cc94de312bee01f2f14d832c" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>ScaleTrans_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a49c71204d76908b6e35ec8362efb42c2" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>set</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6a0f66693b1aac30982498ea0846860e" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>SetAffineIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a3dbb666084099b102982142f47e79d26" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setConcat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a827f6391cf862c1b4ad8d09092f4d886" prot="public" virt="virtual"><scope>SOUI::SMatrix</scope><name>SetData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a1d46f8d9c68fc0463278792c4284d2f2" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setIdentity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a2af565c6f509880b38b7ee685379a9e7" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setIDiv</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a3c9e3fb44ff80d002fe72426813f5168" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setPolyToPoly</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae6233be06df5848b4d0113bb351e7e26" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setRectToRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1abf66812ab783cf0ed36fc6812fa13306" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a2bf628f301ba29f5c09529e56ab58c08" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setRotate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a4fb740ca2e547476b9d6180124776c47" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a82f6a2636290f2d860edb442f3666bfc" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac8e824c4415f3a6a78a744e6991e9794" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setSinCos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a55887d1a963a1d7c5270e37c6bb18f42" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setSinCos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a048209f797b960b0fc92d361c109bde4" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a08f1f3d180824e7c063bf0e9451a90af" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setSkew</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a4661fce71e761035e20f361d43813875" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae1e57a79e5ca91dd5a3ab763ab4c1f0b" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setTranslate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1aeeaeb3f26b511954fd06c5b0fec11fb8" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>setTypeMask</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a13d6111e7035e3049b81a45eb7267a64" prot="public" virt="virtual"><scope>SOUI::SMatrix</scope><name>SetValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5aaff9a8fee9a3e490bb2ea0b028bd34" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>SFloatSinCos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ac769b42e5848f4c5e64aaedf910029c6" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>shear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1ae61bf0dc568d9ff21a34994ed6529033" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>SkPerspIter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a6836f4797487ea6512271308e0bc8ebf" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>SMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a0c3ccd9939910dced89d094624cd75a3" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>SMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a805596e8d6cc1475f7d8a90900b926eb" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Trans_pts</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a7260a93f6975e86ab95cadb90ec93a28" prot="private" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>Trans_xy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a1aa1c0863bf1ebb323cbcc93bea5eebc" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>translate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_matrix_1a5fc8dc190657cb1b73adad1b8d4b2bb4" prot="public" virt="non-virtual"><scope>SOUI::SMatrix</scope><name>TypeMask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

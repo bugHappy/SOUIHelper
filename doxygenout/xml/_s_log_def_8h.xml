@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_log_def_8h" kind="file" language="C++">
+    <compoundname>SLogDef.h</compoundname>
+    <includedby refid="souistd_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h</label>
+        <link refid="_s_log_def_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_log_def_8h_1af89ec477aecbff8ebd3a9b8d2377b06c" prot="public" static="no">
+        <name>LOG_FILTER</name>
+        <initializer>&quot;soui&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="14" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a88e0a4d15fec2ef6afc8ca174b3352f8" prot="public" static="no">
+        <name>SLOG_TRACE</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGT(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="17" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1aefaecd2ca0766e56f30cac58ec05296a" prot="public" static="no">
+        <name>SLOG_DEBUG</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGD(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="18" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a9651a37e8e09bfdb953ac5f3a8d12922" prot="public" static="no">
+        <name>SLOG_INFO</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGI(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="19" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1af49d0fb69c1870bbe311d09531c71e1b" prot="public" static="no">
+        <name>SLOG_WARN</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGW(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="20" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1ae954d89dfc63723ee203d60af9722276" prot="public" static="no">
+        <name>SLOG_ERROR</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGE(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="21" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a8859826a9ec7ca1096e851003960e2f3" prot="public" static="no">
+        <name>SLOG_ALARM</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGA(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="22" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a3c7e20f94ca37f9cc51d7f8fc2df4ec3" prot="public" static="no">
+        <name>SLOG_FATAL</name>
+        <param><defname>log</defname></param>
+        <initializer>LOGF(LOG_FILTER, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="23" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a988d2ed5ac20b1f0b515172bc7f8487d" prot="public" static="no">
+        <name>SLOGFMTT</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTT(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="26" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a81d4d9421435798cf12229cec386ebed" prot="public" static="no">
+        <name>SLOGFMTD</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTD(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="27" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1aafbb416cf61d88a0ddf11e839d7c4194" prot="public" static="no">
+        <name>SLOGFMTI</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTI(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="28" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a9cd5d5d456e4d9f7bb4eff55e7d0455a" prot="public" static="no">
+        <name>SLOGFMTW</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTW(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="29" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a683a00e0df8d25aca5b1b317e35aeeb9" prot="public" static="no">
+        <name>SLOGFMTE</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTE(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="30" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1a367c72a5067dd955c9b66509ca74b467" prot="public" static="no">
+        <name>SLOGFMTA</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTA(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="31" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_log_def_8h_1ac2b122c931a4b9db07e20aaf8741f122" prot="public" static="no">
+        <name>SLOGFMTF</name>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMTF(LOG_FILTER,  fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" line="32" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//定义一组使用SOUI的log模块的宏</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//如果不定义LOG_FILTER，则使用soui作为filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//可以为不同的CPP定义不同的filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//例如在demos/demo的demo.cpp中使用下面代码来定义一个demo的filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">#define<sp/>LOG_FILTER<sp/>&quot;demo&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">#include<sp/>&lt;helper/slog-def.h&gt;</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//经过这样定义，就可以直接使用SLOG_INFO(&quot;a=&quot;+100)这样的形式来在LOG中输出以demo为filter的LOG了。</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LOG_FILTER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_FILTER<sp/>&quot;soui&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_TRACE(log)<sp/>LOGT(LOG_FILTER,<sp/>log)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_DEBUG(log)<sp/>LOGD(LOG_FILTER,<sp/>log)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_INFO(log)<sp/>LOGI(LOG_FILTER,<sp/>log)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_WARN(log)<sp/>LOGW(LOG_FILTER,<sp/>log)<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_ERROR(log)<sp/>LOGE(LOG_FILTER,<sp/>log)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_ALARM(log)<sp/>LOGA(LOG_FILTER,<sp/>log)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOG_FATAL(log)<sp/>LOGF(LOG_FILTER,<sp/>log)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTT(<sp/>fmt,<sp/>...)<sp/>LOGFMTT(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTD(<sp/>fmt,<sp/>...)<sp/>LOGFMTD(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTI(<sp/>fmt,<sp/>...)<sp/>LOGFMTI(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTW(<sp/>fmt,<sp/>...)<sp/>LOGFMTW(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTE(<sp/>fmt,<sp/>...)<sp/>LOGFMTE(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTA(<sp/>fmt,<sp/>...)<sp/>LOGFMTA(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLOGFMTF(<sp/>fmt,<sp/>...)<sp/>LOGFMTF(LOG_FILTER,<sp/><sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SLogDef.h"/>
+  </compounddef>
+</doxygen>

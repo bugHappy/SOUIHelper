@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_lv_adatper_impl" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::LvAdatperImpl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseClass</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class BaseClass</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_lv_adatper_impl_1a290697fa6fe1342a6e044a59a8ba05dc" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_lv_observer_mgr" kindref="compound">SLvObserverMgr</ref></type>
+        <definition>SLvObserverMgr SOUI::LvAdatperImpl&lt; BaseClass &gt;::m_obzMgr</definition>
+        <argsstring></argsstring>
+        <name>m_obzMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="162" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a0d176804012b3f576b733a3a1a15163e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::LvAdatperImpl&lt; BaseClass &gt;::notifyDataSetChanged</definition>
+        <argsstring>()</argsstring>
+        <name>notifyDataSetChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="83" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a311125020bda7f8dd897aa4ee581b503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::LvAdatperImpl&lt; BaseClass &gt;::notifyDataSetInvalidated</definition>
+        <argsstring>()</argsstring>
+        <name>notifyDataSetInvalidated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the attached observers that the underlying data is no longer valid or available. Once invoked this adapter is no longer valid and should not report further data set changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="92" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a01d35ca1be0011e459ba620de10f6356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::LvAdatperImpl&lt; BaseClass &gt;::notifyItemDataChanged</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>notifyItemDataChanged</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="96" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a6a8e321a00875720ed5f798faae16b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::LvAdatperImpl&lt; BaseClass &gt;::registerDataSetObserver</definition>
+        <argsstring>(ILvDataSetObserver *observer)</argsstring>
+        <name>registerDataSetObserver</name>
+        <param>
+          <type>ILvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="100" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a9f14d58e9e3b8598fb222d5248b23a98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::LvAdatperImpl&lt; BaseClass &gt;::unregisterDataSetObserver</definition>
+        <argsstring>(ILvDataSetObserver *observer)</argsstring>
+        <name>unregisterDataSetObserver</name>
+        <param>
+          <type>ILvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="105" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1ace3570211e484f865b870f4c33208454" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::LvAdatperImpl&lt; BaseClass &gt;::getCount</definition>
+        <argsstring>() PURE</argsstring>
+        <name>getCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="110" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a6b197530613241b671082ec9eb658e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>long</type>
+        <definition>virtual long SOUI::LvAdatperImpl&lt; BaseClass &gt;::getItemId</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemId</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="112" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a9530c60a231390e59b8c4a38eb866699" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::LvAdatperImpl&lt; BaseClass &gt;::getItemViewType</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemViewType</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="117" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1af0542ab13e2bd077a1667d186d824045" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::LvAdatperImpl&lt; BaseClass &gt;::getItemViewType</definition>
+        <argsstring>(int position, DWORD dwState)</argsstring>
+        <name>getItemViewType</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="124" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a071dd0c302c2b9240cfbc442da53659d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::LvAdatperImpl&lt; BaseClass &gt;::getViewTypeCount</definition>
+        <argsstring>()</argsstring>
+        <name>getViewTypeCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="130" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1acf725c645a9e15997bcb5a416c1d46b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::LvAdatperImpl&lt; BaseClass &gt;::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="135" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1aee531b93f319ca187fc9cb9410264d29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ULONG_PTR</type>
+        <definition>virtual ULONG_PTR SOUI::LvAdatperImpl&lt; BaseClass &gt;::getItemData</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemData</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="140" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a6ab6d815918cd3f49d42de4fffe3e6e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>SStringT</type>
+        <definition>virtual SStringT SOUI::LvAdatperImpl&lt; BaseClass &gt;::getItemDesc</definition>
+        <argsstring>(int position)</argsstring>
+        <name>getItemDesc</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="145" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1ae80b4cd61045588e33f4649238d0555a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::LvAdatperImpl&lt; BaseClass &gt;::InitByTemplate</definition>
+        <argsstring>(pugi::xml_node xmlTemplate)</argsstring>
+        <name>InitByTemplate</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="150" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_lv_adatper_impl_1a04ca2848940abaa75404adc52100df7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>SIZE</type>
+        <definition>virtual SIZE SOUI::LvAdatperImpl&lt; BaseClass &gt;::getViewDesiredSize</definition>
+        <argsstring>(int position, SWindow *pItem, int wid, int hei)</argsstring>
+        <name>getViewDesiredSize</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="155" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="155" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseClass</label>
+      </node>
+      <node id="1">
+        <label>SOUI::LvAdatperImpl&lt; BaseClass &gt;</label>
+        <link refid="class_s_o_u_i_1_1_lv_adatper_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseClass</label>
+      </node>
+      <node id="1">
+        <label>SOUI::LvAdatperImpl&lt; BaseClass &gt;</label>
+        <link refid="class_s_o_u_i_1_1_lv_adatper_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_obzMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SLvObserverMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_lv_observer_mgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="81" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="80" bodyend="163"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1ace3570211e484f865b870f4c33208454" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getCount</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1aee531b93f319ca187fc9cb9410264d29" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a6ab6d815918cd3f49d42de4fffe3e6e7" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getItemDesc</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a6b197530613241b671082ec9eb658e5e" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getItemId</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a9530c60a231390e59b8c4a38eb866699" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getItemViewType</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1af0542ab13e2bd077a1667d186d824045" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getItemViewType</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a04ca2848940abaa75404adc52100df7a" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getViewDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a071dd0c302c2b9240cfbc442da53659d" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>getViewTypeCount</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1ae80b4cd61045588e33f4649238d0555a" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>InitByTemplate</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1acf725c645a9e15997bcb5a416c1d46b6" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>isEmpty</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a290697fa6fe1342a6e044a59a8ba05dc" prot="protected" virt="non-virtual"><scope>SOUI::LvAdatperImpl</scope><name>m_obzMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a0d176804012b3f576b733a3a1a15163e" prot="public" virt="non-virtual"><scope>SOUI::LvAdatperImpl</scope><name>notifyDataSetChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a311125020bda7f8dd897aa4ee581b503" prot="public" virt="non-virtual"><scope>SOUI::LvAdatperImpl</scope><name>notifyDataSetInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a01d35ca1be0011e459ba620de10f6356" prot="public" virt="non-virtual"><scope>SOUI::LvAdatperImpl</scope><name>notifyItemDataChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a6a8e321a00875720ed5f798faae16b96" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>registerDataSetObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_lv_adatper_impl_1a9f14d58e9e3b8598fb222d5248b23a98" prot="public" virt="virtual"><scope>SOUI::LvAdatperImpl</scope><name>unregisterDataSetObserver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

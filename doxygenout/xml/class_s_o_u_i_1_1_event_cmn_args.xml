@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_event_cmn_args" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::EventCmnArgs</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_event_args" prot="public" virt="non-virtual">SOUI::EventArgs</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_event_cmn_args_1a1466f3bba3731f9a04fbde54372f9a93" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::EventCmnArgs::nID</definition>
+        <argsstring></argsstring>
+        <name>nID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="226" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_event_cmn_args_1a9ed9614b9d0098b5977944d26a263a4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::EventCmnArgs::EventCmnArgs</definition>
+        <argsstring>(SObject *pSender, int _nID)</argsstring>
+        <name>EventCmnArgs</name>
+        <param>
+          <type>SObject *</type>
+          <declname>pSender</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_nID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="219" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="219" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_event_cmn_args_1acc7fdb6fd24ac0dbc8a777fecf17ec74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::EventCmnArgs::GetID</definition>
+        <argsstring>() const</argsstring>
+        <name>GetID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="223" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="223" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::EventCmnArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_cmn_args"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SObjectImpl&lt; IObject &gt;</label>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::EventArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_args"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::EventCmnArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_cmn_args"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SObjectImpl&lt; IObject &gt;</label>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+      <node id="2">
+        <label>SOUI::EventArgs</label>
+        <link refid="class_s_o_u_i_1_1_event_args"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" line="217" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEvents.h" bodystart="216" bodyend="227"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_event_args_1a843d54de064ce05a7e7256eeb17c1819" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>bubbleUp</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1ae93ba53106011baa45fdcca0ab915c3d" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>EventArgs</name></member>
+      <member refid="class_s_o_u_i_1_1_event_cmn_args_1a9ed9614b9d0098b5977944d26a263a4d" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>EventCmnArgs</name></member>
+      <member refid="class_s_o_u_i_1_1_event_cmn_args_1acc7fdb6fd24ac0dbc8a777fecf17ec74" prot="public" virt="virtual"><scope>SOUI::EventCmnArgs</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a5c0704ddd487eba5c3ab4f400f1ed915" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>handled</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1acbb5ab241002e00783d45c7e469ed6eb" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>idFrom</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a5338880ba34aaae7b87411157536759c" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>nameFrom</name></member>
+      <member refid="class_s_o_u_i_1_1_event_cmn_args_1a1466f3bba3731f9a04fbde54372f9a93" prot="protected" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>nID</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a31d2e20eb8d1edf90085c0596340f8ef" prot="public" virt="non-virtual"><scope>SOUI::EventCmnArgs</scope><name>sender</name></member>
+      <member refid="class_s_o_u_i_1_1_event_args_1a059c1925caacbe42a97a97f901b7f885" prot="public" virt="virtual"><scope>SOUI::EventCmnArgs</scope><name>~EventArgs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

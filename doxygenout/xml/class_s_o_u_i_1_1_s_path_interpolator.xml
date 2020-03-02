@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_path_interpolator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SPathInterpolator</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_interpolator_base" prot="public" virt="non-virtual">SOUI::SInterpolatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_path_interpolator_1af8876329c548cebf8f38d972301af5a5" prot="private" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1f_point" kindref="compound">fPoint</ref> &gt;</type>
+        <definition>SArray&lt;fPoint&gt; SOUI::SPathInterpolator::mPt</definition>
+        <argsstring></argsstring>
+        <name>mPt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="182" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1ae6fb10435f954781f59beb6d62418449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SPathInterpolator::SPathInterpolator</definition>
+        <argsstring>()</argsstring>
+        <name>SPathInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an interpolator for an arbitrary <computeroutput>Path</computeroutput>. The <computeroutput>Path</computeroutput> must begin at <computeroutput>(0, 0)</computeroutput> and end at <computeroutput>(1, 1)</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>Path</computeroutput> to use to make the line representing the interpolator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1aff2846f3d1622610fe9cddc742f99a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SPathInterpolator::SPathInterpolator</definition>
+        <argsstring>(float controlX, float controlY)</argsstring>
+        <name>SPathInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>controlX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>controlY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an interpolator for a quadratic Bezier curve. The end points <computeroutput>(0, 0)</computeroutput> and <computeroutput>(1, 1)</computeroutput> are assumed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the quadratic Bezier control point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controlY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the quadratic Bezier control point. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1a21320f339189add3b9d1e0fb823eceae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SPathInterpolator::SPathInterpolator</definition>
+        <argsstring>(float controlX1, float controlY1, float controlX2, float controlY2)</argsstring>
+        <name>SPathInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>controlX1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>controlY1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>controlX2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>controlY2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an interpolator for a cubic Bezier curve. The end points <computeroutput>(0, 0)</computeroutput> and <computeroutput>(1, 1)</computeroutput> are assumed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controlX1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the first control point of the cubic Bezier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controlY1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the first control point of the cubic Bezier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controlX2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the second control point of the cubic Bezier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>controlY2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the second control point of the cubic Bezier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1aa7954c0290e09f449cd382d4d84a6b71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SPathInterpolator::getInterpolation</definition>
+        <argsstring>(float t) const override</argsstring>
+        <name>getInterpolation</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Using the line in the Path in this interpolator that can be described as <computeroutput>y = f(x)</computeroutput>, finds the y coordinate of the line given <computeroutput>t</computeroutput> as the x coordinate. Values less than 0 will always return 0 and values greater than 1 will always return 1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Treated as the x coordinate along the line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The y coordinate of the Path along the line where x = <computeroutput>t</computeroutput>. </para>
+</simplesect>
+<simplesect kind="see"><para>Interpolator::getInterpolation(float) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="230" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1a5ba054790e6c1046115801148b326c20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPathInterpolator::initQuad</definition>
+        <argsstring>(float controlX, float controlY)</argsstring>
+        <name>initQuad</name>
+        <param>
+          <type>float</type>
+          <declname>controlX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>controlY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="213" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1a0b9af299783839263c2508a349f7fd29" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPathInterpolator::initCubic</definition>
+        <argsstring>(float x1, float y1, float x2, float y2)</argsstring>
+        <name>initCubic</name>
+        <param>
+          <type>float</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="215" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1afadf53743a62b9b854e0994de374e2fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPathInterpolator::initPath</definition>
+        <argsstring>(IPath *path)</argsstring>
+        <name>initPath</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_path" kindref="compound">IPath</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="217" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_path_interpolator_1a2bd2773b8095d176438d7ca3c942b4cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SPathInterpolator::OnInitFinished</definition>
+        <argsstring>(pugi::xml_node xmlNode) override</argsstring>
+        <name>OnInitFinished</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="233" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SPathInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_path_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SPathInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_path_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="178" column="49" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="178" bodyend="234"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1aa7954c0290e09f449cd382d4d84a6b71" prot="public" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>getInterpolation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1a0b9af299783839263c2508a349f7fd29" prot="private" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>initCubic</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1afadf53743a62b9b854e0994de374e2fd" prot="private" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>initPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1a5ba054790e6c1046115801148b326c20" prot="private" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>initQuad</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1af8876329c548cebf8f38d972301af5a5" prot="private" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>mPt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1a2bd2773b8095d176438d7ca3c942b4cd" prot="protected" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>OnInitFinished</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1ae6fb10435f954781f59beb6d62418449" prot="public" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>SPathInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1aff2846f3d1622610fe9cddc742f99a94" prot="public" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>SPathInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_path_interpolator_1a21320f339189add3b9d1e0fb823eceae" prot="public" virt="non-virtual"><scope>SOUI::SPathInterpolator</scope><name>SPathInterpolator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

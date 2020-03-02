@@ -1,0 +1,916 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="slog_8h" kind="file" language="C++">
+    <compoundname>slog.h</compoundname>
+    <includes local="no">intrin.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="slog-i_8h" local="no">interface/slog-i.h</includes>
+    <includedby refid="souistd_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>interface/slog-i.h</label>
+        <link refid="slog-i_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unknown/obj-ref-i.h</label>
+      </node>
+      <node id="6">
+        <label>time.h</label>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h</label>
+        <link refid="slog_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>intrin.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h</label>
+        <link refid="slog_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_s_o_u_i_1_1_log4z_binary" prot="public">SOUI::Log4zBinary</innerclass>
+    <innerclass refid="class_s_o_u_i_1_1_log4z_stream" prot="public">SOUI::Log4zStream</innerclass>
+    <innernamespace refid="namespace_s_o_u_i">SOUI</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="slog_8h_1a3045b176694bd90b86115d2ea15e303e" prot="public" static="no">
+        <name>GETLOGMGR</name>
+        <param></param>
+        <initializer>SOUI::SApplication::getSingletonPtr()?SOUI::SApplication::getSingleton().GetLogManager():NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="7" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a47953fce4e19bebbc189f365b76f41cd" prot="public" static="no">
+        <name>E_RANGE</name>
+        <initializer>9944</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="11" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a68b132af5e887aa3483cec5c8b99e25a" prot="public" static="no">
+        <name>OUTLOG_LEVEL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="15" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a34d85d085a2d27cb049454e424811136" prot="public" static="no">
+        <name>LOG4Z_FORMAT_INPUT_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check VC VERSION. DO NOT TOUCH format micro cannot support VC6 or VS2003, please use stream input log, like LOGI, LOGD, LOG_DEBUG, LOG_STREAM ... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="25" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ac8193661c37c34ffe8d7b6d0ab1a7960" prot="public" static="no">
+        <name>SOUI_LOG_STREAM</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>level</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>    do{\
+		<ref refid="struct_s_o_u_i_1_1_i_log4z_manager" kindref="compound">SOUI::ILog4zManager</ref> * pLogMgr = GETLOGMGR(); \
+		char *logBuf= (char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE);\
+		<ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">SOUI::Log4zStream</ref> ss(logBuf, SOUI::LOG4Z_LOG_BUF_SIZE);\
+		ss &lt;&lt; log;\
+		if (pLogMgr &amp;&amp; pLogMgr-&gt;prePushLog(id_or_name,level)) \
+		{\
+			const void *pAddr = _ReturnAddress(); \
+			pLogMgr-&gt;pushLog(id_or_name, level, filter, logBuf, __FILE__, __LINE__, __FUNCTION__, pAddr);\
+		}else if(level&gt;=OUTLOG_LEVEL)\
+		{\
+			ss&lt;&lt;&quot; &quot;&lt;&lt;__FUNCTION__&lt;&lt;&quot; &quot;&lt;&lt;__FILE__&lt;&lt;&quot;:&quot;&lt;&lt;__LINE__&lt;&lt;&quot;\n&quot;;\
+			OutputDebugStringA(logBuf);\
+		}\
+		free(logBuf);\
+    } while (0)</initializer>
+        <briefdescription>
+<para>base micro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="35" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1aaf0def43dc25ab6513b466d222e8688b" prot="public" static="no">
+        <name>LOG_TRACE</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_TRACE, log)</initializer>
+        <briefdescription>
+<para>fast micro </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="55" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a8c06e17b92bed3555b9263844fa81a0e" prot="public" static="no">
+        <name>LOG_DEBUG</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_DEBUG, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="56" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a712f238b2f47e468e58ec2c27d815d9b" prot="public" static="no">
+        <name>LOG_INFO</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_INFO, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="57" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1aff9ea494591ee23d6b55786cfdbcd284" prot="public" static="no">
+        <name>LOG_WARN</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_WARN, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="58" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a6c5107abcceb56be0c136072d35c0faf" prot="public" static="no">
+        <name>LOG_ERROR</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_ERROR, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="59" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a6c67e6fa6bb936dcdbab94b9b81571af" prot="public" static="no">
+        <name>LOG_ALARM</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_ALARM, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="60" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1abd8ce823953f06a11fc3024154337538" prot="public" static="no">
+        <name>LOG_FATAL</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>SOUI_LOG_STREAM(id_or_name, filter, SOUI::ILog4zManager::LOG_LEVEL_FATAL, log)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="61" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a084fb668977a86c03087d10a6a4e2e71" prot="public" static="no">
+        <name>LOGT</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_TRACE(SOUI::LOG4Z_MAIN_LOGGER_ID,filter, log )</initializer>
+        <briefdescription>
+<para>super micro. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="64" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a46baaf96006c3a189ac6817a0090c952" prot="public" static="no">
+        <name>LOGD</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_DEBUG(SOUI::LOG4Z_MAIN_LOGGER_ID, filter,log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="65" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a35f7c95000b0f1e473a4ccaec77847f0" prot="public" static="no">
+        <name>LOGI</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_INFO(SOUI::LOG4Z_MAIN_LOGGER_ID,filter, log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="66" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a42412b542fdfd126cc936c67e72c5915" prot="public" static="no">
+        <name>LOGW</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_WARN(SOUI::LOG4Z_MAIN_LOGGER_ID, filter,log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="67" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a845ec0b22ed1c028c4fa408a36f3b486" prot="public" static="no">
+        <name>LOGE</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_ERROR(SOUI::LOG4Z_MAIN_LOGGER_ID,filter, log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="68" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a490db88fc3d67851996022f05a738f12" prot="public" static="no">
+        <name>LOGA</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_ALARM(SOUI::LOG4Z_MAIN_LOGGER_ID,filter, log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="69" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a65f9ebb0cac905679c45de5ffa50266d" prot="public" static="no">
+        <name>LOGF</name>
+        <param><defname>filter</defname></param>
+        <param><defname>log</defname></param>
+        <initializer>LOG_FATAL(SOUI::LOG4Z_MAIN_LOGGER_ID,filter, log )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="70" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a0e05cdaa803e416eab1aa1a26f13885c" prot="public" static="no">
+        <name>LOG_FORMAT</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>level</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>logformat</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    do{ \
+		<ref refid="struct_s_o_u_i_1_1_i_log4z_manager" kindref="compound">SOUI::ILog4zManager</ref> * pLogMgr = GETLOGMGR(); \
+		char *logbuf=(char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE); \
+		if(sizeof(logformat[0]) == sizeof(char))\
+			_snprintf_s(logbuf, SOUI::LOG4Z_LOG_BUF_SIZE, _TRUNCATE, (const char*)logformat, ##__VA_ARGS__); \
+		else \
+		{\
+			wchar_t *logbufw = (wchar_t*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE*sizeof(wchar_t)); \
+			_snwprintf_s(logbufw, SOUI::LOG4Z_LOG_BUF_SIZE, _TRUNCATE, (const wchar_t*)logformat, ##__VA_ARGS__); \
+			DWORD dwLen = WideCharToMultiByte(CP_ACP, 0, logbufw, -1, NULL, 0, NULL, NULL);\
+			if (dwLen &lt; SOUI::LOG4Z_LOG_BUF_SIZE)\
+			{\
+				WideCharToMultiByte(CP_ACP, 0, logbufw, -1, logbuf, dwLen, NULL, NULL);\
+			}\
+			free(logbufw);\
+		}\
+		if (pLogMgr &amp;&amp; pLogMgr-&gt;prePushLog(id_or_name,level)) \
+		{\
+			pLogMgr-&gt;pushLog(id_or_name, level,filter, logbuf, __FILE__, __LINE__, __FUNCTION__,_ReturnAddress()); \
+		}else if(level&gt;=OUTLOG_LEVEL)\
+		{\
+			char *logbuf2 = (char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE);\
+			_snprintf_s(logbuf2, SOUI::LOG4Z_LOG_BUF_SIZE, _TRUNCATE, &quot;%s %s %s:%d\n&quot;,logbuf, __FUNCTION__, __FILE__, __LINE__ ); \
+			OutputDebugStringA(logbuf2);\
+			free(logbuf2);\
+		}\
+		free(logbuf);\
+    } while (0)</initializer>
+        <briefdescription>
+<para>format input log. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="75" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a0736f181d5f1ba025ac2dfdb6e0b7f90" prot="public" static="no">
+        <name>LOGFMT_TRACE</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_TRACE, filter, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>format string </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="106" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ac25830744efe18c71bec3a30077f72e3" prot="public" static="no">
+        <name>LOGFMT_DEBUG</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_DEBUG, filter, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="107" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ad38e76efc0dea716d3165c3d48d67c31" prot="public" static="no">
+        <name>LOGFMT_INFO</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_INFO,  filter,fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="108" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a9dc25a372869ff04bc6993e509a1f1b3" prot="public" static="no">
+        <name>LOGFMT_WARN</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_WARN,  filter,fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="109" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a554ae31595d665c11e29da4ed98c4cc4" prot="public" static="no">
+        <name>LOGFMT_ERROR</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_ERROR, filter, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="110" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a373e9ab26164362c8d3e0ccf4bbbcf42" prot="public" static="no">
+        <name>LOGFMT_ALARM</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_ALARM, filter, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="111" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ae6f1cf5801e569d8cda6644df4136ec3" prot="public" static="no">
+        <name>LOGFMT_FATAL</name>
+        <param><defname>id_or_name</defname></param>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOG_FORMAT(id_or_name, SOUI::ILog4zManager::LOG_LEVEL_FATAL, filter, fmt, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="112" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1aebc0b62a8e7224e100116ee59e6a26fc" prot="public" static="no">
+        <name>LOGFMTT</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_TRACE(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="113" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a9bf19b7c764de16e00b7a2c22b67451e" prot="public" static="no">
+        <name>LOGFMTD</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_DEBUG(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="114" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a15211592fa256dd892c5968ed063a475" prot="public" static="no">
+        <name>LOGFMTI</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_INFO(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="115" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ad4f84e980e69c030971a26acbed451a7" prot="public" static="no">
+        <name>LOGFMTW</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_WARN(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="116" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a85d8260e73a7c0cc967b4b1f055db6cd" prot="public" static="no">
+        <name>LOGFMTE</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_ERROR(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="117" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1ab7fd3a6355194d55e30e7cd0c431c6b8" prot="public" static="no">
+        <name>LOGFMTA</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_ALARM(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="118" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="slog_8h_1a46c8bc08cd9c565e9fcee5cbb16d4313" prot="public" static="no">
+        <name>LOGFMTF</name>
+        <param><defname>filter</defname></param>
+        <param><defname>fmt</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>LOGFMT_FATAL(SOUI::LOG4Z_MAIN_LOGGER_ID, filter, fmt,  ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" line="119" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;intrin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;interface/slog-i.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GETLOGMGR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GETLOGMGR()<sp/>SOUI::SApplication::getSingletonPtr()?SOUI::SApplication::getSingleton().GetLogManager():NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>E_RANGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>E_RANGE<sp/>9944</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OUTLOG_LEVEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUTLOG_LEVEL<sp/>0<sp/><sp/>//LOG_LEVEL_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#if<sp/>_MSC_VER<sp/>&gt;=<sp/>1400<sp/>//MSVC<sp/>&gt;=<sp/>VS2005</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG4Z_FORMAT_INPUT_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(WIN32)<sp/><sp/>&amp;&amp;<sp/>!defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG4Z_FORMAT_INPUT_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Log4zBinary;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Log4zStream;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>level,<sp/><sp/>log)\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do{\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI::ILog4zManager<sp/>*<sp/>pLogMgr<sp/>=<sp/>GETLOGMGR();<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>*logBuf=<sp/>(char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE);\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI::Log4zStream<sp/>ss(logBuf,<sp/>SOUI::LOG4Z_LOG_BUF_SIZE);\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>log;\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(pLogMgr<sp/>&amp;&amp;<sp/>pLogMgr-&gt;prePushLog(id_or_name,level))<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>void<sp/>*pAddr<sp/>=<sp/>_ReturnAddress();<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pLogMgr-&gt;pushLog(id_or_name,<sp/>level,<sp/>filter,<sp/>logBuf,<sp/>__FILE__,<sp/>__LINE__,<sp/>__FUNCTION__,<sp/>pAddr);\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}else<sp/>if(level&gt;=OUTLOG_LEVEL)\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss&lt;&lt;&quot;<sp/>&quot;&lt;&lt;__FUNCTION__&lt;&lt;&quot;<sp/>&quot;&lt;&lt;__FILE__&lt;&lt;&quot;:&quot;&lt;&lt;__LINE__&lt;&lt;&quot;\n&quot;;\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutputDebugStringA(logBuf);\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(logBuf);\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor">#define<sp/>LOG_TRACE(id_or_name,<sp/>filter,<sp/>log)<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_TRACE,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DEBUG(id_or_name,<sp/>filter,<sp/>log)<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_DEBUG,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO(id_or_name,<sp/>filter,<sp/>log)<sp/><sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_INFO,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_WARN(id_or_name,<sp/>filter,<sp/>log)<sp/><sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_WARN,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR(id_or_name,<sp/>filter,<sp/>log)<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_ERROR,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ALARM(id_or_name,<sp/>filter,<sp/>log)<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_ALARM,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_FATAL(id_or_name,<sp/>filter,<sp/>log)<sp/>SOUI_LOG_STREAM(id_or_name,<sp/>filter,<sp/>SOUI::ILog4zManager::LOG_LEVEL_FATAL,<sp/>log)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#define<sp/>LOGT(filter,<sp/>log<sp/>)<sp/>LOG_TRACE(SOUI::LOG4Z_MAIN_LOGGER_ID,filter,<sp/>log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGD(filter,<sp/>log<sp/>)<sp/>LOG_DEBUG(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGI(filter,<sp/>log<sp/>)<sp/>LOG_INFO(SOUI::LOG4Z_MAIN_LOGGER_ID,filter,<sp/>log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGW(filter,<sp/>log<sp/>)<sp/>LOG_WARN(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGE(filter,<sp/>log<sp/>)<sp/>LOG_ERROR(SOUI::LOG4Z_MAIN_LOGGER_ID,filter,<sp/>log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGA(filter,<sp/>log<sp/>)<sp/>LOG_ALARM(SOUI::LOG4Z_MAIN_LOGGER_ID,filter,<sp/>log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGF(filter,<sp/>log<sp/>)<sp/>LOG_FATAL(SOUI::LOG4Z_MAIN_LOGGER_ID,filter,<sp/>log<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor">#ifdef<sp/>LOG4Z_FORMAT_INPUT_ENABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_FORMAT(id_or_name,<sp/>level,<sp/>filter,<sp/>logformat,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do{<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUI::ILog4zManager<sp/>*<sp/>pLogMgr<sp/>=<sp/>GETLOGMGR();<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>*logbuf=(char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE);<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(sizeof(logformat[0])<sp/>==<sp/>sizeof(char))\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_snprintf_s(logbuf,<sp/>SOUI::LOG4Z_LOG_BUF_SIZE,<sp/>_TRUNCATE,<sp/>(const<sp/>char*)logformat,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wchar_t<sp/>*logbufw<sp/>=<sp/>(wchar_t*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE*sizeof(wchar_t));<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_snwprintf_s(logbufw,<sp/>SOUI::LOG4Z_LOG_BUF_SIZE,<sp/>_TRUNCATE,<sp/>(const<sp/>wchar_t*)logformat,<sp/>##__VA_ARGS__);<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>dwLen<sp/>=<sp/>WideCharToMultiByte(CP_ACP,<sp/>0,<sp/>logbufw,<sp/>-1,<sp/>NULL,<sp/>0,<sp/>NULL,<sp/>NULL);\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(dwLen<sp/>&lt;<sp/>SOUI::LOG4Z_LOG_BUF_SIZE)\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WideCharToMultiByte(CP_ACP,<sp/>0,<sp/>logbufw,<sp/>-1,<sp/>logbuf,<sp/>dwLen,<sp/>NULL,<sp/>NULL);\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(logbufw);\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(pLogMgr<sp/>&amp;&amp;<sp/>pLogMgr-&gt;prePushLog(id_or_name,level))<sp/>\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pLogMgr-&gt;pushLog(id_or_name,<sp/>level,filter,<sp/>logbuf,<sp/>__FILE__,<sp/>__LINE__,<sp/>__FUNCTION__,_ReturnAddress());<sp/>\</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}else<sp/>if(level&gt;=OUTLOG_LEVEL)\</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>*logbuf2<sp/>=<sp/>(char*)malloc(SOUI::LOG4Z_LOG_BUF_SIZE);\</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_snprintf_s(logbuf2,<sp/>SOUI::LOG4Z_LOG_BUF_SIZE,<sp/>_TRUNCATE,<sp/>&quot;%s<sp/>%s<sp/>%s:%d\n&quot;,logbuf,<sp/>__FUNCTION__,<sp/>__FILE__,<sp/>__LINE__<sp/>);<sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OutputDebugStringA(logbuf2);\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(logbuf2);\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(logbuf);\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor">#define<sp/>LOGFMT_TRACE(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_TRACE,<sp/>filter,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_DEBUG(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_DEBUG,<sp/>filter,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_INFO(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_INFO,<sp/><sp/>filter,fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_WARN(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_WARN,<sp/><sp/>filter,fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_ERROR(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_ERROR,<sp/>filter,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_ALARM(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_ALARM,<sp/>filter,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_FATAL(id_or_name,<sp/>filter,<sp/>fmt,<sp/>...)<sp/><sp/>LOG_FORMAT(id_or_name,<sp/>SOUI::ILog4zManager::LOG_LEVEL_FATAL,<sp/>filter,<sp/>fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTT(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_TRACE(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTD(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_DEBUG(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTI(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_INFO(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTW(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_WARN(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTE(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_ERROR(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTA(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_ALARM(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTF(<sp/>filter,<sp/>fmt,<sp/>...)<sp/>LOGFMT_FATAL(SOUI::LOG4Z_MAIN_LOGGER_ID,<sp/>filter,<sp/>fmt,<sp/><sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function1(LoggerId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function1(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function1(LoggerId<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function1(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_log_format_function2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>tag,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/>fmt,<sp/>...){}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_TRACE<sp/>empty_log_format_function1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_DEBUG<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_INFO<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_WARN<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_ERROR<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_ALARM<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMT_FATAL<sp/>LOGFMT_TRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTT<sp/>empty_log_format_function2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTD<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTI<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTW<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTE<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTA<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGFMTF<sp/>LOGFMTT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(disable:4996)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_s_o_u_i_1_1_log4z_binary" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_buf<sp/>=<sp/>buf;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_len<sp/>=<sp/>len;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>_buf;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>_len;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="class_s_o_u_i_1_1_log4z_stream" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getCurrentLen()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_cur<sp/>-<sp/>_begin);<sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>ft,<sp/>...);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeLongLong(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeULongLong(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writePointer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>t);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>t);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeWString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/>t);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>writeBinary(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref><sp/>&amp;<sp/>t);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>writePointer(t);<sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeString(t);<sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal"><sp/>*<sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeWString(t);<sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(t<sp/>?<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;true&quot;</highlight><highlight class="normal">)<sp/>:<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)t);<sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)t);<sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)t);<sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeLongLong(t);<sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeULongLong(t);<sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeLongLong(t);<sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeULongLong(t);<sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%.4f&quot;</highlight><highlight class="normal">,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%.4lf&quot;</highlight><highlight class="normal">,<sp/>t);<sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>operator<sp/>&lt;&lt;<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_log4z_binary" kindref="compound">Log4zBinary</ref><sp/>&amp;<sp/>binary)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeBinary(binary);<sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref>(<ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;)<sp/>{}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><sp/>_begin;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><sp/>_end;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><sp/>_cur;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_s_o_u_i_1_1_log4z_stream" kindref="compound">Log4zStream</ref><sp/>&amp;<sp/>Log4zStream::writeData(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fmt,...)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_list<sp/>args;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_start(args,fmt);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_cur<sp/>&lt;<sp/>_end)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>(int)(_end<sp/>-<sp/>_cur)-1;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>_vsnprintf(_cur,<sp/>count,<sp/>fmt,<sp/>args);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>==<sp/>count<sp/>||<sp/>(len<sp/>==<sp/>-1<sp/>&amp;&amp;<sp/>errno<sp/>==<sp/>E_RANGE))</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>count;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(_end<sp/>-<sp/>1)<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_cur<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>vsnprintf(_cur,<sp/>count,<sp/>fmt,<sp/>args);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*_cur<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&gt;=<sp/>count)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len<sp/>=<sp/>count;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(_end<sp/>-<sp/>1)<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cur<sp/>+=<sp/>len;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>va_end(args);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream::Log4zStream(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_begin<sp/>=<sp/>buf;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_end<sp/>=<sp/>buf<sp/>+<sp/>len;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cur<sp/>=<sp/>_begin;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writeLongLong(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%I64d&quot;</highlight><highlight class="normal">,<sp/>t);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%lld&quot;</highlight><highlight class="normal">,<sp/>t);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writeULongLong(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%I64u&quot;</highlight><highlight class="normal">,<sp/>t);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%llu&quot;</highlight><highlight class="normal">,<sp/>t);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writePointer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>t)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(t)<sp/>==<sp/>8<sp/>?<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%016I64x&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)t)<sp/>:<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%08I64x&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)t);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(t)<sp/>==<sp/>8<sp/>?<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%016llx&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)t)<sp/>:<sp/>writeData(</highlight><highlight class="stringliteral">&quot;%08llx&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal">)t);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writeBinary(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Log4zBinary<sp/>&amp;<sp/>t)</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;\r\n\t[&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>t._len;<sp/>i++)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>%<sp/>16<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;\r\n\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(t._buf<sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%02x<sp/>&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)t._buf[i]);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;\r\n\t]\r\n\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writeString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>t)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>t);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Log4zStream<sp/>&amp;<sp/>Log4zStream::writeWString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">wchar_t</highlight><highlight class="normal">*<sp/>t)</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>dwLen<sp/>=<sp/>WideCharToMultiByte(CP_ACP,<sp/>0,<sp/>t,<sp/>-1,<sp/>NULL,<sp/>0,<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dwLen<sp/>&lt;<sp/>SOUI::LOG4Z_LOG_BUF_SIZE)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buf[SOUI::LOG4Z_LOG_BUF_SIZE];</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwLen<sp/>=<sp/>WideCharToMultiByte(CP_ACP,<sp/>0,<sp/>t,<sp/>-1,<sp/>buf,<sp/>dwLen,<sp/>NULL,<sp/>NULL);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dwLen<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[dwLen]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeData(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>buf);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//not<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>(WIN32)<sp/>||<sp/>defined(_WIN64)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight><highlight class="comment">//end<sp/>of<sp/>namespace<sp/>SOUI</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/slog.h"/>
+  </compounddef>
+</doxygen>

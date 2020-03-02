@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_res_provider_mgr" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SResProviderMgr</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_application" prot="public" virt="non-virtual">SOUI::SApplication</derivedcompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_res_provider_mgr_1abb84fabe7fefe1cfd5961e6617b630a0" prot="protected" static="no">
+        <type>SMap&lt; SStringT, HCURSOR &gt;</type>
+        <definition>typedef SMap&lt;SStringT,HCURSOR&gt; SOUI::SResProviderMgr::CURSORMAP</definition>
+        <argsstring></argsstring>
+        <name>CURSORMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="77" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a4b314fc4ad9397d3f217ec3dac76c496" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> * &gt;</type>
+        <definition>SList&lt;IResProvider*&gt; SOUI::SResProviderMgr::m_lstResPackage</definition>
+        <argsstring></argsstring>
+        <name>m_lstResPackage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="75" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a34f2b3f7ff96ce4a125e0742d1409955" prot="protected" static="no" mutable="no">
+        <type>CURSORMAP</type>
+        <definition>CURSORMAP SOUI::SResProviderMgr::m_mapCachedCursor</definition>
+        <argsstring></argsstring>
+        <name>m_mapCachedCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="78" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ac6bc0f580d4e1771e81db0813df33086" prot="protected" static="no" mutable="no">
+        <type>SCriticalSection</type>
+        <definition>SCriticalSection SOUI::SResProviderMgr::m_cs</definition>
+        <argsstring></argsstring>
+        <name>m_cs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="80" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a6f539037be4407bdf4ed61f06d09f21e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SResProviderMgr::SResProviderMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SResProviderMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="15" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a47cab73b81a68b20c7f8862b6f9aa7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SResProviderMgr::~SResProviderMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SResProviderMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="16" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a3869b794c7cddcfa866c63efceac1e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SResProviderMgr::RemoveAll</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a383a09f9c4047e20e41fed178f38b758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SResProviderMgr::AddResProvider</definition>
+        <argsstring>(IResProvider *pResProvider, LPCTSTR pszUidef=_T(&quot;uidef:xml_init&quot;))</argsstring>
+        <name>AddResProvider</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszUidef</declname>
+          <defval>_T(&quot;uidef:xml_init&quot;)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a6d25dc8a71e8737c5911a14747181fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SResProviderMgr::RemoveResProvider</definition>
+        <argsstring>(IResProvider *pResProvider)</argsstring>
+        <name>RemoveResProvider</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a8876694d825d648f139a85dba72a44f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+        <definition>IResProvider* SOUI::SResProviderMgr::GetHeadResProvider</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHeadResProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="24" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a006c654916090e33a709f20cdc1e649c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+        <definition>IResProvider* SOUI::SResProviderMgr::GetTailResProvider</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTailResProvider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="25" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a3781921d4cc28e8a1e193511c3f16257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SResProviderMgr::HasResource</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)</argsstring>
+        <name>HasResource</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="28" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ab9280d587217b5b0d3d9d0ed51127440" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HICON</type>
+        <definition>HICON SOUI::SResProviderMgr::LoadIcon</definition>
+        <argsstring>(LPCTSTR pszResName, int cx=0, int cy=0, BOOL bFromFile=FALSE)</argsstring>
+        <name>LoadIcon</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cy</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bFromFile</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="30" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1acfd9fd7a6b3cf0012bafbe9e8af4565c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HCURSOR</type>
+        <definition>HCURSOR SOUI::SResProviderMgr::LoadCursor</definition>
+        <argsstring>(LPCTSTR pszResName, BOOL bFromFile=FALSE)</argsstring>
+        <name>LoadCursor</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bFromFile</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="32" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a0f6307d2ab4fc8d7d493435a67612809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HBITMAP</type>
+        <definition>HBITMAP SOUI::SResProviderMgr::LoadBitmap</definition>
+        <argsstring>(LPCTSTR pszResName, BOOL bFromFile=FALSE)</argsstring>
+        <name>LoadBitmap</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bFromFile</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="34" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1adfb85c2231b9dd8330e39c0cf39adf48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+        <definition>IBitmap* SOUI::SResProviderMgr::LoadImage</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)</argsstring>
+        <name>LoadImage</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="36" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a3ae6374b2036a760bb99defb9e77bf62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_img_x" kindref="compound">IImgX</ref> *</type>
+        <definition>IImgX* SOUI::SResProviderMgr::LoadImgX</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)</argsstring>
+        <name>LoadImgX</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="38" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a716c193d0c60e70de2f5b6ad9005fe69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SOUI::SResProviderMgr::GetRawBufferSize</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)</argsstring>
+        <name>GetRawBufferSize</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a3edadaf89844db2bcf05b7d329deca76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SResProviderMgr::GetRawBuffer</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName, LPVOID pBuf, size_t size)</argsstring>
+        <name>GetRawBuffer</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <param>
+          <type>LPVOID</type>
+          <declname>pBuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a312827c531941dd7afbf6919cda24be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SResProviderMgr::GetColor</definition>
+        <argsstring>(const SStringW &amp;strColor)</argsstring>
+        <name>GetColor</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="46" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ad091b954246c5d3be1a8bbe39644d021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SResProviderMgr::GetColor</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>GetColor</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ac761e55e4d5c268ff410b8159be29409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SResProviderMgr::GetString</definition>
+        <argsstring>(const SStringW &amp;strString)</argsstring>
+        <name>GetString</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="51" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ae96cf45cd060e9478a9ea8c57a42d7bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SResProviderMgr::GetString</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>GetString</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="53" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1afd7e77af148a9d8651347a08826a51b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SResProviderMgr::GetLayoutSize</definition>
+        <argsstring>(const SStringW &amp;strSize)</argsstring>
+        <name>GetLayoutSize</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="56" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1aba0749d72f53d0b649d248b484de5372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SResProviderMgr::GetLayoutSize</definition>
+        <argsstring>(int idx)</argsstring>
+        <name>GetLayoutSize</name>
+        <param>
+          <type>int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="57" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a08954df813669fbf1d3109c04f1ca381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+        <definition>IResProvider* SOUI::SResProviderMgr::GetMatchResProvider</definition>
+        <argsstring>(LPCTSTR pszType, LPCTSTR pszResName)</argsstring>
+        <name>GetMatchResProvider</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszResName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="60" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ad5c22e57015ff5d8e5a78f33517efd33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+        <definition>IBitmap* SOUI::SResProviderMgr::LoadImage2</definition>
+        <argsstring>(const SStringW &amp;strImgID)</argsstring>
+        <name>LoadImage2</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strImgID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="63" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1a0432855c01b093cdb63c0870f25f850b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HICON</type>
+        <definition>HICON SOUI::SResProviderMgr::LoadIcon2</definition>
+        <argsstring>(const SStringW &amp;strIconID)</argsstring>
+        <name>LoadIcon2</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strIconID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="66" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ad30b1e3c5ac87df2939c1eadbbe43178" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LPCTSTR</type>
+        <definition>LPCTSTR SOUI::SResProviderMgr::SysCursorName2ID</definition>
+        <argsstring>(LPCTSTR pszCursorName)</argsstring>
+        <name>SysCursorName2ID</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszCursorName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="69" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_res_provider_mgr_1ab6e55e8041f81050c5a6f102f64ec9b4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SResProviderMgr::IsFileType</definition>
+        <argsstring>(LPCTSTR pszType)</argsstring>
+        <name>IsFileType</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="73" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SResProviderMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_res_provider_mgr"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SApplication</label>
+        <link refid="class_s_o_u_i_1_1_s_application"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" line="12" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SResProviderMgr.h" bodystart="11" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a383a09f9c4047e20e41fed178f38b758" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>AddResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1abb84fabe7fefe1cfd5961e6617b630a0" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>CURSORMAP</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a312827c531941dd7afbf6919cda24be6" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad091b954246c5d3be1a8bbe39644d021" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a8876694d825d648f139a85dba72a44f3" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetHeadResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1afd7e77af148a9d8651347a08826a51b8" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetLayoutSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1aba0749d72f53d0b649d248b484de5372" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetLayoutSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a08954df813669fbf1d3109c04f1ca381" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetMatchResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3edadaf89844db2bcf05b7d329deca76" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetRawBuffer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a716c193d0c60e70de2f5b6ad9005fe69" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetRawBufferSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ac761e55e4d5c268ff410b8159be29409" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ae96cf45cd060e9478a9ea8c57a42d7bf" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a006c654916090e33a709f20cdc1e649c" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>GetTailResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3781921d4cc28e8a1e193511c3f16257" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>HasResource</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ab6e55e8041f81050c5a6f102f64ec9b4" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>IsFileType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a0f6307d2ab4fc8d7d493435a67612809" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadBitmap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1acfd9fd7a6b3cf0012bafbe9e8af4565c" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ab9280d587217b5b0d3d9d0ed51127440" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadIcon</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a0432855c01b093cdb63c0870f25f850b" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadIcon2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1adfb85c2231b9dd8330e39c0cf39adf48" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadImage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad5c22e57015ff5d8e5a78f33517efd33" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadImage2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3ae6374b2036a760bb99defb9e77bf62" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>LoadImgX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ac6bc0f580d4e1771e81db0813df33086" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>m_cs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a4b314fc4ad9397d3f217ec3dac76c496" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>m_lstResPackage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a34f2b3f7ff96ce4a125e0742d1409955" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>m_mapCachedCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3869b794c7cddcfa866c63efceac1e3f" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a6d25dc8a71e8737c5911a14747181fa3" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>RemoveResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a6f539037be4407bdf4ed61f06d09f21e" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>SResProviderMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad30b1e3c5ac87df2939c1eadbbe43178" prot="protected" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>SysCursorName2ID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a47cab73b81a68b20c7f8862b6f9aa7e5" prot="public" virt="non-virtual"><scope>SOUI::SResProviderMgr</scope><name>~SResProviderMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

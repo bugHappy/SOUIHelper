@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_item_container" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IItemContainer</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_list_view" prot="protected" virt="non-virtual">SOUI::SListView</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_m_c_list_view" prot="protected" virt="non-virtual">SOUI::SMCListView</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_tile_view" prot="protected" virt="non-virtual">SOUI::STileView</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_tree_view" prot="protected" virt="non-virtual">SOUI::STreeView</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_item_container_1a4ef4d0ba6f27a3aeb1403e50d48d42d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IItemContainer::OnItemSetCapture</definition>
+        <argsstring>(SItemPanel *pItem, BOOL bCapture)=0</argsstring>
+        <name>OnItemSetCapture</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_list_view_1a6d263c3866e70a7416d2199af195908b">OnItemSetCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tile_view_1a4d8c8cd61994ac42100c6dcd4eaeb490">OnItemSetCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4cc1e5e9aa641339c64e3e1fbaeedfde">OnItemSetCapture</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tree_view_1a692501e0e18009c9a3d641d5f2d1680e">OnItemSetCapture</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bCapture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="19" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_item_container_1a83c7f7527eba7a9acc90486dc3cee0dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IItemContainer::OnItemGetRect</definition>
+        <argsstring>(const SItemPanel *pItem, CRect &amp;rcItem) const =0</argsstring>
+        <name>OnItemGetRect</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_list_view_1a08fa0b1f9805324e12440ac528e04782">OnItemGetRect</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tile_view_1adf4f7d8f77378ea5389a6143cc69b38b">OnItemGetRect</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_m_c_list_view_1ab96bd5cc60eb017e1f9028743a6ff5ed">OnItemGetRect</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tree_view_1a373637b04db6a70ca192b258a569b550">OnItemGetRect</reimplementedby>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>CRect &amp;</type>
+          <declname>rcItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="20" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_item_container_1a8c3f2207f148ffd8b0fcfad497763dbe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IItemContainer::IsItemRedrawDelay</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsItemRedrawDelay</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_list_view_1a12c40111acd48d43238e3d1ef41a5f28">IsItemRedrawDelay</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tile_view_1a3515cb63b3fbfd8a7dad0037f3fe324c">IsItemRedrawDelay</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_m_c_list_view_1ad0c0187d51eaf293970f7721d29b9791">IsItemRedrawDelay</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tree_view_1ab29eb49b866ac8e9171f83553f291de5">IsItemRedrawDelay</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="21" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_item_container_1a7bc85c0c58ac464dc036f29fac31ee69" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IItemContainer::OnItemRequestRelayout</definition>
+        <argsstring>(SItemPanel *pItem)=0</argsstring>
+        <name>OnItemRequestRelayout</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_list_view_1a07943fc8ee282ea8c79a372bad75c214">OnItemRequestRelayout</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tile_view_1a26226c8bad14df3f2722addfc3d15f24">OnItemRequestRelayout</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_m_c_list_view_1a4c3963a890a8beae88b6092faf1a96c9">OnItemRequestRelayout</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_tree_view_1ab28c51722849a0ea88119e46147135e8">OnItemRequestRelayout</reimplementedby>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="22" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>SOUI::STreeView</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_view"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SListView</label>
+        <link refid="class_s_o_u_i_1_1_s_list_view"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SMCListView</label>
+        <link refid="class_s_o_u_i_1_1_s_m_c_list_view"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::STileView</label>
+        <link refid="class_s_o_u_i_1_1_s_tile_view"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IItemContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_item_container"/>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="18" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="17" bodyend="23"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_item_container_1a8c3f2207f148ffd8b0fcfad497763dbe" prot="public" virt="pure-virtual"><scope>SOUI::IItemContainer</scope><name>IsItemRedrawDelay</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_item_container_1a83c7f7527eba7a9acc90486dc3cee0dc" prot="public" virt="pure-virtual"><scope>SOUI::IItemContainer</scope><name>OnItemGetRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_item_container_1a7bc85c0c58ac464dc036f29fac31ee69" prot="public" virt="pure-virtual"><scope>SOUI::IItemContainer</scope><name>OnItemRequestRelayout</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_item_container_1a4ef4d0ba6f27a3aeb1403e50d48d42d4" prot="public" virt="pure-virtual"><scope>SOUI::IItemContainer</scope><name>OnItemSetCapture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

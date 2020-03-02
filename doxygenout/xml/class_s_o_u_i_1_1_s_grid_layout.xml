@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_grid_layout" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SGridLayout</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1a988e4adbba1c3b580753ac200d3ce801" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SGridLayout::m_nCols</definition>
+        <argsstring></argsstring>
+        <name>m_nCols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>行数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="100" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1a6b56987d0aeb03dfc00962a94f8de724" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SGridLayout::m_nRows</definition>
+        <argsstring></argsstring>
+        <name>m_nRows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>列数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="101" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1ab91ea60165ccb73d086329230982d63e" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SGridLayout::m_xInterval</definition>
+        <argsstring></argsstring>
+        <name>m_xInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>水平间距 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="102" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1a16cd37b7f336f6f4b3cc486e2c4fffb6" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SGridLayout::m_yInterval</definition>
+        <argsstring></argsstring>
+        <name>m_yInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>垂直间距 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="103" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1a4d18965df36de30cdb1f513877da53d3" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_s_o_u_i_1a2688078c6d6dd98226e27d7c33d42f0a" kindref="member">GridGravity</ref></type>
+        <definition>GridGravity SOUI::SGridLayout::m_GravityX</definition>
+        <argsstring></argsstring>
+        <name>m_GravityX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>水平排列方式 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="105" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_grid_layout_1a916c98ee769d5192ea2016d3bfe93882" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_s_o_u_i_1a2688078c6d6dd98226e27d7c33d42f0a" kindref="member">GridGravity</ref></type>
+        <definition>GridGravity SOUI::SGridLayout::m_GravityY</definition>
+        <argsstring></argsstring>
+        <name>m_GravityY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>垂直排列方式 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="106" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1ad8b32a36710ed308b83bbb0e0facbd2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SGridLayout::SGridLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>SGridLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1ad7edcb511a542d817186d64ba740fb84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SGridLayout::~SGridLayout</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SGridLayout</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1a3206087b9c7a6b2e41d878e613571c68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SGridLayout::IsParamAcceptable</definition>
+        <argsstring>(ILayoutParam *pLayoutParam) const</argsstring>
+        <name>IsParamAcceptable</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+          <declname>pLayoutParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="78" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1af05dc64a0cdf45484b70d03e320900bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SGridLayout::LayoutChildren</definition>
+        <argsstring>(SWindow *pParent)</argsstring>
+        <name>LayoutChildren</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1a45fb894e092b2b27c79b65de36a029d2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::SGridLayout::CreateLayoutParam</definition>
+        <argsstring>() const</argsstring>
+        <name>CreateLayoutParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="82" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1af4f4b11bc6e899e1740d500db97ac1c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>CSize</type>
+        <definition>virtual CSize SOUI::SGridLayout::MeasureChildren</definition>
+        <argsstring>(const SWindow *pParent, int nWidth, int nHeight) const</argsstring>
+        <name>MeasureChildren</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="84" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_1aa407921ba725d3ca7f7c88c38d462f3f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SGridLayout::CalcCells</definition>
+        <argsstring>(const SWindow *pParent) const</argsstring>
+        <name>CalcCells</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="98" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SGridLayout</label>
+        <link refid="class_s_o_u_i_1_1_s_grid_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SGridLayout</label>
+        <link refid="class_s_o_u_i_1_1_s_grid_layout"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_xInterval</edgelabel>
+          <edgelabel>m_yInterval</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayout &gt; &gt;</label>
+      </node>
+      <node id="3">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="72" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="71" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1aa407921ba725d3ca7f7c88c38d462f3f" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>CalcCells</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a45fb894e092b2b27c79b65de36a029d2" prot="public" virt="virtual"><scope>SOUI::SGridLayout</scope><name>CreateLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a3206087b9c7a6b2e41d878e613571c68" prot="public" virt="virtual"><scope>SOUI::SGridLayout</scope><name>IsParamAcceptable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1af05dc64a0cdf45484b70d03e320900bc" prot="public" virt="virtual"><scope>SOUI::SGridLayout</scope><name>LayoutChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a4d18965df36de30cdb1f513877da53d3" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_GravityX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a916c98ee769d5192ea2016d3bfe93882" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_GravityY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a988e4adbba1c3b580753ac200d3ce801" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_nCols</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a6b56987d0aeb03dfc00962a94f8de724" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_nRows</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1ab91ea60165ccb73d086329230982d63e" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_xInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1a16cd37b7f336f6f4b3cc486e2c4fffb6" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>m_yInterval</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1af4f4b11bc6e899e1740d500db97ac1c0" prot="public" virt="virtual"><scope>SOUI::SGridLayout</scope><name>MeasureChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1ad8b32a36710ed308b83bbb0e0facbd2c" prot="public" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>SGridLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_1ad7edcb511a542d817186d64ba740fb84" prot="public" virt="non-virtual"><scope>SOUI::SGridLayout</scope><name>~SGridLayout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

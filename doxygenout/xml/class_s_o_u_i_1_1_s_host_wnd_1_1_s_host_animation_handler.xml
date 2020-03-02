@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler" kind="class" language="C++" prot="protected">
+    <compoundname>SOUI::SHostWnd::SHostAnimationHandler</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handler" prot="public" virt="non-virtual">SOUI::ITimelineHandler</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a06c9fa5e72630c2c703178460e23f250" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_transformation" kindref="compound">STransformation</ref></type>
+        <definition>STransformation SOUI::SHostWnd::SHostAnimationHandler::m_hostTransform</definition>
+        <argsstring></argsstring>
+        <name>m_hostTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="186" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a47df0412202cb4a0be04cf75165e86b8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_host_wnd" kindref="compound">SHostWnd</ref> *</type>
+        <definition>SHostWnd* SOUI::SHostWnd::SHostAnimationHandler::m_pHostWnd</definition>
+        <argsstring></argsstring>
+        <name>m_pHostWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="187" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1ae67459c587176f4a68987a788d2be48f" prot="public" static="no" mutable="no">
+        <type>CRect</type>
+        <definition>CRect SOUI::SHostWnd::SHostAnimationHandler::m_rcInit</definition>
+        <argsstring></argsstring>
+        <name>m_rcInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="188" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a5951dbfb784d57608175887407d87721" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SHostWnd::SHostAnimationHandler::OnNextFrame</definition>
+        <argsstring>() override</argsstring>
+        <name>OnNextFrame</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69">OnNextFrame</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="190" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SHostWnd::SHostAnimationHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="33">
+        <label>SOUI::IHostMsgHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_host_msg_handler"/>
+      </node>
+      <node id="28">
+        <label>IDropTarget</label>
+      </node>
+      <node id="12">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="26">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SHostWnd::SHostAnimationHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_hostTransform</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_pHostWnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>SOUI::SDropTargetDispatcher</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_target_dispatcher"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="35">
+        <label>SOUI::IToolTip</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SObject</label>
+      </node>
+      <node id="16">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="25">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="22">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="10">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_timelineHandlerMgr</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>m_dropTarget</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>m_focusMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>SOUI::IMessageFilter</label>
+        <link refid="struct_s_o_u_i_1_1_i_message_filter"/>
+      </node>
+      <node id="3">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="18">
+        <label>IObject</label>
+      </node>
+      <node id="14">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="6">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="protected-inheritance">
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>m_hostAttr</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>m_hostAnimationHandler</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>m_pTipCtrl</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>SOUI::SHostWndAttr</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd_attr"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_szMin</edgelabel>
+          <edgelabel>m_rcMaxInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_strTitle</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="17">
+        <label>IObjRef</label>
+      </node>
+      <node id="13">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="15">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="19">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" line="184" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h" bodystart="183" bodyend="191"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a06c9fa5e72630c2c703178460e23f250" prot="public" virt="non-virtual"><scope>SOUI::SHostWnd::SHostAnimationHandler</scope><name>m_hostTransform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a47df0412202cb4a0be04cf75165e86b8" prot="public" virt="non-virtual"><scope>SOUI::SHostWnd::SHostAnimationHandler</scope><name>m_pHostWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1ae67459c587176f4a68987a788d2be48f" prot="public" virt="non-virtual"><scope>SOUI::SHostWnd::SHostAnimationHandler</scope><name>m_rcInit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_host_wnd_1_1_s_host_animation_handler_1a5951dbfb784d57608175887407d87721" prot="protected" virt="virtual"><scope>SOUI::SHostWnd::SHostAnimationHandler</scope><name>OnNextFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

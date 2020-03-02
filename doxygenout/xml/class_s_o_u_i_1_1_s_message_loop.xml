@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_message_loop" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMessageLoop</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_message_loop_1a6f59f4776461e7d8db81f9e260f13b2d" prot="public" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1_i_message_filter" kindref="compound">IMessageFilter</ref> * &gt;</type>
+        <definition>SArray&lt;IMessageFilter*&gt; SOUI::SMessageLoop::m_aMsgFilter</definition>
+        <argsstring></argsstring>
+        <name>m_aMsgFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="45" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_message_loop_1a3121cbe64d5b95076aee9eb209a8d3c0" prot="public" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1_i_idle_handler" kindref="compound">IIdleHandler</ref> * &gt;</type>
+        <definition>SArray&lt;IIdleHandler*&gt; SOUI::SMessageLoop::m_aIdleHandler</definition>
+        <argsstring></argsstring>
+        <name>m_aIdleHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="46" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_message_loop_1a9aa793d29e8576e8cf859ee2129274a3" prot="public" static="no" mutable="no">
+        <type>MSG</type>
+        <definition>MSG SOUI::SMessageLoop::m_msg</definition>
+        <argsstring></argsstring>
+        <name>m_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="47" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_message_loop_1a74cc82cc7cc9cd083cd19634760858db" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::m_bRunning</definition>
+        <argsstring></argsstring>
+        <name>m_bRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="76" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_message_loop_1ac736e31865810a01169cf47c40a4fb38" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::m_bQuit</definition>
+        <argsstring></argsstring>
+        <name>m_bQuit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="77" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a66888f9fd8758567dc7af6ff9b7ba751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMessageLoop::SMessageLoop</definition>
+        <argsstring>()</argsstring>
+        <name>SMessageLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="39" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a0064cb719c8b83fb438df56ab2c00a04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SMessageLoop::~SMessageLoop</definition>
+        <argsstring>()</argsstring>
+        <name>~SMessageLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="43" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a3e8028df521e3fc549fea17db6e7cadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::AddMessageFilter</definition>
+        <argsstring>(IMessageFilter *pMessageFilter)</argsstring>
+        <name>AddMessageFilter</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_message_filter" kindref="compound">IMessageFilter</ref> *</type>
+          <declname>pMessageFilter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="50" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a2a62b8ec44154bc2be140f1b7e7d4188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::RemoveMessageFilter</definition>
+        <argsstring>(IMessageFilter *pMessageFilter)</argsstring>
+        <name>RemoveMessageFilter</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_message_filter" kindref="compound">IMessageFilter</ref> *</type>
+          <declname>pMessageFilter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1aae02c76dc9ecfbed121dbaed10a4bbd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::AddIdleHandler</definition>
+        <argsstring>(IIdleHandler *pIdleHandler)</argsstring>
+        <name>AddIdleHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_idle_handler" kindref="compound">IIdleHandler</ref> *</type>
+          <declname>pIdleHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a4a44e149bb5c1026f88df852c63c4336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMessageLoop::RemoveIdleHandler</definition>
+        <argsstring>(IIdleHandler *pIdleHandler)</argsstring>
+        <name>RemoveIdleHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_idle_handler" kindref="compound">IIdleHandler</ref> *</type>
+          <declname>pIdleHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a52dcc6c2ceaa5e476c2a560e41e1918b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMessageLoop::PreTranslateMessage</definition>
+        <argsstring>(MSG *pMsg)</argsstring>
+        <name>PreTranslateMessage</name>
+        <param>
+          <type>MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="63" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a75a552cf45a3e9965e153922e70a81f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMessageLoop::OnIdle</definition>
+        <argsstring>(int)</argsstring>
+        <name>OnIdle</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="66" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1aa0bdfb8c49befe223e60c666e190d7af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SMessageLoop::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="68" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a70cf983cfe5cdb418e64e98e85fced2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMessageLoop::IsRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>IsRunning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="70" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a1fa87ad20268ea60ec22e9bbaa64c9d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMessageLoop::OnMsg</definition>
+        <argsstring>(LPMSG pMsg)</argsstring>
+        <name>OnMsg</name>
+        <param>
+          <type>LPMSG</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="72" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a97e4480bf21205d74909fc59b61a19b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SMessageLoop::Quit</definition>
+        <argsstring>()</argsstring>
+        <name>Quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="74" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_loop_1a709d257bd777976d8627a90761b382c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SMessageLoop::IsIdleMessage</definition>
+        <argsstring>(MSG *pMsg)</argsstring>
+        <name>IsIdleMessage</name>
+        <param>
+          <type>MSG *</type>
+          <declname>pMsg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="59" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" line="37" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SMsgLoop.h" bodystart="36" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1aae02c76dc9ecfbed121dbaed10a4bbd3" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>AddIdleHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a3e8028df521e3fc549fea17db6e7cadb" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>AddMessageFilter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a709d257bd777976d8627a90761b382c3" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>IsIdleMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a70cf983cfe5cdb418e64e98e85fced2b" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>IsRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a3121cbe64d5b95076aee9eb209a8d3c0" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>m_aIdleHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a6f59f4776461e7d8db81f9e260f13b2d" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>m_aMsgFilter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1ac736e31865810a01169cf47c40a4fb38" prot="protected" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>m_bQuit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a74cc82cc7cc9cd083cd19634760858db" prot="protected" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>m_bRunning</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a9aa793d29e8576e8cf859ee2129274a3" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>m_msg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a75a552cf45a3e9965e153922e70a81f3" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>OnIdle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a1fa87ad20268ea60ec22e9bbaa64c9d2" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>OnMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a52dcc6c2ceaa5e476c2a560e41e1918b" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>PreTranslateMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a97e4480bf21205d74909fc59b61a19b3" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>Quit</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a4a44e149bb5c1026f88df852c63c4336" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>RemoveIdleHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a2a62b8ec44154bc2be140f1b7e7d4188" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>RemoveMessageFilter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1aa0bdfb8c49befe223e60c666e190d7af" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>Run</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a66888f9fd8758567dc7af6ff9b7ba751" prot="public" virt="non-virtual"><scope>SOUI::SMessageLoop</scope><name>SMessageLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_message_loop_1a0064cb719c8b83fb438df56ab2c00a04" prot="public" virt="virtual"><scope>SOUI::SMessageLoop</scope><name>~SMessageLoop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

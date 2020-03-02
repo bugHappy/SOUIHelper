@@ -1,0 +1,1468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_application" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SApplication</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton" prot="public" virt="non-virtual">SOUI::SSingleton&lt; SApplication &gt;</basecompoundref>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_res_provider_mgr" prot="public" virt="non-virtual">SOUI::SResProviderMgr</basecompoundref>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_object_factory_mgr" prot="public" virt="non-virtual">SOUI::SObjectFactoryMgr</basecompoundref>
+    <includes refid="_s_app_8h" local="no">SApp.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_application_1ab8970636265a1971716241bf7c75d6d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SMessageLoop</definition>
+        <argsstring></argsstring>
+        <name>SMessageLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="310" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a911b09f0701aeffb8d3d9c75e89b1640" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_real_wnd_handler" kindref="compound">IRealWndHandler</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IRealWndHandler&gt; SOUI::SApplication::m_pRealWndHandler</definition>
+        <argsstring></argsstring>
+        <name>m_pRealWndHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="320" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a4f38329a7b96529d37563440ecf00c16" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_script_factory" kindref="compound">IScriptFactory</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IScriptFactory&gt; SOUI::SApplication::m_pScriptFactory</definition>
+        <argsstring></argsstring>
+        <name>m_pScriptFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="321" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a187e5e5d537ef70be8574b7eaa26225e" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IRenderFactory&gt; SOUI::SApplication::m_RenderFactory</definition>
+        <argsstring></argsstring>
+        <name>m_RenderFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="322" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a37fd920f2107ea7a175bb8b3b2625910" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_translator_mgr" kindref="compound">ITranslatorMgr</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;ITranslatorMgr&gt; SOUI::SApplication::m_translator</definition>
+        <argsstring></argsstring>
+        <name>m_translator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="323" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a3c0292333257320c773c2f645965acd0" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_tool_tip_factory" kindref="compound">IToolTipFactory</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IToolTipFactory&gt; SOUI::SApplication::m_tooltipFactory</definition>
+        <argsstring></argsstring>
+        <name>m_tooltipFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="324" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1ace67215a9694dc53ce733eff98e94720" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IMsgLoopFactory &gt;</type>
+        <definition>SAutoRefPtr&lt;IMsgLoopFactory&gt; SOUI::SApplication::m_msgLoopFactory</definition>
+        <argsstring></argsstring>
+        <name>m_msgLoopFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="325" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1aac25d7c3ce674304598ae9c167d53c41" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_log4z_manager" kindref="compound">ILog4zManager</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;ILog4zManager&gt; SOUI::SApplication::m_logManager</definition>
+        <argsstring></argsstring>
+        <name>m_logManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="326" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a26ab54eb2b8c7e99d768494a2ff8faeb" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_attr_storage_factory" kindref="compound">IAttrStorageFactory</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IAttrStorageFactory&gt; SOUI::SApplication::m_pAttrStroageFactory</definition>
+        <argsstring></argsstring>
+        <name>m_pAttrStroageFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="327" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a3defe63e7a622ffafb72f0bd32da6eb0" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_named_i_d" kindref="compound">SNamedID</ref></type>
+        <definition>SNamedID SOUI::SApplication::m_namedID</definition>
+        <argsstring></argsstring>
+        <name>m_namedID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="329" column="37" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a558b54c658ab53f2ccb58081c8ab7d32" prot="protected" static="no" mutable="no">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::SApplication::m_strAppDir</definition>
+        <argsstring></argsstring>
+        <name>m_strAppDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="331" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a3e2d706a3d021dcf20500a7f5a663f63" prot="protected" static="no" mutable="no">
+        <type>HINSTANCE</type>
+        <definition>HINSTANCE SOUI::SApplication::m_hInst</definition>
+        <argsstring></argsstring>
+        <name>m_hInst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="332" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a226456370671e83e9168d0aec1d8e260" prot="protected" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND SOUI::SApplication::m_hMainWnd</definition>
+        <argsstring></argsstring>
+        <name>m_hMainWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="333" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a9ee369d53ac92e80342caa9c6580e638" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+        <definition>SMessageLoop* SOUI::SApplication::m_pMsgLoop</definition>
+        <argsstring></argsstring>
+        <name>m_pMsgLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="335" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a8ad1ea97431ef7fbf29d15c42f17e1b9" prot="protected" static="no" mutable="no">
+        <type>SList&lt; <ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> * &gt;</type>
+        <definition>SList&lt;SMessageLoop*&gt; SOUI::SApplication::m_lstMsgLoop</definition>
+        <argsstring></argsstring>
+        <name>m_lstMsgLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="336" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_application_1a6e135fc0558935e0e5930336799890b9" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SOUI::SApplication::m_pSingletons[SINGLETON_COUNT]</definition>
+        <argsstring>[SINGLETON_COUNT]</argsstring>
+        <name>m_pSingletons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="339" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a13a5165fd61dc27a67aa73ef147a7664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SApplication::SApplication</definition>
+        <argsstring>(IRenderFactory *pRendFactory, HINSTANCE hInst, LPCTSTR pszHostClassName=_T(&quot;SOUIHOST&quot;), const ISystemObjectRegister &amp;sysObjRegister=SObjectDefaultRegister(), BOOL bImeApp=FALSE)</argsstring>
+        <name>SApplication</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> *</type>
+          <declname>pRendFactory</declname>
+        </param>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInst</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszHostClassName</declname>
+          <defval>_T(&quot;SOUIHOST&quot;)</defval>
+        </param>
+        <param>
+          <type>const ISystemObjectRegister &amp;</type>
+          <declname>sysObjRegister</declname>
+          <defval><ref refid="class_s_o_u_i_1_1_s_object_default_register" kindref="compound">SObjectDefaultRegister</ref>()</defval>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bImeApp</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_application" kindref="compound">SApplication</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRendFactory <ndash/> 渲染模块 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>HINSTANCE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hInst <ndash/> 应用程序句柄 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszHostClassName <ndash/> 使用SOUI创建窗口时默认的窗口类名 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ISystemObjectRegister</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pSysObjRegister <ndash/> 系统控件注册器</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="106" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a6a1410243d301cbf83d082ae2515cfd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SApplication::~SApplication</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SApplication</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="108" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ac9891463b82d5f7db9ca8257b19759ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HINSTANCE</type>
+        <definition>HINSTANCE SOUI::SApplication::GetInstance</definition>
+        <argsstring>()</argsstring>
+        <name>GetInstance</name>
+        <briefdescription>
+<para>获得应用程序句柄 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetInstance <simplesect kind="return"><para>HINSTANCE</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="118" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a0bad1c0f63094a54ad0ac8abfbe54275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::InitXmlNamedID</definition>
+        <argsstring>(const SNamedID::NAMEDVALUE *pNamedValue, int nCount, BOOL bSorted)</argsstring>
+        <name>InitXmlNamedID</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_t_n_a_m_e_d_v_a_l_u_e" kindref="compound">SNamedID::NAMEDVALUE</ref> *</type>
+          <declname>pNamedValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCount</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bSorted</declname>
+        </param>
+        <briefdescription>
+<para>从数组里初始化命名ID列表 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Init <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>SNamedID::NAMEDVALUE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pValue <ndash/> 数组 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nCount <ndash/> 数组长度 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bSorted <ndash/> 数组关键字从小到大已经有序</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe SNamedID::NAMEDVALUE应该是由uiresbuilder自动生成的列表数据，不要手动修改 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="130" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a55d9b57c969199680b74f9dae30f8e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT</type>
+        <definition>UINT SOUI::SApplication::LoadSystemNamedResource</definition>
+        <argsstring>(IResProvider *pResProvider)</argsstring>
+        <name>LoadSystemNamedResource</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+        </param>
+        <briefdescription>
+<para>加载SOUI系统默认的命名资源 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadSystemNamedResource <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pResProvider <ndash/> <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UINT</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="140" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a36ef5fbc770af448a51a5f6bcb7c013e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SApplication::LoadXmlDocment</definition>
+        <argsstring>(pugi::xml_document &amp;xmlDoc, const SStringT &amp;strResId)</argsstring>
+        <name>LoadXmlDocment</name>
+        <param>
+          <type>pugi::xml_document &amp;</type>
+          <declname>xmlDoc</declname>
+        </param>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strResId</declname>
+        </param>
+        <briefdescription>
+<para>从资源中加载一个XML Document。 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LoadXmlDocment <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">pugi::xml_document</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; xmlDoc <ndash/> 输出的xml_document对象 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringT &amp; strResId <ndash/> XML文件在资源中的type:name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL true-加载成功, false-加载失败</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="151" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a77dd6c15d88adc9cac10c5e6ab5f8219" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_animation" kindref="compound">IAnimation</ref> *</type>
+        <definition>IAnimation* SOUI::SApplication::LoadAnimation</definition>
+        <argsstring>(const SStringT &amp;strResId)</argsstring>
+        <name>LoadAnimation</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strResId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="153" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a196e5896eecf5a3435631ea0d766f986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+        <definition>IValueAnimator* SOUI::SApplication::LoadValueAnimator</definition>
+        <argsstring>(const SStringT &amp;strResId)</argsstring>
+        <name>LoadValueAnimator</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strResId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="155" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a387e5a0ad4d6b2a27606fef901bde158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> *</type>
+        <definition>IRenderFactory* SOUI::SApplication::GetRenderFactory</definition>
+        <argsstring>()</argsstring>
+        <name>GetRenderFactory</name>
+        <briefdescription>
+<para>获得当前的渲染模块 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRenderFactory <simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> * 渲染模块指针</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="163" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ad0357221506067df973f3b0f852207a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::SApplication::CreateScriptModule</definition>
+        <argsstring>(IScriptModule **ppScriptModule)</argsstring>
+        <name>CreateScriptModule</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_script_module" kindref="compound">IScriptModule</ref> **</type>
+          <declname>ppScriptModule</declname>
+        </param>
+        <briefdescription>
+<para>创建脚本模块对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetScriptModule <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_i_script_module" kindref="compound">IScriptModule</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>**ppScriptModule <ndash/> 脚本模块对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT <ndash/> S_OK 创建成功</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="173" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1aefc94028f4f46d71fb3a010432ca9240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetScriptFactory</definition>
+        <argsstring>(IScriptFactory *pScriptModule)</argsstring>
+        <name>SetScriptFactory</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_script_factory" kindref="compound">IScriptFactory</ref> *</type>
+          <declname>pScriptModule</declname>
+        </param>
+        <briefdescription>
+<para>设置SOUI中使用的脚本模块类厂 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetScriptModule <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_script_factory" kindref="compound">IScriptFactory</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pScriptModule <ndash/> 脚本模块类厂 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="183" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1adce359c79126f3134846387ef8d03e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_translator_mgr" kindref="compound">ITranslatorMgr</ref> *</type>
+        <definition>ITranslatorMgr* SOUI::SApplication::GetTranslator</definition>
+        <argsstring>()</argsstring>
+        <name>GetTranslator</name>
+        <briefdescription>
+<para>获取语言翻译模块 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetTranslator <simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref> * 语言翻译模块指针</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="193" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a35efd288bf2037fff09e383f0f9ae017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetTranslator</definition>
+        <argsstring>(ITranslatorMgr *pTrans)</argsstring>
+        <name>SetTranslator</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_translator_mgr" kindref="compound">ITranslatorMgr</ref> *</type>
+          <declname>pTrans</declname>
+        </param>
+        <briefdescription>
+<para>设置语言翻译模块 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetTranslator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pTrans <ndash/> 语言翻译模块指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="203" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a39e2b77a85c748459b1ddf060cd5139f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_real_wnd_handler" kindref="compound">IRealWndHandler</ref> *</type>
+        <definition>IRealWndHandler* SOUI::SApplication::GetRealWndHander</definition>
+        <argsstring>()</argsstring>
+        <name>GetRealWndHander</name>
+        <briefdescription>
+<para>获得RealWndHander </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetRealWndHander <simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_real_wnd_handler" kindref="compound">IRealWndHandler</ref> * <ndash/> RealWndHander Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="211" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a5e63d2366d686243a71f276b5e04bcc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetRealWndHandler</definition>
+        <argsstring>(IRealWndHandler *pRealHandler)</argsstring>
+        <name>SetRealWndHandler</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_real_wnd_handler" kindref="compound">IRealWndHandler</ref> *</type>
+          <declname>pRealHandler</declname>
+        </param>
+        <briefdescription>
+<para>设置RealWnd处理接口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetRealWndHandler <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_real_wnd_handler" kindref="compound">IRealWndHandler</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRealHandler <ndash/> RealWnd处理接口 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="220" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a5f57ca36f1866ded2a4ce59b1ebcf0a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_tool_tip_factory" kindref="compound">IToolTipFactory</ref> *</type>
+        <definition>IToolTipFactory* SOUI::SApplication::GetToolTipFactory</definition>
+        <argsstring>()</argsstring>
+        <name>GetToolTipFactory</name>
+        <briefdescription>
+<para>获取ToolTip处理接口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetToolTipFactory <simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_tool_tip_factory" kindref="compound">IToolTipFactory</ref> * <ndash/> ToolTip处理接口 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="228" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ac540f9f6dce91fe37424a58703c17748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetToolTipFactory</definition>
+        <argsstring>(IToolTipFactory *pToolTipFac)</argsstring>
+        <name>SetToolTipFactory</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_tool_tip_factory" kindref="compound">IToolTipFactory</ref> *</type>
+          <declname>pToolTipFac</declname>
+        </param>
+        <briefdescription>
+<para>设置ToolTip处理接口 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetToolTipFactory <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_tool_tip_factory" kindref="compound">IToolTipFactory</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pToolTipFac <ndash/> ToolTip处理接口 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void <ndash/> Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="237" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1abcad529d69dca1c3eb08ef3966ea06f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SApplication::SetMsgLoopFactory</definition>
+        <argsstring>(IMsgLoopFactory *pMsgLoopFac)</argsstring>
+        <name>SetMsgLoopFactory</name>
+        <param>
+          <type>IMsgLoopFactory *</type>
+          <declname>pMsgLoopFac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="239" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1afb0e993b343a710f7091c976de862052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IMsgLoopFactory *</type>
+        <definition>IMsgLoopFactory* SOUI::SApplication::GetMsgLoopFactory</definition>
+        <argsstring>()</argsstring>
+        <name>GetMsgLoopFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="241" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a229f35d063c0afb852f1ddb39e9ca90c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+        <definition>SMessageLoop* SOUI::SApplication::GetMsgLoop</definition>
+        <argsstring>()</argsstring>
+        <name>GetMsgLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="243" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a78a2a8d6189b0b05aaac0cc87fdbd50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetLogManager</definition>
+        <argsstring>(ILog4zManager *pLogMgr)</argsstring>
+        <name>SetLogManager</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_log4z_manager" kindref="compound">ILog4zManager</ref> *</type>
+          <declname>pLogMgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="245" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a2077d13d454f22302633edf0305ed342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_log4z_manager" kindref="compound">ILog4zManager</ref> *</type>
+        <definition>ILog4zManager* SOUI::SApplication::GetLogManager</definition>
+        <argsstring>()</argsstring>
+        <name>GetLogManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="247" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a08500f1adb4557931399b7d843eedace" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetAttrStorageFactory</definition>
+        <argsstring>(IAttrStorageFactory *pAttrStorageFactory)</argsstring>
+        <name>SetAttrStorageFactory</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_attr_storage_factory" kindref="compound">IAttrStorageFactory</ref> *</type>
+          <declname>pAttrStorageFactory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="249" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a3c1e1059a350a4e920a655080f2ad4d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_attr_storage_factory" kindref="compound">IAttrStorageFactory</ref> *</type>
+        <definition>IAttrStorageFactory* SOUI::SApplication::GetAttrStorageFactory</definition>
+        <argsstring>()</argsstring>
+        <name>GetAttrStorageFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="250" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ad58a6bfa11a41d6b96faeca30d371298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SApplication::Run</definition>
+        <argsstring>(HWND hMainWnd)</argsstring>
+        <name>Run</name>
+        <param>
+          <type>HWND</type>
+          <declname>hMainWnd</declname>
+        </param>
+        <briefdescription>
+<para>启动SOUI的主消息循环 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Run <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HWND</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hMainWnd <ndash/> 应用程序主窗口句柄 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 消息循环结束时的返回值</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="260" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a027115f59a2e45035f640c229c04eee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::SetAppDir</definition>
+        <argsstring>(const SStringT &amp;strAppDir)</argsstring>
+        <name>SetAppDir</name>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strAppDir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="262" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a50535e33c0810e0df97ca8589074bb7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::SApplication::GetAppDir</definition>
+        <argsstring>() const</argsstring>
+        <name>GetAppDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="264" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a638df131df85116aea75c5276854f684" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND SOUI::SApplication::GetMainWnd</definition>
+        <argsstring>()</argsstring>
+        <name>GetMainWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="266" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1af1b6c24791bcb12db65759b6a6ef394c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SApplication::RegisterWindowClass</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterWindowClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="269" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="269" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a41ad413e27690032203341467f31149e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SApplication::UnregisterWindowClass</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterWindowClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="276" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a119a6a3e79b5e02f9f526d1af83f5ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SApplication::RegisterSkinClass</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterSkinClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="282" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="282" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1aa7dfbb85c306c266834d63c98deb4809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool SOUI::SApplication::UnregisterSkinClass</definition>
+        <argsstring>()</argsstring>
+        <name>UnregisterSkinClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="289" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="289" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a805d69211e304645c205c9abae7aeb31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SApplication::Str2ID</definition>
+        <argsstring>(const SStringW &amp;str)</argsstring>
+        <name>Str2ID</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="295" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a8671ed6367efc97a4cea412da3509f35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SApplication::tr</definition>
+        <argsstring>(const SStringW &amp;strSrc, const SStringW &amp;strCtx) const</argsstring>
+        <name>tr</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strSrc</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strCtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="297" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a6fe93076242e71410f5a195b54a956d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>virtual SWindow* SOUI::SApplication::CreateWindowByName</definition>
+        <argsstring>(LPCWSTR pszWndClass) const</argsstring>
+        <name>CreateWindowByName</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszWndClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="298" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a860ebf1767df98c23be3c65f28294207" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>virtual ISkinObj* SOUI::SApplication::CreateSkinByName</definition>
+        <argsstring>(LPCWSTR pszSkinClass) const</argsstring>
+        <name>CreateSkinByName</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszSkinClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="299" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a77ad235ed3132ed937e400884ac3a62e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IInterpolator *</type>
+        <definition>virtual IInterpolator* SOUI::SApplication::CreateInterpolatorByName</definition>
+        <argsstring>(LPCWSTR pszName) const</argsstring>
+        <name>CreateInterpolatorByName</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="300" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1aef4011ee0a414be4263e10dc46d519e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_animation" kindref="compound">IAnimation</ref> *</type>
+        <definition>virtual IAnimation* SOUI::SApplication::CreateAnimationByName</definition>
+        <argsstring>(LPCWSTR pszName) const</argsstring>
+        <name>CreateAnimationByName</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="301" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a91a0e0a067723146d8e1c484974c9e5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_value_animator" kindref="compound">IValueAnimator</ref> *</type>
+        <definition>virtual IValueAnimator* SOUI::SApplication::CreateValueAnimatorByName</definition>
+        <argsstring>(LPCWSTR pszName) const</argsstring>
+        <name>CreateValueAnimatorByName</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="302" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a6ad15931f9cf3630b1e27093589e3f83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_acc_proxy" kindref="compound">IAccProxy</ref> *</type>
+        <definition>virtual IAccProxy* SOUI::SApplication::CreateAccProxy</definition>
+        <argsstring>(SWindow *pWnd) const</argsstring>
+        <name>CreateAccProxy</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="304" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a0c6fe19d18b732ac31f808244fcdf2c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IAccessible *</type>
+        <definition>virtual IAccessible* SOUI::SApplication::CreateAccessible</definition>
+        <argsstring>(SWindow *pWnd) const</argsstring>
+        <name>CreateAccessible</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="305" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ada5897d02c0b645b8c6777db84cd41e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* SOUI::SApplication::GetInnerSingleton</definition>
+        <argsstring>(int nType)</argsstring>
+        <name>GetInnerSingleton</name>
+        <param>
+          <type>int</type>
+          <declname>nType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="307" column="7"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1ae74b73366bf72fa49ed294eeaa57ed53" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::PushMsgLoop</definition>
+        <argsstring>(SMessageLoop *pMsgLoop)</argsstring>
+        <name>PushMsgLoop</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+          <declname>pMsgLoop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="311" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a637439bd3055a68a60431e7a38e2322e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+        <definition>SMessageLoop* SOUI::SApplication::PopMsgLoop</definition>
+        <argsstring>()</argsstring>
+        <name>PopMsgLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="312" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1aabb796c12312925014d761d89492e3be" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SApplication::RegisterSystemObjects</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterSystemObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="314" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a5955a174cbd706a221596526a71cdb26" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::_CreateSingletons</definition>
+        <argsstring>(HINSTANCE hInst, LPCTSTR pszHostClassName, BOOL bImeApp)</argsstring>
+        <name>_CreateSingletons</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInst</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszHostClassName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bImeApp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="316" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a0ca6b54c4278c2414d50e8966bad41f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SApplication::_DestroySingletons</definition>
+        <argsstring>()</argsstring>
+        <name>_DestroySingletons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="317" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_application_1a6611ce543f75c0a5708f727cc269d5b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SApplication::_LoadXmlDocment</definition>
+        <argsstring>(LPCTSTR pszXmlName, LPCTSTR pszType, pugi::xml_document &amp;xmlDoc, IResProvider *pResProvider=NULL)</argsstring>
+        <name>_LoadXmlDocment</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszXmlName</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszType</declname>
+        </param>
+        <param>
+          <type>pugi::xml_document &amp;</type>
+          <declname>xmlDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_res_provider" kindref="compound">IResProvider</ref> *</type>
+          <declname>pResProvider</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="318" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref> Application </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <ref refid="namespace_s_o_u_i" kindref="compound">SOUI</ref> Application </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SSingleton&lt; SApplication &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SResProviderMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_res_provider_mgr"/>
+      </node>
+      <node id="5">
+        <label>SOUI::SCmnMap&lt; SObjectFactoryPtr, SObjectInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SObjectFactoryMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory_mgr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SApplication</label>
+        <link refid="class_s_o_u_i_1_1_s_application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SSingleton&lt; SApplication &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ms_Singleton</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SNamedValue&lt; int, SIntParser &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_named_value"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SResProviderMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_res_provider_mgr"/>
+      </node>
+      <node id="8">
+        <label>SOUI::SMessageLoop</label>
+        <link refid="class_s_o_u_i_1_1_s_message_loop"/>
+      </node>
+      <node id="5">
+        <label>SOUI::SCmnMap&lt; SObjectFactoryPtr, SObjectInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SObjectFactoryMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_object_factory_mgr"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SApplication</label>
+        <link refid="class_s_o_u_i_1_1_s_application"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_namedID</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_pMsgLoop</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SNamedID</label>
+        <link refid="class_s_o_u_i_1_1_s_named_i_d"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" line="94" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/SApp.h" bodystart="91" bodyend="340"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_application_1a5955a174cbd706a221596526a71cdb26" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>_CreateSingletons</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a0ca6b54c4278c2414d50e8966bad41f9" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>_DestroySingletons</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a6611ce543f75c0a5708f727cc269d5b6" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>_LoadXmlDocment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a383a09f9c4047e20e41fed178f38b758" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>AddResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a4adf38205da865ad257f5f3c44016968" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>AddStandardFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a72e91cdb71cf221b4f30d8142e62d4a2" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>BaseObjectInfoFromObjectInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a0c6fe19d18b732ac31f808244fcdf2c5" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a6ad15931f9cf3630b1e27093589e3f83" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1aef4011ee0a414be4263e10dc46d519e5" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateAnimationByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a77ad235ed3132ed937e400884ac3a62e" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateInterpolatorByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a49feaa3977cb6ac964f5abe92f5f0de0" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>CreateObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ad0357221506067df973f3b0f852207a3" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>CreateScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a860ebf1767df98c23be3c65f28294207" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateSkinByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a91a0e0a067723146d8e1c484974c9e5c" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateValueAnimatorByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a6fe93076242e71410f5a195b54a956d0" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>CreateWindowByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1abb84fabe7fefe1cfd5961e6617b630a0" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>CURSORMAP</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a50535e33c0810e0df97ca8589074bb7f" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetAppDir</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a3c1e1059a350a4e920a655080f2ad4d6" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetAttrStorageFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a312827c531941dd7afbf6919cda24be6" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad091b954246c5d3be1a8bbe39644d021" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a8876694d825d648f139a85dba72a44f3" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetHeadResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ada5897d02c0b645b8c6777db84cd41e8" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetInnerSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ac9891463b82d5f7db9ca8257b19759ca" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetInstance</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1afd7e77af148a9d8651347a08826a51b8" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetLayoutSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1aba0749d72f53d0b649d248b484de5372" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetLayoutSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a2077d13d454f22302633edf0305ed342" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetLogManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a638df131df85116aea75c5276854f684" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetMainWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a08954df813669fbf1d3109c04f1ca381" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetMatchResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a229f35d063c0afb852f1ddb39e9ca90c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1afb0e993b343a710f7091c976de862052" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetMsgLoopFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3edadaf89844db2bcf05b7d329deca76" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetRawBuffer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a716c193d0c60e70de2f5b6ad9005fe69" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetRawBufferSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a39e2b77a85c748459b1ddf060cd5139f" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetRealWndHander</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a387e5a0ad4d6b2a27606fef901bde158" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetRenderFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1a764c236d85f4041a0f0ad4aa949cc0ab" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1aea3a33fb5d566ac0f41519d4e21c545a" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ac761e55e4d5c268ff410b8159be29409" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ae96cf45cd060e9478a9ea8c57a42d7bf" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a006c654916090e33a709f20cdc1e649c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetTailResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a5f57ca36f1866ded2a4ce59b1ebcf0a1" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetToolTipFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1adce359c79126f3134846387ef8d03e68" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>GetTranslator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3781921d4cc28e8a1e193511c3f16257" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>HasResource</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a0bad1c0f63094a54ad0ac8abfbe54275" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>InitXmlNamedID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ab6e55e8041f81050c5a6f102f64ec9b4" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>IsFileType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a77dd6c15d88adc9cac10c5e6ab5f8219" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a0f6307d2ab4fc8d7d493435a67612809" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadBitmap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1acfd9fd7a6b3cf0012bafbe9e8af4565c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ab9280d587217b5b0d3d9d0ed51127440" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadIcon</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a0432855c01b093cdb63c0870f25f850b" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadIcon2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1adfb85c2231b9dd8330e39c0cf39adf48" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadImage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad5c22e57015ff5d8e5a78f33517efd33" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadImage2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3ae6374b2036a760bb99defb9e77bf62" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadImgX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a55d9b57c969199680b74f9dae30f8e37" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadSystemNamedResource</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a196e5896eecf5a3435631ea0d766f986" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadValueAnimator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a36ef5fbc770af448a51a5f6bcb7c013e" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>LoadXmlDocment</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ac6bc0f580d4e1771e81db0813df33086" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_cs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a3e2d706a3d021dcf20500a7f5a663f63" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_hInst</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a226456370671e83e9168d0aec1d8e260" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_hMainWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1aac25d7c3ce674304598ae9c167d53c41" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_logManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a8ad1ea97431ef7fbf29d15c42f17e1b9" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_lstMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a4b314fc4ad9397d3f217ec3dac76c496" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_lstResPackage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a34f2b3f7ff96ce4a125e0742d1409955" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_mapCachedCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ace67215a9694dc53ce733eff98e94720" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_msgLoopFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a3defe63e7a622ffafb72f0bd32da6eb0" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_namedID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a26ab54eb2b8c7e99d768494a2ff8faeb" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pAttrStroageFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a9ee369d53ac92e80342caa9c6580e638" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a911b09f0701aeffb8d3d9c75e89b1640" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pRealWndHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a4f38329a7b96529d37563440ecf00c16" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pScriptFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a6e135fc0558935e0e5930336799890b9" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_pSingletons</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a187e5e5d537ef70be8574b7eaa26225e" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_RenderFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a558b54c658ab53f2ccb58081c8ab7d32" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_strAppDir</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a3c0292333257320c773c2f645965acd0" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_tooltipFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a37fd920f2107ea7a175bb8b3b2625910" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>m_translator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1a6798b6f18b844c695d19a050fed460da" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>ms_Singleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a489a49869098f00254f9f44970419243" prot="protected" virt="virtual"><scope>SOUI::SApplication</scope><name>OnCreateUnknownObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a19d079d4162b27a8c81b71477e0324dd" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>OnFactoryRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a637439bd3055a68a60431e7a38e2322e" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>PopMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ae74b73366bf72fa49ed294eeaa57ed53" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>PushMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a85b403eab698256d86b8ddc183899091" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>RegisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a119a6a3e79b5e02f9f526d1af83f5ba4" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>RegisterSkinClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1aabb796c12312925014d761d89492e3be" prot="protected" virt="virtual"><scope>SOUI::SApplication</scope><name>RegisterSystemObjects</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1af1b6c24791bcb12db65759b6a6ef394c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>RegisterWindowClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a3869b794c7cddcfa866c63efceac1e3f" prot="public" virt="non-virtual" ambiguityscope="SOUI::"><scope>SOUI::SApplication</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual" ambiguityscope="SOUI::SObjectFactoryMgr::"><scope>SOUI::SApplication</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a6d25dc8a71e8737c5911a14747181fa3" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>RemoveResProvider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ad58a6bfa11a41d6b96faeca30d371298" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>Run</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a13a5165fd61dc27a67aa73ef147a7664" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SApplication</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a027115f59a2e45035f640c229c04eee2" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetAppDir</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a08500f1adb4557931399b7d843eedace" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetAttrStorageFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a78a2a8d6189b0b05aaac0cc87fdbd50b" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetLogManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1abcad529d69dca1c3eb08ef3966ea06f7" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetMsgLoopFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a5e63d2366d686243a71f276b5e04bcc2" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetRealWndHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1aefc94028f4f46d71fb3a010432ca9240" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetScriptFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a25cd80a74163fe637d5e16c8cd4d327d" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetSwndDefAttr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ac540f9f6dce91fe37424a58703c17748" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetToolTipFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a35efd288bf2037fff09e383f0f9ae017" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SetTranslator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1ab8970636265a1971716241bf7c75d6d0" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SMessageLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1ae85dc3432e7c8dbc2d035cd3cbf60108" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SObjectFactoryMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a6f539037be4407bdf4ed61f06d09f21e" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SResProviderMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1ae300c684202ae44b96870043a08c42de" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a805d69211e304645c205c9abae7aeb31" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>Str2ID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1ad30b1e3c5ac87df2939c1eadbbe43178" prot="protected" virt="non-virtual"><scope>SOUI::SApplication</scope><name>SysCursorName2ID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1ac13ae6ddde184c9eb8d23f68dac0636a" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>TplRegisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a2fcdfc4dc029666d7ea5c4f7240b95e7" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>TplUnregisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a8671ed6367efc97a4cea412da3509f35" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_object_factory_mgr_1a375b718cf8ded9a4c801df674c43215d" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>UnregisterFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1aa7dfbb85c306c266834d63c98deb4809" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>UnregisterSkinClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a41ad413e27690032203341467f31149e" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>UnregisterWindowClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_application_1a6a1410243d301cbf83d082ae2515cfd7" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>~SApplication</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>~SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_res_provider_mgr_1a47cab73b81a68b20c7f8862b6f9aa7e5" prot="public" virt="non-virtual"><scope>SOUI::SApplication</scope><name>~SResProviderMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton_1abb26a63f225ec36d5d4376d695b9e2fa" prot="public" virt="virtual"><scope>SOUI::SApplication</scope><name>~SSingleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

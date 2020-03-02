@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_img_frame" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IImgFrame</compoundname>
+    <includes refid="_s_img_decoder-i_8h" local="no">SImgDecoder-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_frame_1a0f22016f6644d1eb439c257b5c7cd4d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IImgFrame::GetSize</definition>
+        <argsstring>(UINT *pWid, UINT *pHei)=0</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>UINT *</type>
+          <declname>pWid</declname>
+        </param>
+        <param>
+          <type>UINT *</type>
+          <declname>pHei</declname>
+        </param>
+        <briefdescription>
+<para>get image size in pixel </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetSize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pWid <ndash/> image width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pHei <ndash/> image height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE: succeed; FALSE: failed Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="36" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_frame_1a011d9e71d2ad22f32f853d179ad3aeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IImgFrame::CopyPixels</definition>
+        <argsstring>(const RECT *prc, UINT cbStride, UINT cbBufferSize, BYTE *pbBuffer)=0</argsstring>
+        <name>CopyPixels</name>
+        <param>
+          <type>const RECT *</type>
+          <declname>prc</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>cbStride</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>cbBufferSize</declname>
+        </param>
+        <param>
+          <type>BYTE *</type>
+          <declname>pbBuffer</declname>
+        </param>
+        <briefdescription>
+<para>copy pixel data to the output buffer </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CopyPixels <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RECT * prc <ndash/> The rectangle to copy. A NULL value specifies the entire bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cbStride <ndash/> The stride of the bitmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cbBufferSize <ndash/> The size of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pbBuffer <ndash/> A pointer to the buffer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL TRUE if successful, or FALSE otherwise. Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="48" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_img_frame_1aa9ba560b28adbd7a574c74f401c6398e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IImgFrame::GetDelay</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetDelay</name>
+        <briefdescription>
+<para>get delay for a frame of a gif image </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetDelay <simplesect kind="return"><para>int time in MS*10 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="60" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a image frame </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" line="27" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SImgDecoder-i.h" bodystart="26" bodyend="61"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_img_frame_1a011d9e71d2ad22f32f853d179ad3aeed" prot="public" virt="pure-virtual"><scope>SOUI::IImgFrame</scope><name>CopyPixels</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_frame_1aa9ba560b28adbd7a574c74f401c6398e" prot="public" virt="pure-virtual"><scope>SOUI::IImgFrame</scope><name>GetDelay</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_img_frame_1a0f22016f6644d1eb439c257b5c7cd4d4" prot="public" virt="pure-virtual"><scope>SOUI::IImgFrame</scope><name>GetSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

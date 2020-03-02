@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ILog4zManager::IOutputFileBuilder</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1abb2ac35f27f854672a7e25e56e06c6af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::IOutputFileBuilder::monthDir</definition>
+        <argsstring>() const =0</argsstring>
+        <name>monthDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="36" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1ab35c63aa878f09c54ee11839c83275a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::IOutputFileBuilder::dayLog</definition>
+        <argsstring>() const =0</argsstring>
+        <name>dayLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="39" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1a497c05a91ee6ee87861b2fc46f11333a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::ILog4zManager::IOutputFileBuilder::buildOutputFile</definition>
+        <argsstring>(char *pszFileName, int nLen, tm time, const char *pszLogName, unsigned long pid, int curFileIndex) const =0</argsstring>
+        <name>buildOutputFile</name>
+        <param>
+          <type>char *</type>
+          <declname>pszFileName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <param>
+          <type>tm</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pszLogName</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>curFileIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="43" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" line="34" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/slog-i.h" bodystart="33" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1a497c05a91ee6ee87861b2fc46f11333a" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager::IOutputFileBuilder</scope><name>buildOutputFile</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1ab35c63aa878f09c54ee11839c83275a2" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager::IOutputFileBuilder</scope><name>dayLog</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_log4z_manager_1_1_i_output_file_builder_1abb2ac35f27f854672a7e25e56e06c6af" prot="public" virt="pure-virtual"><scope>SOUI::ILog4zManager::IOutputFileBuilder</scope><name>monthDir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

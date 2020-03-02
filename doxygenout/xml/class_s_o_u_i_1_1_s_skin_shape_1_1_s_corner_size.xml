@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size" kind="class" language="C++" prot="private">
+    <compoundname>SOUI::SSkinShape::SCornerSize</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; IObjRef &gt;</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a2d092df5b3bbcdd2d6e3b62aac7c0ad4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SSkinShape::SCornerSize::m_radiusX</definition>
+        <argsstring></argsstring>
+        <name>m_radiusX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="400" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a79aa9edbab6a4aa00b088767a52f97f3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SSkinShape::SCornerSize::m_radiusY</definition>
+        <argsstring></argsstring>
+        <name>m_radiusY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="400" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a5a1d372253a4e9750cd9a754a49b0836" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::SSkinShape::SCornerSize::OnAttrRadius</definition>
+        <argsstring>(const SStringW strValue, BOOL bLoading)</argsstring>
+        <name>OnAttrRadius</name>
+        <param>
+          <type>const SStringW</type>
+          <declname>strValue</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bLoading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="385" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1ab6556edc83c27115f1aed452a7ac2f2d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>POINT</type>
+        <definition>POINT SOUI::SSkinShape::SCornerSize::GetConner</definition>
+        <argsstring>(int nScale) const</argsstring>
+        <name>GetConner</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="394" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="394" bodyend="398"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinShape::SCornerSize</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SSkinShape::SCornerSize</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_radiusX</edgelabel>
+          <edgelabel>m_radiusY</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; IObjRef &gt;</label>
+      </node>
+      <node id="4">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" line="380" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SSkin.h" bodystart="379" bodyend="401"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1ab6556edc83c27115f1aed452a7ac2f2d" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape::SCornerSize</scope><name>GetConner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a2d092df5b3bbcdd2d6e3b62aac7c0ad4" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape::SCornerSize</scope><name>m_radiusX</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a79aa9edbab6a4aa00b088767a52f97f3" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape::SCornerSize</scope><name>m_radiusY</name></member>
+      <member refid="class_s_o_u_i_1_1_s_skin_shape_1_1_s_corner_size_1a5a1d372253a4e9750cd9a754a49b0836" prot="public" virt="non-virtual"><scope>SOUI::SSkinShape::SCornerSize</scope><name>OnAttrRadius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

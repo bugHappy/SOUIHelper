@@ -1,0 +1,581 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tree_adapter_base" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STreeAdapterBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; TvAdatperImpl&lt; ITvAdapter &gt; &gt;</basecompoundref>
+    <innerclass refid="struct_s_o_u_i_1_1_s_tree_adapter_base_1_1_item_info" prot="public">SOUI::STreeAdapterBase::ItemInfo</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a0852967eebb4cb6e23291ad80d3da339" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_c_s_tree" kindref="compound">CSTree</ref>&lt; <ref refid="struct_s_o_u_i_1_1_s_tree_adapter_base_1_1_item_info" kindref="compound">ItemInfo</ref> &gt;</type>
+        <definition>CSTree&lt;ItemInfo&gt; SOUI::STreeAdapterBase&lt; T &gt;::m_tree</definition>
+        <argsstring></argsstring>
+        <name>m_tree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="514" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a68e8bcf678cb61dd91bfe57ba6c142c6" prot="protected" static="no" mutable="no">
+        <type>ULONG_PTR</type>
+        <definition>ULONG_PTR SOUI::STreeAdapterBase&lt; T &gt;::m_rootUserData[DATA_INDEX_NUMBER]</definition>
+        <argsstring>[DATA_INDEX_NUMBER]</argsstring>
+        <name>m_rootUserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="515" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a890c1451508543937252419a2f069201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STreeAdapterBase&lt; T &gt;::STreeAdapterBase</definition>
+        <argsstring>()</argsstring>
+        <name>STreeAdapterBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="311" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="311" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1abd04477514377a932f29a8c19b37a1a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STreeAdapterBase&lt; T &gt;::~STreeAdapterBase</definition>
+        <argsstring>()</argsstring>
+        <name>~STreeAdapterBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="314" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="314" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a8ee1c689a088dbad4b2cd51c854dcea9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>ULONG_PTR</type>
+        <definition>virtual ULONG_PTR SOUI::STreeAdapterBase&lt; T &gt;::GetItemDataByIndex</definition>
+        <argsstring>(HTREEITEM hItem, DATA_INDEX idx) const</argsstring>
+        <name>GetItemDataByIndex</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>DATA_INDEX</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="323" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="323" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ae77474a5c6160cfbf17f13b0c9122b0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeAdapterBase&lt; T &gt;::SetItemDataByIndex</definition>
+        <argsstring>(HTREEITEM hItem, DATA_INDEX idx, ULONG_PTR data)</argsstring>
+        <name>SetItemDataByIndex</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>DATA_INDEX</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="332" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="332" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a5f4cd3e1189863ec9fdb0ab79c0ea1c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetParentItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetParentItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="343" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="343" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a2a102370b5708017165d3a7e746cbbae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STreeAdapterBase&lt; T &gt;::HasChildren</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>HasChildren</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="351" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a85158773bcdfe0409f0f87d915dd8bef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetFirstChildItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetFirstChildItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="356" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="356" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1abdff7f0eeab3588efb9ffb9a80420c46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetLastChildItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetLastChildItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="362" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="362" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ae761d0c6fc1df4779e5d825efef6eded" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetPrevSiblingItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetPrevSiblingItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="368" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="368" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a6133756c531d1d73e5770a78d31c55fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetNextSiblingItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetNextSiblingItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="374" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="374" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a0fe0e8e670d5be67dfd366ddd2df74bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeAdapterBase&lt; T &gt;::getViewType</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>getViewType</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="380" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ac6bc9b04e251f756186dddd64dcec4f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STreeAdapterBase&lt; T &gt;::getViewTypeCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewTypeCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="385" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="385" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ae82835d4c19fc39de26c0a34ad5c1b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>SIZE</type>
+        <definition>virtual SIZE SOUI::STreeAdapterBase&lt; T &gt;::getViewDesiredSize</definition>
+        <argsstring>(HTREEITEM hItem, SWindow *pItem, int wid, int hei)</argsstring>
+        <name>getViewDesiredSize</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="390" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="390" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a6aa32b82da4ab61472e87145321596b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::STreeAdapterBase&lt; T &gt;::isViewWidthMatchParent</definition>
+        <argsstring>() const</argsstring>
+        <name>isViewWidthMatchParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="395" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a22a3d1b5b7bc5f1e5482f7d362ff3e22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeAdapterBase&lt; T &gt;::ExpandItem</definition>
+        <argsstring>(HTREEITEM hItem, UINT uCode)</argsstring>
+        <name>ExpandItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uCode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="400" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="400" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1abd4ca313769bfa67aab91e5b6c1120cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STreeAdapterBase&lt; T &gt;::IsItemExpanded</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>IsItemExpanded</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="417" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="417" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ad124a02d5bbb5bedc09d969c83f22125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STreeAdapterBase&lt; T &gt;::SetItemExpanded</definition>
+        <argsstring>(HTREEITEM hItem, BOOL bExpanded)</argsstring>
+        <name>SetItemExpanded</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpanded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="423" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="423" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a9c7c7696e13145d740b0e079527378d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STreeAdapterBase&lt; T &gt;::IsItemVisible</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>IsItemVisible</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="428" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="428" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a4d30c6ffe56f665fb1dd36eda58f31df" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetFirstVisibleItem</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFirstVisibleItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="439" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="439" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1adec6080cf30ceaa0a24656790563e799" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetLastVisibleItem</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLastVisibleItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="444" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="444" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1aaa2a8252c5a7ca5d240f794c327f2363" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetPrevVisibleItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetPrevVisibleItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="457" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="457" bodyend="467"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a22871594b91f898b79670c5f92168736" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>HTREEITEM</type>
+        <definition>virtual HTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::GetNextVisibleItem</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetNextVisibleItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="469" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="469" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a6e291e8d62207d08f4ed8f041554ef84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HSTREEITEM</type>
+        <definition>HSTREEITEM SOUI::STreeAdapterBase&lt; T &gt;::InsertItem</definition>
+        <argsstring>(const T &amp;data, HSTREEITEM hParent=STVI_ROOT, HSTREEITEM hInsertAfter=STVI_LAST)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hParent</declname>
+          <defval>STVI_ROOT</defval>
+        </param>
+        <param>
+          <type>HSTREEITEM</type>
+          <declname>hInsertAfter</declname>
+          <defval>STVI_LAST</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="489" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="489" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ac7cd27ff016427a399f2f541d3442fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STreeAdapterBase&lt; T &gt;::DeleteItem</definition>
+        <argsstring>(HTREEITEM hItem)</argsstring>
+        <name>DeleteItem</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="497" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="497" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1ac98debfc91690e4ac3cf063ac9b3ebec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STreeAdapterBase&lt; T &gt;::DeleteItemEx</definition>
+        <argsstring>(HTREEITEM hItem)</argsstring>
+        <name>DeleteItemEx</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="502" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="502" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tree_adapter_base_1a6a106257e6ecc416c8eef73aeccc5323" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; SOUI::STreeAdapterBase&lt; T &gt;::GetItemData</definition>
+        <argsstring>(HTREEITEM hItem) const</argsstring>
+        <name>GetItemData</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="507" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="507" bodyend="512"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::STreeAdapterBase&lt; T &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_adapter_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; TvAdatperImpl&lt; ITvAdapter &gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::STreeAdapterBase&lt; T &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_adapter_base"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_tree</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CSTree&lt; SOUI::STreeAdapterBase::ItemInfo &gt;</label>
+        <link refid="class_c_s_tree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>m_hRootFirst</edgelabel>
+          <edgelabel>m_hRootLast</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TObjRefImpl&lt; TvAdatperImpl&lt; ITvAdapter &gt; &gt;</label>
+      </node>
+      <node id="4">
+        <label>CSTree&lt; T &gt;::_STREENODE</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>hParent</edgelabel>
+          <edgelabel>hNextSibling</edgelabel>
+          <edgelabel>hChildFirst</edgelabel>
+          <edgelabel>hPrevSibling</edgelabel>
+          <edgelabel>hChildLast</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="309" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="308" bodyend="516"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ac7cd27ff016427a399f2f541d3442fc8" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>DeleteItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ac98debfc91690e4ac3cf063ac9b3ebec" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>DeleteItemEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a22a3d1b5b7bc5f1e5482f7d362ff3e22" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>ExpandItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a85158773bcdfe0409f0f87d915dd8bef" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetFirstChildItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a4d30c6ffe56f665fb1dd36eda58f31df" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetFirstVisibleItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a6a106257e6ecc416c8eef73aeccc5323" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a8ee1c689a088dbad4b2cd51c854dcea9" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetItemDataByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1abdff7f0eeab3588efb9ffb9a80420c46" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetLastChildItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1adec6080cf30ceaa0a24656790563e799" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetLastVisibleItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a6133756c531d1d73e5770a78d31c55fb" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetNextSiblingItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a22871594b91f898b79670c5f92168736" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetNextVisibleItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a5f4cd3e1189863ec9fdb0ab79c0ea1c4" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetParentItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ae761d0c6fc1df4779e5d825efef6eded" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetPrevSiblingItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1aaa2a8252c5a7ca5d240f794c327f2363" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>GetPrevVisibleItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ae82835d4c19fc39de26c0a34ad5c1b96" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>getViewDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a0fe0e8e670d5be67dfd366ddd2df74bd" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>getViewType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ac6bc9b04e251f756186dddd64dcec4f6" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>getViewTypeCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a2a102370b5708017165d3a7e746cbbae" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>HasChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a6e291e8d62207d08f4ed8f041554ef84" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>InsertItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1abd4ca313769bfa67aab91e5b6c1120cb" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>IsItemExpanded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a9c7c7696e13145d740b0e079527378d5" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>IsItemVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a6aa32b82da4ab61472e87145321596b0" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>isViewWidthMatchParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a68e8bcf678cb61dd91bfe57ba6c142c6" prot="protected" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>m_rootUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a0852967eebb4cb6e23291ad80d3da339" prot="protected" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>m_tree</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ae77474a5c6160cfbf17f13b0c9122b0a" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>SetItemDataByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1ad124a02d5bbb5bedc09d969c83f22125" prot="public" virt="virtual"><scope>SOUI::STreeAdapterBase</scope><name>SetItemExpanded</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1a890c1451508543937252419a2f069201" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>STreeAdapterBase</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tree_adapter_base_1abd04477514377a932f29a8c19b37a1a8" prot="public" virt="non-virtual"><scope>SOUI::STreeAdapterBase</scope><name>~STreeAdapterBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

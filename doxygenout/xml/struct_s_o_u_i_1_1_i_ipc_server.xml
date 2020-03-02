@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_ipc_server" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IIpcServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_server_1ae510d995453210a0be3d8bca26724a9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::IIpcServer::Init</definition>
+        <argsstring>(ULONG_PTR idSvr, IIpcSvrCallback *pCallback)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>idSvr</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_ipc_svr_callback" kindref="compound">IIpcSvrCallback</ref> *</type>
+          <declname>pCallback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="137" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_server_1af05e3ab77f884ca6d9d56011a3f68100" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IIpcServer::CheckConnectivity</definition>
+        <argsstring>()=0</argsstring>
+        <name>CheckConnectivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="138" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_server_1affd1699c312642ab6bbbef0df165e2da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>LRESULT</type>
+        <definition>virtual LRESULT SOUI::IIpcServer::OnMessage</definition>
+        <argsstring>(ULONG_PTR idLocal, UINT uMsg, WPARAM wp, LPARAM lp, BOOL &amp;bHandled)=0</argsstring>
+        <name>OnMessage</name>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>idLocal</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wp</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lp</declname>
+        </param>
+        <param>
+          <type>BOOL &amp;</type>
+          <declname>bHandled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="139" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_ipc_server_1aa07a3353c76b2402468a79b401228819" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IIpcServer::EnumClient</definition>
+        <argsstring>(FunEnumConnection funEnum, ULONG_PTR data)=0</argsstring>
+        <name>EnumClient</name>
+        <param>
+          <type>FunEnumConnection</type>
+          <declname>funEnum</declname>
+        </param>
+        <param>
+          <type>ULONG_PTR</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="140" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IIpcServer</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IIpcServer</label>
+        <link refid="struct_s_o_u_i_1_1_i_ipc_server"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="136" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="135" bodyend="141"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_server_1af05e3ab77f884ca6d9d56011a3f68100" prot="public" virt="pure-virtual"><scope>SOUI::IIpcServer</scope><name>CheckConnectivity</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_server_1aa07a3353c76b2402468a79b401228819" prot="public" virt="pure-virtual"><scope>SOUI::IIpcServer</scope><name>EnumClient</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_server_1ae510d995453210a0be3d8bca26724a9f" prot="public" virt="pure-virtual"><scope>SOUI::IIpcServer</scope><name>Init</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_ipc_server_1affd1699c312642ab6bbbef0df165e2da" prot="public" virt="pure-virtual"><scope>SOUI::IIpcServer</scope><name>OnMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

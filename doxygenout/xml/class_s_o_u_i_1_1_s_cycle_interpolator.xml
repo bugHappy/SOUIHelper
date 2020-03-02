@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_cycle_interpolator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SCycleInterpolator</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_interpolator_base" prot="public" virt="non-virtual">SOUI::SInterpolatorBase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_cycle_interpolator_1a1813d317ae4bc5aa4da17799c4edae62" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SCycleInterpolator::mCycles</definition>
+        <argsstring></argsstring>
+        <name>mCycles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="143" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cycle_interpolator_1a96ed499eca516f011ce4f93a2e5e1e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SCycleInterpolator::SCycleInterpolator</definition>
+        <argsstring>(float cycles=1.0f)</argsstring>
+        <name>SCycleInterpolator</name>
+        <param>
+          <type>float</type>
+          <declname>cycles</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="145" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_cycle_interpolator_1affcad4320c473030f7bdab235f78df94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float SOUI::SCycleInterpolator::getInterpolation</definition>
+        <argsstring>(float input) const</argsstring>
+        <name>getInterpolation</name>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="148" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SCycleInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_cycle_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SInterpolatorBase</label>
+        <link refid="class_s_o_u_i_1_1_s_interpolator_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TObjRefImpl&lt; SObjectImpl&lt; IInterpolator &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SCycleInterpolator</label>
+        <link refid="class_s_o_u_i_1_1_s_cycle_interpolator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" line="140" column="40" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SInterpolatorImpl.h" bodystart="140" bodyend="154"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_cycle_interpolator_1affcad4320c473030f7bdab235f78df94" prot="public" virt="non-virtual"><scope>SOUI::SCycleInterpolator</scope><name>getInterpolation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cycle_interpolator_1a1813d317ae4bc5aa4da17799c4edae62" prot="private" virt="non-virtual"><scope>SOUI::SCycleInterpolator</scope><name>mCycles</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cycle_interpolator_1a96ed499eca516f011ce4f93a2e5e1e68" prot="public" virt="non-virtual"><scope>SOUI::SCycleInterpolator</scope><name>SCycleInterpolator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

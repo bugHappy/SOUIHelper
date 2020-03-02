@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_type_evaluator" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::TypeEvaluator</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_type_evaluator_1ab55e31076e4dcd1442156f8ad9d0d7af" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T SOUI::TypeEvaluator&lt; T &gt;::mStart</definition>
+        <argsstring></argsstring>
+        <name>mStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="34" column="3" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_type_evaluator_1a5c3c77323a89444fce39cd1e0b5ba52d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T SOUI::TypeEvaluator&lt; T &gt;::mEnd</definition>
+        <argsstring></argsstring>
+        <name>mEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="35" column="3" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_type_evaluator_1a19e7cb5bc499e6fd051f88d9c25ba92b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::TypeEvaluator&lt; T &gt;::TypeEvaluator</definition>
+        <argsstring>(T start, T end)</argsstring>
+        <name>TypeEvaluator</name>
+        <param>
+          <type>T</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="37" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_type_evaluator_1a866c49dfd0a532c6387f25460651ba25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::TypeEvaluator&lt; T &gt;::setRange</definition>
+        <argsstring>(T start, T end)</argsstring>
+        <name>setRange</name>
+        <param>
+          <type>T</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="43" column="6" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_type_evaluator_1a1ff8550cac326eb4b7b133729b65e486" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>T</type>
+        <definition>virtual T SOUI::TypeEvaluator&lt; T &gt;::evaluate</definition>
+        <argsstring>(float fraction) const</argsstring>
+        <name>evaluate</name>
+        <param>
+          <type>float</type>
+          <declname>fraction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns the result of linearly interpolating the start and end values, with <computeroutput>fraction</computeroutput> representing the proportion between the start and end values. The calculation is a simple parametric calculation: <computeroutput>result = x0 + t * (x1 - x0)</computeroutput>, where <computeroutput>x0</computeroutput> is <computeroutput>startValue</computeroutput>, <computeroutput>x1</computeroutput> is <computeroutput>endValue</computeroutput>, and <computeroutput>t</computeroutput> is <computeroutput>fraction</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fraction from the starting to the ending values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A linear interpolation between the start and end values, given the <computeroutput>fraction</computeroutput> parameter. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="60" column="11" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" line="32" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/valueAnimator/TypeEvaluator.h" bodystart="32" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_type_evaluator_1a1ff8550cac326eb4b7b133729b65e486" prot="public" virt="virtual"><scope>SOUI::TypeEvaluator</scope><name>evaluate</name></member>
+      <member refid="class_s_o_u_i_1_1_type_evaluator_1a5c3c77323a89444fce39cd1e0b5ba52d" prot="public" virt="non-virtual"><scope>SOUI::TypeEvaluator</scope><name>mEnd</name></member>
+      <member refid="class_s_o_u_i_1_1_type_evaluator_1ab55e31076e4dcd1442156f8ad9d0d7af" prot="public" virt="non-virtual"><scope>SOUI::TypeEvaluator</scope><name>mStart</name></member>
+      <member refid="class_s_o_u_i_1_1_type_evaluator_1a866c49dfd0a532c6387f25460651ba25" prot="public" virt="non-virtual"><scope>SOUI::TypeEvaluator</scope><name>setRange</name></member>
+      <member refid="class_s_o_u_i_1_1_type_evaluator_1a19e7cb5bc499e6fd051f88d9c25ba92b" prot="public" virt="non-virtual"><scope>SOUI::TypeEvaluator</scope><name>TypeEvaluator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

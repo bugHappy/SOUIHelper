@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_s_host_msg_def_8h" kind="file" language="C++">
+    <compoundname>SHostMsgDef.h</compoundname>
+    <includedby refid="_s_host_wnd_8h" local="no">H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SouiCtrls.h</label>
+        <link refid="_soui_ctrls_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostDialog.h</label>
+        <link refid="_s_host_dialog_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SDropDown.h</label>
+        <link refid="_s_drop_down_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostWnd.h</label>
+        <link refid="_s_host_wnd_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuEx.h</label>
+        <link refid="_s_menu_ex_8h_source"/>
+      </node>
+      <node id="8">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboView.h</label>
+        <link refid="_s_combo_view_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SMessageBox.h</label>
+        <link refid="_s_message_box_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBox.h</label>
+        <link refid="_s_combo_box_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h</label>
+        <link refid="_s_host_msg_def_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/souistd.h</label>
+        <link refid="souistd_8h_source"/>
+      </node>
+      <node id="4">
+        <label>H:/OpenSourcesCode/soui3/SOUI/include/control/SComboBase.h</label>
+        <link refid="_s_combo_base_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a8cd34f4ee106ee3d55f5f3888ca7d616" prot="public" static="no">
+        <name>HOSTMSG_BASE</name>
+        <initializer>(WM_USER+10000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="5" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1ad5fc0bf4a88065f3500b984fd4876895" prot="public" static="no">
+        <name>UM_SCRIPTTIMER</name>
+        <initializer>(HOSTMSG_BASE+201)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="7" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a937d9af2bb5e1261760453dc58dcd320" prot="public" static="no">
+        <name>UM_MENUEVENT</name>
+        <initializer>(HOSTMSG_BASE+202)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="8" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a9964a4f7c91da756bb5b2d91628da720" prot="public" static="no">
+        <name>SPYMSG_BASE</name>
+        <initializer>(HOSTMSG_BASE+1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="10" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a1f89292f65c8cf0950d5a834e04a75c9" prot="public" static="no">
+        <name>SPYMSG_SETSPY</name>
+        <initializer>(SPYMSG_BASE+0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="11" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a3fd7732609a6feafbcc856043f06cbdd" prot="public" static="no">
+        <name>SPYMSG_SWNDENUM</name>
+        <initializer>(SPYMSG_BASE+1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="13" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a7146c64b63c3837ffb062a5030cac6db" prot="public" static="no">
+        <name>SPYMSG_SWNDINFO</name>
+        <initializer>(SPYMSG_BASE+2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="15" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_host_msg_def_8h_1a07740b55d0d5ce6ef40cdc6b710ea8c4" prot="public" static="no">
+        <name>SPYMSG_HITTEST</name>
+        <initializer>(SPYMSG_BASE+3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" line="17" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>SOUI自定义窗口消息ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2015年12月3日</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOSTMSG_BASE<sp/><sp/><sp/><sp/><sp/>(WM_USER+10000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UM_SCRIPTTIMER<sp/><sp/><sp/>(HOSTMSG_BASE+201)<sp/><sp/><sp/><sp/>//脚本定时器消息</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UM_MENUEVENT<sp/><sp/><sp/><sp/><sp/>(HOSTMSG_BASE+202)<sp/><sp/><sp/><sp/><sp/>//模拟菜单控件事件，wparam:0,<sp/>lparam:EventArg<sp/>*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPYMSG_BASE<sp/><sp/><sp/><sp/><sp/><sp/>(HOSTMSG_BASE+1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPYMSG_SETSPY<sp/><sp/><sp/><sp/>(SPYMSG_BASE+0)<sp/><sp/><sp/><sp/><sp/>//设置SPY消息接收窗口句柄</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPYMSG_SWNDENUM<sp/><sp/>(SPYMSG_BASE+1)<sp/><sp/><sp/><sp/><sp/>//枚举窗口列表,wparam:SWND,lparam:SWindow::GetWindow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPYMSG_SWNDINFO<sp/><sp/>(SPYMSG_BASE+2)<sp/><sp/><sp/><sp/><sp/><sp/>//获取窗口属性，wparam:swnd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPYMSG_HITTEST<sp/><sp/><sp/>(SPYMSG_BASE+3)<sp/><sp/><sp/><sp/>//lparam:pos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SHostMsgDef.h"/>
+  </compounddef>
+</doxygen>

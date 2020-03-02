@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_accelerator_target" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IAcceleratorTarget</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_button" prot="public" virt="non-virtual">SOUI::SButton</derivedcompoundref>
+    <includes refid="_s_accelerator_8h" local="no">SAccelerator.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_accelerator_target_1a8429b191c6803ced410aecc625db6003" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IAcceleratorTarget::OnAcceleratorPressed</definition>
+        <argsstring>(const SAccelerator &amp;accelerator)=0</argsstring>
+        <name>OnAcceleratorPressed</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_button_1ab1438100898ee85d7feb4a1f3909cc4e">OnAcceleratorPressed</reimplementedby>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_accelerator" kindref="compound">SAccelerator</ref> &amp;</type>
+          <declname>accelerator</declname>
+        </param>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnAcceleratorPressed <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_c_accelerator" kindref="compound">CAccelerator</ref> &amp; accelerator <ndash/> 按下的加速键 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool <ndash/> 加速键被处理返回true Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="138" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>加速键按下的处理接口 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe 想要注册键盘加速键的类需要实现本接口 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IAcceleratorTarget</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_target"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SImageButton</label>
+        <link refid="class_s_o_u_i_1_1_s_image_button"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SButton</label>
+        <link refid="class_s_o_u_i_1_1_s_button"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" line="130" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SAccelerator.h" bodystart="129" bodyend="139"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_accelerator_target_1a8429b191c6803ced410aecc625db6003" prot="public" virt="pure-virtual"><scope>SOUI::IAcceleratorTarget</scope><name>OnAcceleratorPressed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

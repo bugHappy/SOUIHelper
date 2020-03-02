@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_menu_wnd_hook" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMenuWndHook</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a05a1ca7867528a7ec8f456da45d8f1ec" prot="protected" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND SOUI::SMenuWndHook::m_hWnd</definition>
+        <argsstring></argsstring>
+        <name>m_hWnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="51" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a5907ab43062300d17aab9eceff4d2b06" prot="protected" static="yes" mutable="no">
+        <type>SMap&lt; HWND, <ref refid="class_s_o_u_i_1_1_s_menu_wnd_hook" kindref="compound">SMenuWndHook</ref> * &gt;</type>
+        <definition>SMap&lt;HWND, SMenuWndHook*&gt; SOUI::SMenuWndHook::m_WndMenuMap</definition>
+        <argsstring></argsstring>
+        <name>m_WndMenuMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="53" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a6a13f87c97ca471eceea8615f280892d" prot="protected" static="yes" mutable="no">
+        <type>HHOOK</type>
+        <definition>HHOOK SOUI::SMenuWndHook::m_hMenuHook</definition>
+        <argsstring></argsstring>
+        <name>m_hMenuHook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="54" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1aa26f76631f7ce25f0fcc06b30ec2ece4" prot="protected" static="yes" mutable="no">
+        <type>SStringW</type>
+        <definition>SStringW SOUI::SMenuWndHook::m_strSkinName</definition>
+        <argsstring></argsstring>
+        <name>m_strSkinName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="55" column="24" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1aea056dddee137c0853584b0901629801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenuWndHook::SMenuWndHook</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>SMenuWndHook</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a58bf5fdf60b8ce2ae3564ce0e2ae8cdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMenuWndHook::~SMenuWndHook</definition>
+        <argsstring>()</argsstring>
+        <name>~SMenuWndHook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="27" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a488b1e5c6fc960189f49a12b9e59708b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SMenuWndHook::OnCreate</definition>
+        <argsstring>(LPCREATESTRUCT lpCreateStruct)</argsstring>
+        <name>OnCreate</name>
+        <param>
+          <type>LPCREATESTRUCT</type>
+          <declname>lpCreateStruct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1ac9f6e0ce18e208485c3f4f79d8750166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnNcCalcsize</definition>
+        <argsstring>(BOOL bValidCalc, NCCALCSIZE_PARAMS *lpncsp)</argsstring>
+        <name>OnNcCalcsize</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bValidCalc</declname>
+        </param>
+        <param>
+          <type>NCCALCSIZE_PARAMS *</type>
+          <declname>lpncsp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a84bea7597f9ecf5e87e91161cef4e11b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnNcDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnNcDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1af39e3808a5aeb7054f2721f5fd67e7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnPrint</definition>
+        <argsstring>(HDC dc)</argsstring>
+        <name>OnPrint</name>
+        <param>
+          <type>HDC</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a2ee372b9f198ce617ee51f5eb433849c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnNcPaint</definition>
+        <argsstring>()</argsstring>
+        <name>OnNcPaint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="40" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a778161d79323df5be6361cdcc5d30970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnWindowPosChanging</definition>
+        <argsstring>(WINDOWPOS *pWindowPos)</argsstring>
+        <name>OnWindowPosChanging</name>
+        <param>
+          <type>WINDOWPOS *</type>
+          <declname>pWindowPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="41" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a140f163a7cc35647b7d4b4e047d4c97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMenuWndHook::OnWindowPosChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnWindowPosChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="42" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1ab0f976a629b9509f90d239c0d4e9d3f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMenuWndHook::InstallHook</definition>
+        <argsstring>(HINSTANCE hInst, LPCWSTR pszSkinName=NULL)</argsstring>
+        <name>InstallHook</name>
+        <param>
+          <type>HINSTANCE</type>
+          <declname>hInst</declname>
+        </param>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>pszSkinName</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="28" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1aa1abc862a2cb59ad1d23a7b0adb994b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SMenuWndHook::UnInstallHook</definition>
+        <argsstring>()</argsstring>
+        <name>UnInstallHook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="29" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a16bc8bce24142239478a59388a135cf6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>static LRESULT CALLBACK SOUI::SMenuWndHook::CoolMenuProc</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>CoolMenuProc</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="33" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a30c2ae931833f065d5a96cf1a7467b34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>static LRESULT CALLBACK SOUI::SMenuWndHook::WindowHook</definition>
+        <argsstring>(int code, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>WindowHook</name>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="34" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a97a30155fa25494cec9e5f837ab6a77f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_wnd_hook" kindref="compound">SMenuWndHook</ref> *</type>
+        <definition>static SMenuWndHook* SOUI::SMenuWndHook::AddWndHook</definition>
+        <argsstring>(HWND hwnd)</argsstring>
+        <name>AddWndHook</name>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="46" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_menu_wnd_hook_1a2c8fa4b526c0fe129ab8f32c0b5cd56d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_menu_wnd_hook" kindref="compound">SMenuWndHook</ref> *</type>
+        <definition>static SMenuWndHook* SOUI::SMenuWndHook::GetWndHook</definition>
+        <argsstring>(HWND hwnd)</argsstring>
+        <name>GetWndHook</name>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="47" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" line="23" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMenuWndHook.h" bodystart="22" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a97a30155fa25494cec9e5f837ab6a77f" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>AddWndHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a16bc8bce24142239478a59388a135cf6" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>CoolMenuProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a2c8fa4b526c0fe129ab8f32c0b5cd56d" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>GetWndHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1ab0f976a629b9509f90d239c0d4e9d3f6" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>InstallHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a6a13f87c97ca471eceea8615f280892d" prot="protected" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>m_hMenuHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a05a1ca7867528a7ec8f456da45d8f1ec" prot="protected" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>m_hWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1aa26f76631f7ce25f0fcc06b30ec2ece4" prot="protected" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>m_strSkinName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a5907ab43062300d17aab9eceff4d2b06" prot="protected" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>m_WndMenuMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a488b1e5c6fc960189f49a12b9e59708b" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1ac9f6e0ce18e208485c3f4f79d8750166" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnNcCalcsize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a84bea7597f9ecf5e87e91161cef4e11b" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnNcDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a2ee372b9f198ce617ee51f5eb433849c" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1af39e3808a5aeb7054f2721f5fd67e7fb" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnPrint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a140f163a7cc35647b7d4b4e047d4c97d" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnWindowPosChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a778161d79323df5be6361cdcc5d30970" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>OnWindowPosChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1aea056dddee137c0853584b0901629801" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>SMenuWndHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1aa1abc862a2cb59ad1d23a7b0adb994b7" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>UnInstallHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a30c2ae931833f065d5a96cf1a7467b34" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>WindowHook</name></member>
+      <member refid="class_s_o_u_i_1_1_s_menu_wnd_hook_1a58bf5fdf60b8ce2ae3564ce0e2ae8cdb" prot="public" virt="non-virtual"><scope>SOUI::SMenuWndHook</scope><name>~SMenuWndHook</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

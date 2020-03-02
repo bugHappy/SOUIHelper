@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_time" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STime</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_time_1a7ff6e2b6f9a35f283c241544779e190f" prot="protected" static="no" mutable="no">
+        <type>__time64_t</type>
+        <definition>__time64_t SOUI::STime::m_time</definition>
+        <argsstring></argsstring>
+        <name>m_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="87" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ac44797f0e250c044517ffd24cdb70eb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+        <definition>static STime SOUI::STime::GetCurrentTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="46" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a3f60fd6d232069e07a6267003b66eceb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>static uint64_t SOUI::STime::GetCurrentTimeMs</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentTimeMs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="47" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a674ba30298313d6d30235135f5c6981c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STime::STime</definition>
+        <argsstring>(__time64_t tm=0)</argsstring>
+        <name>STime</name>
+        <param>
+          <type>__time64_t</type>
+          <declname>tm</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="48" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a12462ec2fac64cb23a61e83a287a5971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STime::STime</definition>
+        <argsstring>(int nYear, int nMonth, int nDay, int nHour, int nMin, int nSec, int nDST=-1)</argsstring>
+        <name>STime</name>
+        <param>
+          <type>int</type>
+          <declname>nYear</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMonth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDay</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nSec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDST</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="49" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a45282f1df84fd78d3680e5a20be6edde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STime::SetDate</definition>
+        <argsstring>(int nYear, int nMonth, int nDay)</argsstring>
+        <name>SetDate</name>
+        <param>
+          <type>int</type>
+          <declname>nYear</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMonth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="52" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ad82627bc599377d0946bcd1841c58c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STime::SetDateTime</definition>
+        <argsstring>(int nYear, int nMonth, int nDay, int nHour, int nMin, int nSec, int nDST=-1)</argsstring>
+        <name>SetDateTime</name>
+        <param>
+          <type>int</type>
+          <declname>nYear</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMonth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDay</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHour</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nSec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDST</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a3c420f0e6ba9f845b0a616f7f44b315d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>__time64_t</type>
+        <definition>__time64_t SOUI::STime::GetTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="56" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a1c9985d42b0a1b9687d2b8eee77ebdb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>struct tm *</type>
+        <definition>struct tm* SOUI::STime::GetLocalTm</definition>
+        <argsstring>(struct tm *ptm) const</argsstring>
+        <name>GetLocalTm</name>
+        <param>
+          <type>struct tm *</type>
+          <declname>ptm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="57" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ad9caaa8a610bb88b92451eb8251e46b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::GetAsSystemTime</definition>
+        <argsstring>(SYSTEMTIME &amp;timeDest) const</argsstring>
+        <name>GetAsSystemTime</name>
+        <param>
+          <type>SYSTEMTIME &amp;</type>
+          <declname>timeDest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ab7a611c6488c5e3207e342bfd2760c31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetYear</definition>
+        <argsstring>() const</argsstring>
+        <name>GetYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a33fe6bced5d8e538fe53a9cddb16c55f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetMonth</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="60" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ab735df228949aa3fc7b930e2d6a2ce95" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetDay</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="61" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a23e7fb68d5d310c3faba41c41d0bc190" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetHour</definition>
+        <argsstring>() const</argsstring>
+        <name>GetHour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="62" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ae55dae3f2527b1367f152f0e014487d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetMinute</definition>
+        <argsstring>() const</argsstring>
+        <name>GetMinute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="63" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a695d1b3a20d0a5d01b32c29017868c79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetSecond</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="64" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a655ed49efc0e6cde486bfad36014d3a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STime::GetDayOfWeek</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDayOfWeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="65" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a781e29cf0222a20155bc24eae585b013" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringT</type>
+        <definition>SStringT SOUI::STime::Format</definition>
+        <argsstring>(LPCTSTR pszFormat) const</argsstring>
+        <name>Format</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszFormat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="67" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1aaead7a73de882edc7caeda6349b98f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref> &amp;</type>
+        <definition>STime&amp; SOUI::STime::operator=</definition>
+        <argsstring>(__time64_t time)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>__time64_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="69" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a98cf08c4fb971cf2b8096eb9ecbbd107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref> &amp;</type>
+        <definition>STime&amp; SOUI::STime::operator+=</definition>
+        <argsstring>(STimeSpan span)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="71" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a64446723bdf5694362ce27ea307dc3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref> &amp;</type>
+        <definition>STime&amp; SOUI::STime::operator-=</definition>
+        <argsstring>(STimeSpan span)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="72" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a68843b5c6faab6d3ddf4eb87bfe7df51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+        <definition>STimeSpan SOUI::STime::operator-</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="74" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1af6bfd95ee0e2870b9068ab88acb1d226" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+        <definition>STime SOUI::STime::operator-</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="75" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a377b4acdf4979abafa0a34728a0065c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+        <definition>STime SOUI::STime::operator+</definition>
+        <argsstring>(STimeSpan span) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time_span" kindref="compound">STimeSpan</ref></type>
+          <declname>span</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="76" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1aba7e6968fc2fc0c6ac676bc9e92bb1b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator==</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="78" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1a65b79e330f0f96aa34ef9a2dae968895" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator!=</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="79" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1acbe7ff09580d1593a90b1a57b165dcda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator&lt;</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="80" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1ae24e116305e165dd2e01be5491d53915" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator&gt;</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1af2c9948e175b5028c3a66be13debb414" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator&lt;=</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="82" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_time_1aab31e9fb10f58838fdad450b3f459ad3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STime::operator&gt;=</definition>
+        <argsstring>(STime time) const</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_time" kindref="compound">STime</ref></type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="83" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" line="44" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/STime.h" bodystart="43" bodyend="88"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_time_1a781e29cf0222a20155bc24eae585b013" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>Format</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ad9caaa8a610bb88b92451eb8251e46b2" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetAsSystemTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ac44797f0e250c044517ffd24cdb70eb7" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetCurrentTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a3f60fd6d232069e07a6267003b66eceb" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetCurrentTimeMs</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ab735df228949aa3fc7b930e2d6a2ce95" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetDay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a655ed49efc0e6cde486bfad36014d3a5" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetDayOfWeek</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a23e7fb68d5d310c3faba41c41d0bc190" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetHour</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a1c9985d42b0a1b9687d2b8eee77ebdb8" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetLocalTm</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ae55dae3f2527b1367f152f0e014487d8" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetMinute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a33fe6bced5d8e538fe53a9cddb16c55f" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetMonth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a695d1b3a20d0a5d01b32c29017868c79" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetSecond</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a3c420f0e6ba9f845b0a616f7f44b315d" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ab7a611c6488c5e3207e342bfd2760c31" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>GetYear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a7ff6e2b6f9a35f283c241544779e190f" prot="protected" virt="non-virtual"><scope>SOUI::STime</scope><name>m_time</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a65b79e330f0f96aa34ef9a2dae968895" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator!=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a377b4acdf4979abafa0a34728a0065c2" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator+</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a98cf08c4fb971cf2b8096eb9ecbbd107" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator+=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a68843b5c6faab6d3ddf4eb87bfe7df51" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator-</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1af6bfd95ee0e2870b9068ab88acb1d226" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator-</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a64446723bdf5694362ce27ea307dc3a4" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator-=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1acbe7ff09580d1593a90b1a57b165dcda" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator&lt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1af2c9948e175b5028c3a66be13debb414" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator&lt;=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1aaead7a73de882edc7caeda6349b98f4e" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1aba7e6968fc2fc0c6ac676bc9e92bb1b3" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator==</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ae24e116305e165dd2e01be5491d53915" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator&gt;</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1aab31e9fb10f58838fdad450b3f459ad3" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>operator&gt;=</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a45282f1df84fd78d3680e5a20be6edde" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>SetDate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1ad82627bc599377d0946bcd1841c58c29" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>SetDateTime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a674ba30298313d6d30235135f5c6981c" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>STime</name></member>
+      <member refid="class_s_o_u_i_1_1_s_time_1a12462ec2fac64cb23a61e83a287a5971" prot="public" virt="non-virtual"><scope>SOUI::STime</scope><name>STime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

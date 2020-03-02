@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_font_pool" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SFontPool</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton_map" prot="public" virt="non-virtual">SOUI::SSingletonMap&lt; SFontPool, IFontPtr, FontInfo &gt;</basecompoundref>
+    <includes refid="_s_font_pool_8h" local="no">SFontPool.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_font_pool_1ae3c72fe53801db587943e24e72947a4a" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; <ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> &gt;</type>
+        <definition>SAutoRefPtr&lt;IRenderFactory&gt; SOUI::SFontPool::m_RenderFactory</definition>
+        <argsstring></argsstring>
+        <name>m_RenderFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="122" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_font_pool_1a8af62d7fe84b0a7a7ed02b7f4eb0bf79" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref></type>
+        <definition>FontInfo SOUI::SFontPool::m_defFontInfo</definition>
+        <argsstring></argsstring>
+        <name>m_defFontInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="123" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1affe853e2321c1b9a3fcf602d54c46aec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SFontPool::SFontPool</definition>
+        <argsstring>(IRenderFactory *pRendFactory)</argsstring>
+        <name>SFontPool</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_factory" kindref="compound">IRenderFactory</ref> *</type>
+          <declname>pRendFactory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="84" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1adccf800543731d436c614e0e0240713a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFontPtr</ref></type>
+        <definition>IFontPtr SOUI::SFontPool::GetFont</definition>
+        <argsstring>(const SStringW &amp;strFont, int scale)</argsstring>
+        <name>GetFont</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strFont</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>获得与指定的strFont对应的IFontPtr </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetFont <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strFont <ndash/> font描述字符串 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IFontPtr <ndash/> font对象</para>
+</simplesect>
+Describe 描述字符串格式如：face:宋体,bold:0,italic:1,underline:1,strike:1,adding:10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="97" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1a80b168f26e937ed04ee12571c47cc12d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFontPtr</ref></type>
+        <definition>IFontPtr SOUI::SFontPool::GetFont</definition>
+        <argsstring>(FONTSTYLE style, const SStringW &amp;strFaceName=SStringW(), pugi::xml_node xmlExProp=pugi::xml_node())</argsstring>
+        <name>GetFont</name>
+        <param>
+          <type><ref refid="union_s_o_u_i_1_1_f_o_n_t_s_t_y_l_e" kindref="compound">FONTSTYLE</ref></type>
+          <declname>style</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strFaceName</declname>
+          <defval>SStringW()</defval>
+        </param>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlExProp</declname>
+          <defval>pugi::xml_node()</defval>
+        </param>
+        <briefdescription>
+<para>获得与指定的font key对应的IFontPtr </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetFont <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="union_s_o_u_i_1_1_f_o_n_t_s_t_y_l_e" kindref="compound">FONTSTYLE</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>style <ndash/> 字体风格 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>strFaceName <ndash/> 字体名 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IFontPtr <ndash/> font对象 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="107" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1a82701b9249cb794e0f45eca5213b1791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFontPool::SetDefFontInfo</definition>
+        <argsstring>(const FontInfo &amp;fontInfo)</argsstring>
+        <name>SetDefFontInfo</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref> &amp;</type>
+          <declname>fontInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="109" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1a8aeb71d918aed6025883ce4e60fd7699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SFontPool::SetDefFontInfo</definition>
+        <argsstring>(const SStringW &amp;strFontInfo)</argsstring>
+        <name>SetDefFontInfo</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strFontInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="111" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1a1cca83ba421dc634ea5eae76102e421e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SStringW</type>
+        <definition>static SStringW SOUI::SFontPool::FontInfoToString</definition>
+        <argsstring>(const FontInfo &amp;fontInfo)</argsstring>
+        <name>FontInfoToString</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref> &amp;</type>
+          <declname>fontInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="86" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1aa8ab42f17fc1af8f5161f18117cb15a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref></type>
+        <definition>static FontInfo SOUI::SFontPool::FontInfoFromString</definition>
+        <argsstring>(const SStringW &amp;strFontInfo)</argsstring>
+        <name>FontInfoFromString</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strFontInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="87" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1affd5ce9d0a31063a854c3569884e91af" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref> &amp;</type>
+        <definition>const FontInfo&amp; SOUI::SFontPool::GetDefFontInfo</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDefFontInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="114" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1a2263ec79c08a9ca962dc7282f36a8191" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFontPtr</ref></type>
+        <definition>IFontPtr SOUI::SFontPool::_CreateFont</definition>
+        <argsstring>(const LOGFONT &amp;lf)</argsstring>
+        <name>_CreateFont</name>
+        <param>
+          <type>const LOGFONT &amp;</type>
+          <declname>lf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1ab3248b6930f2bfb1fd55213f5023a3fe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFontPtr</ref></type>
+        <definition>IFontPtr SOUI::SFontPool::_CreateFont</definition>
+        <argsstring>(const FontInfo &amp;fontInfo, pugi::xml_node xmlExProp)</argsstring>
+        <name>_CreateFont</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_font_info" kindref="compound">FontInfo</ref> &amp;</type>
+          <declname>fontInfo</declname>
+        </param>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlExProp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="120" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_font_pool_1aacb9f054603cfb2ffbef7f01fc922816" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SOUI::SFontPool::OnKeyRemoved</definition>
+        <argsstring>(const IFontPtr &amp;obj)</argsstring>
+        <name>OnKeyRemoved</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_font" kindref="compound">IFontPtr</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="116" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>font pool </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; IFontPtr, FontInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SFontPool &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SFontPool, IFontPtr, FontInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SFontPool</label>
+        <link refid="class_s_o_u_i_1_1_s_font_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; IFontPtr, FontInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SFontPool &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="6">
+        <label>SOUI::FONTSTYLE</label>
+        <link refid="union_s_o_u_i_1_1_f_o_n_t_s_t_y_l_e"/>
+      </node>
+      <node id="5">
+        <label>SOUI::FontInfo</label>
+        <link refid="struct_s_o_u_i_1_1_font_info"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>style</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SFontPool, IFontPtr, FontInfo &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SFontPool</label>
+        <link refid="class_s_o_u_i_1_1_s_font_pool"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>m_defFontInfo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" line="81" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SFontPool.h" bodystart="80" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a2263ec79c08a9ca962dc7282f36a8191" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>_CreateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1ab3248b6930f2bfb1fd55213f5023a3fe" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>_CreateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1aa8ab42f17fc1af8f5161f18117cb15a5" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>FontInfoFromString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a1cca83ba421dc634ea5eae76102e421e" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>FontInfoToString</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1affd5ce9d0a31063a854c3569884e91af" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetDefFontInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1adccf800543731d436c614e0e0240713a" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a80b168f26e937ed04ee12571c47cc12d" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a8af62d7fe84b0a7a7ed02b7f4eb0bf79" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>m_defFontInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1ae3c72fe53801db587943e24e72947a4a" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>m_RenderFactory</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1aacb9f054603cfb2ffbef7f01fc922816" prot="protected" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>OnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a82701b9249cb794e0f45eca5213b1791" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SetDefFontInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1a8aeb71d918aed6025883ce4e60fd7699" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SetDefFontInfo</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_font_pool_1affe853e2321c1b9a3fcf602d54c46aec" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SFontPool</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SFontPool</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SFontPool</scope><name>~SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SFontPool</scope><name>~SSingleton2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

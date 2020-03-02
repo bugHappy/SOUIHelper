@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_free_function_slot" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::FreeFunctionSlot</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_slot_functor" prot="public" virt="non-virtual">SOUI::ISlotFunctor</basecompoundref>
+    <includes refid="_s_event_subscriber_8h" local="no">SEventSubscriber.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename A</type>
+        <defval><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref></defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" prot="public" static="no">
+        <type>bool()</type>
+        <definition>typedef bool() SOUI::FreeFunctionSlot&lt; A &gt;::SlotFunction(A *)</definition>
+        <argsstring>(A *)</argsstring>
+        <name>SlotFunction</name>
+        <briefdescription>
+<para>Slot function type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="38" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_free_function_slot_1a5c76f7c5cc592a37327cf2cb7f7dcc4b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" kindref="member">SlotFunction</ref> *</type>
+        <definition>SlotFunction* SOUI::FreeFunctionSlot&lt; A &gt;::d_function</definition>
+        <argsstring></argsstring>
+        <name>d_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="65" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_free_function_slot_1a85b1c8c36bc2b12336b9c76e9fc9a250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::FreeFunctionSlot&lt; A &gt;::FreeFunctionSlot</definition>
+        <argsstring>(SlotFunction *func)</argsstring>
+        <name>FreeFunctionSlot</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" kindref="member">SlotFunction</ref> *</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="40" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_free_function_slot_1abb7edc601b770b462a42b8b023cdf07c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::FreeFunctionSlot&lt; A &gt;::operator()</definition>
+        <argsstring>(EventArgs *pArg)</argsstring>
+        <name>operator()</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_slot_functor_1a41b21b2df2e7c598390dd4322dcdb8fe">operator()</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> *</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="44" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_free_function_slot_1a6eba62753ed7cbc535376d4409ff0a24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> *</type>
+        <definition>virtual ISlotFunctor* SOUI::FreeFunctionSlot&lt; A &gt;::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_slot_functor_1a698ccab07e1127e5dfcd46a1316c895e">Clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="49" column="26" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_free_function_slot_1a868afd293a9e212b3b67a4432495bf44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::FreeFunctionSlot&lt; A &gt;::Equal</definition>
+        <argsstring>(const ISlotFunctor &amp;sour) const</argsstring>
+        <name>Equal</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_slot_functor_1a2e5d996e790d0adf9155a0ecd608d827">Equal</reimplements>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_i_slot_functor" kindref="compound">ISlotFunctor</ref> &amp;</type>
+          <declname>sour</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="54" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_free_function_slot_1acb1527e41006e3de5df8f74c00b47f07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::FreeFunctionSlot&lt; A &gt;::GetSlotType</definition>
+        <argsstring>() const</argsstring>
+        <name>GetSlotType</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_slot_functor_1a245fdda3c6a160d34ce15b89259c01a2">GetSlotType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="62" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Slot functor class that calls back via a free function pointer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::FreeFunctionSlot&lt; A &gt;</label>
+        <link refid="class_s_o_u_i_1_1_free_function_slot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ISlotFunctor</label>
+        <link refid="struct_s_o_u_i_1_1_i_slot_functor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::FreeFunctionSlot&lt; A &gt;</label>
+        <link refid="class_s_o_u_i_1_1_free_function_slot"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::ISlotFunctor</label>
+        <link refid="struct_s_o_u_i_1_1_i_slot_functor"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" line="35" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/event/SEventSubscriber.h" bodystart="34" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1a6eba62753ed7cbc535376d4409ff0a24" prot="public" virt="virtual"><scope>SOUI::FreeFunctionSlot</scope><name>Clone</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1a5c76f7c5cc592a37327cf2cb7f7dcc4b" prot="private" virt="non-virtual"><scope>SOUI::FreeFunctionSlot</scope><name>d_function</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1a868afd293a9e212b3b67a4432495bf44" prot="public" virt="virtual"><scope>SOUI::FreeFunctionSlot</scope><name>Equal</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1a85b1c8c36bc2b12336b9c76e9fc9a250" prot="public" virt="non-virtual"><scope>SOUI::FreeFunctionSlot</scope><name>FreeFunctionSlot</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1acb1527e41006e3de5df8f74c00b47f07" prot="public" virt="virtual"><scope>SOUI::FreeFunctionSlot</scope><name>GetSlotType</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1abb7edc601b770b462a42b8b023cdf07c" prot="public" virt="virtual"><scope>SOUI::FreeFunctionSlot</scope><name>operator()</name></member>
+      <member refid="class_s_o_u_i_1_1_free_function_slot_1aaf185d6fe9566839e5df9c49b09fc4f6" prot="public" virt="non-virtual"><scope>SOUI::FreeFunctionSlot</scope><name>SlotFunction</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_slot_functor_1a473d72f0764ee82d1ebf46cd9c521211" prot="public" virt="virtual"><scope>SOUI::FreeFunctionSlot</scope><name>~ISlotFunctor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

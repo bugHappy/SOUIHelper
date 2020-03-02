@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_s_triangle" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::STriangle</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1_s_triangle_1a5a84a9398c813656586e16da21ebfe90" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref></type>
+        <definition>SPoint SOUI::STriangle::fPts[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>fPts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="218" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_s_triangle_1af31ba64f5147a09eaec9a8629444fac3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::STriangle::contains</definition>
+        <argsstring>(const SPoint &amp;pt) const</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const <ref refid="struct_s_o_u_i_1_1_s_point" kindref="compound">SPoint</ref> &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="219" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>SOUI::fPoint</label>
+        <link refid="struct_s_o_u_i_1_1f_point"/>
+      </node>
+      <node id="1">
+        <label>SOUI::STriangle</label>
+        <link refid="struct_s_o_u_i_1_1_s_triangle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fPts</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SPoint</label>
+        <link refid="struct_s_o_u_i_1_1_s_point"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" line="217" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/matrix/SRect.h" bodystart="216" bodyend="220"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_s_triangle_1af31ba64f5147a09eaec9a8629444fac3" prot="public" virt="non-virtual"><scope>SOUI::STriangle</scope><name>contains</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_triangle_1a5a84a9398c813656586e16da21ebfe90" prot="public" virt="non-virtual"><scope>SOUI::STriangle</scope><name>fPts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

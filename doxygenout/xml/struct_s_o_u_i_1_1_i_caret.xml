@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_caret" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ICaret</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IObject</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_timeline_handler" prot="public" virt="non-virtual">SOUI::ITimelineHandler</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1aa9852f36d2ee5826d40bbc0b87e6bbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ICaret::Init</definition>
+        <argsstring>(HBITMAP hBmp, int nWid, int nHei)=0</argsstring>
+        <name>Init</name>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hBmp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="10" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1a5aa97e17ca821387ab97719b3849f626" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ICaret::SetPosition</definition>
+        <argsstring>(int x, int y)=0</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1a5040b36bfdf14049f3de552c20999ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ICaret::SetVisible</definition>
+        <argsstring>(BOOL bVisible)=0</argsstring>
+        <name>SetVisible</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bVisible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1a4a2b67be6ea8fab44856ccee663d57c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ICaret::IsVisible</definition>
+        <argsstring>() const =0</argsstring>
+        <name>IsVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1a7d7e4829f79e142a332d1c2b1c766497" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ICaret::Draw</definition>
+        <argsstring>(IRenderTarget *pRT)=0</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_caret_1aeb1a37dfad34c1fffde0a14b97ce4a9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>RECT</type>
+        <definition>virtual RECT SOUI::ICaret::GetRect</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="20" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::ICaret</label>
+        <link refid="struct_s_o_u_i_1_1_i_caret"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="1">
+        <label>SOUI::ICaret</label>
+        <link refid="struct_s_o_u_i_1_1_i_caret"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" line="9" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/scaret-i.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1a7d7e4829f79e142a332d1c2b1c766497" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>Draw</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1aeb1a37dfad34c1fffde0a14b97ce4a9c" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>GetRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1aa9852f36d2ee5826d40bbc0b87e6bbf0" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>Init</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1a4a2b67be6ea8fab44856ccee663d57c7" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>IsVisible</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_timeline_handler_1af52b5581cc3271f5099d559eb2bf9f69" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>OnNextFrame</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1a5aa97e17ca821387ab97719b3849f626" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>SetPosition</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_caret_1a5040b36bfdf14049f3de552c20999ebc" prot="public" virt="pure-virtual"><scope>SOUI::ICaret</scope><name>SetVisible</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

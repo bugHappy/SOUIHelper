@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_mem_d_c" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SMemDC</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_mem_d_c_1ac953c3499118f20095365bc5c052e478" prot="protected" static="no" mutable="no">
+        <type>HDC</type>
+        <definition>HDC SOUI::SMemDC::m_hDC</definition>
+        <argsstring></argsstring>
+        <name>m_hDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="37" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_mem_d_c_1ac5053e268bbbef045d10c890c24c9452" prot="protected" static="no" mutable="no">
+        <type>HBITMAP</type>
+        <definition>HBITMAP SOUI::SMemDC::m_hOldBmp</definition>
+        <argsstring></argsstring>
+        <name>m_hOldBmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="39" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_mem_d_c_1a4a8208be2b73066678dff065e72e2f72" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMemDC::m_bBmpOwner</definition>
+        <argsstring></argsstring>
+        <name>m_bBmpOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="40" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_mem_d_c_1ac52ef0a9f0fe2f0535792a10b98e5a77" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMemDC::m_bHasBitmap</definition>
+        <argsstring></argsstring>
+        <name>m_bHasBitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="41" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a139363e30b581c763bb5793f97370c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMemDC::SMemDC</definition>
+        <argsstring>()</argsstring>
+        <name>SMemDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="9" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1af6b5e491026de140accfc39fa6d9e646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMemDC::SMemDC</definition>
+        <argsstring>(HDC hdc, const CRect &amp;rc)</argsstring>
+        <name>SMemDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdc</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="10" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a4df8629296924105dab078ac4c7d9add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMemDC::SMemDC</definition>
+        <argsstring>(HDC hdc, HBITMAP hBmp)</argsstring>
+        <name>SMemDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdc</declname>
+        </param>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hBmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="11" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a9978f1210ace6515b110c412b875fe27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMemDC::~SMemDC</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SMemDC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="12" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a90745c2bf3f8de6b63d200bed5a09ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HBITMAP</type>
+        <definition>HBITMAP SOUI::SMemDC::SelectBitmap</definition>
+        <argsstring>(HBITMAP hBmp)</argsstring>
+        <name>SelectBitmap</name>
+        <param>
+          <type>HBITMAP</type>
+          <declname>hBmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="14" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a36e27ddbc5a0a00b08866b3be94f8e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMemDC::HasBitmap</definition>
+        <argsstring>()</argsstring>
+        <name>HasBitmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="16" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a398fc47b79b63480ed00d79ab8027f2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMemDC::SetBitmapOwner</definition>
+        <argsstring>(BOOL bOwner)</argsstring>
+        <name>SetBitmapOwner</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="21" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a6722dbc38a12ee6ea62b165ee7385d86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMemDC::IsBitmapOwner</definition>
+        <argsstring>()</argsstring>
+        <name>IsBitmapOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="25" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a28803c38e742feadc991644cda3aee06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SMemDC::DeleteDC</definition>
+        <argsstring>()</argsstring>
+        <name>DeleteDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="27" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1adecf186b8a0b8e682693e79c2526505e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::SMemDC::InitDC</definition>
+        <argsstring>(HDC hdc, const CRect &amp;rc)</argsstring>
+        <name>InitDC</name>
+        <param>
+          <type>HDC</type>
+          <declname>hdc</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="29" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_mem_d_c_1a2388420b7c776445769f5f3b5d5734e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SMemDC::operator HDC</definition>
+        <argsstring>() const</argsstring>
+        <name>operator HDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="31" column="5" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" line="7" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SMemDC.h" bodystart="6" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a28803c38e742feadc991644cda3aee06" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>DeleteDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a36e27ddbc5a0a00b08866b3be94f8e6a" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>HasBitmap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1adecf186b8a0b8e682693e79c2526505e" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>InitDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a6722dbc38a12ee6ea62b165ee7385d86" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>IsBitmapOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a4a8208be2b73066678dff065e72e2f72" prot="protected" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>m_bBmpOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1ac52ef0a9f0fe2f0535792a10b98e5a77" prot="protected" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>m_bHasBitmap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1ac953c3499118f20095365bc5c052e478" prot="protected" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>m_hDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1ac5053e268bbbef045d10c890c24c9452" prot="protected" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>m_hOldBmp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a2388420b7c776445769f5f3b5d5734e1" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>operator HDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a90745c2bf3f8de6b63d200bed5a09ee9" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>SelectBitmap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a398fc47b79b63480ed00d79ab8027f2a" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>SetBitmapOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a139363e30b581c763bb5793f97370c1d" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>SMemDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1af6b5e491026de140accfc39fa6d9e646" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>SMemDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a4df8629296924105dab078ac4c7d9add" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>SMemDC</name></member>
+      <member refid="class_s_o_u_i_1_1_s_mem_d_c_1a9978f1210ace6515b110c412b875fe27" prot="public" virt="non-virtual"><scope>SOUI::SMemDC</scope><name>~SMemDC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

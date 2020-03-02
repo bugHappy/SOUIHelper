@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_i_skin_obj" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ISkinObj</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IObject</basecompoundref>
+    <includes refid="_s_skinobj-i_8h" local="no">SSkinobj-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a5c0e9713cf3b7f20949083a07a9aefb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::ISkinObj::~ISkinObj</definition>
+        <argsstring>()</argsstring>
+        <name>~ISkinObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="32" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a491e45878d320462a863782a1eabef6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::DrawByState</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, DWORD dwState, BYTE byAlpha) const =0</argsstring>
+        <name>DrawByState</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+<para>将this绘制到RenderTarget上去 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 绘制用的RenderTarget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rcDraw <ndash/> 绘制位置 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwState <ndash/> 绘制状态 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byAlpha <ndash/> 绘制透明度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="46" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1abac92504b434fc03e71429449090cc84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::DrawByState</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, DWORD dwState) const =0</argsstring>
+        <name>DrawByState</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <briefdescription>
+<para>将this绘制到RenderTarget上去 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 绘制用的RenderTarget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rcDraw <ndash/> 绘制位置 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwState <ndash/> 绘制状态 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 使用SkinObj的GetAlpha属性绘制 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="57" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a514939651f3eb54084e7e32e53810ca4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::DrawByIndex</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, int iState, BYTE byAlpha) const =0</argsstring>
+        <name>DrawByIndex</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iState</declname>
+        </param>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+<para>将this绘制到RenderTarget上去 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw2 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 绘制用的RenderTarget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rcDraw <ndash/> 绘制位置 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iState <ndash/> 绘制Index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byAlpha <ndash/> 绘制透明度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="69" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a7d60637f68b4ec43a55ee33baede4c6d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::DrawByIndex</definition>
+        <argsstring>(IRenderTarget *pRT, LPCRECT rcDraw, int iState) const =0</argsstring>
+        <name>DrawByIndex</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>LPCRECT</type>
+          <declname>rcDraw</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iState</declname>
+        </param>
+        <briefdescription>
+<para>将this绘制到RenderTarget上去 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw2 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 绘制用的RenderTarget </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCRECT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rcDraw <ndash/> 绘制位置 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iState <ndash/> 绘制Index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 使用SkinObj的GetAlpha属性绘制 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1ad584ab46ad77bd80b3b39ac657b9ba58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>SIZE</type>
+        <definition>virtual SIZE SOUI::ISkinObj::GetSkinSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetSkinSize</name>
+        <briefdescription>
+<para>获得Skin的默认大小 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetSkinSize <simplesect kind="return"><para>SIZE <ndash/> Skin的默认大小 Describe 派生类应该根据skin的特点实现该接口 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="88" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a5ad1368b8b138b548201d635abee2bd5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ISkinObj::GetStates</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetStates</name>
+        <briefdescription>
+<para>获得skin对象包含的状态数量 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetStates <simplesect kind="return"><para>int <ndash/> 状态数量 Describe 默认为1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="96" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1ae7d3190349522112a546225b62742499" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BYTE</type>
+        <definition>virtual BYTE SOUI::ISkinObj::GetAlpha</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetAlpha</name>
+        <briefdescription>
+<para>获得skin对象包含透明度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetAlpha <simplesect kind="return"><para>BYTE <ndash/> 透明度 Describe [0-255] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="104" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a22cee9d116228482f1d03ea86f6250d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::SetAlpha</definition>
+        <argsstring>(BYTE byAlpha)=0</argsstring>
+        <name>SetAlpha</name>
+        <param>
+          <type>BYTE</type>
+          <declname>byAlpha</declname>
+        </param>
+        <briefdescription>
+<para>设定skin对象包含透明度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetAlpha <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>BYTE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>byAlpha<ndash/> 透明度 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="113" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a861431d5fa2f65453efb44f2f59b58fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ISkinObj::OnColorize</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>OnColorize</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>调整皮肤对象色调 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnColorize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>COLORREF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cr <ndash/> 参考颜色 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void Describe 默认不处理 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="122" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1a5d8d5c09a9757fdc64c87dc72a6a1f30" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ISkinObj::GetScale</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="124" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_i_skin_obj_1af928e756ddc6cb9ef07be9a919789864" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>virtual ISkinObj* SOUI::ISkinObj::Scale</definition>
+        <argsstring>(int nScale)=0</argsstring>
+        <name>Scale</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="126" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Skin 对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" line="30" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SSkinobj-i.h" bodystart="29" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a514939651f3eb54084e7e32e53810ca4" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a7d60637f68b4ec43a55ee33baede4c6d" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>DrawByIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a491e45878d320462a863782a1eabef6f" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1abac92504b434fc03e71429449090cc84" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>DrawByState</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1ae7d3190349522112a546225b62742499" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a5d8d5c09a9757fdc64c87dc72a6a1f30" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1ad584ab46ad77bd80b3b39ac657b9ba58" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>GetSkinSize</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a5ad1368b8b138b548201d635abee2bd5" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>GetStates</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a861431d5fa2f65453efb44f2f59b58fb" prot="public" virt="virtual"><scope>SOUI::ISkinObj</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1af928e756ddc6cb9ef07be9a919789864" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>Scale</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a22cee9d116228482f1d03ea86f6250d4" prot="public" virt="pure-virtual"><scope>SOUI::ISkinObj</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_i_skin_obj_1a5c0e9713cf3b7f20949083a07a9aefb2" prot="public" virt="virtual"><scope>SOUI::ISkinObj</scope><name>~ISkinObj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

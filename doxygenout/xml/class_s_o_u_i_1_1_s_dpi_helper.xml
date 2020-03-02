@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_dpi_helper" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SDpiHelper</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_helper_1a5d81ba9f095da855ac00fe9001557f32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SDpiHelper::PEVersion</definition>
+        <argsstring>(LPCTSTR pszFileName, WORD &amp;wMajor, WORD &amp;wMinor, WORD &amp;wVer3, WORD &amp;wVer4)</argsstring>
+        <name>PEVersion</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszFileName</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wMajor</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wMinor</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wVer3</declname>
+        </param>
+        <param>
+          <type>WORD &amp;</type>
+          <declname>wVer4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="14" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="14" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_helper_1a794ac83f4af272268067983bcdc9ac43" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>static BOOL SOUI::SDpiHelper::IsVerOrGreater</definition>
+        <argsstring>(WORD wVers[4], WORD wMajor, WORD wMinor, WORD wSpBuild=0)</argsstring>
+        <name>IsVerOrGreater</name>
+        <param>
+          <type>WORD</type>
+          <declname>wVers</declname>
+          <array>[4]</array>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMajor</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wMinor</declname>
+        </param>
+        <param>
+          <type>WORD</type>
+          <declname>wSpBuild</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="37" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="37" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_helper_1ac3e8077143baf77a1334c5cca815361b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SOUI::SDpiHelper::getScale</definition>
+        <argsstring>(HWND hWnd)</argsstring>
+        <name>getScale</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="51" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="51" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_dpi_helper_1a6e25595fccf424bc8f20274f397d8a0f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SOUI::SDpiHelper::getScaleOld</definition>
+        <argsstring>(HWND hWnd=NULL)</argsstring>
+        <name>getScaleOld</name>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="113" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="113" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" line="11" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDpiHelper.hpp" bodystart="10" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_dpi_helper_1ac3e8077143baf77a1334c5cca815361b" prot="public" virt="non-virtual"><scope>SOUI::SDpiHelper</scope><name>getScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_helper_1a6e25595fccf424bc8f20274f397d8a0f" prot="private" virt="non-virtual"><scope>SOUI::SDpiHelper</scope><name>getScaleOld</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_helper_1a794ac83f4af272268067983bcdc9ac43" prot="public" virt="non-virtual"><scope>SOUI::SDpiHelper</scope><name>IsVerOrGreater</name></member>
+      <member refid="class_s_o_u_i_1_1_s_dpi_helper_1a5d81ba9f095da855ac00fe9001557f32" prot="public" virt="non-virtual"><scope>SOUI::SDpiHelper</scope><name>PEVersion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

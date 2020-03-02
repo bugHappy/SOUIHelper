@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_named_value" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SNamedValue</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class ValueParser</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_named_value_1ad4c09a942cf5e820f77ab6f5238c7fbf" prot="public" static="no">
+        <type><ref refid="struct_s_o_u_i_1_1_t_n_a_m_e_d_v_a_l_u_e" kindref="compound">TNAMEDVALUE</ref>&lt; T &gt;</type>
+        <definition>typedef TNAMEDVALUE&lt;T&gt; SOUI::SNamedValue&lt; T, ValueParser &gt;::NAMEDVALUE</definition>
+        <argsstring></argsstring>
+        <name>NAMEDVALUE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="24" column="29" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_named_value_1a3e0db50df2b0547618c22fde357d5fd6" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="struct_s_o_u_i_1_1_t_n_a_m_e_d_v_a_l_u_e" kindref="compound">NAMEDVALUE</ref> &gt;</type>
+        <definition>SArray&lt;NAMEDVALUE&gt; SOUI::SNamedValue&lt; T, ValueParser &gt;::m_lstNamedValue</definition>
+        <argsstring></argsstring>
+        <name>m_lstNamedValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="92" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_value_1a5c31460b5f421260b0bdefa8dde432ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SNamedValue&lt; T, ValueParser &gt;::Init</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="26" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_value_1aba16d6a6142bc69a7d6ccb1f39a34e3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; SOUI::SNamedValue&lt; T, ValueParser &gt;::String2Value</definition>
+        <argsstring>(const SStringW &amp;strName) const</argsstring>
+        <name>String2Value</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="45" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_value_1ab7860ce128b5daf4eb1db240d99985a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; SOUI::SNamedValue&lt; T, ValueParser &gt;::GetAt</definition>
+        <argsstring>(const int idx) const</argsstring>
+        <name>GetAt</name>
+        <param>
+          <type>const int</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="55" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_value_1aa14bc387ddc4ad6091d363a855ed09ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SOUI::SNamedValue&lt; T, ValueParser &gt;::Merge</definition>
+        <argsstring>(const SNamedValue &amp;src)</argsstring>
+        <name>Merge</name>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_named_value" kindref="compound">SNamedValue</ref> &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="61" column="8" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="61" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_named_value_1a10ffba18a3bc170bdd6e5f6387712706" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SOUI::SNamedValue&lt; T, ValueParser &gt;::Compare</definition>
+        <argsstring>(const void *p1, const void *p2)</argsstring>
+        <name>Compare</name>
+        <param>
+          <type>const void *</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="85" column="20" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="85" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" line="22" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/res.mgr/SNamedValue.h" bodystart="21" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a10ffba18a3bc170bdd6e5f6387712706" prot="protected" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>Compare</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1ab7860ce128b5daf4eb1db240d99985a2" prot="public" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>GetAt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a5c31460b5f421260b0bdefa8dde432ae" prot="public" virt="virtual"><scope>SOUI::SNamedValue</scope><name>Init</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1a3e0db50df2b0547618c22fde357d5fd6" prot="protected" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>m_lstNamedValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1aa14bc387ddc4ad6091d363a855ed09ea" prot="public" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>Merge</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1ad4c09a942cf5e820f77ab6f5238c7fbf" prot="public" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>NAMEDVALUE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_named_value_1aba16d6a6142bc69a7d6ccb1f39a34e3a" prot="public" virt="non-virtual"><scope>SOUI::SNamedValue</scope><name>String2Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

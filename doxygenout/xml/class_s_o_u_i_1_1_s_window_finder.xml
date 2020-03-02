@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_window_finder" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SWindowFinder</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton2" prot="public" virt="non-virtual">SOUI::SSingleton2&lt; SWindowFinder &gt;</basecompoundref>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="class_s_o_u_i_1_1_s_window_finder_1a7b78360d7e89edc6d147966e94e97b9f" prot="protected" static="no">
+        <type>SMap&lt; <ref refid="class_s_o_u_i_1_1_s_find_info" kindref="compound">SFindInfo</ref>, SWND &gt;</type>
+        <definition>typedef SMap&lt;SFindInfo,SWND&gt; SOUI::SWindowFinder::FINDCACHE</definition>
+        <argsstring></argsstring>
+        <name>FINDCACHE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="93" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_window_finder_1a2eae8b88616991b4d76006685a16033f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SWindow</definition>
+        <argsstring></argsstring>
+        <name>SWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="83" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_window_finder_1ab9127a277efe93902e3f0ed016c3c8cf" prot="protected" static="no" mutable="no">
+        <type>FINDCACHE</type>
+        <definition>FINDCACHE SOUI::SWindowFinder::m_findCache</definition>
+        <argsstring></argsstring>
+        <name>m_findCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="94" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_finder_1ad91b0a5c7a3f4f42c268a855b05ba0eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SWindowFinder::FindChildByName</definition>
+        <argsstring>(SWindow *pParent, const SStringW &amp;strName, int nDeep)</argsstring>
+        <name>FindChildByName</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDeep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="85" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_finder_1a1d3f6caae623a1db67a8fc67aea36f03" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SWindowFinder::FindChildByID</definition>
+        <argsstring>(SWindow *pParent, int nID, int nDeep)</argsstring>
+        <name>FindChildByID</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDeep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="86" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_finder_1a2c553f4a93488e240a1bbe9847fb9139" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SWindowFinder::CacheResultForName</definition>
+        <argsstring>(SWindow *pParent, const SStringW &amp;strName, int nDeep, SWindow *pResult)</argsstring>
+        <name>CacheResultForName</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDeep</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="88" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_finder_1a1e1d84eea21494b1640317fabc3c3f31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SWindowFinder::CacheResultForID</definition>
+        <argsstring>(SWindow *pParent, int nID, int nDeep, SWindow *pResult)</argsstring>
+        <name>CacheResultForID</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nDeep</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="89" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_window_finder_1a25f2fa6458b48f0f598783e5c389cef2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SWindowFinder::FindChildByKey</definition>
+        <argsstring>(SWindow *pParent, const SFindInfo &amp;fi)</argsstring>
+        <name>FindChildByKey</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pParent</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_find_info" kindref="compound">SFindInfo</ref> &amp;</type>
+          <declname>fi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="91" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SWindowFinder</label>
+        <link refid="class_s_o_u_i_1_1_s_window_finder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SWindowFinder &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SWindowFinder</label>
+        <link refid="class_s_o_u_i_1_1_s_window_finder"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingleton2&lt; SWindowFinder &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" line="79" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SwndFinder.h" bodystart="78" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a1e1d84eea21494b1640317fabc3c3f31" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>CacheResultForID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a2c553f4a93488e240a1bbe9847fb9139" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>CacheResultForName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a7b78360d7e89edc6d147966e94e97b9f" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>FINDCACHE</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a1d3f6caae623a1db67a8fc67aea36f03" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a25f2fa6458b48f0f598783e5c389cef2" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>FindChildByKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1ad91b0a5c7a3f4f42c268a855b05ba0eb" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1ab9127a277efe93902e3f0ed016c3c8cf" prot="protected" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>m_findCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_finder_1a2eae8b88616991b4d76006685a16033f" prot="private" virt="non-virtual"><scope>SOUI::SWindowFinder</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SWindowFinder</scope><name>~SSingleton2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

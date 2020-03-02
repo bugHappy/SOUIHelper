@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_p_o_s___i_n_f_o" kind="struct" language="C++" prot="public">
+    <compoundname>SOUI::POS_INFO</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1ac64e276a0d26374348be8e676e4cad63" prot="public" static="no" mutable="no">
+        <type>PIT</type>
+        <definition>PIT SOUI::POS_INFO::pit</definition>
+        <argsstring></argsstring>
+        <name>pit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>坐标类型 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" line="35" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1a8f8e5e8f740ab019e5c556f4eaab3d6f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::POS_INFO::nRefID</definition>
+        <argsstring></argsstring>
+        <name>nRefID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>根据ID引用兄弟窗口时使用的ID,-1代表不参考特定ID的兄弟,使用ID引用的格式为&quot;sib.left@200:10&quot;类似的格式 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" line="36" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1abd11126886381c4225fc94bb0be77d90" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char SOUI::POS_INFO::cMinus</definition>
+        <argsstring></argsstring>
+        <name>cMinus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>定义的值包含&quot;-&quot;, 由于-0不能直接做nPos表示，需要一个单独的标志位 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" line="37" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1aa6e968625704dccfe81af1972b505b11" prot="public" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::POS_INFO::nPos</definition>
+        <argsstring></argsstring>
+        <name>nPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>坐标值 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" line="38" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="1">
+        <label>SOUI::POS_INFO</label>
+        <link refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>nPos</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" line="34" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SouiLayoutParamStruct.h" bodystart="33" bodyend="39"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1abd11126886381c4225fc94bb0be77d90" prot="public" virt="non-virtual"><scope>SOUI::POS_INFO</scope><name>cMinus</name></member>
+      <member refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1aa6e968625704dccfe81af1972b505b11" prot="public" virt="non-virtual"><scope>SOUI::POS_INFO</scope><name>nPos</name></member>
+      <member refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1a8f8e5e8f740ab019e5c556f4eaab3d6f" prot="public" virt="non-virtual"><scope>SOUI::POS_INFO</scope><name>nRefID</name></member>
+      <member refid="struct_s_o_u_i_1_1_p_o_s___i_n_f_o_1ac64e276a0d26374348be8e676e4cad63" prot="public" virt="non-virtual"><scope>SOUI::POS_INFO</scope><name>pit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

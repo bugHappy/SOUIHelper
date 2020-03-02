@@ -1,0 +1,2126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_tab_ctrl" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::STabCtrl</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_window" prot="public" virt="non-virtual">SOUI::SWindow</basecompoundref>
+    <includes refid="_s_tab_ctrl_8h" local="no">STabCtrl.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>@7</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a84617d130c2468852f0368b532492cd7" prot="protected">
+          <name>AlignTop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a80aa1db1ac8d47cd49aa673f4bb708f3" prot="protected">
+          <name>AlignLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a36640745ef9491ffca18fd69e4c529ac" prot="protected">
+          <name>AlignBottom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6ae594dae084f2df8a7865f5d0bd4e11d6" prot="protected">
+          <name>AlignRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="126" column="9" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="125" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>TEXTDIR</name>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2adfaed738bdfb1ddbff2fd63ff6e1e3db" prot="protected">
+          <name>Text_Horz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2a3300a306fa82f075a04566ebc6ef68db" prot="protected">
+          <name>Text_Vert</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="134" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="133" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_tab_ctrl_1a41f4e5b6f47046e4686aa40028e5617a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class STabSlider</definition>
+        <argsstring></argsstring>
+        <name>STabSlider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="106" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a5cb26d084ec7aa1880f48913c0b0bf25" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::m_nHoverTabItem</definition>
+        <argsstring></argsstring>
+        <name>m_nHoverTabItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hover状态item </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="110" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a4ba3fb2ba62afaa4554e37ddb4aa1055" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::m_nCurrentPage</definition>
+        <argsstring></argsstring>
+        <name>m_nCurrentPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>当前页码 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="111" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a34f5be401ff453ed88fcb25ed41b74df" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::STabCtrl::m_nTabInterSize</definition>
+        <argsstring></argsstring>
+        <name>m_nTabInterSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tab页面间距 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="112" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1afdddb1b2164205b6ea9df7cc6278337c" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::STabCtrl::m_szTab[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>m_szTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tab SIZE <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="113" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a4e73a2338321a1ac034d87ef2074d218" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::STabCtrl::m_nTabPos</definition>
+        <argsstring></argsstring>
+        <name>m_nTabPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tab位置 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="114" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a18316cbe7d72d635bb4236af47028428" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::STabCtrl::m_pSkinTab</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinTab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISkibObj对象 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="115" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a73dd56bda7f41c4c5b21a4db079c5f1f" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::STabCtrl::m_pSkinIcon</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISkibObj对象 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="116" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1acbaabeb611606249a9fac10e7299b370" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::STabCtrl::m_pSkinTabInter</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinTabInter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISkibObj对象 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="117" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a1bd8e0d6fe3d92122c186022e194feb4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>ISkinObj* SOUI::STabCtrl::m_pSkinFrame</definition>
+        <argsstring></argsstring>
+        <name>m_pSkinFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ISkibObj对象 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="118" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1af11a8fafdef61c2eae5594fde52c8d59" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::STabCtrl::m_ptIcon[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>m_ptIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>图标位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="119" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1aebaa9b87c1374c89cc99576fbf335f36" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::STabCtrl::m_ptText[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>m_ptText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>标题位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="120" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a42a8c3a706b1e5f2f2e08001feffb986" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::m_nTabAlign</definition>
+        <argsstring></argsstring>
+        <name>m_nTabAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>排列方式 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="121" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a57ad3095cd3ae1d96fc7c0affdf4270f" prot="protected" static="no" mutable="no">
+        <type>SArray&lt; <ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref> * &gt;</type>
+        <definition>SArray&lt;STabPage*&gt; SOUI::STabCtrl::m_lstPages</definition>
+        <argsstring></argsstring>
+        <name>m_lstPages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tab标签页面链表 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="123" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1a1aff58f8d24d81dc81072e6071bdddcb" prot="protected" static="no" mutable="no">
+        <type>STabSlider *</type>
+        <definition>STabSlider* SOUI::STabCtrl::m_tabSlider</definition>
+        <argsstring></argsstring>
+        <name>m_tabSlider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="124" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1abaff45bd859c6996951a0555662b92f2" prot="protected" static="no" mutable="no">
+        <type>enum SOUI::STabCtrl::TEXTDIR</type>
+        <definition>enum SOUI::STabCtrl::TEXTDIR SOUI::STabCtrl::m_txtDir</definition>
+        <argsstring></argsstring>
+        <name>m_txtDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="137" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac8c88429b87b4837bd7317852fca9e7c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::m_nAnimateSteps</definition>
+        <argsstring></argsstring>
+        <name>m_nAnimateSteps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>动画次数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="138" column="16" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1afdad174d2914f7e208c7f39c7bcc8d39" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::m_nAniamteType</definition>
+        <argsstring></argsstring>
+        <name>m_nAniamteType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="139" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_tab_ctrl_1add65c108a21ccf75a7f3c50e3f7d3295" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; IInterpolator &gt;</type>
+        <definition>SAutoRefPtr&lt;IInterpolator&gt; SOUI::STabCtrl::m_aniInterpolator</definition>
+        <argsstring></argsstring>
+        <name>m_aniInterpolator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="140" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1aa4217edfa58d430ce477a2147c5a4149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STabCtrl::STabCtrl</definition>
+        <argsstring>()</argsstring>
+        <name>STabCtrl</name>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa4217edfa58d430ce477a2147c5a4149" kindref="member">STabCtrl::STabCtrl</ref> Describe 构造函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="148" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a05ec2dd1aab8c5504dc283a3546e3bb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::STabCtrl::~STabCtrl</definition>
+        <argsstring>()</argsstring>
+        <name>~STabCtrl</name>
+        <briefdescription>
+<para>析构函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a05ec2dd1aab8c5504dc283a3546e3bb4" kindref="member">STabCtrl::~STabCtrl</ref> Describe 析构函数 <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="156" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a5d7c5444700769a07f91166519f36e7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::GetCurSel</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurSel</name>
+        <briefdescription>
+<para>获取当前选中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5d7c5444700769a07f91166519f36e7e" kindref="member">STabCtrl::GetCurSel</ref> <simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="165" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ad5f0b17922ce8bffed2a23cdd6fe1052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::STabCtrl::GetPage</definition>
+        <argsstring>(int iPage)</argsstring>
+        <name>GetPage</name>
+        <param>
+          <type>int</type>
+          <declname>iPage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="170" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1aa84cb8a4cc6bc0d5e614b8ebc6121a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::STabCtrl::GetPage</definition>
+        <argsstring>(LPCTSTR pszName, BOOL bTitle=TRUE)</argsstring>
+        <name>GetPage</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bTitle</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="171" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a91278bfe1348f50abdbe039ff8f30c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STabCtrl::SetCurSel</definition>
+        <argsstring>(int nIndex)</argsstring>
+        <name>SetCurSel</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <briefdescription>
+<para>设置当前选中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a91278bfe1348f50abdbe039ff8f30c6e" kindref="member">STabCtrl::SetCurSel</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="181" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ad126522e213e288cb69013e73320a0c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STabCtrl::SetCurSel</definition>
+        <argsstring>(LPCTSTR pszName, BOOL bTitle=TRUE)</argsstring>
+        <name>SetCurSel</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bTitle</declname>
+          <defval>TRUE</defval>
+        </param>
+        <briefdescription>
+<para>设置当前选中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a91278bfe1348f50abdbe039ff8f30c6e" kindref="member">STabCtrl::SetCurSel</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszTitle <ndash/> 标题 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="191" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a74a90fd7f46e786c6ad6e066ebd0626c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STabCtrl::SetItemTitle</definition>
+        <argsstring>(int nIndex, LPCTSTR lpszTitle)</argsstring>
+        <name>SetItemTitle</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpszTitle</declname>
+        </param>
+        <briefdescription>
+<para>设置标题 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a74a90fd7f46e786c6ad6e066ebd0626c" kindref="member">STabCtrl::SetItemTitle</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lpszTitle <ndash/> 标题 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="202" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a8e754787bfa58b5e8e513c2bc316d249" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STabCtrl::CreateChildren</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>CreateChildren</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ab24c41e701b99857cd33b15dcc20d6d8">CreateChildren</reimplements>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+<para>创建tab页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8e754787bfa58b5e8e513c2bc316d249" kindref="member">STabCtrl::CreateChildren</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pugi::xml_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xmlNode <ndash/> xml文件 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回BOOL</para>
+</simplesect>
+Describe 创建tab页面 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="211" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1af304fe2b1815985fa224da5eb6da1652" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STabCtrl::InsertItem</definition>
+        <argsstring>(LPCWSTR lpContent, int iInsert=-1)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>lpContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iInsert</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>插入tab页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1af304fe2b1815985fa224da5eb6da1652" kindref="member">STabCtrl::InsertItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCWSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lpContent <ndash/> XML描述的page信息 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iInsert <ndash/> 位置 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回插入位置</para>
+</simplesect>
+Describe 插入tab页面 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="222" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1adb98b2f69b9d22698b9f735f6f94308f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::STabCtrl::InsertItem</definition>
+        <argsstring>(pugi::xml_node xmlNode, int iInsert=-1, BOOL bLoading=FALSE)</argsstring>
+        <name>InsertItem</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iInsert</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bLoading</declname>
+          <defval>FALSE</defval>
+        </param>
+        <briefdescription>
+<para>插入tab页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1af304fe2b1815985fa224da5eb6da1652" kindref="member">STabCtrl::InsertItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pugi::xml_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>xmlNode <ndash/> xml文件 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iInsert <ndash/> 位置 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bLoading <ndash/> 是否加载 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 插入tab页面 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="234" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac8d759496634c9c04ef7d2941be99174" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::GetItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetItemCount</name>
+        <briefdescription>
+<para>获取tab页面数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8d759496634c9c04ef7d2941be99174" kindref="member">STabCtrl::GetItemCount</ref> <simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取tab页面数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="243" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ab9339dd3d5dd41a1b180cedf73546e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref> *</type>
+        <definition>STabPage* SOUI::STabCtrl::GetItem</definition>
+        <argsstring>(int nIndex)</argsstring>
+        <name>GetItem</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <briefdescription>
+<para>获取指定tab页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ab9339dd3d5dd41a1b180cedf73546e55" kindref="member">STabCtrl::GetItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>返回int</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="255" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ad7f21dbb285ddedc98a7cf3da244d1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL SOUI::STabCtrl::RemoveItem</definition>
+        <argsstring>(int nIndex, int nSelPage=0)</argsstring>
+        <name>RemoveItem</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nSelPage</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>删除指定tab页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ad7f21dbb285ddedc98a7cf3da244d1cb" kindref="member">STabCtrl::RemoveItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nSelPage <ndash/> 选中页面 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>删除指定tab页面</para>
+</simplesect>
+Describe 获取当前选中 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="266" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a12a12f706a7099ef795118714f6c5b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::RemoveAllItems</definition>
+        <argsstring>(void)</argsstring>
+        <name>RemoveAllItems</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>删除所有页面 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a12a12f706a7099ef795118714f6c5b43" kindref="member">STabCtrl::RemoveAllItems</ref> Describe 删除所有页面 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="274" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1aa30ddb60a7bd626d12998fc1d91400d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::GetPageIndex</definition>
+        <argsstring>(LPCTSTR pszName, BOOL bTitle)</argsstring>
+        <name>GetPageIndex</name>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>pszName</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bTitle</declname>
+        </param>
+        <briefdescription>
+<para>获取指定页面的索引 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa30ddb60a7bd626d12998fc1d91400d9" kindref="member">STabCtrl::GetPageIndex</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>LPCTSTR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pszName <ndash/> 查询字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BOOL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bTitle <ndash/> TRUE:pszName代表的是page的title属性,FALSE：pszName代表的是page的name属性 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>找到的页面索引号</para>
+</simplesect>
+Describe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="285" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a8cef0318530c5262cbdb4f0da2cf46de" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::OnItemInserted</definition>
+        <argsstring>(STabPage *pItem)</argsstring>
+        <name>OnItemInserted</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+<para>插入page状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnItemInserted <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pItem <ndash/> 插入的PAGE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="297" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="297" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1af3704ef4a55507ac4cc505800b4ecf60" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::OnItemRemoved</definition>
+        <argsstring>(STabPage *pItem)</argsstring>
+        <name>OnItemRemoved</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+<para>删除page状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnItemRemoved <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pItem <ndash/> 删除的PAGE </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="307" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="307" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a0fe7a9460b754bc7068e1a090141f268" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::BeforePaint</definition>
+        <argsstring>(IRenderTarget *pRT, SPainter &amp;painter)</argsstring>
+        <name>BeforePaint</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a857d8b7407ad8c153c79f789144e6ad9">BeforePaint</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_painter" kindref="compound">SPainter</ref> &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+<para>为RT准备好当前窗口的绘图环境 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>BeforePaint <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_painter" kindref="compound">SPainter</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; painter <ndash/> <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe 和SWindow不同，STabCtrl中强制使用normal状态配置字体及颜色，其它状态给tab头使用 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="318" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a3fa21c507dcd9d45585176a1c6d17bfd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>CRect</type>
+        <definition>virtual CRect SOUI::STabCtrl::GetChildrenLayoutRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetChildrenLayoutRect</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ad4d40b97eef06dc486e24f8a21bb101a">GetChildrenLayoutRect</reimplements>
+        <briefdescription>
+<para><linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a3fa21c507dcd9d45585176a1c6d17bfd" kindref="member">STabCtrl::GetChildrenLayoutRect</ref> Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="326" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a63103ed88b058880ed2746eb0f655cb5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>CRect</type>
+        <definition>virtual CRect SOUI::STabCtrl::GetTitleRect</definition>
+        <argsstring>()</argsstring>
+        <name>GetTitleRect</name>
+        <briefdescription>
+<para>获取tab头的矩形 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetTitleRect <simplesect kind="return"><para>CRect</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="335" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a8201fb76d08829c12606e566c9d1804e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STabCtrl::GetItemRect</definition>
+        <argsstring>(int nIndex, CRect &amp;rcItem)</argsstring>
+        <name>GetItemRect</name>
+        <param>
+          <type>int</type>
+          <declname>nIndex</declname>
+        </param>
+        <param>
+          <type>CRect &amp;</type>
+          <declname>rcItem</declname>
+        </param>
+        <briefdescription>
+<para>获取指定item位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8201fb76d08829c12606e566c9d1804e" kindref="member">STabCtrl::GetItemRect</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nIndex <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp;rcItem <ndash/> 位置</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 获取指定item位置 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="345" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ae697d2c8074bb0922aee9b0a434076ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::DrawItem</definition>
+        <argsstring>(IRenderTarget *pRT, const CRect &amp;rcItem, int iItem, DWORD dwState)</argsstring>
+        <name>DrawItem</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rcItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwState</declname>
+        </param>
+        <briefdescription>
+<para>绘制item </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ae697d2c8074bb0922aee9b0a434076ab" kindref="member">STabCtrl::DrawItem</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRT <ndash/> 绘制设备 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CRect &amp;rcItem <ndash/> 绘制区域 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>iItem <ndash/> 索引 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DWORD</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dwState <ndash/> 状态</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 绘制item </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="357" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1aeeb1bf2e2979a8166f338285fbd8e2c6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_tab_page" kindref="compound">STabPage</ref> *</type>
+        <definition>virtual STabPage* SOUI::STabCtrl::CreatePageFromXml</definition>
+        <argsstring>(pugi::xml_node xmlPage)</argsstring>
+        <name>CreatePageFromXml</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlPage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="359" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a0203e32f74318bd198c7d7033177773d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::STabCtrl::OnGetDlgCode</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetDlgCode</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a1d52071628c938dd064b6765856f9be5">OnGetDlgCode</reimplements>
+        <briefdescription>
+<para>获取窗口消息码 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a0203e32f74318bd198c7d7033177773d" kindref="member">STabCtrl::OnGetDlgCode</ref> <simplesect kind="return"><para>返回UINT</para>
+</simplesect>
+Describe 获取窗口消息码 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="368" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac9b02ecac92c18fa72a58ba1ce31ed2b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::STabCtrl::OnUpdateToolTip</definition>
+        <argsstring>(CPoint pt, SwndToolTipInfo &amp;tipInfo)</argsstring>
+        <name>OnUpdateToolTip</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1adc7efe0aeb2f38ccba818e8c7d0ab010">OnUpdateToolTip</reimplements>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref> &amp;</type>
+          <declname>tipInfo</declname>
+        </param>
+        <briefdescription>
+<para>处理tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnUpdateToolTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPoint &amp; pt <ndash/> 测试点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; tipInfo <ndash/> tip信息 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE:更新tooltip，FALSE:不更新tooltip</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="373" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ae9bcdea258caead7b1369cddb85324b2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::UpdateChildrenPosition</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateChildrenPosition</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1aba50375cd77cfeb4361bf7cfe8327b4c">UpdateChildrenPosition</reimplements>
+        <briefdescription>
+<para>更新子窗口位置 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UpdateChildrenPosition <simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="382" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a79917fb0cd46463d70908ec535ed2822" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::OnInitFinished</definition>
+        <argsstring>(pugi::xml_node xmlNode)</argsstring>
+        <name>OnInitFinished</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="384" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ae6812826eb312ca84d6d370a705ce3ee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::OnColorize</definition>
+        <argsstring>(COLORREF cr)</argsstring>
+        <name>OnColorize</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1afb396d00c1a676881a464ce7f4794c47">OnColorize</reimplements>
+        <param>
+          <type>COLORREF</type>
+          <declname>cr</declname>
+        </param>
+        <briefdescription>
+<para>调节窗口色调 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OoColorize <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>COLORREF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cr <ndash/> 目标颜色 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="386" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac9e8c48bd75b81f91b402de7b049a519" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::STabCtrl::OnScaleChanged</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>OnScaleChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a20bc6fab178a2f8316db40cb68a42d0c">OnScaleChanged</reimplements>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="387" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac4fcd55a85eb20b9d117b748afdc4aec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HRESULT</type>
+        <definition>virtual HRESULT SOUI::STabCtrl::OnLanguageChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnLanguageChanged</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a4038fd089860fbccacfd6d8198924e4d">OnLanguageChanged</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="389" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a13af08f77e3fb3897df4acfe510f4e0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::STabCtrl::HitTest</definition>
+        <argsstring>(CPoint pt)</argsstring>
+        <name>HitTest</name>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="391" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a9f1c5f51a2da353b11d0b9859053557f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnSliderFinish</definition>
+        <argsstring>()</argsstring>
+        <name>OnSliderFinish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="393" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a45913eaa504b641b887488b272df1643" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::TextOutV</definition>
+        <argsstring>(IRenderTarget *pRT, int x, int y, const SStringT &amp;strText)</argsstring>
+        <name>TextOutV</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="396" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1afec4b86b5cdc8a51ae4cf56cdf034d16" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::DrawTextV</definition>
+        <argsstring>(IRenderTarget *pRT, CRect rcText, const SStringT &amp;strText)</argsstring>
+        <name>DrawTextV</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>CRect</type>
+          <declname>rcText</declname>
+        </param>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="397" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a93f07271fa018b6a44870cce0c3f273b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SIZE</type>
+        <definition>SIZE SOUI::STabCtrl::MeasureTextV</definition>
+        <argsstring>(IRenderTarget *pRT, const SStringT &amp;strText)</argsstring>
+        <name>MeasureTextV</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>const SStringT &amp;</type>
+          <declname>strText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="398" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1ac44b0fbfa4f55a7b03c91c31c3d4fb96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnPaint</definition>
+        <argsstring>(IRenderTarget *pRT)</argsstring>
+        <name>OnPaint</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <briefdescription>
+<para>绘画消息 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac44b0fbfa4f55a7b03c91c31c3d4fb96" kindref="member">STabCtrl::OnPaint</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pRT <ndash/> 绘制设备句柄</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="407" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a146044c881869e097477ffd75664e4d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnLButtonDown</definition>
+        <argsstring>(UINT nFlags, CPoint point)</argsstring>
+        <name>OnLButtonDown</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>鼠标左键按下事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a146044c881869e097477ffd75664e4d1" kindref="member">STabCtrl::OnLButtonDown</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point <ndash/> 鼠标坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="416" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1aa5490dae7f670f9c0fb919e3d185a049" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnMouseMove</definition>
+        <argsstring>(UINT nFlags, CPoint point)</argsstring>
+        <name>OnMouseMove</name>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <param>
+          <type>CPoint</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>鼠标移动事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa5490dae7f670f9c0fb919e3d185a049" kindref="member">STabCtrl::OnMouseMove</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>point <ndash/> 鼠标坐标</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="425" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1afe9404492331465299fb62b901654fac" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnMouseLeave</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseLeave</name>
+        <briefdescription>
+<para>鼠标离开事件 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1afe9404492331465299fb62b901654fac" kindref="member">STabCtrl::OnMouseLeave</ref> Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="432" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="432" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a8fa45c6ab15e207f5af581c1188aac1a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnKeyDown</definition>
+        <argsstring>(UINT nChar, UINT nRepCnt, UINT nFlags)</argsstring>
+        <name>OnKeyDown</name>
+        <param>
+          <type>UINT</type>
+          <declname>nChar</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nRepCnt</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nFlags</declname>
+        </param>
+        <briefdescription>
+<para>键盘按下 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8fa45c6ab15e207f5af581c1188aac1a" kindref="member">STabCtrl::OnKeyDown</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nChar <ndash/> 键码 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nRepCnt <ndash/> 重复次数 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UINT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nFlags <ndash/> 标志</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="445" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a99cc8d1a2b0e1a95078cd694607539c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::STabCtrl::OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+<para>销毁 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_s_o_u_i_1_1_s_tab_ctrl_1a99cc8d1a2b0e1a95078cd694607539c9" kindref="member">STabCtrl::OnDestroy</ref> Describe 此函数是消息响应函数 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="452" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_tab_ctrl_1a5701245224f66b708319e77000f5ec37" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::STabCtrl::ATTR_INT</definition>
+        <argsstring>(L&quot;animateType&quot;, m_nAniamteType, FALSE) ATTR_CHAIN_PTR(m_aniInterpolator</argsstring>
+        <name>ATTR_INT</name>
+        <param>
+          <type>L&quot;animateType&quot;</type>
+        </param>
+        <param>
+          <type>m_nAniamteType</type>
+        </param>
+        <param>
+          <type>FALSE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="491" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>tab控件 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe tab控件 </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="2">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::STabCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tab_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="16">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="3">
+        <label>SObject</label>
+      </node>
+      <node id="11">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="23">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="20">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="2">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::STabCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tab_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_ptText</edgelabel>
+          <edgelabel>m_szTab</edgelabel>
+          <edgelabel>m_nTabPos</edgelabel>
+          <edgelabel>m_nTabInterSize</edgelabel>
+          <edgelabel>m_ptIcon</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_pSkinTabInter</edgelabel>
+          <edgelabel>m_pSkinFrame</edgelabel>
+          <edgelabel>m_pSkinIcon</edgelabel>
+          <edgelabel>m_pSkinTab</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="13">
+        <label>IObject</label>
+      </node>
+      <node id="6">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="21">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="12">
+        <label>IObjRef</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="7">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="17">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" line="105" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/control/STabCtrl.h" bodystart="104" bodyend="495"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4f7aec07b3d67d9334e9465ed8ced4db" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_ApplyMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1202e1e2d35caf0a3a02cc4b9d2cb196" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_ConvertRect2RenderRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad5a23edef9a18d53ab4cc9bf92b7b752" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a25923a14b45b2d129666b0f7d67b56f5" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af6474657f02dd8876a05e33b9cd47c45" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_GetCurrentLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf0fe0bf79dfe169c68c135d749611cb" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_GetMatrixEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7775b1fd4a7d25a2b68a64a759808a7a" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_PaintChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ace0b4789c2b09715e797ac21560bd725" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_PaintClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88da487f3441bf790b533180d2947a54" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_PaintNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6acfef3a3ad982e4f2a4c549c52527b8" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_PaintRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adfa488cef4ca81f66b037e2cf5777be9" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_RedrawNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8f0dc8efaad35dfc7996383ce56dc64d" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_Update</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a26db921236b404f711f9b43a55c57690" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>_WndRectInRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf9ef86a26d57a90a7f262a85e0d192f" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>accNotifyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6f2cd6a7943d7bcbc5f172a5d1ca123d" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>AdjustZOrder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e451823d77789563ba3b462c3d046d6" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>AfterAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abd86a009594f9fffa064bafaa5c0ce75" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>AfterPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a36640745ef9491ffca18fd69e4c529ac" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>AlignBottom</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a80aa1db1ac8d47cd49aa673f4bb708f3" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>AlignLeft</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6ae594dae084f2df8a7865f5d0bd4e11d6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>AlignRight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4a4b8f34ed755cee45f3be5a47e95da6a84617d130c2468852f0368b532492cd7" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>AlignTop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2c86bf8485cd1d04efb81524449b3aef" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ATTR_CHAIN_PTR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9dd09cacdc43c7988b180857187094d9" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ATTR_CUSTOM</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5701245224f66b708319e77000f5ec37" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ATTR_INT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5acabc38c9b479799aae59fe98c67b16" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ATTR_SKIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a0fe7a9460b754bc7068e1a090141f268" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>BeforePaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1add4ffbe391168d83216ff0eeeb5f0f32" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>BeforePaintEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5905fa07378248c9d9a7ff9ad981028d" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>BringWindowToTop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8eb66d6e169a9feda53a7030ea4b872" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ClearAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37061054c3dd68c100e94d09e28296a7" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8e754787bfa58b5e8e513c2bc316d249" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a632062c625df6e5cdc6ab5c8b66ac6f5" prot="public" virt="non-virtual" ambiguityscope="SOUI::SWindow::"><scope>SOUI::STabCtrl</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aeeb1bf2e2979a8166f338285fbd8e2c6" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>CreatePageFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3bb0f2cbf47eb477062b672ea63a78d7" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DefAttributeProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d5846acd45d8685dfb9d74925118410" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DestroyChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab65f99da1766c8c5e71fd94ccb481c19" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925af2bb91b743698b2dfc2147fa7dac8d05" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>dirty_child</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a00e8341bd64ad23992671c210ca85f0d" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>dirty_clean</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a6f166895461bc7dde7f26b7fddf6914c" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>dirty_self</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0d1c67bd321a29d73917ff226d61b590" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>DispatchPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aadfe4964cd88757d019229646c728ef3" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DoColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abcb0e59dec10489ed133a8a2a57f42c6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DrawDefFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a535465979865bafd55b5d7620ae7aa31" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>DrawFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ae697d2c8074bb0922aee9b0a434076ab" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>DrawItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa0f57e46cc741a284418625d3ceadd8" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>DrawText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1afec4b86b5cdc8a51ae4cf56cdf034d16" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>DrawTextV</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac15fdc97bc52927fe40ae00531402f4c" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>EnableWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ceb20cf5134305ae537d82438bffe41" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5b88c203f19039606ab8207acff911d7" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5a5ab80a2410e009b64dff1efdf2036" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByID2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6cfff5bb97a100aa6b04479e22aa14e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a53f6211eb1c98d1a40e1343488eae3cf" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a641ce730c844dedac014eec1233f6008" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad09240f7e2fb8ba8455eabec775f2b97" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a743238efbf7d1d7d5b450b6e4e1ffbf0" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FireCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1b41ec792e70af4b5b84de961763fa52" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>FireCtxMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a74d1344ff872e4bfb6c1ba4ce3db9ad1" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac273d06c46f686e7e2399dae59c5fd8f" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a49b3abddf7dcdb5155fb66b6e4aa89" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab6d45c6c1f61b65ab944d9a4d62f1a4f" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7163e835d29acc2d71227096edb37a5c" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb36a9c7d1c51f792f6ec13ac724827e" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a0544d797f0eed085a1c7133e18216a" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a062794d497acb9696f3dcc4b9628bffe" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6be523a0e661a48989de4e8f365a1619" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a3fa21c507dcd9d45585176a1c6d17bfd" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetChildrenLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a91846f5b1a751e4667de2e2a123adb5c" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41018b5ea1338a4c725c1736d1bc07ad" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a158bb1db1271bdc6a57945252a044883" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetColorizeColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a168ce1a0daffa4f72f8aede1a78034e2" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0b48463079ea404178ef9ecb1d4d22d6" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a17535f75280b4de8d67feb6e46b2fb1b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5d7c5444700769a07f91166519f36e7e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetCurSel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a67203f925ea9185f56ef92623638ee" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08fa72505378ac8295b1255177788935" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab55ae205e8fd681ba9a3fcac1d931fdd" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ab9339dd3d5dd41a1b180cedf73546e55" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8d759496634c9c04ef7d2941be99174" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetItemCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8201fb76d08829c12606e566c9d1804e" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetItemRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a824d5cdd2ebd2483edae7493dc304b29" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad54c79e0dd91b7214ce0af9168e3e483" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a889297ad5c45b2a0c838d094e30e8322" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetLayoutParamT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1ce596c052ea27920e2ea6e8651928c5" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4a96f19a6439a013b2c0481acb246c72" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetNextLayoutChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8816fcadb2c0a7c9e59aa20f1d295192" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ad5f0b17922ce8bffed2a23cdd6fe1052" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetPage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa84cb8a4cc6bc0d5e614b8ebc6121a1b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetPage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa30ddb60a7bd626d12998fc1d91400d9" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetPageIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ba6fd68b2bb1a06b47e4dbc68de17cb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9957ff0e957f36b478ffe07685700e84" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aca2b8f7c11d6c0ac20baa4ade46c25d0" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab3c2a2d33fafb9a8912882bad32cc4af" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetRoot</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa9d18960397ccbfaed109914be86f44f" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7fbfdc3d2482f5692a1ed2b6f1d156cc" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetScaleSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f2316b754b4b56b7d06ea926a77e7cb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa15ef57dfa020a433684dcf08f0086b" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetSelectedChildInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a45f599b24be57fe843e569e94a168117" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetSelectedSiblingInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3165c225c9af63e49ff6daac52715cb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5da2e8ca27640844b3fc963a7166d38d" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a797a5d2427431bf870298174a25f47b2" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2043e966fca57f2727a84da71791a001" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afee836ecfe282561f04fd489c85e73d7" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetTextAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a701e0978b502b8a911d83b92104df353" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetTextRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a63103ed88b058880ed2746eb0f655cb5" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetTitleRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eaace5eafbd001e7a966ac284202a71" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aec897a2bb2c6145b3f2edceb37948752" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetTopLevelParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af1a8444dab958c9565e0736060d00334" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6aa61f8fd3852502d866087a08982f9d" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa0591eab0c198fee236e6083af92c342" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eb7a1b0b03e7b2ab266bf046bff19c3" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8760f18f5c59ff1c2ba50da42c65fa1" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5779283a662e4145c25d86ee3854977" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bae8c4270ddb40d9c79047d0819d567" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>GetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79998d91aef3049b514dc6fd0e6aa8bb" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a13af08f77e3fb3897df4acfe510f4e0e" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>HitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a193389b19a7f5128a3fd8c96e1d437af" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>InitFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e81448460818325210cf5c2a830aa22" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>InsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1af304fe2b1815985fa224da5eb6da1652" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>InsertItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1adb98b2f69b9d22698b9f735f6f94308f" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>InsertItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad9775f0384a21501de5a83d13aeddab7" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a077137f2773be5b376b56c7a14957d" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acfb3d670ef9ef7b672737e031faafc74" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a54e1d70e0345ca81cd9bd232742a6bdb" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a86bb1d73a84c76647881e809bf2c040f" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsChecked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6070bb0bef9660f7a840cc4f18fd219d" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6da8af0fd7826625d6a7f20d29c9576" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsContainPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8c9a7b209eae739a4d57af5f65606db7" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsDescendant</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe6e48aedcfaeef60f4d6ba588cb8221" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsDisabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a941f7d50672180da3ca41c73ea83b848" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae86fb10386208b133bda4dfae5bd2bd5" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsDrawToCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab99d4da910a63fd1949a2f11260b2a4" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8c57ee5e9c70e570ee97142b0313ffe" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aff78f3beb70ad95e8719b714ddac7328" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsFocused</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32cbbee125a2b20460715ef5768509e8" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a635bfcb6349dda7110d7968a50275aec" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsLayoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ad6a56a890d2e1ba930373fb7d2b7fd85" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab820de4bcfb2895868e32052043a75ee" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a39eba5818d9356dd1ee8014a8a5d0cc7" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>IsSiblingsAutoGroupped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a10708bf2d2ba3f47162a49cfd660a420" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsUpdateLocked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1864e76f4c2a2fab4ee883e25d9384bb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8055d84af3f5a46dc70297aef983107b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>KillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac215f33ea3dfa00b4f81cf80b5ce461e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae5fe646db7bcd55266d15b927c92033f" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>KillTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>LayoutDirtyType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79515e1475ac8696b90043b2bf18910e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>LockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1add65c108a21ccf75a7f3c50e3f7d3295" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_aniInterpolator</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d880d3ae6ffffccc7cf033e3dae8f88" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_animation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a6d921587888f3b70465f218a93613e" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_animationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2ea7e7c73901e10fe6b7c6bd8165dd01" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_attrStorage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32bfb9aee220d68d2e839b095244fa8c" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4846f2a7857cd35d65f474e743501247" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bCacheDraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af673ccecde4eb3e6276a28c1bc63c03b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af165bd7220b8816f818a988786c23080" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bDisable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a02980687f61228aebbfcf80749dca8eb" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad3df6e93c63654a4037989ca350c41f0" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bDrawFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abaad9c0ebc77bd4faa13d01739dfeef6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a00f55c6c822a1a72f442ce421501f5b8" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1accee35d52c295a1b4b2fcaa7bf40eeb4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a80435f0e90b1db4ec28a7be652a97120" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab4c959e5240b734343c7d9fb20914c5" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4c7ff4974e210b645bc7a798893d26fb" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b184f526fe7bf42886168a344430012" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_cachedRT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af47fea7cbc561e7c8821b61fefec741b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_clipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41763193b38a46b9a66a444931de86b2" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_clipRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ab90746a315606b791fd698c633b896" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a36968b055add7746709d131e9e98a672" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_dwState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9403a80dd9dae0f9d00acd1c711fab2e" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_evtSet</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a507875bcaac23d34cd30c95324fd3d6d" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_invalidRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ee1ab9f163c102070f96da71b08acec" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_isAnimating</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa234c501aa7108210984fbe906e74c10" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_isDestroying</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a730690734d265f51d2a69d0d220b0d" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_layoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a57ad3095cd3ae1d96fc7c0affdf4270f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_lstPages</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1afdad174d2914f7e208c7f39c7bcc8d39" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nAniamteType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac8c88429b87b4837bd7317852fca9e7c" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nAnimateSteps</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5c57effbbd1e2cb3c8c33eeac1457e26" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4ba3fb2ba62afaa4554e37ddb4aa1055" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nCurrentPage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a5cb26d084ec7aa1880f48913c0b0bf25" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nHoverTabItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af0a9e017255444fd2d5529b5be24b2fe" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a57bc97feaee9e513b29e9f5ad6f64846" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nMaxWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a42a8c3a706b1e5f2f2e08001feffb986" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nTabAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a34f5be401ff453ed88fcb25ed41b74df" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nTabInterSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a4e73a2338321a1ac034d87ef2074d218" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nTabPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32798b93a37362d19c669779cce65545" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_nUpdateLockCnt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a22e05b34f42d57b86d719295de1f58dc" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pBgSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88a23d232bd9cc301687cc5eb5edbf9c" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8552d2e988d5e2e89be8bed2af4a560" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a118446810afe249237d9e25f1378fa7b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pFirstChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6131c58a4ee43c9e9469b8dcb75fda92" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pGetRTData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab9007baa36d9a89dd2f51a682fddfc6b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pLastChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f6eec303632698387fe7cd336b30d09" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f70befbe0b9f866b94de0cf52c22903" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aacc1f98bfba1141984fd40fd95e57615" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pNcSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1908afe346230e4995646f50b3e2fba6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pNextSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76ff6fb7f0329c12a5ddb8be1d1f3413" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a107180ec1b1df18ebc33845448249f9f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab92ab823183150ab54a29a209cc7c965" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pPrevSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a1bd8e0d6fe3d92122c186022e194feb4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pSkinFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a73dd56bda7f41c4c5b21a4db079c5f1f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pSkinIcon</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a18316cbe7d72d635bb4236af47028428" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pSkinTab</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1acbaabeb611606249a9fac10e7299b370" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_pSkinTabInter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1af11a8fafdef61c2eae5594fde52c8d59" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_ptIcon</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aebaa9b87c1374c89cc99576fbf335f36" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_ptText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aea8f9ff013cf7c2610d59d173cf19855" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a31bd9e5d19d2a6aa2181d37cf3bd09c3" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_strText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afd31d32e2e8b4752846146ae027de295" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_strToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab20f26f9a0e17ac1e88894de068876d9" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abb6b3d37c77f4cf73a78637dadad523b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_style</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b3b11872efbd0bc73cb94003e51ffb4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_swnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1afdddb1b2164205b6ea9df7cc6278337c" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_szTab</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a1aff58f8d24d81dc81072e6071bdddcb" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_tabSlider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a1cfd0deea0598efce21d791f3080bf" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_transform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1abaff45bd859c6996951a0555662b92f2" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_txtDir</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4ba4df406827d08c7a3fc974674b7ea1" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_uData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae9cad19aadf0118ca14ff121d223f72e" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>m_uZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeee48becf350c2abdeb7364b0e1fde8e" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>MarkCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a93f07271fa018b6a44870cce0c3f273b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>MeasureTextV</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a95d2c67b4af8e623fc3f8084a625060e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ModifyState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6b53d030ac767195e1f041d18c1243fb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7987099b1b6eeaeb03894450f520ae34" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac94a7a38467c2fcd7d9261d7f0e37139" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>NeedRedrawWhenStateChange</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44be24fc2b43b41e0ce1a30121770479" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnAnimationInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a46df2971c566254d1a12bfae60633761" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa709922c42009ebefd75295097079fa" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnAnimationStop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a98ca0528efc0a748611b729ac37d7814" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3c8417580183b8251065b182ff14376" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aaeff70dea6b6b1f904ce3e7f3e76fbd6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3b1c375cfb3ea50d227f28c9ac792664" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06d3628182e1f6b05b91c18296fb74d8" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c42e330309ffe2599d707d7e32e9f54" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06c368d196491184e1bbc3b42ad5451a" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2fcb0714453179731d01d92f639b32ce" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5e9eb423d768b4f9e981b4504c5c70f1" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a768e82033883ee2a1654b24a6552539f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a215c4a9bd488d3d93faa6f06c89edb44" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aad6b2db56568aa005e5d702284aa0166" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnAttrTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ae6812826eb312ca84d6d370a705ce3ee" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdeb9825fcc7fee97121b8b636a554f3" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnContentChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bd0e2e5d4827b2f0d7628b070fd5483" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a99cc8d1a2b0e1a95078cd694607539c9" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a48eec3b03f19d306a98eaf37341c3a53" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a673aeaf6d12e09fcca6bd72771ae9c4b" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a0203e32f74318bd198c7d7033177773d" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnGetDlgCode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a79917fb0cd46463d70908ec535ed2822" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnInitFinished</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acef46d7eec198d15acf2292eaaf38528" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnInsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8cef0318530c5262cbdb4f0da2cf46de" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnItemInserted</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1af3704ef4a55507ac4cc505800b4ecf60" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnItemRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a8fa45c6ab15e207f5af581c1188aac1a" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afaf581a2fa62fc4633f75b4c0f777593" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac4fcd55a85eb20b9d117b748afdc4aec" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnLanguageChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a146044c881869e097477ffd75664e4d1" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7ec660b24eb2f74d4f63eef92d41d1da" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a42a4184c1e3063a3bba246004e72fc8f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnMouseHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1afe9404492331465299fb62b901654fac" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa5490dae7f670f9c0fb919e3d185a049" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6598e48f71ac345850f725d79951c5e6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6daa5f708da04f3e939fd5fe9b337a75" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7687154b8595554e4526d4f64edfa248" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac44b0fbfa4f55a7b03c91c31c3d4fb96" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aac5432e91f351e847e64bcf907c6cbd2" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnRButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c2c1a2bba4560c6ea286e3b74997f2f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnRButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a24d68e1faa2511768f4734bc145ffd34" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnRebuildFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa27217e295a1e1d0b9e281602eb15c57" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad98dfcb41ba176f535472c88bad90c08" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnRemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac9e8c48bd75b81f91b402de7b049a519" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnScaleChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6db7d982ba3777860fe90ce1cfee2b74" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSetColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad471787523b5750321b0704726414314" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b27995464abc2623e5bf6e570e075b4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a75b84fc4334cbb4533408972b12e1fab" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSetLanguage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1abe11ceb96c2cb8c733e2ab06f04d4a" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeab02f42078e8c997452a1c56142d0e6" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1c66ecfe8c85d9c6e7286735c629c6d4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a9f1c5f51a2da353b11d0b9859053557f" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnSliderFinish</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44d2fcb3712aba89fee24a61c43ea460" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnStateChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37ce3a8cde6a6f2870fea58f76c75840" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnStateChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08e308a374e9324c6203bedcd36e957d" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnUpdateFloatPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f417fae345f4c8e8f89441f4a02c259" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>OnUpdateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ac9b02ecac92c18fa72a58ba1ce31ed2b" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>OnUpdateToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a292bbaec718496b74a9438848faafff9" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>PaintBackground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f33f680d2fdbf901dda6981a5c371f1" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>PaintForeground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1157a053b1289583666029d0c7c36b83" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>PaintForeground2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8522762efbd9469c1564f180e1da86e4" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>PGETRTDATA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa40464c02efa982fa99867c026829c18" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>RedrawRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2d689bb3df90df8e535b4ab76d66df88" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ReleaseCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a03b2cd92a9fa7c422028bef67c4868e0" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>ReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a12a12f706a7099ef795118714f6c5b43" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>RemoveAllItems</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0b3c7e4c11cf70d017dff85691a90f5" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>RemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ad7f21dbb285ddedc98a7cf3da244d1cb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>RemoveItem</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a423c5fc77e4bc49da6bfdccc252418fe" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a599c670bfea7efdf69386b6a6f326a30" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4047a87e3950a60f90a5f756f3ece798" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SDispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ef77d3dc52e89dee5ee166a17d875e1" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae7e13f473d81650a33fc71defe2387b4" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf007ba4da0d1a0f77210db2682c5a4e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe47e5e6fce61ae0593f273d4f4793c6" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>SetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad30625112b837bfd62f18e25dd7a5ac6" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad26192c9d9acd51f9b52b958f7f9ff0c" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetClipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8e7e73cbc7a38d86e593e343ccab1c82" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a91278bfe1348f50abdbe039ff8f30c6e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetCurSel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ad126522e213e288cb69013e73320a0c8" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetCurSel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5110427bfa426316d896144a9375c87c" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac97abd6d65dd0bab67ece0c1eec39b9a" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a74a90fd7f46e786c6ad6e066ebd0626c" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetItemTitle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0975d08e87484a8ebf3718a8d268ebc5" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8517636a84fb0b737455ddde63e1519e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a4db3a48ac66fc20b8657a5b24a9bfe24" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76010d050623dbcd7011fe7509a8d71b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac0d143c645c0a55d686940c48a425ddf" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a195ac5bec3b984b1a0167bcfaad42a39" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7f99124f11ad80f37e4580c1e3a2f295" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a11c07193b1d917e7a9ba25f4adcea5ce" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>SetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a85cf0bd5b9cebb9154f061fc0e3a960e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae1e45461caedfa5ed443e0f5774959b5" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8beaccf8aa31e59a44838c0e0a5701e" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a224adc79b03beb66f55a25468b292ed0" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a68dd4b179d424b676d17342aa6b5f262" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ae454c913bbbdc1cfdad7e1293c46793b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SMsgHandleState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a51e87f3d340ea7fd0149fc423979a46b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SSendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa4217edfa58d430ce477a2147c5a4149" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>STabCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a41f4e5b6f47046e4686aa40028e5617a" prot="private" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>STabSlider</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0449ad5f88983ce2a64568cb49e58fd" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>StartAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a645cd258bbe5cebf25e79fde5f4bfbeb" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa163d9e34d6e6def39b09cdb733289f2" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>SwndFromPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a99c3e101e01931c02ac6a1edb1f4d861" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>SwndProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5d32d519b7acc412dc014b0845fc8e96" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>TestMainThread</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2adfaed738bdfb1ddbff2fd63ff6e1e3db" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>Text_Horz</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2a3300a306fa82f075a04566ebc6ef68db" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>Text_Vert</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1aa9abf09ccb8760b47f174c27f2e66cf2" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>TEXTDIR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a45913eaa504b641b887488b272df1643" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>TextOutV</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3902d3332153936f258b756ea7fbdfb2" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac22b67d1562309587e4cc46087ad0ed6" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>TransformPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac2dd78f931b6f9d59b0ae530f5aa75b1" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>TransformPointEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad21ad32c5e2f6f9361212405fbd4c49b" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>UnlockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac3bdbb3244522318be542c08f619c053" prot="protected" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>UpdateCacheMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1ae9bcdea258caead7b1369cddb85324b2" prot="protected" virt="virtual"><scope>SOUI::STabCtrl</scope><name>UpdateChildrenPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8b7805b9c005e6967eeff4636ef33a78" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>UpdateLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9ae8f38ff291599b761e08bdd5c57084" prot="public" virt="non-virtual"><scope>SOUI::STabCtrl</scope><name>UpdateWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_tab_ctrl_1a05ec2dd1aab8c5504dc283a3546e3bb4" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>~STabCtrl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a73cf687f9a4862ab0768cfbde2dd86e4" prot="public" virt="virtual"><scope>SOUI::STabCtrl</scope><name>~SWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

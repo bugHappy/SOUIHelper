@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_font" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IFont</compoundname>
+    <basecompoundref refid="struct_s_o_u_i_1_1_i_render_obj" prot="public" virt="non-virtual">SOUI::IRenderObj</basecompoundref>
+    <includes refid="_s_render-i_8h" local="no">SRender-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1a87c0b7e61bfa7707417540f75bf20692" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const OBJTYPE</type>
+        <definition>virtual const OBJTYPE SOUI::IFont::ObjectType</definition>
+        <argsstring>() const</argsstring>
+        <name>ObjectType</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_render_obj_1a5039b729620d6c0f4337f882b2cc6db6">ObjectType</reimplements>
+        <briefdescription>
+<para>查询对象类型 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>ObjectType <simplesect kind="return"><para>const UINT Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="349" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1abf43259bcfd805f79f9ac2812810a768" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const LOGFONT *</type>
+        <definition>virtual const LOGFONT* SOUI::IFont::LogFont</definition>
+        <argsstring>() const =0</argsstring>
+        <name>LogFont</name>
+        <briefdescription>
+<para>获得字体的LOGFONT </para>
+        </briefdescription>
+        <detaileddescription>
+<para>LogFont <simplesect kind="return"><para>const LOGFONT * <ndash/> 包含字体信息的LOGFONT* Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="360" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1ad5f55ec43f8d02c4b37d2f01e1d4a557" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>LPCTSTR</type>
+        <definition>virtual LPCTSTR SOUI::IFont::FamilyName</definition>
+        <argsstring>()=0</argsstring>
+        <name>FamilyName</name>
+        <briefdescription>
+<para>获取字体名 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FamilyName <simplesect kind="return"><para>LPCTSTR <ndash/> 字体名 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="368" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1a8fccd599372c20761234ce16ffbd72ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IFont::TextSize</definition>
+        <argsstring>()=0</argsstring>
+        <name>TextSize</name>
+        <briefdescription>
+<para>获取字体大小 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TextSize <simplesect kind="return"><para>int <ndash/> 字体大小 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="376" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1adf2586b1f4fe5c938355593e1fb1e385" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IFont::IsBold</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsBold</name>
+        <briefdescription>
+<para>查询是否为粗体 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsBold <simplesect kind="return"><para>BOOL <ndash/> true为粗体，false正常 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="384" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1aec60c0593a0b13b0beea95671b1aec06" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IFont::IsUnderline</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsUnderline</name>
+        <briefdescription>
+<para>查询字体下划线状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsUnderline <simplesect kind="return"><para>BOOL <ndash/> true有下划线，false正常 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="392" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1afcfa9ce1eed1114f3b6ec7f9e9827b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IFont::IsItalic</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsItalic</name>
+        <briefdescription>
+<para>查询字体的斜体状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsItalic <simplesect kind="return"><para>BOOL <ndash/> true为斜体，false正常 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="400" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1a21c0ebff4656718ca0b6eed4719636d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IFont::IsStrikeOut</definition>
+        <argsstring>()=0</argsstring>
+        <name>IsStrikeOut</name>
+        <briefdescription>
+<para>查询字体的删除线状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>StrikeOut <simplesect kind="return"><para>BOOL <ndash/> true有删除线 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="408" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_font_1aa9f783fc405456d9bf2aaa2e18bfd40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IFont::UpdateFont</definition>
+        <argsstring>(const LOGFONT *pLogFont)=0</argsstring>
+        <name>UpdateFont</name>
+        <param>
+          <type>const LOGFONT *</type>
+          <declname>pLogFont</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="410" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>字体对象 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe <linebreak/>
+ </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IFont</label>
+        <link refid="struct_s_o_u_i_1_1_i_font"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>SOUI::IRenderObj</label>
+        <link refid="struct_s_o_u_i_1_1_i_render_obj"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IFont</label>
+        <link refid="struct_s_o_u_i_1_1_i_font"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IObject</label>
+      </node>
+      <node id="4">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" line="348" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/SRender-i.h" bodystart="347" bodyend="411"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_font_1ad5f55ec43f8d02c4b37d2f01e1d4a557" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>FamilyName</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_render_obj_1a437ef6c983979a8e331610284d3b08cf" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>GetRenderFactory</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1adf2586b1f4fe5c938355593e1fb1e385" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>IsBold</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1afcfa9ce1eed1114f3b6ec7f9e9827b08" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>IsItalic</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1a21c0ebff4656718ca0b6eed4719636d3" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>IsStrikeOut</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1aec60c0593a0b13b0beea95671b1aec06" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>IsUnderline</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1abf43259bcfd805f79f9ac2812810a768" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>LogFont</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1a87c0b7e61bfa7707417540f75bf20692" prot="public" virt="virtual"><scope>SOUI::IFont</scope><name>ObjectType</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1a8fccd599372c20761234ce16ffbd72ed" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>TextSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_font_1aa9f783fc405456d9bf2aaa2e18bfd40a" prot="public" virt="pure-virtual"><scope>SOUI::IFont</scope><name>UpdateFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

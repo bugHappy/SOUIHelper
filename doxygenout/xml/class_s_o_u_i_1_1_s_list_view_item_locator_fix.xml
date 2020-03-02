@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_list_view_item_locator_fix" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SListViewItemLocatorFix</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TObjRefImpl&lt; IListViewItemLocator &gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a6fe3b69c086c00a7ffd43a2674e6944b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SListViewItemLocatorFix::m_nItemHeight</definition>
+        <argsstring></argsstring>
+        <name>m_nItemHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="36" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a68bd7ca1d9192815d32d02d2a82d1c5d" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>SLayoutSize SOUI::SListViewItemLocatorFix::m_nDividerSize</definition>
+        <argsstring></argsstring>
+        <name>m_nDividerSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="37" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a0c72644ef80b631387f96d0d09948022" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SOUI::SListViewItemLocatorFix::m_nScale</definition>
+        <argsstring></argsstring>
+        <name>m_nScale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="38" column="4" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a87b443916b9fd685c2c7d295cc8b17cc" prot="protected" static="no" mutable="no">
+        <type>SAutoRefPtr&lt; ILvAdapter &gt;</type>
+        <definition>SAutoRefPtr&lt;ILvAdapter&gt; SOUI::SListViewItemLocatorFix::m_adapter</definition>
+        <argsstring></argsstring>
+        <name>m_adapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="39" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aa12da6bdd77d59d48e3b7e37be679b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SListViewItemLocatorFix::SListViewItemLocatorFix</definition>
+        <argsstring>(SLayoutSize nItemHei, SLayoutSize nDividerSize=SLayoutSize())</argsstring>
+        <name>SListViewItemLocatorFix</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+          <declname>nItemHei</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+          <declname>nDividerSize</declname>
+          <defval><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="10" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a0ac3dd9e67159c0ca45dce7cb04e27ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SListViewItemLocatorFix::SetAdapter</definition>
+        <argsstring>(ILvAdapter *pAdapter)</argsstring>
+        <name>SetAdapter</name>
+        <param>
+          <type>ILvAdapter *</type>
+          <declname>pAdapter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="12" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a024e150652481060bc86a4aa134cd101" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SListViewItemLocatorFix::OnDataSetChanged</definition>
+        <argsstring>()</argsstring>
+        <name>OnDataSetChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="14" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ae3c40dc5a05704bd67a2f922312a842a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SListViewItemLocatorFix::IsFixHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>IsFixHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="16" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1adf8af1f62971594f916bc28ee2fcbf72" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::GetItemHeight</definition>
+        <argsstring>(int iItem) const</argsstring>
+        <name>GetItemHeight</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="18" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ab4609d1dc90fea540748f7854c336946" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SListViewItemLocatorFix::SetItemHeight</definition>
+        <argsstring>(int iItem, int nHeight)</argsstring>
+        <name>SetItemHeight</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="20" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ad66ef8ee5d8811c9f925a25dbf39b534" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::GetTotalHeight</definition>
+        <argsstring>()</argsstring>
+        <name>GetTotalHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="23" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a547de3e0f4e80864ba5be7904b2cea55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::Item2Position</definition>
+        <argsstring>(int iItem)</argsstring>
+        <name>Item2Position</name>
+        <param>
+          <type>int</type>
+          <declname>iItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="24" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a900260d1520557d0cc6ae8369b32143a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::Position2Item</definition>
+        <argsstring>(int position)</argsstring>
+        <name>Position2Item</name>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="26" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aac3c84c11099b24574e940c4d8ec715c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::GetScrollLineSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScrollLineSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="28" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aab5b8475b4093a136ee4614c7db1d619" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SListViewItemLocatorFix::GetDividerSize</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDividerSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="30" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1abb7dae93a5cca46c2dc38a3c4d9c6512" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SListViewItemLocatorFix::SetScale</definition>
+        <argsstring>(int nScale)</argsstring>
+        <name>SetScale</name>
+        <param>
+          <type>int</type>
+          <declname>nScale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="32" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1af70731ae8233ea0874aa8cae90db7d4c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SOUI::SListViewItemLocatorFix::GetFixItemHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>GetFixItemHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="34" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; IListViewItemLocator &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SListViewItemLocatorFix</label>
+        <link refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TObjRefImpl&lt; IListViewItemLocator &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SListViewItemLocatorFix</label>
+        <link refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_nDividerSize</edgelabel>
+          <edgelabel>m_nItemHeight</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" line="8" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SListViewItemLocator.h" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aab5b8475b4093a136ee4614c7db1d619" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>GetDividerSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1af70731ae8233ea0874aa8cae90db7d4c" prot="protected" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>GetFixItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1adf8af1f62971594f916bc28ee2fcbf72" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>GetItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aac3c84c11099b24574e940c4d8ec715c" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>GetScrollLineSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ad66ef8ee5d8811c9f925a25dbf39b534" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>GetTotalHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ae3c40dc5a05704bd67a2f922312a842a" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>IsFixHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a547de3e0f4e80864ba5be7904b2cea55" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>Item2Position</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a87b443916b9fd685c2c7d295cc8b17cc" prot="protected" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>m_adapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a68bd7ca1d9192815d32d02d2a82d1c5d" prot="protected" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>m_nDividerSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a6fe3b69c086c00a7ffd43a2674e6944b" prot="protected" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>m_nItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a0c72644ef80b631387f96d0d09948022" prot="protected" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>m_nScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a024e150652481060bc86a4aa134cd101" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>OnDataSetChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a900260d1520557d0cc6ae8369b32143a" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>Position2Item</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1a0ac3dd9e67159c0ca45dce7cb04e27ea" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>SetAdapter</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1ab4609d1dc90fea540748f7854c336946" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>SetItemHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1abb7dae93a5cca46c2dc38a3c4d9c6512" prot="public" virt="virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>SetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_list_view_item_locator_fix_1aa12da6bdd77d59d48e3b7e37be679b04" prot="public" virt="non-virtual"><scope>SOUI::SListViewItemLocatorFix</scope><name>SListViewItemLocatorFix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

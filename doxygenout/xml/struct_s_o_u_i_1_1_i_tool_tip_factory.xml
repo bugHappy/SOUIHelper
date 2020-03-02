@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_tool_tip_factory" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IToolTipFactory</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="stooltip-i_8h" local="no">stooltip-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_tool_tip_factory_1a12f93aa010ba99d176b97af3acff8b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_tool_tip" kindref="compound">IToolTip</ref> *</type>
+        <definition>virtual IToolTip* SOUI::IToolTipFactory::CreateToolTip</definition>
+        <argsstring>(HWND hHost)=0</argsstring>
+        <name>CreateToolTip</name>
+        <param>
+          <type>HWND</type>
+          <declname>hHost</declname>
+        </param>
+        <briefdescription>
+<para>创建tooltip对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CreateToolTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>HWND</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>hHost <ndash/> soui host </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_s_o_u_i_1_1_i_tool_tip" kindref="compound">IToolTip</ref> * 创建的tooltip对象</para>
+</simplesect>
+Describe 不要将hHost做为tooltip的Owner，否则可能导致程序运行异常。 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="77" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_tool_tip_factory_1a98beb5ad0385b2695aacda0307839d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IToolTipFactory::DestroyToolTip</definition>
+        <argsstring>(IToolTip *pToolTip)=0</argsstring>
+        <name>DestroyToolTip</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_tool_tip" kindref="compound">IToolTip</ref> *</type>
+          <declname>pToolTip</declname>
+        </param>
+        <briefdescription>
+<para>销毁tooltip对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>DestroyToolTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_tool_tip" kindref="compound">IToolTip</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pToolTip <ndash/> 待销毁tooltip </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="87" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>tooltip类厂 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::IToolTipFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::IToolTipFactory</label>
+        <link refid="struct_s_o_u_i_1_1_i_tool_tip_factory"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" line="68" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/stooltip-i.h" bodystart="67" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_tool_tip_factory_1a12f93aa010ba99d176b97af3acff8b3b" prot="public" virt="pure-virtual"><scope>SOUI::IToolTipFactory</scope><name>CreateToolTip</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_tool_tip_factory_1a98beb5ad0385b2695aacda0307839d97" prot="public" virt="pure-virtual"><scope>SOUI::IToolTipFactory</scope><name>DestroyToolTip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

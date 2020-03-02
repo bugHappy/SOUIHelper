@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_d_i_b_helper" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SDIBHelper</compoundname>
+    <includes refid="_s_d_i_b_helper_8h" local="no">SDIBHelper.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_d_i_b_helper_1ae7388831aa94458236e222a51b817931" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SDIBHelper::Colorize</definition>
+        <argsstring>(IBitmap *pBmp, COLORREF crRef)</argsstring>
+        <name>Colorize</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBmp</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crRef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" line="14" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_d_i_b_helper_1ab80828eec47bac73c696acbaa5621569" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SDIBHelper::Colorize</definition>
+        <argsstring>(COLORREF &amp;crTarget, COLORREF crRef)</argsstring>
+        <name>Colorize</name>
+        <param>
+          <type>COLORREF &amp;</type>
+          <declname>crTarget</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crRef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" line="16" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_d_i_b_helper_1a7ca8eb67fa640b2532f7eed2d9c16c8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SOUI::SDIBHelper::GrayImage</definition>
+        <argsstring>(IBitmap *pBmp)</argsstring>
+        <name>GrayImage</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" line="18" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_d_i_b_helper_1a62bdc104e3662d35cba4709b812ae1ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>COLORREF</type>
+        <definition>static COLORREF SOUI::SDIBHelper::CalcAvarageColor</definition>
+        <argsstring>(IBitmap *pBmp, int nPercent=90, int nBlockSize=5)</argsstring>
+        <name>CalcAvarageColor</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_bitmap" kindref="compound">IBitmap</ref> *</type>
+          <declname>pBmp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPercent</declname>
+          <defval>90</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nBlockSize</declname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" line="24" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>简洁版本，简版去掉了对8、16、24位的支持, </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" line="11" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SDIBHelper.h" bodystart="10" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_d_i_b_helper_1a62bdc104e3662d35cba4709b812ae1ad" prot="public" virt="non-virtual"><scope>SOUI::SDIBHelper</scope><name>CalcAvarageColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_d_i_b_helper_1ae7388831aa94458236e222a51b817931" prot="public" virt="non-virtual"><scope>SOUI::SDIBHelper</scope><name>Colorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_d_i_b_helper_1ab80828eec47bac73c696acbaa5621569" prot="public" virt="non-virtual"><scope>SOUI::SDIBHelper</scope><name>Colorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_d_i_b_helper_1a7ca8eb67fa640b2532f7eed2d9c16c8e" prot="public" virt="non-virtual"><scope>SOUI::SDIBHelper</scope><name>GrayImage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

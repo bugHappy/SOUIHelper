@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_tv_adatper_impl" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::TvAdatperImpl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseClass</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>class BaseClass</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_tv_adatper_impl_1a61771147f3720862bf9b6958c78eee44" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_tv_observer_mgr" kindref="compound">STvObserverMgr</ref></type>
+        <definition>STvObserverMgr SOUI::TvAdatperImpl&lt; BaseClass &gt;::m_obzMgr</definition>
+        <argsstring></argsstring>
+        <name>m_obzMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="304" column="27" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1a6a9982262c31731b34d171c7a01740f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::TvAdatperImpl&lt; BaseClass &gt;::notifyBranchChanged</definition>
+        <argsstring>(HTREEITEM hBranch)</argsstring>
+        <name>notifyBranchChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="271" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1aa760a3c981377aadbd84041a870e03bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::TvAdatperImpl&lt; BaseClass &gt;::notifyBranchInvalidated</definition>
+        <argsstring>(HTREEITEM hBranch, bool bInvalidParents=true, bool bInvalidChildren=true)</argsstring>
+        <name>notifyBranchInvalidated</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bInvalidParents</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bInvalidChildren</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the attached observers that the underlying data is no longer valid or available. Once invoked this adapter is no longer valid and should not report further data set changes. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="280" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="280" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1ab2c8aebd1571ff3926c3537546e90535" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::TvAdatperImpl&lt; BaseClass &gt;::notifyBranchExpandChanged</definition>
+        <argsstring>(HTREEITEM hBranch, BOOL bExpandedOld, BOOL bExpandedNew)</argsstring>
+        <name>notifyBranchExpandChanged</name>
+        <param>
+          <type>HTREEITEM</type>
+          <declname>hBranch</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedOld</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bExpandedNew</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="284" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="284" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1aff8c4edcd0878ca6c6d61c1e0d137534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::TvAdatperImpl&lt; BaseClass &gt;::registerDataSetObserver</definition>
+        <argsstring>(ITvDataSetObserver *observer)</argsstring>
+        <name>registerDataSetObserver</name>
+        <param>
+          <type>ITvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="288" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="288" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1a918f6a04cbfd8217bfde17b2caed8f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::TvAdatperImpl&lt; BaseClass &gt;::unregisterDataSetObserver</definition>
+        <argsstring>(ITvDataSetObserver *observer)</argsstring>
+        <name>unregisterDataSetObserver</name>
+        <param>
+          <type>ITvDataSetObserver *</type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="293" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="293" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_tv_adatper_impl_1a67825ce7d6966dcb0ce5a34b103b5d54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::TvAdatperImpl&lt; BaseClass &gt;::InitByTemplate</definition>
+        <argsstring>(pugi::xml_node xmlTemplate)</argsstring>
+        <name>InitByTemplate</name>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlTemplate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="298" column="22" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="298" bodyend="301"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseClass</label>
+      </node>
+      <node id="1">
+        <label>SOUI::TvAdatperImpl&lt; BaseClass &gt;</label>
+        <link refid="class_s_o_u_i_1_1_tv_adatper_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseClass</label>
+      </node>
+      <node id="1">
+        <label>SOUI::TvAdatperImpl&lt; BaseClass &gt;</label>
+        <link refid="class_s_o_u_i_1_1_tv_adatper_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_obzMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::STvObserverMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_tv_observer_mgr"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" line="269" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SAdapterBase.h" bodystart="268" bodyend="305"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1a67825ce7d6966dcb0ce5a34b103b5d54" prot="public" virt="virtual"><scope>SOUI::TvAdatperImpl</scope><name>InitByTemplate</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1a61771147f3720862bf9b6958c78eee44" prot="protected" virt="non-virtual"><scope>SOUI::TvAdatperImpl</scope><name>m_obzMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1a6a9982262c31731b34d171c7a01740f5" prot="public" virt="non-virtual"><scope>SOUI::TvAdatperImpl</scope><name>notifyBranchChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1ab2c8aebd1571ff3926c3537546e90535" prot="public" virt="non-virtual"><scope>SOUI::TvAdatperImpl</scope><name>notifyBranchExpandChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1aa760a3c981377aadbd84041a870e03bb" prot="public" virt="non-virtual"><scope>SOUI::TvAdatperImpl</scope><name>notifyBranchInvalidated</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1aff8c4edcd0878ca6c6d61c1e0d137534" prot="public" virt="virtual"><scope>SOUI::TvAdatperImpl</scope><name>registerDataSetObserver</name></member>
+      <member refid="class_s_o_u_i_1_1_tv_adatper_impl_1a918f6a04cbfd8217bfde17b2caed8f3f" prot="public" virt="virtual"><scope>SOUI::TvAdatperImpl</scope><name>unregisterDataSetObserver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

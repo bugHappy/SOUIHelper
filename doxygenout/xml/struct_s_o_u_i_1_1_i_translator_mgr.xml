@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_translator_mgr" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::ITranslatorMgr</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IObjRef</basecompoundref>
+    <includes refid="_s_translator-i_8h" local="no">STranslator-i.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1a907bad6b70ff45fe1aee600569b285c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITranslatorMgr::SetLanguage</definition>
+        <argsstring>(const SStringW &amp;strLang)=0</argsstring>
+        <name>SetLanguage</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strLang</declname>
+        </param>
+        <briefdescription>
+<para>设置翻译模块当前接受的语言 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>SetLanguage <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strLang <ndash/> 翻译语言</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Describe 自动清除语言和目标语言不同的模块 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="90" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1ad3f7195cbdf116b40fc22a1fb55eb362" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::ITranslatorMgr::GetLanguage</definition>
+        <argsstring>(wchar_t szOut[TR_MAX_NAME_LEN]) const =0</argsstring>
+        <name>GetLanguage</name>
+        <param>
+          <type>wchar_t</type>
+          <declname>szOut</declname>
+          <array>[TR_MAX_NAME_LEN]</array>
+        </param>
+        <briefdescription>
+<para>获取翻译模块当前接受的语言 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>GetLanguage <simplesect kind="return"><para>SStringW <ndash/> 翻译语言</para>
+</simplesect>
+Describe </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="99" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1a27b488518dffd89dfdcf2de4645969f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITranslatorMgr::CreateTranslator</definition>
+        <argsstring>(ITranslator **ppTranslator)=0</argsstring>
+        <name>CreateTranslator</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref> **</type>
+          <declname>ppTranslator</declname>
+        </param>
+        <briefdescription>
+<para>创建一个语言翻译对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>CreateTranslator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* * ppTranslator <ndash/> 接收语言翻译对象的指针 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL true-成功，false-失败</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="109" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1a01cadb4a46a90d397416516c1b148d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITranslatorMgr::InstallTranslator</definition>
+        <argsstring>(ITranslator *ppTranslator)=0</argsstring>
+        <name>InstallTranslator</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref> *</type>
+          <declname>ppTranslator</declname>
+        </param>
+        <briefdescription>
+<para>向管理器中安装一个语言翻译对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>InstallTranslator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_translator" kindref="compound">ITranslator</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* ppTranslator <ndash/> 语言翻译对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL true-成功，false-失败</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="119" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1a9cb02c5f3674991f71c69677d2e701bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::ITranslatorMgr::UninstallTranslator</definition>
+        <argsstring>(REFGUID id)=0</argsstring>
+        <name>UninstallTranslator</name>
+        <param>
+          <type>REFGUID</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>从管理器中卸载一个语言翻译对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>UninstallTranslator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>REFGUID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id <ndash/> 语言翻译对象的ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL true-成功，false-失败</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="128" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_translator_mgr_1a41b5198cb350b1c14c35a63e7c94abc3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::ITranslatorMgr::tr</definition>
+        <argsstring>(const SStringW &amp;strSrc, const SStringW &amp;strCtx, wchar_t *pszOut, int nLen) const =0</argsstring>
+        <name>tr</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strSrc</declname>
+        </param>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strCtx</declname>
+        </param>
+        <param>
+          <type>wchar_t *</type>
+          <declname>pszOut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+<para>翻译字符串 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>tr <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strSrc <ndash/> 原字符串 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SStringW &amp; strCtx <ndash/> 翻译上下文 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SOUI::SStringW 翻译后的字符串</para>
+</simplesect>
+Describe 调用ITranslator的tr接口执行具体翻译过程 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="139" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>语言翻译接口管理器 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Describe </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::ITranslatorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_translator_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::ITranslatorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_translator_mgr"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IObjRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" line="82" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/STranslator-i.h" bodystart="81" bodyend="140"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1a27b488518dffd89dfdcf2de4645969f7" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>CreateTranslator</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1ad3f7195cbdf116b40fc22a1fb55eb362" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>GetLanguage</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1a01cadb4a46a90d397416516c1b148d80" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>InstallTranslator</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1a907bad6b70ff45fe1aee600569b285c3" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>SetLanguage</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1a41b5198cb350b1c14c35a63e7c94abc3" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>tr</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_translator_mgr_1a9cb02c5f3674991f71c69677d2e701bc" prot="public" virt="pure-virtual"><scope>SOUI::ITranslatorMgr</scope><name>UninstallTranslator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

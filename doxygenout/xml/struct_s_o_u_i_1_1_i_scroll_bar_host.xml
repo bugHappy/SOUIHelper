@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_scroll_bar_host" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IScrollBarHost</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_panel" prot="protected" virt="non-virtual">SOUI::SPanel</derivedcompoundref>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_scroll_bar" prot="protected" virt="non-virtual">SOUI::SScrollBar</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502ca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>kSbConst</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa111e154c6246735ca7c86a1af374aa87" prot="public">
+          <name>Timer_Wait</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa1339cbcf8eb413aceaf58ca65d46c149" prot="public">
+          <name>Timer_Go</name>
+          <initializer>= 101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caaa97148a354f477ffd7cb39e18b90e7fb" prot="public">
+          <name>kTime_Wait</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caac3011637cf86b5bcb7d21d4ed1b7e819" prot="public">
+          <name>kTime_Go</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="7" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" bodystart="7" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a85e85f93cd157d19aad6987398b70954" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>CRect</type>
+        <definition>virtual CRect SOUI::IScrollBarHost::GetScrollBarRect</definition>
+        <argsstring>(bool bVert) const =0</argsstring>
+        <name>GetScrollBarRect</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a8fd9cab61f3e887524478e01277cbc88">GetScrollBarRect</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a2998141e3820e9690523c43ee2b1d4f8">GetScrollBarRect</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="14" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a4d7b918926871df35702821cf026f897" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+        <definition>virtual ISkinObj* SOUI::IScrollBarHost::GetScrollBarSkin</definition>
+        <argsstring>(bool bVert) const =0</argsstring>
+        <name>GetScrollBarSkin</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1ae224ff321cd43ff4b01d51042e237e72">GetScrollBarSkin</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1ab6dfa854380ea363ec1186da7617c8c5">GetScrollBarSkin</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="15" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1ab59292ca549e2ea5d53903e1c722a72c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const SCROLLINFO *</type>
+        <definition>virtual const SCROLLINFO* SOUI::IScrollBarHost::GetScrollBarInfo</definition>
+        <argsstring>(bool bVert) const =0</argsstring>
+        <name>GetScrollBarInfo</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a4a86a03d306a93e318b7635afb8d9939">GetScrollBarInfo</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1ae40c3ce79f11a2991234ee72ea900606">GetScrollBarInfo</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="16" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a2a61e062f3f0554b1e91c7f5e9cba81d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IScrollBarHost::GetScrollBarArrowSize</definition>
+        <argsstring>(bool bVert) const =0</argsstring>
+        <name>GetScrollBarArrowSize</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a6b82e89c40cd89ff82c80b6485390520">GetScrollBarArrowSize</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a8a291955ccc310ed2f9b47ac7f7e02c4">GetScrollBarArrowSize</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="17" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a83573ec933829c721cf3b9011542fa2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScrollBarHost::OnScrollUpdatePart</definition>
+        <argsstring>(bool bVert, int iPart)=0</argsstring>
+        <name>OnScrollUpdatePart</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a3732c471e4db1a6673259fb98335a4d1">OnScrollUpdatePart</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a9f2f5dad687840bd36f3866483bd118d">OnScrollUpdatePart</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1ad50c3706291fe10a4ac890bdb3241e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScrollBarHost::OnScrollUpdateThumbTrack</definition>
+        <argsstring>(bool bVert, int nPos)=0</argsstring>
+        <name>OnScrollUpdateThumbTrack</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a83fdafd06121a189f53c11264d68a405">OnScrollUpdateThumbTrack</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a6dd4c8ea7dac1e6a185416b3370dfa87">OnScrollUpdateThumbTrack</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a315298f2382567f4e72bad1c772ae0fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_swnd_container" kindref="compound">ISwndContainer</ref> *</type>
+        <definition>virtual ISwndContainer* SOUI::IScrollBarHost::GetScrollBarContainer</definition>
+        <argsstring>()=0</argsstring>
+        <name>GetScrollBarContainer</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a884ee725d8d1b0f54d145e897643b2b2">GetScrollBarContainer</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a23364bc1e4a639b1c88baa893344e081">GetScrollBarContainer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="20" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a4cd7dd244930be6a537500d121812d6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::IScrollBarHost::IsScrollBarEnable</definition>
+        <argsstring>(bool bVert) const =0</argsstring>
+        <name>IsScrollBarEnable</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a346c1ad1ad0c6ffc66d98e9cae2e918b">IsScrollBarEnable</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a1edca9df4740e0426012e4b6536a5e89">IsScrollBarEnable</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="21" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a89a6b9d860da422b1866c0e3bceeb2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScrollBarHost::OnScrollCommand</definition>
+        <argsstring>(bool bVert, int iCmd, int nPos)=0</argsstring>
+        <name>OnScrollCommand</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a5b81772a478d1945c50aadeb9b32a437">OnScrollCommand</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a168e47fe34e24c9a0aeba68bd3937298">OnScrollCommand</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iCmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a9a95a0645e0e27ce3ccd488d2c2fef25" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScrollBarHost::OnScrollSetTimer</definition>
+        <argsstring>(bool bVert, char id, UINT uElapse)=0</argsstring>
+        <name>OnScrollSetTimer</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a32839b408b67e5db3d060d22d521a470">OnScrollSetTimer</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1ab2a5f0994df1400c2345aa12a0e251f5">OnScrollSetTimer</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uElapse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a24cc4c899726d9ea403bc5b2a48e9309" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IScrollBarHost::OnScrollKillTimer</definition>
+        <argsstring>(bool bVert, char id)=0</argsstring>
+        <name>OnScrollKillTimer</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a8301ba1d93aaa150165247259dc36852">OnScrollKillTimer</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a03dcb4d9e2f53002ae238f5d842764a4">OnScrollKillTimer</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>bVert</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1adf5ec203ee09793fc1867cbfb3fde4b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const IInterpolator *</type>
+        <definition>virtual const IInterpolator* SOUI::IScrollBarHost::GetScrollInterpolator</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetScrollInterpolator</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a2c2601ce5ccb00d5b64fdefce5c9c4a3">GetScrollInterpolator</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a94712b8fd75d5dc4fb52bae73a134964">GetScrollInterpolator</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="25" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a8ace31b02f27ed3032c42a56e71d321f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IScrollBarHost::GetScrollFadeFrames</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetScrollFadeFrames</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a6969e990322ed049d730300385c85ebb">GetScrollFadeFrames</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1aba16d2cbd174db65e991fd199a1ccb2e">GetScrollFadeFrames</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_scroll_bar_host_1a62d78f6aed522e6f3ab8b72dea270b4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>BYTE</type>
+        <definition>virtual BYTE SOUI::IScrollBarHost::GetScrollThumbTrackMinAlpha</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetScrollThumbTrackMinAlpha</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_panel_1a78b4e2f8e66c9ff557aa81f8caa2076f">GetScrollThumbTrackMinAlpha</reimplementedby>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_scroll_bar_1a962d440c7b0e41797d98e87cd48e163d">GetScrollThumbTrackMinAlpha</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="27" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>SOUI::STreeView</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::SListBox</label>
+        <link refid="class_s_o_u_i_1_1_s_list_box"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SComboEdit</label>
+        <link refid="class_s_o_u_i_1_1_s_combo_edit"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SListCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_list_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SOUI::SScrollView</label>
+        <link refid="class_s_o_u_i_1_1_s_scroll_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SRichEdit</label>
+        <link refid="class_s_o_u_i_1_1_s_rich_edit"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_panel"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SListView</label>
+        <link refid="class_s_o_u_i_1_1_s_list_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SMCListView</label>
+        <link refid="class_s_o_u_i_1_1_s_m_c_list_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::STreeCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tree_ctrl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>SOUI::SScrollBar</label>
+        <link refid="class_s_o_u_i_1_1_s_scroll_bar"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::IScrollBarHost</label>
+        <link refid="struct_s_o_u_i_1_1_i_scroll_bar_host"/>
+      </node>
+      <node id="12">
+        <label>SOUI::STileView</label>
+        <link refid="class_s_o_u_i_1_1_s_tile_view"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SEdit</label>
+        <link refid="class_s_o_u_i_1_1_s_edit"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" line="6" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SScrollBarHandler.h" bodystart="5" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a2a61e062f3f0554b1e91c7f5e9cba81d" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollBarArrowSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a315298f2382567f4e72bad1c772ae0fa" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollBarContainer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1ab59292ca549e2ea5d53903e1c722a72c" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollBarInfo</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a85e85f93cd157d19aad6987398b70954" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollBarRect</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a4d7b918926871df35702821cf026f897" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollBarSkin</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a8ace31b02f27ed3032c42a56e71d321f" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollFadeFrames</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1adf5ec203ee09793fc1867cbfb3fde4b5" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollInterpolator</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a62d78f6aed522e6f3ab8b72dea270b4d" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>GetScrollThumbTrackMinAlpha</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a4cd7dd244930be6a537500d121812d6e" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>IsScrollBarEnable</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502ca" prot="public" virt="non-virtual"><scope>SOUI::IScrollBarHost</scope><name>kSbConst</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caac3011637cf86b5bcb7d21d4ed1b7e819" prot="public" virt="non-virtual"><scope>SOUI::IScrollBarHost</scope><name>kTime_Go</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caaa97148a354f477ffd7cb39e18b90e7fb" prot="public" virt="non-virtual"><scope>SOUI::IScrollBarHost</scope><name>kTime_Wait</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a89a6b9d860da422b1866c0e3bceeb2be" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>OnScrollCommand</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a24cc4c899726d9ea403bc5b2a48e9309" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>OnScrollKillTimer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a9a95a0645e0e27ce3ccd488d2c2fef25" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>OnScrollSetTimer</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a83573ec933829c721cf3b9011542fa2d" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>OnScrollUpdatePart</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1ad50c3706291fe10a4ac890bdb3241e9d" prot="public" virt="pure-virtual"><scope>SOUI::IScrollBarHost</scope><name>OnScrollUpdateThumbTrack</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa1339cbcf8eb413aceaf58ca65d46c149" prot="public" virt="non-virtual"><scope>SOUI::IScrollBarHost</scope><name>Timer_Go</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_scroll_bar_host_1a54aebfcce5f4a774288f6f99675502caa111e154c6246735ca7c86a1af374aa87" prot="public" virt="non-virtual"><scope>SOUI::IScrollBarHost</scope><name>Timer_Wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

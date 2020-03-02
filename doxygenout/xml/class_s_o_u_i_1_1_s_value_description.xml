@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_value_description" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SValueDescription</compoundname>
+    <includes refid="_s_animation_8h" local="no">SAnimation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_description_1aa85b85dab851c4648823a7853a20af88" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_animation_1a3a6a0e5b6d26fb1a10bb9d2a9f85d5c9" kindref="member">IAnimation::ValueType</ref></type>
+        <definition>IAnimation::ValueType SOUI::SValueDescription::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>One of Animation.ABSOLUTE_VALUE, Animation.RELATIVE_TO_SELF, or Animation.RELATIVE_TO_PARENT. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="51" column="23" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_value_description_1a92794c396e18f7969285bf83cf44f0e2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SOUI::SValueDescription::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The absolute or relative dimension for this Description. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="56" column="7" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_value_description_1af6cb82efcfa347dc3d639140ee063606" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_value_description" kindref="compound">SValueDescription</ref></type>
+        <definition>static SValueDescription SOUI::SValueDescription::parseValue</definition>
+        <argsstring>(const SStringW &amp;value)</argsstring>
+        <name>parseValue</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size descriptions can appear inthree forms: <orderedlist>
+<listitem>
+<para>An absolute size. This is represented by a number. </para>
+</listitem>
+<listitem>
+<para>A size relative to the size of the object being animated. This is represented by a number followed by &quot;%&quot;. * </para>
+</listitem>
+<listitem>
+<para>A size relative to the size of the parent of object being animated. This is represented by a number followed by &quot;%p&quot;. </para>
+</listitem>
+</orderedlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The typed value to parse </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The parsed version of the description </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="70" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility class to parse a string description of a size. </para>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" line="45" column="15" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/animation/SAnimation.h" bodystart="45" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_value_description_1af6cb82efcfa347dc3d639140ee063606" prot="public" virt="non-virtual"><scope>SOUI::SValueDescription</scope><name>parseValue</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_description_1aa85b85dab851c4648823a7853a20af88" prot="public" virt="non-virtual"><scope>SOUI::SValueDescription</scope><name>type</name></member>
+      <member refid="class_s_o_u_i_1_1_s_value_description_1a92794c396e18f7969285bf83cf44f0e2" prot="public" virt="non-virtual"><scope>SOUI::SValueDescription</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

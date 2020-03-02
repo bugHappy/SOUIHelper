@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_script_timer" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SScriptTimer</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_s_singleton_map" prot="public" virt="non-virtual">SOUI::SSingletonMap&lt; SScriptTimer, SCRIPTTIMERINFO, UINT_PTR &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_script_timer_1ab11a445569401a0c5dbe0c7be0a8e8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SScriptTimer::~SScriptTimer</definition>
+        <argsstring>()</argsstring>
+        <name>~SScriptTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_script_timer_1a1f424faee5f7e6b53679bb7fc4e968ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>UINT</type>
+        <definition>UINT SOUI::SScriptTimer::SetTimer</definition>
+        <argsstring>(HWND hwnd, const SStringA &amp;strScriptFunc, UINT nElapse, BOOL bRepeat)</argsstring>
+        <name>SetTimer</name>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>const SStringA &amp;</type>
+          <declname>strScriptFunc</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nElapse</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bRepeat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_script_timer_1a989ea599eff6becc8d7969180dd10059" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SScriptTimer::ClearTimer</definition>
+        <argsstring>(UINT_PTR uID)</argsstring>
+        <name>ClearTimer</name>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>uID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" line="24" column="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_script_timer_1ad35b9378780af8ea39af0776d7d6423c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VOID CALLBACK</type>
+        <definition>static VOID CALLBACK SOUI::SScriptTimer::_TimerProc</definition>
+        <argsstring>(HWND hwnd, UINT uMsg, UINT_PTR idEvent, DWORD dwTime)</argsstring>
+        <name>_TimerProc</name>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>UINT_PTR</type>
+          <declname>idEvent</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" line="26" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>SOUI::SScriptTimer</label>
+        <link refid="class_s_o_u_i_1_1_s_script_timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SScriptTimer, SCRIPTTIMERINFO, UINT_PTR &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SScriptTimer &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; SCRIPTTIMERINFO, UINT_PTR &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>SOUI::SScriptTimer</label>
+        <link refid="class_s_o_u_i_1_1_s_script_timer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SSingletonMap&lt; SScriptTimer, SCRIPTTIMERINFO, UINT_PTR &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton_map"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SSingleton2&lt; SScriptTimer &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_singleton2"/>
+      </node>
+      <node id="4">
+        <label>SOUI::SCmnMap&lt; SCRIPTTIMERINFO, UINT_PTR &gt;</label>
+        <link refid="class_s_o_u_i_1_1_s_cmn_map"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" line="17" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/helper/SScriptTimer.h" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_script_timer_1ad35b9378780af8ea39af0776d7d6423c" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>_TimerProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a00d972910c9a6214f051e7b22d393d0c" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>AddKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_script_timer_1a989ea599eff6becc8d7969180dd10059" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>ClearTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a61d60fc98742e7af4de6f0aa67177777" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>GetCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a93e6be9c92a746e4e5f066ecde24bff4" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a5b2f2438ebafb9489f1e9b22cd6dabc6" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>GetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a941ad123cf31082db87af997463cfa8d" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>getSingleton</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a99751b1b3907a4283450c773046c5e75" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>getSingletonPtr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1ad6b21e83035f921b925be2306e55bbaf" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>HasKey</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1affd30e5fee26723fda3787519da5c436" prot="protected" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>m_mapNamedObj</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1af2a44c5870b2209309d0290044e59ed2" prot="protected" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>m_pFunOnKeyRemoved</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a6655a2da29a835d3292e00f1dd8fb95f" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>RemoveAll</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2f0060c6bfe4d57d01d97baa7c80b78c" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>RemoveKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a1318c9ac481ebef8aaca29885d364da6" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a2087cdf0e28f5e81ed1b0887e991e60a" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>SetKeyObject</name></member>
+      <member refid="class_s_o_u_i_1_1_s_script_timer_1a1f424faee5f7e6b53679bb7fc4e968ce" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1a2fa043fcd7eb8d98d0d30d3bbe653781" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>SSingleton2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_cmn_map_1a3e9a06995e147d86fc9e5629ce7503af" prot="public" virt="virtual"><scope>SOUI::SScriptTimer</scope><name>~SCmnMap</name></member>
+      <member refid="class_s_o_u_i_1_1_s_script_timer_1ab11a445569401a0c5dbe0c7be0a8e8da" prot="public" virt="non-virtual"><scope>SOUI::SScriptTimer</scope><name>~SScriptTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_singleton2_1aaf1d3847d155539af222307c99d71582" prot="public" virt="virtual"><scope>SOUI::SScriptTimer</scope><name>~SSingleton2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

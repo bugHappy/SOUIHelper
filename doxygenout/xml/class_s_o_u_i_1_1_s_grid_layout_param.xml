@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_grid_layout_param" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SGridLayoutParam</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SObjectImpl&lt; TObjRefImpl&lt; ILayoutParam &gt; &gt;</basecompoundref>
+    <basecompoundref refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct" prot="protected" virt="non-virtual">SOUI::SGridLayoutParamStruct</basecompoundref>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_s_o_u_i_1_1_s_grid_layout_param_1adb9a1013d341c0b014203c83723b894a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SGridLayout</definition>
+        <argsstring></argsstring>
+        <name>SGridLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="24" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a1463f8b6f51abaa31ac9fcb3b86821c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespace_s_o_u_i_1a2688078c6d6dd98226e27d7c33d42f0a" kindref="member">GridGravity</ref></type>
+        <definition>static GridGravity SOUI::SGridLayoutParam::parseGridGravity</definition>
+        <argsstring>(const SStringW &amp;strValue)</argsstring>
+        <name>parseGridGravity</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="27" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a9c23571c8ce6f1786b9780df8b222e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SGridLayoutParam::SGridLayoutParam</definition>
+        <argsstring>()</argsstring>
+        <name>SGridLayoutParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a3f27ff6b2d8a51036f3f9876ec13ebe3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SGridLayoutParam::IsMatchParent</definition>
+        <argsstring>(ORIENTATION orientation) const</argsstring>
+        <name>IsMatchParent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1ad3c84315583b22674b0634cb4aba1475" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SGridLayoutParam::IsWrapContent</definition>
+        <argsstring>(ORIENTATION orientation) const</argsstring>
+        <name>IsWrapContent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a7ef0a01275a38ed55ffd975c6ce44643" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SGridLayoutParam::IsSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation) const</argsstring>
+        <name>IsSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="34" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1ae75856d9a16a397c8db05eb8b03cc515" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref></type>
+        <definition>virtual SLayoutSize SOUI::SGridLayoutParam::GetSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation) const</argsstring>
+        <name>GetSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="36" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a99723a46d8f4fd9c98ec3949ae2fb015" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SGridLayoutParam::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="38" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1ab41440c310f8d074fc588edcd9bd8fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SGridLayoutParam::SetMatchParent</definition>
+        <argsstring>(ORIENTATION orientation)</argsstring>
+        <name>SetMatchParent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a18c8c36ce79f839c27fac08eb487da0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SGridLayoutParam::SetWrapContent</definition>
+        <argsstring>(ORIENTATION orientation)</argsstring>
+        <name>SetWrapContent</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1acb2f3ff62acc6418b073f21363b100b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SGridLayoutParam::SetSpecifiedSize</definition>
+        <argsstring>(ORIENTATION orientation, const SLayoutSize &amp;layoutSize)</argsstring>
+        <name>SetSpecifiedSize</name>
+        <param>
+          <type>ORIENTATION</type>
+          <declname>orientation</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_s_o_u_i_1_1_s_layout_size" kindref="compound">SLayoutSize</ref> &amp;</type>
+          <declname>layoutSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="44" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a879fb41b2a5026f5f36de1bd79136bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void* SOUI::SGridLayoutParam::GetRawData</definition>
+        <argsstring>()</argsstring>
+        <name>GetRawData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="46" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a8634d5cc4a786a9165711ab169f07546" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_layout_param" kindref="compound">ILayoutParam</ref> *</type>
+        <definition>virtual ILayoutParam* SOUI::SGridLayoutParam::Clone</definition>
+        <argsstring>() const</argsstring>
+        <name>Clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="48" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a2f3b53ac24592e0fbd2cff1c347c309c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::SGridLayoutParam::OnAttrSize</definition>
+        <argsstring>(const SStringW &amp;strValue, BOOL bLoading)</argsstring>
+        <name>OnAttrSize</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bLoading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="65" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a5a864825b1c270ab26f55baa8ce6e3ff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::SGridLayoutParam::OnAttrWidth</definition>
+        <argsstring>(const SStringW &amp;strValue, BOOL bLoading)</argsstring>
+        <name>OnAttrWidth</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bLoading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="66" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_grid_layout_param_1a6b20da1967ee31e56e7f6a6d89e1a3f3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SOUI::SGridLayoutParam::OnAttrHeight</definition>
+        <argsstring>(const SStringW &amp;strValue, BOOL bLoading)</argsstring>
+        <name>OnAttrHeight</name>
+        <param>
+          <type>const SStringW &amp;</type>
+          <declname>strValue</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bLoading</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="67" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>SOUI::SGridLayoutParamStruct</label>
+        <link refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct"/>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayoutParam &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SGridLayoutParam</label>
+        <link refid="class_s_o_u_i_1_1_s_grid_layout_param"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>SOUI::SGridLayoutParamStruct</label>
+        <link refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>width</edgelabel>
+          <edgelabel>height</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SObjectImpl&lt; TObjRefImpl&lt; ILayoutParam &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>SOUI::SGridLayoutParam</label>
+        <link refid="class_s_o_u_i_1_1_s_grid_layout_param"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" line="21" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/layout/SGridLayout.h" bodystart="19" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a99723a46d8f4fd9c98ec3949ae2fb015" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>Clear</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a8634d5cc4a786a9165711ab169f07546" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>Clone</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1ae031ea71336ca4f6e59f92fbd064900b" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>fColWeight</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1a12e3abdf8224df5453568805650021b6" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>fRowWeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a879fb41b2a5026f5f36de1bd79136bb7" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>GetRawData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1ae75856d9a16a397c8db05eb8b03cc515" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>GetSpecifiedSize</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1ac46e625860e621f8a1db22ad3c89a4e1" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>height</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a3f27ff6b2d8a51036f3f9876ec13ebe3" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>IsMatchParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a7ef0a01275a38ed55ffd975c6ce44643" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>IsSpecifiedSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1ad3c84315583b22674b0634cb4aba1475" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>IsWrapContent</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1a1380f2ba971eef3359ef6811649aa5a0" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>layoutGravityX</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1adee82ed6d0bcacb2794894af0c528be5" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>layoutGravityY</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1a1be1b40abc43f28df2afdc8e67fac042" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>nColSpan</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1a99fe3dcfd527476688e1fad0700f04c2" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>nRowSpan</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a6b20da1967ee31e56e7f6a6d89e1a3f3" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>OnAttrHeight</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a2f3b53ac24592e0fbd2cff1c347c309c" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>OnAttrSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a5a864825b1c270ab26f55baa8ce6e3ff" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>OnAttrWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a1463f8b6f51abaa31ac9fcb3b86821c6" prot="public" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>parseGridGravity</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1ab41440c310f8d074fc588edcd9bd8fd6" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>SetMatchParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1acb2f3ff62acc6418b073f21363b100b4" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>SetSpecifiedSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a18c8c36ce79f839c27fac08eb487da0c" prot="public" virt="virtual"><scope>SOUI::SGridLayoutParam</scope><name>SetWrapContent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1adb9a1013d341c0b014203c83723b894a" prot="private" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>SGridLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_grid_layout_param_1a9c23571c8ce6f1786b9780df8b222e7a" prot="public" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>SGridLayoutParam</name></member>
+      <member refid="struct_s_o_u_i_1_1_s_grid_layout_param_struct_1a22995e55ceaebe538b3dc4e70bc8e967" prot="protected" virt="non-virtual"><scope>SOUI::SGridLayoutParam</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

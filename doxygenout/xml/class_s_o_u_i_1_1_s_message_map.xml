@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_message_map" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::SMessageMap</compoundname>
+    <derivedcompoundref refid="class_s_o_u_i_1_1_s_native_wnd" prot="public" virt="non-virtual">SOUI::SNativeWnd</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_message_map_1a9cc26d80bf3cd524dadcffe762d64836" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SMessageMap::ProcessWindowMessage</definition>
+        <argsstring>(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT &amp;lResult, DWORD dwMsgMapID)=0</argsstring>
+        <name>ProcessWindowMessage</name>
+        <reimplementedby refid="class_s_o_u_i_1_1_s_native_wnd_1a7274e17b0da347109675223381090cf8">ProcessWindowMessage</reimplementedby>
+        <param>
+          <type>HWND</type>
+          <declname>hWnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <param>
+          <type>LRESULT &amp;</type>
+          <declname>lResult</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwMsgMapID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="115" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>SOUI::SMenuEx</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_ex"/>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>SOUI::SHostDialog</label>
+        <link refid="class_s_o_u_i_1_1_s_host_dialog"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>SOUI::SMessageBoxImpl</label>
+        <link refid="class_s_o_u_i_1_1_s_message_box_impl"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SOUI::SMenuODWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_menu_o_d_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::STaskHandler</label>
+        <link refid="class_s_o_u_i_1_1_s_task_handler"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::SDragWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drag_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SOUI::SDropDownWnd_ComboBox</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd___combo_box"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::SDropDownWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_down_wnd"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::SHostWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_host_wnd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SNativeWnd</label>
+        <link refid="class_s_o_u_i_1_1_s_native_wnd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>SOUI::STipCtrl</label>
+        <link refid="class_s_o_u_i_1_1_s_tip_ctrl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SOUI::SMessageMap</label>
+        <link refid="class_s_o_u_i_1_1_s_message_map"/>
+      </node>
+    </inheritancegraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" line="113" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SNativeWnd.h" bodystart="112" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_message_map_1a9cc26d80bf3cd524dadcffe762d64836" prot="public" virt="pure-virtual"><scope>SOUI::SMessageMap</scope><name>ProcessWindowMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

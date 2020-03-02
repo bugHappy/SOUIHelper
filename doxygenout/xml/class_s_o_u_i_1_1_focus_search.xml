@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_focus_search" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::FocusSearch</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_focus_search_1a8a4b90e85aec45bfedb4302473d2421c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::FocusSearch::root_</definition>
+        <argsstring></argsstring>
+        <name>root_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="96" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_focus_search_1a9435feb3ba5ce4bba625d00e280e9c83" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SOUI::FocusSearch::cycle_</definition>
+        <argsstring></argsstring>
+        <name>cycle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="97" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1a8678ca42346a649ffc6562f986571520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::FocusSearch::FocusSearch</definition>
+        <argsstring>(SWindow *root, bool cycle)</argsstring>
+        <name>FocusSearch</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>cycle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="39" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1ae9bcb360a747fb46817ee3c924ed0f74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::FocusSearch::~FocusSearch</definition>
+        <argsstring>()</argsstring>
+        <name>~FocusSearch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="40" column="17" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1ab3036473aa3a67334bf4bf9ddfcc1cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::FocusSearch::FindNextFocusableView</definition>
+        <argsstring>(SWindow *starting_view, bool reverse, bool check_starting_view)</argsstring>
+        <name>FindNextFocusableView</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>starting_view</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_starting_view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="64" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1af3ad6ce6e15a0161a766c653fb23bc47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::FocusSearch::IsViewFocusableCandidate</definition>
+        <argsstring>(SWindow *v, SWindow *pGroupOwner)</argsstring>
+        <name>IsViewFocusableCandidate</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pGroupOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1a4f7484afafaa127cadfec035746cc09a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SOUI::FocusSearch::IsFocusable</definition>
+        <argsstring>(SWindow *view)</argsstring>
+        <name>IsFocusable</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1a693f56c32cfc277db9f5921b309840c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::FocusSearch::FindNextFocusableViewImpl</definition>
+        <argsstring>(SWindow *starting_view, bool check_starting_view, bool can_go_up, bool can_go_down, SWindow *pSkipGroupOwner)</argsstring>
+        <name>FindNextFocusableViewImpl</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>starting_view</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_starting_view</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>can_go_up</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>can_go_down</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pSkipGroupOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="83" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_focus_search_1a8783c781fcb85cc6ac73a37a4ad0fbdd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::FocusSearch::FindPreviousFocusableViewImpl</definition>
+        <argsstring>(SWindow *starting_view, bool check_starting_view, bool can_go_up, bool can_go_down, SWindow *pSkipGroupOwner)</argsstring>
+        <name>FindPreviousFocusableViewImpl</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>starting_view</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_starting_view</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>can_go_up</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>can_go_down</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pSkipGroupOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="90" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" line="25" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SFocusManager.h" bodystart="24" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a9435feb3ba5ce4bba625d00e280e9c83" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>cycle_</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1ab3036473aa3a67334bf4bf9ddfcc1cbc" prot="public" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>FindNextFocusableView</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a693f56c32cfc277db9f5921b309840c6" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>FindNextFocusableViewImpl</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a8783c781fcb85cc6ac73a37a4ad0fbdd" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>FindPreviousFocusableViewImpl</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a8678ca42346a649ffc6562f986571520" prot="public" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>FocusSearch</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a4f7484afafaa127cadfec035746cc09a" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1af3ad6ce6e15a0161a766c653fb23bc47" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>IsViewFocusableCandidate</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1a8a4b90e85aec45bfedb4302473d2421c" prot="private" virt="non-virtual"><scope>SOUI::FocusSearch</scope><name>root_</name></member>
+      <member refid="class_s_o_u_i_1_1_focus_search_1ae9bcb360a747fb46817ee3c924ed0f74" prot="public" virt="virtual"><scope>SOUI::FocusSearch</scope><name>~FocusSearch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

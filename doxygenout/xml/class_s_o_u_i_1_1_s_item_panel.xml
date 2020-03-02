@@ -1,0 +1,1550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="class_s_o_u_i_1_1_s_item_panel" kind="class" language="C++" prot="public">
+    <compoundname>SOUI::SItemPanel</compoundname>
+    <basecompoundref refid="class_s_o_u_i_1_1_swnd_container_impl" prot="public" virt="non-virtual">SOUI::SwndContainerImpl</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1acc396ec19f25c270ac5bbdab8b41dd39" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SItemPanel::m_pFrmHost</definition>
+        <argsstring></argsstring>
+        <name>m_pFrmHost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="110" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1a19ec9cf061ece65b53d55b29b07dd27f" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_s_o_u_i_1_1_i_item_container" kindref="compound">IItemContainer</ref> *</type>
+        <definition>IItemContainer* SOUI::SItemPanel::m_pItemContainer</definition>
+        <argsstring></argsstring>
+        <name>m_pItemContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="111" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1a0aafbf6167853dca8c476a0736826efe" prot="protected" static="no" mutable="no">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SItemPanel::m_crBk</definition>
+        <argsstring></argsstring>
+        <name>m_crBk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="112" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1af4fc1b19fc6568fd9e1445e528ffa1b9" prot="protected" static="no" mutable="no">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SItemPanel::m_crSelBk</definition>
+        <argsstring></argsstring>
+        <name>m_crSelBk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="112" column="21" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1a29b049f919e3b4c94b941d4020236bee" prot="protected" static="no" mutable="no">
+        <type>COLORREF</type>
+        <definition>COLORREF SOUI::SItemPanel::m_crHover</definition>
+        <argsstring></argsstring>
+        <name>m_crHover</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="112" column="30" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1a5358ca5440fa00ce81d1c4e440d3a971" prot="protected" static="no" mutable="no">
+        <type>LPARAM</type>
+        <definition>LPARAM SOUI::SItemPanel::m_dwData</definition>
+        <argsstring></argsstring>
+        <name>m_dwData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="113" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_u_i_1_1_s_item_panel_1ab3c34c90e4e9418cea14382e86d4fa8f" prot="protected" static="no" mutable="no">
+        <type>LPARAM</type>
+        <definition>LPARAM SOUI::SItemPanel::m_lpItemIndex</definition>
+        <argsstring></argsstring>
+        <name>m_lpItemIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="114" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a36e52abcc460e4b342efb70ea9fe96f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_item_panel" kindref="compound">SItemPanel</ref> *</type>
+        <definition>static SItemPanel* SOUI::SItemPanel::Create</definition>
+        <argsstring>(SWindow *pFrameHost, pugi::xml_node xmlNode, IItemContainer *pItemContainer)</argsstring>
+        <name>Create</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pFrameHost</declname>
+        </param>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_item_container" kindref="compound">IItemContainer</ref> *</type>
+          <declname>pItemContainer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="29" column="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab53739aca8c58221f8bd7f3861bab330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+        <definition>SWindow* SOUI::SItemPanel::GetHostWindow</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="31" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a857ac6b6d4fbb37acc72d46c62970f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>LRESULT</type>
+        <definition>virtual LRESULT SOUI::SItemPanel::DoFrameEvent</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>DoFrameEvent</name>
+        <reimplements refid="class_s_o_u_i_1_1_swnd_container_impl_1ab34020dd8f131001b839b3eaeb7b72dc">DoFrameEvent</reimplements>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="40" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ae249c7a9d0fca4185c9bf6632a78f88d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::OnFireEvent</definition>
+        <argsstring>(EventArgs &amp;evt)</argsstring>
+        <name>OnFireEvent</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a0ed39c5cc26378e05899b4d0b12b9639">OnFireEvent</reimplements>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_event_args" kindref="compound">EventArgs</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="42" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ad9d0382e01bfe5529c9562c029e2fc96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>CRect</type>
+        <definition>virtual CRect SOUI::SItemPanel::GetContainerRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetContainerRect</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1af45b839277f3fe7b5307743efd049d57">GetContainerRect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="44" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab5beecb607552d2f25e5d7554b5448b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+        <definition>virtual IRenderTarget* SOUI::SItemPanel::OnGetRenderTarget</definition>
+        <argsstring>(const CRect &amp;rc, GrtFlag gdcFlags)</argsstring>
+        <name>OnGetRenderTarget</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a32f5059178b200797957beb7ab79a37e">OnGetRenderTarget</reimplements>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>GrtFlag</type>
+          <declname>gdcFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="46" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ad6ba456a6c3dfba41b8d9687a23b6f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::OnReleaseRenderTarget</definition>
+        <argsstring>(IRenderTarget *pRT, const CRect &amp;rc, GrtFlag gdcFlags)</argsstring>
+        <name>OnReleaseRenderTarget</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1abbf6b2734f811a22d6958b319769bd56">OnReleaseRenderTarget</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <param>
+          <type>GrtFlag</type>
+          <declname>gdcFlags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ac1b9923cfbd409304d49621c0ad5f54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::OnRedraw</definition>
+        <argsstring>(const CRect &amp;rc)</argsstring>
+        <name>OnRedraw</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a5d67a4b21fda9f796ed8f26ff9b1441e">OnRedraw</reimplements>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ac77050b7fcba2cb7c628604cf7c24012" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::OnReleaseSwndCapture</definition>
+        <argsstring>()</argsstring>
+        <name>OnReleaseSwndCapture</name>
+        <reimplements refid="class_s_o_u_i_1_1_swnd_container_impl_1a17b3c11cd77f9854ee71983414ea9709">OnReleaseSwndCapture</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="52" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ad3c0818420583dd8967b70b6576000f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::SItemPanel::OnSetSwndCapture</definition>
+        <argsstring>(SWND swnd)</argsstring>
+        <name>OnSetSwndCapture</name>
+        <reimplements refid="class_s_o_u_i_1_1_swnd_container_impl_1a50d1110ddada0cec45ba5c75d11cc79f">OnSetSwndCapture</reimplements>
+        <param>
+          <type>SWND</type>
+          <declname>swnd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="54" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a9a76a11c837d0c0cd807d008993d8ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>HWND</type>
+        <definition>virtual HWND SOUI::SItemPanel::GetHostHwnd</definition>
+        <argsstring>()</argsstring>
+        <name>GetHostHwnd</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a009ee69e0a0d834bd945cbcbde694bea">GetHostHwnd</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="55" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab3f8e5c9d595cd44a521e3b9f4fc2ab5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const SStringW &amp;</type>
+        <definition>virtual const SStringW&amp; SOUI::SItemPanel::GetTranslatorContext</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTranslatorContext</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a096804a998134de8981e3e35b9cd0cbf">GetTranslatorContext</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="56" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a799ca4d27a3ced0183d65b025b344c7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::FrameToHost</definition>
+        <argsstring>(RECT &amp;rc) const</argsstring>
+        <name>FrameToHost</name>
+        <reimplements refid="class_s_o_u_i_1_1_swnd_container_impl_1aa20afd521233e92fd9d610b346c73041">FrameToHost</reimplements>
+        <param>
+          <type>RECT &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="57" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a67520867438526f3ad00df7806e42c81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::IsTranslucent</definition>
+        <argsstring>() const</argsstring>
+        <name>IsTranslucent</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a8aaf65349d724e775bf85f776c389ca5">IsTranslucent</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="58" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ae3e7c4a82e12c8222d25f01e521afd2d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::IsSendWheel2Hover</definition>
+        <argsstring>() const</argsstring>
+        <name>IsSendWheel2Hover</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1ac955b0b0443da06fd72153c8e29f5e61">IsSendWheel2Hover</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ae51f6c386efae4cd3468c18b318eb8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::UpdateWindow</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateWindow</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a00e11b2ec8f1bb4d124b0249bf432b39">UpdateWindow</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ad77801bbf91a5a4bb43fa7892a34b8b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::UpdateTooltip</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateTooltip</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a4cc4d5610ae839e8feb30634c50b8ce3">UpdateTooltip</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="63" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a40bf6a1d86b4d3cb3a55e57ad5b55a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_s_o_u_i_1_1_s_message_loop" kindref="compound">SMessageLoop</ref> *</type>
+        <definition>virtual SMessageLoop* SOUI::SItemPanel::GetMsgLoop</definition>
+        <argsstring>()</argsstring>
+        <name>GetMsgLoop</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a9f7763f3aee039d4235191edd175f10a">GetMsgLoop</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="65" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1af5380d3f120124525f8b722a91b96c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_s_o_u_i_1_1_i_script_module" kindref="compound">IScriptModule</ref> *</type>
+        <definition>virtual IScriptModule* SOUI::SItemPanel::GetScriptModule</definition>
+        <argsstring>()</argsstring>
+        <name>GetScriptModule</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1a8dda0ca61deee69fb3126de62fec6ba8">GetScriptModule</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="67" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a96f24b4556e5caee63574b4baa61d343" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::SItemPanel::GetScale</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScale</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1aa9d18960397ccbfaed109914be86f44f">GetScale</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="69" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a8131eb8897585b4718fb88421f0ba695" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::EnableIME</definition>
+        <argsstring>(BOOL bEnable)</argsstring>
+        <name>EnableIME</name>
+        <reimplements refid="struct_s_o_u_i_1_1_i_swnd_container_1aabec135f771ce3218f99f5a07a28b342">EnableIME</reimplements>
+        <param>
+          <type>BOOL</type>
+          <declname>bEnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a9aaddcc974625e90d3c6d8da31d5cf97" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::ModifyItemState</definition>
+        <argsstring>(DWORD dwStateAdd, DWORD dwStateRemove)</argsstring>
+        <name>ModifyItemState</name>
+        <param>
+          <type>DWORD</type>
+          <declname>dwStateAdd</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwStateRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="73" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a1c3d76352295f6945a8726770d4db138" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>SWND</type>
+        <definition>virtual SWND SOUI::SItemPanel::SwndFromPoint</definition>
+        <argsstring>(CPoint &amp;pt, bool bIncludeMsgTransparent=false)</argsstring>
+        <name>SwndFromPoint</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1aa163d9e34d6e6def39b09cdb733289f2">SwndFromPoint</reimplements>
+        <param>
+          <type>CPoint &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIncludeMsgTransparent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="75" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a7fecfbc69ead9ca3ea5db3bc38209c15" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::Draw</definition>
+        <argsstring>(IRenderTarget *pRT, const CRect &amp;rc)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type>const CRect &amp;</type>
+          <declname>rc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="77" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a29a1cad9b7cc99ee8cbdeb6d30b43d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::SetSkin</definition>
+        <argsstring>(ISkinObj *pSkin)</argsstring>
+        <name>SetSkin</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_i_skin_obj" kindref="compound">ISkinObj</ref> *</type>
+          <declname>pSkin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="79" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ac4e996aecd26ef029c0f66950db08039" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::SetColor</definition>
+        <argsstring>(COLORREF crBk, COLORREF crSelBk)</argsstring>
+        <name>SetColor</name>
+        <param>
+          <type>COLORREF</type>
+          <declname>crBk</declname>
+        </param>
+        <param>
+          <type>COLORREF</type>
+          <declname>crSelBk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="80" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a726d798e91ac23b4017e05a288175915" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::BeforePaint</definition>
+        <argsstring>(IRenderTarget *pRT, SPainter &amp;painter)</argsstring>
+        <name>BeforePaint</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a857d8b7407ad8c153c79f789144e6ad9">BeforePaint</reimplements>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref> *</type>
+          <declname>pRT</declname>
+        </param>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_painter" kindref="compound">SPainter</ref> &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+<para>为RT准备好当前窗口的绘图环境 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>BeforePaint <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_s_o_u_i_1_1_i_render_target" kindref="compound">IRenderTarget</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>* pRT <ndash/> 渲染RT </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_s_o_u_i_1_1_s_painter" kindref="compound">SPainter</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; painter <ndash/> painter storage </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="81" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a73b9bb2d470b95f2454172de03b1a5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::NeedRedrawWhenStateChange</definition>
+        <argsstring>()</argsstring>
+        <name>NeedRedrawWhenStateChange</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ac94a7a38467c2fcd7d9261d7f0e37139">NeedRedrawWhenStateChange</reimplements>
+        <briefdescription>
+<para>定义状态改变时控件是否重绘 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NeedRedrawWhenStateChange <simplesect kind="return"><para>BOOL <ndash/> TRUE：重绘</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="83" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a09c4d57ea265e138eab3677373073158" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::OnUpdateToolTip</definition>
+        <argsstring>(CPoint pt, SwndToolTipInfo &amp;tipInfo)</argsstring>
+        <name>OnUpdateToolTip</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1adc7efe0aeb2f38ccba818e8c7d0ab010">OnUpdateToolTip</reimplements>
+        <param>
+          <type>CPoint</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref> &amp;</type>
+          <declname>tipInfo</declname>
+        </param>
+        <briefdescription>
+<para>处理tooltip </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OnUpdateToolTip <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CPoint &amp; pt <ndash/> 测试点 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out"><ref refid="struct_s_o_u_i_1_1_swnd_tool_tip_info" kindref="compound">SwndToolTipInfo</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&amp; tipInfo <ndash/> tip信息 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL <ndash/> TRUE:更新tooltip，FALSE:不更新tooltip</para>
+</simplesect>
+Describe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="84" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab4a9599ec068aed9a44ce6acc467da15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::SItemPanel::IsLayeredWindow</definition>
+        <argsstring>() const</argsstring>
+        <name>IsLayeredWindow</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a32cbbee125a2b20460715ef5768509e8">IsLayeredWindow</reimplements>
+        <briefdescription>
+<para>determine whether this window need a render layer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsLayeredWindow <simplesect kind="return"><para>BOOL <ndash/> TRUE: need render layer, FALSE: no render layer. Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="85" column="18" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a01e68a3674a3aefca364ed3792581f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::RequestRelayout</definition>
+        <argsstring>(SWND hSource, BOOL bSourceResizable)</argsstring>
+        <name>RequestRelayout</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1a599c670bfea7efdf69386b6a6f326a30">RequestRelayout</reimplements>
+        <param>
+          <type>SWND</type>
+          <declname>hSource</declname>
+        </param>
+        <param>
+          <type>BOOL</type>
+          <declname>bSourceResizable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="86" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1aa4c45c8d8bb51e8dccb7a66776842289" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool SOUI::SItemPanel::IsDrawToCache</definition>
+        <argsstring>() const</argsstring>
+        <name>IsDrawToCache</name>
+        <reimplements refid="class_s_o_u_i_1_1_s_window_1ae86fb10386208b133bda4dfae5bd2bd5">IsDrawToCache</reimplements>
+        <briefdescription>
+<para>查看当前是否是把窗口内容绘制到cache上 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>IsDrawToCache <simplesect kind="return"><para>bool <ndash/> true绘制到cache上。 Describe <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="87" column="14" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a7eaba97ec50ac6084fa3f1a6b5a80586" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CRect</type>
+        <definition>CRect SOUI::SItemPanel::GetItemRect</definition>
+        <argsstring>() const</argsstring>
+        <name>GetItemRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="89" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ac87fd30eb4d18663388c0ebddffa118e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SItemPanel::SetItemCapture</definition>
+        <argsstring>(BOOL bCapture)</argsstring>
+        <name>SetItemCapture</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bCapture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab483a0f54896a36a88e142849bed89b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SItemPanel::SetItemData</definition>
+        <argsstring>(LPARAM dwData)</argsstring>
+        <name>SetItemData</name>
+        <param>
+          <type>LPARAM</type>
+          <declname>dwData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a409a94f66d63f88d78aa9bc4ccb91f01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LPARAM</type>
+        <definition>LPARAM SOUI::SItemPanel::GetItemData</definition>
+        <argsstring>()</argsstring>
+        <name>GetItemData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="92" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ab7382b360972754cc5504cf4d6813801" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LPARAM</type>
+        <definition>LPARAM SOUI::SItemPanel::GetItemIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>GetItemIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="94" column="12" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a0d41ad12d830520c6c8c61ebc7f8dcd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SItemPanel::SetItemIndex</definition>
+        <argsstring>(LPARAM lp)</argsstring>
+        <name>SetItemIndex</name>
+        <param>
+          <type>LPARAM</type>
+          <declname>lp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="95" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a26039c76d3ccb8bdeb26d5959c49fcc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SItemPanel::OnShowWindow</definition>
+        <argsstring>(BOOL bShow, UINT nStatus)</argsstring>
+        <name>OnShowWindow</name>
+        <param>
+          <type>BOOL</type>
+          <declname>bShow</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nStatus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1ad681af32029ceb9aa3d0cb871c9c19a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SOUI::SItemPanel::OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="98" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a7c4d5da142dcbd10294e6baeb9e89d21" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SOUI::SItemPanel::SItemPanel</definition>
+        <argsstring>(SWindow *pFrameHost, pugi::xml_node xmlNode, IItemContainer *pItemContainer)</argsstring>
+        <name>SItemPanel</name>
+        <param>
+          <type><ref refid="class_s_o_u_i_1_1_s_window" kindref="compound">SWindow</ref> *</type>
+          <declname>pFrameHost</declname>
+        </param>
+        <param>
+          <type>pugi::xml_node</type>
+          <declname>xmlNode</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_s_o_u_i_1_1_i_item_container" kindref="compound">IItemContainer</ref> *</type>
+          <declname>pItemContainer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="34" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1a82fe8fd7a2daeaf8e2777102fba0e963" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SOUI::SItemPanel::~SItemPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~SItemPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="35" column="13" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_o_u_i_1_1_s_item_panel_1aa0c74ed6e7dfa4af2fe3045b6cf27df5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::SItemPanel::OnFinalRelease</definition>
+        <argsstring>()</argsstring>
+        <name>OnFinalRelease</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="37" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="7">
+        <label>SObject</label>
+      </node>
+      <node id="4">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="6">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="9">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>SOUI::SEventSet</label>
+        <link refid="class_s_o_u_i_1_1_s_event_set"/>
+      </node>
+      <node id="27">
+        <label>IDropTarget</label>
+      </node>
+      <node id="8">
+        <label>SOUI::SMsgHandleState</label>
+        <link refid="class_s_o_u_i_1_1_s_msg_handle_state"/>
+      </node>
+      <node id="25">
+        <label>SOUI::STimerlineHandlerMgr</label>
+        <link refid="class_s_o_u_i_1_1_s_timerline_handler_mgr"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>SOUI::SDropTargetDispatcher</label>
+        <link refid="class_s_o_u_i_1_1_s_drop_target_dispatcher"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SOUI::IxForm</label>
+        <link refid="struct_s_o_u_i_1_1_ix_form"/>
+      </node>
+      <node id="7">
+        <label>SObject</label>
+      </node>
+      <node id="12">
+        <label>SOUI::ISkinObj</label>
+        <link refid="class_s_o_u_i_1_1_i_skin_obj"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SOUI::ITimelineHandler</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handler"/>
+      </node>
+      <node id="24">
+        <label>SOUI::SWNDMSG</label>
+        <link refid="struct_s_o_u_i_1_1_s_w_n_d_m_s_g"/>
+      </node>
+      <node id="21">
+        <label>SOUI::STrText</label>
+        <link refid="class_s_o_u_i_1_1_s_tr_text"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>pTrCtxProvider</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SOUI::SDpiAwareFont</label>
+        <link refid="class_s_o_u_i_1_1_s_dpi_aware_font"/>
+      </node>
+      <node id="6">
+        <label>SOUI::SWindow</label>
+        <link refid="class_s_o_u_i_1_1_s_window"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_nMaxWidth</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_pContainer</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>m_pBgSkin</edgelabel>
+          <edgelabel>m_pNcSkin</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>m_transform</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>m_style</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>m_evtSet</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>m_strToolTipText</edgelabel>
+          <edgelabel>m_strText</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+          <edgelabel>m_pParent</edgelabel>
+          <edgelabel>m_pNextSibling</edgelabel>
+          <edgelabel>m_pPrevSibling</edgelabel>
+          <edgelabel>m_pFirstChild</edgelabel>
+          <edgelabel>m_pLastChild</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>m_animationHandler</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>m_pGetRTData</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>m_pCurMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SOUI::ISwndContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_swnd_container"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SOUI::SwndContainerImpl</label>
+        <link refid="class_s_o_u_i_1_1_swnd_container_impl"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>m_timelineHandlerMgr</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>m_dropTarget</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>m_focusMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>SOUI::STransformation</label>
+        <link refid="class_s_o_u_i_1_1_s_transformation"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>mMatrix</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>SOUI::IAcceleratorMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_accelerator_mgr"/>
+      </node>
+      <node id="16">
+        <label>SOUI::SMatrix</label>
+        <link refid="class_s_o_u_i_1_1_s_matrix"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>SOUI::SWindow::GETRTDATA</label>
+        <link refid="struct_s_o_u_i_1_1_s_window_1_1_g_e_t_r_t_d_a_t_a"/>
+      </node>
+      <node id="14">
+        <label>IObject</label>
+      </node>
+      <node id="10">
+        <label>TObjRefImpl2&lt; IObjRef, SWindow &gt;</label>
+      </node>
+      <node id="22">
+        <label>SOUI::SWindow::SAnimationHandler</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SOUI::ITimelineHandlersMgr</label>
+        <link refid="struct_s_o_u_i_1_1_i_timeline_handlers_mgr"/>
+      </node>
+      <node id="13">
+        <label>IObjRef</label>
+      </node>
+      <node id="9">
+        <label>SOUI::ITrCtxProvider</label>
+        <link refid="struct_s_o_u_i_1_1_i_tr_ctx_provider"/>
+      </node>
+      <node id="1">
+        <label>SOUI::SItemPanel</label>
+        <link refid="class_s_o_u_i_1_1_s_item_panel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>m_pItemContainer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>m_pFrmHost</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SOUI::SLayoutSize</label>
+        <link refid="class_s_o_u_i_1_1_s_layout_size"/>
+      </node>
+      <node id="18">
+        <label>SOUI::SwndStyle</label>
+        <link refid="class_s_o_u_i_1_1_swnd_style"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>m_rcInset</edgelabel>
+          <edgelabel>m_rcMargin</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>m_ftText</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>SOUI::SFocusManager</label>
+        <link refid="class_s_o_u_i_1_1_s_focus_manager"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>SOUI::IItemContainer</label>
+        <link refid="struct_s_o_u_i_1_1_i_item_container"/>
+      </node>
+    </collaborationgraph>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" line="26" column="1" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/core/SItemPanel.h" bodystart="25" bodyend="115"/>
+    <listofallmembers>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4f7aec07b3d67d9334e9465ed8ced4db" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_ApplyMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a67b9fad46849fd5858bf23999569c784" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_BuildWndTreeZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1202e1e2d35caf0a3a02cc4b9d2cb196" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_ConvertRect2RenderRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad5a23edef9a18d53ab4cc9bf92b7b752" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a25923a14b45b2d129666b0f7d67b56f5" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af6474657f02dd8876a05e33b9cd47c45" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_GetCurrentLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf0fe0bf79dfe169c68c135d749611cb" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_GetMatrixEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7775b1fd4a7d25a2b68a64a759808a7a" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_PaintChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ace0b4789c2b09715e797ac21560bd725" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_PaintClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88da487f3441bf790b533180d2947a54" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_PaintNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6acfef3a3ad982e4f2a4c549c52527b8" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_PaintRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adfa488cef4ca81f66b037e2cf5777be9" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_RedrawNonClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8f0dc8efaad35dfc7996383ce56dc64d" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_Update</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a26db921236b404f711f9b43a55c57690" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>_WndRectInRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf9ef86a26d57a90a7f262a85e0d192f" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>accNotifyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6f2cd6a7943d7bcbc5f172a5d1ca123d" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>AdjustZOrder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e451823d77789563ba3b462c3d046d6" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>AfterAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abd86a009594f9fffa064bafaa5c0ce75" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>AfterPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2c86bf8485cd1d04efb81524449b3aef" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ATTR_CHAIN_PTR</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9dd09cacdc43c7988b180857187094d9" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ATTR_CUSTOM</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5acabc38c9b479799aae59fe98c67b16" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ATTR_SKIN</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a726d798e91ac23b4017e05a288175915" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>BeforePaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1add4ffbe391168d83216ff0eeeb5f0f32" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>BeforePaintEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5905fa07378248c9d9a7ff9ad981028d" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>BringWindowToTop</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a4967c01e3b8d3487ba6b9488b2e9d316" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>BuildWndTreeZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8eb66d6e169a9feda53a7030ea4b872" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ClearAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a36e52abcc460e4b342efb70ea9fe96f6" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>Create</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37061054c3dd68c100e94d09e28296a7" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>CreateCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a632062c625df6e5cdc6ab5c8b66ac6f5" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab24c41e701b99857cd33b15dcc20d6d8" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>CreateChildren</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3bb0f2cbf47eb477062b672ea63a78d7" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>DefAttributeProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d5846acd45d8685dfb9d74925118410" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>DestroyChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab65f99da1766c8c5e71fd94ccb481c19" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>DestroyWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925af2bb91b743698b2dfc2147fa7dac8d05" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>dirty_child</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a00e8341bd64ad23992671c210ca85f0d" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>dirty_clean</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925a6f166895461bc7dde7f26b7fddf6914c" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>dirty_self</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0d1c67bd321a29d73917ff226d61b590" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>DispatchPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aadfe4964cd88757d019229646c728ef3" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>DoColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a857ac6b6d4fbb37acc72d46c62970f32" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>DoFrameEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a7fecfbc69ead9ca3ea5db3bc38209c15" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>Draw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abcb0e59dec10489ed133a8a2a57f42c6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>DrawDefFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a535465979865bafd55b5d7620ae7aa31" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>DrawFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa0f57e46cc741a284418625d3ceadd8" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>DrawText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a8131eb8897585b4718fb88421f0ba695" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>EnableIME</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac15fdc97bc52927fe40ae00531402f4c" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>EnableWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ceb20cf5134305ae537d82438bffe41" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5b88c203f19039606ab8207acff911d7" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5a5ab80a2410e009b64dff1efdf2036" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByID2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6cfff5bb97a100aa6b04479e22aa14e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a53f6211eb1c98d1a40e1343488eae3cf" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a641ce730c844dedac014eec1233f6008" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad09240f7e2fb8ba8455eabec775f2b97" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FindChildByName2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a743238efbf7d1d7d5b450b6e4e1ffbf0" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FireCommand</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1b41ec792e70af4b5b84de961763fa52" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>FireCtxMenu</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a74d1344ff872e4bfb6c1ba4ce3db9ad1" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>FireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a799ca4d27a3ced0183d65b025b344c7d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>FrameToHost</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a810a975d429a1390d692282d36954e0d" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetAcceleratorMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac273d06c46f686e7e2399dae59c5fd8f" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetAccessible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a49b3abddf7dcdb5155fb66b6e4aa89" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetAccProxy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab6d45c6c1f61b65ab944d9a4d62f1a4f" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7163e835d29acc2d71227096edb37a5c" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb36a9c7d1c51f792f6ec13ac724827e" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetAttribute</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a0544d797f0eed085a1c7133e18216a" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1acdc68933c4e9ae69f422bf2221978dcf" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a062794d497acb9696f3dcc4b9628bffe" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6be523a0e661a48989de4e8f365a1619" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad4d40b97eef06dc486e24f8a21bb101a" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetChildrenLayoutRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a91846f5b1a751e4667de2e2a123adb5c" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41018b5ea1338a4c725c1736d1bc07ad" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetClientRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a158bb1db1271bdc6a57945252a044883" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetColorizeColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a168ce1a0daffa4f72f8aede1a78034e2" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0b48463079ea404178ef9ecb1d4d22d6" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ad9d0382e01bfe5529c9562c029e2fc96" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetContainerRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a17535f75280b4de8d67feb6e46b2fb1b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a67203f925ea9185f56ef92623638ee" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetDesiredSize</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1abd800b014e00422c52aa4f0067aedd83" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetDropTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08fa72505378ac8295b1255177788935" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetEventSet</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ac769f40a493edddd8601a635837143c4" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a5ce8fdcf7425affd524fe95cfa8afdc2" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetFocusManager</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a9a76a11c837d0c0cd807d008993d8ecb" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetHostHwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab53739aca8c58221f8bd7f3861bab330" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetHostWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1af1877762cbd74309e3e17604196ff94c" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab55ae205e8fd681ba9a3fcac1d931fdd" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a409a94f66d63f88d78aa9bc4ccb91f01" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab7382b360972754cc5504cf4d6813801" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetItemIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a7eaba97ec50ac6084fa3f1a6b5a80586" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetItemRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a824d5cdd2ebd2483edae7493dc304b29" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad54c79e0dd91b7214ce0af9168e3e483" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a889297ad5c45b2a0c838d094e30e8322" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetLayoutParamT</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a40bf6a1d86b4d3cb3a55e57ad5b55a18" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetMsgLoop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1ce596c052ea27920e2ea6e8651928c5" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4a96f19a6439a013b2c0481acb246c72" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetNextLayoutChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8816fcadb2c0a7c9e59aa20f1d295192" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ba6fd68b2bb1a06b47e4dbc68de17cb" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9957ff0e957f36b478ffe07685700e84" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aca2b8f7c11d6c0ac20baa4ade46c25d0" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab3c2a2d33fafb9a8912882bad32cc4af" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetRoot</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a96f24b4556e5caee63574b4baa61d343" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7fbfdc3d2482f5692a1ed2b6f1d156cc" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetScaleSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1af5380d3f120124525f8b722a91b96c59" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetScriptModule</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa15ef57dfa020a433684dcf08f0086b" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetSelectedChildInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a45f599b24be57fe843e569e94a168117" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetSelectedSiblingInGroup</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3165c225c9af63e49ff6daac52715cb" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5da2e8ca27640844b3fc963a7166d38d" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a797a5d2427431bf870298174a25f47b2" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetStyle</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2043e966fca57f2727a84da71791a001" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetSwnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afee836ecfe282561f04fd489c85e73d7" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetTextAlign</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a701e0978b502b8a911d83b92104df353" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetTextRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eaace5eafbd001e7a966ac284202a71" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aec897a2bb2c6145b3f2edceb37948752" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetTopLevelParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af1a8444dab958c9565e0736060d00334" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetTransformation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab3f8e5c9d595cd44a521e3b9f4fc2ab5" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetTranslatorContext</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6aa61f8fd3852502d866087a08982f9d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa0591eab0c198fee236e6083af92c342" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0eb7a1b0b03e7b2ab266bf046bff19c3" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8760f18f5c59ff1c2ba50da42c65fa1" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa5779283a662e4145c25d86ee3854977" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetWindowRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bae8c4270ddb40d9c79047d0819d567" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>GetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79998d91aef3049b514dc6fd0e6aa8bb" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>GetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a193389b19a7f5128a3fd8c96e1d437af" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>InitFromXml</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9e81448460818325210cf5c2a830aa22" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>InsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad9775f0384a21501de5a83d13aeddab7" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>Invalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a077137f2773be5b376b56c7a14957d" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acfb3d670ef9ef7b672737e031faafc74" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>InvalidateRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a54e1d70e0345ca81cd9bd232742a6bdb" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a86bb1d73a84c76647881e809bf2c040f" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsChecked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6070bb0bef9660f7a840cc4f18fd219d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa6da8af0fd7826625d6a7f20d29c9576" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsContainPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8c9a7b209eae739a4d57af5f65606db7" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsDescendant</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe6e48aedcfaeef60f4d6ba588cb8221" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsDisabled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a941f7d50672180da3ca41c73ea83b848" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1aa4c45c8d8bb51e8dccb7a66776842289" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsDrawToCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab99d4da910a63fd1949a2f11260b2a4" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8c57ee5e9c70e570ee97142b0313ffe" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aff78f3beb70ad95e8719b714ddac7328" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsFocused</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab4a9599ec068aed9a44ce6acc467da15" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a635bfcb6349dda7110d7968a50275aec" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsLayoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ad6a56a890d2e1ba930373fb7d2b7fd85" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab820de4bcfb2895868e32052043a75ee" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ae3e7c4a82e12c8222d25f01e521afd2d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsSendWheel2Hover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a39eba5818d9356dd1ee8014a8a5d0cc7" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsSiblingsAutoGroupped</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a67520867438526f3ad00df7806e42c81" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>IsTranslucent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a10708bf2d2ba3f47162a49cfd660a420" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsUpdateLocked</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1864e76f4c2a2fab4ee883e25d9384bb" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>IsVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8055d84af3f5a46dc70297aef983107b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>KillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac215f33ea3dfa00b4f81cf80b5ce461e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>KillTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae5fe646db7bcd55266d15b927c92033f" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>KillTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b8a7850e0c84215088121f990f85925" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>LayoutDirtyType</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a79515e1475ac8696b90043b2bf18910e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>LockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9d880d3ae6ffffccc7cf033e3dae8f88" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_animation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a6d921587888f3b70465f218a93613e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_animationHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2ea7e7c73901e10fe6b7c6bd8165dd01" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_attrStorage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32bfb9aee220d68d2e839b095244fa8c" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4846f2a7857cd35d65f474e743501247" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bCacheDraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af673ccecde4eb3e6276a28c1bc63c03b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bClipClient</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af165bd7220b8816f818a988786c23080" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bDisable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a02980687f61228aebbfcf80749dca8eb" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad3df6e93c63654a4037989ca350c41f0" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bDrawFocusRect</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abaad9c0ebc77bd4faa13d01739dfeef6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bFloat</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a00f55c6c822a1a72f442ce421501f5b8" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bFocusable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1accee35d52c295a1b4b2fcaa7bf40eeb4" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bLayeredWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a80435f0e90b1db4ec28a7be652a97120" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aab4c959e5240b734343c7d9fb20914c5" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bMsgTransparent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1adf07694fe6a688e9cc635716e4c78615" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bNcHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4c7ff4974e210b645bc7a798893d26fb" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a7d3a1b77b187f7290a3f439383685429" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_bZorderDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2b184f526fe7bf42886168a344430012" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_cachedRT</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3dad3d40daa418696fc584c752aec90e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_caret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af47fea7cbc561e7c8821b61fefec741b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_clipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a41763193b38a46b9a66a444931de86b2" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_clipRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a0aafbf6167853dca8c476a0736826efe" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_crBk</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6ab90746a315606b791fd698c633b896" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_crColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a29b049f919e3b4c94b941d4020236bee" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_crHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1af4fc1b19fc6568fd9e1445e528ffa1b9" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_crSelBk</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3d4dc2c8f62dacc737f36def144ba6bd" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_dropTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a5358ca5440fa00ce81d1c4e440d3a971" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_dwData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a36968b055add7746709d131e9e98a672" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_dwState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a9403a80dd9dae0f9d00acd1c711fab2e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_evtSet</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a58a47ca34d987b18f88fc2ad2d376b34" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_focusMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a52179f8b4bf37546f97f2ccc4d0fa3b6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_hCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1af4d078b31db5435a262e9077493ee330" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_hHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a507875bcaac23d34cd30c95324fd3d6d" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_invalidRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ee1ab9f163c102070f96da71b08acec" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_isAnimating</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa234c501aa7108210984fbe906e74c10" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_isDestroying</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3a730690734d265f51d2a69d0d220b0d" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_layoutDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab3c34c90e4e9418cea14382e86d4fa8f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_lpItemIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1aa70ab4b0b7b1029d34bb58490eb441e8" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_lstTrackMouseEvtWnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5c57effbbd1e2cb3c8c33eeac1457e26" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_nChildrenCount</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af0a9e017255444fd2d5529b5be24b2fe" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_nID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a57bc97feaee9e513b29e9f5ad6f64846" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_nMaxWidth</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a32798b93a37362d19c669779cce65545" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_nUpdateLockCnt</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a22e05b34f42d57b86d719295de1f58dc" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pBgSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a88a23d232bd9cc301687cc5eb5edbf9c" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1af8552d2e988d5e2e89be8bed2af4a560" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pCurMsg</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a118446810afe249237d9e25f1378fa7b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pFirstChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1acc396ec19f25c270ac5bbdab8b41dd39" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pFrmHost</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6131c58a4ee43c9e9469b8dcb75fda92" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pGetRTData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a19ec9cf061ece65b53d55b29b07dd27f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pItemContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab9007baa36d9a89dd2f51a682fddfc6b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pLastChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f6eec303632698387fe7cd336b30d09" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0f70befbe0b9f866b94de0cf52c22903" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aacc1f98bfba1141984fd40fd95e57615" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pNcSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1908afe346230e4995646f50b3e2fba6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pNextSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76ff6fb7f0329c12a5ddb8be1d1f3413" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a107180ec1b1df18ebc33845448249f9f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pParent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab92ab823183150ab54a29a209cc7c965" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_pPrevSibling</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aea8f9ff013cf7c2610d59d173cf19855" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_strName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a31bd9e5d19d2a6aa2181d37cf3bd09c3" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_strText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afd31d32e2e8b4752846146ae027de295" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_strToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab20f26f9a0e17ac1e88894de068876d9" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_strTrCtx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abb6b3d37c77f4cf73a78637dadad523b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_style</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b3b11872efbd0bc73cb94003e51ffb4" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_swnd</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3c47b4117250ad263900a2bc3c72f2b0" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_timelineHandlerMgr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1a1cfd0deea0598efce21d791f3080bf" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_transform</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4ba4df406827d08c7a3fc974674b7ea1" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_uData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae9cad19aadf0118ca14ff121d223f72e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>m_uZorder</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aeee48becf350c2abdeb7364b0e1fde8e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>MarkCacheDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a5622b8eb893b8d8d443ad7b4649211cc" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>MarkWndTreeZorderDirty</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a9aaddcc974625e90d3c6d8da31d5cf97" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>ModifyItemState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a95d2c67b4af8e623fc3f8084a625060e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ModifyState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6b53d030ac767195e1f041d18c1243fb" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7987099b1b6eeaeb03894450f520ae34" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>Move</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a73b9bb2d470b95f2454172de03b1a5cd" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>NeedRedrawWhenStateChange</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a04045c8cc0e777fc5e607e240e81510a" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnActivate</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a627f596d0b47c74a57c37d39718a2944" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnActivateApp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44be24fc2b43b41e0ce1a30121770479" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnAnimationInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a46df2971c566254d1a12bfae60633761" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnAnimationStart</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afa709922c42009ebefd75295097079fa" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnAnimationStop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a98ca0528efc0a748611b729ac37d7814" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae3c8417580183b8251065b182ff14376" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrCache</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aaeff70dea6b6b1f904ce3e7f3e76fbd6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrClass</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3b1c375cfb3ea50d227f28c9ac792664" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrDisplay</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06d3628182e1f6b05b91c18296fb74d8" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c42e330309ffe2599d707d7e32e9f54" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a06c368d196491184e1bbc3b42ad5451a" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2fcb0714453179731d01d92f639b32ce" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5e9eb423d768b4f9e981b4504c5c70f1" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a768e82033883ee2a1654b24a6552539f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a215c4a9bd488d3d93faa6f06c89edb44" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aad6b2db56568aa005e5d702284aa0166" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnAttrTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1aebf147ad97cf894a5c0b0ace22eb1d44" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnCavasInvalidate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afb396d00c1a676881a464ce7f4794c47" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdeb9825fcc7fee97121b8b636a554f3" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnContentChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2bd0e2e5d4827b2f0d7628b070fd5483" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnCreate</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ad681af32029ceb9aa3d0cb871c9c19a6" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnDestroy</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a48eec3b03f19d306a98eaf37341c3a53" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnEnable</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a673aeaf6d12e09fcca6bd72771ae9c4b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnEraseBkgnd</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1aa0c74ed6e7dfa4af2fe3045b6cf27df5" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnFinalRelease</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ae249c7a9d0fca4185c9bf6632a78f88d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnFireEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a53e4aa8cddeced123f712e3fe83b8333" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameKeyDown</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ada364c0850a4b32426d863959cb0488b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameKeyEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a3593bd2fd4508fdf5df976e58a0ba61b" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a0af7745ff0b9e592ff7fbd296a1efe6e" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a77d9feb10b1bce312525368284c361a5" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1afeecc8657b05bbc3430db12f61915d76" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ae78db1f5ee7c343d678be383b0781b63" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnFrameSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1d52071628c938dd064b6765856f9be5" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnGetDlgCode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab5beecb607552d2f25e5d7554b5448b6" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnGetRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a9aee16b6a773846a6c5f6d0f3afa7251" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnGetSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1acef46d7eec198d15acf2292eaaf38528" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnInsertChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afaf581a2fa62fc4633f75b4c0f777593" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnKillFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4038fd089860fbccacfd6d8198924e4d" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnLanguageChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1afdbcc55e9a2f42e68ac4c67aeeb1bcc1" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnLButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7ec660b24eb2f74d4f63eef92d41d1da" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnLButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a42a4184c1e3063a3bba246004e72fc8f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnMouseHover</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a115f0ec661fb1f6948f82ed6b70c854c" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnMouseLeave</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a70e43afbd0615a892daa3d7e6cb001e9" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnMouseMove</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6598e48f71ac345850f725d79951c5e6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnMouseWheel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6daa5f708da04f3e939fd5fe9b337a75" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnNcHitTest</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7687154b8595554e4526d4f64edfa248" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnNcPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a7b9969d764f3235a9974721e2243c17f" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnNextFrame</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1adb4a7fb11e83e39dab80811b359228c6" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnPaint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aac5432e91f351e847e64bcf907c6cbd2" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnRButtonDown</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7c2c1a2bba4560c6ea286e3b74997f2f" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnRButtonUp</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a24d68e1faa2511768f4734bc145ffd34" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnRebuildFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ac1b9923cfbd409304d49621c0ad5f54b" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnRedraw</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa27217e295a1e1d0b9e281602eb15c57" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ad6ba456a6c3dfba41b8d9687a23b6f06" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ac77050b7fcba2cb7c628604cf7c24012" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnReleaseSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad98dfcb41ba176f535472c88bad90c08" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnRemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a20bc6fab178a2f8316db40cb68a42d0c" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnScaleChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a6db7d982ba3777860fe90ce1cfee2b74" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnSetColorize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad471787523b5750321b0704726414314" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnSetCursor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4b27995464abc2623e5bf6e570e075b4" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnSetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a75b84fc4334cbb4533408972b12e1fab" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnSetLanguage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1abe11ceb96c2cb8c733e2ab06f04d4a" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnSetScale</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ad3c0818420583dd8967b70b6576000f0" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnSetSwndCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a70e984d774e3b1787aea0959847e0d04" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnSetSwndFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a26039c76d3ccb8bdeb26d5959c49fcc9" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnShowWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1c66ecfe8c85d9c6e7286735c629c6d4" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnSize</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a44d2fcb3712aba89fee24a61c43ea460" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnStateChanged</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a37ce3a8cde6a6f2870fea58f76c75840" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnStateChanging</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a08e308a374e9324c6203bedcd36e957d" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnUpdateFloatPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f417fae345f4c8e8f89441f4a02c259" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>OnUpdateFont</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a09c4d57ea265e138eab3677373073158" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>OnUpdateToolTip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a292bbaec718496b74a9438848faafff9" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>PaintBackground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2f33f680d2fdbf901dda6981a5c371f1" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>PaintForeground</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a1157a053b1289583666029d0c7c36b83" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>PaintForeground2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8522762efbd9469c1564f180e1da86e4" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>PGETRTDATA</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aa40464c02efa982fa99867c026829c18" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>RedrawRegion</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a4d1494b7c32ff7289318ed7f13c02e7a" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>RegisterDragDrop</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1ae3081da2b3d7f033b74d1df93f11839c" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>RegisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a0e723785305dbd4cea320d26fdedbb5e" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>RegisterTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a2d689bb3df90df8e535b4ab76d66df88" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ReleaseCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a03b2cd92a9fa7c422028bef67c4868e0" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>ReleaseRenderTarget</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0b3c7e4c11cf70d017dff85691a90f5" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>RemoveChild</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a01e68a3674a3aefca364ed3792581f52" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a423c5fc77e4bc49da6bfdccc252418fe" prot="public" virt="non-virtual" ambiguityscope="SOUI::SwndContainerImpl::"><scope>SOUI::SItemPanel</scope><name>RequestRelayout</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a6dbd5e8af0c11f512ff8a149ebbd001d" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>RevokeDragDrop</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a4047a87e3950a60f90a5f756f3ece798" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SDispatchMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5ef77d3dc52e89dee5ee166a17d875e1" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetAlpha</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae7e13f473d81650a33fc71defe2387b4" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abf007ba4da0d1a0f77210db2682c5a4e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1abe47e5e6fce61ae0593f273d4f4793c6" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SetCaretPos</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad30625112b837bfd62f18e25dd7a5ac6" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetCheck</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad26192c9d9acd51f9b52b958f7f9ff0c" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetClipPath</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ac4e996aecd26ef029c0f66950db08039" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SetColor</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8e7e73cbc7a38d86e593e343ccab1c82" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetContainer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5110427bfa426316d896144a9375c87c" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetFocus</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac97abd6d65dd0bab67ece0c1eec39b9a" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetID</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ac87fd30eb4d18663388c0ebddffa118e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetItemCapture</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ab483a0f54896a36a88e142849bed89b2" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetItemData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a0d41ad12d830520c6c8c61ebc7f8dcd2" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetItemIndex</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a0975d08e87484a8ebf3718a8d268ebc5" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetLayoutParam</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8517636a84fb0b737455ddde63e1519e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetMatrix</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1a4db3a48ac66fc20b8657a5b24a9bfe24" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetMsgHandled</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a76010d050623dbcd7011fe7509a8d71b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetName</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac0d143c645c0a55d686940c48a425ddf" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetOwner</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a29a1cad9b7cc99ee8cbdeb6d30b43d78" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SetSkin</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a195ac5bec3b984b1a0167bcfaad42a39" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetTimer</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a7f99124f11ad80f37e4580c1e3a2f295" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetTimer2</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a11c07193b1d917e7a9ba25f4adcea5ce" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SetToolTipText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a85cf0bd5b9cebb9154f061fc0e3a960e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetUserData</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ae1e45461caedfa5ed443e0f5774959b5" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetVisible</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac8beaccf8aa31e59a44838c0e0a5701e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SetWindowRgn</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a224adc79b03beb66f55a25468b292ed0" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SetWindowText</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a68dd4b179d424b676d17342aa6b5f262" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>ShowCaret</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a7c4d5da142dcbd10294e6baeb9e89d21" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SItemPanel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_msg_handle_state_1ae454c913bbbdc1cfdad7e1293c46793b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SMsgHandleState</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a51e87f3d340ea7fd0149fc423979a46b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SSendMessage</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ab0449ad5f88983ce2a64568cb49e58fd" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>StartAnimation</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a645cd258bbe5cebf25e79fde5f4bfbeb" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a9660859142b3740284f1c091f21df58e" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>SwndContainerImpl</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a1c3d76352295f6945a8726770d4db138" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SwndFromPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a99c3e101e01931c02ac6a1edb1f4d861" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>SwndProc</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a5d32d519b7acc412dc014b0845fc8e96" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>TestMainThread</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a3902d3332153936f258b756ea7fbdfb2" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>tr</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac22b67d1562309587e4cc46087ad0ed6" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>TransformPoint</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac2dd78f931b6f9d59b0ae530f5aa75b1" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>TransformPointEx</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ad21ad32c5e2f6f9361212405fbd4c49b" prot="public" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>UnlockUpdate</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1a57002cf98d64c99f75540ed0cf292e15" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UnregisterTimelineHandler</name></member>
+      <member refid="class_s_o_u_i_1_1_swnd_container_impl_1acfc42fd96d581d8b098e2e53fe65372e" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UnregisterTrackMouseEvent</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1ac3bdbb3244522318be542c08f619c053" prot="protected" virt="non-virtual"><scope>SOUI::SItemPanel</scope><name>UpdateCacheMode</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1aba50375cd77cfeb4361bf7cfe8327b4c" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UpdateChildrenPosition</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a8b7805b9c005e6967eeff4636ef33a78" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UpdateLayout</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ad77801bbf91a5a4bb43fa7892a34b8b4" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UpdateTooltip</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1ae51f6c386efae4cd3468c18b318eb8bd" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>UpdateWindow</name></member>
+      <member refid="class_s_o_u_i_1_1_s_item_panel_1a82fe8fd7a2daeaf8e2777102fba0e963" prot="protected" virt="virtual"><scope>SOUI::SItemPanel</scope><name>~SItemPanel</name></member>
+      <member refid="class_s_o_u_i_1_1_s_window_1a73cf687f9a4862ab0768cfbde2dd86e4" prot="public" virt="virtual"><scope>SOUI::SItemPanel</scope><name>~SWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

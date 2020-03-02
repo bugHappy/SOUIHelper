@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="struct_s_o_u_i_1_1_i_share_buffer" kind="struct" language="C++" prot="public" abstract="yes">
+    <compoundname>SOUI::IShareBuffer</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SEEK</name>
+        <enumvalue id="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa7c5a05b760c690c96ef46f024689397b" prot="public">
+          <name>seek_set</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa6b342b6063653d22def4bb96a9bfae28" prot="public">
+          <name>seek_cur</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa40b6ea440799df83d7490d340a7c457c" prot="public">
+          <name>seek_end</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="17" column="10" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1a17e0b6aa72a4d5c69c25e869d744feae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IShareBuffer::Write</definition>
+        <argsstring>(const void *data, UINT nLen)=0</argsstring>
+        <name>Write</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="22" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1af1d6a70bfeb1914fe7731746acb0b73b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int SOUI::IShareBuffer::Read</definition>
+        <argsstring>(void *buf, UINT nLen)=0</argsstring>
+        <name>Read</name>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>nLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="23" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1a99bbf0ebb996084783b2f9add1c3febb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::IShareBuffer::Tell</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Tell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="24" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1aec1124afe9c6057b7bc26854e29d05d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>UINT</type>
+        <definition>virtual UINT SOUI::IShareBuffer::Seek</definition>
+        <argsstring>(SEEK mode, int nOffset)=0</argsstring>
+        <name>Seek</name>
+        <param>
+          <type>SEEK</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="25" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1af2307106d462a771bd9534261be21211" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IShareBuffer::SetTail</definition>
+        <argsstring>(UINT uPos)=0</argsstring>
+        <name>SetTail</name>
+        <param>
+          <type>UINT</type>
+          <declname>uPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1af5382607229884954add143fd6705190" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BOOL</type>
+        <definition>virtual BOOL SOUI::IShareBuffer::Lock</definition>
+        <argsstring>(DWORD timeout)=0</argsstring>
+        <name>Lock</name>
+        <param>
+          <type>DWORD</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="27" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_s_o_u_i_1_1_i_share_buffer_1a6f3667d9ef6ba747c841d6722cf3bacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SOUI::IShareBuffer::Unlock</definition>
+        <argsstring>()=0</argsstring>
+        <name>Unlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="28" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" line="16" column="19" bodyfile="H:/OpenSourcesCode/soui3/SOUI/include/interface/sipcobj-i.h" bodystart="16" bodyend="29"/>
+    <listofallmembers>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1af5382607229884954add143fd6705190" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Lock</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1af1d6a70bfeb1914fe7731746acb0b73b" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Read</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1aec1124afe9c6057b7bc26854e29d05d9" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Seek</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6f" prot="public" virt="non-virtual"><scope>SOUI::IShareBuffer</scope><name>SEEK</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa6b342b6063653d22def4bb96a9bfae28" prot="public" virt="non-virtual"><scope>SOUI::IShareBuffer</scope><name>seek_cur</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa40b6ea440799df83d7490d340a7c457c" prot="public" virt="non-virtual"><scope>SOUI::IShareBuffer</scope><name>seek_end</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a66ffef57ef92de7084a09cffa9dd6d6fa7c5a05b760c690c96ef46f024689397b" prot="public" virt="non-virtual"><scope>SOUI::IShareBuffer</scope><name>seek_set</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1af2307106d462a771bd9534261be21211" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>SetTail</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a99bbf0ebb996084783b2f9add1c3febb" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Tell</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a6f3667d9ef6ba747c841d6722cf3bacb" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Unlock</name></member>
+      <member refid="struct_s_o_u_i_1_1_i_share_buffer_1a17e0b6aa72a4d5c69c25e869d744feae" prot="public" virt="pure-virtual"><scope>SOUI::IShareBuffer</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
