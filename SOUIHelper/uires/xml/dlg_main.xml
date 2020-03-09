@@ -54,12 +54,38 @@ translucent="1"
                 </template>
               </treeview>
               <hr size="1,-2" colorLine="@color/gray2" mode="vertical"  alpha="128"/>
-              <richedit name="re_apidetail" size="0,-2" weight="1" focusable="0" transparent="1" cursor="hand"/>
+              <richedit name="re_apidetail" size="0,-2" weight="1" focusable="0" msgTransparent="1" cursor="hand" multiLines="1" inset="18,8,8,8"/>
             </window>
           </window>
         </page>
-        <page title="attrib">
-          <text pos="0,0" text="1"/>
+        <page title="property" layout="vbox">
+          <window skin="skin_search_box" size="266,36" layout="hbox" inset="8,2,2,2" gravity="center">
+            <edit name="et_search" size="0,36" weight="1" inset="12,1,1,1" cueText="查找属性信息"/>
+            <img size="32,32" skin="skin_search_bk">
+              <img size="full,full" pos="0,0" skin="skin_search"/>
+            </img>
+          </window>
+          <window size="-2,0" weight="1">
+            <window size="-2,-2" layout="hbox">
+              <treeview size="190,-2" name="tv_property" indent="0">
+                <template>
+                  <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray" colorSelected="@color/gray">
+                    <window size="-2,0" layout="hbox" weight="1" gravity="center">
+                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" text="hostwnd"/>
+                    </window>
+                    <hr size="-2,1" colorLine="@color/gray4" alpha="128"/>
+                  </item_class>
+                  <item_fun size="-2,36" colorHover="@color/gray" colorSelected="@color/gray">
+                    <window name="bkwnd" size="-2,-2" layout="hbox" gravity="center">
+                      <text extend_left="18" name="lable_name" weight="1" text="apiname"/>
+                    </window>
+                  </item_fun>
+                </template>
+              </treeview>
+              <hr size="1,-2" colorLine="@color/gray2" mode="vertical"  alpha="128"/>
+              <richedit name="re_prodetail" size="0,-2" weight="1" focusable="0" msgTransparent="1" cursor="hand" multiLines="1" inset="18,8,8,8"/>
+            </window>
+          </window>
         </page>
       </tabctrl>
     </window>

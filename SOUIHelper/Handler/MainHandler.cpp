@@ -12,20 +12,16 @@ CMainHandler::~CMainHandler()
 
 }
 
-void CMainHandler::OnInit(SOUI::SWindow * pRoot)
-{
-	m_pRoot = pRoot;
+void CMainHandler::Init()
+{	
 	SASSERT(m_pRoot);
-
 	m_pTabBinder.BindHost(m_pRoot->FindChildByID2<STabCtrl>(R.id.tab_main_nav));
 	m_pTabBinder.Bind(m_pRoot->FindChildByID(R.id.btn_nav_api), 0);
 	m_pTabBinder.Bind(m_pRoot->FindChildByID(R.id.btn_nav_attrib), 1);
-	STreeView* pTreeView = m_pRoot->FindChildByID2<STreeView>(R.id.tv_allapis);
-	if (pTreeView)
-	{
-		m_pTreeViewAdapter.Attach(new CAPIAdapter());
-		pTreeView->SetAdapter(m_pTreeViewAdapter);
-	}
+
+	m_PropertyHandler.OnInit(m_pRoot->FindChildByID2<STabCtrl>(R.id.tab_main_nav)->GetPage(L"property"));
+	m_ApisHandler.OnInit(m_pRoot->FindChildByID2<STabCtrl>(R.id.tab_main_nav)->GetPage(L"api"));
+	
 	OnShowNavFull();
 }
 

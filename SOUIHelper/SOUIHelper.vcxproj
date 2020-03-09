@@ -185,6 +185,9 @@
     <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Handler\CPropertyHandler.cpp" />
+    <ClCompile Include="Handler\CApiHandler.cpp" />
+    <ClCompile Include="utils\CDataMgr.cpp" />
     <ClCompile Include="Handler\MainHandler.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="SOUIHelper.cpp" />
@@ -198,11 +201,17 @@
     <ClCompile Include="trayicon\SShellNotifyIcon.cpp" />
     <ClCompile Include="UIExtend\STabCtrlHeaderBinder.cpp" />
     <ClCompile Include="utils\CSQLite3.cpp" />
+    <ClCompile Include="utils\RtfFormat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SOUIHelper.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Handler\CPropertyAdapter.h" />
+    <ClInclude Include="Handler\CPropertyHandler.h" />
+    <ClInclude Include="Handler\CApiHandler.h" />
+    <ClInclude Include="Handler\CBaseHandler.h" />
+    <ClInclude Include="utils\CDataMgr.h" />
     <ClInclude Include="Handler\CAPIAdapter.h" />
     <ClInclude Include="Handler\MainHandler.h" />
     <ClInclude Include="MainDlg.h" />
@@ -212,6 +221,7 @@
     <ClInclude Include="trayicon\SShellNotifyIcon.h" />
     <ClInclude Include="UIExtend\STabCtrlHeaderBinder.h" />
     <ClInclude Include="utils\CSQLite3.h" />
+    <ClInclude Include="utils\RtfFormat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\soui_res.rc2" />
