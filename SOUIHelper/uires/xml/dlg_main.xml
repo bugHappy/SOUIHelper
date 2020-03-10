@@ -59,11 +59,22 @@ translucent="1"
           </window>
         </page>
         <page title="property" layout="vbox">
-          <window skin="skin_search_box" size="266,36" layout="hbox" inset="8,2,2,2" gravity="center">
-            <edit name="et_search" size="0,36" weight="1" inset="12,1,1,1" cueText="查找属性信息"/>
-            <img size="32,32" skin="skin_search_bk">
-              <img size="full,full" pos="0,0" skin="skin_search"/>
-            </img>
+          <window skin="skin_search_box" size="266,36" inset="8,2,2,2">
+            <searchDropdownList  size="-2,-2" name="et_search" layout="hbox" gravity="center">
+              <edit name="edit_input" size="0,-2" weight="1" inset="12,1,1,1" cueText="查找属性信息"/>
+              <img size="32,32" skin="skin_search_bk">
+                <img size="full,full" pos="0,0" skin="skin_search"/>
+              </img>
+              <popupStyle translucent="1" resizable="0" sendWheel2Hover="1">
+                <root colorBorder="@color/border" margin="1" colorBkgnd="@color/white">
+                  <listview pos="0,0,-0,-0" name="lv_dropdown" >
+                    <template itemHeight="30" colorNormal="@color/white" colorSelected="#e4f0fc" colorHover="#e4f0fc">
+                      <text pos="6,|0" offset="0,-0.5" name="txt_key"/>
+                    </template>
+                  </listview>
+                </root>
+              </popupStyle>
+            </searchDropdownList>
           </window>
           <window size="-2,0" weight="1">
             <window size="-2,-2" layout="hbox">

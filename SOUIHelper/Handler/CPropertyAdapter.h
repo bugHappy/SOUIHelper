@@ -1,6 +1,8 @@
 #pragma once
 #include <helper/SAdapterBase.h>
 #include "..\utils\CDataMgr.h"
+#include <algorithm>
+
 enum class PropertyNodeType
 {
 	CLASS, PROPERTY
@@ -11,7 +13,36 @@ struct PropertyNodeInfo {
 	SStringT name;
 };
 
+class SSearchAdapter : public SAdapterBase
+{
+	friend class CPropertyAdapter;
 
+public:
+	struct SearchInfo
+	{
+		SStringT strText;
+		HSTREEITEM itemindex;
+	};
+
+	SearchInfo GetItem(int i) { return m_searchResult[i]; }
+protected:
+	virtual int getCount()
+	{
+		return m_searchResult.size();
+	}
+
+	virtual void getView(int position, SWindow* pItem, pugi::xml_node xmlTemplate)
+	{
+		if (pItem->GetChildrenCount() == 0)
+		{
+			pItem->InitFromXml(xmlTemplate);
+		}
+		pItem->FindChildByID(R.id.txt_key)->SetWindowText(m_searchResult[position].strText);
+	}
+
+protected:
+	std::vector<SearchInfo> m_searchResult;
+};
 class CPropertyAdapter :public STreeAdapterBase<PropertyNodeInfo>
 {
 public:
@@ -20,6 +51,49 @@ public:
 	{
 	}
 
+	struct {
+		SStringW strSearchKey;
+		bool operator() (SSearchAdapter::SearchInfo first, SSearchAdapter::SearchInfo sec) 
+		{ 
+			int i = sec.strText.Find(strSearchKey);
+			int j = first.strText.Find(strSearchKey);
+			return (i < j);
+		}
+	} mycmp;
+	int Search(const SStringT& strKey, SSearchAdapter* pSearchAdapter)
+	{
+		if (strKey.IsEmpty()) return 0;
+
+		HSTREEITEM hNext = m_tree.GetNextItem(STVI_ROOT);
+		while (hNext)
+		{
+			const auto data= m_tree.GetItemPt(hNext)->data;
+			if (data.name.Find(strKey) != -1)
+			{
+				SStringW showText = data.name;
+				switch (data.type)
+				{
+					case PropertyNodeType::CLASS:
+						{
+							showText += L"(¿Ø¼þ)";
+						}break;
+					case PropertyNodeType::PROPERTY:
+						{
+							const CPropertyAdapter::ItemInfo& ParentData = GetParentData(hNext);
+							showText += L"(";
+							showText += ParentData.data.name;
+							showText += L")";
+						}break;
+				}
+				SSearchAdapter::SearchInfo searchRet{ showText ,hNext };
+				pSearchAdapter->m_searchResult.push_back(searchRet);
+			}
+			hNext = m_tree.GetNextItem(hNext);
+		}
+		mycmp.strSearchKey = strKey;
+		std::sort(pSearchAdapter->m_searchResult.begin(), pSearchAdapter->m_searchResult.end(), mycmp);
+		return pSearchAdapter->m_searchResult.size();
+	}
 	void Init()
 	{
 		const CDataMgr* datamgr = CDataMgr::GetInstance();

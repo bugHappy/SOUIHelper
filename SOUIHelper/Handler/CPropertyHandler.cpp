@@ -92,3 +92,35 @@ void CPropertyHandler::Init()
 	pre_prodetail->SSendMessage(EM_SETTARGETDEVICE,(WPARAM)hdc);
 	ReleaseDC(hWnd, hdc);
 }
+
+void CPropertyHandler::OnSearchFillList(EventArgs* e)
+{
+	EventFillSearchDropdownList* e2 = sobj_cast<EventFillSearchDropdownList>(e);
+	SASSERT(e2);	
+	SSearchAdapter* pSearchAdapter = new SSearchAdapter;
+	if (m_pPropertyAdapter->Search(e2->strKey, pSearchAdapter) > 0)
+	{
+		SListView* pLvSearch = e2->pDropdownWnd->FindChildByID2<SListView>(R.id.lv_dropdown);
+		pLvSearch->SetAdapter(pSearchAdapter);
+		pLvSearch->SetSel(0);
+		e2->bPopup = true;
+	}
+	pSearchAdapter->Release();
+}
+
+void CPropertyHandler::OnSearchValue(EventArgs* e)
+{
+	EventDropdownListSelected* e2 = sobj_cast<EventDropdownListSelected>(e);
+	if (e2->nValue == -1) return;
+	SListView* pListView = e2->pDropdownWnd->FindChildByID2<SListView>(R.id.lv_dropdown);
+	SSearchAdapter* pAdapter = (SSearchAdapter*)pListView->GetAdapter();
+
+	SSearchAdapter::SearchInfo searchResult = pAdapter->GetItem(e2->nValue);
+	
+	STreeView* pTreeView = m_pRoot->FindChildByID2<STreeView>(R.id.tv_property);
+	if (pTreeView)
+	{
+		pTreeView->SetSel(searchResult.itemindex,TRUE);
+		pTreeView->EnsureVisible(searchResult.itemindex);
+	}
+}
