@@ -9,7 +9,7 @@ translucent="1"
           <window size="-2,40">
             <icon pos="14,10" size="25,25" src="ICON_LOGO:32"/>
           </window>
-          <window size="48,48" >
+          <window size="48,48">
             <img name="btn_show_nav_full" offset="0,-0.5" pos="12,|" size="25,32" skin="skin_showfull" class="img_btn" tip="展开菜单"/>
           </window>
           <window id="19" size="-2,-1" weight="1" layout="vbox" colorBkgnd="rgba(220,220,220,48)">
@@ -30,11 +30,22 @@ translucent="1"
       </window>
       <tabctrl name="tab_main_nav" pos="[,38,-0,-0" tabAlign="left" curSel="0" tabInterSize="0" animateSteps="0" tabHeight="0" tabWidth="0">
         <page title="api" layout="vbox">
-          <window skin="skin_search_box" size="266,36" layout="hbox" inset="8,2,2,2" gravity="center">
-            <edit name="et_search" size="0,36" weight="1" inset="12,1,1,1" cueText="查找API信息"/>
-            <img size="32,32" skin="skin_search_bk">
-              <img size="full,full" pos="0,0" skin="skin_search"/>
-            </img>
+          <window skin="skin_search_box" size="266,36" inset="8,2,2,2">
+            <searchDropdownList  size="-2,-2" name="et_search" layout="hbox" gravity="center">
+              <edit name="edit_input" size="0,-2" weight="1" inset="12,1,1,1" cueText="查找API信息"/>
+              <img size="32,32" skin="skin_search_bk">
+                <img size="full,full" pos="0,0" skin="skin_search"/>
+              </img>
+              <popupStyle translucent="1" resizable="0" sendWheel2Hover="1">
+                <root colorBorder="@color/border" margin="1" colorBkgnd="@color/white">
+                  <listview pos="0,0,-0,-0" name="lv_dropdown" >
+                    <template itemHeight="30" colorNormal="@color/white" colorSelected="#e4f0fc" colorHover="#e4f0fc">
+                      <text pos="6,|0" offset="0,-0.5" name="txt_key"/>
+                    </template>
+                  </listview>
+                </root>
+              </popupStyle>
+            </searchDropdownList>
           </window>
           <window size="-2,0" weight="1">
             <window size="-2,-2" layout="hbox">
@@ -42,12 +53,12 @@ translucent="1"
                 <template>
                   <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray" colorSelected="@color/gray">
                     <window size="-2,0" layout="hbox" weight="1" gravity="center">
-                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" text="hostwnd"/>
+                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" font="adding:1,bold:1"  text="hostwnd"/>
                     </window>
                     <hr size="-2,1" colorLine="@color/gray4" alpha="128"/>
                   </item_class>
                   <item_fun size="-2,36" colorHover="@color/gray" colorSelected="@color/gray">
-                    <window name="bkwnd" size="-2,-2" layout="hbox" gravity="center">                      
+                    <window name="bkwnd" size="-2,-2" layout="hbox" gravity="center">
                       <text extend_left="18" name="lable_name" weight="1" text="apiname"/>
                     </window>
                   </item_fun>
@@ -80,9 +91,9 @@ translucent="1"
             <window size="-2,-2" layout="hbox">
               <treeview size="190,-2" name="tv_property" indent="0">
                 <template>
-                  <item_class focusable="0" layout="vbox" size="-2,36"  colorHover="@color/gray" colorSelected="@color/gray">
+                  <item_class focusable="0" layout="vbox" size="-2,36" colorHover="@color/gray" colorSelected="@color/gray">
                     <window size="-2,0" layout="hbox" weight="1" gravity="center">
-                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" text="hostwnd"/>
+                      <text extend_left="8" weight="1" size="0,-2" name="lable_name" font="adding:1,bold:1" text="hostwnd"/>
                     </window>
                     <hr size="-2,1" colorLine="@color/gray4" alpha="128"/>
                   </item_class>
@@ -94,7 +105,10 @@ translucent="1"
                 </template>
               </treeview>
               <hr size="1,-2" colorLine="@color/gray2" mode="vertical"  alpha="128"/>
-              <richedit name="re_prodetail" size="0,-2" weight="1" focusable="0" msgTransparent="1" cursor="hand" multiLines="1" inset="18,8,8,8"/>
+              <window size="0,-2" weight="1" layout="vbox">
+                <richedit name="re_prodetail" size="-2,0" weight="1" focusable="0" msgTransparent="1" cursor="hand" multiLines="1" inset="18,8,8,8"/>
+                <text name="lable_prover" size="-2,-1"/>
+              </window>
             </window>
           </window>
         </page>
@@ -102,7 +116,7 @@ translucent="1"
     </window>
     <caption pos="0,0,-0,30" font="size:14">
       <text pos="50,12">@string/title</text>
-      <imgbtn name="btn_close" skin="_skin.sys.btn.close"    pos="-45,0" tip="close" animate="1"/>
+      <imgbtn name="btn_close" skin="_skin.sys.btn.close" pos="-45,0" tip="close" animate="1"/>
       <imgbtn name="btn_max" skin="_skin.sys.btn.maximize"  pos="-83,0" animate="1" />
       <imgbtn name="btn_restore" skin="_skin.sys.btn.restore"  pos="-83,0" show="0" animate="1" />
       <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" />

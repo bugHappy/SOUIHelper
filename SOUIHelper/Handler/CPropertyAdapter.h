@@ -57,7 +57,7 @@ public:
 		{ 
 			int i = sec.strText.Find(strSearchKey);
 			int j = first.strText.Find(strSearchKey);
-			return (i < j);
+			return (i > j);
 		}
 	} mycmp;
 	int Search(const SStringT& strKey, SSearchAdapter* pSearchAdapter)

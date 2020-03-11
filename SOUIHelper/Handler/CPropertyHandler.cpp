@@ -13,7 +13,7 @@ void CPropertyHandler::OnTVSelChanged(EventArgs* pEArg)
 \'ca\'f4\'d0\'d4\'a3\'ba%s\par
 \b0\fs36 %s\par
 \b\fs40\'b2\'ce\'ca\'fd\par
-\i\fs36 %s\tab\b0\i0 %s\b\i\par
+\i\fs36\'c0\'e0\'d0\'cd\tab\b0\i0 %s\b\i\par
 \b0\i0\fs22\par
 })";
 	const char* CtrlRtfFormatString = R"({\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset134 \'cb\'ce\'cc\'e5;}}
@@ -57,24 +57,20 @@ void CPropertyHandler::OnTVSelChanged(EventArgs* pEArg)
 					proName = CRtfForamt::Format2Rtf(proName);
 
 					auto proinfo = std::find(ctrlinfo->second.m_prolist.begin(), ctrlinfo->second.m_prolist.end(), data.data.name);
-					SStringA proDes;
+					SStringA proDes;SStringA proVarType;
 					if (proinfo != ctrlinfo->second.m_prolist.end())
 					{
 						proDes = S_CW2A(proinfo->des);
 						proDes = CRtfForamt::Format2Rtf(proDes);
+						proVarType = S_CW2A(proinfo->valueType);
+						proVarType = CRtfForamt::Format2Rtf(proVarType);
 					}
-
-					SStringA proVar;
-					SStringA proVarDes;
-
 					SStringA RtfString;
-					RtfString.Format(ProRtfFormatString, ctrlName.c_str(), proName.c_str(), proDes.c_str(), proVar.c_str(), proVarDes.c_str());
+					RtfString.Format(ProRtfFormatString, ctrlName.c_str(), proName.c_str(), proDes.c_str(), proVarType.c_str());
 					CRtfForamt::SetRitchEditRtf(pre_prodetail, RtfString);
 				}
 			}break;
 	}
-
-
 }
 
 void CPropertyHandler::Init()
@@ -91,6 +87,11 @@ void CPropertyHandler::Init()
 	HDC hdc = GetDC(hWnd);
 	pre_prodetail->SSendMessage(EM_SETTARGETDEVICE,(WPARAM)hdc);
 	ReleaseDC(hWnd, hdc);
+
+
+	SWindow* plable_prover = m_pRoot->FindChildByID(R.id.lable_prover);
+
+	plable_prover->SetWindowText(CDataMgr::GetInstance()->GetProDataVerInfo());
 }
 
 void CPropertyHandler::OnSearchFillList(EventArgs* e)

@@ -42,7 +42,7 @@ struct PropertyInfo
 {
 	SStringW    name;//属性名
 	SStringW    des;//属性说明
-
+	SStringW	valueType;
 	bool operator ==(SStringW _name)const
 	{
 		return name == _name;
@@ -74,60 +74,50 @@ class CDataMgr :public Singleton<CDataMgr>
 {
 private:
 	std::map<SStringW,CtrlInfo> m_ctrls;
+	SStringW m_verinfo;
 public:
 	const std::map<SStringW, CtrlInfo>& GetCtrlInfo()const
 	{
 		return m_ctrls;
 	}
+	const SStringW& GetProDataVerInfo()
+	{
+		return m_verinfo;
+	}
+
 	//从xml文件加载控件信息
 	bool LoadCtrlInfoFormXml(LPCWSTR xmlpath = NULL)
 	{
-		const WCHAR* ctrlxml = LR"(\ctrls.dat)";
-		const WCHAR* ctrlpro = LR"(\ctrlspro.dat)";
-		const WCHAR* proinfoxml = LR"(\provalue.dat)";
-		SStringW ctrlXmlPath = ctrlxml, ctrlProXmlPath = ctrlpro, proinfoXmlPath = proinfoxml;
+		const WCHAR* ctrlxml = LR"(\soui属性列表.xml)";
+
+		SStringW ctrlXmlPath = ctrlxml;
 		if (xmlpath)
 		{
 			ctrlXmlPath = xmlpath;
 			ctrlXmlPath += ctrlxml;
-			ctrlProXmlPath = xmlpath;
-			ctrlProXmlPath += ctrlpro;
-			proinfoXmlPath = xmlpath;
-			proinfoXmlPath += proinfoxml;
 		}
 		pugi::xml_document ctrldoc, prodoc, proinfodoc;
 		pugi::xml_parse_result ret = ctrldoc.load_file(ctrlXmlPath);
 		if (ret)
 		{
-			pugi::xml_node ctrlsnode = ctrldoc.child(L"root").child(L"ctrls");
+			pugi::xml_node ctrlsnode = ctrldoc.first_child();
+
+			m_verinfo.Format(GETSTRING(L"@string/dataverformat"),ctrlsnode.attribute(L"author").value()
+				, ctrlsnode.attribute(L"ver").value()
+				, ctrlsnode.attribute(L"date").value()
+			);
 
 			for (auto& ctrlnode : ctrlsnode)
-			{
-				//<SOUI des = "SOUI真窗口" parent="***"/ >
-				m_ctrls[ctrlnode.name()]=(CtrlInfo(ctrlnode.attribute(L"des").value(), ctrlnode.attribute(L"parent").value()));
-			}
-			ret = prodoc.load_file(ctrlProXmlPath);
-			if (ret)
-			{
-				pugi::xml_node ctrlsproperty = prodoc.child(L"root").child(L"ctrls_property");
-				for (auto& ite : m_ctrls)
+			{				
+				m_ctrls[ctrlnode.name()]=(CtrlInfo(ctrlnode.attribute(L"comment").value(), ctrlnode.attribute(L"parent").value()));
+				auto &prolist = m_ctrls[ctrlnode.name()].m_prolist;
+				for (auto& attrib : ctrlnode)
 				{
-					pugi::xml_node ctrlpronode= ctrlsproperty.child(ite.first);
-					if (ctrlpronode)
-					{
-						for (auto& pro : ctrlpronode)
-						{
-							// <cueColor des="无内容显示的提示文字的颜色&#10;string&#10;无&#10;请在这里输入您的姓名" />
-							ite.second.m_prolist.push_back({ pro.name(), pro.attribute(L"des").value() });
-						}
-					}
+					//<Attribute name = "trCtx" default = "" type = "STRING" comment = "在语言翻译时作为context使用 xml名称" / >
+					prolist.push_back({ attrib.attribute(L"name").value(), attrib.attribute(L"comment").value(),attrib.attribute(L"type").value() });
 				}
 			}
-			ret = proinfodoc.load_file(proinfoXmlPath);
-			if (ret)
-			{
-				//proinfodoc 本意是添加参数提示
-			}
+			
 			return true;
 		}
 		return false;
