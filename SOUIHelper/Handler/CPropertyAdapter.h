@@ -53,42 +53,103 @@ public:
 
 	struct {
 		SStringW strSearchKey;
-		bool operator() (SSearchAdapter::SearchInfo first, SSearchAdapter::SearchInfo sec) 
-		{ 
+		bool operator() (SSearchAdapter::SearchInfo first, SSearchAdapter::SearchInfo sec)
+		{
 			int i = sec.strText.Find(strSearchKey);
 			int j = first.strText.Find(strSearchKey);
 			return (i > j);
 		}
 	} mycmp;
+
 	int Search(const SStringT& strKey, SSearchAdapter* pSearchAdapter)
 	{
 		if (strKey.IsEmpty()) return 0;
 
-		HSTREEITEM hNext = m_tree.GetNextItem(STVI_ROOT);
-		while (hNext)
+		if (iswupper(strKey[0])||iswlower(strKey[0]))
 		{
-			const auto data= m_tree.GetItemPt(hNext)->data;
-			if (data.name.Find(strKey) != -1)
+			HSTREEITEM hNext = m_tree.GetNextItem(STVI_ROOT);
+			while (hNext)
 			{
-				SStringW showText = data.name;
-				switch (data.type)
+				const auto data = m_tree.GetItemPt(hNext)->data;
+				if (data.name.Find(strKey) != -1)
 				{
-					case PropertyNodeType::CLASS:
-						{
-							showText += L"(¿Ø¼þ)";
-						}break;
-					case PropertyNodeType::PROPERTY:
-						{
-							const CPropertyAdapter::ItemInfo& ParentData = GetParentData(hNext);
-							showText += L"(";
-							showText += ParentData.data.name;
-							showText += L")";
-						}break;
+					SStringW showText = data.name;
+					switch (data.type)
+					{
+						case PropertyNodeType::CLASS:
+							{
+								showText += L"(¿Ø¼þ)";
+							}break;
+						case PropertyNodeType::PROPERTY:
+							{
+								const CPropertyAdapter::ItemInfo& ParentData = GetParentData(hNext);
+								showText += L"(";
+								showText += ParentData.data.name;
+								showText += L")";
+							}break;
+					}
+					SSearchAdapter::SearchInfo searchRet{ showText ,hNext };
+					pSearchAdapter->m_searchResult.push_back(searchRet);
 				}
-				SSearchAdapter::SearchInfo searchRet{ showText ,hNext };
-				pSearchAdapter->m_searchResult.push_back(searchRet);
+				hNext = m_tree.GetNextItem(hNext);
 			}
-			hNext = m_tree.GetNextItem(hNext);
+		}
+		else
+		{
+			static const CDataMgr* datamgr = CDataMgr::GetInstance();
+			const std::map<SStringW, CtrlInfo>& ctrlData = datamgr->GetCtrlInfo();
+			HSTREEITEM hNext = m_tree.GetNextItem(STVI_ROOT);
+			while (hNext)
+			{
+
+				const auto data = m_tree.GetItemPt(hNext)->data;
+				{
+					SStringW showText = data.name;
+					switch (data.type)
+					{
+						case PropertyNodeType::CLASS:
+							{
+								auto ctrlinfo = ctrlData.find(data.name);
+								if (ctrlinfo != ctrlData.end())
+								{
+									if (ctrlinfo->second.m_des.Find(strKey) != -1)
+									{
+										showText += L":";
+										showText += ctrlinfo->second.m_des;
+										showText += L"(¿Ø¼þ)";
+										SSearchAdapter::SearchInfo searchRet{ showText ,hNext };
+										pSearchAdapter->m_searchResult.push_back(searchRet);
+									}
+								}
+
+							}break;
+						case PropertyNodeType::PROPERTY:
+							{
+								const CPropertyAdapter::ItemInfo& ParentData = GetParentData(hNext);
+
+								auto ctrlinfo = ctrlData.find(ParentData.data.name);
+								if (ctrlinfo != ctrlData.end())
+								{
+
+									showText += L"(";
+									showText += ParentData.data.name;
+									showText += L")";
+									auto &proinfo = std::find(ctrlinfo->second.m_prolist.begin(), ctrlinfo->second.m_prolist.end(), data.name);
+									if (proinfo != ctrlinfo->second.m_prolist.end())
+									{
+										if (proinfo->des.Find(strKey) != -1) {
+											SSearchAdapter::SearchInfo searchRet{ showText+ proinfo->des ,hNext };
+											pSearchAdapter->m_searchResult.push_back(searchRet);
+										}
+									}
+								}
+
+
+							}break;
+					}
+				}
+				hNext = m_tree.GetNextItem(hNext);
+			}
 		}
 		mycmp.strSearchKey = strKey;
 		std::sort(pSearchAdapter->m_searchResult.begin(), pSearchAdapter->m_searchResult.end(), mycmp);
